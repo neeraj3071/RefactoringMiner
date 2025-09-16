@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4a27f023036c8a4ce8d23f421e5a0a3c34fe86c9,Assets/ViveGrip/Scripts/Prefab/ViveGrip_GripPoint.cs,ViveGrip_GripPoint,HandleHighlighting,#GameObject#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    Message("ViveGripTouchStop", lastTouchedObject);
+    if (grabber.HoldingSomething()) { return; }
+    Message("ViveGripHighlightStart");
+    <a id="change">Message(</a>"ViveGripTouchStart"<a id="change">)</a>;
+  }
+
+  bool GameObjectsEqual(GameObject first, GameObject second) {</code></pre><h3>After Change</h3><pre><code class='java'>
+      Message("ViveGripTouchStop", lastTouchedObject);
+    }
+    if (grabber.HoldingSomething()) { return; }
+    <a id="change">if (givenObject != </a><a id="change">null</a><a id="change">) </a>{
+      Message("ViveGripHighlightStart", givenObject);
+      <a id="change">Message(</a>"ViveGripTouchStart", givenObject<a id="change">)</a>;
+    }
+  }
+</code></pre>

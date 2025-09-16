@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a8ad83193f4fa059eb361eff4901eb035b50dd2e,Assets/Scripts/SpellControl.cs,SpellControl,DetectTrigger,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        } else if(OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
+        {
+            CastSpell();
+        } else if (OVRInput.<a id="change">GetDown(</a>OVRInput<a id="change">.Button.SecondaryThumbstick)</a>)
+        {
+            print("shield");
+            CastShield();</code></pre><h3>After Change</h3><pre><code class='java'>
+            primedSpell = "Lightning";
+            //CastLightning();
+        }
+        else if (OVRInput.<a id="change">GetDown(</a>OVRInput<a id="change">.Button.PrimaryThumbstick)</a>)
+        {
+            CastSpell();
+        }</code></pre>

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a330a779c50361e2c527869be5ef74e8424a5d67,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/converters/HalTEIConverter.java,HalTEIConverter,updatePublicationType,#Document#,79
+</h3><h3>Before Change</h3><pre><code class='java'>
+            Element classCode = newTEICorpus.createElement("classCode");
+            classCode.setAttribute("scheme", "typology");
+            classCode.setTextContent(pubType.getAttribute("n") + "_" + pubType.getTextContent());
+            textClass.<a id="change">appendChild(</a>classCode<a id="change">)</a>;
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            XPath xPath = XPathFactory.newInstance().newXPath();
+            Element pubType = (Element) xPath.compile("/TEI/text/body/listBibl/profileDesc/textClass/classCode[@scheme=\"halTypology\"]").evaluate(newTEICorpus, XPathConstants.NODE);
+            Element textClass = (Element) xPath.compile("/TEI/text/body/listBibl/profileDesc/textClass").evaluate(newTEICorpus, XPathConstants.NODE);
+            <a id="change">if (pubType</a><a id="change"> != null) </a>{
+                Element classCode = newTEICorpus.createElement("classCode");
+                classCode.setAttribute("scheme", "typology");
+                classCode.setTextContent(pubType.getAttribute("n") + "_" + pubType.getTextContent());
+                textClass.<a id="change">appendChild(</a>classCode<a id="change">)</a>;
+            }
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();</code></pre>

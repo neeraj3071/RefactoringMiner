@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>27f990583a9593d8269e293708245d6231791a7b,anhalytics-index/src/main/java/fr/inria/anhalytics/index/IndexingPreprocess.java,IndexingPreprocess,getStandoffNerd,#ObjectMapper#String#,491
+</h3><h3>Before Change</h3><pre><code class='java'>
+                            JsonNode freeBaseExternalRefN = piece.findValue("freeBaseExternalRef");
+
+                            String nerd_score = nerd_scoreN.textValue();
+                            String wikipediaExternalRef = wikipediaExternalRefN.<a id="change">textValue()</a>;
+                            String preferredTerm = preferredTermN.textValue();
+                            String freeBaseExternalRef = null;
+                            if ((freeBaseExternalRefN != null) && (!freeBaseExternalRefN.isMissingNode())) {
+                                freeBaseExternalRef = freeBaseExternalRefN.textValue();
+                            }
+
+                            JsonNode newNode = mapper.createArrayNode();
+
+                            JsonNode nerdScoreNode = mapper.createObjectNode();
+                            ((ObjectNode) nerdScoreNode).put("nerd_score", nerd_score);
+                            ((ArrayNode) newNode).add(nerdScoreNode);
+
+                            JsonNode wikiNode = mapper.createObjectNode();
+                            ((ObjectNode) wikiNode).put("wikipediaExternalRef", wikipediaExternalRef);
+                            ((ArrayNode) newNode).add(wikiNode);
+
+                            JsonNode preferredTermNode = mapper.createObjectNode();
+                            ((ObjectNode) preferredTermNode).put("preferredTerm", preferredTerm);
+                            ((ArrayNode) newNode).<a id="change">add(</a>preferredTermNode<a id="change">)</a>;
+
+                            if (freeBaseExternalRef != null) {
+                                JsonNode freeBaseNode = mapper.createObjectNode();</code></pre><h3>After Change</h3><pre><code class='java'>
+                            String nerd_score = nerd_scoreN.textValue();
+
+                            String wikipediaExternalRef = null;
+                            <a id="change">if (</a>(<a id="change">wikipediaExternalRefN</a><a id="change"> != null</a>)<a id="change"> && </a>(<a id="change">!wikipediaExternalRefN</a>.<a id="change">isMissingNode()</a>)<a id="change">) </a>{
+                                <a id="change">wikipediaExternalRef</a> = wikipediaExternalRefN.<a id="change">textValue()</a>;
+                            }
+
+                            String preferredTerm = null;
+                            if ((preferredTermN != null) && (!preferredTermN.isMissingNode())) {
+                                preferredTerm = preferredTermN.textValue();
+                            }
+
+                            String freeBaseExternalRef = null;
+                            if ((freeBaseExternalRefN != null) && (!freeBaseExternalRefN.isMissingNode())) {
+                                freeBaseExternalRef = freeBaseExternalRefN.textValue();
+                            }
+
+                            JsonNode newNode = mapper.createArrayNode();
+
+                            JsonNode nerdScoreNode = mapper.createObjectNode();
+                            ((ObjectNode) nerdScoreNode).put("nerd_score", nerd_score);
+                            ((ArrayNode) newNode).add(nerdScoreNode);
+
+                            if (wikipediaExternalRefN != null) {
+                                JsonNode wikiNode = mapper.createObjectNode();
+                                ((ObjectNode) wikiNode).put("wikipediaExternalRef", wikipediaExternalRef);
+                                ((ArrayNode) newNode).add(wikiNode);
+                            }
+
+                            <a id="change">if (wikipediaExternalRef</a><a id="change"> != null) </a>{
+                                JsonNode preferredTermNode = mapper.createObjectNode();
+                                ((ObjectNode) preferredTermNode).put("preferredTerm", preferredTerm);
+                                ((ArrayNode) newNode).<a id="change">add(</a>preferredTermNode<a id="change">)</a>;
+                            }
+
+                            if (freeBaseExternalRef != null) {</code></pre>

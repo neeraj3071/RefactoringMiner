@@ -1,0 +1,23 @@
+digraph G {
+subgraph cluster0 {
+1 [label="Instantiate" a="32" s="2135,2215" l="12,1" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="Instantiate" a="32" s="2156,2236" l="12,1" shape="box"];
+3 [label="GetComponent" a="32" s="2368" l="24" shape="box"];
+4 [label="SimpleName" a="42" s="2146" l="7" shape="ellipse"];
+5 [label="GetComponent" a="32" s="2301" l="25" shape="box"];
+6 [label="SimpleName" a="42" s="2293" l="7" shape="ellipse"];
+7 [label="SimpleName" a="42" s="2360" l="7" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+2 -> 4 [label="_def_"];
+4 -> 6 [label="_ref_"];
+4 -> 7 [label="_ref_"];
+6 -> 5 [label="_recv_"];
+7 -> 3 [label="_recv_"];
+}

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>2f0e7321a8142efcbb66f7eeb9612daede85cf09,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster/ViveRaycaster.cs,ViveRaycaster,FilterOutAssignedButton,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+#endif
+        protected void FilterOutAssignedButton()
+        {
+            <a id="change">m_additionalButtons</a> = EnumUtils.<a id="change">UnsetFlag(</a>m_additionalButtons, (int)m_mouseButtonLeft<a id="change">)</a>;
+            m_additionalButtons = EnumUtils.<a id="change">UnsetFlag(</a>m_additionalButtons, (int)m_mouseButtonMiddle<a id="change">)</a>;
+            m_additionalButtons = EnumUtils.UnsetFlag(m_additionalButtons, (int)m_mouseButtonRight);
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+#endif
+        protected void FilterOutAssignedButton()
+        {
+            <a id="change">if (</a>EnumUtils.<a id="change">GetFlag(</a>m_additionalButtons, (int)m_mouseButtonLeft<a id="change">)) </a>{ <a id="change">EnumUtils</a>.<a id="change">SetFlag(ref m_additionalButtons</a>, <a id="change">(int)m_mouseButtonLeft</a>, <a id="change">false</a><a id="change">)</a>; }
+            <a id="change">if (</a>EnumUtils.<a id="change">GetFlag(</a>m_additionalButtons, (int)m_mouseButtonMiddle<a id="change">)) </a>{ <a id="change">EnumUtils</a>.<a id="change">SetFlag(ref m_additionalButtons</a>, <a id="change">(int)m_mouseButtonMiddle</a>, <a id="change">false</a><a id="change">)</a>; }
+            if (EnumUtils.GetFlag(m_additionalButtons, (int)m_mouseButtonRight)) { EnumUtils.SetFlag(ref m_additionalButtons, (int)m_mouseButtonRight, false); }
+        }
+</code></pre>

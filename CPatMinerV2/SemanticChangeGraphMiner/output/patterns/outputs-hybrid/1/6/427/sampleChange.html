@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>29dc6889496226f2a52f73c9e5bcc111227a89cb,Scripts/Tracking/Follow/Modifier/FollowModifier.cs,FollowModifier,Modify,#GameObject#GameObject#GameObject#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            Premodified?.Invoke(eventData.Set(source, target, offset));
+
+            positionModifier.Modify(source, target, offset);
+            rotationModifier.<a id="change">Modify(</a>source, target, offset<a id="change">)</a>;
+            scaleModifier.Modify(source, target, offset);
+
+            Modified?.Invoke(eventData.Set(source, target, offset));</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                positionModifier.Modify(source, target, offset);
+            }
+            <a id="change">if (rotationModifier</a><a id="change"> != null)
+            </a>{
+                rotationModifier.<a id="change">Modify(</a>source, target, offset<a id="change">)</a>;
+            }
+            if (scaleModifier != null)
+            {</code></pre>

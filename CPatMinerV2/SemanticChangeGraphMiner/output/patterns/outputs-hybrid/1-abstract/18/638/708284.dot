@@ -1,0 +1,52 @@
+digraph G {
+subgraph cluster0 {
+1 [label="ClassInstanceCreation" a="14" s="3173,3210" l="25,8" shape="box"];
+2 [label="MethodInvocation" a="32" s="3609" l="17" shape="box"];
+4 [label="MethodInvocation" a="32" s="4254,4279" l="10,1" shape="box"];
+6 [label="MethodInvocation" a="32" s="3835,3892" l="7,1" shape="box"];
+7 [label="MethodInvocation" a="32" s="3860,3884" l="5,8" shape="box"];
+8 [label="MethodInvocation" a="32" s="4033,4051" l="10,1" shape="box"];
+9 [label="MethodInvocation" a="32" s="3575,3590" l="7,1" shape="box"];
+11 [label="SimpleName" a="42" s="3828" l="6" shape="ellipse"];
+12 [label="SimpleName" a="42" s="4043" l="8" shape="ellipse"];
+13 [label="SimpleName" a="42" s="3568" l="6" shape="ellipse"];
+14 [label="SimpleName" a="42" s="3842" l="17" shape="ellipse"];
+15 [label="SimpleName" a="42" s="3153" l="17" shape="ellipse"];
+16 [label="SimpleName" a="42" s="3865" l="19" shape="ellipse"];
+17 [label="SimpleName" a="42" s="4043" l="3" shape="ellipse"];
+18 [label="SimpleName" a="42" s="3198" l="12" shape="ellipse"];
+19 [label="SimpleName" a="42" s="3582" l="3" shape="ellipse"];
+21 [label="SimpleName" a="42" s="3582" l="8" shape="ellipse"];
+22 [label="SimpleName" a="42" s="3605" l="3" shape="ellipse"];
+23 [label="SimpleName" a="42" s="4026" l="6" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+3 [label="MethodInvocation" a="32" s="3058,3079" l="18,1" shape="box"];
+5 [label="MethodInvocation" a="32" s="3519,3541" l="7,1" shape="box"];
+10 [label="SimpleName" a="42" s="3038" l="19" shape="ellipse"];
+20 [label="SimpleName" a="42" s="3076" l="3" shape="ellipse"];
+24 [label="SimpleName" a="42" s="1334" l="3" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 15 [label="_def_"];
+4 -> 5 [label="_map_"];
+7 -> 6 [label="_para_"];
+10 -> 3 [label="_recv_"];
+11 -> 6 [label="_recv_"];
+12 -> 8 [label="_para_"];
+13 -> 9 [label="_recv_"];
+14 -> 7 [label="_recv_"];
+15 -> 14 [label="_ref_"];
+16 -> 7 [label="_para_"];
+17 -> 12 [label="_qual_"];
+18 -> 1 [label="_para_"];
+19 -> 21 [label="_qual_"];
+20 -> 3 [label="_para_"];
+21 -> 9 [label="_para_"];
+22 -> 2 [label="_recv_"];
+23 -> 8 [label="_recv_"];
+24 -> 20 [label="_ref_"];
+}

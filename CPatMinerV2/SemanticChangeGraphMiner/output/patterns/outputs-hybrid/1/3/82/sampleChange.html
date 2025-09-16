@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>db883a2611699640d1bd2cf7f5914d9bcc5e28ae,Scripts/Data/SpatialHash.cs,SpatialHash,GetIntersections,#Ray#outT#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+		public bool GetIntersections(Ray ray, out T[] intersections)
+		{
+			intersections = m_Octree.<a id="change">GetColliding(</a>ray<a id="change">)</a>;
+			return intersections.Length &gt; 0;
+		}
+</code></pre><h3>After Change</h3><pre><code class='java'>
+		public bool GetIntersections(Ray ray, out T[] intersections, float maxDistance = Mathf.Infinity)
+		{
+			intersections = maxDistance &lt; Mathf.Infinity
+				? m_Octree.<a id="change">GetColliding(</a>ray<a id="change">)</a> : m_Octree.GetColliding(ray, maxDistance);
+
+			return intersections.Length &gt; 0;
+		}</code></pre>

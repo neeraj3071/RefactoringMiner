@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6cee1a07a94b21ecf78c600e8d1d7a9fba698bca,Tools/MainMenu/Scripts/MainMenuFace.cs,MainMenuFace,AnimateRotationVisuals,#RotationState#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+			if (m_RotationState == rotationState)
+			{
+				m_TitleIcon.<a id="change">SetBlendShapeWeight(</a>0, targetWeight<a id="change">)</a>;
+				m_BorderOutlineTransform.localScale = targetBorderLocalScale;
+			}
+		}</code></pre><h3>After Change</h3><pre><code class='java'>
+
+		private IEnumerator AnimateVisuals(bool focus)
+		{
+			<a id="change">if (</a><a id="change">m_RotationVisualsCoroutine</a><a id="change"> != </a>null<a id="change">)
+				</a>yield break;
+
+			Vector3 targetBorderLocalScale = focus ? m_BorderOutlineOriginalLocalScale * kBorderScaleMultiplier : m_BorderOutlineOriginalLocalScale;
+			Vector3 currentBorderLocalScale = m_BorderOutlineTransform.localScale;
+
+			float currentBlendShapeWeight = m_TitleIcon.GetBlendShapeWeight(0);
+			float targetWeight = focus ? 100f : 0f;
+			float smoothTime = focus ? 0.25f : 0.5f;
+			const float kLerpEmphasisWeight = 0.2f;
+			float smoothVelocity = 0f;
+			while (!Mathf.Approximately(currentBlendShapeWeight, targetWeight))
+			{
+				currentBlendShapeWeight = Mathf.SmoothDamp(currentBlendShapeWeight, targetWeight, ref smoothVelocity, smoothTime, Mathf.Infinity, Time.unscaledDeltaTime);
+				currentBorderLocalScale = Vector3.Lerp(currentBorderLocalScale, targetBorderLocalScale, currentBlendShapeWeight * kLerpEmphasisWeight);
+				m_BorderOutlineTransform.localScale = currentBorderLocalScale;
+				m_TitleIcon.SetBlendShapeWeight(0, currentBlendShapeWeight);
+				yield return null;
+			}
+
+			m_TitleIcon.<a id="change">SetBlendShapeWeight(</a>0, targetWeight<a id="change">)</a>;
+			m_BorderOutlineTransform.localScale = targetBorderLocalScale;
+
+			m_RotationVisualsCoroutine = null;</code></pre>

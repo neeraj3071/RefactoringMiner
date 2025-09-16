@@ -1,0 +1,55 @@
+digraph G {
+subgraph cluster0 {
+1 [label="MethodInvocation" a="32" s="3667,3698" l="11,1" shape="box"];
+3 [label="NumberLiteral" a="34" s="3399" l="1" shape="ellipse"];
+4 [label="SimpleName" a="42" s="3340" l="8" shape="ellipse"];
+5 [label="SimpleName" a="42" s="3429" l="10" shape="ellipse"];
+6 [label="SimpleName" a="42" s="3277" l="4" shape="ellipse"];
+7 [label="SimpleName" a="42" s="3766" l="8" shape="ellipse"];
+8 [label="SimpleName" a="42" s="3775" l="8" shape="ellipse"];
+9 [label="SimpleName" a="42" s="3277,3321" l="15,1" shape="ellipse"];
+10 [label="SimpleName" a="42" s="3766,3783" l="9,1" shape="ellipse"];
+12 [label="SimpleName" a="42" s="4071" l="11" shape="ellipse"];
+13 [label="SimpleName" a="42" s="3623" l="10" shape="ellipse"];
+14 [label="SimpleName" a="42" s="3807" l="9" shape="ellipse"];
+15 [label="SimpleName" a="42" s="3277" l="4" shape="ellipse"];
+17 [label="SimpleName" a="42" s="3961" l="11" shape="ellipse"];
+18 [label="SimpleName" a="42" s="3390" l="6" shape="ellipse"];
+19 [label="SimpleName" a="42" s="4061" l="9" shape="ellipse"];
+20 [label="InfixExpression:a" a="27" s="3396" l="3" shape="box"];
+21 [label="InfixExpression:a" a="27" s="3620" l="3" shape="box"];
+22 [label="InfixExpression:a" a="27" s="4070" l="1" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="MethodInvocation" a="32" s="3667,3710" l="11,1" shape="box"];
+11 [label="SimpleName" a="42" s="3406" l="22" shape="ellipse"];
+16 [label="SimpleName" a="42" s="3340" l="8" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+1 -> 14 [label="_def_"];
+3 -> 20 [label="_para_"];
+4 -> 11 [label="_map_"];
+4 -> 8 [label="_ref_"];
+5 -> 13 [label="_ref_"];
+6 -> 15 [label="_qual_"];
+7 -> 10 [label="_qual_"];
+8 -> 10 [label="_para_"];
+9 -> 5 [label="_def_"];
+9 -> 14 [label="_def_"];
+9 -> 17 [label="_def_"];
+12 -> 22 [label="_para_"];
+13 -> 21 [label="_para_"];
+14 -> 19 [label="_ref_"];
+15 -> 9 [label="_qual_"];
+17 -> 12 [label="_ref_"];
+18 -> 20 [label="_para_"];
+19 -> 22 [label="_para_"];
+20 -> 14 [label="_def_"];
+20 -> 4 [label="_def_"];
+20 -> 21 [label="_para_"];
+21 -> 17 [label="_def_"];
+}

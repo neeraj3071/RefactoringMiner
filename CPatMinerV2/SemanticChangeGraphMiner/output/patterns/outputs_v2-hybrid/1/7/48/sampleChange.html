@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3c17adff9a707213104fe5cda1a04a10d2ee5e85,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/managers/MongoFileManager.java,MongoFileManager,generateAnhalyticsId,#String#String#String#,504
+</h3><h3>Before Change</h3><pre><code class='java'>
+            collection.ensureIndex(index, "index", true);
+         */
+        document.put("repositoryDocId", repositoryDocId);
+        document.<a id="change">put(</a>"doi", doi<a id="change">)</a>;
+        document.put("pdfUrl", pdfUrl);
+        collection.insert(document);
+        currentAnhalyticsId = document.getObjectId("_id").toString();</code></pre><h3>After Change</h3><pre><code class='java'>
+         */
+        document.put("repositoryDocId", repositoryDocId);
+        BasicDBObject temp = (BasicDBObject) collection.findOne(document);
+        <a id="change">if (temp</a><a id="change"> != null) </a>{
+            currentAnhalyticsId = temp.getObjectId("_id").toString();
+        } else {
+            document.<a id="change">put(</a>"doi", doi<a id="change">)</a>;
+            document.put("pdfUrl", pdfUrl);
+            collection.insert(document);
+            currentAnhalyticsId = document.getObjectId("_id").toString();</code></pre>

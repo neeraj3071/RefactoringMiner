@@ -1,0 +1,160 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>f71e1fbbce087174bde68c5812c8c3e8c76ef737,Assets/VRMShaders/VRM10/MToon10/Editor/MToonInspector.cs,MToonInspector,OnGUI,#MaterialEditor#MaterialProperty[]#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                );
+                materialEditor.ShaderProperty(props[MToon10Prop.ShadingShiftFactor], "Shading Shift");
+                materialEditor.ShaderProperty(props[MToon10Prop.ShadingToonyFactor], "Shading Toony");
+                materialEditor.<a id="change">TexturePropertySingleLine(
+                    </a>new GUIContent("Additive Shading Shift", "Shading Shift (R)"),
+                    props[MToon10Prop.ShadingShiftTexture],
+                    props[MToon10Prop.ShadingShiftTextureScale]<a id="change">
+                )</a>;
+            }
+
+            using (new LabelScope("Global Illumination"))
+            {
+                materialEditor.ShaderProperty(props[MToon10Prop.GiEqualizationFactor], "GI Equalization");
+            }
+
+            using (new LabelScope("Emission"))
+            {
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Emission", "Emission (RGB)"),
+                    props[MToon10Prop.EmissiveTexture],
+                    props[MToon10Prop.EmissiveFactor]
+                );
+            }
+
+            using (new LabelScope("Rim Lighting"))
+            {
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Rim Color", "Rim Color (RGB)"),
+                    props[MToon10Prop.RimMultiplyTexture]
+                );
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.RimLightingMixFactor],
+                    new GUIContent("Rim LightingMix")
+                );
+                EditorGUILayout.Space();
+
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Matcap Rim", "Matcap Rim (RGB)"),
+                    props[MToon10Prop.MatcapTexture]
+                );
+                EditorGUILayout.Space();
+
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimColorFactor],
+                    new GUIContent("Parametric Rim Color")
+                );
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimFresnelPowerFactor],
+                    new GUIContent("Parametric Rim Fresnel Power")
+                );
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimLiftFactor],
+                    new GUIContent("Parametric Rim Lift")
+                );
+            }
+
+            using (new LabelScope("Outline"))
+            {
+                PopupEnum&lt;MToon10OutlineMode&gt;("Outline Mode", props[MToon10Prop.OutlineWidthMode], materialEditor);
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Outline Width", "Outline Width (G) [meter]"),
+                    props[MToon10Prop.OutlineWidthMultiplyTexture],
+                    props[MToon10Prop.OutlineWidthFactor]
+                );
+                materialEditor.<a id="change">ShaderProperty(
+                    </a>props[MToon10Prop.OutlineColorFactor],
+                    new GUIContent("Outline Color")<a id="change">
+                )</a>;
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.OutlineLightingMixFactor],
+                    new GUIContent("Outline LightingMix")</code></pre><h3>After Change</h3><pre><code class='java'>
+
+                materialEditor.ShaderProperty(props[MToon10Prop.ShadingToonyFactor], "Shading Toony");
+                materialEditor.ShaderProperty(props[MToon10Prop.ShadingShiftFactor], "Shading Shift");
+                <a id="change">if (isAdvancedEditMode</a><a id="change">)
+                </a>{
+                    materialEditor.<a id="change">TexturePropertySingleLine(
+                        </a>new GUIContent("Additive Shading Shift", "Shading Shift (R)"),
+                        props[MToon10Prop.ShadingShiftTexture],
+                        props[MToon10Prop.ShadingShiftTextureScale]<a id="change">
+                    )</a>;
+                }
+            }
+
+            if (isAdvancedEditMode)
+            {
+                using (new LabelScope("Global Illumination"))
+                {
+                    materialEditor.ShaderProperty(props[MToon10Prop.GiEqualizationFactor], "GI Equalization");
+                }
+            }
+
+            using (new LabelScope("Emission"))
+            {
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Emission", "Emission (RGB)"),
+                    props[MToon10Prop.EmissiveTexture],
+                    props[MToon10Prop.EmissiveFactor]
+                );
+            }
+
+            using (new LabelScope("Rim Lighting"))
+            {
+                materialEditor.TexturePropertySingleLine(
+                    new GUIContent("Rim Color", "Rim Color (RGB)"),
+                    props[MToon10Prop.RimMultiplyTexture]
+                );
+                if (isAdvancedEditMode)
+                {
+                    materialEditor.ShaderProperty(
+                        props[MToon10Prop.RimLightingMixFactor],
+                        new GUIContent("Rim LightingMix")
+                    );
+                    EditorGUILayout.Space();
+
+                    materialEditor.TexturePropertySingleLine(
+                        new GUIContent("Matcap Rim", "Matcap Rim (RGB)"),
+                        props[MToon10Prop.MatcapTexture]
+                    );
+                }
+                EditorGUILayout.Space();
+
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimColorFactor],
+                    new GUIContent("Parametric Rim Color")
+                );
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimFresnelPowerFactor],
+                    new GUIContent("Parametric Rim Fresnel Power")
+                );
+                materialEditor.ShaderProperty(
+                    props[MToon10Prop.ParametricRimLiftFactor],
+                    new GUIContent("Parametric Rim Lift")
+                );
+            }
+
+            using (new LabelScope("Outline"))
+            {
+                PopupEnum&lt;MToon10OutlineMode&gt;("Outline Mode", props[MToon10Prop.OutlineWidthMode], materialEditor);
+                var <a id="change">hasOutline</a> = <a id="change">(MToon10OutlineMode) (int) props[</a>MToon10Prop.OutlineWidthMode<a id="change">]</a>.floatValue != MToon10OutlineMode.None.floatValue != MToon10OutlineMode.None;
+
+                <a id="change">if (hasOutline</a><a id="change">)
+                </a>{
+                    materialEditor.TexturePropertySingleLine(
+                        new GUIContent("Outline Width", "Outline Width (G) [meter]"),
+                        props[MToon10Prop.OutlineWidthMultiplyTexture],
+                        props[MToon10Prop.OutlineWidthFactor]
+                    );
+                    materialEditor.<a id="change">ShaderProperty(
+                        </a>props[MToon10Prop.OutlineColorFactor],
+                        new GUIContent("Outline Color")<a id="change">
+                    )</a>;
+                    if (isAdvancedEditMode)
+                    {
+                        materialEditor.ShaderProperty(</code></pre>

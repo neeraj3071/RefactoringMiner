@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>129b15fbad4d0ff1c8ccdc361f24005db19fbac1,Assets/Scripts/ControlWPFWindow.cs,ControlWPFWindow,SetCameraFOV,#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    private void SetCameraFOV(float fov)
+    {
+        <a id="change">if (frontCameraMouseControl</a><a id="change"> == null)
+        </a>{
+
+
+            frontCameraMouseControl = FrontCamera.GetComponent&lt;CameraMouseControl&gt;();
+            backCameraMouseControl = BackCamera.GetComponent&lt;CameraMouseControl&gt;();
+            <a id="change">freeCameraMouseControl</a> = <a id="change">FreeCamera</a>.<a id="change">GetComponent&lt;CameraMouseControl&gt;()</a>;
+            positionFixedCameraMouseControl = PositionFixedCamera.GetComponent&lt;CameraMouseControl&gt;();
+        }
+        CurrentSettings.CameraFOV = fov;
+        frontCameraMouseControl.SetCameraFOV(fov);
+        backCameraMouseControl.SetCameraFOV(fov);
+        <a id="change">freeCameraMouseControl</a>.<a id="change">SetCameraFOV(</a>fov<a id="change">)</a>;
+        positionFixedCameraMouseControl.SetCameraFOV(fov);
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    {
+        CurrentSettings.CameraFOV = fov;
+        FrontCamera.SetCameraFOV(fov);
+        <a id="change">BackCamera</a>.<a id="change">SetCameraFOV(</a>fov<a id="change">)</a>;
+        FreeCamera.SetCameraFOV(fov);
+        PositionFixedCamera.SetCameraFOV(fov);
+        ControlCamera.fieldOfView = fov;</code></pre>

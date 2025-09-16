@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4c4fb01f087ed1cf20967b25245e9b6e37ca6d2f,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/utilities/Utilities.java,Utilities,findNode,#String#NodeList#,222
+</h3><h3>Before Change</h3><pre><code class='java'>
+                continue;
+            }
+            if (attr.getNamedItem("xml:id").getNodeValue().equals(id)) {
+                org = orgs.<a id="change">item(</a>i<a id="change">)</a>;
+                break;
+            }
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+    public static Element findNode(String attribut, String value, NodeList orgs) {
+        Element org = null;
+        for (int i = orgs.getLength() - 1; i &gt;= 0; i--) {
+            <a id="change">if (</a>orgs.item(i).getNodeType()<a id="change"> == Node.ELEMENT_NODE) </a>{
+                Element element = (Element) orgs.<a id="change">item(</a>i<a id="change">)</a>;
+                if (element.getAttribute(attribut) == null) {
+                    continue;
+                }</code></pre>

@@ -1,0 +1,28 @@
+digraph G {
+subgraph cluster0 {
+1 [label="getTei" a="32" s="9398,9477" l="7,1" shape="box"];
+7 [label="return" a="41" s="9386" l="7" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="getTei" a="32" s="9621,9700" l="7,1" shape="box"];
+3 [label="SimpleName" a="42" s="9605" l="8" shape="ellipse"];
+4 [label="return" a="41" s="9813" l="7" shape="box"];
+5 [label="SimpleName" a="42" s="9562" l="8" shape="ellipse"];
+6 [label="NullLiteral" a="33" s="9573" l="4" shape="ellipse"];
+8 [label="SimpleName" a="42" s="9820" l="8" shape="ellipse"];
+9 [label="SimpleName" a="42" s="9820" l="8" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 7 [label="_para_"];
+1 -> 2 [label="_map_"];
+2 -> 3 [label="_def_"];
+3 -> 9 [label="_ref_"];
+3 -> 9 [label="_ref_"];
+5 -> 9 [label="_ref_"];
+5 -> 9 [label="_ref_"];
+6 -> 5 [label="_def_"];
+9 -> 4 [label="_para_"];
+}

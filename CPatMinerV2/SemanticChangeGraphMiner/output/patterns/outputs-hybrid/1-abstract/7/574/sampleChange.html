@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>dc264987d9845421a5116e0449ff92df8dd2d604,Scripts/Format/Editor/VRMExporterMenu.cs,VRMExporterWizard,OnWizardUpdate,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (string.IsNullOrEmpty(Title))
+            {
+                isValid = false;
+                errorBuilder.<a id="change">Append(</a>"require Title\n"<a id="change">)</a>;
+            }
+
+            if (string.IsNullOrEmpty(Author))</code></pre><h3>After Change</h3><pre><code class='java'>
+            var helpBuilder = new StringBuilder();
+            var errorBuilder = new StringBuilder();
+
+            <a id="change">if (Target == </a>null<a id="change">)
+            </a>{
+                isValid = false;
+                errorBuilder.Append("Require animator. ");
+            }
+            else if (Target.avatar == null)
+            {
+                isValid = false;
+                errorBuilder.<a id="change">Append(</a>"Require animator.avatar. "<a id="change">)</a>;
+            }
+            else if (!Target.avatar.isValid)
+            {</code></pre>

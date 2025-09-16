@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>fa52a80b420a2cfd5e47d981f5c8771f76c9a7a6,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/dao/Document_OrganisationDAO.java,Document_OrganisationDAO,create,#Document_Organisation#,25
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        PreparedStatement statement;
+        try {
+            statement = connect.<a id="change">prepareStatement(</a>SQL_INSERT, Statement.RETURN_GENERATED_KEYS<a id="change">)</a>;
+            for (Organisation org : obj.getOrgs()) {
+                statement.setString(1, obj.getDoc().getDocID());
+                statement.setLong(2, org.getOrganisationId());
+                statement.setString(3, org.getType());
+                int code = statement.executeUpdate();
+                result = true;
+            }
+            statement.<a id="change">close()</a>;
+        } catch (MySQLIntegrityConstraintViolationException e) {
+        }
+        return result;</code></pre><h3>After Change</h3><pre><code class='java'>
+            throw new IllegalArgumentException("No Document nor organisation is already created, the Affiliation ID is not null.");
+        }
+
+        PreparedStatement <a id="change">statement</a> = connect.<a id="change">prepareStatement(</a>SQL_INSERT, Statement.RETURN_GENERATED_KEYS<a id="change">)</a>;
+
+        for (Organisation org : obj.getOrgs()) {
+            try {
+                statement.setString(1, obj.getDoc().getDocID());
+                statement.setLong(2, org.getOrganisationId());
+                statement.setString(3, org.getType());
+                int code = statement.executeUpdate();
+
+                result = true;
+            } catch (MySQLIntegrityConstraintViolationException e) {
+            }
+        }
+        statement.<a id="change">close()</a>;
+
+        return result;
+    }</code></pre>

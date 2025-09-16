@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ac812a14513c9a0f13584ceacf093e24daef6e62,Client/Assets/Scripts/Network/ServerController.cs,ServerController,Awake,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            NetworkServer.RegisterHandler(NetworkHandles.PresentStep, OnPresentStep);
+            NetworkServer.RegisterHandler(NetworkHandles.StopPresentStep, OnStopPresentStep);
+            <a id="change">NetworkServer</a>.<a id="change">RegisterHandler(NetworkHandles.AddInstruction</a>, <a id="change">OnAddInstruction</a><a id="change">)</a>;
+            NetworkServer.<a id="change">RegisterHandler(</a>NetworkHandles.RemoveInstruction, OnRemoveInstruction<a id="change">)</a>;
+            NetworkServer.RegisterHandler(NetworkHandles.UpdateHintTransform, OnUpdateInstruction);
+            NetworkServer.RegisterHandler(NetworkHandles.HelpWanted, OnHelpWanted);
+            NetworkServer.RegisterHandler(NetworkHandles.StepCompleted, OnStepCompleted);</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            NetworkServer.RegisterHandler(NetworkHandles.PresentStep, OnPresentStep);
+            NetworkServer.RegisterHandler(NetworkHandles.UpdateHintTransform, OnUpdateInstruction);
+            NetworkServer.<a id="change">RegisterHandler(</a>NetworkHandles.NeedMoreInstructions, OnNeedMoreInstructions<a id="change">)</a>;
+            NetworkServer.RegisterHandler(NetworkHandles.StepCompleted, OnStepCompleted);
+        }
+</code></pre>

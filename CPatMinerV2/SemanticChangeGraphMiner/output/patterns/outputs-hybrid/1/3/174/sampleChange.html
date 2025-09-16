@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c7be149812fd1d8e2c2833b9612e5e28e327b1ea,Assets/UXF/Examples/3_MultiScene_FootballAndRT/Scripts/Example_MultiSceneExperimentGenerator.cs,Example_MultiSceneExperimentGenerator,AddScenesToBuildIndex,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+			foreach (string newScene in newSceneNames)
+			{
+				if (!scenes.<a id="change">Where(</a>s =&gt; s.enabled<a id="change">)</a>.Select(s =&gt; s.path).Contains(newScene))
+				{
+					scenes.Add(new UnityEditor.EditorBuildSettingsScene(newScene, true));
+				}</code></pre><h3>After Change</h3><pre><code class='java'>
+			foreach (var newScene in newSceneNames)
+			{
+				var newSceneAdded = scenes
+					.<a id="change">Where(</a>s =&gt; s.path == newScene<a id="change">)</a>;
+
+				if (newSceneAdded.Count() == 0)
+				{</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>048e3198648c0c21608c4747257a895a92a17cbd,Assets/Scripts/Common/Containers/SlamPointsContainer.cs,SlamPointsContainer,Remove,#IEnumerable#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            foreach (var pt in points)
+                _points.Remove(pt.Id);
+            <a id="change">ItemsRemoved</a>?.Invoke(this, points.<a id="change">Select(</a>p =&gt; p.Id<a id="change">)</a>);
+        }
+        
+        public void Clear()</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            foreach (var pt in points)
+                _points.Remove(pt.Id);
+            <a id="change">OnRemoved</a>?.Invoke(this, new RemovedEventArgs(points.<a id="change">Select(</a>p =&gt; p.Id<a id="change">)</a>));
+        }
+        
+        public void Clear()</code></pre>

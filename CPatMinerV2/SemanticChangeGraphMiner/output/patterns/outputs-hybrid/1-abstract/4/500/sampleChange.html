@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>99a2461859ef3e6f09e14fec63c66188203f820e,Assets/Scripts/STB/StbSections.cs,StbSecBarArrangement,Load,#XElement#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            // Main total
+            if (stbBarElem.Attribute("count_main_total") != null)
+                BarList.Add((int)stbBarElem.<a id="change">Attribute("count_main_total"</a><a id="change">)</a>);
+            else
+                BarList.Add(0);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            // Main2
+            if (stbBarElem.Attribute("count_main_top_2nd") != null)
+                BarList.Add((int)stbBarElem.<a id="change">Attribute("count_main_top_2nd"</a><a id="change">)</a>);
+            else
+                BarList.Add(0);
+            if (stbBarElem.Attribute("count_main_bottom_2nd") != null)</code></pre>

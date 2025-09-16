@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>494fb5f668cf96e8b2167c6b19ce0bb4d3c23c86,anhalytics-kb/src/main/java/fr/inria/anhalytics/dao/PersonDAO.java,PersonDAO,findPerson,#number#,241
+</h3><h3>Before Change</h3><pre><code class='java'>
+                        rs.getString("pn.fullname"),
+                        rs.getString("pn.forename"),
+                        rs.getString("pn.middlename"),
+                        rs.<a id="change">getString(</a>"pn.surname"<a id="change">)</a>,
+                        rs.getString("p.url"),
+                        rs.getString("p.email"),
+                        rs.getString("p.phone"),
+                        new ArrayList&lt;Person_Identifier&gt;(),
+                        Utilities.<a id="change">parseStringDate(</a>rs.getString("pn.publication_date")<a id="change">)</a>
+                );
+            } catch (ParseException ex) {
+                Logger.getLogger(PersonDAO.class.getName()).log(Level.SEVERE, null, ex);
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+            ResultSet rs1 = preparedStatement1.executeQuery();
+            while (rs1.next()) {
+                try {
+                    person_names.add(<a id="change">new Person_Name(</a>rs1.getLong("pn.person_nameID"), id, rs1.getString("pn.fullname"), rs1.getString("pn.forename"), rs1.getString("pn.middlename"), rs1.<a id="change">getString(</a>"pn.surname"<a id="change">)</a>, rs1.getString("pn.title"), Utilities.<a id="change">parseStringDate(</a>rs1.getString("pn.publication_date")<a id="change">))</a>);
+                } catch (ParseException ex) {
+                    Logger.getLogger(PersonDAO.class.getName()).log(Level.SEVERE, null, ex);
+                }</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ee6a4510818ae1e25b5f68156545ae14b2ab0535,Scripts/Services/NaturalLanguageUnderstanding/v1/NaturalLanguageUnderstanding.cs,NaturalLanguageUnderstanding,NaturalLanguageUnderstanding,#Credentials#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        #region Constructor
+        public NaturalLanguageUnderstanding(Credentials credentials)
+        {
+            if (credentials.HasCredentials() || credentials.<a id="change">HasWatsonAuthenticationToken()</a>)
+            {
+                Credentials = credentials;
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+        #region Constructor
+        public NaturalLanguageUnderstanding(Credentials credentials)
+        {
+            if (credentials.HasCredentials() || credentials.<a id="change">HasWatsonAuthenticationToken()</a> || <a id="change">credentials</a>.<a id="change">HasIamTokenData()</a>)
+            {
+                Credentials = credentials;
+            }</code></pre>

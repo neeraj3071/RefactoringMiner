@@ -1,0 +1,15 @@
+digraph G {
+subgraph cluster0 {
+1 [label="StopRecording" a="32" s="5614" l="15" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="StopRecording" a="32" s="5662" l="15" shape="box"];
+3 [label="StartCoroutine" a="32" s="5647,5677" l="15,1" shape="box"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+2 -> 3 [label="_para_"];
+}

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>5fe071bbb6b296357b80ac8a11ecc699688e3e5e,Assets/SteamVR_Unity_Toolkit/Scripts/VRTK_TouchpadWalking.cs,VRTK_TouchpadWalking,InitListeners,#Uint#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    IEnumerator InitListeners(uint trackedControllerIndex, bool trackedControllerConnectedState)
+    {
+        trackedController = DeviceFinder.<a id="change">ControllerByIndex(</a>trackedControllerIndex<a id="change">)</a>;
+        var tries = 0f;
+        while (!trackedController && tries &lt; DeviceFinder.initTries)
+        {</code></pre><h3>After Change</h3><pre><code class='java'>
+
+    IEnumerator InitListeners(uint trackedControllerIndex, bool trackedControllerConnectedState)
+    {
+        var trackedController = DeviceFinder.<a id="change">ControllerByIndex(</a>trackedControllerIndex<a id="change">)</a>;
+        var tries = 0f;
+        while (!trackedController && tries &lt; DeviceFinder.initTries)
+        {</code></pre>

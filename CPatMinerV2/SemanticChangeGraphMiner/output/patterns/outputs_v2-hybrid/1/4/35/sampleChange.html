@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c403f5c3437d92726925b45b2b43b23d02469761,anhalytics-kb/src/main/java/fr/inria/anhalytics/dao/DocumentDAO.java,DocumentDAO,getDocumentsByAuthorId,#number#,138
+</h3><h3>Before Change</h3><pre><code class='java'>
+    public List&lt;Document&gt; getDocumentsByAuthorId(Long personId) {
+        List&lt;Document&gt; docs = new ArrayList&lt;Document&gt;();
+        try {
+            PreparedStatement <a id="change">ps</a> = this.connect.<a id="change">prepareStatement(</a>READ_QUERY_DOCID_BY_AUTHORS<a id="change">)</a>;
+            ps.setFetchSize(Integer.MIN_VALUE);
+            ps.setLong(1, personId);
+            // process the results
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                docs.add(find(rs.getString("docID")));
+            }
+            ps.<a id="change">close()</a>;
+        } catch (SQLException ex) {
+            logger.error(ex.getMessage());
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+        List&lt;Document&gt; docs = new ArrayList&lt;Document&gt;();
+        PreparedStatement ps = null;
+        try {
+            ps = this.connect.<a id="change">prepareStatement(</a>READ_QUERY_DOCID_BY_AUTHORS<a id="change">)</a>;
+            //ps.setFetchSize(Integer.MIN_VALUE);
+            ps.setLong(1, personId);
+            // process the results</code></pre>

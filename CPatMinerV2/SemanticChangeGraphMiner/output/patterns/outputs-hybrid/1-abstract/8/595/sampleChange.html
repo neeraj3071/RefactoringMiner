@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>49cf2adbf5b71f7fa58bc2230814061fec342b2f,Packages/com.unity.inputsystem/InputSystem/Controls/InputControl.cs,InputControl,GetStatePtrFromStateEvent,#InputEventPtr#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                throw new ArgumentException("Event must be a state or delta state event", "eventPtr");
+
+            ////TODO: support delta events
+            if (eventPtr.<a id="change">IsA&lt;DeltaStateEvent&gt;()</a>)
+                throw new NotImplementedException("Read control value from delta state events");
+
+            var stateEvent = StateEvent.From(eventPtr);</code></pre><h3>After Change</h3><pre><code class='java'>
+            FourCC stateFormat;
+            uint stateSizeInBytes;
+            IntPtr statePtr;
+            <a id="change">if (</a>eventPtr.<a id="change">IsA&lt;DeltaStateEvent&gt;()</a><a id="change">)
+            </a>{
+                var deltaEvent = <a id="change">DeltaStateEvent</a>.<a id="change">From(eventPtr</a><a id="change">)</a>;
+
+                // If it's a delta event, we need to subtract the delta state offset if it's not set to the root of the device
+                stateOffset = deltaEvent-&gt;stateOffset;
+                stateFormat = deltaEvent-&gt;stateFormat;
+                stateSizeInBytes = deltaEvent-&gt;deltaStateSizeInBytes;
+                <a id="change">statePtr</a> = <a id="change">deltaEvent-&gt;deltaState</a>;
+            }
+            else if (eventPtr.IsA&lt;StateEvent&gt;())
+            {</code></pre>

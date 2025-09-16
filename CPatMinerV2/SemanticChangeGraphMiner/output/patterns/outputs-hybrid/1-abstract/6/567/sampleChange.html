@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>20279a617369e9296188afc13cd77f39b7e440b2,Assets/Palace of Orinthalian/Standard Assets/Image Effects (Pro Only)/BlurEffect.cs,BlurEffect,OnRenderImage,#RenderTexture#RenderTexture#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			oddEven = !oddEven;
+		}
+		if( oddEven )
+			Graphics.<a id="change">Blit(</a>buffer, destination<a id="change">)</a>;
+		else
+			<a id="change">Graphics</a>.<a id="change">Blit(</a>buffer2, destination<a id="change">)</a>;
+		
+		RenderTexture.ReleaseTemporary(buffer);
+		RenderTexture.ReleaseTemporary(buffer2);</code></pre><h3>After Change</h3><pre><code class='java'>
+                RenderTexture buffer2 = RenderTexture.GetTemporary(rtW, rtH, 0);
+                FourTapCone (buffer, buffer2, i);
+                RenderTexture.ReleaseTemporary(buffer);
+                <a id="change">buffer</a> = buffer2;
+            }
+            Graphics.<a id="change">Blit(</a>buffer, destination<a id="change">)</a>;
+
+            RenderTexture.ReleaseTemporary(buffer);
+        }</code></pre>

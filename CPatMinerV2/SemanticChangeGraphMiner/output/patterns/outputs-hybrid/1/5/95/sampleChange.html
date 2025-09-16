@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>fb440fb0704b2916a94590e522a5d35387c5906d,Assets/Demo/GamepadDebugUI.cs,GamepadDebugUI,OnGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        GUILayout.Label($"B Button: {gamepad.bButton.value}");
+        GUILayout.Label($"X Button: {gamepad.xButton.value}");
+        GUILayout.Label($"Y Button: {gamepad.yButton.value}");
+        GUILayout.<a id="change">Label($</a>"Left Shoulder Button: {gamepad.leftShoulder.value}"<a id="change">)</a>;
+        GUILayout.Label($"Right Shoulder Button: {gamepad.rightShoulder.value}");
+    }
+}</code></pre><h3>After Change</h3><pre><code class='java'>
+        GUILayout.Label($"Left Stick: {gamepad.leftStick.value}");
+        GUILayout.Label($"Right Stick: {gamepad.rightStick.value}");
+        GUILayout.Label($"Left Trigger: {gamepad.leftTrigger.value}");
+        GUILayout.<a id="change">Label($</a>"Right Trigger: {gamepad.rightTrigger.value}"<a id="change">)</a>;
+        GUILayout.Label($"A Button: {gamepad.aButton.value}");
+        GUILayout.Label($"B Button: {gamepad.bButton.value}");
+        GUILayout.Label($"X Button: {gamepad.xButton.value}");
+        GUILayout.Label($"Y Button: {gamepad.yButton.value}");
+        GUILayout.Label($"Dpad Up: {gamepad.dpad.up.value}");
+        <a id="change">GUILayout</a>.<a id="change">Label($"Dpad Down: {gamepad.dpad.down.value}"</a><a id="change">)</a>;
+        GUILayout.Label($"Dpad Left: {gamepad.dpad.left.value}");
+        GUILayout.Label($"Dpad Right: {gamepad.dpad.right.value}");
+        GUILayout.Label($"Left Shoulder: {gamepad.leftShoulder.value}");</code></pre>

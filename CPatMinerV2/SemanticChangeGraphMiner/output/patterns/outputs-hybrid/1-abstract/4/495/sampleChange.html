@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>950289ea77b6f0db839b0420674a4e348cb68c85,Scripts/Utilities/IntersectionUtils.cs,IntersectionUtils,TestEdges,#MeshCollider#Transform#IntersectionTester#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+					if (OnSegment(A, C, B)
+						|| OnSegment(A, D, B)
+						|| OnSegment(C, A, D)
+						|| <a id="change">OnSegment(</a>C, B, D<a id="change">)</a>)
+					{
+						return true;
+					}</code></pre><h3>After Change</h3><pre><code class='java'>
+					var C = start;
+					var D = end;
+					var a = OnSegment(C, A, D);
+					var <a id="change">b</a> = <a id="change">OnSegment(</a>C, B, D<a id="change">)</a>;
+					var c = OnSegment(A, C, B);
+					var d = OnSegment(A, D, B);
+					if (a || b || c || d)
+					{
+						if (!a && !<a id="change">b</a> && c && d) // Tester is fully contained
+						{
+							collisionPoint = testerTransform.position;
+						}</code></pre>

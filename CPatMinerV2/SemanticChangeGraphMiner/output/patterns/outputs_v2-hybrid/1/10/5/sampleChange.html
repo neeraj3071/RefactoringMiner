@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b9eace0d2411c284449be618821c8596edb6b982,anhalytics-kb/src/main/java/fr/inria/anhalytics/kb/datamine/KnowledgeBaseFeeder.java,KnowledgeBaseFeeder,initKnowledgeBase,#,61
+</h3><h3>Before Change</h3><pre><code class='java'>
+        PublicationDAO pd = (PublicationDAO) adf.getPublicationDAO();
+        DocumentDAO dd = (DocumentDAO) adf.getDocumentDAO();
+
+        if (mm.<a id="change">initObjects(</a>null<a id="change">)</a>) {
+            while (mm.hasMore()) {
+                BiblioObject biblioObject = mm.nextBiblioObject();
+                if (!KbProperties.isReset() && biblioObject.getIsMined()) {</code></pre><h3>After Change</h3><pre><code class='java'>
+        DocumentDAO dd = (DocumentDAO) adf.getDocumentDAO();
+
+        boolean initResult;
+        <a id="change">if (KbProperties</a>.<a id="change">isReset()</a><a id="change">) </a>{
+            initResult = mm.<a id="change">initObjects(</a>null<a id="change">)</a>;
+        } else {
+            initResult = <a id="change">mm</a>.<a id="change">initObjects(null</a>, <a id="change">MongoFileManager.ONLY_NOT_MINED_INIT_KB_PROCESS</a><a id="change">)</a>;
+        }
+
+        if (initResult) {</code></pre>

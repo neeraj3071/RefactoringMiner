@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>494fb5f668cf96e8b2167c6b19ce0bb4d3c23c86,anhalytics-kb/src/main/java/fr/inria/anhalytics/dao/PersonDAO.java,PersonDAO,create,#Person#,114
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            statement1 = connect.prepareStatement(SQL_INSERT_PERSON_NAME);
+            statement1.setLong(1, obj.getPersonId());
+            statement1.<a id="change">setString(</a>2, obj.getFullname()<a id="change">)</a>;
+            statement1.setString(3, obj.getForename());
+            statement1.setString(4, obj.getMiddlename());
+            statement1.setString(5, obj.getSurname());
+            statement1.<a id="change">setString(</a>6, obj.getTitle()<a id="change">)</a>;
+            if (obj.getPublication_date() == null) {
+                statement1.setDate(7, new java.sql.Date(00000000L));
+            } else {</code></pre><h3>After Change</h3><pre><code class='java'>
+            statement.close();
+
+            statement1 = connect.prepareStatement(SQL_INSERT_PERSON_NAME);
+            <a id="change">for (</a>Person_Name pn : obj.getPerson_names()<a id="change">) </a>{
+                statement1.setLong(1, obj.getPersonId());
+                statement1.<a id="change">setString(</a>2, pn.getFullname()<a id="change">)</a>;
+                statement1.setString(3, pn.getForename());
+                statement1.setString(4, pn.getMiddlename());
+                statement1.setString(5, pn.getSurname());
+                statement1.<a id="change">setString(</a>6, pn.getTitle()<a id="change">)</a>;
+                if (pn.getPublication_date() == null) {
+                    statement1.setDate(7, new java.sql.Date(00000000L));
+                } else {</code></pre>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>bff6c7f389493a74f5013f55a9c7d93a4b772cdf,Assets/Scripts/Building/DrawController.cs,DrawController,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        }
+        if (dragging) {
+            RaycastHit mouseInfo;
+            if (<a id="change">Physics</a>.<a id="change">Raycast(</a>mouse3D, Camera.main.transform.forward, out <a id="change">mouseInfo</a>, Mathf.Infinity, groundLayerMask<a id="change">)</a>) {
+                dragPointScreen = mouse2D;
+                <a id="change">dragPointWorld</a> = <a id="change">mouseInfo.point</a>;
+            }
+            switch (tool) {
+                case Tools.Drawing:</code></pre><h3>After Change</h3><pre><code class='java'>
+            var dragPointScreen = Vector3.zero;
+            var dragPointWorld = Vector3.zero;
+            dragPointScreen = mouse2D;
+            dragPointWorld = <a id="change">raycast(</a>mouse3D, Camera.main.transform.forward, Mathf.Infinity, groundLayerMask<a id="change">)</a>;
+            var dragOffsetScreen = anchorPointScreen - dragPointScreen;
+            var dragOffsetWorld = anchorPointWorld - dragPointWorld;
+            var frameOffsetScreen = dragPointScreen - lastDragPointScreen;</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>29c6450df53eccf5efbf2502581e6ce9a1871b7f,Packages/com.unity.inputsystem/InputSystem/Controls/InputControlLayout.cs,InputControlLayout,MergeLayout,#InputControlLayout#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                // and had to be merged so the rest we can just slurp into the list as is.
+                if (!layoutIsTargetingSpecificVariants)
+                {
+                    controls.<a id="change">AddRange(</a>baseControlTable.Values<a id="change">)</a>;
+                }
+                else
+                {</code></pre><h3>After Change</h3><pre><code class='java'>
+                if (!layoutIsTargetingSpecificVariants)
+                {
+                    var indexStart = controls.Count;
+                    controls.<a id="change">AddRange(</a>baseControlTable.Values<a id="change">)</a>;
+
+                    // Mark the controls as being inherited.
+                    for (var i = indexStart; i &lt; controls.Count; ++i)</code></pre>

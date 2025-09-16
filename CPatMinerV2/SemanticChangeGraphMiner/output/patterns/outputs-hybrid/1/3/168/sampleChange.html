@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c8a066d799c66597fb4dc839127b99ff5d38d294,Assets/HoloToolkit/Input/Scripts/Microphone/DictationInputManager.cs,DictationInputManager,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                recordingStarted = false;
+
+                // If the microphone stops as a result of timing out, make sure to manually stop the dictation recognizer.
+                <a id="change">StopRecording()</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+                recordingStarted = false;
+
+                // If the microphone stops as a result of timing out, make sure to manually stop the dictation recognizer.
+                <a id="change">StartCoroutine(</a><a id="change">StopRecording())</a>;
+            }
+
+            if (!hasFailed && dictationRecognizer.Status == SpeechSystemStatus.Failed)</code></pre>

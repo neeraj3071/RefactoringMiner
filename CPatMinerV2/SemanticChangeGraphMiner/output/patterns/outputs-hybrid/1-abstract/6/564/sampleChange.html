@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0f491b770a219a48f0bcc5dc27ddbd2dc40d9f66,Assets/MyScripts/Logging/DAL/SQLite/CubeArenaMeasurementsSQLiteDb.cs,CubeArenaMeasurementsSQLiteDb,Insert,#T#Type#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (type == null) {
+                entity.Id = conn.Insert (entity);
+            } else {
+                entity.Id = conn.<a id="change">Insert (</a>entity, type<a id="change">)</a>;
+            }
+            return entity;
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        private T InsertOrUpdate&lt;T&gt; (T entity, Type type = null) where T : BaseEntity {
+            if (entity.Id == default (int)) {
+                <a id="change">if (type == </a><a id="change">null</a><a id="change">) </a>{
+                    conn.Insert (entity);
+                } else {
+                    conn.<a id="change">Insert (</a>entity, type<a id="change">)</a>;
+                }
+            } else {
+                if (type == null) {</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>dd34a1e61504c5c0376e4792795ed1d41a1b4965,Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToExpression.cs,LookAtEyeDirectionApplicableToExpression,Apply,#LookAtEyeDirection#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            {
+                // Left
+                yield return new KeyValuePair&lt;ExpressionKey, float&gt;(_lookRightKey, 0);
+                <a id="change">yield return </a><a id="change">new KeyValuePair&lt;ExpressionKey, float&gt;(_lookLeftKey</a>, Mathf.<a id="change">Clamp(</a>_horizontalOuter.Map(Mathf.Abs(yaw)), 0, 1.0f<a id="change">))</a>;
+            }
+            else
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                // Left
+                actualWeights[_lookRightKey] = 0;
+                actualWeights[_lookLeftKey] = Mathf.<a id="change">Clamp(</a>_horizontalOuter.Map(Mathf.Abs(yaw)), 0, 1.0f<a id="change">)</a>;
+            }
+            else
+            {</code></pre>

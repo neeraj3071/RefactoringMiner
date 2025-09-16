@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6ad442f9c430d92ea86e385ed4d2f33dbf72f532,Assets/Scripts/PlaneManager.cs,PlaneManager,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                   new Vector3(Random.Range(4f, 6f), 1f, Random.Range(4f, 6f)));
+
+                ServerAddPlane("table",
+                   new Vector3(Random.Range(1f, 4f), Random.Range(-1f, 2f), Random.<a id="change">Range(</a>1f, <a id="change">4f</a><a id="change">)</a>),
+                   Random.Range(0f, 360f),
+                   new Vector3(Random.Range(3f, 1f), 1f, Random.Range(3f, 1f)));
+</code></pre><h3>After Change</h3><pre><code class='java'>
+                ServerAddPlane("floor",
+                   new Vector3(Random.Range(-2f, 2f), -2f, Random.Range(-2f, 2f)),
+                   Random.Range(0f, 360f),
+                   new Vector3(Random.Range(4f, 1f), 1f, Random.<a id="change">Range(4f</a>, 1f<a id="change">)</a>));
+
+                ServerAddPlane("table",
+                   new Vector3(Random.Range(1f, 2f), Random.Range(-1f, 1f), Random.Range(1f, 2f)),</code></pre>

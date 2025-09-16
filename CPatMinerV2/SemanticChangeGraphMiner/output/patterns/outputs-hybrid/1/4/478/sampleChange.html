@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7dcb59751bd8f92979b27288ad5819393057d58b,Assets/Watson/Widgets/Avatar/GlassRingManager.cs,GlassRingManager,ChangedBehavior,#Color#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (m_GlassRingMaterial != null)
+            {
+                if (m_ColorAnimationOnGlass != null)
+                    LeanTween.<a id="change">cancel(</a>m_ColorAnimationOnGlass.uniqueId<a id="change">)</a>;
+
+                if (m_ColorAnimationOnGlassLoop != null)
+                    LeanTween.cancel(m_ColorAnimationOnGlassLoop.uniqueId);</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                if (m_ColorAnimationOnGlass != null)
+                {
+                    <a id="change">m_ColorAnimationOnGlass</a>.onComplete = <a id="change">null</a>;
+                    LeanTween.<a id="change">cancel(</a>m_ColorAnimationOnGlass.uniqueId<a id="change">)</a>;
+                    m_ColorAnimationOnGlass = null;
+                }
+                   </code></pre>

@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>bc191dc720271566e64c7f1eb7d61add1ca66ac1,Packages/com.unity.inputsystem/InputSystem/Editor/InputActionCodeGenerator.cs,InputActionCodeGenerator,GenerateWrapperCode,#IEnumerable#IEnumerable#Options#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            ////REVIEW: DuplicateActionsAndBindings?
+            // DuplicateAndSwitchAsset method.
+            writer.<a id="change">WriteLine("public void DuplicateAndSwitchAsset()"</a><a id="change">)</a>;
+            writer.BeginBlock();
+            writer.WriteLine("SwitchAsset(ScriptableObject.Instantiate(asset));");
+            writer.EndBlock();</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                var mapName = CSharpCodeHelpers.MakeIdentifier(map.name);
+
+                <a id="change">if (options</a><a id="change">.generateInterfaces)
+                </a>{
+                    var mapTypeName = CSharpCodeHelpers.MakeTypeName(map.name, "Actions");
+                    writer.WriteLine(string.Format("if (m_{0}CallbackInterface != null)", mapTypeName));
+                    writer.BeginBlock();
+                    writer.WriteLine(string.Format("{0}.SetCallbacks(null);", mapName));
+                    writer.EndBlock();
+                }
+
+                writer.WriteLine(string.Format("m_{0} = null;", mapName));
+
+                foreach (var action in map.actions)
+                {
+                    var actionName = CSharpCodeHelpers.MakeIdentifier(action.name);
+                    writer.WriteLine(string.Format("m_{0}_{1} = null;", mapName, actionName));
+
+                    if (options.generateEvents)
+                    {
+                        WriteActionEventInitializer(mapName, actionName, InputActionPhase.Started, writer, removeCallback: true);
+                        WriteActionEventInitializer(mapName, actionName, InputActionPhase.Performed, writer, removeCallback: true);
+                        WriteActionEventInitializer(mapName, actionName, InputActionPhase.Cancelled, writer, removeCallback: true);
+                    }
+                }
+            }
+            writer.WriteLine("m_Initialized = false;");
+            writer.EndBlock();
+
+            // SwitchAsset method.
+            writer.<a id="change">WriteLine("public void SetAsset(InputActionAsset newAsset)"</a><a id="change">)</a>;
+            writer.BeginBlock();
+            writer.WriteLine("if (newAsset == asset) return;");
+            if (<a id="change">options.generateInterfaces</a>)
+            {
+                )
+            {
+                foreach (var map in maps<a id="change">)
+                </a>{
+                    var mapName = CSharpCodeHelpers.MakeIdentifier(map.name);
+                    var mapTypeName = CSharpCodeHelpers.MakeTypeName(map.name, "Actions");
+                    writer.WriteLine(string.Format("var {0}Callbacks = m_{1}CallbackInterface;", mapName, mapTypeName));
+                }
+            }
+            writer.WriteLine("if (m_Initialized) Uninitialize();");
+            writer.WriteLine("asset = newAsset;");
+            <a id="change">if (options.generateInterfaces</a><a id="change">)
+            </a>{
+                foreach (var map in maps)
+                {
+                    var mapName = CSharpCodeHelpers.MakeIdentifier(map.name);
+                    <a id="change">writer</a>.<a id="change">WriteLine(string</a>.<a id="change">Format("{0}.SetCallbacks({0}Callbacks);"</a>, <a id="change">mapName</a><a id="change">)</a><a id="change">)</a>;
+                }
+            }
+            writer.EndBlock();</code></pre>

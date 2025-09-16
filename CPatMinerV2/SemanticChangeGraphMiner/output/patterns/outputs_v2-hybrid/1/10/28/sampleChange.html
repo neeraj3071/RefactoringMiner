@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4c3152cc8e9adb2c3d265180327b09de9ac57558,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/managers/MongoManager.java,MongoManager,getAnnotation,#String#String#,238
+</h3><h3>Before Change</h3><pre><code class='java'>
+    }
+
+    public String getAnnotation(String filename, String id) {
+        <a id="change">if (collection</a><a id="change"> == null) </a>{
+            collection = db.getCollection("annotations");
+            <a id="change">collection</a>.<a id="change">ensureIndex(</a>new BasicDBObject("filename", 1)<a id="change">)</a>;
+            <a id="change">collection</a>.<a id="change">ensureIndex(</a>new BasicDBObject("xml:id", 1)<a id="change">)</a>;
+        }
+        String result = null;
+        BasicDBObject query = new BasicDBObject("filename", filename);</code></pre><h3>After Change</h3><pre><code class='java'>
+    public String getAnnotation(String filename, String id) {
+        DBCollection c = null;
+        c = db.getCollection("annotations");
+        <a id="change">c</a>.<a id="change">ensureIndex(</a>new BasicDBObject("filename", 1)<a id="change">)</a>;
+        <a id="change">c</a>.<a id="change">ensureIndex(</a>new BasicDBObject("xml:id", 1)<a id="change">)</a>;
+        
+        String result = null;
+        BasicDBObject query = new BasicDBObject("filename", filename);</code></pre>

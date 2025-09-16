@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c81db2aa4bd14c2081a90dc74669ffc91f4ed94c,Assets/Scripts/Livings/PlayerController.cs,PlayerController,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				rigidBody.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (dir), turnSpeed * Time.deltaTime);
+				rigidBody.velocity = transform.forward * speed;
+                //_animator.SetTrigger("Running");;//Animation de course
+                _animator.<a id="change">SetFloat(</a>"Speed", Input.GetAxis("Vertical") * Time.deltaTime * speed<a id="change">)</a>;
+            }
+            else
+			{</code></pre><h3>After Change</h3><pre><code class='java'>
+                rigidBody.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), turnSpeed * Time.deltaTime);
+                rigidBody.velocity = transform.forward * speed;
+                //_animator.SetTrigger("Running");;//Animation de course
+                <a id="change">if(</a>Input.GetAxis("Horizontal")<a id="change"> != </a>0<a id="change">)
+                </a>{
+                    _animator.<a id="change">SetFloat(</a>"Speed", /*Input.GetAxis("Horizontal")* */Time.deltaTime * speed<a id="change">)</a>;
+                }
+
+                if (Input.GetAxis("Vertical") != 0)</code></pre>

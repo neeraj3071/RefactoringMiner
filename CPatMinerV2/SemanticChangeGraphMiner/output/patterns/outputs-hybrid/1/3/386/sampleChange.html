@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4f4f7bbab42e259db97737e9a6c0274d5d58dcf6,TheGame/Assets/Scripts/Player/PlayerTeleport.cs,PlayerTeleport,FixedUpdate,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            teleporter.GetComponent&lt;Renderer&gt;().material.SetColor("_EmissionColor", new Color(0, 66 / 255f, 113 / 255f));
+            if (!teleporter.particles.isPlaying) teleporter.particles.Play();
+
+            if (Input.<a id="change">GetKey(</a>KeyCode.T<a id="change">)</a>)
+            {
+                teleportTo = teleporter.transform;
+                teleporter.GetComponent&lt;AudioSource&gt;().Play();</code></pre><h3>After Change</h3><pre><code class='java'>
+            teleporter.GetComponent&lt;Renderer&gt;().material.SetColor("_EmissionColor", new Color(0, 66 / 255f, 113 / 255f));
+            if (!teleporter.particles.isPlaying) teleporter.particles.Play();
+
+            if (Input.<a id="change">GetKey(</a>KeyCode.T<a id="change">)</a> || (Input.GetAxis("Axis9") &gt; 0 && axis9 == 0))
+            {
+                teleportTo = teleporter.transform;
+                teleporter.GetComponent&lt;AudioSource&gt;().Play();</code></pre>

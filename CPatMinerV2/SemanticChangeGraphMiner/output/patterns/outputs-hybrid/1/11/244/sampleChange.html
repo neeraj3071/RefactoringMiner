@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>19f2cb5ae21e187c70c911109e71f95bf683dccf,Scripts/Tracking/CollisionTracker.cs,CollisionTracker,OnTriggerExit,#Collider#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        protected virtual void OnTriggerExit(Collider collider)
+        {
+            <a id="change">if (emittedTypes</a>.<a id="change">HasFlag(CollisionTypes.Trigger</a><a id="change">)</a><a id="change">)
+            </a>{
+                <a id="change">CollisionStopped</a><a id="change">?.</a><a id="change">Invoke(</a>eventData.<a id="change">Set(</a>true, null, collider<a id="change">))</a>;
+            }
+        }
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        protected virtual void OnTriggerExit(Collider collider)
+        {
+            OnCollisionStopped(eventData.<a id="change">Set(this</a>, true, null, collider<a id="change">)</a>);
+        }
+    }
+}</code></pre>

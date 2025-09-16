@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1ab54ec3abdc0e0e302a2cfcd292283e9a4b7f58,Packages/com.unity.inputsystem/InputSystem/Actions/Composites/Vector2Composite.cs,Vector2Composite,ReadValue,#InputBindingCompositeContext#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            var upValue = context.ReadValue&lt;float&gt;(up);
+            var downValue = context.ReadValue&lt;float&gt;(down);
+            var leftValue = context.ReadValue&lt;float&gt;(left);
+            var <a id="change">rightValue</a> = context.<a id="change">ReadValue&lt;float&gt;(</a>right<a id="change">)</a>;
+
+            ////REVIEW: should this respect press points?
+
+            var upIsPressed = upValue &gt; 0;
+            var downIsPressed = downValue &gt; 0;
+            var leftIsPressed = leftValue &gt; 0;
+            var rightIsPressed = <a id="change">rightValue</a><a id="change"> &gt; 0</a>;
+
+            return DpadControl.MakeDpadVector(upIsPressed, downIsPressed, leftIsPressed, rightIsPressed, normalize);
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            var upIsPressed = context.ReadValueAsButton(up);
+            var downIsPressed = context.ReadValueAsButton(down);
+            var leftIsPressed = context.ReadValueAsButton(left);
+            var rightIsPressed = context.<a id="change">ReadValueAsButton(</a>right<a id="change">)</a>;
+
+            return DpadControl.MakeDpadVector(upIsPressed, downIsPressed, leftIsPressed, rightIsPressed, normalize);
+        }</code></pre>

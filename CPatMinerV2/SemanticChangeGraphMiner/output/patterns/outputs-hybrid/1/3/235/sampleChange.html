@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8141f668371e890680c8c0ded7b1bea5ef4744d5,Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs,UserTests,Users_CanAssignControlScheme_AndAutomaticallyAssignMatchingUnusedDevices,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        user3.AssignInputDevice(keyboard); // Should not be affected by any of what we do here.
+
+        user1.AssignControlScheme(singleGamepadScheme, assignMatchingUnusedDevices: true);
+        user2.<a id="change">AssignControlScheme(</a>dualGamepadScheme, <a id="change">assignMatchingUnusedDevices</a><a id="change">: true)</a>;
+
+        Assert.That(user1.GetAssignedInputDevices(), Is.EquivalentTo(new[] { gamepad1 }));
+        Assert.That(user2.GetAssignedInputDevices(), Is.EquivalentTo(new[] { gamepad2, gamepad3 }));</code></pre><h3>After Change</h3><pre><code class='java'>
+        user3.AssignInputDevice(keyboard); // Should not be affected by any of what we do here.
+
+        user1.AssignControlScheme(singleGamepadScheme).AndAssignMatchingDevices();
+        user2.<a id="change">AssignControlScheme(</a>dualGamepadScheme<a id="change">)</a>.AndAssignMatchingDevices();
+
+        Assert.That(user1.GetAssignedInputDevices(), Is.EquivalentTo(new[] { gamepad1 }));
+        Assert.That(user2.GetAssignedInputDevices(), Is.EquivalentTo(new[] { gamepad2, gamepad3 }));</code></pre>

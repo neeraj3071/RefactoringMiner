@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>37019d445be3e4a120c4aa9a818e8d9cad22fc6f,anhalytics-kb/src/main/java/fr/inria/anhalytics/kb/dao/anhalytics/OrganisationDAO.java,OrganisationDAO,update,#Organisation#,141
+</h3><h3>Before Change</h3><pre><code class='java'>
+            PreparedStatement statement2;
+            for (PART_OF rel : obj.getRels()) {
+
+                statement2 = connect.<a id="change">prepareStatement(</a>SQL_INSERT_MOTHERS<a id="change">)</a>;
+                statement2.<a id="change">setFetchSize(</a>Integer.MIN_VALUE<a id="change">)</a>;
+                statement2.setLong(1, rel.getOrganisation_mother().getOrganisationId());
+                statement2.setLong(2, obj.getOrganisationId());
+                if (rel.getBeginDate() == null) {</code></pre><h3>After Change</h3><pre><code class='java'>
+        PreparedStatement preparedStatement = this.connect.prepareStatement(UPDATE_ORGANISATION);
+        PreparedStatement statement1 = connect.prepareStatement(SQL_INSERT_NAMES);
+        statement1.setFetchSize(Integer.MIN_VALUE);
+        PreparedStatement <a id="change">statement2</a> = connect.<a id="change">prepareStatement(</a>SQL_INSERT_MOTHERS<a id="change">)</a>;
+
+        statement2.<a id="change">setFetchSize(</a>Integer.MIN_VALUE<a id="change">)</a>;
+        PreparedStatement statement3 = connect.prepareStatement(SQL_UPDATE_END_DATE);
+        statement3.setFetchSize(Integer.MIN_VALUE);
+</code></pre>

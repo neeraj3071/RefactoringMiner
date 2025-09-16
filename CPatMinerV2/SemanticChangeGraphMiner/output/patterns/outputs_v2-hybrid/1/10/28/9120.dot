@@ -1,0 +1,35 @@
+digraph G {
+subgraph cluster0 {
+1 [label="ensureIndex" a="32" s="7663,7705" l="12,1" shape="box"];
+3 [label="InfixExpression:r" a="27" s="7500" l="4" shape="box"];
+4 [label="NullLiteral" a="33" s="7504" l="4" shape="ellipse"];
+5 [label="IfStatement" a="25" s="7486,7508" l="4,2" shape="diamond"];
+6 [label="SimpleName" a="42" s="7490" l="10" shape="ellipse"];
+7 [label="ensureIndex" a="32" s="7593,7637" l="12,1" shape="box"];
+9 [label="SimpleName" a="42" s="7582" l="10" shape="ellipse"];
+10 [label="SimpleName" a="42" s="7652" l="10" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="ensureIndex" a="32" s="8412,8454" l="12,1" shape="box"];
+8 [label="ensureIndex" a="32" s="8355,8399" l="12,1" shape="box"];
+11 [label="SimpleName" a="42" s="8353" l="1" shape="ellipse"];
+12 [label="SimpleName" a="42" s="8410" l="1" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 5 [label="_cond_"];
+4 -> 3 [label="_para_"];
+5 -> 1 [label="_control_"];
+5 -> 7 [label="_control_"];
+6 -> 3 [label="_para_"];
+7 -> 8 [label="_map_"];
+9 -> 7 [label="_recv_"];
+9 -> 11 [label="_map_"];
+10 -> 12 [label="_map_"];
+10 -> 1 [label="_recv_"];
+11 -> 8 [label="_recv_"];
+12 -> 2 [label="_recv_"];
+}

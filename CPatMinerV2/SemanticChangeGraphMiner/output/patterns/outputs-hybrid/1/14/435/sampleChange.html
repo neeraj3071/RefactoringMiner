@@ -1,0 +1,218 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>96aef0dca86b3ed1b06d078a7a1d19ae3e74df65,Assets/OSVRUnity/Editor/OsvrEditorUtils.cs,OsvrEditorUtils,OnGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        #region RECENTER
+        //Recenter
+        GUILayout.Label("Recenter", EditorStyles.boldLabel);
+        if (GUILayout.<a id="change">Button("Launch osvr_reset_yaw.exe"</a><a id="change">)</a>)
+        {
+            LaunchResetYaw();
+        }
+        #endregion
+        #region DIRECT MODE
+        //Tracker View
+        GUILayout.Label("Direct Mode", EditorStyles.boldLabel);
+        if (GUILayout.Button("Enable Direct Mode NVIDIA"))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                WorkingDirectory = OsvrServerDirectory,
+                FileName = "EnableOSVRDirectMode.exe",
+                Arguments = "",
+                ErrorDialog = true
+            });
+        }
+        if (GUILayout.Button("Disable Direct Mode NVIDIA"))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                WorkingDirectory = OsvrServerDirectory,
+                FileName = "DisableOSVRDirectMode.exe",
+                Arguments = "",
+                ErrorDialog = true
+            });
+        }
+        if (GUILayout.Button("Enable Direct Mode AMD"))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                WorkingDirectory = OsvrServerDirectory,
+                FileName = "EnableOSVRDirectModeAMD.exe",
+                Arguments = "",
+                ErrorDialog = true
+            });
+        }
+        if (GUILayout.Button("Disable Direct Mode AMD"))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                WorkingDirectory = OsvrServerDirectory,
+                FileName = "DisableOSVRDirectModeAMD.exe",
+                Arguments = "",
+                ErrorDialog = true
+            });
+        }
+
+        if (GUILayout.Button("Direct Mode Debugging"))
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                WorkingDirectory = OsvrServerDirectory,
+                FileName = "DirectModeDebugging.exe",
+                Arguments = "",
+                ErrorDialog = true
+            });
+        }
+        #endregion
+        #region DOCUMENTATION
+        GUILayout.Label("Documentation & Support", EditorStyles.boldLabel);
+        if (GUILayout.Button("OSVR-Unity Getting Started Guide"))
+        {
+            Application.OpenURL(OSVR_GETTINGSTARTED_README);
+        }
+        if(GUILayout.Button("OSVR-Unity Downloads"))
+        {
+            Application.OpenURL(OSVR_UNITY_DOWNLOADS);
+        }
+        if (GUILayout.Button("OSVR-Docs repo"))
+        {
+            Application.OpenURL(OSVR_DOCS);
+        }
+        if(GUILayout.Button("RenderManager Rendering Optimizations"))
+        {
+            Application.OpenURL(RENDERMANAGER_OPTIMIZATION);
+        }
+        if (GUILayout.Button("OSVR-Unity Source Code"))
+        {
+            Application.OpenURL(OSVR_UNITY_SOURCE);
+        }
+        if (GUILayout.Button("OSVR-Unity-Rendering-Plugin Source Code"))
+        {
+            Application.OpenURL(OSVR_UNITY_RENDERING_SOURCE);
+        }
+        if (GUILayout.Button("RenderManager Source Code"))
+        {
+            Application.OpenURL(RENDERMANAGER_SOURCE);
+        }
+        if (<a id="change">GUILayout</a>.<a id="change">Button("OSVR Device Compatibility"</a><a id="change">)</a>)
+        {
+            <a id="change">Application</a>.<a id="change">OpenURL(OSVR_DEVICES</a><a id="change">)</a>;
+        }
+        if (GUILayout.Button("Additional docs and support links"))
+        {</code></pre><h3>After Change</h3><pre><code class='java'>
+            else if(!failedToReachServer)
+            {
+                versionLabelStyle.normal.textColor = Color.black;               
+                <a id="change">GUILayout</a>.<a id="change">Label("OSVR-Unity is up-to-date."</a>, <a id="change">versionLabelStyle</a><a id="change">)</a>;
+            }
+            else
+            {
+                //@todo cache last known latest version
+                versionLabelStyle.normal.textColor = Color.black;
+                GUILayout.Label("Failed to reach server. Latest OSVR-Unity version unknown.", versionLabelStyle);
+            }
+        }
+        
+        #region OSVR_SERVER
+        GUILayout.Label("OSVR Server Settings", EditorStyles.boldLabel);
+        OsvrServerDirectory = EditorGUILayout.TextField("OSVR Directory", OsvrServerDirectory);
+        if (CheckServerRunning())
+        {
+            EditorGUILayout.LabelField("osvr_server.exe is running.");
+        }
+        else
+        {
+            EditorGUILayout.LabelField("osvr_server.exe is not running.");
+        }
+        if(!usingDefaultServer)
+        {
+            EditorGUILayout.LabelField("Warning, OSVR server directory does not match OSVR_SERVER_ROOT environment variable.");
+        }
+
+        string serverArgs = EditorGUILayout.TextField("Configuration file", OsvrServerArguments);
+        if (GUILayout.Button("Select Config File"))
+        {
+            serverArgs = "\"" + EditorUtility.OpenFilePanel("Select Configuration File", OsvrServerDirectory, "json").Replace("/", "\\") + "\"";
+            OsvrServerArguments = serverArgs;
+        }
+
+        if(isServerRunning)
+        {
+            if (GUILayout.Button("Save & Launch New OSVR Server"))
+            {
+                Save();
+                LaunchServer(true);
+            }
+            if (GUILayout.Button("Shutdown OSVR Server"))
+            {
+                KillProcess(OSVR_SERVER_PROCESS);
+            }
+        }
+        else
+        {
+            if (GUILayout.Button("Save & Launch OSVR Server"))
+            {
+                Save();
+                LaunchServer(false);
+            }
+        }        
+        if (GUILayout.Button("Save Server Path/Config"))
+        {
+            Save();
+            
+        }
+        #endregion
+        #region OSVR_CENTRAL
+        //Tracker View
+        GUILayout.Label("OSVR Central", EditorStyles.boldLabel);
+        if (GUILayout.Button("Launch OSVR-Central"))
+        {
+            LaunchOSVRCentral();
+        }      
+        #endregion
+        #region OSVR-CONFIG
+        GUILayout.Label("OSVR-Config", EditorStyles.boldLabel);
+        if (GUILayout.Button("Launch OSVR-Config Utility"))
+        {
+            LaunchOSVRConfig();
+        }
+
+        #endregion
+        #region OSVR_TRACKERVIEW
+        //Tracker View
+        GUILayout.Label("Tracker Viewer", EditorStyles.boldLabel);
+        bool isTrackerViewRunning = CheckProcessRunning(OSVR_TRACKERVIEW_PROCESS);
+        if (!isTrackerViewRunning)
+        {
+            if (GUILayout.Button("Launch OSVRTrackerView"))
+            {
+                LaunchTrackerView();
+            }
+        }
+        else
+        {
+            if (GUILayout.Button("Shutdown OSVRTrackerView"))
+            {
+                KillProcess(OSVR_TRACKERVIEW_PROCESS);
+            }
+        }
+        #endregion
+        #region OSVR_PRINT_TREE
+        //Print Tree
+        GUILayout.Label("Print Tree", EditorStyles.boldLabel);
+        bool isPrintTreeRunning = CheckProcessRunning(OSVR_PRINTTREE_PROCESS); ;
+        if (!isPrintTreeRunning)
+        {
+            if (GUILayout.Button("Launch osvr_print_tree"))
+            {
+                LaunchPrintTree();
+            }
+        }
+        else
+        {
+            if (GUILayout.<a id="change">Button("Shut down osvr_print_tree"</a><a id="change">)</a>)
+            {
+                KillProcess(OSVR_PRINTTREE_PROCESS);
+            }</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b8fd689ba1c76fe3de93bacecf3d56343b0b92a7,Tests/Editor/Tracking/Collision/Active/ActiveCollisionConsumerTest.cs,ActiveCollisionConsumerTest,ConsumeExclusion,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            Assert.IsNull(subject.PublisherSource);
+
+            subject.<a id="change">Consume(</a>publisher, null<a id="change">)</a>;
+
+            Assert.IsFalse(consumedMock.Received);
+            Assert.IsFalse(clearedMock.Received);</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            Assert.IsNull(subject.PublisherSource);
+
+            <a id="change">Assert</a>.<a id="change">IsFalse(</a>subject.<a id="change">Consume(</a>publisher, null<a id="change">))</a>;
+
+            Assert.IsFalse(consumedMock.Received);
+            Assert.IsFalse(clearedMock.Received);</code></pre>

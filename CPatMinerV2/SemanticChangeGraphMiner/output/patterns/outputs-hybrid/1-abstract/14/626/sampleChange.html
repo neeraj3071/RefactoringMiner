@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a94e7394dd765a07d59e69d249600603890ba1d2,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent/ViveColliderEventCaster.cs,ViveColliderEventCaster,FilterOutAssignedButton,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+#endif
+        protected void FilterOutAssignedButton()
+        {
+            if (<a id="change">EnumUtils</a>.<a id="change">GetFlag(m_additionalButtons</a>, <a id="change">(int)m_buttonTrigger</a><a id="change">)</a>) { EnumUtils.SetFlag(ref m_additionalButtons, (int)m_buttonTrigger, false); }
+            if (EnumUtils.GetFlag(m_additionalButtons, (int)m_buttonPadOrStick)) { EnumUtils.<a id="change">SetFlag(ref </a>m_additionalButtons, (int)m_buttonPadOrStick, false<a id="change">)</a>; }
+            <a id="change">if (EnumUtils</a>.<a id="change">GetFlag(m_additionalButtons</a>, <a id="change">(int)m_buttonFunctionKey</a><a id="change">)</a><a id="change">) </a>{ EnumUtils.<a id="change">SetFlag(ref </a>m_additionalButtons, (int)m_buttonFunctionKey, false<a id="change">)</a>; }
+            if (EnumUtils.GetFlag(m_additionalButtons, (int)m_buttonGripOrHandTrigger)) { EnumUtils.SetFlag(ref m_additionalButtons, (int)m_buttonGripOrHandTrigger, false); }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        protected void FilterOutAssignedButton()
+        {
+            EnumUtils.SetFlag(ref m_additionalButtons, (int)m_buttonTrigger, false);
+            EnumUtils.<a id="change">SetFlag(ref </a>m_additionalButtons, (int)m_buttonPadOrStick, false<a id="change">)</a>;
+            EnumUtils.<a id="change">SetFlag(ref </a>m_additionalButtons, (int)m_buttonFunctionKey, false<a id="change">)</a>;
+            EnumUtils.SetFlag(ref m_additionalButtons, (int)m_buttonGripOrHandTrigger, false);
+        }
+</code></pre>

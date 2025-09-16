@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>27f990583a9593d8269e293708245d6231791a7b,anhalytics-index/src/main/java/fr/inria/anhalytics/index/IndexingPreprocess.java,IndexingPreprocess,getStandoffNerd,#ObjectMapper#String#,491
+</h3><h3>Before Change</h3><pre><code class='java'>
+                            ((ArrayNode) newNode).add(nerdScoreNode);
+
+                            JsonNode wikiNode = mapper.createObjectNode();
+                            ((ObjectNode) wikiNode).<a id="change">put(</a>"wikipediaExternalRef", wikipediaExternalRef<a id="change">)</a>;
+                            ((ArrayNode) newNode).<a id="change">add(</a>wikiNode<a id="change">)</a>;
+
+                            JsonNode preferredTermNode = mapper.createObjectNode();
+                            ((ObjectNode) preferredTermNode).put("preferredTerm", preferredTerm);</code></pre><h3>After Change</h3><pre><code class='java'>
+                            ((ObjectNode) nerdScoreNode).put("nerd_score", nerd_score);
+                            ((ArrayNode) newNode).add(nerdScoreNode);
+
+                            <a id="change">if (wikipediaExternalRefN != </a><a id="change">null</a><a id="change">) </a>{
+                                JsonNode wikiNode = mapper.createObjectNode();
+                                ((ObjectNode) wikiNode).<a id="change">put(</a>"wikipediaExternalRef", wikipediaExternalRef<a id="change">)</a>;
+                                ((ArrayNode) newNode).<a id="change">add(</a>wikiNode<a id="change">)</a>;
+                            }
+
+                            if (wikipediaExternalRef != null) {</code></pre>

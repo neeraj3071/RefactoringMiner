@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>61c89f18a3839ce22aaf2fa45f899d49b34e8986,VRSF_DOTS/Assets/VRSF/Scripts/Core/Controllers/Components/ControllerMeshAuthoring.cs,ControllerMeshAuthoring,SetupControllersMesh,#OnSetupVRReady#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+                var parent = _controllersHand == EHand.LEFT ? VRSF_Components.LeftController.transform : VRSF_Components.RightController.transform;
+                GameObject.Instantiate(_controllersPerDevice[VRSF_Components.DeviceLoaded], parent);
+                <a id="change">Destroy(</a>gameObject<a id="change">)</a>;
+            }
+            catch
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+                var parent = _controllersHand == EHand.LEFT ? VRSF_Components.LeftController.transform : VRSF_Components.RightController.transform;
+                GameObject.Instantiate(_controllersPerDevice[VRSF_Components.DeviceLoaded], parent);
+
+                <a id="change">if (_destroyOnSetup</a><a id="change">)
+                    </a><a id="change">Destroy(</a>gameObject<a id="change">)</a>;
+                else
+                    Destroy(this);
+            }</code></pre>

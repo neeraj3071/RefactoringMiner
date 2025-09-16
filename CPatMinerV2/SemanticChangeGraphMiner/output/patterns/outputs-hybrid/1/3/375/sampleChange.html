@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>def66512e1c477eb60757f14c6727a59355b55ef,VRSF_DOTS/Assets/VRSF/Core/Scripts/CBRA/Systems/CBRAUpdates/CBRATouchpadClickUpdateSystem.cs,CBRATouchpadClickUpdateSystem,OnUpdate,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        protected override void OnUpdate()
+        {
+            // Checking only the TouchpadInputCapture components as the others have their own dedicated system
+            <a id="change">Entities</a>.<a id="change">ForEach(</a>(Entity entity, ref TouchpadInputCapture touchpadInput, ref InteractionThumbPosition cbraThumbPos, ref BaseInputCapture baseInput) =&gt;
+            {
+                if (baseInput.IsClicking && ThumbPositionChecker.CheckThumbPosition(cbraThumbPos.TouchThumbPosition, cbraThumbPos.IsTouchingThreshold, touchpadInput.ThumbPosition) && CBRADelegatesHolder.IsClickingEvents.TryGetValue(entity, out System.Action action))
+                    action.Invoke();
+            }<a id="change">)</a>;
+        }
+    }
+}</code></pre><h3>After Change</h3><pre><code class='java'>
+        protected override void OnUpdate()
+        {
+            // Checking only the TouchpadInputCapture components as the others have their own dedicated system
+            Entities.WithNone&lt;StartClickingEventComp, StopClickingEventComp&gt;().<a id="change">ForEach(</a>(Entity entity, ref TouchpadInputCapture touchpadInput, ref InteractionThumbPosition cbraThumbPos, ref BaseInputCapture baseInput) =&gt;
+            {
+                if (baseInput.IsClicking && ThumbPositionChecker.CheckThumbPosition(cbraThumbPos.TouchThumbPosition, cbraThumbPos.IsTouchingThreshold, touchpadInput.ThumbPosition) && CBRADelegatesHolder.IsClickingEvents.TryGetValue(entity, out System.Action action))
+                    action.Invoke();
+            }<a id="change">)</a>;
+        }
+    }
+}</code></pre>

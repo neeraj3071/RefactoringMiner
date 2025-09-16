@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b0a724e0785fba50b87d0bf438e4795537df1c34,anhalytics-kb/src/main/java/fr/inria/anhalytics/kb/datamine/KnowledgeBaseFeeder.java,KnowledgeBaseFeeder,processIdentifiers,#NodeList#fr.inria.anhalytics.commons.entities.Document#String#,192
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element identifierElt = (Element) node;
+                type = identifierElt.getAttribute("type");
+                id = node.<a id="change">getTextContent()</a>;
+            }
+            Document_Identifier di = new Document_Identifier(id, type);
+            dis.add(di);</code></pre><h3>After Change</h3><pre><code class='java'>
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                Element identifierElt = (Element) node;
+                type = identifierElt.getAttribute("type");
+                id = node.<a id="change">getTextContent()</a>.<a id="change">trim()</a>;
+            }
+            Document_Identifier di = new Document_Identifier(id, type);
+            dis.add(di);</code></pre>

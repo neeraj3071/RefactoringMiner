@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>de07a14d83f15de001bc30d194174a9640a0568d,Assets/Scripts/Online/SettingsMenu.cs,SettingsMenu,FindUIs,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            uiAddress = GameObject.Find("Input address").GetComponent&lt;InputField&gt;();
+            uiPort = GameObject.Find("Input port").GetComponent&lt;InputField&gt;();
+            <a id="change">uiScalingFactor</a> = GameObject.<a id="change">Find("Input scaling"</a><a id="change">)</a>.GetComponent&lt;InputField&gt;();
+            uiConnectionType = GameObject.Find("Dropdown connection type").GetComponent&lt;Dropdown&gt;();
+            uiCancel = GameObject.Find("Cancel").GetComponent&lt;Button&gt;();
+            uiLoad = GameObject.Find("Load").GetComponent&lt;Button&gt;();</code></pre><h3>After Change</h3><pre><code class='java'>
+        void FindUIs()
+        {
+            uiMapInfoAddress = GameObject.Find("Map info address").GetComponent&lt;InputField&gt;();
+            uiMapInfoPort = GameObject.<a id="change">Find("Map info port"</a><a id="change">)</a>.GetComponent&lt;InputField&gt;();
+            <a id="change">uiMapInfoScalingFactor</a> = GameObject.Find("Map info scaling").GetComponent&lt;InputField&gt;();
+            uiVRAddress = GameObject.Find("VR address").GetComponent&lt;InputField&gt;();
+            uiVRPort = GameObject.Find("VR port").GetComponent&lt;InputField&gt;();
+            uiVRScalingFactor = <a id="change">GameObject</a>.<a id="change">Find("VR scaling"</a><a id="change">)</a>.GetComponent&lt;InputField&gt;();
+            uiVRConnectionType = GameObject.Find("VR connection type").GetComponent&lt;Dropdown&gt;();
+            uiCancel = GameObject.Find("Cancel").GetComponent&lt;Button&gt;();
+            uiLoad = GameObject.Find("Load").GetComponent&lt;Button&gt;();</code></pre>

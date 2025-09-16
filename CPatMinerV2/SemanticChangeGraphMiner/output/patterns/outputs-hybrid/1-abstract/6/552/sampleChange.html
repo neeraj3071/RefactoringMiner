@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>32ec9beb1fb9b6d1a8804cb83017260ab4ffb061,Assets/VRM/UniVRM/Scripts/Format/VRMSerializer.g.cs,VRMSerializer,Serialize_vrm_secondaryAnimation_colliderGroups__colliders__offset,#JsonFormatter#Vector3#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    f.Key("x");
+    f.Value(value.x);
+
+    f.<a id="change">Key(</a>"y"<a id="change">)</a>;
+    f.<a id="change">Value(</a>value.y<a id="change">)</a>;
+
+    f.Key("z");
+    f.Value(value.z);</code></pre><h3>After Change</h3><pre><code class='java'>
+        f.Value(value.x);
+    }
+
+    <a id="change">if(</a><a id="change">true)</a>{
+        f.<a id="change">Key(</a>"y"<a id="change">)</a>;                
+        f.<a id="change">Value(</a>value.y<a id="change">)</a>;
+    }
+
+    if(true){</code></pre>

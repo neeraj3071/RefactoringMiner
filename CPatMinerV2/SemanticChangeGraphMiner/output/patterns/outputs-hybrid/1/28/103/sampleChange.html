@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1aec7a318aae4fd3330646b274aa2f619dcfaca6,Scripts/Modules/MultipleRayInputModule/MultipleRayInputModule.cs,MultipleRayInputModule,OnSelectPressed,#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			Deselect();
+
+			PointEvents[i].pressPosition = PointEvents[i].position;
+			<a id="change">PointEvents[i</a><a id="change">]</a>.<a id="change">pointerPressRaycast</a> = PointEvents[i].pointerCurrentRaycast;
+			<a id="change">PointEvents[i</a><a id="change">]</a>.<a id="change">pointerPress</a> = CurrentPoint[i];
+
+			if (CurrentPoint[i] != null) // Pressed when pointer is over something
+			{
+				CurrentPressed[i] = CurrentPoint[i];
+				GameObject newPressed = ExecuteEvents.ExecuteHierarchy(CurrentPressed[i], PointEvents[i], ExecuteEvents.pointerDownHandler);
+
+				if (newPressed == null) // Gameobject does not have pointerDownHandler in hierarchy, but may still have click handler
+					newPressed = ExecuteEvents.GetEventHandler&lt;IPointerClickHandler&gt;(CurrentPressed[i]);
+
+				if (newPressed != null)
+				{
+					CurrentPressed[i] = newPressed; // Set current pressed to gameObject that handles the pointerDown event, not the root object
+					<a id="change">PointEvents[i</a><a id="change">]</a>.<a id="change">pointerPress</a> = newPressed;
+					Select(CurrentPressed[i]);
+					<a id="change">PointEvents[i</a><a id="change">]</a>.<a id="change">eligibleForClick</a> = <a id="change">true</a>;
+				}
+				ExecuteEvents.<a id="change">Execute(CurrentPressed[i</a><a id="change">]</a>, <a id="change">PointEvents[i</a><a id="change">]</a>, ExecuteEvents.beginDragHandler<a id="change">)</a>;
+				ExecuteEvents.Execute(CurrentPressed[i], PointEvents[i], ExecuteRayEvents.beginDragHandler);
+				<a id="change">PointEvents[i</a><a id="change">]</a>.<a id="change">pointerDrag</a> = CurrentPressed[i];
+				CurrentDragging[i] = CurrentPressed[i];
+			}
+		}</code></pre><h3>After Change</h3><pre><code class='java'>
+
+			if (hoveredObject != null) // Pressed when pointer is over something
+			{
+				<a id="change">source.pressedObject</a> = hoveredObject;
+				GameObject newPressed = ExecuteEvents.ExecuteHierarchy(source.pressedObject, eventData, ExecuteEvents.pointerDownHandler);
+
+				if (newPressed == null) // Gameobject does not have pointerDownHandler in hierarchy, but may still have click handler
+					newPressed = ExecuteEvents.GetEventHandler&lt;IPointerClickHandler&gt;(source.pressedObject);
+
+				if (newPressed != null)
+				{
+					<a id="change">source.pressedObject</a> = newPressed; // Set current pressed to gameObject that handles the pointerDown event, not the root object
+					eventData.pointerPress = newPressed;
+					Select(source.pressedObject);
+					eventData.eligibleForClick = true;
+				}
+				var <a id="change">pressedObject</a> = <a id="change">source.pressedObject</a>;
+				ExecuteEvents.<a id="change">Execute(pressedObject</a>, <a id="change">eventData</a>, ExecuteEvents.beginDragHandler<a id="change">)</a>;
+				ExecuteEvents.Execute(pressedObject, eventData, ExecuteRayEvents.beginDragHandler);
+				eventData.pointerDrag = pressedObject;
+				source.draggedObject = pressedObject;</code></pre>

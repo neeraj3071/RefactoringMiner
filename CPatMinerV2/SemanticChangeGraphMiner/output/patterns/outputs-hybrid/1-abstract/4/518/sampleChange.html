@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1635589f109e64ab84b9accabfb8186e2f80c1d5,Assets/Tests/Unit/VimeoVideoTest.cs,VimeoVideoTest,GetDashUrl_Returns_Null_For_Files_Response,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    [Test]
+    public void GetDashUrl_Returns_Null_For_Files_Response()
+    {
+        video = new <a id="change">VimeoVideo(</a>JSONNode.<a id="change">Parse(</a>mockProductionJson<a id="change">)</a><a id="change">)</a>;
+        Assert.AreEqual(video.getDashUrl(), null);
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    [Test]
+    public void GetDashUrl_Returns_Null_For_Files_Response()
+    {
+        <a id="change">video = new VimeoVideo(</a>JSONNode.<a id="change">Parse(</a>mockProductionJson<a id="change">)</a><a id="change">)</a>;
+        Assert.AreEqual(video.getDashUrl(), null);
+    }
+</code></pre>

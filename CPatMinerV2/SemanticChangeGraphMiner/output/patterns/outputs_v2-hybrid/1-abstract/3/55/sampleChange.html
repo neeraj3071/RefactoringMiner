@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4127a416ec885f274293538408b01081f7dcc95d,anhalytics-index/src/main/java/fr/inria/anhalytics/index/Indexer.java,Indexer,indexAnnotations,#,293
+</h3><h3>Before Change</h3><pre><code class='java'>
+                        String json = mm.nextAnnotation();
+                        String id = mm.getCurrentRepositoryDocId();
+                        String anhalyticsId = mm.getCurrentAnhalyticsId();
+                        if (anhalyticsId.<a id="change">isEmpty()</a>) {
+                            logger.info("skipping "+id+" No anHALytics id provided");
+                            continue;
+                        }</code></pre><h3>After Change</h3><pre><code class='java'>
+                        String json = mm.nextAnnotation();
+                        String id = mm.getCurrentRepositoryDocId();
+                        String anhalyticsId = mm.getCurrentAnhalyticsId();
+                        if (anhalyticsId == null || anhalyticsId.<a id="change">isEmpty()</a>) {
+                            logger.info("skipping "+id+" No anHALytics id provided");
+                            continue;
+                        }</code></pre>

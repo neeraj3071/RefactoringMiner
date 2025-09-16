@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8b8a57956d1a745ea73003a4c857838dbeb61ba6,Packages/com.unity.inputsystem/InputSystem/Editor/Internal/InputActionSerializationHelpers.cs,InputActionSerializationHelpers,ChangeCompositeType,#SerializedProperty#Int#String#Type#String#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                InputBinding.Flags.Composite) != 0);
+
+            bindingProperty.FindPropertyRelative("m_Name").stringValue = ObjectNames.NicifyVariableName(compositeName);
+            bindingProperty.<a id="change">FindPropertyRelative(</a>"m_Path"<a id="change">)</a>.stringValue = compositeName;
+
+            // Adjust part bindings if we have information on the registered composite. If we don't have
+            // a type, we don't know about the parts. In that case, leave part bindings untouched.</code></pre><h3>After Change</h3><pre><code class='java'>
+                InputBinding.Flags.Composite) != 0);
+
+            // Only change the name if the current name is still the default one.
+            var <a id="change">pathProperty</a> = bindingProperty.<a id="change">FindPropertyRelative(</a>"m_Path"<a id="change">)</a>;
+            var nameProperty = bindingProperty.FindPropertyRelative("m_Name");
+            if (nameProperty.stringValue == ObjectNames.NicifyVariableName(pathProperty.stringValue))
+                nameProperty.stringValue = ObjectNames.NicifyVariableName(compositeName);
+            <a id="change">pathProperty.stringValue</a> = compositeName;
+
+            // Adjust part bindings if we have information on the registered composite. If we don't have
+            // a type, we don't know about the parts. In that case, leave part bindings untouched.</code></pre>

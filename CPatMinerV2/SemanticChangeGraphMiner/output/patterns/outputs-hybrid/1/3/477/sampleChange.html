@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6c047704a75a870589e748b16224273cbea168f2,Editor/KeyboardButtonEditor.cs,KeyboardButtonEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		// Set text component to character
+		if (m_KeyboardButton.textComponent != null)
+		{
+			EditorGUI.<a id="change">BeginChangeCheck()</a>;
+			EditorGUILayout.PropertyField(m_MatchButtonTextToCharacterProperty);
+			if (EditorGUI.EndChangeCheck())
+				UpdateButtonTextAndObjectName(m_CharacterProperty.intValue);</code></pre><h3>After Change</h3><pre><code class='java'>
+		EditorGUILayout.PropertyField(m_SelectionFlagsProperty);
+
+		var updateObjectName = false;
+		EditorGUI.<a id="change">BeginChangeCheck()</a>;
+		CharacterField("Primary Character", m_CharacterProperty, true);
+		if (EditorGUI.EndChangeCheck())
+			updateObjectName = true;</code></pre>

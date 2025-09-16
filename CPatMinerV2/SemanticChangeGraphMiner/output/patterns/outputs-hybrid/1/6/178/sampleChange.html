@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>605404046407dea096069dcbcab2cefe2d4b08f8,Connection/RESTConnector.cs,RESTConnector,ProcessRequestQueue,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                if ( req.OnResponse != null )
+                    req.OnResponse( req, resp );
+
+				<a id="change">if(www</a><a id="change"> != null</a><a id="change">)
+					</a>www.<a id="change">Dispose()</a>;
+				else
+					Log.Error("RESTConnector", "www is null. This shouldn't happen!");
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+                if ( req.OnResponse != null )
+                    req.OnResponse( req, resp );
+
+				www.<a id="change">Dispose()</a>;
+            }
+
+            // reduce the connection count before we exit..</code></pre>

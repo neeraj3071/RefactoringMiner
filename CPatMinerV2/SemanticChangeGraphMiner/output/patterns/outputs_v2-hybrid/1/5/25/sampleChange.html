@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1d933d9e9d623eef8aedbcfe65f41a3a61e8cae8,anhalytics-index/src/main/java/fr/inria/anhalytics/index/IndexingPreprocess.java,IndexingPreprocess,getStandoffQuantities,#ObjectMapper#String#JsonNode#,747
+</h3><h3>Before Change</h3><pre><code class='java'>
+     * Get the grobid quantities annotations and inject them in the document structure in a standoff node
+     */
+    public JsonNode getStandoffQuantities(ObjectMapper mapper, String anhalyticsId, JsonNode standoffNode) throws Exception {
+        String annotation = mm.getQuantitiesAnnotations(anhalyticsId).<a id="change">getJson()</a>;
+        if ((annotation != null) && (annotation.trim().length() &gt; 0)) {           
+            JsonNode jsonAnnotation = mapper.readTree(annotation);
+            if ((jsonAnnotation != null) && (!jsonAnnotation.isMissingNode())) {</code></pre><h3>After Change</h3><pre><code class='java'>
+     * Get the grobid quantities annotations and inject them in the document structure in a standoff node
+     */
+    public JsonNode getStandoffQuantities(ObjectMapper mapper, String anhalyticsId, JsonNode standoffNode) throws Exception {
+        String annotation = mm.getQuantitiesAnnotations(anhalyticsId)<a id="change"> != null ? </a>mm.getQuantitiesAnnotations(anhalyticsId).<a id="change">getJson()</a>:null;
+        if ((annotation != null) && (annotation.trim().length() &gt; 0)) {           
+            JsonNode jsonAnnotation = mapper.readTree(annotation);
+            if ((jsonAnnotation != null) && (!jsonAnnotation.isMissingNode())) {</code></pre>

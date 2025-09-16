@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a23033acc50de3dcc63d3c242d49c1dd5b6dc616,Holojam/Vive/ViveCalibrator.cs,ViveCalibrator,DoCalibration,#Vector3#Vector3#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+      // Calculate the forward vector with the corner
+      Vector3 forward = l0 - new Vector3(l0.x, 0, l1.z);
+      module.cameraRig.transform.localRotation = cachedRotation * Quaternion.<a id="change">LookRotation(</a>forward<a id="change">)</a>;
+
+      Network.RemoteLogger.Log(
+        "Calibration successful: offset = (" + offset.x + ", " + offset.z</code></pre><h3>After Change</h3><pre><code class='java'>
+      // Calculate the forward vector with the diagonal
+      Vector3 forward = l1 - l0;
+      module.cameraRig.transform.localRotation = cachedRotation
+        * <a id="change">Quaternion</a>.<a id="change">Inverse(</a>Quaternion.<a id="change">LookRotation(</a>forward<a id="change">))</a>;
+
+      forward.Normalize();
+</code></pre>

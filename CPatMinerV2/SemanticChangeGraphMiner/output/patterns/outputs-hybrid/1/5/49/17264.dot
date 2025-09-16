@@ -1,0 +1,16 @@
+digraph G {
+subgraph cluster0 {
+1 [label="Space" a="32" s="8541" l="7" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="Space" a="32" s="8656" l="7" shape="box"];
+3 [label="Space" a="32" s="8950" l="7" shape="box"];
+4 [label="SimpleName" a="42" s="8934" l="15" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+4 -> 3 [label="_recv_"];
+}

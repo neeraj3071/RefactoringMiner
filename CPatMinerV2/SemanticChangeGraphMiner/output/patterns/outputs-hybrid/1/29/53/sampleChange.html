@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e7b2cacca391b4ad0edac76e6c8afcbd11af3bb2,Assets/Watson/Services/v1/Translate.cs,Translate,GetLanguagesResponse,#RESTConnector.Request#RESTConnector.Response#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            if (resp.Success)
+            {
+                List&lt;Language&gt; <a id="change">languages</a> = <a id="change">new List&lt;Language&gt;()</a>;
+
+                IDictionary <a id="change">json</a> = <a id="change">Json</a>.<a id="change">Deserialize(</a>Encoding.UTF8.GetString(resp.Data)<a id="change">)</a> as IDictionary;
+                IList ilanguages = <a id="change">json[</a>"languages"<a id="change">]</a> as IList;
+                foreach (var l in ilanguages)
+                {
+                    IDictionary ilang = l as IDictionary;
+
+                    Language lang = new Language();
+                    lang.Code = (string)ilang["language"];
+                    lang.Name = (string)ilang["name"];
+                    <a id="change">languages</a>.<a id="change">Add(lang</a><a id="change">)</a>;
+                }
+
+                if (req.Callback != null)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        private void GetLanguagesResponse(RESTConnector.Request req, RESTConnector.Response resp)
+        {
+            Languages <a id="change">langs</a> = <a id="change">new Languages()</a>;
+            if (resp.Success)
+            {
+                try
+                {
+                    fsData <a id="change">data</a> = <a id="change">null</a>;
+                    fsResult r = <a id="change">fsJsonParser</a>.<a id="change">Parse(</a>Encoding.UTF8.GetString(resp.Data), out <a id="change">data</a><a id="change">)</a>;
+                    <a id="change">if (!r.Succeeded</a><a id="change">)
+                        </a>throw new WatsonException(r.FormattedMessages);
+
+                    object <a id="change">obj</a> = <a id="change">langs</a>;
+                    <a id="change">r</a> = <a id="change">sm_Serializer</a>.<a id="change">TryDeserialize(data</a>, <a id="change">obj</a>.<a id="change">GetType()</a>, ref <a id="change">obj</a><a id="change">)</a>;
+                    <a id="change">if (</a><a id="change">!r</a><a id="change">.Succeeded)
+                        </a><a id="change">throw new WatsonException(r.FormattedMessages</a><a id="change">)</a>;
+                }
+                catch (Exception e)
+                {</code></pre>

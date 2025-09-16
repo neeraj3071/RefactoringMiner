@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>52dcc86855a5c16d9617cffc9bc06a1ffdde5534,Workspaces/PolyWorkspace/Scripts/PolyGridViewController.cs,PolyGridViewController,UpdateGridItem,#PolyGridItem#Int#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            t.localPosition = Vector3.Lerp(t.localPosition, m_StartPosition + zOffset * Vector3.back + xOffset * Vector3.right, k_PositionFollow);
+            t.localRotation = Quaternion.identity;
+
+            t.<a id="change">SetSiblingIndex(</a>order<a id="change">)</a>;
+        }
+
+        protected override PolyGridItem GetItem(PolyGridAsset data)</code></pre><h3>After Change</h3><pre><code class='java'>
+            t.localPosition = Vector3.Lerp(t.localPosition, m_StartPosition + zOffset * Vector3.back + xOffset * Vector3.right, k_PositionFollow);
+            t.localRotation = Quaternion.identity;
+
+            <a id="change">if (t</a>.<a id="change">GetSiblingIndex()</a><a id="change"> != order)
+                </a>t.<a id="change">SetSiblingIndex(</a>order<a id="change">)</a>;
+        }
+
+        protected override PolyGridItem GetItem(PolyGridAsset data)</code></pre>

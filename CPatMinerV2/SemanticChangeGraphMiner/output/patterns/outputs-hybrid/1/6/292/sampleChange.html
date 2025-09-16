@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7c97653a149ca376391ac9d674fa1ffd6f960308,Assets/Scripts/ControlWPFWindow.cs,ControlWPFWindow,SetExternalMotionReceiverEnable,#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            Settings.Current.ExternalMotionReceiverEnable = enable;
+            externalMotionReceiver.SetObjectActive(enable);
+            WaitOneFrameAction(() =&gt; VMCEvents.OnModelLoaded?.Invoke(CurrentModel));
+            <a id="change">WaitOneFrameAction(</a>() =&gt; VMCEvents.OnCameraChanged?.Invoke(CameraManager.Current.ControlCamera)<a id="change">)</a>;
+        }
+
+        private void SetExternalBonesReceiverEnable(bool enable)</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            Settings.Current.ExternalMotionReceiverEnable = enable;
+            externalMotionReceiver.SetObjectActive(enable);
+            <a id="change">if (CurrentModel</a><a id="change"> != null)
+            </a>{
+                WaitOneFrameAction(() =&gt; VMCEvents.OnModelLoaded?.Invoke(CurrentModel));
+                <a id="change">WaitOneFrameAction(</a>() =&gt; VMCEvents.OnCameraChanged?.Invoke(CameraManager.Current.ControlCamera)<a id="change">)</a>;
+            }
+        }
+</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>9120733bc365b8ed550d173617fae9ce3c30d8b2,NAVRFramework/NetworkManager.cs,NetworkManager,HandleARUpdateVR,#Int#Vector3#Quaternion#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    private void HandleARUpdateVR(int clientId, Vector3 pos, Quaternion rot, int shootEnum){
+        Debug.Log("Receiving message from AR");
+        GameObject gameObject;
+        ARPlayers.<a id="change">TryGetValue(</a>clientId, out gameObject<a id="change">)</a>;
+        gameObject.transform.position = pos;
+        gameObject.transform.rotation = rot;
+        //gameObject.transform.Rotate(new Vector3(0, 90, 0));</code></pre><h3>After Change</h3><pre><code class='java'>
+        }else{
+            Debug.Log("Receiving message from AR");
+            GameObject player;
+            ARPlayers.<a id="change">TryGetValue(</a>clientId, out player<a id="change">)</a>;                        // Check the dictionary for an existing player and model
+            if(player){                                                         // If the model is not set to null
+                player.transform.position = pos;                                // Set the player to the updated position 
+                player.transform.rotation = rot;                                </code></pre>

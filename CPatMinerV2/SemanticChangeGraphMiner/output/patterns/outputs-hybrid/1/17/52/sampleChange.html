@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>99508798095a5ca31f10682da00aafa6d2c44ad3,Assets/Scripts/GrabbedObjectRelayer.cs,GrabbedObjectRelayer,GetNamePosition,#GameObject#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+	{
+		try 
+		{
+			Flori_UIData <a id="change">UIData</a> = text.<a id="change">GetComponentInParent&lt;Flori_UIData&gt;()</a>;
+			<a id="change">if (</a>!<a id="change">leftHandGrabbing</a><a id="change"> || UIData</a><a id="change">.doNotInvert) 
+			</a>{
+				<a id="change">return UIData.namePosition</a>;
+			}
+			else
+			{
+				Vector3 <a id="change">textPosition</a> = <a id="change">UIData.namePosition</a>;
+				<a id="change">textPosition.z</a> *= -1f;
+				<a id="change">return textPosition</a>;
+			}
+		} 
+		catch </code></pre><h3>After Change</h3><pre><code class='java'>
+	// Tries to retrieve and return Flori_UIData position variable
+	Vector3 GetNamePosition(GameObject text)
+	{
+		<a id="change">return </a>text.<a id="change">GetComponentInParent&lt;Flori_UIData&gt;().namePosition</a>;
+	}
+
+	// Tries to retrieve and return Flori_UIData position variable</code></pre>

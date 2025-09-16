@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>111b2ff35ac1a2d8b6a458fdbc330b30e201d502,Workspaces/HierarchyWorkspace/HierarchyWorkspace.cs,HierarchyWorkspace,Setup,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				{
+					this.ConnectInterfaces(mb);
+				}
+				focusUI.<a id="change">GetComponentInChildren&lt;Button&gt;(</a>true<a id="change">)</a>.onClick.AddListener(FocusSelection);
+			}
+
+			if (m_CreateEmptyPrefab)</code></pre><h3>After Change</h3><pre><code class='java'>
+				{
+					this.ConnectInterfaces(mb);
+				}
+				var <a id="change">button</a> = focusUI.<a id="change">GetComponentInChildren&lt;WorkspaceButton&gt;(</a>true<a id="change">)</a>;
+				<a id="change">button.clicked</a> += FocusSelection;
+				button.hovered += OnButtonHover;
+			}
+</code></pre>

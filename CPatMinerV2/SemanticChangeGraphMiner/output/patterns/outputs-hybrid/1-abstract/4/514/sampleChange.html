@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>387f219a2dd6245e086db41545e6725f01a2b951,libs/unity/library/Tests/Runtime/VideoSourceTests.cs,VideoSourceTests,Multi,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                    Assert.IsNotNull(cfg.peer1.source, $"Missing source #{i} on Peer #1");
+                    // TODO fix after media source refactoring
+                    //Assert.IsNotNull(cfg.peer1.source.IsStreaming, $"Source #{i} is not ready on Peer #1");
+                    Assert.<a id="change">IsNull(</a>cfg<a id="change">.peer1.mediaLine.SenderTrack)</a>; // created during connection
+                }
+                if (cfg.peer2.expectSender)
+                {</code></pre><h3>After Change</h3><pre><code class='java'>
+                if (cfg.peer2.expectSender)
+                {
+                    Assert.IsNotNull(cfg.peer2.source, $"Missing source #{i} on Peer #2");
+                    <a id="change">Assert</a>.<a id="change">IsTrue(</a>cfg.peer2.source.IsLive, $"Source #{i} is not ready on Peer #2"<a id="change">)</a>;
+                    Assert.<a id="change">IsNotNull(</a>cfg<a id="change">.peer2.mediaLine.SenderTrack)</a>;
+                }
+            }
+</code></pre>

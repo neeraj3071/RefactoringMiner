@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3b87c6a6db92d64e8a38071b77c8fe3ee9fac5a4,libs/unity/library/Tests/Runtime/VideoSourceTests.cs,VideoSourceTests,InterleavedMediaAndData,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            // Initialize
+            var init1 = PeerConnectionTests.InitializeAndWait(pc1);
+            var <a id="change">init2</a> = PeerConnectionTests.<a id="change">InitializeAndWait(</a>pc2<a id="change">)</a>;
+            yield return init1;
+            <a id="change">yield return init2</a>;
+
+            // Confirm the source is ready, but the sender track is not created yet
+            Assert.IsTrue(source1.IsLive);</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            // Initialize
+            yield return PeerConnectionTests.InitializeAndWait(pc1);
+            <a id="change">yield return </a>PeerConnectionTests.<a id="change">InitializeAndWait(</a>pc2<a id="change">)</a>;
+
+            // Confirm the source is ready, but the sender track is not created yet
+            Assert.IsTrue(source1.IsLive);</code></pre>

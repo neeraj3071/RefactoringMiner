@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>70744fcbb041c96639998e9871f4dd759b15cbae,anhalytics-index/src/main/java/fr/inria/anhalytics/index/main/Main.java,Main,processCommand,#,107
+</h3><h3>Before Change</h3><pre><code class='java'>
+            System.out.println("The existing indices will be deleted and reseted, continue ?(Y/N)");
+            reponse = sc.nextLine().charAt(0);
+
+            <a id="change">if (reponse</a><a id="change"> != 'N') </a>{
+                esm.<a id="change">setUpIndex(</a>IndexProperties.getTeisIndexName()<a id="change">)</a>;
+                esm.setUpIndex(IndexProperties.getAnnotsIndexName());
+            }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        MetadataIndexer mi = new MetadataIndexer();
+        if (process.equals("index")) {
+            esm.<a id="change">setUpIndex(</a>IndexProperties.getTeisIndexName()<a id="change">)</a>;
+            esm.setUpIndex(IndexProperties.getAnnotsIndexName());
+
+            esm.indexTeiCollection();</code></pre>

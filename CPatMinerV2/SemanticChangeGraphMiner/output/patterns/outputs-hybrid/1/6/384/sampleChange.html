@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8a3ddb07bf47d2f76daa896285ec65eec09d3371,Assets/Scripts/UI/HealthUI.cs,HealthUI,OnDeath,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        _explosionParticles.gameObject.SetActive(true);
+
+        // Play the particle system of the tank exploding.
+        _explosionParticles.<a id="change">Play()</a>;
+
+        // Play the tank explosion sound effect.
+        _explosionAudio.Play();</code></pre><h3>After Change</h3><pre><code class='java'>
+        // Set the flag so that this function is only called once.
+        _dead = true;
+
+        <a id="change">if(</a><a id="change">_explosionParticles</a><a id="change"> != null</a><a id="change">)
+        </a>{
+            // Move the instantiated explosion prefab to the tank's position and turn it on.
+            _explosionParticles.transform.position = transform.position;
+            _explosionParticles.gameObject.SetActive(true);
+
+            // Play the particle system of the tank exploding.
+            _explosionParticles.<a id="change">Play()</a>;
+        }
+
+        if(_explosionAudio)</code></pre>

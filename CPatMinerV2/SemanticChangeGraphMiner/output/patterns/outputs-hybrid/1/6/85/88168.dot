@@ -1,0 +1,20 @@
+digraph G {
+subgraph cluster0 {
+1 [label="SendData" a="32" s="19256,19316" l="9,1" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="SendData" a="32" s="20072,20144" l="10,2" shape="box"];
+3 [label="InfixExpression:r" a="27" s="19299" l="-14" shape="box"];
+4 [label="SimpleName" a="42" s="19285" l="14" shape="ellipse"];
+5 [label="IfStatement" a="25" s="19280,19337" l="5,19" shape="diamond"];
+6 [label="SimpleName" a="42" s="19285" l="14" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 5 [label="_cond_"];
+5 -> 2 [label="_control_"];
+6 -> 3 [label="_para_"];
+}

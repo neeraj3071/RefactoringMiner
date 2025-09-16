@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>fc3f1a5ef14073f829789c0f3882f9fbd6038c41,Packages/com.unity.inputsystem/InputSystem/Actions/InputBindingResolver.cs,InputBindingResolver,InstantiateBindingComposite,#String#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                    nameAndParametersParsed.name));
+
+            // Instantiate.
+            var instance = Activator.<a id="change">CreateInstance(</a>type<a id="change">)</a>;
+            ////REVIEW: typecheck for IInputBindingComposite? (at least in dev builds)
+
+            // Set parameters.</code></pre><h3>After Change</h3><pre><code class='java'>
+                    $"No binding composite with name '{nameAndParametersParsed.name}' has been registered");
+
+            // Instantiate.
+            var <a id="change">instance</a> = Activator.<a id="change">CreateInstance(</a>type<a id="change">) as InputBindingComposite</a>;
+            <a id="change">if (instance</a><a id="change"> == null</a><a id="change">)
+                throw </a><a id="change">new Exception(
+                    $"Registered type '{type.Name}' used for '{nameAndParametersParsed.name}' is not an InputBindingComposite"</a><a id="change">)</a>;
+
+            // Set parameters.
+            InputDeviceBuilder.SetParameters(instance, nameAndParametersParsed.parameters);</code></pre>

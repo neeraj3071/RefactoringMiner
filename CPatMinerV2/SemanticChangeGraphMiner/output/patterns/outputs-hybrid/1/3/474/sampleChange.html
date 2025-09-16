@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8bd600b2be525e431aa7eef4679888eb936bc582,Packages/com.unity.inputsystem/InputSystem/Controls/InputControl.cs,InputControl,ReadValueFrom,#InputEventPtr#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            var statePtr = GetStatePtrFromStateEvent(inputEvent);
+            if (statePtr == IntPtr.Zero)
+                <a id="change">return </a><a id="change">ReadDefaultValue()</a>;
+
+            return Process(ReadRawValueFrom(statePtr));
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            var statePtr = GetStatePtrFromStateEvent(inputEvent);
+            if (statePtr == IntPtr.Zero)
+            {
+                value = <a id="change">ReadDefaultValue()</a>;
+                return false;
+            }
+</code></pre>

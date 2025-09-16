@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>caa76b0c91a63fb558cc178cd870866ce5696b60,Assets/Scripts/FirstPersonController.cs,FirstPersonController,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+	
+	// Update is called once per frame
+	void Update() {
+		<a id="change">if (keyboard</a><a id="change">) </a>{
+			Rotate (Input.GetAxis("Mouse X"), <a id="change">Input</a>.<a id="change">GetAxis(</a>"Mouse Y"<a id="change">)</a>, defaultSensitivity);
+			Move (Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"), defaultMovementSpeed);
+		}
+		// Add VR & Joystick implementation here</code></pre><h3>After Change</h3><pre><code class='java'>
+		float horizontalAxis = CrossPlatformInputManager.GetAxis("Horizontal"); // Controls sideways movement
+		float verticalAxis = CrossPlatformInputManager.GetAxis("Vertical"); // Controls forward/backward movement
+		float mouseXAxis = CrossPlatformInputManager.GetAxis("Mouse X"); // Controls horizontal camera movement
+		float mouseYAxis = <a id="change">CrossPlatformInputManager</a>.<a id="change">GetAxis(</a>"Mouse Y"<a id="change">)</a>; // Controls vertical camera movement
+		float sensitivity = defaultSensitivity;
+
+		if (activeVR == VR.None) {</code></pre>

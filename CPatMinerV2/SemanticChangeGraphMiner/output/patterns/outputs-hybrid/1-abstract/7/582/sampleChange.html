@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a5943dc73d964ccde3a20c048bc154d409a5096d,Scripts/UI/KeyboardUI.cs,KeyboardUI,StartDrag,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+	void StartDrag()
+	{
+		<a id="change">if (m_ChangeDragColorsCoroutine != </a><a id="change">null</a><a id="change">)
+			StopCoroutine(</a>m_ChangeDragColorsCoroutine<a id="change">)</a>;
+		m_ChangeDragColorsCoroutine = StartCoroutine(SetDragColors());
+
+		foreach (var button in m_Buttons)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+	void StartDrag()
+	{
+		<a id="change">this</a>.<a id="change">StopCoroutine(ref </a>m_ChangeDragColorsCoroutine<a id="change">)</a>;
+		m_ChangeDragColorsCoroutine = StartCoroutine(SetDragColors());
+
+		foreach (var button in m_Buttons)</code></pre>

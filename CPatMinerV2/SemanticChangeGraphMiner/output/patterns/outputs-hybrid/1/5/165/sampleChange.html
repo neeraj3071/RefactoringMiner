@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b50546bf2c0e8088570d931dfd74127d02c5ad5f,Assets/Planetaria/ExampleProjects/Platformer/Code/PlanetariaCharacter.cs,PlanetariaCharacter,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            last_jump_attempt = Time.time;
+        }
+#else
+        if (Input.<a id="change">GetButtonDown(</a>"OpenVR_ThumbPress"<a id="change">)</a>)
+        {
+            last_jump_attempt = Time.time;
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+    {
+#if UNITY_EDITOR
+        jump_pressed = Input.GetButtonDown("Jump"); // FIXME: these can be combined via Input instead (rename buttons/axes to match)
+        horizontal = <a id="change">Input</a>.<a id="change">GetAxis("Horizontal"</a><a id="change">)</a>;
+        vertical = Input.GetAxis("Vertical");
+#else
+        jump_press = Input.<a id="change">GetButtonDown(</a>"OpenVR_ThumbPress"<a id="change">)</a>; // FIXME: OSVR not OpenVR (typo)
+        horizontal = Input.GetAxis("OpenVR_ThumbAxisX");
+        vertical = Input.GetAxis("OpenVR_ThumbAxisY");
+#endif</code></pre>

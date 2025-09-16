@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d1be434085a8d142861ad2f6cc624026519a5a3c,Tests/Editor/Pointer/ObjectPointerTest.cs,PointerTest,ElementsAlwaysVisible,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            Assert.IsFalse(validOrigin.activeInHierarchy);
+            Assert.IsTrue(invalidOrigin.activeInHierarchy);
+            Assert.IsFalse(validSegment.activeInHierarchy);
+            Assert.<a id="change">IsTrue(invalidSegment</a>.activeInHierarchy<a id="change">)</a>;
+            Assert.IsFalse(validDestination.activeInHierarchy);
+            Assert.IsTrue(invalidDestination.activeInHierarchy);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            Assert.IsFalse(validOriginContainer.activeInHierarchy);
+            Assert.IsTrue(invalidOriginContainer.activeInHierarchy);
+            Assert.IsFalse(validSegmentContainer.activeInHierarchy);
+            Assert.<a id="change">IsTrue(invalidSegmentContainer</a>.activeInHierarchy<a id="change">)</a>;
+            Assert.IsFalse(validDestinationContainer.activeInHierarchy);
+            Assert.IsTrue(invalidDestinationContainer.activeInHierarchy);
+</code></pre>

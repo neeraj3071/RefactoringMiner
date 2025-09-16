@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7d679b06d3a278f863bbf2dd1d8b91abca401e43,Packages/com.unity.inputsystem/InputSystem/Editor/InputActionAsset/InputBindingPropertiesView.cs,InputBindingPropertiesView,OnInteractionsModified,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            m_InteractionsProperty.stringValue = m_InteractionsList.ToSerializableString();
+            m_InteractionsProperty.serializedObject.ApplyModifiedProperties();
+            <a id="change">if (m_OnChange</a><a id="change"> != null)
+                </a><a id="change">m_OnChange(</a>Change.InteractionsChanged<a id="change">)</a>;
+        }
+
+        private void OnBindingGroupsModified()</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            m_InteractionsProperty.stringValue = m_InteractionsList.ToSerializableString();
+            m_InteractionsProperty.serializedObject.ApplyModifiedProperties();
+            <a id="change">m_OnChange</a><a id="change">?.</a><a id="change">Invoke(</a>Change.InteractionsChanged<a id="change">)</a>;
+        }
+
+        private void OnBindingGroupsModified()</code></pre>

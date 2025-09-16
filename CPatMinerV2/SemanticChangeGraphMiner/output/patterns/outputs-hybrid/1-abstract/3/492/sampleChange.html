@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>f8082a9eeb0ff0a28b8d362b3a32fc5aa29f3ef5,Assets/Scripts/SoftwareCity/Rendering/ObjectTree.cs,ObjectTree,Start,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            SQPackage p2 = new SQPackage();
+
+            SQPackage p3 = <a id="change">new SQPackage()</a>;
+
+            SQPackage p4 = new SQPackage();
+            SQPackage p5 = new SQPackage();
+            SQPackage p6 = new SQPackage();
+            SQPackage p7 = new SQPackage();
+            SQPackage p8 = new SQPackage();
+            SQPackage p9 = new SQPackage();
+            SQPackage p10 = new SQPackage();
+            SQPackage p11 = new SQPackage();
+            SQPackage p12 = new SQPackage();
+            SQPackage p13 = new SQPackage();
+            SQPackage p14 = new SQPackage();
+
+            p12.AddChild(p14);
+            p12.AddChild(p13);
+            p11.AddChild(p12);
+            p10.AddChild(p11);
+            p9.AddChild(p10);
+            p8.AddChild(p9);
+            p7.AddChild(p8);
+
+            p6.AddChild(p7);
+            p5.AddChild(p6);
+            p4.AddChild(p5);
+            p3.AddChild(p4);
+
+            p2.<a id="change">AddChild(</a>p3<a id="change">)</a>;
+
+            p1.AddChild(p2);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            p2.AddChild(new SQDocument());
+
+            root.AddChild(p1);
+            root.<a id="change">AddChild(</a>p2<a id="change">)</a>;
+
+            softwareCityBuilder.Build(root);
+        }</code></pre>

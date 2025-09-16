@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d6b64bb0f509c65deca9733897307edc028b975c,Assets/Scripts/Managers/ShopManager.cs,ShopManager,GetCash,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+		public long GetCash()
+		{
+			<a id="change">return </a>System.Convert.ToInt64(PlayerPrefs.<a id="change">GetString(</a>Constants.CASH_KEY<a id="change">)</a>);
+		}
+
+		public void AddCash(long amount)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+		public long GetCash()
+		{
+			string s = PlayerPrefs.<a id="change">GetString(</a>Constants.CASH_KEY<a id="change">)</a>;
+
+			if (string.IsNullOrEmpty(s))
+			{
+				s = "0";
+			}
+
+			<a id="change">return </a>System.Convert.ToInt64(s);
+		}
+
+		public void AddCash(long amount)</code></pre>

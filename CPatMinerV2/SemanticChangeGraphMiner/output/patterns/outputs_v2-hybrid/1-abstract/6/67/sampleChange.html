@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3fc34d9487f5e6aa8a0dff208263ecf67b51b470,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/Harvester.java,Harvester,processTeis,#List#String#boolean#,45
+</h3><h3>Before Change</h3><pre><code class='java'>
+            } catch (BinaryNotAvailableException bna) {
+                mm.save(tei.getId(), "harvestProcess", "file not available", null);
+            } catch (Exception e) {
+                mm.<a id="change">save(</a>tei.getId(), "harvestProcess", <a id="change">"harvest error"</a>, <a id="change">null</a><a id="change">)</a>;
+                e.printStackTrace();
+            }
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+                        logger.info("\t\t\t\t downloading PDF file.");
+                        downloadFile(tei.getFile(), tei.getId(), date);
+                    } else {
+                        mm.<a id="change">save(</a>tei.getId(), "harvestProcess", <a id="change">"no url for binary"</a>, <a id="change">date</a><a id="change">)</a>;
+                        logger.info("\t\t\t\t PDF not found !");
+                    }
+                    if (withAnnexes) {</code></pre>

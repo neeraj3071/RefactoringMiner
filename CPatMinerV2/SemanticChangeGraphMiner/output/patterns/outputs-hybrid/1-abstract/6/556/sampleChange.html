@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b5376c8748da45e77f29c06f09306c91622a5894,Scripts/EditorVR.cs,EditorVR,UpdatePlayerHandleMaps,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		foreach (DeviceData deviceData in m_DeviceData.Values)
+		{
+			var mainMenu = deviceData.mainMenu;
+			<a id="change">if (mainMenu</a> != null && mainMenu.visible<a id="change">)
+				AddActionMapInputs(</a>mainMenu, maps<a id="change">)</a>;
+
+			var alternateMenu = deviceData.alternateMenu;
+			if (alternateMenu != null && alternateMenu.visible)</code></pre><h3>After Change</h3><pre><code class='java'>
+			if (mainMenu != null)
+			{
+				var mainMenuMaps = new List&lt;ActionMapInput&gt;();
+				<a id="change">AddActionMapInputs(</a>mainMenu, <a id="change">mainMenuMaps</a><a id="change">)</a>;
+
+				foreach (var input in mainMenuMaps)
+					input.active = mainMenu.visible;</code></pre>

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>441f371893a2770d4f217175481fd978efa0bf06,Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs,UserTests,Users_AssigningSameDeviceToSameUserMoreThanOnce_IsIgnored,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        var device = InputSystem.AddDevice&lt;Gamepad&gt;();
+        var user = InputUser.Add();
+
+        user.<a id="change">AssignDevice(</a>device<a id="change">)</a>;
+        user.AssignDevice(device);
+        user.AssignDevice(device);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    public void Users_AssigningSameDeviceToSameUserMoreThanOnce_IsIgnored()
+    {
+        var device = InputSystem.AddDevice&lt;Gamepad&gt;();
+        var <a id="change">user</a> = new TestUser();
+        InputUser.Add(user);
+
+        user.AssignInputDevice(device);
+        user.AssignInputDevice(device);
+        user.<a id="change">AssignInputDevice(</a>device<a id="change">)</a>;
+
+        Assert.That(user.GetAssignedInputDevices(), Is.EquivalentTo(new InputDevice[] {device}));
+    }</code></pre>

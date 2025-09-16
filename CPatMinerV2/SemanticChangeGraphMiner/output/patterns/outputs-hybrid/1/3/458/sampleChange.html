@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3e4fe2d3b1111e86969d0824bc604589844928f0,Assets/NewtonVR/NVRInteractable.cs,NVRInteractable,ForceDetach,#NVRHand#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                for (int handIndex = 0; handIndex &lt; AttachedHands.Count; handIndex++)
+                {
+                    AttachedHands[handIndex].EndInteraction(this);
+                    this.<a id="change">EndInteraction(</a>AttachedHands[handIndex]<a id="change">)</a>;
+                }
+            }
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+                for (int handIndex = (AttachedHands.Count-1); handIndex &gt;= 0; handIndex--)
+                {
+                    NVRHand detaching = AttachedHands[handIndex];
+                    detaching.<a id="change">EndInteraction(this</a><a id="change">)</a>;
+                    this.EndInteraction(detaching);
+                }
+            }</code></pre>

@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>2e57747395545444db8fe4a8073770b18549beb1,AndroidIntegration/ModelColorPicker/Unity/ModelColorPicker/Assets/TangoSDK/Core/Scripts/TangoWrappers/TangoApplication.cs,TangoApplication,_InitializeMotionTracking,#String#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                {
+                    if (!m_enableDriftCorrection)
+                    {
+                        <a id="change">if (</a>m_tangoConfig.<a id="change">SetBool(</a>TangoConfig.Keys.ENABLE_AREA_LEARNING_BOOL,
+                                                  m_areaDescriptionLearningMode<a id="change">) && m_areaDescriptionLearningMode</a><a id="change">)
+                        </a>{
+                            <a id="change">Debug</a>.<a id="change">Log("Area Learning is enabled."</a><a id="change">)</a>;
+                        }
+
+                        if (!string.IsNullOrEmpty(uuid))
+                        {
+                            if (m_tangoConfig.SetString(TangoConfig.Keys.LOAD_AREA_DESCRIPTION_UUID_STRING, uuid))
+                            {
+                                usedUUID = true;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        m_tangoConfig.SetBool(TangoConfig.Keys.EXPERIMENTAL_ENABLE_DRIFT_CORRECTION_BOOL,
+                                              m_enableDriftCorrection);
+                    }
+
+                    TangoCoordinateFramePair areaDescription;
+                    areaDescription.baseFrame = TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_AREA_DESCRIPTION;
+                    areaDescription.targetFrame = TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_DEVICE;
+                    
+                    TangoCoordinateFramePair startToADF;
+                    startToADF.baseFrame = TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_AREA_DESCRIPTION;
+                    startToADF.targetFrame = TangoEnums.TangoCoordinateFrameType.TANGO_COORDINATE_FRAME_START_OF_SERVICE;
+                    
+                    framePairs.Add(areaDescription);
+                    framePairs.Add(startToADF);
+                }
+            }
+
+            if (framePairs.Count &gt; 0)
+            {
+                _SetMotionTrackingCallbacks(framePairs.ToArray());
+            }
+
+            // The C API does not default this to on, but it is locked down.
+            m_tangoConfig.SetBool(TangoConfig.Keys.ENABLE_LOW_LATENCY_IMU_INTEGRATION, true);
+
+            m_tangoConfig.SetBool(TangoConfig.Keys.ENABLE_MOTION_TRACKING_AUTO_RECOVERY_BOOL, m_motionTrackingAutoReset);
+
+            <a id="change">if (m_enableCloudADF</a><a id="change">)
+            </a>{
+                <a id="change">Debug</a>.<a id="change">Log("Connect to Cloud Service."</a><a id="change">)</a>;
+                <a id="change">AndroidHelper</a>.<a id="change">BindTangoCloudService()</a>;
+            }
+
+            // Check if the UUID passed in was actually used.</code></pre><h3>After Change</h3><pre><code class='java'>
+                {
+                    if (!m_enableDriftCorrection)
+                    {
+                        m_tangoConfig.<a id="change">SetBool(</a>TangoConfig.Keys.ENABLE_AREA_LEARNING_BOOL, m_areaDescriptionLearningMode<a id="change">)</a>;
+
+                        if (!string.IsNullOrEmpty(uuid))
+                        {
+                            if (m_tangoConfig.SetString(TangoConfig.Keys.LOAD_AREA_DESCRIPTION_UUID_STRING, uuid))
+                            {
+                                usedUUID = true;
+                            }
+                        }
+
+                        <a id="change">if (m_enableCloudADF</a><a id="change">)
+                        </a>{
+                            <a id="change">m_tangoConfig</a>.<a id="change">SetString(TangoConfig</a>.Keys.LOAD_AREA_DESCRIPTION_UUID_STRING, <a id="change">string.Empty</a><a id="change">)</a>;
+                            <a id="change">m_tangoConfig</a>.<a id="change">SetBool(TangoConfig</a>.Keys.ENABLE_CLOUD_ADF_BOOL, <a id="change">true</a><a id="change">)</a>;
+                            <a id="change">Debug</a>.<a id="change">Log("Local AreaDescription cannot be loaded when cloud ADF is enabled, Tango is starting"</a> +
+                                      <a id="change">"with cloud Area Description only."</a><a id="change"> + Environment.StackTrace</a><a id="change">)</a>;
+                        }
+                    }
+                    else</code></pre>

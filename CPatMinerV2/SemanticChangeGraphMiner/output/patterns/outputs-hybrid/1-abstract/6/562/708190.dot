@@ -1,0 +1,21 @@
+digraph G {
+subgraph cluster0 {
+2 [label="MethodInvocation" a="32" s="4619,4657" l="9,1" shape="box"];
+4 [label="MethodInvocation" a="32" s="4277,4313" l="9,1" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+1 [label="IfStatement" a="25" s="6794,6831" l="4,14" shape="diamond"];
+3 [label="MethodInvocation" a="32" s="7174,7212" l="9,1" shape="box"];
+5 [label="MethodInvocation" a="32" s="7053,7089" l="9,1" shape="box"];
+6 [label="SimpleName" a="42" s="6798" l="33" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 5 [label="_control_"];
+1 -> 3 [label="_control_"];
+2 -> 3 [label="_map_"];
+4 -> 5 [label="_map_"];
+6 -> 1 [label="_cond_"];
+}

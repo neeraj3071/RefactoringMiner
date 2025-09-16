@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>63e9f6d1e82720c926e5473f35bae98345aabce3,Scripts/Helpers/ProxyHelper.cs,ProxyHelper,Start,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            origins.Add(fieldGrabOrigin);
+
+            m_ProxyUI.Setup(m_Affordances, origins);
+            m_ProxyAnimator.<a id="change">Setup(</a>m_Affordances<a id="change">)</a>;
+
+            this.ConnectInterfaces(m_ProxyAnimator, this.rayOrigin);
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            if (m_ProxyUI)
+                m_ProxyUI.Setup(m_Affordances, origins);
+
+            <a id="change">if (m_ProxyAnimator</a><a id="change">)
+            </a>{
+                m_ProxyAnimator.<a id="change">Setup(</a>m_Affordances<a id="change">)</a>;
+                this.ConnectInterfaces(m_ProxyAnimator, this.rayOrigin);
+            }
+        }</code></pre>

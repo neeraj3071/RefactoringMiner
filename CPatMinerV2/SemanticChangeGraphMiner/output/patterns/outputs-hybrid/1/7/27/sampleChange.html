@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>29e0153c473e962752a052c242dee85dc9547764,Assets/HoloToolkit/SpatialMapping/Scripts/SpatialMappingComponent/Support/SMBaseAbstract.cs,SMBaseAbstract,HandleAdd,#SurfaceId#System.DateTime#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                //the mesh filter that is populated with the spatial mapping data for this mesh
+                target.GetComponent&lt;MeshFilter&gt;() ?? target.AddComponent&lt;MeshFilter&gt;(),
+                //the world anchor used to position the spatial mapping mesh in the world
+                target.GetComponent&lt;WorldAnchor&gt;() ?? target.<a id="change">AddComponent&lt;WorldAnchor&gt;()</a>,
+                //the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
+                target.GetComponent&lt;MeshCollider&gt;() ?? target.AddComponent&lt;MeshCollider&gt;(),
+                //triangles per cubic meter requested for this mesh</code></pre><h3>After Change</h3><pre><code class='java'>
+                //the mesh filter that is populated with the spatial mapping data for this mesh
+                (target.GetComponent&lt;MeshFilter&gt;() == null) ? target.AddComponent&lt;MeshFilter&gt;() : target.GetComponent&lt;MeshFilter&gt;(),
+                //the world anchor used to position the spatial mapping mesh in the world
+                (<a id="change">target</a>.<a id="change">GetComponent&lt;WorldAnchor&gt;()</a><a id="change"> == null</a>)<a id="change"> ? </a>target.<a id="change">AddComponent&lt;WorldAnchor&gt;()</a> : target.GetComponent&lt;WorldAnchor&gt;(),
+                //the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
+                (target.GetComponent&lt;MeshCollider&gt;() == null) ? target.AddComponent&lt;MeshCollider&gt;() : target.GetComponent&lt;MeshCollider&gt;(),
+                //triangles per cubic meter requested for this mesh</code></pre>

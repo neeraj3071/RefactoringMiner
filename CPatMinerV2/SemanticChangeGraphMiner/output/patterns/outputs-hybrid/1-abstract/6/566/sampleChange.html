@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ce34bf29188d8b66c21c01d4caa3440d9146172b,Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployWindow.cs,BuildDeployWindow,OpenWindow,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            var window = GetWindow&lt;BuildDeployWindow&gt;("Build Window");
+
+            <a id="change">if (window != </a><a id="change">null</a><a id="change">)
+            </a>{
+                window.<a id="change">Show()</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            // Dock it next to the Scene View.
+            var window = GetWindow&lt;BuildDeployWindow&gt;(typeof(SceneView));
+            window.titleContent = new GUIContent("Build Window");
+            window.<a id="change">Show()</a>;
+        }
+
+        private void OnEnable()</code></pre>

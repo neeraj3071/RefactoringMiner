@@ -1,0 +1,22 @@
+digraph G {
+subgraph cluster0 {
+2 [label="MethodInvocation" a="32" s="571,640" l="16,1" shape="box"];
+3 [label="MethodInvocation" a="32" s="479,542" l="16,1" shape="box"];
+4 [label="SimpleName" a="42" s="465" l="13" shape="ellipse"];
+5 [label="SimpleName" a="42" s="495" l="14" shape="ellipse"];
+6 [label="SimpleName" a="42" s="526" l="16" shape="ellipse"];
+7 [label="SimpleName" a="42" s="495" l="29" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+1 [label="MethodInvocation" a="32" s="414,489" l="16,1" shape="box"];
+label = "New";
+style="dotted";
+}
+2 -> 1 [label="_map_"];
+4 -> 3 [label="_recv_"];
+5 -> 7 [label="_qual_"];
+6 -> 3 [label="_para_"];
+7 -> 3 [label="_para_"];
+}

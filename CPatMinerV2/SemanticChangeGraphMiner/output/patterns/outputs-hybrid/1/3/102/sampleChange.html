@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1281eed41e3f456edf03a217b543a6c2f2e10bd3,Assets/Planetaria/Code/Rendering/BlockRenderer.cs,BlockRenderer,subdivide,#Arc#number#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        float middle_point_angle = max_error_location(arc, begin_point_angle, end_point_angle);
+
+        OctahedralUVCoordinates begin_point = new NormalizedCartesianCoordinates(arc.position(begin_point_angle));
+        OctahedralUVCoordinates end_point = <a id="change">new NormalizedCartesianCoordinates(</a>arc.<a id="change">position(</a>end_point_angle<a id="change">))</a>;
+        OctahedralUVCoordinates middle_point = new NormalizedCartesianCoordinates(arc.position(middle_point_angle));
+
+        if (PlanetariaMath.point_line_distance(begin_point.data, end_point.data, middle_point.data) &gt; Precision.threshold) // if the max error is greater than a threshold, recursively add the left and right halves into the list of lines</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        Vector3 begin = arc.position(begin_point_angle);
+        Vector3 middle = arc.position(middle_point_angle);
+        Vector3 end = arc.<a id="change">position(</a>end_point_angle<a id="change">)</a>;
+
+        OctahedralUVCoordinates begin_point = new NormalizedCartesianCoordinates(begin);
+        OctahedralUVCoordinates middle_point = new NormalizedCartesianCoordinates(middle);</code></pre>

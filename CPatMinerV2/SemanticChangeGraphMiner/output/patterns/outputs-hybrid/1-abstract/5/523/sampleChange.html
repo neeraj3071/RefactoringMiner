@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>35afe2926a861fd000bfca96cab1e7986333d44f,Assets/QA/Tests/Touch/Scripts/TouchReporter.cs,TouchReporter,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        coordinateText.text = touchscreen.allTouchControls[touchIndex].ReadValue().position.x.ToString("0000") + ", " +
+            touchscreen.allTouchControls[touchIndex].ReadValue().position.y.ToString("0000");
+
+        if (touchscreen.allTouchControls[touchIndex].<a id="change">ReadValue()</a>.phase != PointerPhase.None &&
+            touchscreen.allTouchControls[touchIndex].ReadValue().phase != PointerPhase.Ended)
+        {
+            image.color = Color.red;</code></pre><h3>After Change</h3><pre><code class='java'>
+    {
+        Touchscreen touchscreen = UnityEngine.Experimental.Input.Touchscreen.current;
+        
+        if ((<a id="change">touchscreen!= </a><a id="change">null</a>) && (touchIndex &lt; touchscreen.activeTouches.Count))
+        {
+            coordinateText.text = 
+                touchscreen.activeTouches[touchIndex].<a id="change">ReadValue()</a>.position.x.ToString("0000") + ", " +
+                touchscreen.activeTouches[touchIndex].ReadValue().position.y.ToString("0000");
+            image.color = Color.red;
+        }</code></pre>

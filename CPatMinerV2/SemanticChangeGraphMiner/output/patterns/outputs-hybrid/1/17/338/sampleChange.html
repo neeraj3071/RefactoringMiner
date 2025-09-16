@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0626cbc27fd25329c6b85224dcdca0efc0deebdc,Workspaces/Base/WorkspaceUI.cs,WorkspaceUI,HideResizeUI,#BaseHandle#HandleEventData#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				m_FrontLeftResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+				m_FrontRightResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+			}
+			<a id="change">else if (</a>handle == m_RightHandle<a id="change">)
+			</a>{
+				m_RightSideFrontResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+				<a id="change">m_RightSideBackResizeIcon</a>.<a id="change">CrossFadeAlpha(kOpacityTarget</a>, <a id="change">kDuration</a>, <a id="change">true</a><a id="change">)</a>;
+			}
+			else if (handle == m_LeftHandle)
+			{
+				<a id="change">m_LeftSideFrontResizeIcon</a>.<a id="change">CrossFadeAlpha(kOpacityTarget</a>, <a id="change">kDuration</a>, <a id="change">true</a><a id="change">)</a>;
+				m_LeftSideBackResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+			}
+			else if (handle == m_BackHandle)
+			{
+				m_BackLeftResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+				m_BackRightResizeIcon.<a id="change">CrossFadeAlpha(</a>kOpacityTarget, kDuration, true<a id="change">)</a>;
+			}
+		}
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+			const float kOpacityTarget = 0f;
+			const float kDuration = 0.2f;
+			<a id="change">if (</a>handle == m_BackLeftHandle<a id="change">) // in order of potential usage
+				</a>m_BackLeftResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+			else if (handle == m_FrontRightHandle)
+				m_FrontRightResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+			<a id="change">else if (handle</a><a id="change"> == m_FrontLeftHandle</a><a id="change">)
+				</a>m_FrontLeftResizeIcon.CrossFadeAlpha(kOpacityTarget, kDuration, true);
+			else if (handle == m_BackRightHandle)
+				m_BackRightResizeIcon.<a id="change">CrossFadeAlpha(</a>kOpacityTarget, kDuration, true<a id="change">)</a>;
+		}
+
+		void Awake()</code></pre>

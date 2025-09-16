@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ed1465b0800dc857b0583744bfa842e02f319d1b,Scripts/Core/EditorVR.Rays.cs,EditorVR,UpdateRaycasts,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+			internal void UpdateRaycasts()
+			{
+				<a id="change">if (m_IntersectionModule</a><a id="change"> == null)
+					</a>m_IntersectionModule = evr.<a id="change">GetModule&lt;IntersectionModule&gt;()</a>;
+
+				var distance = k_DefaultRayLength * Viewer.GetViewerScale();
+				ForEachRayOrigin(rayOrigin =&gt; { m_IntersectionModule.UpdateRaycast(rayOrigin, distance); });</code></pre><h3>After Change</h3><pre><code class='java'>
+
+			internal static void UpdateRaycasts()
+			{
+				var intersectionModule = evr.<a id="change">GetModule&lt;IntersectionModule&gt;()</a>;
+				var distance = k_DefaultRayLength * Viewer.GetViewerScale();
+				ForEachRayOrigin(rayOrigin =&gt; { intersectionModule.UpdateRaycast(rayOrigin, distance); });
+			}</code></pre>

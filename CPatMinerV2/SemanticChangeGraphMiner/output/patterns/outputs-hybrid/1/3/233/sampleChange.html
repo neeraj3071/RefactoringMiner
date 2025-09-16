@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e6acf6e659053e752c8ba646085daeee8d07cda5,unity_pupil_plugin_vr/Assets/pupil_plugin/Scripts/Pupil/PupilMarker.cs,PupilMarker,get,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				_gameObject = GameObject.Instantiate (Resources.Load&lt;GameObject&gt; ("MarkerObject"));
+				_gameObject.name = this.name;
+				_gameObject.GetComponent&lt;MeshRenderer&gt; ().material = new Material (Resources.Load&lt;Material&gt; ("Materials/MarkerMaterial"));
+				_gameObject.GetComponent&lt;MeshRenderer&gt; ().material.<a id="change">SetColor (</a>"_EmissionColor", this.color<a id="change">)</a>;
+				_gameObject.transform.parent = this.camera.transform;
+			}
+			return _gameObject;</code></pre><h3>After Change</h3><pre><code class='java'>
+				_gameObject = GameObject.Instantiate (Resources.Load&lt;GameObject&gt; ("MarkerObject"));
+				_gameObject.name = this.name;
+				material = new Material (Resources.Load&lt;Material&gt; ("Materials/MarkerMaterial"));
+				_gameObject.GetComponent&lt;MeshRenderer&gt; ().<a id="change">material</a> = material;
+				_gameObject.transform.parent = this.camera.transform;
+				material.<a id="change">SetColor (</a>"_EmissionColor", this.color<a id="change">)</a>;
+			}
+			return _gameObject;
+		}</code></pre>

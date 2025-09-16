@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3c029aac60a5e6c18a1f5799057d05244dd860a7,Assets/Experiment/Experiment.cs,Experiment,Load,#Stream#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            // spawn items
+            foreach (var spawnable in configuration.Spawnable)
+            {
+                <a id="change">Instantiate(</a>catalogue[spawnable.Product], spawnable.Position, spawnable.Rotation<a id="change">)</a>;
+            }
+
+            // order</code></pre><h3>After Change</h3><pre><code class='java'>
+            // spawn items
+            foreach (var spawnable in configuration.Spawnable)
+            {
+                GameObject <a id="change">product</a> = <a id="change">Instantiate(</a>catalogue[spawnable.Product], spawnable.Position, spawnable.Rotation<a id="change">)</a>;
+				product.layer = 0; // Make it not grabbable
+				<a id="change">product</a>.<a id="change">GetComponent&lt;Rigidbody&gt;()</a>.useGravity = false;
+				Destroy(<a id="change">product</a>.<a id="change">GetComponent&lt;Collider&gt;()</a>); // Disable collisions
+            }
+
+            // order</code></pre>

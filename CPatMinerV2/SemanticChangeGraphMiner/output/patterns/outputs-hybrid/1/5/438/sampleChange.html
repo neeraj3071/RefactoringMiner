@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ae1bec1e954bafb1c934dd2a58f75fac8f144e28,Assets/VRM10/Runtime/Components/Expression/DefaultExpressionValidator.cs,DefaultExpressionValidator,Validate,#IReadOnlyDictionary#IDictionary#LookAtEyeDirection#LookAtEyeDirection#number#number#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                }
+                if (!key.IsLookAt)
+                {
+                    lookAtOverrideRate = <a id="change">Mathf</a>.<a id="change">Max(lookAtOverrideRate</a>, <a id="change">GetOverrideRate(</a>expression.OverrideLookAt, weight<a id="change">))</a>;
+                }
+                if (!key.IsMouth)
+                {</code></pre><h3>After Change</h3><pre><code class='java'>
+                }
+                if (!key.IsLookAt)
+                {
+                    lookAtOverrideRate += <a id="change">GetOverrideRate(</a>expression.OverrideLookAt, weight<a id="change">)</a>;
+                }
+                if (!key.IsMouth)
+                {</code></pre>

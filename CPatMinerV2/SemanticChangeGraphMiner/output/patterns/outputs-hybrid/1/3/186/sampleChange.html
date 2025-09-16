@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>f55775edfd55399c206904511530bf6059889e77,Tests/Editor/Data/Collection/GameObjectObservableSetTest.cs,GameObjectObservableSetTest,RemoveElement,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            subject.AddElement(elementOne);
+            subject.AddElement(elementTwo);
+            becameEmptyMock.Reset();
+            becamePopulatedMock.<a id="change">Reset()</a>;
+
+            Assert.IsNotEmpty(subject.Elements);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            subject.AddElement(elementTwo);
+            Assert.AreEqual(2, subject.Elements.Count);
+
+            becamePopulatedMock.<a id="change">Reset()</a>;
+            elementAddedMock.Reset();
+            elementRemovedMock.Reset();
+            becameEmptyMock.Reset();</code></pre>

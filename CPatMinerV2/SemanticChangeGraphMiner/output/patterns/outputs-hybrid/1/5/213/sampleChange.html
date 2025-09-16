@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4c0823ccf085a01c05917a89f25a007ddefeec68,Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_InteractGrab.cs,SteamVR_InteractGrab,ReleaseGrabbedObjectFromController,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    {
+        var jointGameObject = controllerAttachJoint.gameObject;
+        var rigidbody = jointGameObject.GetComponent&lt;Rigidbody&gt;();
+        Object.<a id="change">DestroyImmediate(</a>controllerAttachJoint<a id="change">)</a>;
+        controllerAttachJoint = null;
+
+        return rigidbody;</code></pre><h3>After Change</h3><pre><code class='java'>
+    {
+        var jointGameObject = controllerAttachJoint.gameObject;
+        var rigidbody = jointGameObject.GetComponent&lt;Rigidbody&gt;();
+        <a id="change">if (withThrow</a><a id="change">)
+        </a>{
+            Object.<a id="change">DestroyImmediate(</a>controllerAttachJoint<a id="change">)</a>;
+        } else
+        {
+            Object.Destroy(controllerAttachJoint);</code></pre>

@@ -1,0 +1,41 @@
+digraph G {
+subgraph cluster0 {
+1 [label="InputPerformed" a="32" s="2946,2995" l="15,1" shape="box"];
+3 [label="InputAction" a="32" s="2910,2928" l="12,1" shape="box"];
+5 [label="SimpleName" a="42" s="2896" l="11" shape="ellipse"];
+7 [label="IfStatement" a="25" s="2805,2827" l="4,10" shape="diamond"];
+8 [label="InfixExpression:r" a="27" s="2819" l="4" shape="box"];
+11 [label="return" a="41" s="2851" l="7" shape="box"];
+12 [label="BooleanLiteral" a="9" s="2858" l="5" shape="ellipse"];
+13 [label="SimpleName" a="42" s="2961" l="11" shape="ellipse"];
+14 [label="SimpleName" a="42" s="2922" l="6" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="InputPerformed" a="32" s="5881,5947" l="15,1" shape="box"];
+4 [label="SimpleName" a="42" s="5896,5923" l="21,1" shape="ellipse"];
+6 [label="SimpleName" a="42" s="5896" l="20" shape="ellipse"];
+9 [label="InfixExpression:r" a="27" s="5869" l="4" shape="box"];
+10 [label="IfStatement" a="25" s="5878" l="3" shape="diamond"];
+15 [label="SimpleName" a="42" s="5917" l="6" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 5 [label="_def_"];
+4 -> 2 [label="_para_"];
+5 -> 13 [label="_ref_"];
+6 -> 4 [label="_qual_"];
+7 -> 3 [label="_control_"];
+7 -> 1 [label="_control_"];
+7 -> 11 [label="_control_"];
+8 -> 7 [label="_cond_"];
+8 -> 9 [label="_map_"];
+9 -> 10 [label="_cond_"];
+10 -> 2 [label="_control_"];
+12 -> 11 [label="_para_"];
+13 -> 1 [label="_para_"];
+14 -> 3 [label="_para_"];
+15 -> 4 [label="_para_"];
+}

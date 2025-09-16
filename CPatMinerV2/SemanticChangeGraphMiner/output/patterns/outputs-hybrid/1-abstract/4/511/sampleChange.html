@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>60e59aec0a44bd1ca22f3e09825abee0b9219e2a,MREUnityRuntime/MREUnityRuntimeLib/Core/Actor.cs,Actor,GenerateTransformPatch,#ActorPatch#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            };
+
+            LocalTransform = transform.ToLocalTransform();
+            AppTransform = transform.<a id="change">ToAppTransform(</a>App<a id="change">.SceneRoot.transform)</a>;
+
+            actorPatch.Transform = transformPatch.IsPatched() ? transformPatch : null;
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            };
+
+            LocalTransform.ToLocalTransform(transform);
+            <a id="change">AppTransform</a>.<a id="change">ToAppTransform(transform</a>, App<a id="change">.SceneRoot.transform)</a>;
+
+            actorPatch.Transform = transformPatch.IsPatched() ? transformPatch : null;
+        }</code></pre>

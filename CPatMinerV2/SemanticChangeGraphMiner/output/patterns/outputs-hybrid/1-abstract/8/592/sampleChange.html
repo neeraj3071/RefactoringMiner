@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3e76abb5447586f10deedf0835d228e760fd3005,ARIndoorNav Project/Assets/Scripts/Model/PoseEstimation.cs,PoseEstimation,UpdateLastMarkerPosition,#Transform#Pose#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        targetPosition = virtualMarkerPosition - _LastMarkerTransform.position - worldMarkerPosition; 
+        _LastMarkerTransform.position += targetPosition;
+
+        targetRotation = _LastMarkerTransform.rotation * (Quaternion.<a id="change">Inverse(</a>virtualMarkerRotation<a id="change">)</a> * worldMarkerRotation);
+        <a id="change">_LastMarkerTransform</a>.rotation = targetRotation;
+
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        targetDelta =   virtualMarkerPosition - _ARCoreOriginTransform.position - worldMarkerPosition;
+        _ARCoreOriginTransform.position += targetDelta;
+
+        targetRotation = virtualMarkerRotation * Quaternion.Inverse(_ARCoreOriginTransform.rotation) * Quaternion.<a id="change">Inverse(worldMarkerRotation</a><a id="change">)</a> ;
+        <a id="change">_ARCoreOriginTransform</a>.rotation *= targetRotation;
+
+    }
+</code></pre>

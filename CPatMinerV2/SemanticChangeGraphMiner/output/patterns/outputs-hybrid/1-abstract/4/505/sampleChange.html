@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8ea9a6713613a3973bf12cd0849c1b2a1ee2c697,libs/Microsoft.MixedReality.WebRTC.Unity/Assets/Microsoft.MixedReality.WebRTC.Unity.Editor/WebcamSourceEditor.cs,WebcamSourceEditor,OptionalTextField,#SerializedProperty#String#GUIContent#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                using (new EditorGUI.PropertyScope(rect, label, stringProperty))
+                {
+                    bool hasValidValue = !string.IsNullOrWhiteSpace(stringProperty.stringValue);
+                    hasValidValue = EditorGUI.<a id="change">ToggleLeft(</a>rect, label, <a id="change">hasValidValue</a><a id="change">)</a>;
+                    string newValue = stringProperty.stringValue;
+                    if (hasValidValue)
+                    {</code></pre><h3>After Change</h3><pre><code class='java'>
+                using (new EditorGUI.PropertyScope(rect, label, stringProperty))
+                {
+                    bool hadValidValue = !string.IsNullOrWhiteSpace(stringProperty.stringValue);
+                    bool needsValidValue = EditorGUI.<a id="change">ToggleLeft(</a>rect, label, <a id="change">hadValidValue</a><a id="change">)</a>;
+                    string newValue = stringProperty.stringValue;
+                    if (needsValidValue)
+                    {</code></pre>

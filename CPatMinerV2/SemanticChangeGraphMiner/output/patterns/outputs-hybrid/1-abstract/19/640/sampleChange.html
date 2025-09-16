@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>37e907191a3d6ca4b04d3a772261463b6dfa2857,Assets/Watson/Widgets/Question/CubeAnimationManager.cs,CubeAnimationManager,StopFoldingAnimation,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            for (int i = 0; i &lt; m_animationPositionOnSide.Length; i++)
+            {
+                if (<a id="change">m_animationPositionOnSide[</a>i<a id="change">] != </a><a id="change">null</a>)
+                    LeanTween.<a id="change">cancel(m_animationPositionOnSide[</a>i<a id="change">].</a><a id="change">uniqueId</a><a id="change">)</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            for (int i = 0; i &lt; m_animationPositionOnSide.Length; i++)
+            {
+                if (LeanTween.<a id="change">descr( m_animationPositionOnSide[</a>i<a id="change">]</a><a id="change">) != </a><a id="change">null</a>){
+					<a id="change">LeanTween</a>.<a id="change">descr( m_animationPositionOnSide[i</a><a id="change">]</a><a id="change">)</a>.onComplete = null;
+                    <a id="change">LeanTween</a>.<a id="change">cancel(m_animationPositionOnSide[</a><a id="change">i]</a><a id="change">)</a>;
+					m_animationPositionOnSide[i] = -1;
+				}
+            }</code></pre>

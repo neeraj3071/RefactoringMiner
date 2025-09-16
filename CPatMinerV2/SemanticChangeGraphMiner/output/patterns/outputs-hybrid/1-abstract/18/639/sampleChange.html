@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7a705cc96c43c49768b61bb0d67e609c6bf7563c,Assets/Planetaria/Code/LevelGeometry/Octahedron.cs,Octahedron,convert,#From[]#To[]#Vector3#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        for (int vertex = 0; vertex &lt; 3; ++vertex)
+        {
+            int begin_edge = <a id="change">mesh.triangles[</a>triangle_start_index + vertex<a id="change">]</a>;
+            int <a id="change">end_edge</a> = mesh.triangles[triangle_start_index + (<a id="change">vertex + </a><a id="change">1</a>) % 3];
+
+            Vector3 <a id="change">from_begin</a> = get_vector(from_array[begin_edge]); // Rather than From, From, From...
+            Vector3 from_end = get_vector(from_array[end_edge]);
+            Vector3 from_vector = from_end<a id="change"> - </a><a id="change">from_begin</a>;
+
+            Vector3 to_begin = <a id="change">get_vector(</a>to_array[begin_edge]<a id="change">)</a>; // ... and To, To, To...
+            Vector3 to_end = get_vector(<a id="change">to_array[</a><a id="change">end_edge]</a>);
+            Vector3 <a id="change">to_vector</a> = to_end - to_begin;
+
+            Vector3 from_position = get_vector(from) - from_begin; // ... This is a little workaround-y
+            float <a id="change">dot_product</a> = Vector3.Dot(from_position, from_vector) / from_vector.sqrMagnitude;
+            to += <a id="change">to_vector*</a><a id="change">dot_product</a>;
+        }
+
+        return set_vector&lt;To&gt;(to);</code></pre><h3>After Change</h3><pre><code class='java'>
+        Vector3[] from_triangle = new Vector3[3];
+        Vector3[] to_triangle = new Vector3[3];
+
+        for (int <a id="change">triangle</a> = 0; triangle &lt; 3; ++triangle)
+        {
+            int <a id="change">current_triangle_index</a> = mesh.triangles[triangle_start_index + triangle];
+            triangle_indices[triangle] = current_triangle_index;
+            from_triangle[triangle] = get_vector(from_array[current_triangle_index]);
+            to_triangle[triangle] = <a id="change">get_vector(</a>to_array[current_triangle_index]<a id="change">)</a>;
+        }
+
+        Vector3 uvw = PlanetariaMath.barycentric_coordinates(get_vector(from),</code></pre>

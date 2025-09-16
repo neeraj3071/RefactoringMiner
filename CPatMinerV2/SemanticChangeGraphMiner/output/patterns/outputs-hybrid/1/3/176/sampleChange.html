@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>50e011d252320e69e41e79877b367cf17d5e4c29,Runtime/Association/GameObjectsAssociationActivator.cs,GameObjectsAssociationActivator,Awake,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        protected virtual void Awake()
+        {
+            if (Associations.EmptyIfNull().<a id="change">Any(</a>association =&gt; association.gameObjects.EmptyIfNull().Any(associationObject =&gt; associationObject.activeInHierarchy)<a id="change">)</a>)
+            {
+                Debug.LogWarning($"At least one association object is active in the scene on {nameof(Awake)} of this {GetType().Name}. Having multiple association objects active at the same time will most likely lead to issues. Make sure to deactivate them all before you play or create a build.");
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        protected virtual void Awake()
+        {
+            if (<a id="change">Associations</a>.<a id="change">Any(</a>association =&gt; association.gameObjects.Any(associationObject =&gt; associationObject.activeInHierarchy)<a id="change">)</a>)
+            {
+                Debug.LogWarning($"At least one association object is active in the scene on {nameof(Awake)} of this {GetType().Name}. Having multiple association objects active at the same time will most likely lead to issues. Make sure to deactivate them all before you play or create a build.");
+            }</code></pre>

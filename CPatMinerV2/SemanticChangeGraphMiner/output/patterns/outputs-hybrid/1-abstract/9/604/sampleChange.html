@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ce510771c34ea9c2f29c065a1ae103ca980abd86,Assets/Planetaria/Code/Rendering/PixelArtRenderer.cs,PixelArtRenderer,draw,#String#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            }
+
+            Arc upper_rail = Arc.arc(GeospatialCurve.line(rectangle_corners[0].data, rectangle_corners[1].data));
+            Arc right_rail = <a id="change">Arc</a>.<a id="change">arc(GeospatialCurve</a>.<a id="change">line(</a>rectangle_corners[1].data, rectangle_corners[2].data<a id="change">)</a><a id="change">)</a>;
+            Arc lower_rail = Arc.arc(GeospatialCurve.line(rectangle_corners[3].data, rectangle_corners[2].data));
+            Arc left_rail = <a id="change">Arc</a>.<a id="change">arc(GeospatialCurve</a>.<a id="change">line(</a>rectangle_corners[0].data, rectangle_corners[3].data<a id="change">))</a>;
+
+            Arc horizontal_rail = Arc.arc(GeospatialCurve.line(cardinal_boundaries[0].data, cardinal_boundaries[2].data));
+            Arc vertical_rail = Arc.arc(GeospatialCurve.line(cardinal_boundaries[1].data, cardinal_boundaries[3].data));</code></pre><h3>After Change</h3><pre><code class='java'>
+            }
+
+            Arc upper_rail = Arc.line(rectangle_corners[0].data, rectangle_corners[1].data);
+            Arc right_rail = <a id="change">Arc</a>.<a id="change">line(</a>rectangle_corners[1].data, rectangle_corners[2].data<a id="change">)</a>;
+            Arc lower_rail = Arc.line(rectangle_corners[3].data, rectangle_corners[2].data);
+            Arc left_rail = <a id="change">Arc</a>.<a id="change">line(</a>rectangle_corners[0].data, rectangle_corners[3].data<a id="change">)</a>;
+
+            Arc horizontal_rail = Arc.line(cardinal_boundaries[0].data, cardinal_boundaries[2].data);
+            Arc vertical_rail = Arc.line(cardinal_boundaries[1].data, cardinal_boundaries[3].data);</code></pre>

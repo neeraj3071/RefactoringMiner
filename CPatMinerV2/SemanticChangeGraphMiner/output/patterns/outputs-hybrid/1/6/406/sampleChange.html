@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0b7b9f67315bc47a41cb3d9e8b4086def1d2e809,Scripts/Handles/LinearHandle.cs,LinearHandle,OnRayEnter,#RayEventData#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		public override void OnRayEnter(RayEventData eventData)
+		{
+			base.OnRayEnter(eventData);
+			<a id="change">UpdateHandleTip(eventData</a><a id="change">)</a>;
+		}
+
+		public override void OnRayExit(RayEventData eventData)</code></pre><h3>After Change</h3><pre><code class='java'>
+			UpdateHandleTip(eventData as LinearHandleEventData);
+		}
+
+		protected override void OnHandleRayEnter(HandleEventData <a id="change">eventData</a>)
+		{
+			<a id="change">UpdateHandleTip(eventData</a><a id="change"> as LinearHandleEventData</a><a id="change">)</a>;
+			base.OnHandleRayEnter(eventData);
+		}
+</code></pre>

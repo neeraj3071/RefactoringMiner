@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e69837683587146d3ce4d40ed5f10fa5f4f44bb1,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/dao/anhalytics/OrganisationDAO.java,OrganisationDAO,update,#Organisation#,182
+</h3><h3>Before Change</h3><pre><code class='java'>
+                    if (rel.getBeginDate() == null) {
+                        statement2.setDate(3, new java.sql.Date(00000000L));
+                    } else {
+                        statement2.<a id="change">setDate(3</a>, new java.sql.Date(rel.getBeginDate().getTime())<a id="change">)</a>;
+                    }
+                    if (rel.getEndDate() == null) {
+                        statement2.setDate(4, new java.sql.Date(00000000L));</code></pre><h3>After Change</h3><pre><code class='java'>
+                try {
+
+                    PART_OF existingpart_of = getPartOfIfAlreadyStored(obj, rel.getOrganisation_mother());
+                    <a id="change">if (existingpart_of != </a><a id="change">null</a><a id="change">) </a>{
+
+                        statement2 = connect.prepareStatement(UPDATE_PART_OF, Statement.RETURN_GENERATED_KEYS);
+                        <a id="change">if (</a>rel.getFromDate().before(existingpart_of.getFromDate())<a id="change">) </a>{
+                            existingpart_of.setFromDate(rel.getFromDate());
+                        } else if (rel.<a id="change">getFromDate()</a>.after(existingpart_of.getUntilDate())) {
+                            existingpart_of.setUntilDate(rel.getFromDate());
+                        }
+                        statement2.<a id="change">setDate(1</a>, new java.sql.Date(existingpart_of.getFromDate().getTime())<a id="change">)</a>;
+
+                        statement2.setDate(2, new java.sql.Date(existingpart_of.getUntilDate().getTime()));
+                        statement2.setLong(3, obj.getOrganisationId());</code></pre>

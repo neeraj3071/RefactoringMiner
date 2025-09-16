@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>afe7bd5751620ba7be94bad9c58bbfc450290852,Assets/Planetaria/Code/LevelGeometry/Arc.cs,Arc,position_to_angle,#Vector3#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    {
+        float x = Vector3.Dot(position, forward_axis);
+        float y = Vector3.Dot(position, right_axis);
+        return Mathf.<a id="change">Atan2(</a>y,x<a id="change">)</a>;
+    }
+        
+    /// &lt;summary&gt;</code></pre><h3>After Change</h3><pre><code class='java'>
+    {
+        float x = Vector3.Dot(position, forward_axis);
+        float y = Vector3.Dot(position, right_axis);
+        float angle = Mathf.<a id="change">Atan2(</a>y,x<a id="change">)</a>;
+        return angle &gt;= 0 ? angle : angle + 2*Mathf.PI;
+    }
+        </code></pre>

@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>caf215ca2ad06f8083850b150185699ab98caab0,Scripts/BlendShape/Editor/BlendShapeClipEditor.cs,BlendShapeClipEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        public override void OnInspectorGUI()
+        {
+            base.<a id="change">OnInspectorGUI()</a>;
+
+            if (m_serializedEditor == null)
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public override void OnInspectorGUI()
+        {
+            if (<a id="change">PreviewSceneManager</a><a id="change"> == null</a>)
+            {
+                return;
+            }
+
+            if (m_serializedEditor == null)
+            {
+                m_serializedEditor = new SerializedBlendShapeEditor(serializedObject, PreviewSceneManager);
+                m_thumbnailProp = serializedObject.FindProperty("Thumbnail");
+                m_isBinaryProp = serializedObject.FindProperty("IsBinary");
+            }
+
+            int thumbnailSize = 96;
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.ObjectField(m_thumbnailProp.objectReferenceValue, typeof(Texture), false,
+                GUILayout.Width(thumbnailSize), GUILayout.Height(thumbnailSize));
+
+            var changed = false;
+            EditorGUILayout.BeginVertical();
+            base.<a id="change">OnInspectorGUI()</a>;
+            EditorGUILayout.LabelField("Preview Weight");
+            var previewSlider = EditorGUILayout.Slider(m_previewSlider, 0, 1.0f);
+            GUI.enabled = PreviewTexture != null;</code></pre>

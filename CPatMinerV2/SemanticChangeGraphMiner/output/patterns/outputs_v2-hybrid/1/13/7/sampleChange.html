@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>494fb5f668cf96e8b2167c6b19ce0bb4d3c23c86,anhalytics-kb/src/main/java/fr/inria/anhalytics/dao/PersonDAO.java,PersonDAO,findPerson,#number#,241
+</h3><h3>Before Change</h3><pre><code class='java'>
+        preparedStatement.setLong(2, id);
+        preparedStatement.setLong(3, id);
+        ResultSet rs = preparedStatement.executeQuery();
+        <a id="change">while (</a>rs.next()<a id="change">) </a>{
+            Person person = null;
+            try {
+                <a id="change">person</a> = new Person(
+                        id,
+                        rs.getString("p.title"),
+                        rs.getString("p.photo"),
+                        rs.getString("pn.fullname"),
+                        rs.getString("pn.forename"),
+                        <a id="change">rs</a>.<a id="change">getString(</a>"pn.middlename"<a id="change">)</a>,
+                        rs.getString("pn.surname"),
+                        rs.getString("p.url"),
+                        rs.getString("p.email"),
+                        rs.getString("p.phone"),
+                        new ArrayList&lt;Person_Identifier&gt;(),
+                        Utilities.parseStringDate(rs.getString("pn.publication_date"))
+                );
+            } catch (ParseException ex) {
+                Logger.getLogger(PersonDAO.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if (rs.getString("pi.ID") != null) {
+                person.getPerson_identifiers().add(new Person_Identifier(<a id="change">rs</a>.<a id="change">getString("pi.ID"</a><a id="change">)</a>, rs.getString("pi.Type")));
+            }
+
+            while (rs.next()) {</code></pre><h3>After Change</h3><pre><code class='java'>
+        preparedStatement.setLong(1, id);
+        ResultSet rs = preparedStatement.executeQuery();
+
+        <a id="change">if (</a>rs.next()<a id="change">) </a>{
+            <a id="change">person</a> = new Person(
+                    id,
+                    rs.getString("p.title"),
+                    rs.getString("p.photo"),
+                    rs.getString("p.url"),
+                    rs.getString("p.email"),
+                    rs.getString("p.phone"),
+                    new ArrayList&lt;Person_Identifier&gt;(),
+                    new ArrayList&lt;Person_Name&gt;()
+            );
+            PreparedStatement preparedStatement1 = this.connect.prepareStatement(READ_QUERY_PERSON_NAME_BY_ID);
+            preparedStatement1.setLong(1, id);
+            ResultSet rs1 = preparedStatement1.executeQuery();
+            <a id="change">while (</a>rs1.next()<a id="change">) </a>{
+                try {
+                    person_names.add(new Person_Name(rs1.getLong("pn.person_nameID"), id, rs1.getString("pn.fullname"), rs1.getString("pn.forename"), <a id="change">rs1</a>.<a id="change">getString(</a>"pn.middlename"<a id="change">)</a>, rs1.getString("pn.surname"), rs1.getString("pn.title"), Utilities.parseStringDate(rs1.getString("pn.publication_date"))));
+                } catch (ParseException ex) {
+                    Logger.getLogger(PersonDAO.class.getName()).log(Level.SEVERE, null, ex);
+                }</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e126c07cdfd571c7477bf194f663a4d4b60fcf33,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/grobid/GrobidProcess.java,GrobidProcess,processFulltext,#,32
+</h3><h3>Before Change</h3><pre><code class='java'>
+    public void processFulltext() throws IOException {
+        ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
+        for (String date : Utilities.getDates()) {
+            if (mm.<a id="change">init(</a>MongoManager.BINARIES, <a id="change">date</a><a id="change">)</a>) {
+                while (mm.hasMoreDocuments()) {
+                    String filename = mm.getCurrentFilename();
+                    InputStream content = mm.nextBinaryDocument();</code></pre><h3>After Change</h3><pre><code class='java'>
+    public void processFulltext() throws IOException {
+        if (isAllOk()) {
+            ExecutorService executor = Executors.newFixedThreadPool(HarvestProperties.getNbThreads());
+            mm.<a id="change">setGridFS(</a>MongoManager.BINARIES<a id="change">)</a>;
+            for (String date : Utilities.getDates()) {
+                if (mm.initBinaries(date)) {
+                    while (mm.hasMoreDocuments()) {</code></pre>

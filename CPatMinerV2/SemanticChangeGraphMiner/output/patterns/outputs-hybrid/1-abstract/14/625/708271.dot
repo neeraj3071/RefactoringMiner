@@ -1,0 +1,37 @@
+digraph G {
+subgraph cluster0 {
+1 [label="ClassInstanceCreation" a="14" s="3011,3074" l="30,1" shape="box"];
+2 [label="IfStatement" a="25" s="2846,2918" l="4,14" shape="diamond"];
+3 [label="MethodInvocation" a="32" s="2858,2881" l="14,1" shape="box"];
+5 [label="SimpleName" a="42" s="3041" l="9" shape="ellipse"];
+6 [label="SimpleName" a="42" s="-1" l="0" shape="ellipse"];
+7 [label="SimpleName" a="42" s="2872" l="9" shape="ellipse"];
+8 [label="SimpleName" a="42" s="3052" l="9" shape="ellipse"];
+9 [label="SimpleName" a="42" s="3063" l="11" shape="ellipse"];
+11 [label="SimpleName" a="42" s="-1" l="0" shape="ellipse"];
+12 [label="PrefixExpression:!" a="38" s="2850" l="0" shape="box"];
+13 [label="PrefixExpression:!" a="38" s="2850" l="-2851" shape="box"];
+14 [label="InfixExpression:c" a="27" s="2882" l="-32" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+4 [label="MethodInvocation" a="32" s="2304,2328" l="14,1" shape="box"];
+10 [label="SimpleName" a="42" s="2318" l="10" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+2 -> 1 [label="_control_"];
+3 -> 4 [label="_map_"];
+3 -> 14 [label="_para_"];
+5 -> 1 [label="_para_"];
+7 -> 3 [label="_para_"];
+7 -> 10 [label="_map_"];
+8 -> 1 [label="_para_"];
+9 -> 1 [label="_para_"];
+10 -> 4 [label="_para_"];
+11 -> 13 [label="_para_"];
+12 -> 2 [label="_cond_"];
+13 -> 14 [label="_para_"];
+14 -> 12 [label="_para_"];
+}

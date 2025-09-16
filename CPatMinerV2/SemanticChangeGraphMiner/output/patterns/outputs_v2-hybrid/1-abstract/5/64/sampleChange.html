@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6702130af2239a41db3574c82b41871858d893cf,anhalytics-kb/src/main/java/fr/inria/anhalytics/kb/datamine/KnowledgeBaseFeeder.java,KnowledgeBaseFeeder,initKnowledgeBase,#,62
+</h3><h3>Before Change</h3><pre><code class='java'>
+                            Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
+                            NodeList authorsFromfulltextTeiHeader = (NodeList) xPath.compile(TeiPaths.FulltextTeiHeaderAuthors).evaluate(teiDoc, XPathConstants.NODESET);
+
+                            Element title = <a id="change">(Element) </a>teiHeader.getElementsByTagName("title").item(0);
+                            Node language = (Node) xPath.compile(TeiPaths.LanguageElement).evaluate(teiDoc, XPathConstants.NODE);
+                            Node type = (Node) xPath.compile(TeiPaths.TypologyElement).evaluate(teiDoc, XPathConstants.NODE);
+                            Node submission_date = (Node) xPath.compile(TeiPaths.SubmissionDateElement).evaluate(teiDoc, XPathConstants.NODE);</code></pre><h3>After Change</h3><pre><code class='java'>
+                            NodeList authorsFromfulltextTeiHeader = (NodeList) xPath.compile(TeiPaths.FulltextTeiHeaderAuthors).evaluate(teiDoc, XPathConstants.NODESET);
+
+                            Element title = null;
+                            <a id="change">if (</a>teiHeader.getElementsByTagName("title")<a id="change"> != </a><a id="change">null</a><a id="change">) </a>{
+                                title = <a id="change">(Element) </a>teiHeader.getElementsByTagName("title").item(0);
+                                if (title != null) {
+                                    pub.setDoc_title(title.getTextContent().trim());
+                                }</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ac0507b3d56627bffb673e4af4e7eb4ab61aabfe,VRSF_DOTS/Assets/VRSF/Multiplayer/Scripts/InRoom/Player/VRSFPlayerInstantiater.cs,VRSFPlayerInstantiater,OnDestroy,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        public void OnDestroy()
+        {
+            if (OnSetupVRReady.<a id="change">IsMethodAlreadyRegistered(</a>LocalPlayerSetup<a id="change">)</a>)
+                OnSetupVRReady.Listeners -= LocalPlayerSetup;
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public void OnDestroy()
+        {
+            OnSetupVRReady.<a id="change">UnregisterSetupVRCallback(</a>LocalPlayerSetup<a id="change">)</a>;
+        }
+
+        /// &lt;summary&gt;</code></pre>

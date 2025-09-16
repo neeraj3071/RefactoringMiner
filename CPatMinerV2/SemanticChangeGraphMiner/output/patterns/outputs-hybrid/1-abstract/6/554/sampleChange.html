@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>611914656718caa6170c70d7a42b904e355a9471,Assets/HoloToolkit/Input/Tests/Scripts/MicStreamDemo.cs,MicStreamDemo,Awake,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                CheckForErrorOnCall(MicStream.MicStartStream(keepAllData, false));
+            }
+
+            <a id="change">if (useManualControls</a><a id="change">)
+            </a>{
+                print("MicStream selector demo");
+                <a id="change">print(</a>"press Q to start stream to audio source, W will stop that stream"<a id="change">)</a>;
+                <a id="change">print(</a>"It will start a recording and save it to a wav file. S will stop that recording."<a id="change">)</a>;
+                print("Since this all goes through the AudioSource, you can mute the mic while using it there, or do anything else you would do with an AudioSource");
+            }
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            }
+
+            print("MicStream selector demo");
+            <a id="change">print(</a>"press Q to start stream to audio source, W will stop that stream"<a id="change">)</a>;
+            <a id="change">print(</a>"It will start a recording and save it to a wav file. S will stop that recording."<a id="change">)</a>;
+            print("Since this all goes through the AudioSource, you can mute the mic while using it there, or do anything else you would do with an AudioSource");
+            print("In this demo, we start the stream automatically, and then change the size of the gameobject based on microphone signal amplitude");
+        }</code></pre>

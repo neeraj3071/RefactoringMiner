@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d5acf53e371fc065d84e1b4b2d69d966153e11ac,Scripts/Core/Contexts/EditorXRContext.cs,EditorXRContext,SetupMonoScriptTypeNames,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        void SetupMonoScriptTypeNames()
+        {
+            if (m_DefaultMainMenu)
+                m_DefaultMainMenuName = m_DefaultMainMenu.<a id="change">GetClass()</a>.AssemblyQualifiedName;
+
+            if (m_DefaultAlternateMenu)
+                m_DefaultAlternateMenuName = m_DefaultAlternateMenu.GetClass().AssemblyQualifiedName;</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        void SetupMonoScriptTypeNames()
+        {
+            const string <a id="change">warningString</a> = <a id="change">"Could not get class for MonoScript: {0}"</a>;
+            if (m_DefaultMainMenu)
+            {
+                var <a id="change">defaultMenuType</a> = m_DefaultMainMenu.<a id="change">GetClass()</a>;
+                <a id="change">if (defaultMenuType == </a><a id="change">null</a><a id="change">)
+                    Debug</a>.<a id="change">LogWarningFormat(warningString</a>, <a id="change">AssetDatabase</a>.<a id="change">GetAssetPath(m_DefaultMainMenu</a><a id="change">))</a>;
+                else
+                    <a id="change">m_DefaultMainMenuName</a> = <a id="change">defaultMenuType.AssemblyQualifiedName</a>;
+            }
+
+            if (m_DefaultAlternateMenu)
+            {
+                var defaultAlternateMenuType = m_DefaultAlternateMenu.GetClass();
+                if (defaultAlternateMenuType == null)
+                    Debug.LogWarningFormat(warningString, AssetDatabase.GetAssetPath(m_DefaultAlternateMenu));
+                else
+                    m_DefaultAlternateMenuName = defaultAlternateMenuType.AssemblyQualifiedName;
+            }
+
+            if (m_DefaultToolStack != null)
+            {
+                m_DefaultToolStackNames = new List&lt;string&gt;();
+                foreach (var defaultToolType in m_DefaultToolStack)
+                {
+                    var defaultToolClass = defaultToolType.GetClass();
+                    if (defaultToolClass == null)
+                    {
+                        Debug.LogWarningFormat(warningString, AssetDatabase.GetAssetPath(defaultToolType));
+                        continue;
+                    }
+
+                    m_DefaultToolStackNames.Add(defaultToolClass.AssemblyQualifiedName);
+                }
+            }
+
+            if (m_HiddenTypes != null)
+            {
+                <a id="change">m_HiddenTypeNames = new List&lt;string&gt;()</a>;
+                ;
+                foreach (var <a id="change">hiddenType</a> in <a id="change">m_HiddenTypes)
+                </a>{
+                    var <a id="change">hiddenTypeClass</a> = <a id="change">hiddenType</a>.<a id="change">GetClass()</a>;
+                    <a id="change">if (hiddenTypeClass == </a><a id="change">null</a><a id="change">)
+                    </a>{
+                        <a id="change">Debug</a>.<a id="change">LogWarningFormat(warningString</a>, <a id="change">AssetDatabase</a>.<a id="change">GetAssetPath(hiddenType</a><a id="change">))</a>;
+                        <a id="change">continue;</a>
+                    }
+
+                    <a id="change">m_HiddenTypeNames</a>.<a id="change">Add(hiddenTypeClass.AssemblyQualifiedName</a><a id="change">)</a>;
+                }
+            }
+        }</code></pre>

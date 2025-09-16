@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>9e8b2b1122e0fdd2f9b2cc5e92a463a79e62dbc4,anhalytics-kb/src/main/java/fr/inria/anhalytics/kb/dao/anhalytics/OrganisationDAO.java,OrganisationDAO,create,#Organisation#,67
+</h3><h3>Before Change</h3><pre><code class='java'>
+                obj.setOrganisationId(rs.getLong(1));
+            }
+
+            for (String name : obj.<a id="change">getNames()</a>) {
+
+                statement1 = connect.prepareStatement(SQL_INSERT_NAMES);
+                statement1.setLong(1, obj.getOrganisationId());</code></pre><h3>After Change</h3><pre><code class='java'>
+                obj.setOrganisationId(rs.getLong(1));
+            }
+
+            Iterator it = obj.<a id="change">getNames()</a>.<a id="change">entrySet()</a>.iterator();
+            <a id="change">while (</a>it.<a id="change">hasNext()</a><a id="change">) </a>{
+                Map.Entry <a id="change">pair</a> = <a id="change">(Map.Entry) </a>it.<a id="change">next()</a>;
+                Date date = <a id="change">(Date) pair</a>.<a id="change">getKey()</a>;
+                String name = <a id="change">(String) pair</a>.<a id="change">getValue()</a>;
+
+                statement1 = connect.prepareStatement(SQL_INSERT_NAMES);
+                statement1.setLong(1, obj.getOrganisationId());</code></pre>

@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b8d360e8307638665fe805c78472fb76deda6e4f,Assets/Scripts/Walking/FirstPersonController.cs,FirstPersonController,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		}
+
+		// Control cameras
+		<a id="change">if(stereoEnabled</a><a id="change">) </a>{
+			if(!stereoCameraController.gameObject.activeSelf) stereoCameraController.gameObject.SetActive(true);
+			if(monoCamera.gameObject.activeSelf) monoCamera.gameObject.SetActive(false);
+			<a id="change">Rotate(</a>mouseXAxis, mouseYAxis, <a id="change">sensitivity</a><a id="change">)</a>;
+		} else {
+			if(!monoCamera.gameObject.activeSelf) monoCamera.gameObject.SetActive(true);
+			if(stereoCameraController.gameObject.activeSelf) stereoCameraController.gameObject.SetActive(false);
+			<a id="change">Rotate(</a>mouseXAxis, mouseYAxis, sensitivity<a id="change">)</a>;
+		}
+
+		// Only the axes are modified via the different input methods, the actual move call remains the same.</code></pre><h3>After Change</h3><pre><code class='java'>
+
+		// Control cameras
+		ConfigureCameras (stereoEnabled);
+		<a id="change">Rotate(</a>mouseXAxis, mouseYAxis, sensitivity<a id="change">)</a>;
+
+		// Only the axes are modified via the different input methods, the actual move call remains the same.
+		Move(horizontalAxis, verticalAxis, defaultMovementSpeed);</code></pre>

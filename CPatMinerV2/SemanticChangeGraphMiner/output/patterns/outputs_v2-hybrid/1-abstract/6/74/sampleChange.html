@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0e8c85724ce9b8ff826171e4dc118855c670b54d,anhalytics-harvest/src/main/java/fr/inria/anhalytics/datamine/HALMiner.java,HALMiner,processPersons,#NodeList#String#Publication#Document#,321
+</h3><h3>Before Change</h3><pre><code class='java'>
+                        organisation = new Organisation();
+                        Location location = new Location();
+                        LocationDAO ld = (LocationDAO) adf.getLocationDAO();
+                        Address addr = <a id="change">new Address()</a>;
+                        AddressDAO ad = (AddressDAO) adf.getAddressDAO();
+                        Node org = node.getChildNodes().item(0);
+                        if (org != null) {</code></pre><h3>After Change</h3><pre><code class='java'>
+                        Address addr = null;
+                        AddressDAO ad = (AddressDAO) adf.getAddressDAO();
+                        Node org = node.getChildNodes().item(0);
+                        if (org != null && org.getNodeType()<a id="change"> == </a><a id="change">Node.ELEMENT_NODE</a>) {
+                            Element orgElt = (Element) org;
+
+                            organisation.setType(orgElt.getAttribute("type"));
+                            organisation.setStructure(orgElt.getAttribute("xml:id"));
+
+                            NodeList nl = org.getChildNodes();
+                            for (int n = nl.getLength() - 1; n &gt;= 0; n--) {
+                                Node nd = nl.item(n);
+                                if (nd.getNodeName().equals("orgName")) {
+                                    organisation.addName(nd.getTextContent());
+                                } else <a id="change">if (</a>nd.getNodeName().equals("org")<a id="change">) </a>{
+                                    organisation = parseOrg(nd, organisation, pubDate);
+                                } else if (nd.getNodeName().equals("desc")) {
+                                    NodeList desc = nd.getChildNodes();
+                                    for (int d = desc.getLength() - 1; d &gt;= 0; d--) {
+                                        if (desc.item(d).getNodeName().equals("address")) {
+                                            location = new Location();
+                                            addr = <a id="change">new Address()</a>;
+                                            NodeList address = (nd.getChildNodes().item(0)).getChildNodes();
+                                            for (int x = address.getLength() - 1; x &gt;= 0; x--) {
+                                                Node addrnodes = address.item(x);</code></pre>

@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>5fd2a743a191eb52d6ef726b98349e83a9872ecc,Assets/UniGLTF/Editor/MeshUtility/TabMeshIntegrator.cs,TabMeshIntegrator,Execute,#GameObject#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (onlyBlendShapeRenderers)
+            {
+                MeshIntegratorUtility.Integrate(root, onlyBlendShapeRenderers: MeshEnumerateOption.OnlyWithBlendShape);
+                MeshIntegratorUtility.<a id="change">Integrate(</a>root, onlyBlendShapeRenderers<a id="change">: MeshEnumerateOption.OnlyWithoutBlendShape)</a>;
+            }
+            else
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+            return false;
+        }
+
+        static bool Execute(GameObject <a id="change">root</a>, bool onlyBlendShapeRenderers)
+        {
+            // check
+            if (root == null)
+            {
+                EditorUtility.DisplayDialog("Failed", MeshProcessingMessages.NO_GAMEOBJECT_SELECTED.Msg(), "ok");
+                return false;
+            }
+
+            if (HasVrm(root))
+            {
+                EditorUtility.DisplayDialog("Failed", MeshProcessingMessages.VRM_DETECTED.Msg(), "ok");
+                return false;
+            }
+
+            if (root.GetComponentsInChildren&lt;SkinnedMeshRenderer&gt;().Length == 0 && root.GetComponentsInChildren&lt;MeshFilter&gt;().Length == 0)
+            {
+                EditorUtility.DisplayDialog("Failed", MeshProcessingMessages.NO_MESH.Msg(), "ok");
+                return false;
+            }
+
+            // execute
+            var results = new List&lt;MeshIntegrationResult&gt;();
+            if (onlyBlendShapeRenderers)
+            {
+                results.Add(MeshIntegratorUtility.Integrate(root, onlyBlendShapeRenderers: MeshEnumerateOption.OnlyWithBlendShape));
+                <a id="change">results</a>.<a id="change">Add(</a>MeshIntegratorUtility.<a id="change">Integrate(</a>root, onlyBlendShapeRenderers<a id="change">: MeshEnumerateOption.OnlyWithoutBlendShape))</a>;
+            }
+            else
+            {</code></pre>

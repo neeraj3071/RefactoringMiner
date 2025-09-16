@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>f7a2b3e82d061946c9ce821ec758e3f92c0ec9ad,Assets/Libraries/NetVRTK/NetworkGrabManager.cs,NetworkGrabManager,OnPhotonSerializeView,#PhotonStream#PhotonMessageInfo#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                if (HasChanged()) {
+                    stream.Serialize(ref curActive);
+                    stream.Serialize(ref grabOwner);
+                    <a id="change">stream</a>.<a id="change">Serialize(ref grabParent</a><a id="change">)</a>;
+                    stream.Serialize(ref grabAttachPath);
+                }
+            } else {
+                stream.Serialize(ref curActive);
+                stream.<a id="change">Serialize(ref </a>grabOwner<a id="change">)</a>;
+                stream.Serialize(ref grabParent);
+                stream.Serialize(ref grabAttachPath);
+                this.gameObject.SetActive(curActive);</code></pre><h3>After Change</h3><pre><code class='java'>
+                    stream.Serialize(ref grabOwner);
+                }
+            } else {
+                stream.<a id="change">Serialize(ref </a>grabOwner<a id="change">)</a>;
+            }
+            Retain();
+        }</code></pre>

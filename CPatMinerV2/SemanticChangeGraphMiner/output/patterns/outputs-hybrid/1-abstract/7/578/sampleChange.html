@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>affa6d75d7eb4cbda50f54859cbd4cdff3924fe3,Assets/Code/Arc/Arc.cs,Arc,RecalculateAABB,#Arc#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		float x_min = closest_position(arc, Vector3.left   ).x;
+		float x_max = closest_position(arc, Vector3.right  ).x;
+		float y_min = closest_position(arc, Vector3.down   ).y;
+		float y_max = <a id="change">closest_position(</a>arc, Vector3.up<a id="change">     )</a>.y;
+		float z_min = closest_position(arc, Vector3.back   ).z;
+		float z_max = <a id="change">closest_position(</a>arc, Vector3.forward<a id="change">)</a>.z;
+
+        /*
+		arc.transform.position = new Vector3((x_max + x_min) / 2,</code></pre><h3>After Change</h3><pre><code class='java'>
+    private static void RecalculateAABB(Arc arc)
+    {
+        float x_min = arc.position(closest_point(arc, Vector3.left   )).x;
+        float x_max = <a id="change">arc</a>.<a id="change">position(</a>closest_point(arc, Vector3.right  )<a id="change">)</a>.x;
+        float y_min = arc.position(closest_point(arc, Vector3.down   )).y;
+        float y_max = arc.position(<a id="change">closest_point(</a>arc, Vector3.up<a id="change">     )</a>).y;
+        float z_min = <a id="change">arc</a>.<a id="change">position(</a>closest_point(arc, Vector3.back   )<a id="change">)</a>.z;
+        float z_max = arc.position(<a id="change">closest_point(</a>arc, Vector3.forward<a id="change">)</a>).z;
+
+        /*
+        arc.transform.position = new Vector3((x_max + x_min) / 2,</code></pre>

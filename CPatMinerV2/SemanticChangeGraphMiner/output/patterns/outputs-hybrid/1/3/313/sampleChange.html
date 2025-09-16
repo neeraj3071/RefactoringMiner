@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>63ec36efeeae482058aac3071b2087d7f0881763,Assets/vr_annotate/ff.vr.annotate/viz/AnnotationTeleportation/AnnotationPosition/AnnotationPositionRenderer.cs,AnnotationPositionRenderer,RenderAnnotationPositionForCurrentVisibility,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                }
+                else if (IsPhantom)
+                {
+                    colorWithAlpha = new Color(DefaultColor.r, DefaultColor.g, DefaultColor.b, AlphaOverVisibility.<a id="change">Evaluate(</a>_visibility * PhantomFactor / 4f<a id="change">)</a>);
+                    // Debug.Log("PhantomFactor:" + PhantomFactor);
+                }
+                else</code></pre><h3>After Change</h3><pre><code class='java'>
+                }
+                else if (IsPhantom)
+                {
+                    colorWithAlpha = new Color(DefaultColor.r, DefaultColor.g, DefaultColor.b, DefaultColor.a * AlphaOverVisibility.<a id="change">Evaluate(</a>_visibility * PhantomFactor / 4f<a id="change">)</a>);
+                    // Debug.Log("PhantomFactor:" + PhantomFactor);
+                }
+                else</code></pre>

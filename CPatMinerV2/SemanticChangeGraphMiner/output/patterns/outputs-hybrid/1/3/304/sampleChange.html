@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>5d847db591b43b3c0a58beaa84908c2b03b1a406,ENGHACK/Assets/GoogleVR/Scripts/GazeInputModule.cs,GazeInputModule,Process,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    } else if (Time.unscaledTime - pointerData.clickTime &lt; clickTime) {
+      // Delay new events until clickTime has passed.
+    } else if (!pointerData.eligibleForClick &&
+               (GvrViewer.Instance.Triggered || Input.<a id="change">GetMouseButtonDown(</a>0<a id="change">)</a> ||
+                GvrController.ClickButtonDown)) {
+      // New trigger action.
+      HandleTrigger();</code></pre><h3>After Change</h3><pre><code class='java'>
+    UpdateCurrentObject();
+    UpdateReticle(gazeObjectPrevious);
+
+    bool isGvrTriggered = Input.<a id="change">GetMouseButtonDown(</a>0<a id="change">)</a>;
+    bool handlePendingClickRequired = !Input.GetMouseButton(0);
+
+#if UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)</code></pre>

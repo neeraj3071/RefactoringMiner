@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1bf30fce408a29d91c2a8a3f963a0a0608118f5c,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/managers/MongoFileManager.java,MongoFileManager,getMetadata,#BiblioObject#,241
+</h3><h3>Before Change</h3><pre><code class='java'>
+    }
+
+    public String getMetadata(BiblioObject biblioObject) {
+        <a id="change">return </a>this.<a id="change">getTei(</a>biblioObject.getAnhalyticsId(), MongoCollectionsInterface.METADATAS_TEIS<a id="change">)</a>;
+    }
+
+    public String getTEICorpus(BiblioObject biblioObject) {</code></pre><h3>After Change</h3><pre><code class='java'>
+    }
+
+    public String getMetadata(BiblioObject biblioObject) {
+        String <a id="change">metadata</a> = <a id="change">null</a>;
+        try {
+            <a id="change">metadata</a> = this.<a id="change">getTei(</a>biblioObject.getAnhalyticsId(), MongoCollectionsInterface.METADATAS_TEIS<a id="change">)</a>;
+        } catch (DataException de) {
+            logger.error("No metadata was found.",de);
+        }
+        <a id="change">return metadata</a>;
+    }
+
+    public String getTEICorpus(BiblioObject biblioObject) {</code></pre>

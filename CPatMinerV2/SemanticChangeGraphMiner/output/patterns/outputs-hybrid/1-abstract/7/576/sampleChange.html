@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7066a8d2b4c86c486589a73643272006c1540813,libs/Microsoft.MixedReality.WebRTC.Unity/Assets/Microsoft.MixedReality.WebRTC.Unity/Scripts/PeerConnection.cs,PeerConnection,Peer_AudioTrackRemoved,#Transceiver#RemoteAudioTrack#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            Debug.Assert(track.Transceiver == null); // already removed
+            MediaLine mediaLine = _mediaLines.Find((MediaLine ml) =&gt; ml.Transceiver == transceiver);
+            Debug.Assert(mediaLine != null);
+            Debug.<a id="change">Assert(</a>mediaLine.Kind == MediaKind.Audio<a id="change">)</a>;
+            mediaLine.OnUnpaired(track);
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            // the user did not add any MediaLine in the component, then the transceiver is ignored.
+            // SetRemoteDescriptionAsync() already triggered a warning in this case, so be silent here.
+            MediaLine mediaLine = _mediaLines.Find((MediaLine ml) =&gt; ml.Transceiver == transceiver);
+            <a id="change">if (mediaLine != </a><a id="change">null</a><a id="change">)
+            </a>{
+                Debug.Assert(mediaLine != null);
+                Debug.<a id="change">Assert(</a>mediaLine.Kind == MediaKind.Audio<a id="change">)</a>;
+                mediaLine.OnUnpaired(track);
+            }
+        }</code></pre>

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0a580fba2092fe8005ed3298e279dee55be6bdec,Assets/NewtonVR/Editor/NVRTeleporterEditor.cs,NVRTeleporterEditor,OnEnable,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			_invalidRendererTemplateProp = serializedObject.FindProperty("InvalidRendererTemplate");
+
+			_velocityProp = serializedObject.FindProperty("Velocity");
+			<a id="change">_accelerationProp</a> = serializedObject.<a id="change">FindProperty("Acceleration"</a><a id="change">)</a>;
+			_sampleDistanceProp = serializedObject.FindProperty("SampleDistance");
+
+			_arcLength = (float)teleporter.SamplePoints * teleporter.SampleDistance;</code></pre><h3>After Change</h3><pre><code class='java'>
+			playSpaceRendererTemplateProp = serializedObject.FindProperty("PlaySpaceRendererTemplate");
+			invalidRendererTemplateProp = serializedObject.FindProperty("InvalidRendererTemplate");
+
+			arcDistanceProp = serializedObject.<a id="change">FindProperty("ArcDistance"</a><a id="change">)</a>;
+			<a id="change">sampleFrequencyProp</a> = serializedObject.FindProperty("SampleFrequency");
+
+			arcLength = (float)teleporter.SamplePoints * teleporter.SampleFrequency;
+</code></pre>

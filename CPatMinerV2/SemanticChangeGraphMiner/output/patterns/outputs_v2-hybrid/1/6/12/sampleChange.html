@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>07808c57295d127787de6f783e49293aa1f07570,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/grobid/GrobidService.java,GrobidService,runFullTextGrobid,#String#,64
+</h3><h3>Before Change</h3><pre><code class='java'>
+        String tei = null;
+        File zipFolder = null;
+        try {
+            URL url = new URL("http://" + HarvestProperties.getGrobidHost() + ":" + HarvestProperties.<a id="change">getGrobidPort()</a> + "/processFulltextDocument");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            //conn.setConnectTimeout(TIMEOUT_VALUE);
+            //conn.setReadTimeout(TIMEOUT_VALUE);</code></pre><h3>After Change</h3><pre><code class='java'>
+        File zipFolder = null;
+        try {
+            URL url = new URL("http://" + HarvestProperties.getGrobidHost() + ":" + 
+                    (HarvestProperties.<a id="change">getGrobidPort()</a>.<a id="change">isEmpty()</a><a id="change"> ? </a>"":":" + <a id="change">HarvestProperties</a>.<a id="change">getGrobidPort()</a>) + "/processFulltextDocument");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            //conn.setConnectTimeout(TIMEOUT_VALUE);
+            //conn.setReadTimeout(TIMEOUT_VALUE);</code></pre>

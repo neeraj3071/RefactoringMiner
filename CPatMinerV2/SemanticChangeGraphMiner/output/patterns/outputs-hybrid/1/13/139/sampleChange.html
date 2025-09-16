@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3c98012fb9f7e86be7c3d65968aa512df000b9d1,Holojam/Assets/Holojam/Network/Utility.cs,Update,CopyToView,#Int#View#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            view.triples[j] = new Vector3(
+               packet.Flakes(i).Value.Triples(j).Value.X,
+               packet.Flakes(i).Value.Triples(j).Value.Y,
+               <a id="change">packet</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.Triples(j).Value.Z
+            );
+         view.quads = new Quaternion[packet.Flakes(i).Value.QuadsLength];
+         for(int j=0;j&lt;packet.Flakes(i).Value.QuadsLength;++j)
+            view.quads[j] = new Quaternion(
+               packet.Flakes(i).Value.Quads(j).Value.X,
+               packet.Flakes(i).Value.Quads(j).Value.Y,
+               <a id="change">packet</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.Quads(j).Value.Z,
+               packet.Flakes(i).Value.Quads(j).Value.W
+            );
+
+         view.floats = new float[packet.Flakes(i).Value.FloatsLength];
+         for(int j=0;j&lt;packet.Flakes(i).Value.FloatsLength;++j)
+            view.floats[j] = packet.Flakes(i).Value.Floats(j);
+
+         view.ints = new int[packet.Flakes(i).Value.IntsLength];
+         for(int j=0;j&lt;<a id="change">packet</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.IntsLength;++j)
+            view.ints[j] = packet.Flakes(i).Value.Ints(j);
+
+         view.chars = new byte[packet.Flakes(i).Value.CharsLength];</code></pre><h3>After Change</h3><pre><code class='java'>
+            view.triples[j] = new Vector3(
+               data.Flakes(i).Value.Triples(j).Value.X,
+               data.Flakes(i).Value.Triples(j).Value.Y,
+               <a id="change">data</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.Triples(j).Value.Z
+            );
+         view.quads = new Quaternion[data.Flakes(i).Value.QuadsLength];
+         for(int j=0;j&lt;data.Flakes(i).Value.QuadsLength;++j)
+            view.quads[j] = new Quaternion(
+               data.Flakes(i).Value.Quads(j).Value.X,
+               data.Flakes(i).Value.Quads(j).Value.Y,
+               data.Flakes(i).Value.Quads(j).Value.Z,
+               <a id="change">data</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.Quads(j).Value.W
+            );
+
+         view.floats = new float[data.Flakes(i).Value.FloatsLength];
+         for(int j=0;j&lt;data.Flakes(i).Value.FloatsLength;++j)
+            view.floats[j] = data.Flakes(i).Value.Floats(j);
+
+         view.ints = new int[data.Flakes(i).Value.IntsLength];
+         for(int j=0;j&lt;data.Flakes(i).Value.IntsLength;++j)
+            view.ints[j] = data.Flakes(i).Value.Ints(j);
+
+         view.chars = new byte[data.Flakes(i).Value.CharsLength];
+         for(int j=0;j&lt;<a id="change">data</a>.<a id="change">Flakes(</a>i<a id="change">)</a>.Value.CharsLength;++j)
+            view.chars[j] = (byte)data.Flakes(i).Value.Chars(j); //FLAG
+
+         view.text = data.Flakes(i).Value.Text;</code></pre>

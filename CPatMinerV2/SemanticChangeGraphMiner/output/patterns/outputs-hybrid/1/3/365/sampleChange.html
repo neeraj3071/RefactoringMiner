@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>743beb49da3adbf3bafc4b18b6a5f692b4ea4256,Assets/Planetaria/Code/Editor/LevelCreatorEditor.cs,LevelCreatorEditor,mouse_up,#LevelCreatorEditor#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            use_mouse_event(editor);
+            EditorUtility.SetDirty(spawned_object);
+
+            <a id="change">use_mouse_event(</a>editor<a id="change">)</a>;
+
+            return mouse_down;
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+    /// &lt;returns&gt;mouse_up if nothing was pressed; mouse_down if MouseUp or Escape was pressed.&lt;/returns&gt;
+    static CreateShape mouse_up(LevelCreatorEditor editor)
+    {
+        <a id="change">editor</a>.temporary_arc.from_tangent = GridUtility.grid_snap(HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).direction, editor.rows, editor.columns);
+
+        /// button_up 1: create right-hand-side slope for point 1.
+        /// button_up 2-n: create right-hand-side slope for current point.
+        if (Event.current.type == EventType.MouseUp)
+        {
+            <a id="change">use_mouse_event(</a>editor<a id="change">)</a>;
+            editor.temporary_arc.Advance();
+            return mouse_down;
+        }</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1c4cd9bcb0fa13bce90aa7aea3048f94a6f52951,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ExternalCameraHook.cs,ExternalCameraHook,AutoLoadConfig,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            configPath = Instance.m_configPath;
+        }
+
+        if (File.<a id="change">Exists(</a>configPath<a id="change">)</a>)
+        {
+            SteamVR_Render.instance.externalCameraConfigPath = string.Empty;
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            configPath = Instance.m_configPath;
+        }
+
+        if (!<a id="change">string</a>.<a id="change">IsNullOrEmpty(configPath</a><a id="change">)</a> && File.<a id="change">Exists(</a>configPath<a id="change">)</a>)
+        {
+            SteamVR_Render.instance.externalCameraConfigPath = string.Empty;
+</code></pre>

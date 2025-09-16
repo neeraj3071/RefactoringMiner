@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>928aa4f918694cb848121fc5471b96271018be00,Assets/VRM/UniVRM/Editor/Tests/VRMBlendShapeKeyTest.cs,VRMBlendShapeKeyTest,KeyTest,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            var dict = new Dictionary&lt;BlendShapeKey, float&gt;();
+            dict[new BlendShapeKey("xxx", BlendShapePreset.Blink)] = 1.0f;
+
+            Assert.<a id="change">IsTrue(</a>dict.ContainsKey(new BlendShapeKey("blink"))<a id="change">)</a>;
+            Assert.IsTrue(dict.ContainsKey(new BlendShapeKey(BlendShapePreset.Blink)));
+            Assert.IsTrue(dict.ContainsKey(new BlendShapeKey("xxx", BlendShapePreset.Blink)));
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            Assert.AreNotEqual(key2, new BlendShapeKey("Blink", BlendShapePreset.Blink));
+            Assert.AreNotEqual(key2, new BlendShapeKey(BlendShapePreset.Blink));
+            
+            Assert.<a id="change">IsFalse(</a>dict.ContainsKey(new BlendShapeKey("blink"))<a id="change">)</a>;
+            Assert.IsFalse(dict.ContainsKey(new BlendShapeKey("Blink",BlendShapePreset.Blink)));
+            Assert.IsFalse(dict.ContainsKey(new BlendShapeKey(BlendShapePreset.Blink)));
+            </code></pre>

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1bf30fce408a29d91c2a8a3f963a0a0608118f5c,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/managers/MongoFileManager.java,MongoFileManager,getGrobidTei,#BiblioObject#,253
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    public String getGrobidTei(BiblioObject biblioObject) {
+        try {
+            <a id="change">return </a>this.<a id="change">getTei(</a>biblioObject.getAnhalyticsId(), MongoCollectionsInterface.GROBID_TEIS<a id="change">)</a>;
+        } catch (DataException de) {
+            throw new DataException("No corresponding fulltext TEI was found.",de);
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+    }
+
+    public String getGrobidTei(BiblioObject biblioObject) {
+        String <a id="change">grobidTei</a> = <a id="change">null</a>;
+        try {
+            <a id="change">grobidTei</a> = this.<a id="change">getTei(</a>biblioObject.getAnhalyticsId(), MongoCollectionsInterface.GROBID_TEIS<a id="change">)</a>;
+        } catch (DataException de) {
+            logger.error("No corresponding fulltext TEI was found.", de);
+        }
+        <a id="change">return grobidTei</a>;
+    }
+
+    private String getTei(String anhalyticsId, String collection) throws DataException {</code></pre>

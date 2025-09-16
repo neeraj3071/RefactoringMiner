@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>489d796c030288d169256e31a39dca052f1e7b82,Assets/HTC.UnityPlugin/VRModule/Modules/WaveUnityXRModule.cs,WaveUnityXRModule,UpdateTrackedHandJointState,#IVRModuleDeviceStateRW#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            SetJoint(state, HandJointName.MiddleDistal, skeleton.middle.joint3, skeleton.middle.joint2, rigidTransform.rot);
+            SetJoint(state, HandJointName.MiddleTip, skeleton.middle.tip, skeleton.middle.joint3, rigidTransform.rot);
+            SetJoint(state, HandJointName.RingMetacarpal, skeleton.ring.joint1, wrist_pos, rigidTransform.rot);
+            <a id="change">SetJoint(</a>state, HandJointName.RingProximal, skeleton.ring.joint2, skeleton.ring.joint1, rigidTransform.rot<a id="change">)</a>;
+            SetJoint(state, HandJointName.RingDistal, skeleton.ring.joint3, skeleton.ring.joint2, rigidTransform.rot);
+            SetJoint(state, HandJointName.RingTip, skeleton.ring.tip, skeleton.ring.joint3, rigidTransform.rot);
+            SetJoint(state, HandJointName.PinkyMetacarpal, skeleton.pinky.joint1, wrist_pos, rigidTransform.rot);</code></pre><h3>After Change</h3><pre><code class='java'>
+            SetJoint(state, HandJointName.MiddleIntermediate, skeleton.middle.joint2, skeleton.middle.joint3, rigidTransform.rot);
+            SetJoint(state, HandJointName.MiddleDistal, skeleton.middle.joint3, skeleton.middle.tip, rigidTransform.rot);
+            SetJoint(state, HandJointName.MiddleTip, skeleton.middle.tip, null, rigidTransform.rot);
+            <a id="change">SetJoint(</a>state, HandJointName.RingProximal, skeleton.ring.joint1, skeleton.ring.joint2, rigidTransform.rot<a id="change">)</a>;
+            SetJoint(state, HandJointName.RingIntermediate, skeleton.ring.joint2, skeleton.ring.joint3, rigidTransform.rot);
+            SetJoint(state, HandJointName.RingDistal, skeleton.ring.joint3, skeleton.ring.tip, rigidTransform.rot);
+            SetJoint(state, HandJointName.RingTip, skeleton.ring.tip, null, rigidTransform.rot);</code></pre>

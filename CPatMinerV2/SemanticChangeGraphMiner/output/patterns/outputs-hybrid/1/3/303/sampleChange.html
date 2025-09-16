@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>266218633650e501b69d5ae9d49a7cb9a38f168e,Assets/UniGLTF/Runtime/UniGLTF/IO/GltfJsonUtil.cs,GltfJsonUtil,FindUsedExtensionsAndUpdateJson,#String#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            var values = "\"extensionUsed\":[" + string.Join(",", used.Select(x =&gt; DoubleQuote(x))) + "]";
+            Debug.Log(values);
+            if (parsed.<a id="change">ContainsKey(</a>"extensionUsed"<a id="change">)</a>)
+            {
+                // replace
+                src = Regex.Replace(src, @"""extensionUsed""\s*:\s*\[[^\]]+\]", values);</code></pre><h3>After Change</h3><pre><code class='java'>
+            }
+            else
+            {
+                if (parsed.<a id="change">ContainsKey(EXTENSION_USED_KEY</a><a id="change">)</a>)
+                {
+                    var values = "[" + string.Join(",", used.Select(x =&gt; DoubleQuote(x))) + "]";
+                    // Debug.Log($"replace: {values}");</code></pre>

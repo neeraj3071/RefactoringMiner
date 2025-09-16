@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>cd85c9dad313dea55bd581e5b64d4445822ba437,Scripts/Modules/SerializedPreferencesModule.cs,SerializedPreferencesModule,Deserialize,#SerializedPreferences#ISerializePreferences#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            SerializedPreferenceItem item;
+            if (preferences.items.TryGetValue(serializer.GetType(), out item))
+            {
+                var payload = JsonUtility.FromJson(item.payload, Type.<a id="change">GetType(</a>item.payloadType<a id="change">)</a>);
+                serializer.OnDeserializePreferences(payload);
+            }
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            SerializedPreferenceItem item;
+            if (preferences.items.TryGetValue(serializer.GetType(), out item))
+            {
+                var <a id="change">type</a> = Type.<a id="change">GetType(</a>item.payloadType<a id="change">)</a>;
+                if (<a id="change">type</a><a id="change"> == null</a>)
+                    return;
+
+                var payload = JsonUtility.FromJson(item.payload, type);</code></pre>

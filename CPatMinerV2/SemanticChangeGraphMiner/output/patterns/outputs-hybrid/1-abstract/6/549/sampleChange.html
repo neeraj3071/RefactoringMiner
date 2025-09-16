@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4350e26d190afe119046b6fcdc88cf1c7199ec77,Assets/UXF/Scripts/UI/InputFieldKeyboardReturnEvent.cs,InputFieldKeyboardReturnEvent,OnGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+		void OnGUI()
+		{
+			if (inputField.isFocused && !string.IsNullOrEmpty(inputField.text) && Input.<a id="change">GetKeyDown(</a>KeyCode.Return<a id="change">)</a>)
+				onReturn.Invoke();
+		}
+	}</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            if (inputField.isFocused &&
+            	!string.IsNullOrEmpty(inputField.text) &&
+				(Input.<a id="change">GetKeyDown(</a>KeyCode.Return<a id="change">)</a> || <a id="change">Input</a>.<a id="change">GetKeyDown(KeyCode.KeypadEnter</a><a id="change">)</a>))
+            {
+                onReturn.Invoke();
+                inputField.Select();</code></pre>

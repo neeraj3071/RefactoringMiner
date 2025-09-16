@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>02e664c18c5e7266e2a907bf7079b4dd60786c0c,Menus/PinnedToolMenu/Scripts/PinnedToolsMenuUI.cs,PinnedToolsMenuUI,DeleteHighlightedButton,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				m_OrderedButtons.Remove(button);
+				button.destroy();
+				button = m_OrderedButtons[k_ActiveToolOrderPosition];
+				<a id="change">this</a>.<a id="change">SelectTool(</a>rayOrigin, button.toolType<a id="change">)</a>;
+			}
+
+			return button != null;</code></pre><h3>After Change</h3><pre><code class='java'>
+				button.destroy();
+				button = m_OrderedButtons[k_ActiveToolOrderPosition];
+
+				<a id="change">if (buttonSelected != </a><a id="change">null</a><a id="change">)
+					buttonSelected(</a>rayOrigin, button.toolType<a id="change">)</a>;
+			}
+
+			return button != null;</code></pre>

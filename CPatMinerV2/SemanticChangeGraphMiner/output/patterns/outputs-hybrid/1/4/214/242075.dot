@@ -1,0 +1,19 @@
+digraph G {
+subgraph cluster0 {
+1 [label="CreateFaceButton" a="32" s="12909,13204" l="17,1" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="CreateFaceButton" a="32" s="13079,13418" l="17,1" shape="box"];
+3 [label="SimpleName" a="42" s="13070" l="6" shape="ellipse"];
+4 [label="SimpleName" a="42" s="13434" l="14" shape="ellipse"];
+5 [label="SimpleName" a="42" s="13434" l="6" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+2 -> 3 [label="_def_"];
+3 -> 5 [label="_ref_"];
+5 -> 4 [label="_qual_"];
+}

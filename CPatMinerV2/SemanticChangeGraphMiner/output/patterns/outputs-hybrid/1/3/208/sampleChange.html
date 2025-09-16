@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>9ae4e739d934db5d03bebccc9fdb38cb3008fc36,hoomd-viz/Assets/Scripts/vrCommClient.cs,vrCommClient,ProcessMessage,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            //client has initialized after Hoomd or Hoomd isn't initialized yet so see if server has sent us bonds.
+            //Either we'll get them normally or we will get them eventually once Hoomd starts for the first time.
+            received = FrameClient.<a id="change">TryReceiveMultipartBytes(</a>waitTime, ref msg, 2<a id="change">)</a>;
+        }
+        else
+        {</code></pre><h3>After Change</h3><pre><code class='java'>
+        bool received;
+
+        List&lt;byte[]&gt; init_msg = null;
+        bool init_recv = FrameClient.<a id="change">TryReceiveMultipartBytes(</a>waitTime, ref <a id="change">init_msg</a>, 2<a id="change">)</a>;
+        if (init_msg != null)
+        {
+            string init_msgType = System.Text.Encoding.UTF8.GetString(init_msg[0]);</code></pre>

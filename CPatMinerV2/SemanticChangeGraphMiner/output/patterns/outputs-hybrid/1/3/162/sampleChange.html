@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d56500af5cafc5847ed534f0ea0e633a11cdc412,Runtime/Scripts/Modules/ProjectFolderModule.cs,ProjectFolderModule,CreateFolderData,#Action#HashSet#Bool#HierarchyProperty#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            var assetList = new List&lt;AssetData&gt;();
+            if (hasNext)
+            {
+                hasNext = hp.<a id="change">Next(</a>null<a id="change">)</a>;
+                while (hasNext && hp.depth &gt; depth)
+                {
+                    if (hp.isFolder)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public void AddConsumer(IUsesProjectFolderData consumer)
+        {
+            consumer.folderData = GetFolderD<a id="change">at</a>a();
+            m_ProjectFolderLists.Add(consumer);
+        }
+
+        public void RemoveConsumer(IUsesProjectFolderData consumer)
+        {
+            m_ProjectFolderLists.Remove(consumer);
+        }
+
+        public void AddConsumer(IFilterUI consumer)
+<a id="change">     </a>   {<a id="change">
+</a>            consumer.filterList = GetFilterList();
+            m_FilterUIs.Add(consumer);
+        }
+</code></pre>

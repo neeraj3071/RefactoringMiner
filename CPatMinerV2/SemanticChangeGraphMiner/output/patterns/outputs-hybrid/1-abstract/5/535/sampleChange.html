@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>15affbbef243407ca7e23ee7fcfb3f3b571360f9,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VivePose/VivePoseGet.cs,VivePose,GetAllHandJoints,#ViveRoleProperty#IList#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        public static void GetAllHandJoints(ViveRoleProperty role, IList&lt;HandJointPose&gt; outHandJoints, bool trimInvalidJoint = true)
+        {
+            <a id="change">GetAllHandJoints(</a>role.GetDeviceIndex(), <a id="change">outHandJoints</a>, <a id="change">trimInvalidJoint</a><a id="change">)</a>;
+        }
+
+        public static void GetFingerJoints(ViveRoleProperty role, FingerName fingerName, IList&lt;HandJointPose&gt; outHandJoints, bool trimInvalidJoint = true)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public static JointEnumArray.IReadOnly GetAllHandJoints(ViveRoleProperty role)
+        {
+            <a id="change">return </a><a id="change">GetAllHandJoints(</a>role.GetDeviceIndex()<a id="change">)</a>;
+        }
+
+        public static int GetHandJointCount(ViveRoleProperty role)</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>9ba9a9f5a6e2fb3518444caab05455bdeeb15086,Assets/VRM10/Editor/Components/VRM10ObjectEditor.cs,VRM10ObjectEditor,OnEnable,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            m_expression = new PropGui(serializedObject.FindProperty(nameof(m_target.Expression)));
+            m_meta = new PropGui(serializedObject.FindProperty(nameof(m_target.Meta)));
+            m_lookAt = new PropGui(serializedObject.FindProperty(nameof(m_target.LookAt)));
+            <a id="change">m_firstPerson = new PropGui(</a><a id="change">serializedObject</a>.<a id="change">FindProperty(</a>nameof(m_target.FirstPerson)<a id="change">))</a>;
+        }
+
+        public override void OnInspectorGUI()</code></pre><h3>After Change</h3><pre><code class='java'>
+            m_expression = SerializedPropertyEditor.Create(serializedObject, nameof(m_target.Expression));
+            m_meta = SerializedPropertyEditor.Create(serializedObject, nameof(m_target.Meta));
+            m_lookAt = SerializedPropertyEditor.Create(serializedObject, nameof(m_target.LookAt));
+            m_firstPerson = <a id="change">SerializedPropertyEditor</a>.<a id="change">Create(serializedObject</a>, nameof(m_target.FirstPerson)<a id="change">)</a>;
+        }
+
+        public override void OnInspectorGUI()</code></pre>

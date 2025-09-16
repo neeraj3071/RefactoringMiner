@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>bd238ddae7a1412a3d3c72167bb76e7697b7ed14,Assets/Scripts/Museum/Museum.cs,Museum,RemoveTile,#Int#Int#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            leftTile.UpdateEdges();
+            rightTile.UpdateEdges();
+            frontTile.UpdateEdges();
+            backTile.<a id="change">UpdateEdges()</a>;
+        }
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            if (backTile != null) backTile.front = true;
+            if (leftTile != null) leftTile.UpdateEdges();
+            if (rightTile != null) rightTile.UpdateEdges();
+            <a id="change">if (backTile</a><a id="change"> != null) </a>backTile.<a id="change">UpdateEdges()</a>;
+            if (frontTile != null) frontTile.UpdateEdges();
+        }
+    }</code></pre>

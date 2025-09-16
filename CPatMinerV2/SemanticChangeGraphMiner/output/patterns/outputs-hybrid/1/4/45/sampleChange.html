@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8302209ab21f63b5f0c6e7224c88ec9983bb3d4b,Assets/Scripts/MakeElementMeshs.cs,STBReader,MakeBar,#Int#Vector3#Vector3#number#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        Vector3[,] hoopPoint = GetCornerPoint(nodeStart, nodeEnd, width - bandPos, hight - bandPos);
+        Vector3[,] main1Point = GetCornerPoint(nodeStart, nodeEnd, width - main1Pos, hight - main1Pos);
+        Vector3[,] main2Point = <a id="change">GetCornerPoint(</a>nodeStart, nodeEnd, width - main2Pos, hight - main2Pos<a id="change">)</a>;
+        MakeHoop(hoopPoint, bandD, pit);
+        MakeMainBar(main1Point, mainD, mainBarNum, 1);
+        //MakeMainBar(main2Point, mainD, mainBarNum, 2); // 2段筋のときは1段筋をよせないといけないのでこのやり方ではうまくいかない</code></pre><h3>After Change</h3><pre><code class='java'>
+        float main2Space = main1Space + mainD + 2 * barSpace;
+
+        Vector3[,] hoopPos = GetCornerPoint(nodeStart, nodeEnd, width - bandSpace, hight - bandSpace);
+        Vector3[,] main1Pos = <a id="change">GetCornerPoint(</a>nodeStart, nodeEnd, width - main1Space, hight - main1Space<a id="change">)</a>;
+        Vector3[,] mainX2Pos = GetCornerPoint(nodeStart, nodeEnd, width - main1Space, hight - main2Space);
+        Vector3[,] mainY2Pos = GetCornerPoint(nodeStart, nodeEnd, width - main2Space, hight - main1Space);
+        MakeHoop(hoopPos, bandD, pit);</code></pre>

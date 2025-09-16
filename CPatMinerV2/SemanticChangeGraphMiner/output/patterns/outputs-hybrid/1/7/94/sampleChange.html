@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3f0971723650d38221c628daf12a45f1a91fbf61,Assets/VRM10/Editor/Components/VRM10ControllerEditor.cs,VRM10ControllerEditor,OnEnable,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            {
+                m_metaEditor = Editor.CreateEditor(m_target.Meta.Meta);
+            }
+            m_controller = <a id="change">PropGui</a>.<a id="change">FromObject(serializedObject</a>, nameof(m_target.Controller)<a id="change">)</a>;
+            m_meta = PropGui.FromObject(serializedObject, nameof(m_target.Meta));
+            m_expression = PropGui.FromObject(serializedObject, nameof(m_target.Expression));
+            m_lookAt = PropGui.FromObject(serializedObject, nameof(m_target.LookAt));</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                m_metaEditor = Editor.CreateEditor(m_target.Meta.Meta);
+            }
+            <a id="change">m_controller = new PropGui(</a><a id="change">serializedObject</a>.<a id="change">FindProperty(</a>nameof(m_target.Controller)<a id="change">))</a>;
+            m_meta = new PropGui(serializedObject.FindProperty(nameof(m_target.Meta)));
+            m_lookAt = new PropGui(serializedObject.FindProperty(nameof(m_target.LookAt)));
+            m_springBone = new PropGui(serializedObject.FindProperty(nameof(m_target.SpringBone)));</code></pre>

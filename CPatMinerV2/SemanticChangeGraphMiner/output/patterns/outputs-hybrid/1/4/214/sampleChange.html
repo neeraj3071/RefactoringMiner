@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8f298c019009f868fb8c5d45205033e8526fd39b,Menus/MainMenu/MainMenu.cs,MainMenu,AddSettingsMenu,#ISettingsMenuProvider#MainMenuUI.ButtonData#ITooltip#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            buttonData.sectionName = k_SettingsMenuSectionName;
+
+            <a id="change">CreateFaceButton(</a>buttonData, tooltip, () =&gt;
+            {
+                var instance = m_MainMenuUI.AddSubmenu(k_SettingsMenuSectionName, provider.settingsMenuPrefab);
+                m_SettingsMenus[provider] = instance;
+                provider.settingsMenuInstance = instance;
+            }<a id="change">)</a>;
+        }
+
+        public void RemoveSettingsMenu(ISettingsMenuProvider provider)</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            buttonData.sectionName = k_SettingsMenuSectionName;
+
+            var <a id="change">button</a> = <a id="change">CreateFaceButton(</a>buttonData, tooltip, () =&gt;
+            {
+                var instance = m_MainMenuUI.AddSubmenu(k_SettingsMenuSectionName, provider.settingsMenuPrefab);
+                m_SettingsMenus[provider] = instance;
+                provider.settingsMenuInstance = instance;
+                AddToggleHaptics(instance);
+            }<a id="change">)</a>;
+
+            <a id="change">button.hovered</a> += OnButtonHovered;
+            button.clicked += OnButtonClicked;
+        }
+</code></pre>

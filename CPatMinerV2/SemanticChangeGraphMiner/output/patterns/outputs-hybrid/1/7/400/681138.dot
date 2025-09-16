@@ -1,0 +1,23 @@
+digraph G {
+subgraph cluster0 {
+1 [label="SelectTool" a="32" s="18491,18528" l="11,1" shape="box"];
+7 [label="SimpleName" a="42" s="18486" l="4" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="buttonSelected" a="32" s="18671,18712" l="15,1" shape="box"];
+3 [label="InfixExpression:r" a="27" s="18656" l="4" shape="box"];
+4 [label="StringLiteral" a="45" s="18660" l="4" shape="ellipse"];
+5 [label="IfStatement" a="25" s="18638,18664" l="4,7" shape="diamond"];
+6 [label="SimpleName" a="42" s="18642" l="14" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 5 [label="_cond_"];
+4 -> 3 [label="_para_"];
+5 -> 2 [label="_control_"];
+6 -> 3 [label="_para_"];
+7 -> 1 [label="_recv_"];
+}

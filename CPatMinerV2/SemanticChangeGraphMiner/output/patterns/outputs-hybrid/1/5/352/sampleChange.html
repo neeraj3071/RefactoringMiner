@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c3bc48543e0b43b8f0c4ff8ab06c11b2606150ae,Assets/UXF/Scripts/Etc/Editor/SessionEditor.cs,SessionEditor,DrawMonitorTab,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.FlexibleSpace();
+                GUILayout.Label("Currently running session!");
+                GUILayout.<a id="change">FlexibleSpace()</a>;
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.Separator();
+</code></pre><h3>After Change</h3><pre><code class='java'>
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.FlexibleSpace();
+                GUILayout.Label("Currently running session!");
+                GUILayout.<a id="change">FlexibleSpace()</a>;
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.Separator();
+
+                EditorGUILayout.LabelField("Experiment name:", session.experimentName);
+                EditorGUILayout.LabelField("PPID:", session.ppid);
+                EditorGUILayout.LabelField("Session number:", session.number.ToString());
+                EditorGUILayout.Separator();
+
+                // GUILayout.Label("Full path:");
+                // EditorGUI.BeginDisabledGroup(true);
+                // EditorGUILayout.TextArea(session.FullPath);
+                // EditorGUI.EndDisabledGroup();
+                // EditorGUILayout.Separator();
+
+                if (session.blocks.Count == 0)
+                {
+                    <a id="change">GUILayout</a>.<a id="change">Label("No progress to show (no blocks)."</a><a id="change">)</a>;
+                }
+                else
+                {</code></pre>

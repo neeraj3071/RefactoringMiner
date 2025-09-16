@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a61b4c85fe1f4e9ba168a2cc9e613f00ad0b98f5,Scripts/EditorVR.cs,EditorVR,CreateEventSystem,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+						{
+							// Create ui action map input for device.
+							if (deviceData.uiInput == null)
+								deviceData.uiInput = <a id="change">CreateActionMapInput(</a><a id="change">CloneActionMapForDevice(</a>m_InputModule.ActionMap, device<a id="change">))</a>;
+
+							// Add RayOrigin transform, proxy and ActionMapInput references to input module list of sources
+							m_InputModule.AddRaycastSource(proxy, rayOriginBase.Key, deviceData.uiInput);</code></pre><h3>After Change</h3><pre><code class='java'>
+						{
+							// Create ui action map input for device.
+							if (deviceData.uiInput == null)
+								deviceData.uiInput = <a id="change">CreateActionMapInput(</a>m_InputModule.ActionMap, device<a id="change">)</a>;
+
+							// Add RayOrigin transform, proxy and ActionMapInput references to input module list of sources
+							m_InputModule.AddRaycastSource(proxy, rayOriginBase.Key, deviceData.uiInput);</code></pre>

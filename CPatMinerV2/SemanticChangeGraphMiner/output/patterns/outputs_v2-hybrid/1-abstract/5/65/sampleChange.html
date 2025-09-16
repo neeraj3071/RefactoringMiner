@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c403f5c3437d92726925b45b2b43b23d02469761,anhalytics-kb/src/main/java/fr/inria/anhalytics/dao/PublisherDAO.java,PublisherDAO,find,#number#,62
+</h3><h3>Before Change</h3><pre><code class='java'>
+    public Publisher find(Long publisher_id) throws SQLException {
+        Publisher publisher = new Publisher();
+
+        PreparedStatement preparedStatement = this.connect.<a id="change">prepareStatement(</a>SQL_SELECT_PUBLISHER_BY_ID<a id="change">)</a>;
+        preparedStatement.setFetchSize(Integer.MIN_VALUE);
+        preparedStatement.setLong(1, publisher_id);
+        ResultSet rs = preparedStatement.executeQuery();
+        if (rs.first()) {
+            publisher = new Publisher(
+                    publisher_id,
+                    rs.getString("name")
+            );
+        }
+        preparedStatement.<a id="change">close()</a>;
+        <a id="change">return </a>publisher;
+    }
+
+    private Publisher findPublisherIfAlreadyStored(Publisher obj) throws SQLException {</code></pre><h3>After Change</h3><pre><code class='java'>
+        Publisher publisher = new Publisher();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = this.connect.<a id="change">prepareStatement(</a>SQL_SELECT_PUBLISHER_BY_ID<a id="change">)</a>;
+            preparedStatement.setFetchSize(Integer.MIN_VALUE);
+            preparedStatement.setLong(1, publisher_id);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.first()) {
+                publisher = new Publisher(
+                        publisher_id,
+                        rs.getString("name")
+                );
+            }
+        } catch (SQLException ex) {
+            logger.error(ex.getMessage());
+        } finally {
+            preparedStatement.close();
+        }
+        <a id="change">return </a>publisher;
+    }
+
+    private Publisher findPublisherIfAlreadyStored(Publisher obj) throws SQLException {</code></pre>

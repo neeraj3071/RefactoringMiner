@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0d8f13e945912871e86181f812fe5b9e9a4fc5e0,Assets/VRM/UniJSON/Scripts/FormatterExtensions.cs,FormatterExtensions,KeyValue,#IFormatter#Expression#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                var constant = (ConstantExpression)lambdaBody.Expression;
+                var field = (FieldInfo)lambdaBody.Member;
+                f.Key(lambdaBody.Member.Name);
+                f.Serialize(field.<a id="change">GetValue(</a>constant.Value<a id="change">)</a>);
+            }
+            else
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+                // 
+                var constant = (ConstantExpression)lambdaBody.Expression;
+                var field = (FieldInfo)lambdaBody.Member;
+                var <a id="change">value</a> = field.<a id="change">GetValue(</a>constant.Value<a id="change">)</a>;
+                if (<a id="change">value != </a>null)
+                {
+                    f.Key(lambdaBody.Member.Name);
+                    f.Serialize(value);</code></pre>

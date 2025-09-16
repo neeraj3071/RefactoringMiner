@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b0b34616abebb9b96ecb10e826be41c149a9e220,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/dao/PersonDAO.java,PersonDAO,createAuthor,#Author#,81
+</h3><h3>Before Change</h3><pre><code class='java'>
+        statement.setLong(2, author.getPerson().getPersonId());
+        statement.setInt(3, author.getRank());
+        statement.setInt(4, author.getCorrep());
+        int code = statement.<a id="change">executeUpdate()</a>;
+        <a id="change">statement</a>.<a id="change">close()</a>;
+        result = true;
+        return result;
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+            statement.setLong(2, author.getPerson().getPersonId());
+            statement.setInt(3, author.getRank());
+            statement.setInt(4, author.getCorrep());
+            statement.<a id="change">executeUpdate()</a>;
+            result = true;
+        } finally {
+            closeQuietly(statement);</code></pre>

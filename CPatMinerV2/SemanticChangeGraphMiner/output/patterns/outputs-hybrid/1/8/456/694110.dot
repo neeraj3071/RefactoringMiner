@@ -1,0 +1,26 @@
+digraph G {
+subgraph cluster0 {
+1 [label="FindProperty" a="32" s="1851,1878" l="13,1" shape="box"];
+4 [label="StringLiteral" a="45" s="1864" l="14" shape="ellipse"];
+5 [label="SimpleName" a="42" s="1814" l="17" shape="ellipse"];
+8 [label="SimpleName" a="42" s="1814" l="17" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="FindProperty" a="32" s="1723,1749" l="13,1" shape="box"];
+3 [label="StringLiteral" a="45" s="1736" l="13" shape="ellipse"];
+6 [label="SimpleName" a="42" s="1755" l="19" shape="ellipse"];
+7 [label="SimpleName" a="42" s="1755" l="19" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 8 [label="_def_"];
+1 -> 2 [label="_map_"];
+1 -> 8 [label="_def_"];
+3 -> 2 [label="_para_"];
+4 -> 1 [label="_para_"];
+4 -> 3 [label="_map_"];
+8 -> 7 [label="_map_"];
+8 -> 7 [label="_map_"];
+}

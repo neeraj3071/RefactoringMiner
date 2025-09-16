@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e126c07cdfd571c7477bf194f663a4d4b60fcf33,anhalytics-annotate/src/main/java/fr/inria/anhalytics/annotate/Annotator.java,Annotator,annotateCollection,#,51
+</h3><h3>Before Change</h3><pre><code class='java'>
+        int nb = 0;
+        try {
+            //for (String date : Utilities.getDates()) {
+                if (mm.<a id="change">init(</a>MongoManager.FINAL_TEIS, <a id="change">null</a><a id="change">)</a>) {
+                    //logger.debug("processing teis for :" + date);
+                    while (mm.hasMoreDocuments()) {
+                        String filename = mm.getCurrentFilename();
+                        String halID = mm.getCurrentHalID();
+
+                        try {
+                            // check if the document is already annotated
+                            if (mm.<a id="change">isAnnotated()</a>) {
+                                logger.debug("skipping " + filename + ": already annotated");
+                                <a id="change">mm</a>.<a id="change">nextDocument()</a>;
+                                continue;
+                            }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    public int annotateCollection() {
+        int nb = 0;
+        try {
+            mm.<a id="change">setGridFS(</a>MongoManager.FINAL_TEIS<a id="change">)</a>;
+            <a id="change">for (</a>String <a id="change">date</a> : <a id="change">Utilities</a>.<a id="change">getDates()</a><a id="change">) </a>{
+                if (<a id="change">mm</a>.<a id="change">initTeiFiles(date</a><a id="change">)</a>) {
+                    //logger.debug("processing teis for :" + date);
+                    while (mm.hasMoreDocuments()) {
+                        String tei = mm.nextDocument();
+                        String filename = mm.getCurrentFilename();
+                        String halID = mm.getCurrentHalID();
+
+                        try {
+                            // check if the document is already annotated
+                            if (!(<a id="change">AnnotateProperties</a>.<a id="change">isReset()</a> | !mm.<a id="change">isAnnotated()</a>)) {// I know not easy to catch up..
+                                logger.debug("skipping " + filename + ": already annotated");
+                                continue;
+                            }</code></pre>

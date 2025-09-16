@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>45bef9fcd3f5a13c267afe231da7d3d0387569e1,Workspaces/Project/ProjectWorkspace.cs,ProjectWorkspace,CreateFolderData,#HashSet#HierarchyProperty#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			else if (hp.depth == depth + 1) // Ignore sub-assets (mixer children, terrain splats, etc.)
+				assetList.Add(CreateAssetData(assetTypes, hp));
+		}
+		return new FolderData(name, folderList.Count &gt; 0 ? folderList.ToArray() : null, assetList.Count &gt; 0 ? assetList.<a id="change">ToArray()</a> : null);
+	}
+
+	private AssetData CreateAssetData(HashSet&lt;string&gt; assetTypes, HierarchyProperty hp)</code></pre><h3>After Change</h3><pre><code class='java'>
+			else if (hp.depth == depth + 1) // Ignore sub-assets (mixer children, terrain splats, etc.)
+				assetList.Add(CreateAssetData(assetTypes, hp));
+		}
+		return new FolderData(name, folderList.Count &gt; 0 ? folderList.ToArray() : null, assetList.<a id="change">ToArray()</a>);
+	}
+
+	private AssetData CreateAssetData(HashSet&lt;string&gt; assetTypes, HierarchyProperty hp)</code></pre>

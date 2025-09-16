@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>cf117ceddf104662d48f607e90c34c4d2cae1c70,unity_integration_calibration/Assets/Editor/CustomPupilGazeTrackerInspector.cs,CustomPupilGazeTrackerInspector,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		//////////////////////////////////////DEVELOPER MODE TOGGLE//////////////////////////////////////
+		GUILayout.BeginHorizontal();////////////////////HORIZONTAL////////////////////
+		GUI.skin.label.fontSize = 10;
+		GUILayout.Label ("developer mode", GUILayout.<a id="change">Width(</a>75<a id="change">)</a>);
+		GUI.skin.label = null;
+		pupilTracker.AdvancedSettings = EditorGUILayout.Toggle (pupilTracker.AdvancedSettings);
+		GUILayout.EndHorizontal ();////////////////////HORIZONTAL////////////////////</code></pre><h3>After Change</h3><pre><code class='java'>
+		GUILayout.BeginHorizontal();////////////////////HORIZONTAL////////////////////
+
+		GUI.skin.button.fontSize = 9;
+		pupilTracker.AdvancedSettings = GUILayout.Toggle (pupilTracker.AdvancedSettings, "developer mode", "Button", GUILayout.<a id="change">Width(</a>90<a id="change">)</a>);
+		//GUI.skin.button.fontSize = 13;
+		GUI.skin.button.fontSize = 12;
+</code></pre>

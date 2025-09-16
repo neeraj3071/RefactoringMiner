@@ -1,0 +1,19 @@
+digraph G {
+subgraph cluster0 {
+1 [label="OnInspectorGUI" a="32" s="2449" l="16" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="OnInspectorGUI" a="32" s="3247" l="16" shape="box"];
+3 [label="InfixExpression:r" a="27" s="2467" l="4" shape="box"];
+4 [label="StringLiteral" a="45" s="2471" l="4" shape="ellipse"];
+5 [label="SimpleName" a="42" s="2448" l="19" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 2 [label="_control_"];
+4 -> 3 [label="_para_"];
+5 -> 3 [label="_para_"];
+}

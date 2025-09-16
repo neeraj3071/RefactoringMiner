@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e8ac1d6a8985b3811331f5f7213635873e6a8612,Assets/HoloToolkit/Sharing/Tests/Scripts/ImportExportAnchorManager.cs,ImportExportAnchorManager,RoomManagerCallbacks_AnchorsDownloaded,#Bool#AnchorDownloadRequest#XString#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+                if (SharingStage.Instance.ShowDetailedLogs)
+                {
+                    Debug.Log(datasize.<a id="change">ToString()</a> + " bytes ");
+                }
+
+                rawAnchorData = new byte[datasize];</code></pre><h3>After Change</h3><pre><code class='java'>
+
+                if (SharingStage.Instance.ShowDetailedLogs)
+                {
+                    Debug.LogFormat("Anchor Manager: Anchor size: {0} bytes.", datasize.<a id="change">ToString()</a>);
+                }
+
+                <a id="change">if (AnchorDebugText != </a><a id="change">null</a><a id="change">)
+                </a>{
+                    AnchorDebugText.text += <a id="change">string</a>.<a id="change">Format("\nAnchor size: {0} bytes."</a>, <a id="change">datasize</a>.<a id="change">ToString())</a>;
+                }
+
+                rawAnchorData = new byte[datasize];
+
+                request.GetData(rawAnchorData, datasize);
+                currentState = ImportExportState.DataReady;
+            }
+            else
+            {
+                <a id="change">if (AnchorDebugText != </a><a id="change">null</a><a id="change">)
+                </a>{
+                    AnchorDebugText.text += <a id="change">string</a>.<a id="change">Format("\nAnchor DL failed " + </a><a id="change">failureReason</a><a id="change">)</a>;
+                }
+
+                // If we failed, we can ask for the data again.</code></pre>

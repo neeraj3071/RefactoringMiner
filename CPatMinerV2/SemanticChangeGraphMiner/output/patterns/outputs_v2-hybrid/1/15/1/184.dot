@@ -1,0 +1,42 @@
+digraph G {
+subgraph cluster0 {
+1 [label="isAnnotated" a="32" s="3937" l="13" shape="box"];
+6 [label="nextDocument" a="32" s="4075" l="14" shape="box"];
+7 [label="SimpleName" a="42" s="4072" l="2" shape="ellipse"];
+8 [label="init" a="32" s="3548,3582" l="5,1" shape="box"];
+10 [label="NullLiteral" a="33" s="3578" l="4" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="isAnnotated" a="32" s="3368" l="13" shape="box"];
+3 [label="EnhancedForStatement" a="70" s="2816,2855" l="5,2" shape="diamond"];
+4 [label="SimpleName" a="42" s="2828" l="4" shape="ellipse"];
+5 [label="getDates" a="32" s="2845" l="10" shape="box"];
+9 [label="setGridFS" a="32" s="2768,2801" l="10,1" shape="box"];
+11 [label="initTeiFiles" a="32" s="2882,2899" l="13,1" shape="box"];
+12 [label="SimpleName" a="42" s="2879" l="2" shape="ellipse"];
+13 [label="isReset" a="32" s="3352" l="9" shape="box"];
+14 [label="SimpleName" a="42" s="3333" l="18" shape="ellipse"];
+15 [label="SimpleName" a="42" s="2895" l="4" shape="ellipse"];
+16 [label="SimpleName" a="42" s="2835" l="9" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+1 -> 6 [label="_control_"];
+3 -> 11 [label="_control_"];
+4 -> 15 [label="_ref_"];
+4 -> 3 [label="_cond_"];
+5 -> 4 [label="_def_"];
+7 -> 6 [label="_recv_"];
+8 -> 1 [label="_control_"];
+8 -> 9 [label="_map_"];
+10 -> 8 [label="_para_"];
+11 -> 13 [label="_control_"];
+11 -> 2 [label="_control_"];
+12 -> 11 [label="_recv_"];
+14 -> 13 [label="_recv_"];
+15 -> 11 [label="_para_"];
+16 -> 5 [label="_recv_"];
+}

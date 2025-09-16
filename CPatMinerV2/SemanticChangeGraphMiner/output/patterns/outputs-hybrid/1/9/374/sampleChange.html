@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>757017a18ff48c967bf65f2935d2cc2e51610ce4,Assets/Scripts/FireballMovement.cs,FireballMovement,Start,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    float explodeTime = 0.2f;
+    void Start()
+    {
+        AudioSource.<a id="change">PlayClipAtPoint(</a>fireballClip, this.transform.position, 1.0f<a id="change">)</a>;
+        speed = 5.0f;
+        Invoke("SelfDestruct", 10.0f);
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+    float explodeTime = 0.2f;
+    void Start()
+    {
+        <a id="change">if (fireballClip</a><a id="change"> != null)
+        </a>{
+            AudioSource.<a id="change">PlayClipAtPoint(</a>fireballClip, this.transform.position, 1.0f<a id="change">)</a>;
+        }
+        else
+        {
+            <a id="change">Debug</a>.<a id="change">Log("You forgot to attach a sound to the Fireball spell!"</a><a id="change">)</a>;
+        }
+        speed = 5.0f;
+        Invoke("SelfDestruct", 10.0f);</code></pre>

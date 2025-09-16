@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>77b0d66bbfda83af3c7c03ad1c6fdaae9df220d2,Assets/Plugins/Watson/Editor/ConfigEditor.cs,ConfigEditor,OnGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                        registerReq["robotName"] = Application.productName;
+                        registerReq["macId" ] = cfg.ProductKey;
+
+                        Dictionary&lt;string,string&gt; <a id="change">headers</a> = new Dictionary&lt;string, string&gt;();
+                        headers["Authorization"] = new Credentials( m_GatewayUser, m_GatewayPassword ).CreateAuthorization();
+                        headers["Content-Type"] = "application/json";
+
+                        byte [] <a id="change">data</a> = Encoding.UTF8.GetBytes( MiniJSON.Json.Serialize( registerReq ) );
+                        WWW www = <a id="change">new WWW( </a>cfg.GatewayURL + "/v1/admin/addRobot", data, headers<a id="change"> )</a>;
+                        while(! www.isDone );
+
+                        if (! string.IsNullOrEmpty( www.error ) )</code></pre><h3>After Change</h3><pre><code class='java'>
+                        registerReq["robotName"] = Application.productName;
+                        registerReq["macId" ] = "UnitySDK"; 
+
+                        <a id="change">data</a> = Encoding.UTF8.GetBytes( MiniJSON.Json.Serialize( registerReq ) );
+                        <a id="change">www = new WWW( </a>cfg.GatewayURL + "/v1/admin/addRobot", data, headers<a id="change"> )</a>;
+                        while(! www.isDone );
+
+                        if (! string.IsNullOrEmpty( www.error ) )</code></pre>

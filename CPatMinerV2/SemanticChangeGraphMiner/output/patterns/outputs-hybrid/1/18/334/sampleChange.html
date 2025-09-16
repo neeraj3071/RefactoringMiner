@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>fd64c573ad23722d44c0ffb026411df76c1c1183,Assets/HoloToolkit/Input/Scripts/CursorManager.cs,CursorManager,Awake,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    void Awake()
+    {
+        <a id="change">if (CursorOnHolograms</a> == <a id="change">null</a> || CursorOffHolograms<a id="change"> == </a>null<a id="change">)
+        </a>{
+            <a id="change">return;</a>
+        }
+
+        // Hide the Cursors to begin with.
+        CursorOnHolograms.<a id="change">SetActive(</a>false<a id="change">)</a>;
+        CursorOffHolograms.<a id="change">SetActive(</a>false<a id="change">)</a>;
+    }
+
+    void LateUpdate()</code></pre><h3>After Change</h3><pre><code class='java'>
+    private void Awake()
+    {
+        // Hide the Cursors to begin with.
+        <a id="change">if (CursorOnHolograms</a><a id="change"> != null</a><a id="change">)
+        </a>{
+            CursorOnHolograms.<a id="change">SetActive(</a>false<a id="change">)</a>;
+        }
+        <a id="change">if (</a>CursorOffHolograms<a id="change"> != </a>null<a id="change">)
+        </a>{
+            CursorOffHolograms.<a id="change">SetActive(</a>false<a id="change">)</a>;
+        }
+
+        // Make sure there is a GazeManager in the scene</code></pre>

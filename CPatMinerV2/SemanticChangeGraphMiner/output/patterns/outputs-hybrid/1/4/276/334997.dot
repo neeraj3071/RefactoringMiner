@@ -1,0 +1,16 @@
+digraph G {
+subgraph cluster0 {
+1 [label="HasWatsonAuthenticationToken" a="32" s="2905" l="30" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="HasWatsonAuthenticationToken" a="32" s="2905" l="30" shape="box"];
+3 [label="HasIamTokenData" a="32" s="2951" l="17" shape="box"];
+4 [label="SimpleName" a="42" s="2939" l="11" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+4 -> 3 [label="_recv_"];
+}

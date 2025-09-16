@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>07408a6d51e17f0b3cc475e1163aabdf3a786bf2,Assets/Planetaria/ExampleProjects/DébrisNoirs/Code/Satellite.cs,Satellite,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            {
+                float target_angle = Mathf.Atan2(input_direction.y, input_direction.x) - Mathf.PI/2;
+                float current_angle = internal_transform.localEulerAngles.z;
+                float interpolator = 360 * 3 / Mathf.<a id="change">Abs(</a>Mathf.DeltaAngle(current_angle, target_angle * Mathf.Rad2Deg)<a id="change">)</a> * Time.deltaTime;
+                internal_transform.localEulerAngles = new Vector3(0, 0, Mathf.LerpAngle(current_angle, target_angle * Mathf.Rad2Deg, interpolator));
+            }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+            {
+                float target_angle = Mathf.Atan2(input_direction.y, input_direction.x) - Mathf.PI/2;
+                float current_angle = internal_transform.localEulerAngles.z;
+                float delta_angle = Mathf.<a id="change">Abs(</a>Mathf.DeltaAngle(current_angle, target_angle * Mathf.Rad2Deg)<a id="change">)</a>;
+                float interpolator = 360 * 3 / delta_angle * Time.deltaTime;
+                float new_angle = Mathf.LerpAngle(current_angle, target_angle * Mathf.Rad2Deg, interpolator);
+                internal_transform.localEulerAngles = new Vector3(0, 0, new_angle);</code></pre>

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>f79929a64259229ad39ad30ff4aa46c999b054b4,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Editor/VIUVersionCheck.cs,VIUVersionCheck,OnVIUPreferenceGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+#if VIU_AUTO_BINDING_INTERFACE
+                toggleValue = EditorGUILayout.Toggle("Enable Auto Binding Interface", true);
+                EditorGUILayout.<a id="change">HelpBox(</a>s_enableAutoBindUIInfo, MessageType.Info<a id="change">)</a>;
+#else
+                toggleValue = EditorGUILayout.Toggle("Enable Auto Binding Interface", false);
+                EditorGUILayout.HelpBox(s_disableAutoBindUIInfo, MessageType.Info);</code></pre><h3>After Change</h3><pre><code class='java'>
+
+#if VIU_BINDING_INTERFACE_SWITCH
+                toggleValue = EditorGUILayout.Toggle("Enable Binding Interface Switch", true);
+                EditorGUILayout.<a id="change">HelpBox(</a>s_enableBindUISwitchInfo, MessageType.Info<a id="change">)</a>;
+#else
+                toggleValue = EditorGUILayout.Toggle("Enable Binding Interface Switch", false);
+                EditorGUILayout.HelpBox(s_disableBindUISwitchInfo, MessageType.Info);
+#endif
+
+                if (EditorGUI.EndChangeCheck())
+                {
+                    s_waitingForCompile = true;
+                    SetAutoBindingInterfaceSymbol(VIU_BINDING_INTERFACE_SWITCH_SYMBOL, toggleValue);
+                    return;
+                }
+
+                EditorGUI.BeginChangeCheck();
+
+#if VIU_EXTERNAL_CAMERA_SWITCH_SYMBOL
+                toggleValue = EditorGUILayout.Toggle("Enable External Camera Switch", true);
+                EditorGUILayout.HelpBox(s_enableExternalCamSwitcInfo, MessageType.Info);
+#else
+                toggleValue = EditorGUILayout.Toggle("Enable External Camera Switch", false);
+                <a id="change">EditorGUILayout</a>.<a id="change">HelpBox(</a>s_disableExternalCamSwitcInfo, <a id="change">MessageType.Info</a><a id="change">)</a>;
+#endif
+
+                if (EditorGUI.EndChangeCheck())</code></pre>

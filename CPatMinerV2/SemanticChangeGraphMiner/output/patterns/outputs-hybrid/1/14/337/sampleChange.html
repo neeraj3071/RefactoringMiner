@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>aa5fe833be0969f1e4bfe4c626b7d9e0d39c5d34,Assets/HTC.UnityPlugin/VRModule/Modules/UnityXRModule.cs,UnityXRModule,UpdateViveCosmosControllerState,#IVRModuleDeviceStateRW#InputDevice#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            state.SetButtonPress(VRModuleRawButton.A, primaryButton);
+            state.SetButtonPress(VRModuleRawButton.ApplicationMenu, secondaryButton);
+            state.SetButtonPress(VRModuleRawButton.Touchpad, primaryAxisClick);
+            state.<a id="change">SetButtonPress(</a>VRModuleRawButton.Trigger, <a id="change">triggerButton</a><a id="change">)</a>;
+            state.SetButtonPress(VRModuleRawButton.Grip, gripButton);
+            state.SetButtonPress(VRModuleRawButton.Bumper, bumperButton);
+
+            state.SetButtonTouch(VRModuleRawButton.A, primaryTouch);
+            state.<a id="change">SetButtonTouch(</a>VRModuleRawButton.ApplicationMenu, <a id="change">secondaryTouch</a><a id="change">)</a>;
+            state.SetButtonTouch(VRModuleRawButton.Touchpad, primary2DAxisTouch);
+            state.SetButtonTouch(VRModuleRawButton.Trigger, triggerTouch);
+            state.SetButtonTouch(VRModuleRawButton.Grip, gripButton);</code></pre><h3>After Change</h3><pre><code class='java'>
+                state.SetButtonTouch(VRModuleRawButton.Bumper, bumperButton);
+                state.SetButtonTouch(VRModuleRawButton.Trigger, triggerTouch);
+            }
+            <a id="change">else if (KnownActiveInputSubsystem</a><a id="change"> == VRModuleKnownXRInputSubsystem.OpenXR</a><a id="change">)
+            </a>{
+                bool gripPressed = GetDeviceFeatureValueOrDefault(device, new InputFeatureUsage&lt;bool&gt;("GripPressed"));
+                bool menuButton = GetDeviceFeatureValueOrDefault(device, CommonUsages.menuButton);
+                bool triggerPressed = GetDeviceFeatureValueOrDefault(device, new InputFeatureUsage&lt;bool&gt;("TriggerPressed"));
+                bool shoulderButton = GetDeviceFeatureValueOrDefault(device, new InputFeatureUsage&lt;bool&gt;("ShoulderButton"));
+                float grip = GetDeviceFeatureValueOrDefault(device, CommonUsages.grip);
+
+                state.SetButtonPress(VRModuleRawButton.Grip, gripPressed);
+                state.<a id="change">SetButtonPress(</a>VRModuleRawButton.Trigger, <a id="change">triggerPressed</a><a id="change">)</a>;
+                state.SetButtonPress(VRModuleRawButton.Bumper, shoulderButton);
+
+                state.SetButtonTouch(VRModuleRawButton.A, primaryButton);
+                state.<a id="change">SetButtonTouch(</a>VRModuleRawButton.ApplicationMenu, <a id="change">secondaryButton</a><a id="change">)</a>;
+                state.SetButtonTouch(VRModuleRawButton.Grip, gripPressed);
+                state.SetButtonTouch(VRModuleRawButton.Bumper, shoulderButton);
+                state.SetButtonTouch(VRModuleRawButton.Trigger, triggerPressed);</code></pre>

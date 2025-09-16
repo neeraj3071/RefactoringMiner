@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>03364623b434fb1286dcfa669d75b75d9ae57c6d,UnityVRTutorialMaker/Assets/DrawLineBetweenObjects.cs,DrawLineBetweenObjects,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    void Update()
+    {
+        line.SetPosition(0, object1.position + offset1);
+        line.<a id="change">SetPosition(</a>1, object2.position + offset2<a id="change">)</a>;
+    }
+}
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        else
+            Debug.LogError("object1 is null");
+
+        <a id="change">if (</a><a id="change">object2</a><a id="change"> != null</a><a id="change">)
+        </a>line.<a id="change">SetPosition(</a>1, object2.position + offset2<a id="change">)</a>;
+        else
+            Debug.LogError("object2 is null");
+</code></pre>

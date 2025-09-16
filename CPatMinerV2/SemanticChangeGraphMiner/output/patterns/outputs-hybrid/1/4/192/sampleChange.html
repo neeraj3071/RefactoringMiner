@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>13a3812c3844e2bafd2c97ca433c1db3ad4c7756,Assets/Scripts/BaseAI.cs,BaseAI,MoveNearPlayer,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        if (target != null)
+        {
+            Vector3 destination = target.transform.position + (transform.position - target.transform.position).normalized * nearPositionMultiplier;
+            agent.<a id="change">SetDestination(</a>destination<a id="change">)</a>;
+            targetDestination = destination;
+        }
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+        if (target != null)
+        {
+            Vector3 destination = target.transform.position + (transform.position - target.transform.position).normalized * nearPositionMultiplier;
+            <a id="change">if (</a><a id="change">agent</a>.enabled<a id="change">)
+            </a>{
+                agent.<a id="change">SetDestination(</a>destination<a id="change">)</a>;
+            }
+            targetDestination = destination;
+        }</code></pre>

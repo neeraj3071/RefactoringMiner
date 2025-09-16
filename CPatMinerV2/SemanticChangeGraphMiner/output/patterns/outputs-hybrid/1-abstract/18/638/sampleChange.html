@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>495d55522d28e0cb0426d20fbaa30c088aa81445,libs/unity/library/Tests/Runtime/VideoSourceTests.cs,VideoSourceTests,SingleTwoWaysImpl,#Bool#Bool#Bool#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            pc2_go.SetActive(true);
+
+            // Initialize
+            var <a id="change">initializedEvent1</a> = <a id="change">new ManualResetEventSlim(initialState</a><a id="change">: false)</a>;
+            pc1.OnInitialized.AddListener(() =&gt; initializedEvent1.Set());
+            Assert.IsNull(pc1.Peer);
+            pc1.InitializeAsync().Wait(millisecondsTimeout: 50000);
+            var initializedEvent2 = new ManualResetEventSlim(initialState: false);
+            pc2.OnInitialized.AddListener(() =&gt; initializedEvent2.Set());
+            <a id="change">Assert</a>.<a id="change">IsNull(pc2.Peer</a><a id="change">)</a>;
+            <a id="change">pc2</a>.<a id="change">InitializeAsync()</a>.Wait(millisecondsTimeout: 50000);
+
+            // Wait a frame so that the Unity event OnInitialized can propagate
+            yield return null;
+
+            // Check the event was raised
+            <a id="change">Assert</a>.<a id="change">IsTrue(initializedEvent1</a>.<a id="change">Wait(millisecondsTimeout</a><a id="change">: 50000)</a><a id="change">)</a>;
+            Assert.IsNotNull(pc1.Peer);
+            Assert.IsTrue(initializedEvent2.Wait(millisecondsTimeout: 50000));
+            <a id="change">Assert</a>.<a id="change">IsNotNull(pc2.Peer</a><a id="change">)</a>;
+
+            // Confirm the sources are ready and the sender tracks have been created.
+            if (withSender1)
+            {
+                Assert.IsTrue(source1.IsLive);
+                Assert.<a id="change">IsNotNull(</a>ml1.SenderTrack<a id="change">)</a>;
+            }
+            if (withSender2)
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+            var pc1 = pc1_go.AddComponent&lt;PeerConnection&gt;();
+            var pc2_go = new GameObject("pc2");
+            pc2_go.SetActive(false); // prevent auto-activation of components
+            var <a id="change">pc2</a> = pc2_go.AddComponent&lt;PeerConnection&gt;();
+
+            // Batch changes manually
+            pc1.AutoCreateOfferOnRenegotiationNeeded = false;
+            pc2.AutoCreateOfferOnRenegotiationNeeded = false;
+
+            // Create the signaler
+            var sig_go = new GameObject("signaler");
+            var sig = sig_go.AddComponent&lt;LocalOnlySignaler&gt;();
+            sig.Peer1 = pc1;
+            sig.Peer2 = pc2;
+
+            // Create the video sources on peer #1
+            VideoTrackSource source1 = null;
+            VideoReceiver receiver1 = null;
+            if (withSender1)
+            {
+                source1 = pc1_go.AddComponent&lt;UniformColorVideoSource&gt;();
+            }
+            if (withReceiver1)
+            {
+                receiver1 = pc1_go.AddComponent&lt;VideoReceiver&gt;();
+            }
+            MediaLine ml1 = pc1.AddMediaLine(MediaKind.Video);
+            ml1.SenderTrackName = "video_track_1";
+            ml1.Source = source1;
+            ml1.Receiver = receiver1;
+
+            // Create the video sources on peer #2
+            VideoTrackSource source2 = null;
+            VideoReceiver receiver2 = null;
+            if (withSender2)
+            {
+                source2 = pc2_go.AddComponent&lt;UniformColorVideoSource&gt;();
+            }
+            if (withReceiver2)
+            {
+                receiver2 = pc1_go.AddComponent&lt;VideoReceiver&gt;();
+            }
+            MediaLine ml2 = pc2.AddMediaLine(MediaKind.Video);
+            ml2.SenderTrackName = "video_track_2";
+            ml2.Source = source2;
+            ml2.Receiver = receiver2;
+
+            // Initialize
+            var init1 = PeerConnectionTests.InitializeAndWait(pc1);
+            var init2 = <a id="change">PeerConnectionTests</a>.<a id="change">InitializeAndWait(pc2</a><a id="change">)</a>;
+            yield return init1;
+            yield return init2;
+
+            // Confirm the sources are ready
+            if (withSender1)
+            {
+                Assert.IsTrue(source1.IsLive);
+
+            }
+            if (withSender2)
+            {
+                Assert.IsTrue(source2.IsLive);
+            }
+
+            // Confirm the sender track is not created yet; it will be when the connection starts
+            Assert.<a id="change">IsNull(</a>ml1.SenderTrack<a id="change">)</a>;
+            Assert.IsNull(ml2.SenderTrack);
+
+            // Confirm the receiver track is not added yet, since remote tracks are only instantiated</code></pre>

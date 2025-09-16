@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>62610a28a9e933b0cf933d321df27f51ed816dab,Assets/HoloToolkit/Tests/Sharing/ImportExportAnchorManager.cs,ImportExportAnchorManager,MakeAnchorDataRequest,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+    /// &lt;/summary&gt;
+    void MakeAnchorDataRequest()
+    {
+        anchorDownloadRequest = roomManager.<a id="change">DownloadAnchor(</a>currentRoom, currentRoom.GetAnchorName(0)<a id="change">)</a>;
+        currentState = ImportExportState.DataRequested;
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+    /// &lt;/summary&gt;
+    void MakeAnchorDataRequest()
+    {
+        <a id="change">if (</a>roomManager.<a id="change">DownloadAnchor(</a>currentRoom, currentRoom.GetAnchorName(0)<a id="change">))
+        </a>{
+            currentState = ImportExportState.DataRequested;
+        }
+        else
+        {
+            <a id="change">Debug</a>.<a id="change">Log("Couldn't make the download request."</a><a id="change">)</a>;
+            currentState = ImportExportState.Failed;
+        }
+    }</code></pre>

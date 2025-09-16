@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6fa4941db4b7f9e1514148dba0f21d00879d5cfd,Assets/UXF/Scripts/UI/UIController.cs,UIController,GenerateSidebar,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            {
+                if (ReferenceEquals(settingsElement.transform, child)) continue;
+                else if (ReferenceEquals(ppidElement.transform, child)) continue;
+                else if (<a id="change">ReferenceEquals(</a>localFilePathElement.transform, child<a id="change">)</a>) continue;
+                else DestroyImmediate(child.gameObject);
+            }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            foreach (Transform child in children)
+            {
+                <a id="change">if (</a>ReferenceEquals(settingsElement.transform, child)<a id="change">) </a>continue;
+                else if (ReferenceEquals(ppidElement.transform, child)) continue;
+                else if (<a id="change">ReferenceEquals(</a>localFilePathElement.transform, child<a id="change">)</a>) continue;
+                else if (ReferenceEquals(sessionNumElement.transform, child)) continue;
+                else DestroyImmediate(child.gameObject);
+            }</code></pre>

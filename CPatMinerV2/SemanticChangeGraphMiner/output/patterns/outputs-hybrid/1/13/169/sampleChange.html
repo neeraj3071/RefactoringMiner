@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>ed5efc8c173604e527ac3fc655864b190e351213,Assets/Plugins/Moon Motion Toolkit/Utilities/Explicit/Provide.cs,Provide,sharedMeshVia,#Dynamic#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+		}
+		else if (dynamo is GameObject)
+		{
+			GameObject gameObject = dynamo<a id="change"> as </a>GameObject;
+			<a id="change">return </a>gameObject.sharedMesh();
+		}
+		else if (dynamo is Component)
+		{
+			Component component = dynamo<a id="change"> as </a>Component;
+			<a id="change">return </a>component.sharedMesh();
+		}
+		else
+		{
+			Type dynamoType = dynamo.<a id="change">type()</a>;
+			return default(Mesh).returnWithError("Provide.sharedMeshVia given unrecognized dynamo of type "+dynamoType);
+		}
+	}</code></pre><h3>After Change</h3><pre><code class='java'>
+	{
+		if (dynamo is Mesh)
+		{
+			return <a id="change">dynamo</a>.<a id="change">castTo&lt;Mesh&gt;()</a>;
+		}
+		else if (dynamo is GameObject)
+		{
+			<a id="change">return </a>(dynamo<a id="change"> as </a>GameObject).sharedMesh();
+		}
+		else if (dynamo is Component)
+		{
+			<a id="change">return </a>(dynamo<a id="change"> as </a>Component).sharedMesh();
+		}
+		else
+		{
+			return default(Mesh).returnWithError("Provide.sharedMeshVia given unrecognized dynamo of type "+dynamo.<a id="change">type()</a>);
+		}
+	}
+	#endregion shared mesh</code></pre>

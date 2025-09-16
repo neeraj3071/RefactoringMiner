@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>2aed636a1c68e12d1fd4a8aa18eb7d4296923a75,Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs,UserTests,Users_CanDetectUseOfUnpairedDevice,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        InputSystem.QueueStateEvent(gamepad, new GamepadState().WithButton(GamepadButton.A));
+        InputSystem.Update();
+
+        Assert.That(receivedControl, <a id="change">Is</a>.<a id="change">SameAs(</a>gamepad.aButton<a id="change">)</a>);
+
+        receivedControl = null;
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        Assert.That(receivedControls, Has.Count.EqualTo(2));
+        Assert.That(receivedControls, Has.Exactly(1).SameAs(gamepad.leftStick.x));
+        Assert.That(receivedControls, Has.Exactly(1).<a id="change">SameAs(</a>gamepad.aButton<a id="change">)</a>);
+    }
+
+    // Make sure that if we pair a device from InputUser.onUnpairedDeviceUsed, we don't get any further</code></pre>

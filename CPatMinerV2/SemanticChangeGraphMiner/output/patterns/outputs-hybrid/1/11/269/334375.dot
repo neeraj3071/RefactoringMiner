@@ -1,0 +1,32 @@
+digraph G {
+subgraph cluster0 {
+1 [label="SetCameraFOV" a="32" s="87970,87986" l="13,1" shape="box"];
+3 [label="GetComponent" a="32" s="87649" l="34" shape="box"];
+4 [label="InfixExpression:r" a="27" s="87409" l="4" shape="box"];
+5 [label="StringLiteral" a="45" s="87413" l="4" shape="ellipse"];
+6 [label="IfStatement" a="25" s="87382,87417" l="4,10" shape="diamond"];
+7 [label="SimpleName" a="42" s="87613" l="22" shape="ellipse"];
+8 [label="SimpleName" a="42" s="87386" l="23" shape="ellipse"];
+9 [label="SimpleName" a="42" s="87638" l="10" shape="ellipse"];
+10 [label="SimpleName" a="42" s="87947" l="22" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="SetCameraFOV" a="32" s="87350,87366" l="13,1" shape="box"];
+11 [label="SimpleName" a="42" s="87339" l="10" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+3 -> 7 [label="_def_"];
+4 -> 6 [label="_cond_"];
+5 -> 4 [label="_para_"];
+6 -> 3 [label="_control_"];
+7 -> 10 [label="_ref_"];
+8 -> 4 [label="_para_"];
+9 -> 3 [label="_recv_"];
+10 -> 1 [label="_recv_"];
+10 -> 11 [label="_map_"];
+11 -> 2 [label="_recv_"];
+}

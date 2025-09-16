@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a17c789a0220f7282e1c5e350a4d3e418adb75b2,Assets/VRM10/Runtime/Scenes/Sample.cs,Sample,Import,#number[]#FileInfo#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            using (var loader = new Vrm10Importer(result.Parser, result.Vrm))
+            {
+                loader.<a id="change">Load()</a>;
+                loader.ShowMeshes();
+                return loader.DisposeOnGameObjectDestroyed().gameObject;
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            using (var loader = new Vrm10Importer(result.Parser, result.Vrm))
+            {
+                var <a id="change">loaded</a> = loader.<a id="change">Load()</a>;
+                loaded.ShowMeshes();
+                <a id="change">return loaded</a><a id="change">.gameObject</a>;
+            }
+        }
+</code></pre>

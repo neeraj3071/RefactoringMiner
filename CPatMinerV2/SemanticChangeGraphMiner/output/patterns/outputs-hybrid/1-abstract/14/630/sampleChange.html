@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>092cc6f7acd6c4cedaf2904cadb75e1c6e19d284,Assets/Planetaria/Code/Rendering/BlockRenderer.cs,BlockRenderer,render_arc,#Arc#number#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        float range_end = end;
+        float range_mid = (begin + end) / 2;
+
+        int[,] xyz_signs_begin = <a id="change">new int[2, 3]</a>; //positional, derivative; x, y, z
+        int[,] xyz_signs_end   = new int[2, 3];
+        int[,] xyz_signs_range_begin = new int[2, 3]; //immediately before the first detected change in sign
+        int[,] xyz_signs_range_end = new int[2, 3]; //the first detected change in any sign
+        int[,] xyz_signs_range_mid = new int[2, 3]; //middle of begin and range_end
+
+        // get signs for beginning and end
+        <a id="change">update_signs(</a>arc, ref xyz_signs_begin, 0, Precision.delta<a id="change">)</a>;
+        update_signs(arc, ref xyz_signs_end, arc.angle(), -Precision.delta);
+
+        // process new lines until the signs match</code></pre><h3>After Change</h3><pre><code class='java'>
+        return (begin + end) / 2; // return location of max error
+    }
+
+    private static void partition_arc(Arc <a id="change">arc</a>, float begin, float end)
+    {
+        float absolute_begin = begin;
+        float absolute_end = end;
+
+        float[,] xyz_signs_begin = <a id="change">get_signs(</a>arc, begin, Precision.delta<a id="change">)</a>; //immediately before the first detected change in sign
+        float[,] xyz_signs_end = get_signs(arc, end, -Precision.delta); //the first detected change in any sign
+
+        if (!same_signs(ref xyz_signs_begin, ref xyz_signs_end))
+        {
+            // recursive case: draw line and recursively render remainder
+
+            // binary search and discard ranges with matching slope signs and position signs at ends; and then update the slope signs.
+            // when you find a sign that switches, log the exact position of the switch with as much precision as possible
+            while (end - begin &gt; Precision.delta)
+            {
+                float mid = (begin + end) / 2; //guaranteed not to overflow since numbers are in range [0, 2pi]
+
+                float[,] xyz_signs_mid = get_signs(arc, mid, Precision.delta); //middle of begin and range_end
+
+                if (same_signs(ref xyz_signs_begin, ref xyz_signs_mid))
+                {
+                    begin = mid;
+                    //xyz_signs_begin = xyz_signs_mid; //not necessary, the signs are the same
+                }
+                else
+                {
+                    end = mid;
+                    xyz_signs_end = xyz_signs_mid;
+                }
+            }
+
+            Debug.Log(<a id="change">xyz_signs_begin[</a><a id="change">0,0]</a> + " " + <a id="change">xyz_signs_begin[</a><a id="change">0,1]</a> + " " + <a id="change">xyz_signs_begin[</a><a id="change">0,2]</a> + " " +
+                    xyz_signs_end[0,0] + " " + xyz_signs_end[0,1] + " " + xyz_signs_end[0,2]);
+        }
+</code></pre>

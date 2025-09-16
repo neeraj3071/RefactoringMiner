@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>219c8084bd37799ea5ecbbcbd4e8ef9547fcee54,Assets/HTC.UnityPlugin/VRModule/Modules/SteamVRv2Module.cs,SteamVRModule,GetRightControllerDeviceIndex,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        public override uint GetRightControllerDeviceIndex()
+        {
+            var system = OpenVR.System;
+            <a id="change">return </a>system<a id="change"> == </a>null<a id="change"> ? </a>INVALID_DEVICE_INDEX : system.<a id="change">GetTrackedDeviceIndexForControllerRole(</a>ETrackedControllerRole.RightHand<a id="change">)</a>;
+        }
+
+        private StringBuilder m_sb;</code></pre><h3>After Change</h3><pre><code class='java'>
+        public override uint GetRightControllerDeviceIndex()
+        {
+            var system = OpenVR.System;
+            <a id="change">if (</a>system<a id="change"> == </a>null<a id="change">) </a>{ return VRModule.INVALID_DEVICE_INDEX; }
+            var <a id="change">trackedIndex</a> = system.<a id="change">GetTrackedDeviceIndexForControllerRole(</a>ETrackedControllerRole.RightHand<a id="change">)</a>;
+            <a id="change">return m_indexMap</a>.<a id="change">Tracked2ModuleIndex(trackedIndex</a><a id="change">)</a>;
+        }
+
+        private StringBuilder m_sb;</code></pre>

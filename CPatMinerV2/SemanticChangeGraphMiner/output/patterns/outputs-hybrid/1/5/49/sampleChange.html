@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6946df690f4b50ffa3e1b626a1aa68de99c8046d,libs/Microsoft.MixedReality.WebRTC.Unity/Assets/Microsoft.MixedReality.WebRTC.Unity.Editor/PeerConnectionEditor.cs,PeerConnectionEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            EditorGUILayout.PropertyField(iceUsername);
+            EditorGUILayout.PropertyField(iceCredential);
+
+            EditorGUILayout.<a id="change">Space()</a>;
+
+            EditorGUILayout.LabelField("Media", EditorStyles.boldLabel);
+            transceiverList_.DoLayoutList();</code></pre><h3>After Change</h3><pre><code class='java'>
+            EditorGUILayout.PropertyField(autoLogErrors_, new GUIContent("Log errors to the Unity console",
+                "Log the WebRTC errors to the Unity console."));
+
+            EditorGUILayout.<a id="change">Space()</a>;
+
+            EditorGUILayout.LabelField("Signaling", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(iceServers_, true);
+            EditorGUILayout.PropertyField(iceUsername_);
+            EditorGUILayout.PropertyField(iceCredential_);
+
+            <a id="change">EditorGUILayout</a>.<a id="change">Space()</a>;
+
+            EditorGUILayout.LabelField("Media", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(autoCreateOffer_);</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>4d63b20b7af85f60687c46c6c8be528eb6a77443,Tests/Editor/CompilationTest.cs,CompilationTest,TestCompile,#String[]#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+			foreach (var s in output)
+			{
+				Assert.IsFalse(s.<a id="change">Contains(</a>"error"<a id="change">)</a>, string.Join("\n", output));
+			}
+		}
+	}</code></pre><h3>After Change</h3><pre><code class='java'>
+			foreach (var o in output)
+			{
+				var line = o.ToLower();
+				Assert.IsFalse(line.Contains("exception") || <a id="change">line</a>.<a id="change">Contains(</a>"error"<a id="change">)</a> || <a id="change">line</a>.<a id="change">Contains("warning"</a><a id="change">)</a>, string.Join("\n", output));
+			}
+		}
+	}</code></pre>

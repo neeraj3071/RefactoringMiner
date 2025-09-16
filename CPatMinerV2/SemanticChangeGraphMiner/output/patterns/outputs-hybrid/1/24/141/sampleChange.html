@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>54e6cc550332f52d7247dff42f6d78e4c6d142e1,Assets/UXF/Scripts/DataHandling/FileSaver.cs,FileSaver,HandleBytes,#number[]#String#String#Int#String#UXFDataType#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            string directory = GetSessionPath(experiment, ppid, sessionNum);
+            if (sortDataIntoFolders && dataType != UXFDataType.TrialResults) directory = Path.Combine(directory, dataType.ToLower());
+            Directory.CreateDirectory(directory);
+            string savePath = <a id="change">Path</a>.<a id="change">Combine(directory</a>, string.<a id="change">Format(</a>"{0}.txt", dataName<a id="change">))</a>;  
+
+            if (verboseDebug) Utilities.UXFDebugLogFormat("Queuing save of file: {0}", savePath);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public override string HandleBytes(byte[] bytes, string experiment, string ppid, int sessionNum, string dataName, UXFDataType dataType, int optionalTrialNum = 0)
+        {
+            string <a id="change">ext</a>  = <a id="change">Path</a>.<a id="change">GetExtension(dataName</a><a id="change">)</a>;
+            <a id="change">dataName</a> = <a id="change">Path</a>.<a id="change">GetFileNameWithoutExtension(dataName</a><a id="change">)</a>;
+
+            if (dataType.GetDataLevel() == UXFDataLevel.PerTrial) <a id="change">dataName</a> = string.Format("{0}_T{1:000}", dataName, optionalTrialNum);
+
+            string directory = GetSessionPath(experiment, ppid, sessionNum);
+            if (sortDataIntoFolders && dataType != UXFDataType.TrialResults) directory = Path.Combine(directory, dataType.ToLower());
+            Directory.CreateDirectory(directory);
+
+            string <a id="change">name</a> = <a id="change">string</a>.<a id="change">IsNullOrEmpty(ext</a><a id="change">)</a><a id="change"> ? </a>string.<a id="change">Format(</a>"{0}.txt", dataName<a id="change">)</a> : <a id="change">string</a>.<a id="change">Format("{0}{1}"</a>, <a id="change">dataName</a>, <a id="change">ext</a><a id="change">)</a>;
+            string savePath = <a id="change">Path</a>.<a id="change">Combine(directory</a>, <a id="change">name</a><a id="change">)</a>;
+
+            if (verboseDebug) Utilities.UXFDebugLogFormat("Queuing save of file: {0}", savePath);
+</code></pre>

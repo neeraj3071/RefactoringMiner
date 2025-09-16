@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>cdb0b8ae12e07f50cd4c8f74fd618a773896ba7e,Assets/ExternalSender/ExternalSender.cs,ExternalSender,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    // Update is called once per frame
+    void Update () {
+        if (CurrentModel != null && animator != <a id="change">null</a> && <a id="change">uClient != </a><a id="change">null</a>)
+        {
+            //Root
+            if (vrik == null)
+            {
+                vrik = CurrentModel.GetComponent&lt;VRIK&gt;();
+                Debug.Log("ExternalSender: VRIK Updated");
+            }
+
+            if (vrik != null)
+            {
+                var RootTransform = vrik.references.root;
+                var offset = handTrackerRoot.transform;
+                if (RootTransform != null && offset != null)
+                {
+                    uClient.Send("/VMC/Ext/Root/Pos",
+                        "root",
+                        RootTransform.position.x, RootTransform.position.y, RootTransform.position.z,
+                        RootTransform.rotation.x, RootTransform.rotation.y, RootTransform.rotation.z, RootTransform.rotation.w,
+                        offset.localScale.x, offset.localScale.y, offset.localScale.z,
+                        offset.position.x, offset.position.y, offset.position.z);
+                }
+            }
+
+            //Bones
+            foreach (HumanBodyBones bone in Enum.GetValues(typeof(HumanBodyBones)))
+            {
+                var Transform = animator.GetBoneTransform(bone);
+                if (Transform != null)
+                {
+                    <a id="change">uClient</a>.<a id="change">Send(</a>"/VMC/Ext/Bone/Pos", 
+                        bone.ToString(), 
+                        Transform.localPosition.x, Transform.localPosition.y, Transform.localPosition.z, 
+                        Transform.localRotation.x, Transform.localRotation.y, Transform.localRotation.z, Transform<a id="change">.localRotation.w)</a>;
+                }
+            }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+    // Update is called once per frame
+    void Update () {
+        if (CurrentModel != null && animator != <a id="change">null</a>)
+        {
+            //Root
+            if (vrik == null)
+            {
+                vrik = CurrentModel.GetComponent&lt;VRIK&gt;();
+                Debug.Log("ExternalSender: VRIK Updated");
+            }
+
+            if (vrik != null)
+            {
+                var RootTransform = vrik.references.root;
+                var offset = handTrackerRoot.transform;
+                if (RootTransform != null && offset != null)
+                {
+                    uClient?.Send("/VMC/Ext/Root/Pos",
+                        "root",
+                        RootTransform.position.x, RootTransform.position.y, RootTransform.position.z,
+                        RootTransform.rotation.x, RootTransform.rotation.y, RootTransform.rotation.z, RootTransform.rotation.w,
+                        offset.localScale.x, offset.localScale.y, offset.localScale.z,
+                        offset.position.x, offset.position.y, offset.position.z);
+                }
+            }
+
+            //Bones
+            foreach (HumanBodyBones bone in Enum.GetValues(typeof(HumanBodyBones)))
+            {
+                var Transform = animator.GetBoneTransform(bone);
+                if (Transform != null)
+                {
+                    <a id="change">uClient</a><a id="change">?.Send(</a>"/VMC/Ext/Bone/Pos", 
+                        bone.ToString(), 
+                        Transform.localPosition.x, Transform.localPosition.y, Transform.localPosition.z, 
+                        Transform.localRotation.x, Transform.localRotation.y, Transform.localRotation.z, Transform<a id="change">.localRotation.w)</a>;
+                }
+            }
+</code></pre>

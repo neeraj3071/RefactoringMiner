@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d2112a96af4574eb32368bd36d5599de624a837a,Scripts/Proxies/TwoHandedProxyBase.cs,TwoHandedProxyBase,Awake,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            m_RightHandRayOrigin = m_RightHand.FindChild(kRayOriginName);
+
+            // The menu target transform should only be on the left hand by default, unless specificed otherwise
+            menuOrigin = m_LeftHand.<a id="change">FindChild(</a>kMenuOriginName<a id="change">)</a> ?? m_RightHand.FindChild(kMenuOriginName);
+            if (menuOrigin != null)
+                menuInputOrigin = m_LeftHand.FindChild(MenuInputOriginName) ?? m_RightHand.FindChild(MenuInputOriginName);
+            </code></pre><h3>After Change</h3><pre><code class='java'>
+            // The menu target transform should only be on the left hand by default, unless specificed otherwise
+            menuOrigins = new Dictionary&lt;Node, Transform&gt;();
+            menuInputOrigins = new Dictionary&lt;Node, Transform&gt;();
+            var <a id="change">leftHandMenuOrigin</a> = m_LeftHand.<a id="change">FindChild(</a>kMenuOriginName<a id="change">)</a>;
+            var rightHandMenuOrigin = m_RightHand.FindChild(kMenuOriginName);
+            var leftHandMenuInputOrigin = <a id="change">leftHandMenuOrigin != </a><a id="change">null</a> ? m_LeftHand.FindChild(MenuInputOriginName) : null;
+            var rightHandMenuInputOrigin = rightHandMenuOrigin != null ? m_RightHand.FindChild(MenuInputOriginName) : null;
+            if (leftHandMenuInputOrigin != null)
+            {</code></pre>

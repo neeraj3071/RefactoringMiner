@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>43fc06c71514fcae575921304db7965b41fcc7c5,Assets/VRM10/Editor/Components/Constraint/VRM10RotationConstraintEditor.cs,VRM10RotationConstraintEditor,SrcDrawModelCoords,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            var s = m_target.transform.lossyScale.x;
+
+            // init 
+            <a id="change">Coords</a>.<a id="change">Draw(</a>m_target.GetSourceModelCoords(), 0.2f / s<a id="change">)</a>;
+        }
+
+        void SrcDrawLocalCoords()</code></pre><h3>After Change</h3><pre><code class='java'>
+            var s = m_target.transform.lossyScale.x;
+
+            // init 
+            m_target.GetSourceModelCoords().<a id="change">Draw(</a>0.2f / s<a id="change">)</a>;
+        }
+
+        void SrcDrawLocalCoords()</code></pre>

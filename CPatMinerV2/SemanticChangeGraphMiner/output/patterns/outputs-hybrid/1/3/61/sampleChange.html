@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7902a72061988b08a46305c7cb25bb538723ec7f,Scripts/UnitTests/TestRetrieveAndRank.cs,TestRetrieveAndRank,RunTest,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                    Log.Debug("TestRetrieveAndRank", "Deleting cluster {0}.", cluster.Cluster.solr_cluster_id);
+                    m_RetrieveAndRank.DeleteCluster(OnDeleteExistingCluster, cluster.Cluster.solr_cluster_id);
+                    //	Wait before deleting cluster
+                    Runnable.<a id="change">Run(</a>WaitUp(5f)<a id="change">)</a>;
+                    while (!m_IsDoneWaiting)
+                        yield return null;
+                    m_IsDoneWaiting = false;</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            //	Wait before deleting ranker
+            m_IsDoneWaiting = false;
+            Runnable.<a id="change">Run(</a>WaitUp(5f)<a id="change">)</a>;
+            while (!m_IsDoneWaiting)
+                yield return null;
+</code></pre>

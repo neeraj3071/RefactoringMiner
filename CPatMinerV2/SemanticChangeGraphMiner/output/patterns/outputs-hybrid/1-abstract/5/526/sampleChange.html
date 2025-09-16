@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>fc21ad9e8a832cc044020b42a6febfb82779bca5,VRSF_DOTS/Assets/VRSF/UI/Scripts/Editor/VRScrollbarEditor.cs,VRScrollbarEditor,InstantiateVRScrollbarHorizontal,#MenuCommand#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        static void InstantiateVRScrollbarHorizontal(MenuCommand menuCommand)
+        {
+            // Create a custom game object
+            GameObject newScrollbar = <a id="change">GameObject</a>.<a id="change">Instantiate(</a>Core.Utils.VRSFPrefabReferencer.GetPrefab("VRScrollbarHorizontal")<a id="change">)</a>;
+
+            RectTransform rt = newScrollbar.GetComponent&lt;RectTransform&gt;();
+            rt.localPosition = new Vector3(rt.rect.x, rt.rect.y, 0);</code></pre><h3>After Change</h3><pre><code class='java'>
+        static void InstantiateVRScrollbarHorizontal(MenuCommand menuCommand)
+        {
+            // Create a custom game object
+            GameObject newScrollbar = <a id="change">(GameObject)PrefabUtility</a>.<a id="change">InstantiatePrefab(</a>Core.Utils.VRSFPrefabReferencer.GetPrefab("VRScrollbarHorizontal")<a id="change">)</a>;
+
+            RectTransform rt = newScrollbar.GetComponent&lt;RectTransform&gt;();
+            rt.localPosition = new Vector3(rt.rect.x, rt.rect.y, 0);</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>25b46ba3357a7a12c9c50532556bb8c63b7fc114,anhalytics-commons/src/main/java/fr/inria/anhalytics/commons/properties/CommonsProperties.java,CommonsProperties,init,#String#boolean#,26
+</h3><h3>Before Change</h3><pre><code class='java'>
+                setMongodbUser(prop.getProperty("commons.mongodb_user"));
+                setMongodbPass(prop.getProperty("commons.mongodb_pass"));
+
+                setMysql_url(prop.<a id="change">getProperty("kb.mysql_url"</a><a id="change">)</a>);
+                setMysql_db(prop.getProperty("kb.mysql_db"));
+                setMysql_bibliodb(prop.getProperty("kb.mysql_bibliodb"));
+                setMysql_user(prop.getProperty("kb.mysql_user"));</code></pre><h3>After Change</h3><pre><code class='java'>
+                setMongodbPass(prop.getProperty("commons.mongodb_pass"));
+
+                setMysql_host(prop.getProperty("kb.mysql_host"));
+                setMysql_port(prop.<a id="change">getProperty("kb.mysql_port"</a><a id="change">)</a>);
+                setMysql_db(prop.getProperty("kb.mysql_db"));
+                setMysql_bibliodb(prop.getProperty("kb.mysql_bibliodb"));
+                setMysql_user(prop.getProperty("kb.mysql_user"));</code></pre>

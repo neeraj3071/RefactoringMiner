@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>32c0c67b84ebd2027e8a392c8167583582964bcb,Client/Assets/Scripts/Core/ApprenticeController.cs,ApprenticeController,PresentARScreen,#NetworkMessage#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        private void PresentARScreen(NetworkMessage networkMessage)
+        {
+            var controller = Instantiate(ARApprenticeControllerPrefab, transform);
+            controller.StepModel = networkMessage.<a id="change">ReadMessage&lt;StepModelNetworkMessage&gt;()</a>.Data;
+
+            _curentController = controller;
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            var controller = Instantiate(ARApprenticeControllerPrefab, transform);
+
+            var <a id="change">message</a> = networkMessage.<a id="change">ReadMessage&lt;StepModelNetworkMessage&gt;()</a>;
+            Application.View.ImageTargets.ActivateImageTarget(message.ImageTargetIndex);
+            controller.StepModel = <a id="change">message.Data</a>;
+
+            _curentController = controller;
+        }</code></pre>

@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0c3f1c29bd6645beba49f05726101eb6fe288ffe,anhalytics-index/src/main/java/fr/inria/anhalytics/index/main/Main.java,Main,processArgs,#String[]#,55
+</h3><h3>Before Change</h3><pre><code class='java'>
+            if (currArg.equals("-h")) {
+                System.out.println(getHelp());
+                continue;
+            } else if (currArg.<a id="change">equals("-nodates"</a><a id="change">)</a>) {
+                IndexProperties.setProcessByDate(false);
+                i++;
+                continue;
+            } else if (currArg.equals("-exe")) {
+                String command = args[i + 1];
+                if (availableCommands.contains(command)) {
+                    IndexProperties.setProcessName(command);
+                    i++;
+                    continue;
+                } else {
+                    System.err.println("-exe value should be one value from this list: " + availableCommands);
+                    result = false;
+                    break;
+                }
+            } else if (currArg.equals("-dFromDate")) {
+                String stringDate = args[i + 1];
+                if (!stringDate.isEmpty()) {
+                    if (Utilities.isValidDate(stringDate)) {
+                        IndexProperties.setFromDate(args[i + 1]);
+                    } else {
+                        System.err.println("The date given is not correct, make sure it follows the pattern : yyyy-MM-dd");
+                        result = false;
+                    }
+                }
+                i++;
+                continue;
+            } else if (<a id="change">currArg</a>.<a id="change">equals("-dUntilDate"</a><a id="change">)</a>) {
+                String stringDate = args[i + 1];
+                if (!stringDate.isEmpty()) {
+                    if (Utilities.isValidDate(stringDate)) {</code></pre><h3>After Change</h3><pre><code class='java'>
+                    result = false;
+                    break;
+                }
+            } else if (currArg.<a id="change">equals("--reset"</a><a id="change">)</a>) {
+                IndexProperties.setReset(true);
+                i++;
+                continue;</code></pre>

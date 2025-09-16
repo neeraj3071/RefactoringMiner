@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a9038b63960c9a56640f95a8b819b7b115f65029,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/HALOAIPMHDomParser.java,HALOAIPMHDomParser,getTei,#NodeList#,164
+</h3><h3>Before Change</h3><pre><code class='java'>
+                renameNode(teiElement);
+            }
+        }
+        return sb.append(innerXmlToString(tei.item(0))).<a id="change">toString()</a>;
+    }
+
+    private void renameNode(Element teiElement) {</code></pre><h3>After Change</h3><pre><code class='java'>
+                renameNode(teiElement);
+            }
+        }
+        String teiString = sb.append(innerXmlToString(tei.item(0))).<a id="change">toString()</a>;
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        Document teiDoc = null;
+        try {
+            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(new ByteArrayInputStream(teiString.getBytes()));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Utilities.generateIDs(teiDoc);
+        teiString = Utilities.toString(teiDoc);
+        <a id="change">return </a>teiString;
+    }
+
+    private void renameNode(Element teiElement) {</code></pre>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e8c3a6cebb0c9685f84b99227c6d181cedc3823e,Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/RoleMaps/BodyRole.cs,BodyRoleHandler,OnBindingChanged,#BodyRole#String#Bool#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        {
+            if (!bound)
+            {
+                <a id="change">Refresh()</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        public override void OnBindingChanged(string deviceSN, bool previousIsBound, BodyRole previousRole, bool currentIsBound, BodyRole currentRole)
+        {
+            uint deviceIndex;
+            <a id="change">if (</a>!VRModule.TryGetConnectedDeviceIndex(deviceSN, out deviceIndex)<a id="change">) </a>{ return; }
+
+            <a id="change">Refresh()</a>;
+        }
+
+        public void Refresh()</code></pre>

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>45df4968f397c0780127a10b53d8ef2ce4c927c4,Assets/Tests/InputSystem/Plugins/UITests.cs,UITests,UI_WhenAppLosesAndRegainsFocus_WhileUIButtonIsPressed_UIButtonIsNotClicked,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        Assert.That(button.receivedPointerUp, Is.True);
+        Assert.That(mouse.position.ReadValue(), Is.EqualTo(mousePosition));
+        Assert.That(mouse.leftButton.isPressed, Is.False);
+        Assert.<a id="change">That(</a>clicked, Is.False<a id="change">)</a>;
+    }
+
+#endif</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        if (canRunInBackground)
+        {
+            <a id="change">Assert</a>.<a id="change">That(</a>scene.eventSystem.hasFocus, <a id="change">Is.True</a><a id="change">)</a>;
+            <a id="change">Assert</a>.<a id="change">That(</a>button.receivedPointerUp, <a id="change">Is.False)</a>;
+            Assert.That(mouse.position.ReadValue(), Is.EqualTo(mousePosition));
+            <a id="change">Assert</a>.<a id="change">That(</a>mouse.leftButton.isPressed, <a id="change">Is.True</a><a id="change">)</a>;
+            Assert.<a id="change">That(</a>clicked, Is.False<a id="change">)</a>;
+
+            scene.leftChildReceiver.events.Clear();
+            Release(mouse.leftButton);</code></pre>

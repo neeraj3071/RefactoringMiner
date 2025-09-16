@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3fc34d9487f5e6aa8a0dff208263ecf67b51b470,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/Harvester.java,Harvester,processTeis,#List#String#boolean#,45
+</h3><h3>Before Change</h3><pre><code class='java'>
+                            System.out.println(filename);
+                            downloadFile(tei.getFile(), tei.getId(), date);
+                        } else {
+                            mm.<a id="change">save(</a>tei.getId(), "harvestProcess", <a id="change">"no file url"</a>, <a id="change">null</a><a id="change">)</a>;
+                            logger.debug("\t\t\t PDF not found !");
+                        }
+                        if(withAnnexes)</code></pre><h3>After Change</h3><pre><code class='java'>
+                    logger.info("\t\t\t No tei metadata !!!");
+                }
+            } catch (BinaryNotAvailableException bna) {
+                mm.<a id="change">save(</a>tei.getId(), "harvestProcess", <a id="change">"file not downloaded"</a>, <a id="change">date</a><a id="change">)</a>;
+            } catch (Exception e) {
+                mm.save(tei.getId(), "harvestProcess", "harvest error", date);
+                logger.error("\t\t Error occured while processing tei for "+tei.getId());</code></pre>

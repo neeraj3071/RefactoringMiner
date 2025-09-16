@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d681c17a846bc803aa081d310a5609732abadc5c,plugins/Protobuf.Tests.Elektronik/InfinitePlanesTests.cs,InfinitePlanesTests,UpdateColors,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            packet.InfinitePlanes.Data.Add(_planes);
+
+            using var file = File.Open(Filename, FileMode.Append);
+            <a id="change">packet</a>.<a id="change">WriteDelimitedTo(file</a><a id="change">)</a>;
+
+            var <a id="change">response</a> = <a id="change">MapClient</a>.<a id="change">Handle(</a>packet<a id="change">)</a>;
+            <a id="change">Assert</a>.<a id="change">True(response.ErrType</a><a id="change"> == ErrorStatusPb</a>.Types.ErrorStatusEnum.Succeeded, <a id="change">response.Message)</a>;
+        }
+
+        [Test, Order(5), Explicit]</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            packet.InfinitePlanes.Data.Add(_planes);
+
+            <a id="change">SendAndCheck(</a>packet, <a id="change">Filename</a><a id="change">)</a>;
+        }
+
+        [Test, Order(5), Explicit]</code></pre>

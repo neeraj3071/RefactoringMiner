@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>60f5ff5278fe42c897ee0419cd9d87c8a52bde42,SVRA/Assets/Scripts/SVRA/ControllerManagerPrefabScripts/SVRA_ControllerManager.cs,SVRA_ControllerManager,Released,#ActionType#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+    public bool Released(ActionType action)
+    {
+        <a id="change">if (</a>controller<a id="change"> == </a>null<a id="change">)
+        </a>{
+            <a id="change">return </a><a id="change">false</a>;
+        }
+
+        InputButton <a id="change">inputButton</a> = <a id="change">InputAction(action</a><a id="change">)</a>;
+        return <a id="change">InputPerformed(inputButton</a>, controller.GetPressUp<a id="change">)</a>;
+    }
+
+    public bool Held(ActionType action)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+    public bool Released(ActionType action)
+    {
+        return (controller<a id="change"> != </a>null)<a id="change"> ? InputPerformed(controllerDictionary[</a><a id="change">action]</a>, controller.GetPressUp<a id="change">)</a> : false;
+    }
+
+    public bool Held(ActionType action)</code></pre>

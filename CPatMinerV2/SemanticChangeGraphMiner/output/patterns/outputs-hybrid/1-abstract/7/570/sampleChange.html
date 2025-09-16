@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>30bf01f9aa036dbede4bc134d6e0045822d75535,Assets/HoloToolkit/Sharing/Scripts/SharingStage.cs,SharingStage,OnSystemDiscovered,#DiscoveredSystem#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                //Found a server. Stop pinging the network and connect 
+                isTryingToFindServer = false;
+                ServerAddress = obj.GetAddress();
+                Debug.<a id="change">Log(</a>"Server discovered at: " + ServerAddress<a id="change">)</a>;
+                Connect();
+                Debug.<a id="change">LogFormat(</a>"Connected to: {0}:{1}", ServerAddress, ServerPort.ToString()<a id="change">)</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+                //Found a server. Stop pinging the network and connect 
+                isTryingToFindServer = false;
+                ServerAddress = obj.GetAddress();
+                <a id="change">if (ShowDetailedLogs</a><a id="change">)
+                </a>{
+                    Debug.<a id="change">Log(</a>"Server discovered at: " + ServerAddress<a id="change">)</a>;
+                }
+                Connect();
+                <a id="change">if (ShowDetailedLogs</a><a id="change">)
+                </a>{
+                    Debug.<a id="change">LogFormat(</a>"Connected to: {0}:{1}", ServerAddress, ServerPort.ToString()<a id="change">)</a>;
+                }
+            }
+        }</code></pre>

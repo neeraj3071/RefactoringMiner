@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>247527fbfaa2aa22664826d2d23834d06efba990,Scripts/Modules/PixelRaycastModule.cs,PixelRaycastModule,UpdateRaycast,#Transform#Camera#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			UpdateIgnoreList();
+
+			float distance;
+			var result = <a id="change">Raycast(</a>new Ray(rayOrigin.position, rayOrigin.forward), camera, out <a id="change">distance</a><a id="change">)</a>;
+
+			m_RaycastGameObjects[rayOrigin] = new PixelRaycastHit
+			{</code></pre><h3>After Change</h3><pre><code class='java'>
+		/// &lt;param name="camera"&gt;&lt;/param&gt; Camera to use for pixel based raycast (will be moved to the proxies' ray origins
+		public void UpdateRaycast(Transform rayOrigin, Camera camera)
+		{
+			m_RaycastGameObjects[rayOrigin] = <a id="change">Raycast(</a>new Ray(rayOrigin.position, rayOrigin.forward), camera<a id="change">)</a>;
+		}
+
+		public GameObject GetFirstGameObject(Transform rayOrigin)</code></pre>

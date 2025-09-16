@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>7de0206f4a25208dab670dc1654a25a96bb58a8c,Prefabs/Pointers/SharedResources/Scripts/PointerInternalSetup.cs,PointerInternalSetup,Setup,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            activationAction.AddSource(facade.activationAction);
+            selectOnActivatedAction.ClearSources();
+            selectOnActivatedAction.AddSource(facade.selectionAction);
+            selectOnDeactivatedAction.<a id="change">ClearSources()</a>;
+            selectOnDeactivatedAction.<a id="change">AddSource(</a>facade.selectionAction<a id="change">)</a>;
+
+            switch (facade.selectionType)
+            {</code></pre><h3>After Change</h3><pre><code class='java'>
+                objectFollow.targetComponents.Add(facade.followTarget.TryGetComponent());
+            }
+
+            <a id="change">if (facade</a>.selectionAction<a id="change"> != </a><a id="change">null</a><a id="change">)
+            </a>{
+                selectOnActivatedAction.ClearSources();
+                selectOnActivatedAction.AddSource(facade.selectionAction);
+                selectOnDeactivatedAction.<a id="change">ClearSources()</a>;
+                selectOnDeactivatedAction.<a id="change">AddSource(</a>facade.selectionAction<a id="change">)</a>;
+            }
+
+            if (facade.activationAction != null)</code></pre>

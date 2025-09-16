@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6d58b6aabd8bf6cde6ba47c62326f6156cc2ce18,Workspaces/Project/Scripts/FolderListViewController.cs,FolderListViewController,GetItem,#FolderData#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+		protected override ListViewItem&lt;FolderData, string&gt; GetItem(FolderData listData)
+		{
+			var item = <a id="change">(FolderListItem)</a>base.<a id="change">GetItem(</a>listData<a id="change">)</a>;
+			item.SetMaterials(m_TextMaterial, m_ExpandArrowMaterial);
+			item.selectFolder = SelectFolder;
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+		protected override FolderListItem GetItem(FolderData listData)
+		{
+			var item = base.<a id="change">GetItem(</a>listData<a id="change">)</a>;
+			item.SetMaterials(m_TextMaterial, m_ExpandArrowMaterial);
+			item.selectFolder = SelectFolder;
+</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6d4591f15360c585a4e40626539fc7feed7cf8ac,Assets/FunctionalTests.cs,FunctionalTests,CanFindControlsInSetupByPath,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        var setup = new InputControlSetup();
+        setup.AddControl("Stick", "stick");
+
+        Assert.That(setup.<a id="change">TryGetControl("stick"</a><a id="change">)</a>, Is.TypeOf&lt;StickControl&gt;());
+        Assert.That(setup.TryGetControl("stick/x"), Is.TypeOf&lt;AxisControl&gt;());
+        Assert.That(setup.TryGetControl("stick/y"), Is.TypeOf&lt;AxisControl&gt;());
+        Assert.That(setup.TryGetControl("stick/up"), Is.TypeOf&lt;AxisControl&gt;());</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        Assert.That(setup.TryGetControl("leftStick"), Is.TypeOf&lt;StickControl&gt;());
+        Assert.That(setup.TryGetControl("leftStick/x"), Is.TypeOf&lt;AxisControl&gt;());
+        Assert.That(setup.<a id="change">TryGetControl("leftStick/y"</a><a id="change">)</a>, Is.TypeOf&lt;AxisControl&gt;());
+        Assert.That(setup.TryGetControl("leftStick/up"), Is.TypeOf&lt;AxisControl&gt;());
+            
+        TearDown();</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d2112a96af4574eb32368bd36d5599de624a837a,Scripts/EditorVR.cs,EditorVR,SpawnMainMenu,#Type#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                if (m_MainMenu != null)
+                {
+                    m_DeviceData[device].mainMenu = m_MainMenu;
+                    <a id="change">ConnectInterfaces(</a>m_MainMenu, device<a id="change">)</a>;
+                    UpdatePlayerHandleMaps();
+                }
+		}</code></pre><h3>After Change</h3><pre><code class='java'>
+        mainMenu.tagIndex = device.tagIndex;
+
+        m_DeviceData[device].mainMenu = mainMenu;
+        <a id="change">ConnectInterfaces(mainMenu</a>, device<a id="change">)</a>;
+        UpdatePlayerHandleMaps();
+    }
+</code></pre>

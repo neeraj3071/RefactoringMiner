@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a5d03b5ba553e6d1d4a231d20fcdfc0eb72131f4,Tests/Editor/Tracking/Collision/Active/Event/Proxy/ActiveCollisionsContainerEventProxyEmitterTest.cs,ActiveCollisionsContainerEventProxyEmitterTest,ReceiveInactiveGameObject,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            Assert.IsFalse(emittedMock.Received);
+            subject.Receive(digest);
+            Assert.<a id="change">AreEqual(digest</a>, subject.Payload<a id="change">)</a>;
+            Assert.IsFalse(emittedMock.Received);
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            subject.gameObject.SetActive(false);
+
+            Assert.<a id="change">IsNull(</a>subject.Payload<a id="change">)</a>;
+            Assert.IsFalse(emittedMock.Received);
+
+            subject.Receive(digest);
+
+            <a id="change">Assert</a>.<a id="change">IsNull(subject.Payload</a><a id="change">)</a>;
+            Assert.IsFalse(emittedMock.Received);
+        }
+</code></pre>

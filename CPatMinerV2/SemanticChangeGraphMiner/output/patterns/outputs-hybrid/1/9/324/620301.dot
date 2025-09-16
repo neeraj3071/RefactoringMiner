@@ -1,0 +1,31 @@
+digraph G {
+subgraph cluster0 {
+1 [label="Call" a="32" s="2228,2240" l="5,1" shape="box"];
+3 [label="EnhancedForStatement" a="70" s="2115,2189" l="-2116,14" shape="diamond"];
+4 [label="SimpleName" a="42" s="2128" l="6" shape="ellipse"];
+5 [label="GetComponentsInChildren" a="32" s="2149" l="40" shape="box"];
+6 [label="return" a="41" s="2269" l="7" shape="box"];
+8 [label="SimpleName" a="42" s="2221" l="6" shape="ellipse"];
+9 [label="SimpleName" a="42" s="2276" l="10" shape="ellipse"];
+10 [label="SimpleName" a="42" s="2138" l="10" shape="ellipse"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="Call" a="32" s="2133,2145" l="5,1" shape="box"];
+7 [label="return" a="41" s="2115" l="7" shape="box"];
+11 [label="SimpleName" a="42" s="2122" l="10" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+2 -> 7 [label="_para_"];
+3 -> 1 [label="_control_"];
+4 -> 3 [label="_cond_"];
+4 -> 8 [label="_ref_"];
+5 -> 4 [label="_def_"];
+8 -> 1 [label="_recv_"];
+9 -> 6 [label="_para_"];
+10 -> 5 [label="_recv_"];
+11 -> 2 [label="_recv_"];
+}

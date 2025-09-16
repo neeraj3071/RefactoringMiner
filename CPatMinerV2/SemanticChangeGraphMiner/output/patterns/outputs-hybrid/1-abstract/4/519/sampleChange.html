@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>12a633f83020958c4fd925f326f8d203d0013ece,Assets/HTC.UnityPlugin/VRModule/Submodules/WaveHandTrackingSubmodule.cs,WaveHandTrackingSubmodule,OnUpdateDeviceConnectionAndPoses,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+                currState.isConnected = true;
+
+                <a id="change">if (trackingActivator</a>.isLeftValid<a id="change">)
+                </a>{
+                    trackingActivator.UpdateJoints(currState, true);
+                    trackingActivator.<a id="change">UpdateDeviceInput(</a>currState, true<a id="change">)</a>;
+                }
+
+                if (gestureActivator.isLeftValid)</code></pre><h3>After Change</h3><pre><code class='java'>
+                currState.isConnected = true;
+
+                trackingActivator.UpdateJoints(currState, true);
+                trackingActivator.<a id="change">UpdateDeviceInput(</a>currState, true<a id="change">)</a>;
+                gestureActivator.UpdateDeviceInput(currState, true);
+            }
+            else</code></pre>

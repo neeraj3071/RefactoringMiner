@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>50e011d252320e69e41e79877b367cf17d5e4c29,Runtime/Haptics/HapticProcessor.cs,HapticProcessor,DoBegin,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        /// &lt;/summary&gt;
+        protected override void DoBegin()
+        {
+            ActiveHapticProcess = hapticProcesses.EmptyIfNull().<a id="change">FirstOrDefault(</a>process =&gt; process.IsActive()<a id="change">)</a>;
+            if (ActiveHapticProcess != null)
+            {
+                ActiveHapticProcess.Begin();</code></pre><h3>After Change</h3><pre><code class='java'>
+        /// &lt;/summary&gt;
+        protected override void DoBegin()
+        {
+            ActiveHapticProcess = <a id="change">hapticProcesses</a>.<a id="change">FirstOrDefault(</a>process =&gt; process.IsActive()<a id="change">)</a>;
+            if (ActiveHapticProcess != null)
+            {
+                ActiveHapticProcess.Begin();</code></pre>

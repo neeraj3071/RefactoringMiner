@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>9356a6f7785929484402b2157e3ce54682c8c2dc,Assets/VRM10/Samples~/VRM10Viewer/VRM10ViewerUI.cs,VRM10ViewerUI,Start,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            // load initial bvh
+            if (m_motion != null)
+            {
+                <a id="change">LoadMotion(</a>m_motion.text<a id="change">)</a>;
+            }
+
+            string[] cmds = System.Environment.GetCommandLineArgs();</code></pre><h3>After Change</h3><pre><code class='java'>
+            // load initial bvh
+            if (m_motion != null)
+            {
+                Motion = <a id="change">BvhMotion</a>.<a id="change">LoadBvhFromText(</a>m_motion.text<a id="change">)</a>;
+            }
+
+            string[] cmds = System.Environment.GetCommandLineArgs();</code></pre>

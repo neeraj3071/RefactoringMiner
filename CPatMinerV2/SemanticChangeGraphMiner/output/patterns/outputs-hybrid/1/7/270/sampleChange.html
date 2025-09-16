@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>6815aa26299c8984875c686887d5ed76424fe3b2,Holojam/Assets/Holojam/Tools/Editor/PairableEditor.cs,PairableEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+			Pairable p = (Pairable)target;
+			p.type=EditorGUILayout.TextField("Pairable Type",p.type);
+			p.offset=EditorGUILayout.Vector3Field("Offset",p.offset);
+			EditorGUILayout.<a id="change">LabelField(</a>"Status:",
+				(p.paired && !p.unpairing)?"Paired with "+p.pairedActor.handle+" ("+(p.pairedActor.index+1)+")":
+				(!p.paired && !p.pairing)?"Unpaired":
+				p.pairing?"Pairing...":"Unpairing..."<a id="change">
+			)</a>;
+		}
+	}
+}</code></pre><h3>After Change</h3><pre><code class='java'>
+				
+				if(p.paired && !p.unpairing)style.normal.textColor=new Color(0.5f,1,1);
+				
+				EditorGUILayout.<a id="change">LabelField(</a>"Status",
+					(p.paired && !p.unpairing)?"Paired with \""+p.pairedActor.gameObject.name+"\"":
+					(!p.paired && !p.pairing)?"Unpaired":
+					p.pairing?"Pairing...":"Unpairing...",
+					style<a id="change">
+				)</a>;
+				
+				if(Application.isPlaying)
+					style.normal.textColor=
+						p.managed?new Color(0.5f,1,0.5f):new Color(1,0.5f,0.5f);
+				
+				<a id="change">EditorGUILayout</a>.<a id="change">LabelField(" "</a>,
+					(p.managed?"Managed":"Unmanaged"),
+					<a id="change">style</a><a id="change">
+				)</a>;
+			}
+			
+			serializedObject.ApplyModifiedProperties();</code></pre>

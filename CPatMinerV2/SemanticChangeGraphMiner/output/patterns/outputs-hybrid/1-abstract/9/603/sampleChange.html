@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d1f4aeed51002f1ef54ed3e1962a25aca1d799f0,Assets/Tests/InputSystem/Plugins/AndroidTests.cs,AndroidTests,Devices_SupportsAndroidGamepad,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        Assert.That(controller.leftTrigger.ReadValue(), Is.EqualTo(0.123).Within(0.000001));
+        Assert.That(controller.rightTrigger.ReadValue(), Is.EqualTo(0.456).Within(0.000001));
+        <a id="change">Assert</a>.<a id="change">That(</a>controller.leftStick.x.ReadValue(), Is.EqualTo(0.789).Within(0.000001)<a id="change">)</a>;
+        Assert.That(controller.leftStick.y.ReadValue(), <a id="change">Is</a>.<a id="change">EqualTo(</a>-0.987<a id="change">)</a>.Within(0.000001)); // Y is upside down on Android.
+        <a id="change">Assert</a>.<a id="change">That(</a>controller.rightStick.x.ReadValue(), <a id="change">Is</a>.<a id="change">EqualTo(</a>0.654<a id="change">)</a>.Within(0.000001)<a id="change">)</a>;
+        Assert.That(controller.rightStick.y.ReadValue(), Is.<a id="change">EqualTo(</a>-0.321<a id="change">)</a>.Within(0.000001)); // Y is upside down on Android.
+
+        AssertButtonPress(controller, new AndroidGameControllerState().WithButton(AndroidKeyCode.ButtonA), controller.buttonSouth);
+        AssertButtonPress(controller, new AndroidGameControllerState().WithButton(AndroidKeyCode.ButtonX), controller.buttonWest);</code></pre><h3>After Change</h3><pre><code class='java'>
+        var rightStickDeadzone = controller.leftStick.TryGetProcessor&lt;StickDeadzoneProcessor&gt;();
+
+        // Y is upside down on Android.
+        Assert.That(controller.leftStick.ReadValue(), Is.<a id="change">EqualTo(</a>leftStickDeadzone.Process(new Vector2(0.789f, -0.987f))<a id="change">)</a>);
+        Assert.That(controller.rightStick.ReadValue(), Is.EqualTo(rightStickDeadzone.Process(new Vector2(0.654f, -0.321f))));
+
+        Assert.That(controller.leftTrigger.ReadValue(), Is.EqualTo(0.123).Within(0.000001));</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c089d4a67f254504b0ceaf937c8b105318cd8588,Assets/Planetaria/Code/Editor/PlanetariaColliderEditor.cs,PlanetariaColliderEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            int bit_length = self.is_field ? self.shape.field_list.Length : 3;
+            for (int bit_position = 0; bit_position &lt; mask.Length && bit_position &lt; bit_length; ++bit_position)
+            {
+                GUILayout.<a id="change">BeginHorizontal()</a>;
+                GUILayout.Label(" Collider Mask " + bit_position);
+                mask[bit_position] = EditorGUILayout.Toggle(mask[bit_position], GUILayout.Width(50));
+                GUILayout.EndHorizontal();</code></pre><h3>After Change</h3><pre><code class='java'>
+            PlanetariaCollider self = (PlanetariaCollider)target;
+            if (!self.is_field)
+            {
+                GUILayout.<a id="change">BeginHorizontal()</a>;
+                GUILayout.Label(" Arc Number ");
+                arc_identifier = EditorGUILayout.IntField(arc_identifier, GUILayout.Width(50));
+                GUILayout.EndHorizontal();</code></pre>

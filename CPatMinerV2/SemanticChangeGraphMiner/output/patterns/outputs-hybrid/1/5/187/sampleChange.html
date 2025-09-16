@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0626cbc27fd25329c6b85224dcdca0efc0deebdc,Workspaces/Base/Workspace.cs,Workspace,OnHandleDragging,#BaseHandle#HandleEventData#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+				if (handle.Equals(m_WorkspaceUI.leftHandle))
+				{
+					bounds.size = m_BoundSizeStart + Vector3.left * Vector3.<a id="change">Dot(</a>dragVector, transform.right<a id="change">)</a>;
+					positionOffset = transform.right * Vector3.Dot(dragVector, transform.right) * 0.5f;
+				}
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+				if (handle.Equals(m_WorkspaceUI.frontLeftHandle))
+				{
+					bounds.size = m_BoundSizeStart + Vector3.left * Vector3.<a id="change">Dot(</a>dragVector, transform.right<a id="change">)</a>
+						+ Vector3.back * Vector3.Dot(dragVector, transform.forward);
+				}
+
+				if (handle.Equals(m_WorkspaceUI.backLeftHandle))
+				{
+					bounds.size = m_BoundSizeStart + Vector3.left * <a id="change">Vector3</a>.<a id="change">Dot(dragVector</a>, transform.right<a id="change">)</a>
+						+ Vector3.forward * Vector3.Dot(dragVector, transform.forward);
+				}
+
+				if (handle.Equals(m_WorkspaceUI.frontRightHandle))</code></pre>

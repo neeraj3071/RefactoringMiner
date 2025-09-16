@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>a093ae553c7cca63d764337aadb6299b07b30145,AndroidIntegration/ModelColorPicker/Unity/ModelColorPicker/Assets/TangoSDK/TangoUX/Scripts/TangoUx.cs,TangoUx,OnTangoServiceConnected,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        /// &lt;/summary&gt;
+        public void OnTangoServiceConnected()
+        {
+            <a id="change">if (</a>m_enableUXLibrary<a id="change">)
+            </a>{
+                AndroidHelper.<a id="change">StartTangoUX(</a>m_tangoApplication.m_enableMotionTracking && m_showConnectionScreen<a id="change">)</a>;
+            }
+        }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        /// &lt;/summary&gt;
+        public void OnTangoServiceConnected()
+        {
+            <a id="change">if (</a>m_enableUXLibrary<a id="change">)
+            </a>{
+                <a id="change">if (!</a><a id="change">m_isTangoUxStarted</a><a id="change">)
+                </a>{
+                    AndroidHelper.<a id="change">StartTangoUX(</a>m_tangoApplication.m_enableMotionTracking && m_showConnectionScreen<a id="change">)</a>;
+                    m_isTangoUxStarted = true;
+                }
+            }</code></pre>

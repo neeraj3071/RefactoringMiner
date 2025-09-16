@@ -1,0 +1,21 @@
+digraph G {
+subgraph cluster0 {
+1 [label="getGrobidPort" a="32" s="2301" l="15" shape="box"];
+label = "Old";
+style="dotted";
+}
+subgraph cluster1 {
+2 [label="getGrobidPort" a="32" s="2323" l="15" shape="box"];
+3 [label="IfStatement" a="25" s="2348" l="3" shape="diamond"];
+4 [label="getGrobidPort" a="32" s="2378" l="15" shape="box"];
+5 [label="isEmpty" a="32" s="2339" l="9" shape="box"];
+6 [label="SimpleName" a="42" s="2360" l="17" shape="ellipse"];
+label = "New";
+style="dotted";
+}
+1 -> 2 [label="_map_"];
+2 -> 5 [label="_recv_"];
+3 -> 4 [label="_control_"];
+5 -> 3 [label="_cond_"];
+6 -> 4 [label="_recv_"];
+}

@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e05475e13bc431fc2bf7d7ddbe864764acd9cfcc,Assets/Scripts/Manager/OrderManager.cs,OrderManager,GenerateOrder,#Job#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        Order newOrder = null;
+
+        List&lt;OrderTemplate&gt; currentTemplateList = <a id="change">GetTemplatesForJobType(job.Type</a><a id="change">)</a>;
+
+        // Get a random template
+
+        OrderTemplate currentTemplate = templateList[Random.Range(0, templateList.Count)];
+
+        // Generate order based on job type
+
+        switch (job.Type)
+
+        {
+            case JobType.ALCHEMY:
+
+                break;
+
+            case JobType.BLACKSMITH:
+
+                PhysicalMaterial currentMaterial = BlacksmithManager.Instance.MaterialList[Random.Range(0, BlacksmithManager.Instance.MaterialList.Count)];
+
+                newOrder = new Order(ItemManager.Instance.GetItemData(currentTemplate.ReferenceItemID).ObjectReference.name
+
+            , ItemManager.Instance.GetItemData(currentTemplate.ReferenceItemID).Icon
+
+            , job.Level * baseDurationMultiplier * currentTemplate.Duration
+
+            , job.Level * currentTemplate.BaseGold * currentMaterial.CostMultiplier * baseGoldMultiplier);
+
+                break;
+        }
+        
+        <a id="change">return </a>newOrder;
+    }
+
+    public void CompletedOrder(bool success, int reward)</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        // Generate order based on job type
+        int totalExperienceValue = 0;
+        foreach (Job job in Player.<a id="change">I</a>nstance.JobList)
+        nstance.JobList)
+        {
+         <a id="change">   </a>tota<a id="change">lExper</a>ienceValue += job.Experience;
+        }
+<a id="change">        int randomVa</a>lue = Random.Range(0, totalExperienceValue);
+        tota<a id="change">lExperience</a>Val<a id="change">ue = 0</a>;<a id="change">
+
+ </a>  <a id="change">     foreach (Job jo</a><a id="change">b</a> in P<a id="change">l</a>ayer.Instance.JobList)
+        {
+        ayer.Instance.JobList)
+        {
+            totalExpe<a id="change">rie</a>nceV<a id="change">alue += job.Experience;
+        </a>    if (totalExperienceValue &gt;= randomValue)
+            <a id="change">{
+
+
+             </a><a id="change">   switch (job.Type)
+</a><a id="change">
+
+
+      </a>          {
+
+                    case JobType.ALCHEMY:
+
+
+
+                        break;
+
+
+
+                    case JobType.BLACKSMITH:
+
+
+
+                        PhysicalMaterial currentMaterial = BlacksmithManager.Instance.MaterialList[Random.Range(0, BlacksmithManager.Instance.MaterialList.Count)];
+
+
+
+                        newOrder = new Order(ItemManager.Instance.GetItemData(currentTemplate.ReferenceItemID).ObjectReference.name
+
+
+
+                    , ItemManager.Instance.GetItemData(currentTemplate.ReferenceItemID).Icon
+
+
+
+                    , job.Level * baseDurationMultiplier * currentTemplate.Duration
+
+
+
+                    , job.Level * currentTemplate.BaseGold * currentMaterial.CostMultiplier * baseGoldMultiplier,
+
+
+                    currentTemplate.ReferenceItemID);
+
+
+
+                        break;
+
+                }
+
+
+
+                return newOrder;
+
+            }
+<a id="change">       </a> }        return null;
+    }
+
+    public void CompletedOrder(bool success, int reward)
+
+    {<a id="change">
+        </a>if (success)
+
+        {
+            GameManager.Instance.AddPlayerGold(reward);</code></pre>

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>2f7ad4f76e49a3359af7ccf59d01f39da08e4c65,Assets/Scripts/STBReader.cs,STBReader,Start,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            // 子要素が StbSecRect か StbSecCircle を判定
+            if (xSecFigure.Element("StbSecRect") != null) {
+                m_xRcColumnDepth.Add((int)<a id="change">xSecFigure</a>.<a id="change">Element(</a>"StbSecRect"<a id="change">)</a>.Attribute("DY"));
+                m_xRcColumnWidth.Add((int)<a id="change">xSecFigure</a>.<a id="change">Element(</a>"StbSecRect"<a id="change">)</a>.Attribute("DX"));
+            }
+            else {
+                m_xRcColumnDepth.Add((int)xSecFigure.Element("StbSecCircle").Attribute("D"));</code></pre><h3>After Change</h3><pre><code class='java'>
+        var xRcColumns = xDoc.Root.Descendants("StbSecColumn_RC");
+        foreach (var xRcColumn in xRcColumns) {
+            m_xRcColumnId.Add((int)xRcColumn.Attribute("id"));
+            var <a id="change">xFigure</a> = xRcColumn.Element("StbSecFigure");
+
+            // 子要素が StbSecRect か StbSecCircle を判定
+            if (xFigure.Element("StbSecRect") != null) {
+                m_xRcColumnDepth.Add((int)<a id="change">xFigure</a>.<a id="change">Element(</a>"StbSecRect"<a id="change">)</a>.Attribute("DY"));
+                m_xRcColumnWidth.Add((int)<a id="change">xFigure</a>.<a id="change">Element(</a>"StbSecRect"<a id="change">)</a>.Attribute("DX"));
+            }
+            else {
+                m_xRcColumnDepth.Add((int)xFigure.Element("StbSecCircle").Attribute("D"));</code></pre>

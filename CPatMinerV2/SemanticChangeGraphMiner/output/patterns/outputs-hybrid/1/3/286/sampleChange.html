@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>3e3e4070cf10cb6ac66c26d7ec20ed21d56a7722,Scripts/BlendShape/Editor/BlendShapeClipEditor.cs,BlendShapeClipEditor,OnInspectorGUI,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            int thumbnailSize = 96;
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.<a id="change">ObjectField(</a>m_thumbnailProp.objectReferenceValue, typeof(Texture), false,
+                GUILayout.Width(thumbnailSize), GUILayout.Height(thumbnailSize)<a id="change">)</a>;
+
+            var changed = false;
+            EditorGUILayout.BeginVertical();</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            int thumbnailSize = 96;
+            EditorGUILayout.BeginHorizontal();
+            var objectReferenceValue = EditorGUILayout.<a id="change">ObjectField(</a>m_thumbnailProp.objectReferenceValue, typeof(Texture), false,
+                GUILayout.Width(thumbnailSize), GUILayout.Height(thumbnailSize)<a id="change">)</a>;
+            if (m_thumbnailProp.objectReferenceValue != objectReferenceValue)
+            {
+                m_thumbnailProp.objectReferenceValue = objectReferenceValue;</code></pre>

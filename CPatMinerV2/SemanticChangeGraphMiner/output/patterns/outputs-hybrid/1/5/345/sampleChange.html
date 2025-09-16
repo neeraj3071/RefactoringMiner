@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>54ec8ca75fba5615d843b1fcbf79644c7c7cc49a,Assets/Planetaria/Code/CoordinateSystems/OctahedronUVCoordinates.cs,OctahedronUVCoordinates,operatorNormalizedOctahedronCoordinates,#OctahedronUVCoordinates#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            float z = 1 - Mathf.Abs(uv.data.x) - Mathf.Abs(uv.data.y);
+            
+            float diamond_overshoot = Mathf.Max(-z, 0); // imagine that there is a diamond from uv={(0,.5)-&gt;(.5,1)-&gt;(1,.5)-&gt;(.5,0)}
+            x -= Mathf.<a id="change">Sign(</a>x<a id="change">)</a>*diamond_overshoot;
+            y -= Mathf.Sign(y)*diamond_overshoot;
+            return new NormalizedOctahedronCoordinates(new Vector3(x, y, z));
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+            float x = 2*uv.data.x - 1;
+            float z = 2*uv.data.y - 1;
+            float y = 1 - Mathf.Abs(x) - Mathf.Abs(z);
+            if (<a id="change">y</a><a id="change"> &lt; </a>0) // reflect across diamond
+            {
+                float immutable_x = x; // the z = ... would reference a changed variable otherwise
+                float immutable_z = z;
+                x = Mathf.Sign(immutable_x) * (1 - Mathf.Abs(immutable_z)); // invert (interchange x/z)
+                z = Mathf.<a id="change">Sign(</a>immutable_z<a id="change">)</a> * (1 - Mathf.Abs(immutable_x));
+            }
+            return new NormalizedOctahedronCoordinates(new Vector3(x, y, z));
+        }</code></pre>

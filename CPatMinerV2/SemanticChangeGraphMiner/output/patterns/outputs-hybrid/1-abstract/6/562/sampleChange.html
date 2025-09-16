@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>035e3423adc784409f4b68a17b9d6650b2699fab,Assets/HoloToolkit/Utilities/Scripts/HeadsUpDirectionIndicator.cs,HeadsUpDirectionIndicator,GetExitPlane,#Vector3#Camera#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+            Debug.DrawLine(nearUpperLeft, nearLowerRight);
+            Debug.DrawLine(nearLowerRight, farUpperLeft);
+            Debug.<a id="change">DrawLine(</a>farUpperLeft, nearUpperLeft<a id="change">)</a>;
+
+            Plane d = new Plane(nearUpperLeft, nearLowerRight, farUpperLeft);
+
+            Vector3 nearUpperRight = nearBase + nearTop + nearRight;
+            Vector3 nearLowerLeft = nearBase + nearBottom + nearLeft;
+            Vector3 farUpperRight = farBase + farTop + farRight;
+
+            Debug.<a id="change">DrawLine(</a>nearUpperRight, nearLowerLeft<a id="change">)</a>;
+            Debug.DrawLine(nearLowerLeft, farUpperRight);
+            Debug.DrawLine(farUpperRight, nearUpperRight);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+            Plane e = new Plane(nearUpperRight, nearLowerLeft, farUpperRight);
+
+            <a id="change">if (debugDrawPointerOrientationPlanes</a><a id="change">)
+            </a>{
+                // Debug draw a tringale coplanar with 'd'
+                Debug.DrawLine(nearUpperLeft, nearLowerRight);
+                Debug.DrawLine(nearLowerRight, farUpperLeft);
+                Debug.<a id="change">DrawLine(</a>farUpperLeft, nearUpperLeft<a id="change">)</a>;
+
+                // Debug draw a triangle coplanar with 'e'
+                Debug.<a id="change">DrawLine(</a>nearUpperRight, nearLowerLeft<a id="change">)</a>;
+                Debug.DrawLine(nearLowerLeft, farUpperRight);
+                Debug.DrawLine(farUpperRight, nearUpperRight);
+            }</code></pre>

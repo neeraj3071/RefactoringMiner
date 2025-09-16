@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>66a50d5562069f520c1dd7291c24f21dcf86c547,Assets/Plugins/Moon Motion Toolkit/Utilities/Extensions/RaycastingExtensions.cs,RaycastingExtensions,firstNonpositionallyRaycastedObjectFrom,#Vector3#Dynamic#number#QueryTriggerInteraction#LayerMask[]#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+	{
+		Vector3 raycastingPosition = Provide.positionVia(raycastingPosition_PositionProvider);
+
+		RaycastHit raycastHit = direction.<a id="change">firstNonpositionallyRaycastedHitFrom(</a>raycastingPosition, distance, triggerColliderQuery, layerMask_MaxOf1<a id="change">)</a>;
+		
+		<a id="change">return </a>raycastHit.gameObject();
+	}
+
+	public static GameObject firstNonpositionallyRaycastedObjectAlong(this Vector3 raycastingPosition, Vector3 direction, float distance = Default.raycastingDistance, QueryTriggerInteraction triggerColliderQuery = Default.raycastingTriggerColliderQuery, params LayerMask[] layerMask_MaxOf1)</code></pre><h3>After Change</h3><pre><code class='java'>
+	{
+		Vector3 raycastingPosition = Provide.positionVia(raycastingPosition_PositionProvider);
+
+		<a id="change">return	</a>direction.<a id="change">firstNonpositionallyRaycastedHitFrom
+				(
+					</a>raycastingPosition,
+					distance,
+					triggerColliderQuery,
+					layerMask_MaxOf1<a id="change">
+				).</a>gameObjectIfYull();
+	}
+
+	public static GameObject firstNonpositionallyRaycastedObjectAlong(this Vector3 raycastingPosition, Vector3 direction, float distance = Default.raycastingDistance, QueryTriggerInteraction triggerColliderQuery = Default.raycastingTriggerColliderQuery, params LayerMask[] layerMask_MaxOf1)</code></pre>

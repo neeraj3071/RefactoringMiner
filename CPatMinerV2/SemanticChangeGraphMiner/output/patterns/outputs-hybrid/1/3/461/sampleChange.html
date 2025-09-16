@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>8b87d821c908cdc7e5275c60638759b6aa7105c7,Runtime/Process/Moment/MomentProcess.cs,MomentProcess,OnUtilizationChange,#number#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        /*[CalledBySetter(nameof(Utilization))]*/
+        protected virtual void OnUtilizationChange(float previousValue, ref float newValue)
+        {
+            newValue = Mathf.<a id="change">Clamp01(newValue</a><a id="change">)</a>;
+            UpdateDelay();
+        }
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            if (Utilization &lt; 0f || Utilization &gt; 1f)
+            {
+                Utilization = Mathf.<a id="change">Clamp01(</a>Utilization<a id="change">)</a>;
+            }
+            UpdateDelay();
+        }</code></pre>

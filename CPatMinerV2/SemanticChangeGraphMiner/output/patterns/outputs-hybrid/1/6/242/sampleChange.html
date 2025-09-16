@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>95df2b1ab8d2383f3d1be3c70787a60fc0522240,Assets/HoloToolkit/Input/Scripts/GestureManager.cs,GestureManager,InteractionManager_SourceLost,#InteractionSourceState#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+            // Check the current interaction source matches our cached value.
+            if (state.source.id == currentInteractionSourceState.source.id)
+            {
+                pressedInteractionSource.<a id="change">Remove(</a>state<a id="change">.source.id)</a>;
+
+                // Gesture Support for Controllers: (i.e. Clicker, Xbox Controller, etc.)
+                // if we currently in a manipulation stop.</code></pre><h3>After Change</h3><pre><code class='java'>
+            }
+
+            // Removed our pressed state.
+            <a id="change">if (pressedInteractionSource</a>.<a id="change">Contains(state</a><a id="change">.source.id)</a><a id="change">)
+            </a>{
+                pressedInteractionSource.<a id="change">Remove(</a>state<a id="change">.source.id)</a>;
+            }
+
+            // Remove our traced interaction state.</code></pre>

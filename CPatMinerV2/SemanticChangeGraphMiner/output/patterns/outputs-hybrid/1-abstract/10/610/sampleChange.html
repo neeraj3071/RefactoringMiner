@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c9b831e5dd890eb9b285d03d3e2b9190e31a1f15,Packages/com.unity.inputsystem/InputSystem/Utilities/DelegateHelpers.cs,DelegateHelpers,InvokeCallbacksSafe,#InlinedArray#TValue1#TValue2#String#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                }
+                catch (Exception exception)
+                {
+                    Debug.<a id="change">LogError($</a>"{exception.GetType().Name} while executing '{callbackName}' callbacks"<a id="change">)</a>;
+                    Debug.LogException(exception);
+                }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+                }
+                catch (Exception exception)
+                {
+                    <a id="change">if (context != </a><a id="change">null</a><a id="change">)
+                        Debug</a>.<a id="change">LogError($"{exception.GetType().Name} while executing '{callbackName}' callbacks of '{context}'"</a><a id="change">)</a>;
+                    else
+                        Debug.<a id="change">LogError($</a>"{exception.GetType().Name} while executing '{callbackName}' callbacks"<a id="change">)</a>;
+                    Debug.LogException(exception);
+                }
+</code></pre>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>1fe70757f9cb6c04c8e4740cbbd12bab3b20ad30,Assets/InputSystem/State/InputStateBuffers.cs,InputStateBuffers,GetBackBuffer,#Int#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+        public static unsafe IntPtr GetBackBuffer(int deviceIndex)
+        {
+            return <a id="change">new IntPtr(</a>s_CurrentBuffers.<a id="change">GetBackBuffer(</a>deviceIndex<a id="change">)</a><a id="change">)</a>;
+        }
+
+        // Switch the current set of buffers used by the system.</code></pre><h3>After Change</h3><pre><code class='java'>
+
+        public static IntPtr GetBackBuffer(int deviceIndex)
+        {
+            return s_CurrentBuffers.<a id="change">GetBackBuffer(</a>deviceIndex<a id="change">)</a>;
+        }
+
+        // Switch the current set of buffers used by the system.</code></pre>

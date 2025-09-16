@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>0063e6c6102f43b1faeccb24ae906b75aa8f018f,Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs,RoundManager,StartNewRound,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+				PlayerManager.Instance.ConfigurePlayersForRound (currRound, deviceRoundConfigs[currRound - 1]);
+				UIModeManager.Instance&lt;UIModeManager&gt; ().SetPlayerUIModes (PlayerManager.Instance.Players);
+
+				timeManager.<a id="change">StartRound (</a>RoundLength, Settings.Instance.PassToPlayerTime, this, InPracticeMode<a id="change">)</a>;
+				StartCoroutine (DelayUtil.Do (Settings.Instance.PassToPlayerTime, SpawnGameObjects));
+			} else {
+				timeManager.StartRound (RoundLength, 0, this, InPracticeMode);</code></pre><h3>After Change</h3><pre><code class='java'>
+			}
+
+			StartCoroutine (DelayUtil.Do (roundDelay, SpawnGameObjects));
+			timeManager.<a id="change">StartRound (</a>RoundLength, <a id="change">roundDelay</a>, this, InPracticeMode<a id="change">)</a>;
+			UIModeManager.Instance&lt;UIModeManager&gt; ().SetPlayerUIModes (
+				PlayerManager.Instance.Players, roundDelay + 0.2f, IsTimeForNextUIMode ());
+</code></pre>

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>668e5a299acc920546a0234e7a8d22c60a13e607,anhalytics-harvest/src/main/java/fr/inria/anhalytics/harvest/main/Main.java,Main,processCommand,#,78
+</h3><h3>Before Change</h3><pre><code class='java'>
+        } else if (process.equals("harvestIstex")) {
+            harvester = new IstexHarvester();
+            harvester.fetchAllDocuments();
+        }else if (process.<a id="change">equals("sampleIstex"</a><a id="change">)</a>) {
+            IstexHarvester ih = new IstexHarvester();
+            ih.sample();
+        } else if (<a id="change">process</a>.<a id="change">equals("harvestHalList"</a><a id="change">)</a>) {
+            harvester = new IdListHarvester();
+            harvester.fetchAllDocuments();
+        }</code></pre><h3>After Change</h3><pre><code class='java'>
+                harvester = new IstexHarvester();
+            }
+            harvester.fetchListDocuments();
+        } else if (process.<a id="change">equals("sample"</a><a id="change">)</a>) {
+            if (HarvestProperties.getSource().toLowerCase().equals(Harvester.Source.HAL.getName())) 
+            {
+                harvester = new HALOAIPMHHarvester();</code></pre>

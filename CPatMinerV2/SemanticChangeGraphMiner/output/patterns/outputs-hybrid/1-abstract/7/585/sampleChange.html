@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>e6cd4c8843b79bf4d4ffe65dc4df1e0f40504752,Assets/Scripts/AI/StandardEnemy.cs,StandardEnemy,Update,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                NavMesh.SamplePosition(gameObject.transform.position, out closesthit, 500f, NavMesh.AllAreas);
+                transform.position = closesthit.position;
+                agent.isStopped = false;
+                <a id="change">MoveTo(</a>GameObject.<a id="change">FindGameObjectWithTag(</a>"Target"<a id="change">))</a>;
+            }
+        }
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+        {
+            if (agent.enabled && agent.isOnNavMesh)
+            {
+                <a id="change">targets</a> = GameObject.<a id="change">FindGameObjectsWithTag(</a>"Target"<a id="change">)</a>;
+                <a id="change">MoveTo(targets[</a><a id="change">0]</a><a id="change">)</a>;
+            }
+                
+</code></pre>

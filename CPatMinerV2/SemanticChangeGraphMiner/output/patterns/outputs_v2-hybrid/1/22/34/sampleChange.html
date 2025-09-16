@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>d81eb5722bd890d44b7b0b6bc3c40fc03c3acb66,anhalytics-annotate/src/main/java/fr/inria/anhalytics/annotate/NerdAnnotatorWorker.java,NerdAnnotatorWorker,processCommand,#,47
+</h3><h3>Before Change</h3><pre><code class='java'>
+    @Override
+    protected void processCommand() {
+        // get all the elements having an attribute id and annotate their text content
+        mm.<a id="change">insertAnnotation(</a>annotateDocument(), annotationsCollection<a id="change">)</a>;
+        biblioObject.setIsProcessedByNerd(Boolean.TRUE);
+        mm.updateBiblioObjectStatus(biblioObject);
+        logger.<a id="change">info(</a>"\t\t " + Thread.currentThread().getName() + ": " + biblioObject.getRepositoryDocId() + " annotated by the NERD service."<a id="change">)</a>;
+    }
+
+    /**</code></pre><h3>After Change</h3><pre><code class='java'>
+    @Override
+    protected void processCommand() {
+        // get all the elements having an attribute id and annotate their text content
+        boolean <a id="change">inserted</a> = mm.<a id="change">insertAnnotation(</a>annotateDocument(), annotationsCollection<a id="change">)</a>;
+        <a id="change">if (inserted</a><a id="change">) </a>{
+            <a id="change">mm</a>.<a id="change">updateBiblioObjectStatus(biblioObject</a>, <a id="change">Processings.NERD</a>, <a id="change">false</a><a id="change">)</a>;
+            logger.<a id="change">info(</a>"\t\t " + Thread.currentThread().getName() + ": " + biblioObject.getRepositoryDocId() + " annotated by the NERD service."<a id="change">)</a>;
+        } else {
+            <a id="change">logger</a>.<a id="change">info("\t\t "</a><a id="change"> + Thread</a>.<a id="change">currentThread()</a>.<a id="change">getName()</a> + ": "
+                    + <a id="change">biblioObject</a>.<a id="change">getRepositoryDocId()</a> + <a id="change">" error occured trying to annotate with NERD."</a><a id="change">)</a>;
+        }
+    }
+</code></pre>

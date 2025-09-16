@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c629146e1d3ba63825eb19fe20a683f4eed12b99,Assets/Scripts/Spells/ClassSpells/HealingSpell.cs,HealingSpell,Effects,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+        healingGameObject = Instantiate(healingPrefab, spawningPoint.position, spawningPoint.rotation);
+        healingGameObject.transform.parent = caster.transform;
+
+        <a id="change">if (hasAuthority</a><a id="change">) </a>{
+			caster.<a id="change">CmdApplyMoveStatus (</a>MoveStatus.Free<a id="change">)</a>;
+		}
+    }
+</code></pre><h3>After Change</h3><pre><code class='java'>
+        healingGameObject = Instantiate(healingPrefab, spawningPoint.position, spawningPoint.rotation);
+        healingGameObject.transform.parent = caster.transform;
+
+		caster.<a id="change">ApplyMoveStatus (</a>MoveStatus.Free<a id="change">)</a>;
+    }
+
+    protected override void EndEffects() {</code></pre>

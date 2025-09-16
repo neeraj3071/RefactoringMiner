@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>c66d749e9da0d456902b71f652a890f6e0e7101a,Examples/ServiceExamples/Scripts/ExampleStreamingChunked.cs,ExampleStreamingChunked,RecordingHandler,#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+				//  Create AudioData and use the samples we just created
+				AudioData record = new AudioData();
+				record.MaxLevel = Mathf.<a id="change">Max(</a>samples<a id="change">)</a>;
+				record.Clip = AudioClip.Create("Recording", chunkSize, _recording.channels, _recordingHZ, false);
+				record.Clip.SetData(samples, 0);
+</code></pre><h3>After Change</h3><pre><code class='java'>
+
+				//  Create AudioData and use the samples we just created
+				AudioData record = new AudioData();
+				record.MaxLevel = <a id="change">Mathf</a>.<a id="change">Max(</a>Mathf.Abs(Mathf.Min(samples)), Mathf.<a id="change">Max(</a>samples<a id="change">))</a>;
+				record.Clip = AudioClip.Create("Recording", chunkSize, _recording.channels, _recordingHZ, false);
+				record.Clip.SetData(samples, 0);
+</code></pre>

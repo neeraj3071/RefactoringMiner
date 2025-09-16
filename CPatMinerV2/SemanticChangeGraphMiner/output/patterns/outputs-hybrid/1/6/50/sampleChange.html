@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>74dc67dddc6dec5fded98a63704d19723d368a57,Assets/HoloToolkit/SpatialUnderstanding/Scripts/SpatialUnderstanding.cs,SpatialUnderstanding,Update_Scan,#number#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+
+                // Mark it
+                ScanState = ScanStates.Done;
+                OnScanDone.<a id="change">Invoke()</a>;
+            }
+        }
+    }</code></pre><h3>After Change</h3><pre><code class='java'>
+
+                // Mark it
+                ScanState = ScanStates.Done;
+                <a id="change">if (</a><a id="change">OnScanDone</a><a id="change"> != null</a><a id="change">) </a>OnScanDone.<a id="change">Invoke()</a>;
+            }
+        }
+    }</code></pre>

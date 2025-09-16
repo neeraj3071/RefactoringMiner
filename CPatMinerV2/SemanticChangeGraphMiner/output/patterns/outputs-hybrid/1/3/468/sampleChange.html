@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../../../../default.css">
+<script src="../../../../highlight.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<html><h3>b3840086b05992bf193647fe3a4e358e40c6a848,MREUnityRuntime/MREUnityRuntimeLib/Core/Actor.cs,Actor,PatchTransform,#ActorTransformPatch#,-1
+</h3><h3>Before Change</h3><pre><code class='java'>
+                    if (rigidBodyPatch != null)
+                    {
+                        // Queue update to happen in the fixed update
+                        RigidBody.<a id="change">SynchronizeEngine(</a>rigidBodyPatch<a id="change">)</a>;
+                    }
+                }
+            }</code></pre><h3>After Change</h3><pre><code class='java'>
+                    }
+
+                    // Queue update to happen in the fixed update
+                    RigidBody.<a id="change">SynchronizeEngine(transformUpdate</a><a id="change">)</a>;
+                }
+            }
+        }</code></pre>
