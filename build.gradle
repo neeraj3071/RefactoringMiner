@@ -86,6 +86,8 @@ dependencies {
     implementation 'io.github.java-diff-utils:java-diff-utils:4.15'
     implementation 'com.github.gumtreediff:core:3.0.0'
     implementation 'com.github.gumtreediff:gen.jdt:3.0.0'
+    // Required for C# -> Java AST conversion via CPatMinerV2 (uses SrcmlCsTreeGenerator)
+    implementation 'com.github.gumtreediff:gen.srcml:3.0.0'
     implementation 'org.jcommander:jcommander:2.0'
     implementation 'org.jsoup:jsoup:1.20.1'
     implementation 'com.perforce:p4java:2024.2.2695691'
@@ -103,11 +105,19 @@ dependencies {
     implementation('org.rendersnake:rendersnake:1.9.0') {
         exclude group: 'javax.servlet', module: 'servlet-api'
     }
+    implementation files('libs/AtomicASTChangeMining-0.0.1-SNAPSHOT.jar')
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
 }
 
 java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
     withJavadocJar()
     withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 artifacts {
@@ -175,4 +185,9 @@ shadowJar {
         attributes 'Main-Class': 'org.refactoringminer.RefactoringMiner'
     }
     archiveFileName = jarName
+}
+
+task runDemo(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'org.refactoringminer.csharp.CSharpToJavaPrintDemo'
 }

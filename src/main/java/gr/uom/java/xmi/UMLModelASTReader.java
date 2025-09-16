@@ -124,7 +124,18 @@ public class UMLModelASTReader {
 	private void processJavaFileContents(Map<String, String> javaFileContents, boolean astDiff) {
 		ASTParser parser = ASTParser.newParser(AST.getJLSLatest());
 		for(String filePath : javaFileContents.keySet()) {
-			String javaFileContent = javaFileContents.get(filePath);
+			String fileContent = javaFileContents.get(filePath);
+			String javaFileContent = fileContent;
+			boolean isCSharp = filePath.endsWith(".cs");
+			if (isCSharp) {
+				javaFileContent = org.refactoringminer.csharp.CPatMinerCSharpConverter.convertToJava(fileContent);
+				if (javaFileContent == null) {
+					System.err.println("[WARN] Skipping C# file: " + filePath);
+					continue;
+				} else {
+					System.out.println("[INFO] Converted C# file: " + filePath + " → Java AST-ready code");
+				}
+			}
 			if((javaFileContent.contains(FREE_MARKER_GENERATED) || javaFileContent.contains(FREE_MARKER_GENERATED_2) || javaFileContent.contains(ANTLR_GENERATED) ||
 					javaFileContent.contains(XTEXT_GENERATED) || javaFileContent.contains(LWJGL_GENERATED) || javaFileContent.contains(TEST_GENERATOR_GENERATED) ||
 					javaFileContent.contains(THRIFT_GENERATED) || javaFileContent.contains(AUTOREST_GENERATED) || javaFileContent.contains(FHIR_GENERATED) ||

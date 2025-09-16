@@ -62,6 +62,39 @@ Table of Contents
    * [Statement matching information for the detected refactorings](#statement-matching-information-for-the-detected-refactorings)
 
 # General info
+## C# Support via CPatMinerV2
+
+RefactoringMiner now supports analyzing refactorings in C# projects by integrating with CPatMinerV2. C# files (`.cs`) are automatically detected and converted to Java AST-compatible code using CPatMinerV2 before analysis.
+
+### How it works
+- If a repository contains `.cs` files, RefactoringMiner uses the bridge class `CPatMinerCSharpConverter` to convert C# code to Java-like code for AST analysis.
+- Conversion failures are logged as warnings and skipped gracefully.
+- `.java` files are processed as usual.
+
+### Build Instructions
+1. Build CPatMinerV2's AtomicASTChangeMining module using Maven:
+  ```sh
+  cd CPatMinerV2/AtomicASTChangeMining
+  mvn clean package
+  ```
+2. Copy the generated JAR (e.g., `AtomicASTChangeMining-0.0.1-SNAPSHOT.jar`) to `RefactoringMiner/libs/`.
+3. Build RefactoringMiner using Gradle:
+  ```sh
+  ./gradlew clean build
+  ```
+
+### Run and Test on a C# Repository
+To analyze a C# repository (e.g., dotnet/roslyn):
+```sh
+./gradlew run --args="-a https://github.com/dotnet/roslyn main"
+```
+You should see logs like:
+- `[INFO] Converted C# file: filename.cs → Java AST-ready code`
+- `[WARN] Skipping C# file: filename.cs` (if conversion fails)
+
+### Notes
+- Ensure your Java version is 17 or above.
+- C# conversion uses CPatMinerV2 logic; for advanced features, extend the bridge class as needed.
 RefactoringMiner is a library/API written in Java that can detect refactorings applied in the history of a Java project.
 Since version 3.0, RefactoringMiner can also generate Abstract Syntax Tree (AST) diff at **commit**, **pull request** and **commit range** levels.
 You can also use our tool to visualize the diffs in your browser.
