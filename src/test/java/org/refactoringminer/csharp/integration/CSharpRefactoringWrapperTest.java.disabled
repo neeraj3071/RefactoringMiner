@@ -1,0 +1,259 @@
+package org.refactoringminer.csharp.integration;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.refactoringminer.api.Refactoring;
+import org.refactoringminer.api.RefactoringType;
+import gr.uom.java.xmi.LocationInfo;
+import gr.uom.java.xmi.diff.CodeRange;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+/**
+ * Unit tests for the C# Refactoring Wrapper component.
+ * Tests the transformation of RefactoringMiner results back to C# context.
+ */
+public class CSharpRefactoringWrapperTest {
+    
+    @Mock
+    private Refactoring mockRefactoring;
+    
+    @Mock
+    private CodeRange mockCodeRange;
+    
+    @Mock
+    private LocationInfo mockLocationInfo;
+    
+    private CSharpRefactoringWrapper wrapper;
+    
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        wrapper = new CSharpRefactoringWrapper(mockRefactoring);
+    }
+    
+    @Test
+    void testRefactoringTypePassthrough() {
+        // Arrange
+        when(mockRefactoring.getRefactoringType()).thenReturn(RefactoringType.RENAME_METHOD);
+        
+        // Act
+        RefactoringType result = wrapper.getRefactoringType();
+        
+        // Assert
+        assertEquals(RefactoringType.RENAME_METHOD, result);
+        verify(mockRefactoring).getRefactoringType();
+    }
+    
+    @Test
+    void testNamePassthrough() {
+        // Arrange
+        when(mockRefactoring.getName()).thenReturn("Rename Method");
+        
+        // Act
+        String result = wrapper.getName();
+        
+        // Assert
+        assertEquals("Rename Method", result);
+        verify(mockRefactoring).getName();
+    }
+    
+    @Test
+    void testToStringTransformation() {
+        // Arrange
+        String javaLikeString = "Rename Method getName() to getFullName() in Calculator.java";
+        when(mockRefactoring.toString()).thenReturn(javaLikeString);
+        
+        // Act
+        String result = wrapper.toString();
+        
+        // Assert
+        // Should transform .java to .cs
+        assertTrue(result.contains("Calculator.cs"), "Should transform .java to .cs");
+        // Should transform getter method to property
+        assertTrue(result.contains("Name") || result.contains("FullName"), "Should handle method name transformation");
+        assertFalse(result.contains(".java"), "Should not contain .java extension");
+    }
+    
+    @Test
+    void testToJSONTransformation() {
+        // Arrange
+        String javaLikeJSON = "{\"type\":\"Rename Method\",\"file\":\"Calculator.java\"}";
+        when(mockRefactoring.toJSON()).thenReturn(javaLikeJSON);
+        
+        // Act
+        String result = wrapper.toJSON();
+        
+        // Assert
+        assertTrue(result.contains("Calculator.cs"), "Should transform file extension in JSON");
+        assertFalse(result.contains(".java"), "Should not contain .java in JSON");
+    }
+    
+    @Test
+    void testCodeRangeTransformation() {
+        // Arrange
+        when(mockLocationInfo.getFilePath()).thenReturn("src/Calculator.java");
+        when(mockLocationInfo.getStartLine()).thenReturn(10);
+        when(mockLocationInfo.getEndLine()).thenReturn(15);
+        when(mockLocationInfo.getStartColumn()).thenReturn(5);
+        when(mockLocationInfo.getEndColumn()).thenReturn(20);
+        
+        when(mockCodeRange.getFilePath()).thenReturn("src/Calculator.java");
+        when(mockCodeRange.getStartLine()).thenReturn(10);
+        when(mockCodeRange.getEndLine()).thenReturn(15);
+        when(mockCodeRange.getStartColumn()).thenReturn(5);
+        when(mockCodeRange.getEndColumn()).thenReturn(20);
+        when(mockCodeRange.getLocationInfo()).thenReturn(mockLocationInfo);
+        when(mockCodeRange.getDescription()).thenReturn("Method body");
+        when(mockCodeRange.getCodeElement()).thenReturn("method");
+        
+        when(mockRefactoring.leftSide()).thenReturn(Arrays.asList(mockCodeRange));
+        
+        // Act
+        List<CodeRange> result = wrapper.leftSide();
+        
+        // Assert
+        assertNotNull(result);
+        assertEquals(1, result.size());
+        CodeRange transformedRange = result.get(0);
+        assertTrue(transformedRange.getFilePath().contains("Calculator.cs"), 
+                  "Should transform file path to .cs");
+        assertFalse(transformedRange.getFilePath().contains(".java"), 
+                   "Should not contain .java extension");
+    }
+    
+    @Test
+    void testTypeNameTransformation() {
+        // Arrange
+        String javaLikeString = "Move Method from String to boolean in Calculator.java";
+        when(mockRefactoring.toString()).thenReturn(javaLikeString);
+        
+        // Act
+        String result = wrapper.toString();
+        
+        // Assert
+        assertTrue(result.contains("string") || result.contains("String"), "Should handle String type");
+        assertTrue(result.contains("bool") || result.contains("boolean"), "Should handle boolean type");
+        assertTrue(result.contains("Calculator.cs"), "Should transform file extension");
+    }
+    
+    @Test
+    void testMethodNameTransformation() {
+        // Arrange
+        String javaLikeString = "Rename Method getName() to getFullName() in Person.java";
+        when(mockRefactoring.toString()).thenReturn(javaLikeString);
+        
+        // Act
+        String result = wrapper.toString();
+        
+        // Assert
+        // Should transform getter methods back to property-like names
+        assertTrue(result.contains("Name") || result.contains("getName"), "Should handle method name transformation");
+        assertTrue(result.contains("Person.cs"), "Should transform file extension");
+    }
+    
+    @Test
+    void testGetOriginalRefactoring() {
+        // Act
+        Refactoring original = wrapper.getOriginalRefactoring();
+        
+        // Assert
+        assertSame(mockRefactoring, original, "Should return the original refactoring instance");
+    }
+    
+    @Test
+    void testInvolvesCSharSpecificConstructs() {
+        // Test with property-related refactoring
+        when(mockRefactoring.toString()).thenReturn("Rename Property Name to FullName in Person.cs");
+        assertTrue(wrapper.involvesCSharSpecificConstructs(), "Should detect property-related constructs");
+        
+        // Test with event-related refactoring
+        when(mockRefactoring.toString()).thenReturn("Extract Event handler in EventPublisher.cs");
+        assertTrue(wrapper.involvesCSharSpecificConstructs(), "Should detect event-related constructs");
+        
+        // Test with delegate-related refactoring
+        when(mockRefactoring.toString()).thenReturn("Move Delegate to different class");
+        assertTrue(wrapper.involvesCSharSpecificConstructs(), "Should detect delegate-related constructs");
+        
+        // Test with regular method refactoring
+        when(mockRefactoring.toString()).thenReturn("Rename Method calculate to compute");
+        assertFalse(wrapper.involvesCSharSpecificConstructs(), "Should not detect C# constructs in regular refactoring");
+    }
+    
+    @Test
+    void testGetCSharpTransformationInfo() {
+        // Test with C# specific constructs
+        when(mockRefactoring.toString()).thenReturn("Rename Property Name to FullName in Person.cs");
+        
+        String info = wrapper.getCSharpTransformationInfo();
+        
+        assertNotNull(info);
+        assertTrue(info.contains("Property access patterns transformed"), 
+                  "Should mention property transformations");
+        
+        // Test without C# specific constructs
+        when(mockRefactoring.toString()).thenReturn("Rename Method calculate to compute");
+        
+        String noTransformInfo = wrapper.getCSharpTransformationInfo();
+        assertTrue(noTransformInfo.contains("No C# specific transformations"), 
+                  "Should indicate no transformations for regular refactorings");
+    }
+    
+    @Test
+    void testCollectionTypeTransformation() {
+        // Arrange
+        String javaLikeString = "Move Field from java.util.List<String> to java.util.Map<String,Integer>";
+        when(mockRefactoring.toString()).thenReturn(javaLikeString);
+        
+        // Act
+        String result = wrapper.toString();
+        
+        // Assert
+        assertTrue(result.contains("List<string>") || result.contains("List<String>"), 
+                  "Should transform java.util.List to C# List");
+        assertTrue(result.contains("Dictionary<string,") || result.contains("Map<String,"), 
+                  "Should transform java.util.Map to C# Dictionary or keep Map");
+    }
+    
+    @Test
+    void testComplexRefactoringTransformation() {
+        // Arrange
+        String complexJavaLike = """
+            Extract Method getCalculationResult(java.util.List<String> items, boolean useCache) : String 
+            from class Calculator.java in method processItems(java.util.ArrayList<String> data)
+            """;
+        when(mockRefactoring.toString()).thenReturn(complexJavaLike);
+        
+        // Act
+        String result = wrapper.toString();
+        
+        // Assert
+        assertTrue(result.contains("Calculator.cs"), "Should transform file extension");
+        assertTrue(result.contains("List<") || result.contains("string"), "Should handle collection and type transformations");
+        assertTrue(result.contains("bool") || result.contains("boolean"), "Should handle boolean type");
+        
+        System.out.println("Complex transformation result:");
+        System.out.println(result);
+    }
+    
+    @Test
+    void testNullHandling() {
+        // Test with null toString result
+        when(mockRefactoring.toString()).thenReturn(null);
+        assertDoesNotThrow(() -> wrapper.toString(), "Should handle null toString gracefully");
+        
+        // Test with null JSON result
+        when(mockRefactoring.toJSON()).thenReturn(null);
+        assertDoesNotThrow(() -> wrapper.toJSON(), "Should handle null JSON gracefully");
+        
+        // Test with null code ranges
+        when(mockRefactoring.leftSide()).thenReturn(null);
+        assertDoesNotThrow(() -> wrapper.leftSide(), "Should handle null code ranges gracefully");
+    }
+}

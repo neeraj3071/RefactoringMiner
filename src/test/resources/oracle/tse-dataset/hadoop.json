@@ -1661,7 +1661,7 @@
         {
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tExponentialRetryPolicy to AbfsRetryPolicy in method public getRetryPolicy(failureReason String) : AbfsRetryPolicy from class org.apache.hadoop.fs.azurebfs.services.AbfsClient",
-          "validation": true
+          "validation": false
         },
         {
           "type": "RENAME_VARIABLE",
@@ -1678,7 +1678,7 @@
         {
           "type": "RENAME_METHOD",
           "description": "Rename Method\tpackage getRetryPolicy() : ExponentialRetryPolicy renamed to package getExponentialRetryPolicy() : ExponentialRetryPolicy in class org.apache.hadoop.fs.azurebfs.services.AbfsClient",
-          "validation": false
+          "validation": true
         },
         {
           "type": "MOVE_RENAME_ATTRIBUTE",
@@ -1848,7 +1848,7 @@
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tendpointEndsWithCentral : boolean in method private configureEndpointAndRegion(builder BuilderT, parameters S3ClientCreationParameters, conf Configuration) : void from class org.apache.hadoop.fs.s3a.DefaultS3ClientFactory",
-          "validation": true
+          "validation": false
         }
       ]
     }

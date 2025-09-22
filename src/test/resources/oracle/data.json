@@ -4068,6 +4068,13 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable future : CompletableFuture<AppendResponse> in method protected append(request AppendRequest) : CompletableFuture<AppendResponse> from class net.kuujo.copycat.raft.state.PassiveState",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 858
 }, {
@@ -7865,6 +7872,13 @@
     }, {
         "type": "Change Method Access Modifier",
         "description": "Change Method Access Modifier public to package in method package getNominalType() : NominalType from class com.google.javascript.jscomp.newtypes.ObjectType",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable recvType : JSType in method private visitOtherPropertyDeclaration(getProp Node) : void from class com.google.javascript.jscomp.GlobalTypeInfo.ProcessScope",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -12563,20 +12577,6 @@
         "validators": null
     }, {
         "type": "Change Variable Type",
-        "description": "Change Variable Type g : LevelGraphStorage to g : LevelGraphImpl in method public testDisconnectEdge() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
-        "type": "Change Variable Type",
-        "description": "Change Variable Type g : LevelGraphStorage to g : LevelGraphImpl in method public testGetWeight() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
-        "type": "Change Variable Type",
         "description": "Change Variable Type g : LevelGraph to g : GraphHopperStorage in method public testMoreComplexGraph() : void from class com.graphhopper.routing.ch.PrepareContractionHierarchiesTest",
         "comment": null,
         "validation": "TP",
@@ -12795,6 +12795,76 @@
     }, {
         "type": "Change Return Type",
         "description": "Change Return Type Graph to void in method package _copyTo(clonedG BaseGraph) : void from class com.graphhopper.storage.BaseGraph",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type g : LevelGraphStorage to storage : GraphHopperStorage in method public testDisconnectEdge() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type g : LevelGraphStorage to storage : GraphHopperStorage in method public testGetWeight() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable g : LevelGraphStorage to storage : GraphHopperStorage in method public testDisconnectEdge() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable g : LevelGraphStorage to storage : GraphHopperStorage in method public testGetWeight() : void from class com.graphhopper.storage.GraphHopperStorageCHTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable lg : LevelGraph to g : GraphHopperStorage in method public testSortHighLevelFirst() : void from class com.graphhopper.storage.index.LocationIndexTreeForLevelGraphTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type lg : LevelGraph to g : GraphHopperStorage in method public testSortHighLevelFirst() : void from class com.graphhopper.storage.index.LocationIndexTreeForLevelGraphTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Remove Variable Modifier",
+        "description": "Remove Variable Modifier final in variable lg : LevelGraph in method public testSortHighLevelFirst() : void from class com.graphhopper.storage.index.LocationIndexTreeForLevelGraphTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable graph : Graph in method public testCalcIf1EdgeAway() : void from class com.graphhopper.routing.AbstractRoutingAlgorithmTester",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable graph : Graph in method public testSort() : void from class com.graphhopper.reader.OSMReaderTest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable graph : Graph in method public testCalcIfEmptyWay() : void from class com.graphhopper.routing.AbstractRoutingAlgorithmTester",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -20048,6 +20118,13 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable trans : FragmentTransaction in method public displayListFragment(inputUris ArrayList<Uri>) : void from class org.sufficientlysecure.keychain.ui.DecryptFilesActivity",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 1261
 }, {
@@ -23031,6 +23108,13 @@
     }, {
         "type": "Remove Method Modifier",
         "description": "Remove Method Modifier synchronized in method protected generateNonce() : String from class org.asynchttpclient.oauth.OAuthSignatureCalculator",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable p : Parameter in method public add(key String, value String) : OAuthParameterSet from class org.asynchttpclient.oauth.OAuthSignatureCalculator.OAuthParameterSet",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -27033,6 +27117,20 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable heightLabel : Label in method public ChunkOptionsPopupPanel() from class org.rstudio.studio.client.workbench.views.source.editors.text.ChunkOptionsPopupPanel",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable widthLabel : Label in method public ChunkOptionsPopupPanel() from class org.rstudio.studio.client.workbench.views.source.editors.text.ChunkOptionsPopupPanel",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 1522
 }, {
@@ -30771,20 +30869,6 @@
     }, {
         "type": "Extract Variable",
         "description": "Extract Variable validatedRowType : RelDataType in method public getPlan(sqlNode SqlNode) : PhysicalPlan from class org.apache.drill.exec.planner.sql.handlers.ViewHandler.CreateView",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
-        "type": "Extract Variable",
-        "description": "Extract Variable queryRelNode : RelNode in method public getPlan(sqlNode SqlNode) : PhysicalPlan from class org.apache.drill.exec.planner.sql.handlers.ViewHandler.CreateView",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
-        "type": "Extract Variable",
-        "description": "Extract Variable queryRelNode : RelNode in method public getPlan(sqlNode SqlNode) : PhysicalPlan from class org.apache.drill.exec.planner.sql.handlers.CreateTableHandler",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -35293,13 +35377,6 @@
         "detectionTools": "GumTreeDiff",
         "validators": "Nikos"
     }, {
-        "type": "Change Variable Type",
-        "description": "Change Variable Type connection : TcpConnection to connection : TcpConnectionSupport in method private removeClosedConnectionsAndReturnOpenConnectionIds() : List<String> from class org.springframework.integration.ip.tcp.connection.AbstractConnectionFactory",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
         "type": "Extract Variable",
         "description": "Extract Variable isErrorMessage : boolean in method public onMessage(message Message<?>) : boolean from class org.springframework.integration.ip.tcp.TcpInboundGateway",
         "comment": null,
@@ -35309,6 +35386,20 @@
     }, {
         "type": "Extract Variable",
         "description": "Extract Variable isErrorMessage : boolean in method public onMessage(message Message<?>) : boolean from class org.springframework.integration.ip.tcp.TcpReceivingChannelAdapter",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable connection : TcpConnection to entry : Entry<String,TcpConnectionSupport> in method private removeClosedConnectionsAndReturnOpenConnectionIds() : List<String> from class org.springframework.integration.ip.tcp.connection.AbstractConnectionFactory",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type connection : TcpConnection to entry : Entry<String,TcpConnectionSupport> in method private removeClosedConnectionsAndReturnOpenConnectionIds() : List<String> from class org.springframework.integration.ip.tcp.connection.AbstractConnectionFactory",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -44595,6 +44686,20 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": "Nikos"
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable exceptionClass : String in method public skipAndLimit() : void from class org.apache.drill.exec.testing.TestExceptionInjection",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable exceptionClass : String in method public injectionOnSpecificBit() : void from class org.apache.drill.exec.testing.TestExceptionInjection",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 2963
 }, {
@@ -50774,6 +50879,97 @@
     }, {
         "type": "Inline Variable",
         "description": "Inline Variable result : Response<X> in method private invoke(request Request<Y>, responseHandler HttpResponseHandler<AmazonWebServiceResponse<X>>, executionContext ExecutionContext) : Response<X> from class com.amazonaws.services.elasticfilesystem.AmazonElasticFileSystemClient",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable jobsCopy : ListWithAutoConstructFlag<Job> in method public setJobs(jobs java.util.Collection<Job>) : void from class com.amazonaws.services.importexport.model.ListJobsResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable tagsCopy : ListWithAutoConstructFlag<Tag> in method public setTags(tags java.util.Collection<Tag>) : void from class com.amazonaws.services.elasticfilesystem.model.CreateTagsRequest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable tagsCopy : ListWithAutoConstructFlag<Tag> in method public setTags(tags java.util.Collection<Tag>) : void from class com.amazonaws.services.elasticfilesystem.model.DescribeTagsResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable artifactListCopy : ListWithAutoConstructFlag<Artifact> in method public setArtifactList(artifactList java.util.Collection<Artifact>) : void from class com.amazonaws.services.importexport.model.CreateJobResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable tagKeysCopy : ListWithAutoConstructFlag<String> in method public setTagKeys(tagKeys java.util.Collection<String>) : void from class com.amazonaws.services.elasticfilesystem.model.DeleteTagsRequest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable mountTargetsCopy : ListWithAutoConstructFlag<MountTargetDescription> in method public setMountTargets(mountTargets java.util.Collection<MountTargetDescription>) : void from class com.amazonaws.services.elasticfilesystem.model.DescribeMountTargetsResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable artifactListCopy : ListWithAutoConstructFlag<Artifact> in method public setArtifactList(artifactList java.util.Collection<Artifact>) : void from class com.amazonaws.services.importexport.model.UpdateJobResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable securityGroupsCopy : ListWithAutoConstructFlag<String> in method public setSecurityGroups(securityGroups java.util.Collection<String>) : void from class com.amazonaws.services.elasticfilesystem.model.CreateMountTargetRequest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable securityGroupsCopy : ListWithAutoConstructFlag<String> in method public setSecurityGroups(securityGroups java.util.Collection<String>) : void from class com.amazonaws.services.elasticfilesystem.model.DescribeMountTargetSecurityGroupsResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable jobIdsCopy : ListWithAutoConstructFlag<String> in method public setJobIds(jobIds java.util.Collection<String>) : void from class com.amazonaws.services.importexport.model.GetShippingLabelRequest",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable artifactListCopy : ListWithAutoConstructFlag<Artifact> in method public setArtifactList(artifactList java.util.Collection<Artifact>) : void from class com.amazonaws.services.importexport.model.GetStatusResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable fileSystemsCopy : ListWithAutoConstructFlag<FileSystemDescription> in method public setFileSystems(fileSystems java.util.Collection<FileSystemDescription>) : void from class com.amazonaws.services.elasticfilesystem.model.DescribeFileSystemsResult",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable securityGroupsCopy : ListWithAutoConstructFlag<String> in method public setSecurityGroups(securityGroups java.util.Collection<String>) : void from class com.amazonaws.services.elasticfilesystem.model.ModifyMountTargetSecurityGroupsRequest",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -65807,6 +66003,20 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable array : Node in method private createRawStringArray(n Node) : Node from class com.google.javascript.jscomp.Es6TemplateLiterals",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable array : Node in method private createCookedStringArray(n Node) : Node from class com.google.javascript.jscomp.Es6TemplateLiterals",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 2970
 }, {
@@ -80043,6 +80253,20 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable writeHandler : OperationStepHandler in method public registerAttributes(registration ManagementResourceRegistration) : void from class org.infinispan.server.jgroups.subsystem.JGroupsSubsystemResourceDefinition",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable protocols : List<ProtocolConfiguration> in method public getProtocols() : List<ProtocolConfiguration> from class org.infinispan.server.jgroups.subsystem.JChannelFactoryBuilder",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 3908
 }, {
@@ -84402,6 +84626,13 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner, RefDiff, RMiner-1x",
         "validators": null
+    }, {
+        "type": "Extract Variable",
+        "description": "Extract Variable endpoint : SjmsEndpoint in method public onMessage(message Message) : void from class org.apache.camel.component.sjms.consumer.AbstractMessageHandler",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 10210
 }, {
@@ -84918,6 +85149,20 @@
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
         "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable nodeId : long to entry : Pair<Long,String> in method public withStringProperties(nodesWithValues Collection<Pair<Long,String>>) : void from class org.neo4j.kernel.impl.api.state.TxStateTest.addNodesToIndex.new IndexUpdater",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type nodeId : long to entry : Pair<Long,String> in method public withStringProperties(nodesWithValues Collection<Pair<Long,String>>) : void from class org.neo4j.kernel.impl.api.state.TxStateTest.addNodesToIndex.new IndexUpdater",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
     }],
     "refDiffExecutionTime": 4473
 }, {
@@ -85240,6 +85485,13 @@
     }, {
         "type": "Invert Condition",
         "description": "Invert Condition if(buf.cursor == buf.length() && clear == 0) to if(buf.cursor != buf.length() || clear != 0) in method private drawBuffer(clear int) : void from class jline.console.ConsoleReader",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable chars : char[] in method private drawBuffer(clear int) : void from class jline.console.ConsoleReader",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -86676,6 +86928,13 @@
     }, {
         "type": "Inline Variable",
         "description": "Inline Variable k : Keyword in method public equals(obj Object) : boolean from class org.ansj.app.keyword.Keyword",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Inline Variable",
+        "description": "Inline Variable f : double in method private parseFile(path String) : void from class org.ansj.app.crf.model.CRFModel",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",
@@ -88786,13 +89045,6 @@
         "detectionTools": "RefactoringMiner",
         "validators": null
     }, {
-        "type": "Change Variable Type",
-        "description": "Change Variable Type e : RuntimeException|ScriptException to e : Throwable in method package ScriptBasedUDFunction(name FunctionName, argNames List<ColumnIdentifier>, argTypes List<AbstractType<?>>, returnType AbstractType<?>, calledOnNullInput boolean, language String, body String) from class org.apache.cassandra.cql3.functions.ScriptBasedUDFunction",
-        "comment": null,
-        "validation": "TP",
-        "detectionTools": "RefactoringMiner",
-        "validators": null
-    }, {
         "type": "Inline Variable",
         "description": "Inline Variable argDataTypes : DataType[] in method package buildUDF(name FunctionName, argNames List<ColumnIdentifier>, argTypes List<AbstractType<?>>, returnType AbstractType<?>, calledOnNullInput boolean, body String) : UDFunction from class org.apache.cassandra.cql3.functions.JavaSourceUDFFactory",
         "comment": "<p>DataType[] argDataTypes = UDHelper.driverTypes(argTypes);<br />inlined to<br />super(name, argNames, argTypes, UDHelper.driverTypes(argTypes),<br /> returnType, UDHelper.driverType(returnType), calledOnNullInput, 'java', body);</p>",
@@ -88837,6 +89089,20 @@
     }, {
         "type": "Rename Attribute",
         "description": "Rename Attribute GENERATED_PACKAGE : String to BASE_PACKAGE : String in class org.apache.cassandra.cql3.functions.JavaBasedUDFunction",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Rename Variable",
+        "description": "Rename Variable e : RuntimeException|ScriptException to x : PrivilegedActionException in method package ScriptBasedUDFunction(name FunctionName, argNames List<ColumnIdentifier>, argTypes List<AbstractType<?>>, returnType AbstractType<?>, calledOnNullInput boolean, language String, body String) from class org.apache.cassandra.cql3.functions.ScriptBasedUDFunction",
+        "comment": null,
+        "validation": "TP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null
+    }, {
+        "type": "Change Variable Type",
+        "description": "Change Variable Type e : RuntimeException|ScriptException to x : PrivilegedActionException in method package ScriptBasedUDFunction(name FunctionName, argNames List<ColumnIdentifier>, argTypes List<AbstractType<?>>, returnType AbstractType<?>, calledOnNullInput boolean, language String, body String) from class org.apache.cassandra.cql3.functions.ScriptBasedUDFunction",
         "comment": null,
         "validation": "TP",
         "detectionTools": "RefactoringMiner",

@@ -967,7 +967,25 @@ public class UMLModelDiff {
 				}
 				else if(isSubclassOf(renamedClass.getName(), renameDiff.getRenamedClass().getName()) ||
 						isSubclassOf(renameDiff.getRenamedClass().getName(), renamedClass.getName()) ||
-						renamedClass.hasCommonOperationWithTheSameSignature(renameDiff.getRenamedClass()).isMatch()) {
+						commonAPIs(renamedClass, renameDiff)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	private boolean commonAPIs(UMLClass renamedClass, UMLClassRenameDiff renameDiff) {
+		MatchResult matchResult = renamedClass.hasCommonOperationWithTheSameSignature(renameDiff.getRenamedClass());
+		if(matchResult.isMatch()) {
+			if(matchResult.getIdenticalBodyOperations() == matchResult.getMatchedOperations()) {
+				return true;
+			}
+			if(renamedClass.getSuperclass() != null && renameDiff.getOriginalClass().getSuperclass() != null && renameDiff.getNextClass().getSuperclass() != null) {
+				if(renamedClass.getSuperclass().equals(renameDiff.getOriginalClass().getSuperclass()) && !renamedClass.getSuperclass().equals(renameDiff.getNextClass().getSuperclass())) {
+					return true;
+				}
+				else if(!renamedClass.getSuperclass().equals(renameDiff.getOriginalClass().getSuperclass()) && renamedClass.getSuperclass().equals(renameDiff.getNextClass().getSuperclass())) {
 					return true;
 				}
 			}
@@ -3347,6 +3365,7 @@ public class UMLModelDiff {
 			SplitClassRefactoring refactoring = new SplitClassRefactoring(classSplitDiff);
 			for(UMLClassRenameDiff renameDiff : classSplitDiff.getClassRenameDiffs()) {
 				renameDiff.process();
+				renameDiff.getRefactorings();
 				detectSubRefactorings(renameDiff, renameDiff.getRenamedClass(), refactoring.getRefactoringType());
 				for(UMLOperationBodyMapper mapper : renameDiff.getOperationBodyMapperList()) {
 					MoveOperationRefactoring move = new MoveOperationRefactoring(mapper);
@@ -5418,6 +5437,9 @@ public class UMLModelDiff {
 							else if(!newMappingSamePackage && oldMappingSamePackage) {
 								skip = true;
 							}
+							else if(newMappingSamePackage && oldMappingSamePackage && !(newMapping.getFragment1() instanceof AbstractExpression)) {
+								skip = true;
+							}
 						}
 					}
 				}
@@ -6876,7 +6898,25 @@ public class UMLModelDiff {
 		boolean zeroNonMapped = mapper.getNonMappedLeavesT1().size() == 0 && mapper.getNonMappedLeavesT2().size() == 0 &&
 				mapper.getNonMappedInnerNodesT1().size() == 0 && mapper.getNonMappedInnerNodesT2().size() == 0 &&
 				removedOperation.hasTestAnnotation() && addedOperation.hasTestAnnotation();
-		if(exactLeafMappings == 0 && !zeroNonMapped && normalizedEditDistance > 0.24) {
+		boolean identicalStringLiterals = false;
+		for(AbstractCodeMapping mapping : mapper.getMappings()) {
+			List<LeafExpression> expressions1 = mapping.getFragment1().getStringLiterals();
+			List<LeafExpression> expressions2 = mapping.getFragment2().getStringLiterals();
+			int matches = 0;
+			if(expressions1.size() == expressions2.size()) {
+				for(int i=0; i<expressions1.size(); i++) {
+					LeafExpression expr1 = expressions1.get(i);
+					LeafExpression expr2 = expressions2.get(i);
+					if(expr1.getString().equals(expr2.getString())) {
+						matches++;
+					}
+				}
+			}
+			if(matches == expressions1.size() && matches >= 10) {
+				identicalStringLiterals = true;
+			}
+		}
+		if(exactLeafMappings == 0 && !zeroNonMapped && !identicalStringLiterals && normalizedEditDistance > 0.24) {
 			return false;
 		}
 		if(exactLeafMappings == 1 && normalizedEditDistance > 0.51 && (mapper.nonMappedElementsT1() > 0 || mapper.nonMappedElementsT2() > 0)) {

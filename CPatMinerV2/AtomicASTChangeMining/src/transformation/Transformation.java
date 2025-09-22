@@ -1,11 +1,10 @@
 package transformation;
 
-import org.eclipse.jdt.core.dom.CompilationUnit;
-
-import com.github.gumtreediff.client.Run;
-import com.github.gumtreediff.gen.srcml.SrcmlCsTreeGenerator;
 import com.github.gumtreediff.tree.Tree;
 import com.github.gumtreediff.tree.TreeContext;
+import com.github.gumtreediff.gen.srcml.SrcmlCsTreeGenerator;
+import org.eclipse.jdt.core.dom.*;
+import com.github.gumtreediff.client.Run;
 
 
 public class Transformation {
@@ -40,7 +39,6 @@ public class Transformation {
         try {
             SrcmlCsTreeGenerator l = new SrcmlCsTreeGenerator();
             TreeContext tc = l.generateFrom().file(thisfile);
-            // TreeContext tc = l.generateFrom().file("TestClass.xml");
             Tree tree_csharp = tc.getRoot();
             //Tree tree_yaml = new YamlTreeGenerator().generateFrom().file(yaml_file).getRoot();
 

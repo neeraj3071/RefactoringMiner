@@ -43,6 +43,11 @@
           "type": "CHANGE_RETURN_TYPE",
           "description": "Change Return Type\tCollector to HibernateSearchQueryTimeout in method public queryTimeout() : HibernateSearchQueryTimeout from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager",
           "validation": true
+        },
+        {
+          "type": "RENAME_VARIABLE",
+          "description": "Rename Variable\tpossiblyWrappedCollector : Collector to collector : Collector in method public reduce(collectors Collection<Collector>) : MultiCollectedResults from class org.hibernate.search.backend.lucene.search.extraction.impl.HibernateSearchMultiCollectorManager.HibernateSearchMultiCollectorManagerMulti",
+          "validation": true
         }
       ]
     },
@@ -148,32 +153,32 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tcodec : LuceneFieldCodec<?> to builder : var in method protected newFieldQuery(analyzer Analyzer, field String, queryText String, quoted boolean) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcodec : LuceneFieldCodec<?> to builder : var in method protected newFieldQuery(analyzer Analyzer, field String, queryText String, quoted boolean) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tcodec : LuceneFieldCodec<?> to builder : var in method protected newRangeQuery(field String, part1 String, part2 String, startInclusive boolean, endInclusive boolean) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcodec : LuceneFieldCodec<?> to builder : var in method protected newRangeQuery(field String, part1 String, part2 String, startInclusive boolean, endInclusive boolean) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneQueryStringPredicate.HibernateSearchMultiFieldQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tcodec : LuceneFieldCodec<?> to builder : var in method protected createFieldQuery(analyzer Analyzer, operator BooleanClause.Occur, field String, queryText String, quoted boolean, phraseSlop int) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneSimpleQueryStringPredicate.HibernateSearchSimpleQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcodec : LuceneFieldCodec<?> to builder : var in method protected createFieldQuery(analyzer Analyzer, operator BooleanClause.Occur, field String, queryText String, quoted boolean, phraseSlop int) : Query from class org.hibernate.search.backend.lucene.search.predicate.impl.LuceneSimpleQueryStringPredicate.HibernateSearchSimpleQueryParser",
-          "validation": false
+          "validation": true
         },
         {
           "type": "MOVE_AND_RENAME_OPERATION",
@@ -1732,6 +1737,11 @@
           "type": "MOVE_ATTRIBUTE",
           "description": "Move Attribute\tprivate documentIdSourceProperty : PojoPropertyModel<?> from class org.hibernate.search.mapper.pojo.identity.impl.PojoRootIdentityMappingCollector to public documentIdSourceProperty : Optional<PojoPropertyModel<I>> from class org.hibernate.search.mapper.pojo.identity.impl.BoundIdentifierMapping",
           "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsearchMapping : CloseableSearchMapping in method package setup() : void from class org.hibernate.search.documentation.mapper.pojo.standalone.loading.StandalonePojoSelectionLoadingIT",
+          "validation": true
         }
       ]
     },
@@ -2618,7 +2628,7 @@
         },
         {
           "type": "CHANGE_VARIABLE_TYPE",
-          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "description": "Change Variable Type\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoContainedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
           "validation": true
         },
         {
@@ -2628,7 +2638,7 @@
         },
         {
           "type": "RENAME_VARIABLE",
-          "description": "Rename Variable\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoIndexedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
+          "description": "Rename Variable\ttypeManager : PojoContainedTypeManager<?,?> to typeManagerBuilder : PojoContainedTypeManager.Builder<?> in method private PojoTypeManagerContainer(builder Builder) from class org.hibernate.search.mapper.pojo.mapping.impl.PojoTypeManagerContainer",
           "validation": true
         },
         {

@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gpvigano/VRTK-GearVR-Test.git",
+	"sha1": "45f710ea5ca6df98ecfb1ee4d42509d7bae5ea5a",
+	"url": "https://github.com/gpvigano/VRTK-GearVR-Test/commit/45f710ea5ca6df98ecfb1ee4d42509d7bae5ea5a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type coordinateAxis : SDK_BaseController.Vector2Axis to coordinateAxis : VRTK_ControllerEvents.Vector2AxisAlias in class VRTK_PointerDirectionIndicator",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Prefabs/PointerDirectionIndicator/VRTK_PointerDirectionIndicator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 47,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "coordinateAxis : SDK_BaseController.Vector2Axis"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Prefabs/PointerDirectionIndicator/VRTK_PointerDirectionIndicator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 55,
+		"endColumn": 119,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "coordinateAxis : VRTK_ControllerEvents.Vector2AxisAlias"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type vector2AxisType : SDK_BaseController.Vector2Axis to vector2AxisType : Vector2AxisAlias in method package GetAxis(vector2AxisType Vector2AxisAlias) from class VRTK_ControllerEvents",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1033,
+		"endLine": 1033,
+		"startColumn": 40,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "vector2AxisType : SDK_BaseController.Vector2Axis"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1035,
+		"endLine": 1041,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1052,
+		"endLine": 1052,
+		"startColumn": 40,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "vector2AxisType : Vector2AxisAlias"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1054,
+		"endLine": 1060,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type vector2AxisType : SDK_BaseController.Vector2Axis to vector2AxisType : Vector2AxisAlias in method public GetAxisAngle(vector2AxisType Vector2AxisAlias) : float from class VRTK_ControllerEvents",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1068,
+		"endLine": 1068,
+		"startColumn": 43,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "vector2AxisType : SDK_BaseController.Vector2Axis"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1070,
+		"endLine": 1076,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1087,
+		"endLine": 1087,
+		"startColumn": 43,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "vector2AxisType : Vector2AxisAlias"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1089,
+		"endLine": 1095,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type axis : SDK_BaseController.Vector2Axis to axis : Vector2AxisAlias in method package GetAxisState(axis Vector2AxisAlias, pressType SDK_BaseController.ButtonPressTypes) from class VRTK_ControllerEvents",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1200,
+		"endLine": 1200,
+		"startColumn": 42,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "axis : SDK_BaseController.Vector2Axis"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1207,
+		"endLine": 1207,
+		"startColumn": 21,
+		"endColumn": 104,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1211,
+		"endLine": 1211,
+		"startColumn": 21,
+		"endColumn": 117,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1219,
+		"endLine": 1219,
+		"startColumn": 42,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "axis : Vector2AxisAlias"
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1226,
+		"endLine": 1226,
+		"startColumn": 21,
+		"endColumn": 90,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Source/Scripts/Interactions/Interactors/VRTK_ControllerEvents.cs",
+		"startLine": 1230,
+		"endLine": 1230,
+		"startColumn": 21,
+		"endColumn": 103,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type coordinateAxis : SDK_BaseController.Vector2Axis to coordinateAxis : VRTK_ControllerEvents.Vector2AxisAlias in class VRTK_TouchpadControl",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Locomotion/VRTK_TouchpadControl.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 47,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "coordinateAxis : SDK_BaseController.Vector2Axis"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Scripts/Locomotion/VRTK_TouchpadControl.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 55,
+		"endColumn": 119,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "coordinateAxis : VRTK_ControllerEvents.Vector2AxisAlias"
+}]
+}
+]
+}]
+}

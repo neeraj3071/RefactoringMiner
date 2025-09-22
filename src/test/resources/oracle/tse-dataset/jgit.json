@@ -144,7 +144,7 @@
         {
           "type": "INLINE_VARIABLE",
           "description": "Inline Variable\tcleanupHook : Thread in method package lock() : boolean from class org.eclipse.jgit.internal.storage.file.GC.PidLock",
-          "validation": false
+          "validation": true
         }
       ],
       "ourApproach": [],
@@ -259,7 +259,13 @@
           "validation": true
         }
       ],
-      "baseline": []
+      "baseline": [
+        {
+          "type": "EXTRACT_AND_MOVE_OPERATION",
+          "description": "Extract And Move Method\tpublic clear() : void extracted from public close() : void in class org.eclipse.jgit.internal.storage.file.Pack & moved to class org.eclipse.jgit.internal.util.Optionally.Hard",
+          "validation": true
+        }
+      ]
     },
     {
       "repository": "https://github.com/eclipse-jgit/jgit.git",
@@ -484,6 +490,11 @@
           "type": "RENAME_VARIABLE",
           "description": "Rename Variable\tcommit : RevCommit to msg : String in method public testNoFooters_ShortBodyWithLF() : void from class org.eclipse.jgit.revwalk.FooterLineTest",
           "validation": true
+        },
+        {
+          "type": "INLINE_VARIABLE",
+          "description": "Inline Variable\tsrc : List<FooterLine> in method public getFooterLines(keyName FooterKey) : List<String> from class org.eclipse.jgit.revwalk.RevCommit",
+          "validation": true
         }
       ]
     },
@@ -497,7 +508,7 @@
         {
           "type": "EXTRACT_AND_MOVE_OPERATION",
           "description": "Extract And Move Method\tpublic renamed(entry DiffEntry, commit RevCommit) : void extracted from private updateFollowFilter(trees ObjectId[], cfg DiffConfig) : void in class org.eclipse.jgit.revwalk.TreeRevFilter & moved to class org.eclipse.jgit.revwalk.RenameCallback",
-          "validation": false
+          "validation": true
         }
       ]
     },
@@ -576,7 +587,7 @@
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\tcnt : int in method package PackReverseIndexComputed(packIndex PackIndex) from class org.eclipse.jgit.internal.storage.file.PackReverseIndexComputed",
-          "validation": true
+          "validation": false
         }
       ],
       "baseline": [
@@ -602,7 +613,7 @@
         {
           "type": "CHANGE_VARIABLE_TYPE",
           "description": "Change Variable Type\tval : Map.Entry<PublicKey,String> to val : KeyAgentIdentity in method protected initializeAgentIdentities(session ClientSession) : Iterable<KeyAgentIdentity> from class org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication.KeyIterator",
-          "validation": true
+          "validation": false
         },
         {
           "type": "EXTRACT_VARIABLE",
@@ -888,7 +899,7 @@
         {
           "type": "PULL_UP_ATTRIBUTE",
           "description": "Pull Up Attribute\tprivate homeDir : File from class org.eclipse.jgit.junit.ssh.SshTestHarness to private homeDir : File from class org.eclipse.jgit.junit.LocalDiskRepositoryTestCase",
-          "validation": true
+          "validation": false
         }
       ],
       "baseline": [
@@ -975,7 +986,7 @@
         {
           "type": "EXTRACT_VARIABLE",
           "description": "Extract Variable\torigSize : int in method public testGetRefs_LooseSorting_Bug_348834() : void from class org.eclipse.jgit.internal.storage.file.RefDirectoryTest",
-          "validation": false
+          "validation": true
         }
       ],
       "baseline": []
