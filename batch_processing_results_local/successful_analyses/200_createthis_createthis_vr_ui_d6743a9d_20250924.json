@@ -1,0 +1,735 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/createthis/createthis_vr_ui.git",
+	"sha1": "d6743a9d2032a345b13fe2872751763cb0fb698c",
+	"url": "https://github.com/createthis/createthis_vr_ui/commit/d6743a9d2032a345b13fe2872751763cb0fb698c",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public GetUnrotatedRendererBounds(target GameObject) : Bounds from class PanelLib to private GetUnrotatedRendererBounds(target GameObject) : Bounds from class ObjectBounds",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 40,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 9,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private GetUnrotatedRendererBounds(target GameObject) : Bounds from class ObjectBounds",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 40,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 9,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float from class PanelLib to public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float from class PanelLib to public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 195,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ObjectBounds from class PanelLib",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 6,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "PanelLib"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 40,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 62,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetWorldBounds(target GameObject) : Bounds"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 11,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "PanelLib"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 8,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ObjectBounds"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 9,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetUnrotatedRendererBounds(target GameObject) : Bounds"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 32,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ToWorld(target GameObject) : Bounds"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class TransformWithoutRotation from class PanelLib",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 6,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "PanelLib"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 161,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LocalVectorToWorldVectorWithoutRotation(localVector Vector3, target GameObject) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 173,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldVectorToLocalVectorWithoutRotation(worldVector Vector3, target GameObject) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 195,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 11,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "PanelLib"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 4,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "TransformWithoutRotation"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 17,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public WorldVectorToLocalVector(worldVector Vector3, target GameObject) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public WorldDistanceToLocalDistanceY(worldDistance float, target GameObject) : float"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public WorldDistanceToLocalDistance(worldDistance float, target GameObject) : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3 from class Triangle",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/Triangle.cs",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3 from class PanelLib to public CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3 from class Triangle",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/Triangle.cs",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CalculateNormal(a Vector3, b Vector3, c Vector3) : Vector3"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public GetWorldBounds(target GameObject) : Bounds from class PanelLib to public ToWorld(target GameObject) : Bounds from class ObjectBounds",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 62,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetWorldBounds(target GameObject) : Bounds"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 32,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ToWorld(target GameObject) : Bounds"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable oldPanelRotation : Quaternion to oldRotation : Quaternion in method public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 24,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "oldPanelRotation : Quaternion"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 24,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "oldRotation : Quaternion"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter panel : GameObject to target : GameObject in method public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 66,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "panel : GameObject"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 77,
+		"endColumn": 94,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "target : GameObject"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type float to Vector3 in method public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "float"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter localVector : Vector3 in method public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 56,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "localVector : Vector3"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter textLabel : GameObject in method public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float from class PanelLib",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 84,
+		"endColumn": 104,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "textLabel : GameObject"
+}, {
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float from class PanelLib to public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 86,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CalculateLeftPaddingOfChildTextLabel(panel GameObject, textLabel GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public GetWorldWidth(target GameObject) : float from class PanelLib to public WorldWidth(target GameObject) : float from class ObjectBounds",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 113,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetWorldWidth(target GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WorldWidth(target GameObject) : float"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public GetWorldHeight(target GameObject) : float from class PanelLib to public WorldHeight(target GameObject) : float from class ObjectBounds",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetWorldHeight(target GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/ObjectBounds.cs",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WorldHeight(target GameObject) : float"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public LocalVectorToWorldVectorWithoutRotation(localVector Vector3, target GameObject) : Vector3 from class PanelLib to public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 161,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LocalVectorToWorldVectorWithoutRotation(localVector Vector3, target GameObject) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LocalVectorToWorldVector(localVector Vector3, target GameObject) : Vector3"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public WorldVectorToLocalVectorWithoutRotation(worldVector Vector3, target GameObject) : Vector3 from class PanelLib to public WorldVectorToLocalVector(worldVector Vector3, target GameObject) : Vector3 from class TransformWithoutRotation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/VR/UI/Panel/PanelLib.cs",
+		"startLine": 173,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WorldVectorToLocalVectorWithoutRotation(worldVector Vector3, target GameObject) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CreateThis/Unity/TransformWithoutRotation.cs",
+		"startLine": 17,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WorldVectorToLocalVector(worldVector Vector3, target GameObject) : Vector3"
+}]
+}
+]
+}]
+}

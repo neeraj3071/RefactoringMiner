@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/xire-/graphulus.git",
+	"sha1": "4435eade905e5c9931dd812241941f21da9d67cf",
+	"url": "https://github.com/xire-/graphulus/commit/4435eade905e5c9931dd812241941f21da9d67cf",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type duration : var to duration : float in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "duration : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "duration : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable status : var to t : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "status : var"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "t : var"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

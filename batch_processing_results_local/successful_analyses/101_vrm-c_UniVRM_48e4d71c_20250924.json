@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "48e4d71c437a77fcbed10f78204db74dbb6e4903",
+	"url": "https://github.com/vrm-c/UniVRM/commit/48e4d71c437a77fcbed10f78204db74dbb6e4903",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Vrm10Utility renamed to Vrm10",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Utility.cs",
+		"startLine": 8,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Vrm10Utility"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10.cs",
+		"startLine": 13,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "Vrm10"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable instance : var to vrm10Instance : var in method package LoadModel(path string) : void from class VRM10ViewerUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10_Samples/VRM10Viewer/VRM10ViewerUI.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "instance : var"
+}, {
+		"filePath": "Assets/VRM10_Samples/VRM10Viewer/VRM10ViewerUI.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10_Samples/VRM10Viewer/VRM10ViewerUI.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "vrm10Instance : var"
+}, {
+		"filePath": "Assets/VRM10_Samples/VRM10Viewer/VRM10ViewerUI.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter data : var to migrated : var in method package using(migrated var) from class Vrm10",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Utility.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "migrated : var"
+}]
+}
+]
+}]
+}

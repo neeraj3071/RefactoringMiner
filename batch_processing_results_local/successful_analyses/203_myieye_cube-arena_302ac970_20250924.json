@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/myieye/cube-arena.git",
+	"sha1": "302ac970a0676a5518e99f90e91888f886fa85bb",
+	"url": "https://github.com/myieye/cube-arena/commit/302ac970a0676a5518e99f90e91888f886fa85bb",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public ToServer() : RigidbodyState renamed to public ToServerState() : RigidbodyState in class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToServer() : RigidbodyState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ToServerState() : RigidbodyState"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ToLocal() : RigidbodyState renamed to public ToServerState() : RigidbodyState in class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToLocal() : RigidbodyState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ToServerState() : RigidbodyState"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type transform : Transform to rigidbody : Rigidbody in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "rigidbody : Rigidbody"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type TransformDirection : Transform to TransformDirection : Rigidbody in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 75,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "TransformDirection : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 75,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "TransformDirection : Rigidbody"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable transform : Transform to rigidbody : Rigidbody in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "rigidbody : Rigidbody"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rigidbody : Rigidbody to transform : Transform in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rigidbody : Rigidbody"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type TransformDirection : Rigidbody to TransformDirection : Transform in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 75,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "TransformDirection : Rigidbody"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 75,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "TransformDirection : Transform"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable rigidbody : Rigidbody to transform : Transform in method public Transform() : RigidbodyState from class TransformUtilHelpers",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rigidbody : Rigidbody"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Assets/MyScripts/Utils/TransformUtils/TransformUtilHelpers.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

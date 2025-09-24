@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/mixed-reality-extension-unity.git",
+	"sha1": "a62bdbfaa765503a4818718dcdf35c91663f8d93",
+	"url": "https://github.com/microsoft/mixed-reality-extension-unity/commit/a62bdbfaa765503a4818718dcdf35c91663f8d93",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter layerApplicator : ILayerApplicator in method public InitializeAPI(defaultMaterial UnityEngine.Material, layerApplicator ILayerApplicator, behaviorFactory IBehaviorFactory) : void from class MREAPI",
+	"leftSideLocations": [{
+		"filePath": "MREUnityRuntime/MREUnityRuntimeLib/API/MREApi.cs",
+		"startLine": 36,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public InitializeAPI(defaultMaterial UnityEngine.Material, behaviorFactory IBehaviorFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "MREUnityRuntime/MREUnityRuntimeLib/API/MREApi.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "layerApplicator : ILayerApplicator"
+}, {
+		"filePath": "MREUnityRuntime/MREUnityRuntimeLib/API/MREApi.cs",
+		"startLine": 39,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public InitializeAPI(defaultMaterial UnityEngine.Material, layerApplicator ILayerApplicator, behaviorFactory IBehaviorFactory) : void"
+}]
+}
+]
+}]
+}

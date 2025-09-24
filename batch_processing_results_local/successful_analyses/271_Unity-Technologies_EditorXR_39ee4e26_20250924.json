@@ -1,0 +1,171 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "39ee4e263f640cb6b1e08bfccc91a0d0778d3067",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/39ee4e263f640cb6b1e08bfccc91a0d0778d3067",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type changeMenuState : Action<SpatialinterfaceState> to changeMenuState : Action<SpatialMenu.SpatialMenuState> in class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 46,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "changeMenuState : Action<SpatialinterfaceState>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 53,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "changeMenuState : Action<SpatialMenu.SpatialMenuState>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type state : SpatialInterfaceState to state : SpatialMenuState in method package ChangeMenuState(state SpatialMenuState) : void from class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "state : SpatialInterfaceState"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "state : SpatialMenuState"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute spatialInterfaceState : SpatialInterfaceState to spatialMenuState : SpatialMenuState in class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialInterfaceState : SpatialInterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "spatialMenuState : SpatialMenuState"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialInterfaceState : SpatialInterfaceState to spatialMenuState : SpatialMenuState in class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialInterfaceState : SpatialInterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "spatialMenuState : SpatialMenuState"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_SpatialInterfaceState : SpatialInterfaceState to m_SpatialMenuState : SpatialMenuState in class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 31,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_SpatialInterfaceState : SpatialInterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_SpatialMenuState : SpatialMenuState"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_SpatialInterfaceState : SpatialInterfaceState to m_SpatialMenuState : SpatialMenuState in class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 31,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_SpatialInterfaceState : SpatialInterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_SpatialMenuState : SpatialMenuState"
+}]
+}
+]
+}]
+}

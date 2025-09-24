@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "ef816a3daa213c60ce8ba815b70db651affbdd00",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/ef816a3daa213c60ce8ba815b70db651affbdd00",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type AttributesList : List<ModuleAttributeData> to AttributesList : BindableList<ModuleAttributeData> in class AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "AttributesList : List<ModuleAttributeData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 46,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "AttributesList : BindableList<ModuleAttributeData>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type settingsFlowContainer : Container<AttributeFlow> to settingsFlowContainer : AttributeFlow in class ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settingsFlowContainer : Container<AttributeFlow>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 27,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "settingsFlowContainer : AttributeFlow"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type outputParametersFlowContainer : Container<AttributeFlow> to outputParametersFlowContainer : AttributeFlow in class ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "outputParametersFlowContainer : Container<AttributeFlow>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 27,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "outputParametersFlowContainer : AttributeFlow"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1008 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "d0c4abe7b99a9a047fbf2f78b5ffd6bc33799888",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/d0c4abe7b99a9a047fbf2f78b5ffd6bc33799888",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable zPos : var in method public CalculateEquitorialPosition(radius float) : Vector3 from class CelestialSphereItem",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "zPos : var"
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type starPrefab : GameObject to starPrefab : StarComponent in class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "starPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "starPrefab : StarComponent"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type constellationPrefab : GameObject to constellationPrefab : Constellation in class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "constellationPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 26,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "constellationPrefab : Constellation"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private hourAngle(localSiderialTime double, alpha float) : float from class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private hourAngle(localSiderialTime double, alpha float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 41,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private hourAngle(localSiderialTime double, alpha float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private hourAngle(localSiderialTime double, alpha float) : float from class CelestialSphereItem to private hourAngle(localSiderialTime double, alpha float) : float from class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private hourAngle(localSiderialTime double, alpha float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 41,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private hourAngle(localSiderialTime double, alpha float) : float"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter starObject : GameObject in method package showStar(starObject GameObject, show bool) : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "starObject : GameObject"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 281,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ShowStar(show bool) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 281,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package showStar(starObject GameObject, show bool) : void from class DataController to public ShowStar(show bool) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 281,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public CalculateEquitorialPosition(radianRA float, radianDec float, radius float) : Vector3 extracted from public CalculateEquitorialPosition(radius float) : Vector3 in class CelestialSphereItem & moved to class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 40,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public CalculateEquitorialPosition(radius float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 51,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CalculateEquitorialPosition(radianRA float, radianDec float, radius float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public CalculateEquitorialPosition(radius float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 78,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Utils.CalculateEquitorialPosition(radianRA,radianDec,radius)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public CalculateHorizonPosition(RA float, radianDec float, radius float, currentSiderialTime double, observerLatitude float) : Vector3 extracted from public CalculateHorizonPosition(radius float, currentSiderialTime double, observerLatitude float) : Vector3 in class CelestialSphereItem & moved to class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 49,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public CalculateHorizonPosition(radius float, currentSiderialTime double, observerLatitude float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 168,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 147,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 31,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 31,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 65,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 70,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 59,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CalculateHorizonPosition(RA float, radianDec float, radius float, currentSiderialTime double, observerLatitude float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 168,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 147,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 31,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 31,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 77,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public CalculateHorizonPosition(radius float, currentSiderialTime double, observerLatitude float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Core/Star.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 16,
+		"endColumn": 108,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Utils.CalculateHorizonPosition(RA,radianDec,radius,currentSiderialTime,observerLatitude)"
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type connectionLine : GameObject to connectionLine : LineRenderer in method public ShowConstellationLines(show bool, width float) : void from class Constellation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 36,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "connectionLine : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 25,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 25,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "connectionLine : LineRenderer"
+}, {
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 29,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter width : float in method public ShowConstellationLines(show bool, width float) : void from class Constellation",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 39,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowConstellationLines(show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 51,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "width : float"
+}, {
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 38,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ShowConstellationLines(show bool, width float) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public lineWidth : float from class Constellation to public lineWidth : float from class ConstellationsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Constellation.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public lineWidth : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ConstellationsController.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public lineWidth : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public shortName : string from class DataController.ConstellationNamePair to public shortName : string from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public shortName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public shortName : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public fullName : string from class DataController.ConstellationNamePair to public fullName : string from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fullName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public fullName : string"
+}]
+}
+]
+}]
+}

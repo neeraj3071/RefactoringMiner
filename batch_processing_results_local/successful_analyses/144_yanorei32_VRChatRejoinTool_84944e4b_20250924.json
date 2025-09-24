@@ -1,0 +1,864 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/yanorei32/VRChatRejoinTool.git",
+	"sha1": "84944e4bb07f9ca0bd77fe63feb2cbc825d6f8c2",
+	"url": "https://github.com/yanorei32/VRChatRejoinTool/commit/84944e4bb07f9ca0bd77fe63feb2cbc825d6f8c2",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type t : TextBox to t : var in method package openContextMenu(sender object, e EventArgs) : void from class EditInstanceForm",
+	"leftSideLocations": [{
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "t : TextBox"
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 4,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "t : var"
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type t : TextBox to t : var in method package copyInstanceLinkClick(sender object, e EventArgs) : void from class EditInstanceForm",
+	"leftSideLocations": [{
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "t : TextBox"
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 222,
+		"endLine": 225,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "t : var"
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 6,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/Form/EditInstanceForm.cs",
+		"startLine": 228,
+		"endLine": 231,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class Permission",
+	"leftSideLocations": [{
+		"filePath": "src/Permission.cs",
+		"startLine": 1,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Permission"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Permission.cs",
+		"startLine": 2,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Permission"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 11,
+		"endLine": 411,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Program"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 13,
+		"endLine": 403,
+		"startColumn": 2,
+		"endColumn": 5,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "Program"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package showMessage(message string, noDialog bool) : void renamed to package ShowMessage(showDialog bool, lazyMessage Func<string>) : void in class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 120,
+		"endLine": 131,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showMessage(message string, noDialog bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 132,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package ShowMessage(showDialog bool, lazyMessage Func<string>) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type instanceRegex : Regex to instanceRegex : var in method package readLogfile(fs FileStream, visitHistory List<Visit>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "instanceRegex : Regex"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 8,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "instanceRegex : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dateTimeRegex : Regex to dateTimeRegex : var in method package readLogfile(fs FileStream, visitHistory List<Visit>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dateTimeRegex : Regex"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 8,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dateTimeRegex : var"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable pathExt : var in method package FindInPath(filename string) : string from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 8,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "pathExt : var"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type IEnumerable<FileInfo> to ICollection<FileInfo> in method package getLogFiles() : ICollection<FileInfo> from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "IEnumerable<FileInfo>"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 108,
+		"endLine": 118,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getLogFiles() : IEnumerable<FileInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 10,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ICollection<FileInfo>"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 118,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package getLogFiles() : ICollection<FileInfo>"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter message : string to message : var in method package ShowMessage(showDialog bool, lazyMessage Func<string>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "message : string"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 124,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "message : var"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 140,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type message : string to message : var in method package ShowMessage(showDialog bool, lazyMessage Func<string>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "message : string"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 124,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "message : var"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 140,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter noDialog : bool to showDialog : bool in method package ShowMessage(showDialog bool, lazyMessage Func<string>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 42,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "noDialog : bool"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 121,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "showDialog : bool"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 138,
+		"endLine": 148,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lazyMessage : Func<string> in method package ShowMessage(showDialog bool, lazyMessage Func<string>) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 120,
+		"endLine": 131,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showMessage(message string, noDialog bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 44,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lazyMessage : Func<string>"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 132,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package ShowMessage(showDialog bool, lazyMessage Func<string>) : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class ServerRegion",
+	"leftSideLocations": [{
+		"filePath": "src/ServerRegion.cs",
+		"startLine": 1,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "ServerRegion"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/ServerRegion.cs",
+		"startLine": 2,
+		"endLine": 9,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "ServerRegion"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetLaunchInstanceLink(i Instance) : string from class VRChat to public GetLaunchInstanceLink(i Instance) : string from class LinkGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLaunchInstanceLink(i Instance) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 3,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetLaunchInstanceLink(i Instance) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetInstanceLink(i Instance) : string from class VRChat to public GetInstanceLink(i Instance) : string from class LinkGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetInstanceLink(i Instance) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 7,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetInstanceLink(i Instance) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetUserIdLink(i Instance) : string from class VRChat to public GetUserIdLink(i Instance) : string from class LinkGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 39,
+		"endLine": 44,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetUserIdLink(i Instance) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 16,
+		"endLine": 21,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetUserIdLink(i Instance) : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class LinkGenerator from class VRChat",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 7,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRChat"
+}, {
+		"filePath": "src/VRChat.cs",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLaunchInstanceLink(i Instance) : string"
+}, {
+		"filePath": "src/VRChat.cs",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetInstanceLink(i Instance) : string"
+}, {
+		"filePath": "src/VRChat.cs",
+		"startLine": 39,
+		"endLine": 44,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetUserIdLink(i Instance) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 9,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VRChat"
+}, {
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 2,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "LinkGenerator"
+}, {
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 3,
+		"endLine": 5,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetLaunchInstanceLink(i Instance) : string"
+}, {
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 7,
+		"endLine": 14,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetInstanceLink(i Instance) : string"
+}, {
+		"filePath": "src/Utility/LinkGenerator.cs",
+		"startLine": 16,
+		"endLine": 21,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetUserIdLink(i Instance) : string"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package CopyLaunchInstanceLinkToClipboard(i Instance) : void from class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyLaunchInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CopyLaunchInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package CopyLaunchInstanceLinkToClipboard(i Instance) : void from class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyLaunchInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package CopyLaunchInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package CopyInstanceLinkToClipboard(i Instance) : void from class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CopyInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package CopyInstanceLinkToClipboard(i Instance) : void from class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package CopyInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "RejoinToolForm"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 5,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "ClipboardUtility"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "RejoinToolForm"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 5,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "ClipboardUtility"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected copyLaunchInstanceLinkToClipboard(i Instance) : void renamed to package CopyLaunchInstanceLinkToClipboard(i Instance) : void in class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyLaunchInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package CopyLaunchInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected copyInstanceLinkToClipboard(i Instance) : void renamed to package CopyInstanceLinkToClipboard(i Instance) : void in class ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected copyInstanceLinkToClipboard(i Instance) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 15,
+		"endColumn": 7,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package CopyInstanceLinkToClipboard(i Instance) : void"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class RejoinToolForm renamed to ClipboardUtility",
+	"leftSideLocations": [{
+		"filePath": "src/Form/RejoinToolForm.cs",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "RejoinToolForm"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Utility/ClipboardUtility.cs",
+		"startLine": 5,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ClipboardUtility"
+}]
+}
+]
+}]
+}

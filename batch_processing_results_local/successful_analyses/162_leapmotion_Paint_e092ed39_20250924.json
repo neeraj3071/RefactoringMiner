@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/leapmotion/Paint.git",
+	"sha1": "e092ed3966bcf697fe40991da94a739d8d5b1f84",
+	"url": "https://github.com/leapmotion/Paint/commit/e092ed3966bcf697fe40991da94a739d8d5b1f84",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type collidingCandidates : Collider[] to collidingCandidates : Collider[][] in class HeuristicGrabClassifier",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotionModules/InteractionEngine/Scripts/ControllerImplementations/HeuristicGrabClassifier.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "collidingCandidates : Collider[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotionModules/InteractionEngine/Scripts/ControllerImplementations/HeuristicGrabClassifier.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 18,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "collidingCandidates : Collider[][]"
+}]
+}
+]
+}]
+}

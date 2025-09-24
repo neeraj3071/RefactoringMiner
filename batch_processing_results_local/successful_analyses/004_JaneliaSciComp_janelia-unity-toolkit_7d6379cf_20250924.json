@@ -1,0 +1,1098 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JaneliaSciComp/janelia-unity-toolkit.git",
+	"sha1": "7d6379cfde7ac5f073950b7fd0e1a06f7f659f52",
+	"url": "https://github.com/JaneliaSciComp/janelia-unity-toolkit/commit/7d6379cfde7ac5f073950b7fd0e1a06f7f659f52",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class .KinematicSubject..PlaybackAugmenter moved to PlaybackHandler.PlaybackAugmenter",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 75,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".KinematicSubject..PlaybackAugmenter"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 64,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "PlaybackHandler.PlaybackAugmenter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class FicTracSubjectIntegrated.Correction moved to FicTracSubjectIntegrated.Transformation.Correction",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 229,
+		"endLine": 232,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FicTracSubjectIntegrated.Correction"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 238,
+		"endLine": 241,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "FicTracSubjectIntegrated.Transformation.Correction"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public worldPosition : Vector3 from class FicTracSubjectIntegrated.Transformation to public worldPosition : Vector3 from class PlayableLogEntry",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public worldRotationDegs : Vector3 from class FicTracSubjectIntegrated.Transformation to public worldRotationDegs : Vector3 from class PlayableLogEntry",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public worldPosition : Vector3 from class KinematicSubject.Transformation to public worldPosition : Vector3 from class PlayableLogEntry",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public worldRotationDegs : Vector3 from class KinematicSubject.Transformation to public worldRotationDegs : Vector3 from class PlayableLogEntry",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ConfigurePlayback() : bool from class KinematicSubject to public ConfigurePlayback() : void from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 360,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConfigurePlayback() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 73,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ConfigurePlayback() : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type bool to void in method public ConfigurePlayback() : void from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 360,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConfigurePlayback() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 73,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public ConfigurePlayback() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public ConfigurePlayback() : void from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 360,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConfigurePlayback() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 73,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ConfigurePlayback() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Filter(l List<Transformation>) : List<Transformation> from class KinematicSubject to private Filter(l List<Transformation>) : List<Transformation> from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 410,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Filter(l List<Transformation>) : List<Transformation>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 151,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private Filter(l List<Transformation>) : List<Transformation>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private CurrentPlaybackTransformation() : Transformation from class KinematicSubject to private CurrentPlaybackTransformation() : Transformation from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 415,
+		"endLine": 440,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CurrentPlaybackTransformation() : Transformation"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 156,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private CurrentPlaybackTransformation() : Transformation"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackRequested : bool from class KinematicSubject to private _playbackRequested : bool from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 22,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackRequested : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 22,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackRequested : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackActive : bool from class KinematicSubject to private _playbackActive : bool from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 486,
+		"endLine": 486,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackActive : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackActive : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackLogFile : string from class KinematicSubject to private _playbackLogFile : string from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogFile : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackLogFile : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackLogEntries : List<Transformation> from class KinematicSubject to private _playbackLogEntries : List<Transformation> from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogEntries : List<Transformation>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackLogEntries : List<Transformation>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackLogIndex : int from class KinematicSubject to private _playbackLogIndex : int from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackLogIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _playbackStartFrame : int from class KinematicSubject to private _playbackStartFrame : int from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackStartFrame : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackStartFrame : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package _playbackAugmenters : List<PlaybackAugmenter> from class KinematicSubject to private _playbackAugmenters : List<PlaybackAugmenter> from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 494,
+		"endLine": 494,
+		"startColumn": 49,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package _playbackAugmenters : List<PlaybackAugmenter>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 48,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _playbackAugmenters : List<PlaybackAugmenter>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private _playbackAugmenters : List<PlaybackAugmenter> from class PlaybackHandler",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 494,
+		"endLine": 494,
+		"startColumn": 49,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package _playbackAugmenters : List<PlaybackAugmenter>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 48,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _playbackAugmenters : List<PlaybackAugmenter>"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class PlayableLogEntry from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 215,
+		"endLine": 219,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FicTracSubjectIntegrated.Transformation"
+}, {
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}, {
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 226,
+		"endLine": 249,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "FicTracSubjectIntegrated.Transformation"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 17,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "PlayableLogEntry"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class PlayableLogEntry from class KinematicSubject.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 449,
+		"endLine": 478,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KinematicSubject.Transformation"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 308,
+		"endLine": 335,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "KinematicSubject.Transformation"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 17,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "PlayableLogEntry"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public worldPosition : Vector3"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public worldRotationDegs : Vector3"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class PlaybackHandler from class KinematicSubject",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 44,
+		"endLine": 495,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KinematicSubject"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 360,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConfigurePlayback() : bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 410,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Filter(l List<Transformation>) : List<Transformation>"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 415,
+		"endLine": 440,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CurrentPlaybackTransformation() : Transformation"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 22,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackRequested : bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 486,
+		"endLine": 486,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackActive : bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogFile : string"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogEntries : List<Transformation>"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackLogIndex : int"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _playbackStartFrame : int"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 494,
+		"endLine": 494,
+		"startColumn": 49,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package _playbackAugmenters : List<PlaybackAugmenter>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 41,
+		"endLine": 345,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "KinematicSubject"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 55,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "PlaybackHandler"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 73,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ConfigurePlayback() : void"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 151,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private Filter(l List<Transformation>) : List<Transformation>"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 156,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CurrentPlaybackTransformation() : Transformation"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 22,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackRequested : bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackActive : bool"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackLogFile : string"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackLogEntries : List<Transformation>"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackLogIndex : int"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackStartFrame : int"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 48,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _playbackAugmenters : List<PlaybackAugmenter>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private OnRuntimeMethodLoad() : void from class PlaybackHandlerRuntimeInitializeOnLoad",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 122,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 43,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private OnRuntimeMethodLoad() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private OnRuntimeMethodLoad() : void from class PlaybackHandlerRuntimeInitializeOnLoad",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 122,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 43,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private OnRuntimeMethodLoad() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public Awake() : void from class KinematicSubject to private OnRuntimeMethodLoad() : void from class PlaybackHandlerRuntimeInitializeOnLoad",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.cs",
+		"startLine": 122,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/PlaybackHandler.cs",
+		"startLine": 43,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private OnRuntimeMethodLoad() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _currentTransformation : Transformation from class FicTracSubjectIntegrated to private _currentTransformation : Transformation from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 32,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _currentTransformation : Transformation"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 32,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _currentTransformation : Transformation"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _thresholder : FicTracSpinThresholder from class FicTracSubjectIntegrated to private _thresholder : FicTracSpinThresholder from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 40,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _thresholder : FicTracSpinThresholder"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 40,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _thresholder : FicTracSpinThresholder"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _dCorrectionBase : float from class FicTracSubjectIntegrated to private _dCorrectionBase : float from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _dCorrectionBase : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _dCorrectionBase : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _dCorrection : float from class FicTracSubjectIntegrated to private _dCorrection : float from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _dCorrection : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _dCorrection : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _dCorrectionLatest : float from class FicTracSubjectIntegrated to private _dCorrectionLatest : float from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _dCorrectionLatest : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _dCorrectionLatest : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _currentCorrection : Correction from class FicTracSubjectIntegrated to private _currentCorrection : Correction from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _currentCorrection : Correction"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _currentCorrection : Correction"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _averager : FicTracAverager from class FicTracSubjectIntegrated to private _averager : FicTracAverager from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _averager : FicTracAverager"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _averager : FicTracAverager"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _framesSinceLogWrite : int from class FicTracSubjectIntegrated to private _framesSinceLogWrite : int from class FicTracSubjectIntegrated.Transformation",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _framesSinceLogWrite : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.fictrac-collision/Runtime/FicTracSubjectIntegrated.cs",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _framesSinceLogWrite : int"
+}]
+}
+]
+}]
+}

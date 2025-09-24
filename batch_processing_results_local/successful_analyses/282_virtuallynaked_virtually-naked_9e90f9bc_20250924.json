@@ -1,0 +1,240 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/virtuallynaked/virtually-naked.git",
+	"sha1": "9e90f9bc189598774585830ef4813b8bdeccb3e0",
+	"url": "https://github.com/virtuallynaked/virtually-naked/commit/9e90f9bc189598774585830ef4813b8bdeccb3e0",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Viewer/src/actor/animation/procedural to Viewer/src/actor/animation/inversekinematics",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 3,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "InverseKinematicsAnimator"
+}, {
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsProblem.cs",
+		"startLine": 3,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "InverseKinematicsProblem"
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsAnimator.cs",
+		"startLine": 1,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InverseKinematicsAnimator"
+}, {
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsProblem.cs",
+		"startLine": 3,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InverseKinematicsProblem"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter boneRelativeSourcePosition : Vector3 to unposedSourcePosition : Vector3 in method public InverseKinematicsProblem(sourceBone RigidBone, unposedSourcePosition Vector3, targetPosition Vector3) from class InverseKinematicsProblem",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsProblem.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 56,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "boneRelativeSourcePosition : Vector3"
+}, {
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsProblem.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsProblem.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 56,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "unposedSourcePosition : Vector3"
+}, {
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsProblem.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute BoneRelativeSourcePosition : Vector3 to UnposedSourcePosition : Vector3 in class InverseKinematicsProblem",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsProblem.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "BoneRelativeSourcePosition : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsProblem.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "UnposedSourcePosition : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3 from class InverseKinematicsAnimator to private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3 from class BasicInverseKinematicsSolver",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/BasicInverseKinematicsSolver.cs",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void from class InverseKinematicsAnimator to private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void from class BasicInverseKinematicsSolver",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 28,
+		"endLine": 50,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/BasicInverseKinematicsSolver.cs",
+		"startLine": 8,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class BasicInverseKinematicsSolver from class InverseKinematicsAnimator",
+	"leftSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 3,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "InverseKinematicsAnimator"
+}, {
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3"
+}, {
+		"filePath": "Viewer/src/actor/animation/procedural/InverseKinematicsAnimator.cs",
+		"startLine": 28,
+		"endLine": 50,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Viewer/src/actor/animation/inversekinematics/InverseKinematicsAnimator.cs",
+		"startLine": 1,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "InverseKinematicsAnimator"
+}, {
+		"filePath": "Viewer/src/actor/animation/inversekinematics/BasicInverseKinematicsSolver.cs",
+		"startLine": 3,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "BasicInverseKinematicsSolver"
+}, {
+		"filePath": "Viewer/src/actor/animation/inversekinematics/BasicInverseKinematicsSolver.cs",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetCenterPosition(boneTransforms DualQuaternion[], bone RigidBone) : Vector3"
+}, {
+		"filePath": "Viewer/src/actor/animation/inversekinematics/BasicInverseKinematicsSolver.cs",
+		"startLine": 8,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ApplyCorrection(inputs RigidBoneSystemInputs, boneTransforms DualQuaternion[], bone RigidBone, Vector3 ref) : void"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Viewer/src/actor/animation/procedural to Viewer/src/actor/animation/inversekinematics",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

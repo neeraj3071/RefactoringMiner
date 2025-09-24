@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "d0b6b9f90a3c428e5074059df798e2e7d8c875b1",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/d0b6b9f90a3c428e5074059df798e2e7d8c875b1",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Value : int to Value : Enum in class EnumModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Value : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 17,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Value : Enum"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable init : get to set : get in initializer EnumModuleSetting from class EnumModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 35,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "init : get"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "set : get"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

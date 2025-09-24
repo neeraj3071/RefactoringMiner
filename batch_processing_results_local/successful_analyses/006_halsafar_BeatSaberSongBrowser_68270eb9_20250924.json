@@ -1,0 +1,195 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/halsafar/BeatSaberSongBrowser.git",
+	"sha1": "68270eb99c3ffc55f23b8eb1e5c0c040c4cfced0",
+	"url": "https://github.com/halsafar/BeatSaberSongBrowser/commit/68270eb99c3ffc55f23b8eb1e5c0c040c4cfced0",
+	"refactorings": [{
+	"type": "Inline Attribute",
+	"description": "Inline Attribute package Name : String in class PlaylistFlowCoordinator",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 29,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "inlined attribute declaration",
+		"codeElement": "package Name : String"
+}, {
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 31,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the name of the inlined attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_INITIALIZER",
+		"description": "statement with the initializer of the inlined attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter playlist : Playlist in method public GetSongByPlaylistSong(playlist Playlist, song PlaylistSong) : IEnumerator from class PlaylistFlowCoordinator",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 273,
+		"endLine": 295,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSongByPlaylistSong(song PlaylistSong) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 50,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "playlist : Playlist"
+}, {
+		"filePath": "SongBrowserPlugin/UI/Playlists/PlaylistFlowCoordinator.cs",
+		"startLine": 289,
+		"endLine": 317,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GetSongByPlaylistSong(playlist Playlist, song PlaylistSong) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute image : string to Image : string in class Playlist",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "image : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Image : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute playlistTitle : String to Title : String in class Playlist",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "playlistTitle : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Title : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute playlistAuthor : String to Author : String in class Playlist",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "playlistAuthor : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Author : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute songs : List<PlaylistSong> to Songs : List<PlaylistSong> in class Playlist",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 35,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "songs : List<PlaylistSong>"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 35,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Songs : List<PlaylistSong>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute playlistPath : String to Path : String in class Playlist",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "playlistPath : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/Playlist.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Path : String"
+}]
+}
+]
+}]
+}

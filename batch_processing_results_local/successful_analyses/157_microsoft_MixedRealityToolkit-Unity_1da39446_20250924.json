@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "1da394465e12e5c9704de5c82ff29c8216fad3de",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/1da394465e12e5c9704de5c82ff29c8216fad3de",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnInputPressed() : void from class ControllerPoseSynchronizer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 159,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnInputPressed() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 164,
+		"endLine": 167,
+		"startColumn": 24,
+		"endColumn": 23,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnInputPressed() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnPositionChanged(eventData InputEventData<Vector3>) : void from class ControllerPoseSynchronizer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 168,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPositionChanged(eventData InputEventData<Vector3>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 24,
+		"endColumn": 85,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnPositionChanged(eventData InputEventData<Vector3>) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnRotationChanged(eventData InputEventData<Quaternion>) : void from class ControllerPoseSynchronizer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 183,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnRotationChanged(eventData InputEventData<Quaternion>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 24,
+		"endColumn": 88,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnRotationChanged(eventData InputEventData<Quaternion>) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnPoseInputChanged(eventData InputEventData<MixedRealityPose>) : void from class ControllerPoseSynchronizer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 198,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPoseInputChanged(eventData InputEventData<MixedRealityPose>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/Handlers/ControllerPoseSynchronizer.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 24,
+		"endColumn": 95,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnPoseInputChanged(eventData InputEventData<MixedRealityPose>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package OnPositionInputChanged(eventData InputEventData<Vector2>) : void renamed to package OnInputChanged(eventData InputEventData<Vector2>) : void in class MixedRealityControllerVisualizer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Controllers/MixedRealityControllerVisualizer.cs",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnPositionInputChanged(eventData InputEventData<Vector2>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Controllers/MixedRealityControllerVisualizer.cs",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package OnInputChanged(eventData InputEventData<Vector2>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public OnPositionInputChanged(eventData InputEventData<Vector2>) : void renamed to public OnInputChanged(eventData InputEventData<Vector2>) : void in class MousePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Pointers/MousePointer.cs",
+		"startLine": 170,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPositionInputChanged(eventData InputEventData<Vector2>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Pointers/MousePointer.cs",
+		"startLine": 170,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnInputChanged(eventData InputEventData<Vector2>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public OnPositionInputChanged(eventData InputEventData<Vector2>) : void renamed to public OnInputChanged(eventData InputEventData<Vector2>) : void in class TeleportPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 251,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPositionInputChanged(eventData InputEventData<Vector2>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 251,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnInputChanged(eventData InputEventData<Vector2>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package OnPositionInputChanged(eventData InputEventData<Vector2>) renamed to package OnInputChanged(eventData InputEventData<Vector2>) in class InteractionReceiver",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Receivers/InteractionReceiver.cs",
+		"startLine": 209,
+		"endLine": 215,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnPositionInputChanged(eventData InputEventData<Vector2>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/UX/Scripts/Receivers/InteractionReceiver.cs",
+		"startLine": 222,
+		"endLine": 228,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package OnInputChanged(eventData InputEventData<Vector2>)"
+}]
+}
+]
+}]
+}
