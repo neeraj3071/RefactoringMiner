@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Innoactive/Creator.git",
+	"sha1": "28edf2700559252ff66712d26a7d818c0f3a1539",
+	"url": "https://github.com/Innoactive/Creator/commit/28edf2700559252ff66712d26a7d818c0f3a1539",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to GameObject in method protected SetupPrefab(prefab string) : GameObject from class SceneSetup",
+	"leftSideLocations": [{
+		"filePath": "Editor/Setup/SceneSetup.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 19,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Editor/Setup/SceneSetup.cs",
+		"startLine": 42,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetupPrefab(prefab string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Setup/SceneSetup.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 19,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "GameObject"
+}, {
+		"filePath": "Editor/Setup/SceneSetup.cs",
+		"startLine": 42,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected SetupPrefab(prefab string) : GameObject"
+}]
+}
+]
+}]
+}

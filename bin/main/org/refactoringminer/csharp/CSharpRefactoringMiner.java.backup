@@ -1,0 +1,814 @@
+package org.refactoringminer.csharp;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.HashMap;
+import java.io.File;
+
+import org.eclipse.jgit.lib.Repository;
+import org.refactoringminer.api.GitHistoryRefactoringMiner;
+import org.refactoringminer.api.GitService;
+import org.refactoringminer.api.Refactoring;
+import org.refactoringminer.api.RefactoringHandler;
+import org.refactoringminer.api.RefactoringMinerTimedOutException;
+import org.refactoringminer.rm1.GitHistoryRefactoringMinerImpl;
+import org.refactoringminer.util.GitServiceImpl;
+import org.refactoringminer.csharp.cli.CSharpRefactoringMinerCLI;
+import org.refactoringminer.csharp.integration.CSharpASTBridge;
+
+/**
+ * C# RefactoringMiner - Refactoring detection tool for C# projects using Git repositories.
+ * Compatible with RefactoringMiner command-line interface.
+ * 
+ * Command-line usage:
+ *   -a &lt;git-repo-folder&gt; &lt;branch&gt; -json &lt;path-to-json-file&gt;                           Detect all refactorings at &lt;branch&gt; for C# &lt;git-repo-folder&gt;
+ *   -bc &lt;git-repo-folder&gt; &lt;start-commit-sha1&gt; &lt;end-commit-sha1&gt; -json &lt;path-to-json-file&gt; Detect refactorings between commits for C# project
+ *   -bt &lt;git-repo-folder&gt; &lt;start-tag&gt; &lt;end-tag&gt; -json &lt;path-to-json-file&gt;             Detect refactorings between tags for C# project
+ *   -c &lt;git-repo-folder&gt; &lt;commit-sha1&gt; -json &lt;path-to-json-file&gt;                     Detect refactorings at specified commit for C# project
+ *   -gc &lt;git-URL&gt; &lt;commit-sha1&gt; &lt;timeout&gt; -json &lt;path-to-json-file&gt;                  Detect refactorings at GitHub commit for C# project
+ *   -gp &lt;git-URL&gt; &lt;pull-request&gt; &lt;timeout&gt; -json &lt;path-to-json-file&gt;                 Detect refactorings at GitHub pull request for C# project
+ *   -h                                                                           Show this help message
+ */
+public class CSharpRefactoringMiner {
+    
+    private static Path path = null;
+    
+    public static void main(String[] args) throws Exception {
+        if (args.length < 1) {
+            throw argumentException();
+        }
+
+        final String option = args[0];
+        if (option.equalsIgnoreCase("-h") || option.equalsIgnoreCase("--h") || 
+            option.equalsIgnoreCase("-help") || option.equalsIgnoreCase("--help")) {
+            printTips();
+            return;
+        }
+
+        if (option.equalsIgnoreCase("-a")) {
+            detectAll(args);
+        } else if (option.equalsIgnoreCase("-bc")) {
+            detectBetweenCommits(args);
+        } else if (option.equalsIgnoreCase("-bt")) {
+            detectBetweenTags(args);
+        } else if (option.equalsIgnoreCase("-c")) {
+            detectAtCommit(args);
+        } else if (option.equalsIgnoreCase("-gc")) {
+            detectAtGitHubCommit(args);
+        } else if (option.equalsIgnoreCase("-gp")) {
+            detectAtGitHubPullRequest(args);
+        } else if (option.equalsIgnoreCase("diff")) {
+            // For future AST diff implementation
+            throw new UnsupportedOperationException("AST diff for C# is not yet implemented. Use -c for commit-based detection.");
+        } else {
+            throw argumentException();
+        }
+    }
+    
+    // Git-based refactoring detection methods (adapted from original RefactoringMiner)
+    
+    public static void detectAll(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 3);
+        if (args.length > maxArgLength) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String branch = null;
+        if (containsBranchArgument(args)) {
+            branch = args[2];
+        }
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = repo.getConfig().getString("remote", "origin", "url");
+            GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+            startJSON();
+            detector.detectAll(repo, branch, new RefactoringHandler() {
+                private int commitCount = 0;
+                @Override
+                public void handle(String commitId, List<Refactoring> refactorings) {
+                    if(commitCount > 0) {
+                        betweenCommitsJSON();
+                    }
+                    commitJSON(gitURL, commitId, refactorings);
+                    commitCount++;
+                }
+
+                @Override
+                public void onFinish(int refactoringsCount, int commitsCount, int errorCommitsCount) {
+                    System.out.println(String.format("Total count: [Commits: %d, Errors: %d, Refactorings: %d]",
+                            commitsCount, errorCommitsCount, refactoringsCount));
+                }
+
+                @Override
+                public void handleException(String commit, Exception e) {
+                    System.err.println("Error processing commit " + commit);
+                    e.printStackTrace(System.err);
+                }
+            });
+            endJSON();
+        }
+    }
+    
+    public static void detectBetweenCommits(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 4);
+        if (args.length != maxArgLength) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String startCommitId = args[2];
+        String endCommitId = args[3];
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = repo.getConfig().getString("remote", "origin", "url");
+            GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+            startJSON();
+            detector.detectBetweenCommits(repo, startCommitId, endCommitId, new RefactoringHandler() {
+                private int commitCount = 0;
+                @Override
+                public void handle(String commitId, List<Refactoring> refactorings) {
+                    if(commitCount > 0) {
+                        betweenCommitsJSON();
+                    }
+                    commitJSON(gitURL, commitId, refactorings);
+                    commitCount++;
+                }
+
+                @Override
+                public void onFinish(int refactoringsCount, int commitsCount, int errorCommitsCount) {
+                    System.out.println(String.format("Total count: [Commits: %d, Errors: %d, Refactorings: %d]",
+                            commitsCount, errorCommitsCount, refactoringsCount));
+                }
+
+                @Override
+                public void handleException(String commit, Exception e) {
+                    System.err.println("Error processing commit " + commit);
+                    e.printStackTrace(System.err);
+                }
+            });
+            endJSON();
+        }
+    }
+    
+    public static void detectBetweenTags(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 4);
+        if (args.length != maxArgLength) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String startTag = args[2];
+        String endTag = args[3];
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = repo.getConfig().getString("remote", "origin", "url");
+            GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+            startJSON();
+            detector.detectBetweenTags(repo, startTag, endTag, new RefactoringHandler() {
+                private int commitCount = 0;
+                @Override
+                public void handle(String commitId, List<Refactoring> refactorings) {
+                    if(commitCount > 0) {
+                        betweenCommitsJSON();
+                    }
+                    commitJSON(gitURL, commitId, refactorings);
+                    commitCount++;
+                }
+
+                @Override
+                public void onFinish(int refactoringsCount, int commitsCount, int errorCommitsCount) {
+                    System.out.println(String.format("Total count: [Commits: %d, Errors: %d, Refactorings: %d]",
+                            commitsCount, errorCommitsCount, refactoringsCount));
+                }
+
+                @Override
+                public void handleException(String commit, Exception e) {
+                    System.err.println("Error processing commit " + commit);
+                    e.printStackTrace(System.err);
+                }
+            });
+            endJSON();
+        }
+    }
+    
+    public static void detectAtCommit(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 3);
+        if (args.length != maxArgLength) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String commitId = args[2];
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = repo.getConfig().getString("remote", "origin", "url");
+            GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+            startJSON();
+            detector.detectAtCommit(repo, commitId, new RefactoringHandler() {
+                @Override
+                public void handle(String commitId, List<Refactoring> refactorings) {
+                    commitJSON(gitURL, commitId, refactorings);
+                }
+
+                @Override
+                public void handleException(String commit, Exception e) {
+                    System.err.println("Error processing commit " + commit);
+                    e.printStackTrace(System.err);
+                }
+            });
+            endJSON();
+        }
+    }
+
+    public static void detectAtGitHubCommit(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 4);
+        if (args.length != maxArgLength) {
+            throw argumentException();
+        }
+        String gitURL = args[1];
+        String commitId = args[2];
+        int timeout = Integer.parseInt(args[3]);
+        GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+        startJSON();
+        detector.detectAtCommit(gitURL, commitId, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                commitJSON(gitURL, commitId, refactorings);
+            }
+
+            @Override
+            public void handleException(String commit, Exception e) {
+                System.err.println("Error processing commit " + commit);
+                e.printStackTrace(System.err);
+            }
+        }, timeout);
+        endJSON();
+    }
+
+    public static void detectAtGitHubPullRequest(String[] args) throws Exception {
+        int maxArgLength = processJSONOption(args, 4);
+        if (args.length != maxArgLength) {
+            throw argumentException();
+        }
+        String gitURL = args[1];
+        int pullRequestId = Integer.parseInt(args[2]);
+        int timeout = Integer.parseInt(args[3]);
+        GitHistoryRefactoringMiner detector = new GitHistoryRefactoringMinerImpl();
+        startJSON();
+        detector.detectAtPullRequest(gitURL, pullRequestId, new RefactoringHandler() {
+            private int commitCount = 0;
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                if(commitCount > 0) {
+                    betweenCommitsJSON();
+                }
+                commitJSON(gitURL, commitId, refactorings);
+                commitCount++;
+            }
+
+            @Override
+            public void onFinish(int refactoringsCount, int commitsCount, int errorCommitsCount) {
+                System.out.println(String.format("Total count: [Commits: %d, Errors: %d, Refactorings: %d]",
+                        commitsCount, errorCommitsCount, refactoringsCount));
+            }
+
+            @Override
+            public void handleException(String commit, Exception e) {
+                System.err.println("Error processing commit " + commit);
+                e.printStackTrace(System.err);
+            }
+        }, timeout);
+        endJSON();
+    }
+    
+    // Helper methods (adapted from original RefactoringMiner)
+    
+    private static boolean containsBranchArgument(String[] args) {
+        return args.length == 3 || (args.length > 3 && args[3].equalsIgnoreCase("-json"));
+    }
+    
+    private static int processJSONOption(String[] args, int maxArgLength) {
+        if (args[args.length-2].equalsIgnoreCase("-json")) {
+            path = Paths.get(args[args.length-1]);
+            try {
+                if(Files.exists(path)) {
+                    Files.delete(path);
+                }
+                if(Files.notExists(path)) {
+                    Files.createFile(path);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            maxArgLength = maxArgLength + 2;
+        }
+        return maxArgLength;
+    }
+
+    private static void commitJSON(String cloneURL, String currentCommitId, List<Refactoring> refactoringsAtRevision) {
+        if(path != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("{").append("\n");
+            sb.append("\t").append("\"").append("repository").append("\"").append(": ").append("\"").append(cloneURL).append("\"").append(",").append("\n");
+            sb.append("\t").append("\"").append("sha1").append("\"").append(": ").append("\"").append(currentCommitId).append("\"").append(",").append("\n");
+            String url = GitHistoryRefactoringMinerImpl.extractCommitURL(cloneURL, currentCommitId);
+            sb.append("\t").append("\"").append("url").append("\"").append(": ").append("\"").append(url).append("\"").append(",").append("\n");
+            sb.append("\t").append("\"").append("refactorings").append("\"").append(": ");
+            sb.append("[");
+            int counter = 0;
+            for(Refactoring refactoring : refactoringsAtRevision) {
+                sb.append(refactoring.toJSON());
+                if(counter < refactoringsAtRevision.size()-1) {
+                    sb.append(",");
+                }
+                sb.append("\n");
+                counter++;
+            }
+            sb.append("]").append("\n");
+            sb.append("}");
+            try {
+                Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static void betweenCommitsJSON() {
+        if(path != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(",").append("\n");
+            try {
+                Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static void startJSON() {
+        if(path != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("{").append("\n");
+            sb.append("\"").append("commits").append("\"").append(": ");
+            sb.append("[").append("\n");
+            try {
+                Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static void endJSON() {
+        if(path != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("]").append("\n");
+            sb.append("}");
+            try {
+                Files.write(path, sb.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static void printTips() {
+        System.out.println("-h\t\t\t\t\t\t\t\t\t\t\tShow options");
+        System.out.println(
+                "-a <git-repo-folder> <branch> -json <path-to-json-file>\t\t\t\t\tDetect all refactorings at <branch> for C# <git-repo-folder>. If <branch> is not specified, commits from all branches are analyzed.");
+        System.out.println(
+                "-bc <git-repo-folder> <start-commit-sha1> <end-commit-sha1> -json <path-to-json-file>\tDetect refactorings between <start-commit-sha1> and <end-commit-sha1> for C# project <git-repo-folder>");
+        System.out.println(
+                "-bt <git-repo-folder> <start-tag> <end-tag> -json <path-to-json-file>\t\t\tDetect refactorings between <start-tag> and <end-tag> for C# project <git-repo-folder>");
+        System.out.println(
+                "-c <git-repo-folder> <commit-sha1> -json <path-to-json-file>\t\t\t\tDetect refactorings at specified commit <commit-sha1> for C# project <git-repo-folder>");
+        System.out.println(
+                "-gc <git-URL> <commit-sha1> <timeout> -json <path-to-json-file>\t\t\t\tDetect refactorings at specified commit <commit-sha1> for C# project <git-URL> within the given <timeout> in seconds. All required information is obtained directly from GitHub using the OAuth token in github-oauth.properties");
+        System.out.println(
+                "-gp <git-URL> <pull-request> <timeout> -json <path-to-json-file>\t\t\tDetect refactorings at specified pull request <pull-request> for C# project <git-URL> within the given <timeout> in seconds for each commit in the pull request. All required information is obtained directly from GitHub using the OAuth token in github-oauth.properties");
+    }
+
+    private static IllegalArgumentException argumentException() {
+        return new IllegalArgumentException("Type `CSharpRefactoringMiner -h` to show usage.");
+    }
+    
+    /**
+     * Compare two C# project directories (equivalent to -c in original RefactoringMiner)
+     * Usage: -c &lt;path1&gt; &lt;path2&gt; [-json &lt;output-file&gt;]
+     */
+    public static void detectBetweenDirectories(String[] args) throws Exception {
+        int maxArgLength = processJsonOption(args, 3);
+        if (!(args.length == maxArgLength-1 || args.length == maxArgLength)) {
+            throw argumentException();
+        }
+        
+        String path1 = args[1];
+        String path2 = args[2];
+        
+        startJsonOutput();
+        
+        // Use our existing CLI logic but format output like RefactoringMiner
+        String[] cliArgs = {"compare", path1, path2};
+        CSharpRefactoringMinerCLI.ComparisonResult result = runComparison(path1, path2);
+        
+        outputJsonResult(result, "directory-comparison", path1, path2);
+        
+        endJsonOutput();
+    }
+    
+    /**
+     * Analyze single C# project directory (equivalent to -a in original RefactoringMiner)
+     * Usage: -a &lt;path&gt; [-json &lt;output-file&gt;]
+     */
+    public static void analyzeDirectory(String[] args) throws Exception {
+        int maxArgLength = processJsonOption(args, 2);
+        if (!(args.length == maxArgLength-1 || args.length == maxArgLength)) {
+            throw argumentException();
+        }
+        
+        String path = args[1];
+        
+        startJsonOutput();
+        
+        // Use our existing CLI logic but format output like RefactoringMiner
+        CSharpRefactoringMinerCLI.AnalysisResult result = runAnalysis(path);
+        
+        outputJsonAnalysis(result, "directory-analysis", path);
+        
+        endJsonOutput();
+    }
+    
+    /**
+     * Run built-in test scenarios
+     * Usage: -test [-json &lt;output-file&gt;]
+     */
+    public static void runTestScenarios(String[] args) throws Exception {
+        int maxArgLength = processJsonOption(args, 1);
+        if (args.length > maxArgLength) {
+            throw argumentException();
+        }
+        
+        startJsonOutput();
+        
+        // Run our existing test scenario
+        String[] cliArgs = {"test"};
+        System.out.println("🧪 Running C# RefactoringMiner Test Scenarios");
+        System.out.println("==============================================");
+        
+        // Run the existing test
+        CSharpRefactoringMinerCLI.main(cliArgs);
+        
+        endJsonOutput();
+    }
+    
+    /**
+     * Process -json option like original RefactoringMiner
+     */
+    private static int processJsonOption(String[] args, int maxArgLength) {
+        if (args.length >= 2 && args[args.length-2].equalsIgnoreCase("-json")) {
+            jsonOutputPath = Paths.get(args[args.length-1]);
+            jsonOutput = true;
+            try {
+                if(Files.exists(jsonOutputPath)) {
+                    Files.delete(jsonOutputPath);
+                }
+                if(Files.notExists(jsonOutputPath)) {
+                    Files.createFile(jsonOutputPath);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            maxArgLength = maxArgLength + 2;
+        }
+        return maxArgLength;
+    }
+    
+    /**
+     * Start JSON output format (similar to original RefactoringMiner)
+     */
+    private static void startJsonOutput() {
+        String jsonStart = "{\n  \"results\": [";
+        if (jsonOutput && jsonOutputPath != null) {
+            try {
+                Files.write(jsonOutputPath, jsonStart.getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println(jsonStart);
+        }
+    }
+    
+    /**
+     * End JSON output format
+     */
+    private static void endJsonOutput() {
+        String jsonEnd = "\n  ]\n}";
+        if (jsonOutput && jsonOutputPath != null) {
+            try {
+                Files.write(jsonOutputPath, jsonEnd.getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println(jsonEnd);
+        }
+    }
+    
+    /**
+     * Output comparison result in RefactoringMiner JSON format
+     */
+    private static void outputJsonResult(CSharpRefactoringMinerCLI.ComparisonResult result, 
+                                       String type, String path1, String path2) {
+        StringBuilder json = new StringBuilder();
+        json.append("\n    {\n");
+        json.append("      \"type\": \"").append(type).append("\",\n");
+        json.append("      \"beforePath\": \"").append(path1).append("\",\n");
+        json.append("      \"afterPath\": \"").append(path2).append("\",\n");
+        json.append("      \"refactorings\": [\n");
+        
+        // Add refactorings in RefactoringMiner format
+        for (int i = 0; i < result.getRefactorings().size(); i++) {
+            if (i > 0) json.append(",\n");
+            var refactoring = result.getRefactorings().get(i);
+            json.append("        {\n");
+            json.append("          \"type\": \"").append(refactoring.getType()).append("\",\n");
+            json.append("          \"description\": \"").append(refactoring.getDescription()).append("\",\n");
+            json.append("          \"confidence\": ").append(refactoring.getConfidence()).append(",\n");
+            json.append("          \"filePath\": \"").append(refactoring.getFile()).append("\",\n");
+            json.append("          \"startLine\": ").append(refactoring.getStartLine()).append("\n");
+            json.append("        }");
+        }
+        
+        json.append("\n      ],\n");
+        json.append("      \"totalRefactorings\": ").append(result.getRefactorings().size()).append("\n");
+        json.append("    }");
+        
+        if (jsonOutput && jsonOutputPath != null) {
+            try {
+                Files.write(jsonOutputPath, json.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.print(json.toString());
+        }
+    }
+    
+    /**
+     * Output analysis result in RefactoringMiner JSON format
+     */
+    private static void outputJsonAnalysis(CSharpRefactoringMinerCLI.AnalysisResult result, 
+                                         String type, String path) {
+        StringBuilder json = new StringBuilder();
+        json.append("\n    {\n");
+        json.append("      \"type\": \"").append(type).append("\",\n");
+        json.append("      \"path\": \"").append(path).append("\",\n");
+        json.append("      \"totalFiles\": ").append(result.getTotalFiles()).append(",\n");
+        json.append("      \"totalPatterns\": ").append(result.getTotalPatterns()).append(",\n");
+        json.append("      \"patterns\": [\n");
+        
+        // Add patterns in similar format
+        for (int i = 0; i < result.getPatterns().size(); i++) {
+            if (i > 0) json.append(",\n");
+            var pattern = result.getPatterns().get(i);
+            json.append("        {\n");
+            json.append("          \"type\": \"").append(pattern.getType()).append("\",\n");
+            json.append("          \"description\": \"").append(pattern.getDescription()).append("\",\n");
+            json.append("          \"confidence\": ").append(pattern.getConfidence()).append(",\n");
+            json.append("          \"filePath\": \"").append(pattern.getFile()).append("\"\n");
+            json.append("        }");
+        }
+        
+        json.append("\n      ]\n");
+        json.append("    }");
+        
+        if (jsonOutput && jsonOutputPath != null) {
+            try {
+                Files.write(jsonOutputPath, json.toString().getBytes(), StandardOpenOption.APPEND);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.print(json.toString());
+        }
+    }
+    
+    /**
+     * Run comparison using existing CLI logic
+     */
+    private static CSharpRefactoringMinerCLI.ComparisonResult runComparison(String path1, String path2) {
+        try {
+            // Capture the output from our existing CLI
+            String[] args = {"compare", path1, path2};
+            return CSharpRefactoringMinerCLI.runComparisonAndGetResult(args);
+        } catch (Exception e) {
+            System.err.println("Error running comparison: " + e.getMessage());
+            return new CSharpRefactoringMinerCLI.ComparisonResult();
+        }
+    }
+    
+    /**
+     * Run analysis using existing CLI logic
+     */
+    private static CSharpRefactoringMinerCLI.AnalysisResult runAnalysis(String path) {
+        try {
+            // Capture the output from our existing CLI
+            String[] args = {"analyze", path};
+            return CSharpRefactoringMinerCLI.runAnalysisAndGetResult(args);
+        } catch (Exception e) {
+            System.err.println("Error running analysis: " + e.getMessage());
+            return new CSharpRefactoringMinerCLI.AnalysisResult();
+        }
+    }
+    
+    // ========== REFACTORINGMINER INTEGRATION METHODS ==========
+    
+    /**
+     * Detects refactorings between two C# project directories using original RefactoringMiner algorithms.
+     * This method uses the CSharpASTBridge to convert C# code to Java-like AST that RefactoringMiner can process.
+     * 
+     * @param beforePath Path to the before version
+     * @param afterPath Path to the after version
+     * @return List of detected refactorings using RefactoringMiner's sophisticated algorithms
+     */
+    public static List<Refactoring> detectRefactoringsUsingRefactoringMiner(String beforePath, String afterPath) 
+            throws RefactoringMinerTimedOutException {
+        try {
+            // Collect C# files from both versions
+            Map<String, String> fileContentsBefore = collectCSharpFiles(beforePath);
+            Map<String, String> fileContentsAfter = collectCSharpFiles(afterPath);
+            
+            // Get repository directories
+            Set<String> repositoryDirectoriesBefore = Set.of(beforePath);
+            Set<String> repositoryDirectoriesAfter = Set.of(afterPath);
+            
+            // Use RefactoringMiner's algorithms via the AST bridge
+            return CSharpASTBridge.detectRefactorings(
+                fileContentsBefore, 
+                fileContentsAfter,
+                repositoryDirectoriesBefore,
+                repositoryDirectoriesAfter
+            );
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to detect refactorings using RefactoringMiner", e);
+        }
+    }
+    
+    /**
+     * Collects all C# files from a directory and returns them as a map
+     * 
+     * @param directoryPath Path to the directory containing C# files
+     * @return Map of file paths to their content
+     */
+    private static Map<String, String> collectCSharpFiles(String directoryPath) throws IOException {
+        Map<String, String> fileContents = new HashMap<>();
+        Path rootPath = Paths.get(directoryPath);
+        
+        if (!Files.exists(rootPath) || !Files.isDirectory(rootPath)) {
+            return fileContents;
+        }
+        
+        Files.walk(rootPath)
+            .filter(path -> path.toString().endsWith(".cs"))
+            .forEach(path -> {
+                try {
+                    String relativePath = rootPath.relativize(path).toString().replace(File.separatorChar, '/');
+                    String content = Files.readString(path);
+                    fileContents.put(relativePath, content);
+                } catch (IOException e) {
+                    System.err.println("Warning: Could not read file " + path + ": " + e.getMessage());
+                }
+            });
+        
+        return fileContents;
+    }
+    
+    /**
+     * Enhanced comparison method that optionally uses RefactoringMiner's algorithms
+     * 
+     * @param args Command line arguments
+     * @param useRefactoringMiner Whether to use original RefactoringMiner algorithms
+     */
+    public static void detectBetweenDirectoriesEnhanced(String[] args, boolean useRefactoringMiner) throws Exception {
+        int maxArgLength = processJsonOption(args, 3);
+        if (!(args.length == maxArgLength-1 || args.length == maxArgLength)) {
+            throw argumentException();
+        }
+        
+        String path1 = args[1];
+        String path2 = args[2];
+        
+        startJsonOutput();
+        
+        if (useRefactoringMiner) {
+            // Use original RefactoringMiner algorithms
+            try {
+                List<Refactoring> refactorings = detectRefactoringsUsingRefactoringMiner(path1, path2);
+                outputRefactoringMinerResults(refactorings, path1, path2);
+            } catch (Exception e) {
+                System.err.println("RefactoringMiner integration failed, falling back to pattern-based detection: " + e.getMessage());
+                // Fall back to existing CLI logic
+                CSharpRefactoringMinerCLI.ComparisonResult result = runComparison(path1, path2);
+                outputJsonResult(result, "directory-comparison", path1, path2);
+            }
+        } else {
+            // Use existing pattern-based detection
+            CSharpRefactoringMinerCLI.ComparisonResult result = runComparison(path1, path2);
+            outputJsonResult(result, "directory-comparison", path1, path2);
+        }
+        
+        endJsonOutput();
+    }
+    
+    /**
+     * Outputs RefactoringMiner results in compatible JSON format
+     */
+    private static void outputRefactoringMinerResults(List<Refactoring> refactorings, String beforePath, String afterPath) throws IOException {
+        System.out.println("🔄 C# RefactoringMiner - Enhanced Detection via RefactoringMiner");
+        System.out.println("================================================================");
+        System.out.println("Before: " + beforePath);
+        System.out.println("After: " + afterPath);
+        System.out.println();
+        System.out.println("🔍 REFACTORING DETECTION RESULTS (using RefactoringMiner algorithms)");
+        System.out.println("===================================================================");
+        System.out.println("Total refactorings detected: " + refactorings.size());
+        System.out.println();
+        
+        StringBuilder jsonBuilder = new StringBuilder();
+        jsonBuilder.append("    {\n");
+        jsonBuilder.append("      \"type\": \"refactoring-miner-detection\",\n");
+        jsonBuilder.append("      \"beforePath\": \"").append(beforePath).append("\",\n");
+        jsonBuilder.append("      \"afterPath\": \"").append(afterPath).append("\",\n");
+        jsonBuilder.append("      \"refactorings\": [\n");
+        
+        for (int i = 0; i < refactorings.size(); i++) {
+            Refactoring refactoring = refactorings.get(i);
+            
+            // Display to console
+            System.out.println("✓ [" + refactoring.getRefactoringType() + "] " + refactoring.toString());
+            
+            // Add to JSON
+            jsonBuilder.append("        {\n");
+            jsonBuilder.append("          \"type\": \"").append(refactoring.getRefactoringType()).append("\",\n");
+            jsonBuilder.append("          \"description\": \"").append(refactoring.toString().replace("\"", "\\\"")).append("\",\n");
+            jsonBuilder.append("          \"confidence\": 95\n"); // RefactoringMiner has high confidence
+            jsonBuilder.append("        }");
+            if (i < refactorings.size() - 1) jsonBuilder.append(",");
+            jsonBuilder.append("\n");
+        }
+        
+        jsonBuilder.append("      ],\n");
+        jsonBuilder.append("      \"totalRefactorings\": ").append(refactorings.size()).append("\n");
+        jsonBuilder.append("    }");
+        
+        if (jsonOutput) {
+            Files.writeString(jsonOutputPath, jsonBuilder.toString(), StandardOpenOption.APPEND);
+        }
+        
+        System.out.println();
+        System.out.println("✅ Enhanced RefactoringMiner detection complete!");
+    }
+    
+    /**
+     * Print usage information (similar to original RefactoringMiner)
+     */
+    private static void printUsage() {
+        System.out.println("C# RefactoringMiner - Refactoring Detection for C# Projects");
+        System.out.println("============================================================");
+        System.out.println();
+        System.out.println("Usage: java -jar CSharpRefactoringMiner.jar [options]");
+        System.out.println();
+        System.out.println("Options:");
+        System.out.println("  -h                                       Show this help message");
+        System.out.println("  -c <path1> <path2> -json <file>          Compare two C# project versions (pattern-based detection)");
+        System.out.println("  -c-rm <path1> <path2> -json <file>       Compare using original RefactoringMiner algorithms (ENHANCED)");
+        System.out.println("  -a <path> -json <file>                   Analyze single C# project version for patterns");
+        System.out.println("  -test -json <file>                       Run built-in test scenarios");
+        System.out.println();
+        System.out.println("Examples:");
+        System.out.println("  java -jar CSharpRefactoringMiner.jar -c project/v1 project/v2");
+        System.out.println("  java -jar CSharpRefactoringMiner.jar -c-rm project/v1 project/v2 -json output.json  (ENHANCED)");
+        System.out.println("  java -jar CSharpRefactoringMiner.jar -c project/v1 project/v2 -json output.json");
+        System.out.println("  java -jar CSharpRefactoringMiner.jar -a project/src -json analysis.json");
+        System.out.println("  java -jar CSharpRefactoringMiner.jar -test");
+        System.out.println();
+        System.out.println("Note: Use -c-rm for enhanced detection using original RefactoringMiner's sophisticated algorithms");
+        System.out.println("      Use -json <file> to save output in JSON format compatible with RefactoringMiner");
+    }
+    
+    /**
+     * Create argument exception (similar to original RefactoringMiner)
+     */
+    private static IllegalArgumentException argumentException() {
+        return new IllegalArgumentException("Type `CSharpRefactoringMiner -h` to show usage.");
+    }
+}

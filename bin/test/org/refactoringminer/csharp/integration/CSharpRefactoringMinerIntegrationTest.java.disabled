@@ -1,0 +1,428 @@
+package org.refactoringminer.csharp.integration;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
+import org.refactoringminer.api.Refactoring;
+import org.refactoringminer.api.RefactoringHandler;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * Integration tests for the C# RefactoringMiner pipeline.
+ * These tests validate the end-to-end functionality of transforming
+ * C# code through CPatMinerV2 and detecting refactorings with RefactoringMiner.
+ */
+public class CSharpRefactoringMinerIntegrationTest {
+    
+    private CSharpRefactoringMinerDriver driver;
+    
+    @TempDir
+    Path tempDir;
+    
+    @BeforeEach
+    void setUp() {
+        driver = new CSharpRefactoringMinerDriver();
+    }
+    
+    @Test
+    void testMethodRenameRefactoring() throws Exception {
+        // Arrange: Create C# files with method rename refactoring
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Previous version
+        String previousCSharp = """
+            using System;
+            
+            public class Calculator {
+                public int Add(int a, int b) {
+                    return a + b;
+                }
+                
+                public void DisplayResult(int result) {
+                    Console.WriteLine($"Result: {result}");
+                }
+            }
+            """;
+        
+        // Next version with method renamed
+        String nextCSharp = """
+            using System;
+            
+            public class Calculator {
+                public int Add(int a, int b) {
+                    return a + b;
+                }
+                
+                public void ShowResult(int result) {
+                    Console.WriteLine($"Result: {result}");
+                }
+            }
+            """;
+        
+        Files.write(previousDir.resolve("Calculator.cs"), previousCSharp.getBytes());
+        Files.write(nextDir.resolve("Calculator.cs"), nextCSharp.getBytes());
+        
+        // Act & Assert
+        AtomicInteger refactoringCount = new AtomicInteger(0);
+        
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                refactoringCount.set(refactorings.size());
+                
+                // Verify that refactorings were detected
+                assertTrue(refactorings.size() > 0, "Should detect at least one refactoring");
+                
+                // Check for method rename refactoring
+                boolean foundRename = refactorings.stream()
+                    .anyMatch(r -> r.toString().toLowerCase().contains("rename"));
+                
+                if (foundRename) {
+                    System.out.println("✅ Method rename refactoring detected successfully");
+                }
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should not throw exception: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testClassRenameRefactoring() throws Exception {
+        // Arrange: Create C# files with class rename refactoring
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Previous version
+        String previousCSharp = """
+            using System;
+            
+            public class MathUtils {
+                public static double CalculateArea(double radius) {
+                    return Math.PI * radius * radius;
+                }
+            }
+            """;
+        
+        // Next version with class renamed
+        String nextCSharp = """
+            using System;
+            
+            public class GeometryUtils {
+                public static double CalculateArea(double radius) {
+                    return Math.PI * radius * radius;
+                }
+            }
+            """;
+        
+        Files.write(previousDir.resolve("MathUtils.cs"), previousCSharp.getBytes());
+        Files.write(nextDir.resolve("GeometryUtils.cs"), nextCSharp.getBytes());
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                assertTrue(refactorings.size() > 0, "Should detect refactorings");
+                
+                // Check for class-related refactorings
+                boolean foundClassRefactoring = refactorings.stream()
+                    .anyMatch(r -> r.toString().toLowerCase().contains("class") ||
+                                  r.toString().contains("MathUtils") ||
+                                  r.toString().contains("GeometryUtils"));
+                
+                if (foundClassRefactoring) {
+                    System.out.println("✅ Class refactoring detected successfully");
+                }
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should not throw exception: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testCSharpPropertyHandling() throws Exception {
+        // Arrange: Create C# files with properties
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Previous version with auto-properties
+        String previousCSharp = """
+            public class Person {
+                public string FirstName { get; set; }
+                public string LastName { get; set; }
+            }
+            """;
+        
+        // Next version with extracted full name property
+        String nextCSharp = """
+            public class Person {
+                public string FirstName { get; set; }
+                public string LastName { get; set; }
+                
+                public string FullName {
+                    get { return FirstName + " " + LastName; }
+                }
+            }
+            """;
+        
+        Files.write(previousDir.resolve("Person.cs"), previousCSharp.getBytes());
+        Files.write(nextDir.resolve("Person.cs"), nextCSharp.getBytes());
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                // Verify that the transformation doesn't crash with C# properties
+                // and that some form of change is detected
+                System.out.println("✅ C# properties handled without errors");
+                System.out.println("Detected " + refactorings.size() + " refactorings");
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should handle C# properties without exception: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testMethodExtraction() throws Exception {
+        // Arrange: Create C# files showing method extraction refactoring
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Previous version with inline logic
+        String previousCSharp = """
+            using System;
+            
+            public class OrderProcessor {
+                public void ProcessOrder(Order order) {
+                    // Validate order
+                    if (order == null || order.Items.Count == 0) {
+                        throw new ArgumentException("Invalid order");
+                    }
+                    
+                    // Calculate total
+                    decimal total = 0;
+                    foreach (var item in order.Items) {
+                        total += item.Price * item.Quantity;
+                    }
+                    
+                    // Apply discount
+                    if (total > 100) {
+                        total = total * 0.9m;
+                    }
+                    
+                    order.Total = total;
+                }
+            }
+            """;
+        
+        // Next version with extracted methods
+        String nextCSharp = """
+            using System;
+            
+            public class OrderProcessor {
+                public void ProcessOrder(Order order) {
+                    ValidateOrder(order);
+                    decimal total = CalculateTotal(order);
+                    total = ApplyDiscount(total);
+                    order.Total = total;
+                }
+                
+                private void ValidateOrder(Order order) {
+                    if (order == null || order.Items.Count == 0) {
+                        throw new ArgumentException("Invalid order");
+                    }
+                }
+                
+                private decimal CalculateTotal(Order order) {
+                    decimal total = 0;
+                    foreach (var item in order.Items) {
+                        total += item.Price * item.Quantity;
+                    }
+                    return total;
+                }
+                
+                private decimal ApplyDiscount(decimal total) {
+                    if (total > 100) {
+                        return total * 0.9m;
+                    }
+                    return total;
+                }
+            }
+            """;
+        
+        Files.write(previousDir.resolve("OrderProcessor.cs"), previousCSharp.getBytes());
+        Files.write(nextDir.resolve("OrderProcessor.cs"), nextCSharp.getBytes());
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                assertTrue(refactorings.size() > 0, "Should detect method extraction refactorings");
+                
+                // Look for extract method refactorings
+                boolean foundExtraction = refactorings.stream()
+                    .anyMatch(r -> r.toString().toLowerCase().contains("extract"));
+                
+                if (foundExtraction) {
+                    System.out.println("✅ Method extraction refactoring detected");
+                }
+                
+                // Print all detected refactorings for debugging
+                refactorings.forEach(r -> System.out.println("Detected: " + r));
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should not throw exception during method extraction detection: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testEmptyDirectoriesHandling() throws Exception {
+        // Arrange: Create empty directories
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                assertEquals(0, refactorings.size(), "Empty directories should result in no refactorings");
+                System.out.println("✅ Empty directories handled correctly");
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should handle empty directories gracefully: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testInvalidCSharpCodeHandling() throws Exception {
+        // Arrange: Create directories with invalid C# code
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // Invalid C# syntax
+        String invalidCSharp = """
+            public class InvalidClass {
+                public void Method( {
+                    // Missing closing parenthesis and brace
+                }
+            """;
+        
+        Files.write(previousDir.resolve("Invalid.cs"), invalidCSharp.getBytes());
+        Files.write(nextDir.resolve("Invalid.cs"), invalidCSharp.getBytes());
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                // Should handle gracefully, even if no refactorings detected
+                System.out.println("✅ Invalid C# code handled gracefully");
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                // It's acceptable for invalid code to cause exceptions
+                // as long as they're handled gracefully
+                System.out.println("⚠️  Invalid C# code caused expected exception: " + e.getMessage());
+            }
+        });
+    }
+    
+    @Test
+    void testMultipleFilesRefactoring() throws Exception {
+        // Arrange: Create multiple C# files with refactorings across files
+        Path previousDir = tempDir.resolve("previous");
+        Path nextDir = tempDir.resolve("next");
+        Files.createDirectories(previousDir);
+        Files.createDirectories(nextDir);
+        
+        // File 1: Service class
+        String serviceClassPrevious = """
+            public class UserService {
+                public User GetUser(int id) {
+                    // Implementation
+                    return new User();
+                }
+            }
+            """;
+        
+        String serviceClassNext = """
+            public class UserService {
+                public User GetUserById(int id) {
+                    // Implementation
+                    return new User();
+                }
+            }
+            """;
+        
+        // File 2: Model class
+        String userModelPrevious = """
+            public class User {
+                public int Id { get; set; }
+                public string Name { get; set; }
+            }
+            """;
+        
+        String userModelNext = """
+            public class User {
+                public int UserId { get; set; }
+                public string UserName { get; set; }
+            }
+            """;
+        
+        Files.write(previousDir.resolve("UserService.cs"), serviceClassPrevious.getBytes());
+        Files.write(nextDir.resolve("UserService.cs"), serviceClassNext.getBytes());
+        Files.write(previousDir.resolve("User.cs"), userModelPrevious.getBytes());
+        Files.write(nextDir.resolve("User.cs"), userModelNext.getBytes());
+        
+        // Act & Assert
+        driver.detectRefactoringsAtDirectories(previousDir, nextDir, new RefactoringHandler() {
+            @Override
+            public void handle(String commitId, List<Refactoring> refactorings) {
+                assertTrue(refactorings.size() > 0, "Should detect refactorings across multiple files");
+                
+                System.out.println("✅ Multiple files refactoring analysis completed");
+                System.out.println("Total refactorings detected: " + refactorings.size());
+                
+                refactorings.forEach(r -> System.out.println("  - " + r));
+            }
+            
+            @Override
+            public void handleException(String commit, Exception e) {
+                fail("Should handle multiple files without exception: " + e.getMessage());
+            }
+        });
+    }
+}
