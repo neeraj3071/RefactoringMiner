@@ -4,22 +4,6 @@
 ![Status](https://img.shields.io/badge/status-experimental-orange)
 ![RefactoringMiner](https://img.shields.io/badge/RefactoringMiner-3.0.11-blue)
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Architecture](#architecture)
-3. [Features](#features)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Supported C# Features](#supported-csharp-features)
-7. [Supported Refactoring Types](#supported-refactoring-types)
-8. [Limitations](#limitations)
-9. [Performance](#performance)
-10. [Examples](#examples)
-11. [Troubleshooting](#troubleshooting)
-12. [Contributing](#contributing)
-
----
 
 ## Overview
 
@@ -139,73 +123,296 @@ java -jar build/libs/RM-fat.jar -h
 
 ## Usage
 
+### Quick Start Guide
+
+#### Step 1: Verify Prerequisites
+
+Before starting, ensure all tools are installed:
+
+```bash
+# Check Java version (must be 17+)
+java -version
+
+# Check srcML installation
+srcml --version
+
+# Check Gradle installation
+gradle --version
+
+# Verify Git is available
+git --version
+```
+
+#### Step 2: Build RefactoringMiner
+
+```bash
+# Navigate to RefactoringMiner directory
+cd /path/to/RefactoringMiner
+
+# Build the project with Gradle
+./gradlew build
+
+# Create the fat JAR (includes all dependencies)
+./gradlew shadowJar
+
+# Verify the JAR was created
+ls -lh build/libs/RM-fat.jar
+```
+
+The fat JAR should be approximately 64-65 MB.
+
+#### Step 3: Prepare Your C# Repository
+
+```bash
+# Clone the C# repository you want to analyze
+git clone https://github.com/username/csharp-project.git
+cd csharp-project
+
+# Ensure the repository has a clean working directory
+git status
+
+# Optionally, checkout a specific branch
+git checkout main
+```
+
+---
+
 ### Command Line Interface
 
-The C# RefactoringMiner uses the **same command-line interface** as the original RefactoringMiner:
+The C# RefactoringMiner uses the **same command-line interface** as the original RefactoringMiner.
 
-#### 1. Analyze a Single Commit
-
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -c /path/to/repo <commit-sha> -json output.json
-```
-
-**Example:**
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -c ~/projects/MyUnityGame 35cb3631 -json zinnia_refactorings.json
-```
-
-#### 2. Analyze All Commits on a Branch
+#### Basic Command Structure
 
 ```bash
 java -cp build/libs/RM-fat.jar \
   org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -a /path/to/repo main -json all_refactorings.json
+  [OPTIONS] [ARGUMENTS]
 ```
 
-#### 3. Analyze Commits Between Two Tags
+#### Available Options
+
+| Option | Arguments | Description |
+|--------|-----------|-------------|
+| `-c` | `<repo-path> <commit-sha>` | Analyze a single commit |
+| `-a` | `<repo-path> <branch>` | Analyze all commits on a branch |
+| `-bt` | `<repo-path> <start-tag> <end-tag> <thread-count>` | Analyze commits between two tags |
+| `-bc` | `<repo-path> <start-commit> <end-commit> <thread-count>` | Analyze commits between two commit SHAs |
+| `-gc` | `<git-url> <commit-sha> <thread-count>` | Analyze GitHub commit directly |
+| `-gp` | `<git-url> <pull-request-id> <thread-count>` | Analyze GitHub pull request |
+| `-json` | `<output-file>` | Export results to JSON file |
+| `-h` | - | Display help message |
+
+---
+
+### Usage Examples
+
+#### Example 1: Analyze a Single Commit
+
+Analyze refactorings in a specific commit:
 
 ```bash
 java -cp build/libs/RM-fat.jar \
   org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -bt /path/to/repo v1.0.0 v2.0.0 10 -json refactorings.json
+  -c /path/to/csharp-repo 35cb3631 -json refactorings.json
 ```
 
-#### 4. GitHub Direct Analysis (with OAuth token)
-
+**Real-world example:**
 ```bash
-# Set up github-oauth.properties file first
+# Analyzing a Unity VR project commit
 java -cp build/libs/RM-fat.jar \
   org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -gc https://github.com/user/repo.git <commit-sha> 10 -json output.json
+  -c ~/projects/Zinnia.Unity 35cb3631d6 -json zinnia_refactorings.json
 ```
 
-### Using the Shell Script
+**Output:** Creates `refactorings.json` with all detected refactorings in the commit.
 
-A convenient shell script is provided for easier execution:
+#### Example 2: Analyze All Commits on a Branch
+
+Analyze every commit on a specific branch:
 
 ```bash
-# Make it executable
-chmod +x csharp-refactoring-miner.sh
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -a /path/to/csharp-repo main -json all_refactorings.json
+```
+
+**Use case:** Full repository analysis for research or documentation.
+
+**Note:** This may take significant time for large repositories. Consider using commit ranges instead.
+
+#### Example 3: Analyze Commits Between Two Tags
+
+Analyze refactorings between two release versions:
+
+```bash
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -bt /path/to/csharp-repo v1.0.0 v2.0.0 10 -json version_refactorings.json
+```
+
+**Parameters:**
+- `v1.0.0` - Starting tag/version
+- `v2.0.0` - Ending tag/version
+- `10` - Number of parallel threads (adjust based on CPU cores)
+
+**Use case:** Release comparison, migration analysis.
+
+#### Example 4: Analyze Commits Between Two Commit SHAs
+
+Analyze a range of commits:
+
+```bash
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -bc /path/to/csharp-repo abc1234 def5678 8 -json range_refactorings.json
+```
+
+**Use case:** Feature branch analysis, specific commit range investigation.
+
+#### Example 5: Analyze GitHub Repository Directly
+
+Analyze a commit from GitHub without cloning (requires OAuth token):
+
+```bash
+# First, create github-oauth.properties with your token
+echo "token=ghp_YourGitHubPersonalAccessToken" > github-oauth.properties
 
 # Run analysis
-./csharp-refactoring-miner.sh -c /path/to/repo <commit-sha> -json output.json
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -gc https://github.com/ExtendRealityLtd/Zinnia.Unity.git 35cb3631 10 \
+  -json zinnia_github.json
 ```
+
+**Requirements:**
+- GitHub Personal Access Token (create at https://github.com/settings/tokens)
+- Place `github-oauth.properties` in the same directory as the JAR
+
+#### Example 6: Analyze GitHub Pull Request
+
+Analyze all commits in a pull request:
+
+```bash
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -gp https://github.com/user/repo.git 123 10 -json pr_refactorings.json
+```
+
+**Parameters:**
+- `123` - Pull request number
+- `10` - Thread count for parallel processing
+
+**Use case:** Code review automation, PR quality analysis.
+
+---
+
+### Using the Shell Script (Simplified)
+
+A convenient shell script wraps the Java command for easier usage:
+
+```bash
+# Make the script executable (first time only)
+chmod +x csharp-refactoring-miner.sh
+
+# Single commit analysis
+./csharp-refactoring-miner.sh -c /path/to/repo abc1234 -json output.json
+
+# All commits on branch
+./csharp-refactoring-miner.sh -a /path/to/repo main -json all.json
+
+# Commits between tags
+./csharp-refactoring-miner.sh -bt /path/to/repo v1.0 v2.0 10 -json versions.json
+```
+
+**Script contents:**
+```bash
+#!/bin/bash
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner "$@"
+```
+
+---
 
 ### Batch Processing Multiple Commits
 
-For analyzing multiple commits from an Excel file:
+For analyzing multiple commits from a list or Excel file, use the batch processor:
+
+#### Setup
+
+```bash
+# Install required Python packages
+pip install pandas openpyxl gitpython
+
+# Prepare your Excel file with columns:
+# - "Commit URL" (format: https://github.com/user/repo/commit/sha)
+# - Any other metadata columns
+```
+
+#### Run Batch Processing
 
 ```bash
 python3 batch_process_commits.py
 ```
 
-**Requirements:**
-- Excel file with commit URLs in "Commit URL" column
-- Configure paths in the script
+**Script configuration:**
+Edit the script to set:
+- `EXCEL_FILE` - Path to your commits Excel file
+- `OUTPUT_DIR` - Directory for JSON results
+- `RM_JAR_PATH` - Path to RM-fat.jar
+- `THREAD_COUNT` - Parallel processing threads
+
+#### Example Excel Format
+
+| Commit URL | Project | Date | Notes |
+|------------|---------|------|-------|
+| https://github.com/user/repo/commit/abc123 | MyProject | 2024-01-15 | Feature X |
+| https://github.com/user/repo/commit/def456 | MyProject | 2024-01-20 | Bug fix |
+
+**Output:** Creates individual JSON files for each commit in the output directory.
+
+---
+
+### Understanding the Output
+
+#### JSON Output Structure
+
+The output JSON follows RefactoringMiner's standard format:
+
+```json
+{
+  "commits": [
+    {
+      "repository": "https://github.com/user/repo.git",
+      "sha1": "35cb3631d6a72633f85bd2c02bc7b8c0c0d82f26",
+      "url": "https://github.com/user/repo/commit/35cb3631",
+      "refactorings": [
+        {
+          "type": "Extract Method",
+          "description": "Extract Method ProcessInput() from Start() in class GameController",
+          "leftSideLocations": [...],
+          "rightSideLocations": [...]
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Processing Results
+
+```bash
+# View refactorings in formatted JSON
+cat refactorings.json | python -m json.tool
+
+# Count total refactorings
+cat refactorings.json | jq '.commits[].refactorings | length' | awk '{s+=$1} END {print s}'
+
+# Extract specific refactoring types
+cat refactorings.json | jq '.commits[].refactorings[] | select(.type == "Extract Method")'
+
+# Generate summary report
+cat refactorings.json | jq -r '.commits[].refactorings[].type' | sort | uniq -c | sort -rn
+```
 
 ---
 
