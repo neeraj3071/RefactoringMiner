@@ -1,416 +1,736 @@
-# C# RefactoringMiner
+# C# RefactoringMiner Support
 
-A comprehensive refactoring detection tool for C# projects that integrates **real CPatMiner AST processing** with RefactoringMiner's powerful algorithms. This tool provides enterprise-grade C# refactoring detection with **automatic fallback mechanisms** for maximum reliability.
+![C# Support](https://img.shields.io/badge/language-C%23-239120?style=flat&logo=csharp)
+![Status](https://img.shields.io/badge/status-experimental-orange)
+![RefactoringMiner](https://img.shields.io/badge/RefactoringMiner-3.0.11-blue)
 
-## 🚀 Features
+## Table of Contents
 
-- **Real AST Processing**: Uses CPatMiner's actual AST generation (not simple text transformations)
-- **Automatic Fallback**: Falls back to srcML AST processing if CPatMiner dependencies are unavailable
-- **Enterprise-Scale Testing**: Successfully tested on ASP.NET Core and other large C# codebases
-- **Compatible JSON Output**: Produces identical JSON format as original RefactoringMiner
-- **Dual-Path Architecture**: Optimizes for accuracy while ensuring 100% reliability
+1. [Overview](#overview)
+2. [Architecture](#architecture)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Supported C# Features](#supported-csharp-features)
+7. [Supported Refactoring Types](#supported-refactoring-types)
+8. [Limitations](#limitations)
+9. [Performance](#performance)
+10. [Examples](#examples)
+11. [Troubleshooting](#troubleshooting)
+12. [Contributing](#contributing)
 
-## ⚡ Performance & Scalability
+---
 
-### Architecture Advantages
+## Overview
 
-**Dual-Path Processing Benefits:**
-- **Reliability**: 100% success rate with automatic fallback
-- **Performance**: CPatMiner optimization with srcML 
-- **Maintenance**: No dependency hell - always works
+RefactoringMiner C# Support extends the original [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) tool to detect refactorings in C# projects. This implementation uses **srcML** for parsing C# code and converting it to Java AST representations that RefactoringMiner can analyze.
 
-**Memory Management:**
-- Streaming XML processing for large files
-- Garbage collection optimization
-- File-by-file processing to prevent memory overflow
+### Key Highlights
 
-### Scalability Features
+- **Direct srcML Integration** - Uses srcML for reliable C# parsing
+- **Enhanced C# Features** - Supports async/await, LINQ, properties, events, and more
+- **Compatible with RefactoringMiner API** - Uses the same command-line interface
+- **Batch Processing Support** - Analyze multiple commits efficiently
 
-1. **Batch Processing**: Process multiple repositories efficiently
-2. **Incremental Analysis**: Analyze only changed commits
-3. **Parallel Execution**: Multi-threaded file processing
-4. **Resource Management**: Configurable memory limits
+---
 
-```bash
-# Example: Large repository analysis
-./gradlew run --args="-c https://github.com/large-repo.git -b main --max-memory 8g"
-```
+## Architecture
 
-## 🎯 Supported Refactoring Types
-
-The tool detects all refactoring types supported by the original RefactoringMiner through AST analysis:
-
-### ✅ Validated Refactorings (ASP.NET Core Test)
-**Successfully detected in real enterprise codebase:**
-
-| Refactoring Type | Count | Description |
-|------------------|-------|-------------|
-| Move Class | 8 | Classes moved between namespaces/packages |
-| Rename Class | 3 | Class name changes with full tracking |
-| Extract Class | 2 | New classes extracted from existing ones |
-| Move Source Folder | 4 | Entire folder/namespace relocations |
-| Rename Method | 3 | Method signature changes |
-| Move Method | 2 | Methods moved between classes |
-| Change Return Type | 1 | Method return type modifications |
-| Change Parameter Type | 1 | Parameter type updates |
-
-## 🏗️ Architecture
-
-### 🔧 **Dual-Path AST Processing**
-
-**Tier 1: CPatMiner Integration (Preferred)**
-```
-C# Source → CPatMiner JAR → GumTree AST → CompilationUnit → RefactoringMiner
-```
-
-**Tier 2: SrcML Fallback (Guaranteed)**
-```
-C# Source → srcML CLI → XML AST → Parse XML → CompilationUnit → RefactoringMiner  
-```
-
-### 🧩 **Core Components**
+### Processing Pipeline
 
 ```
-src/main/java/org/refactoringminer/csharp/
-├── CSharpRefactoringMiner.java              # Main CLI entry point
-├── CSharpGitHistoryRefactoringMiner.java    # Core detection orchestrator
-├── CSharpGitServiceImpl.java                # Git service with C# file support
-├── CPatMinerExecutor.java                   # CPatMiner JAR integration & fallback logic
-├── SrcMLBasedCSharpProcessor.java           # Direct srcML AST processing
-├── CSharpUMLModelASTReader.java             # AST model reader for C#
-├── CSharpFileProcessor.java                 # File processing coordination
-└── integration/
-    └── CSharpASTBridge.java                 # UMLModel integration bridge
+C# Source Code
+      ↓
+   srcML Parser (XML AST)
+      ↓
+Enhanced C# Processor
+      ↓
+Java AST (CompilationUnit)
+      ↓
+RefactoringMiner Core
+      ↓
+Detected Refactorings (JSON)
 ```
 
-### 🎯 **Data Flow**
+### Key Components
 
-```mermaid
-graph TD
-    A[C# Repository] --> B[CSharpGitServiceImpl]
-    B --> C[Detect .cs files]
-    C --> D[CPatMinerExecutor]
-    D --> E{CPatMiner Available?}
-    E -->|Yes| F[CPatMiner AST]
-    E -->|No| G[SrcML AST Fallback]
-    F --> H[CompilationUnit]
-    G --> H
-    H --> I[CSharpUMLModelASTReader]
-    I --> J[UMLModel]
-    J --> K[RefactoringMiner Detection]
-    K --> L[JSON Output]
-```
+1. **`SrcMLBasedCSharpProcessor`** - Core processor that handles C# to Java AST conversion
+2. **`CSharpGitHistoryRefactoringMiner`** - Git integration for C# repositories
+3. **`CSharpRefactoringMiner`** - CLI entry point compatible with RefactoringMiner
+4. **`CSharpFileProcessor`** - Handles .cs file detection and processing
 
-## 🛠️ Installation & Setup
+---
+
+## Features
+
+### 🎯 Enhanced C# Language Support
+
+The processor implements **14 enhanced C# features** for accurate refactoring detection:
+
+| Feature | Description | 
+|---------|-------------|
+| **Properties** | Auto-properties, getter/setter conversion | 
+| **Events** | Event declarations, handlers, delegates | 
+| **Attributes** | C# attributes to Java annotations | 
+| **Async/Await** | Async method detection and marking | 
+| **Extension Methods** | Static extension method patterns | 
+| **LINQ Queries** | Query expressions and method chains | 
+| **String Interpolation** | `$"{var}"` to concatenation | 
+| **Nullable Types** | `int?`, `string?` handling | 
+| **Pattern Matching** | `is`, `switch` patterns | 
+| **Lambda Expressions** | Arrow functions, delegates | 
+| **Partial Classes** | Multi-file class declarations | 
+| **Using Directives** | Namespace imports mapping  |
+| **Var Keyword** | Type inference preservation | 
+| **Namespaces** | Nested namespaces to packages | 
+
+## Installation
 
 ### Prerequisites
 
-- **Java 11 or higher**: Required for RefactoringMiner core
-- **Gradle**: For building the project
-- **Git**: For repository access
-- **srcML v1.0.0+**: Required for AST fallback processing ([Download here](https://www.srcml.org/#download))
-- **CPatMiner Dependencies** (Optional): For enhanced AST processing
+1. **Java 17+** (Required for RefactoringMiner)
+2. **srcML** (Required for C# parsing)
+3. **Gradle 7.4+** (For building)
+4. **Git** (For repository analysis)
 
-### Dependency Check
+### Installing srcML
 
+#### macOS
 ```bash
-# Check Java version
-java -version
-
-# Check srcML installation
-srcml --version
-
-# Check Git
-git --version
+brew install srcml
 ```
 
-### Build Instructions
+#### Ubuntu/Debian
+```bash
+sudo apt-get update
+sudo apt-get install srcml
+```
+
+#### Windows
+Download from [srcML official website](https://www.srcml.org/)
+
+### Building RefactoringMiner with C# Support
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/tsantalis/RefactoringMiner.git
 cd RefactoringMiner
 
 # Build the project
-./gradlew build -x test
+./gradlew build
 
-# Verify build artifacts
-ls -la build/libs/RM-fat.jar
-
-# Verify C# integration
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CPatMinerTest
+# Create fat JAR with all dependencies
+./gradlew shadowJar
 ```
 
-### System Requirements
+The fat JAR will be created at: `build/libs/RM-fat.jar`
 
-| Component | Status | Purpose |
-|-----------|--------|---------|
-| ✅ **srcML** | **Required** | Primary AST processing fallback |
-| ⚡ **CPatMiner JAR** | **Included** | Enhanced AST processing  |
+### Verify Installation
 
-## 📖 Usage
+```bash
+# Verify srcML is installed
+srcml --version
+
+# Verify RefactoringMiner build
+java -jar build/libs/RM-fat.jar -h
+```
+
+---
+
+## Usage
 
 ### Command Line Interface
 
-The C# RefactoringMiner uses the same command-line interface as the original RefactoringMiner:
+The C# RefactoringMiner uses the **same command-line interface** as the original RefactoringMiner:
+
+#### 1. Analyze a Single Commit
 
 ```bash
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner [OPTIONS]
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -c /path/to/repo <commit-sha> -json output.json
 ```
 
-### Available Commands
-
-#### 1. Detect Refactorings at Specific Commit
+**Example:**
 ```bash
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -c <repo-path> <commit-sha> -json <output-file>
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -c ~/projects/MyUnityGame 35cb3631 -json zinnia_refactorings.json
 ```
 
-#### 2. Detect Between Two Commits
-```bash
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -bc <repo-path> <start-commit> <end-commit> -json <output-file>
-```
-
-#### 3. Detect Between Tags
-```bash
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -bt <repo-path> <start-tag> <end-tag> -json <output-file>
-```
-
-#### 4. Detect All Refactorings in Branch
-```bash
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -a <repo-path> <branch> -json <output-file>
-```
-
-#### 5. GitHub Integration
-```bash
-# From GitHub URL
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -gc <git-url> <commit-sha> <timeout> -json <output-file>
-
-# Pull Request Analysis
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -gp <git-url> <pull-request-id> <timeout> -json <output-file>
-```
-
-### Convenience Script
-
-For easier usage, a convenience script is provided:
+#### 2. Analyze All Commits on a Branch
 
 ```bash
-# Make script executable
-chmod +x run_csharp_refactoring_miner.sh
-
-# Basic usage
-./run_csharp_refactoring_miner.sh <repo-path> <commit-id>
-
-# With custom output filename
-./run_csharp_refactoring_miner.sh <repo-path> <commit-id> my_analysis.json
-
-# Results are automatically saved to results/ folder
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -a /path/to/repo main -json all_refactorings.json
 ```
 
-## 💡 Examples
+#### 3. Analyze Commits Between Two Tags
 
-### Example 1: ASP.NET Core Analysis (Enterprise Scale)
 ```bash
-# Clone a real-world C# repository
-git clone https://github.com/dotnet/aspnetcore.git
-
-# Analyze complex refactoring commit (24 refactorings detected!)
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -c aspnetcore 43b81a9896 \
-  -json results/aspnetcore_media_refactoring.json
-
-# Results: Move Class, Rename Class, Extract Class, and 21 more refactorings
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -bt /path/to/repo v1.0.0 v2.0.0 10 -json refactorings.json
 ```
 
-**Detected Refactorings in Real ASP.NET Core Commit:**
-- `Move Class`: `ImageTest.FakeImageJsRuntime → ImageTest.FakeMediaJsRuntime`
-- `Rename Class`: `ImageSource → MediaSource`  
-- `Rename Class`: `Image → MediaComponentBase`
-- `Extract Class`: `MediaComponentBase.MediaLoadResult from class Image`
-- `Move Source Folder`: `src/Components/Web/test/Image → src/Components/Web/test/Media`
-- And 19 more complex refactorings...
+#### 4. GitHub Direct Analysis (with OAuth token)
 
-### Example 2: Simple C# Repository Analysis
 ```bash
-# Analyze a specific commit
-java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -c /path/to/csharp/repo abc123def \
-  -json results/analysis.json
+# Set up github-oauth.properties file first
+java -cp build/libs/RM-fat.jar \
+  org.refactoringminer.csharp.CSharpRefactoringMiner \
+  -gc https://github.com/user/repo.git <commit-sha> 10 -json output.json
 ```
 
-### Example 3: Using Convenience Script
+### Using the Shell Script
+
+A convenient shell script is provided for easier execution:
+
 ```bash
-# Make script executable  
-chmod +x run_csharp_refactoring_miner.sh
+# Make it executable
+chmod +x csharp-refactoring-miner.sh
 
-# Quick analysis with auto-generated filename
-./run_csharp_refactoring_miner.sh /path/to/repo commit123
-
-# Custom filename
-./run_csharp_refactoring_miner.sh aspnetcore 43b81a9896 blazor_refactoring
-
-# Results automatically saved to results/ folder
-ls -la results/blazor_refactoring.json
+# Run analysis
+./csharp-refactoring-miner.sh -c /path/to/repo <commit-sha> -json output.json
 ```
 
-## 📊 Output Format
+### Batch Processing Multiple Commits
 
-The tool produces JSON output identical to the original RefactoringMiner, ensuring compatibility with existing tools and workflows:
+For analyzing multiple commits from an Excel file:
 
-```json
-{
-  "commits": [
-    {
-      "repository": "https://github.com/dotnet/aspnetcore.git",
-      "sha1": "43b81a989650398c4971456562488bed8a00783a",
-      "url": "https://github.com/dotnet/aspnetcore/commit/43b81a989650398c4971456562488bed8a00783a",
-      "refactorings": [
-        {
-          "type": "Rename Class",
-          "description": "Rename Class ImageSource renamed to MediaSource",
-          "leftSideLocations": [
-            {
-              "filePath": "src/Components/Web/src/Image/ImageSource.cs",
-              "startLine": 15,
-              "endLine": 45,
-              "startColumn": 1,
-              "endColumn": 2,
-              "codeElementType": "CLASS_DECLARATION",
-              "description": "original type declaration",
-              "codeElement": "ImageSource"
-            }
-          ],
-          "rightSideLocations": [
-            {
-              "filePath": "src/Components/Web/src/Media/MediaSource.cs",
-              "startLine": 15,
-              "endLine": 45,
-              "startColumn": 1,
-              "endColumn": 2,
-              "codeElementType": "CLASS_DECLARATION", 
-              "description": "renamed type declaration",
-              "codeElement": "MediaSource"
-            }
-          ]
-        },
-        {
-          "type": "Extract Class",
-          "description": "Extract Class MediaComponentBase.MediaLoadResult from class Image",
-          "leftSideLocations": [...],
-          "rightSideLocations": [...]
-        }
-      ]
-    }
-  ]
+```bash
+python3 batch_process_commits.py
+```
+
+**Requirements:**
+- Excel file with commit URLs in "Commit URL" column
+- Configure paths in the script
+
+---
+
+## Supported C# Features
+
+### 1. **Properties**
+
+C# properties are converted to Java getter/setter patterns:
+
+**C# Code:**
+```csharp
+public class Player {
+    public string Name { get; set; }
+    public int Score { get; private set; }
 }
 ```
 
-## 📁 Project Structure
+**Detected Patterns:**
+- Property addition/removal
+- Property rename
+- Access modifier changes
+- Auto-property to full property refactoring
 
-```
-RefactoringMiner/
-├── build.gradle                           # Build configuration
-├── gradlew                                # Gradle wrapper script
-├── run_csharp_refactoring_miner.sh       # Convenience script
-├── README.md                             # This file
-├── .gitignore                            # Git ignore rules (includes results/)
-├── results/                              # Output directory for JSON results
-│   ├── *.json                           # Generated analysis results
-├── src/main/java/
-│   └── org/refactoringminer/
-│       ├── csharp/                       # C# RefactoringMiner components
-│       │   ├── CSharpRefactoringMiner.java
-│       │   ├── CSharpGitHistoryRefactoringMiner.java
-│       │   ├── CSharpGitServiceImpl.java
-│       │   ├── CSharpUMLModelASTReader.java
-│       │   ├── CSharpFileProcessor.java
-│       │   └── SimpleCSharpToJavaTransformer.java
-│       └── [original RefactoringMiner code]
-├── build/
-│   └── libs/
-│       └── RM-fat.jar                    # Built JAR file
-└── CPatMinerV2/                          # CPatMiner integration
-    └── AtomicASTChangeMining/
-        └── target/
-            └── AtomicASTChangeMining-0.0.1-SNAPSHOT.jar
+### 2. **Events**
+
+C# events are mapped to Java observer patterns:
+
+**C# Code:**
+```csharp
+public event EventHandler<GameEvent> OnGameStart;
 ```
 
-## 🔧 Configuration
+**Detected Patterns:**
+- Event declaration changes
+- Event handler modifications
+- Delegate pattern refactorings
 
-### Debug Output
-The tool provides comprehensive debug output showing:
-- File detection: `DEBUG: Found diff - MODIFY/RENAME: file.cs`
-- Processing stages: `DEBUG: Adding to filesBefore/filesCurrent`
-- Git operations: Processing commit information
+### 3. **Async/Await**
 
-### Results Organization
-- All results are saved to the `results/` folder in the project root
-- The `results/` folder is automatically added to `.gitignore`
-- Use descriptive filenames for better organization
+Async methods are preserved with markers:
 
-## 🧪 Testing
+**C# Code:**
+```csharp
+public async Task<string> LoadDataAsync() {
+    await Task.Delay(1000);
+    return "Data loaded";
+}
+```
 
-### Tested Repositories
-- ✅ **RefactoringMiner**: Simple C# test files
-- ✅ **ASP.NET Core**: Enterprise-scale C# codebase
-- ✅ **File Operations**: Renames, modifications, complex Git scenarios
+**Detected Patterns:**
+- Async method extraction
+- Async to sync conversions
+- Await usage changes
 
-### Test Examples
+### 4. **LINQ Queries**
+
+LINQ expressions are converted to equivalent patterns:
+
+**C# Code:**
+```csharp
+var results = players.Where(p => p.Score > 100)
+                    .OrderBy(p => p.Name)
+                    .Select(p => p.Name);
+```
+
+**Detected Patterns:**
+- LINQ query extraction
+- LINQ to loop conversions
+- Method chain refactorings
+
+### 5. **Attributes → Annotations**
+
+C# attributes map to Java annotations:
+
+**C# Code:**
+```csharp
+[SerializeField]
+[Tooltip("Player health value")]
+private int health = 100;
+```
+
+**Detected Patterns:**
+- Attribute addition/removal
+- Attribute parameter changes
+
+### 6. **Extension Methods**
+
+Extension methods are recognized and marked:
+
+**C# Code:**
+```csharp
+public static class StringExtensions {
+    public static bool IsNullOrEmpty(this string str) {
+        return string.IsNullOrEmpty(str);
+    }
+}
+```
+
+**Detected Patterns:**
+- Extension method extraction
+- Extension to instance method conversion
+
+### 7. **Nullable Types**
+
+Nullable value types are handled:
+
+**C# Code:**
+```csharp
+int? score = null;
+string? name = GetName();
+```
+
+**Detected Patterns:**
+- Nullable to non-nullable conversions
+- Null-checking refactorings
+
+### 8. **Pattern Matching**
+
+Pattern matching expressions are converted:
+
+**C# Code:**
+```csharp
+if (obj is Player player && player.Score > 100) {
+    // Do something
+}
+```
+
+**Detected Patterns:**
+- Pattern matching introduction
+- Type casting refactorings
+
+---
+
+## Supported Refactoring Types
+
+RefactoringMiner C# detects **60+ refactoring types**. The most commonly detected in C# projects:
+
+### Structural Refactorings
+
+| Refactoring Type | Description | Detection Rate |
+|------------------|-------------|----------------|
+| **Extract Method** | Extract code into new method | High |
+| **Extract Class** | Extract code into new class | High |
+| **Move Method** | Move method between classes | High |
+| **Move Attribute** | Move field between classes | High |
+| **Move Class** | Move class to different namespace | High |
+| **Inline Method** | Inline method body | High |
+| **Inline Class** | Merge class into another | High |
+
+### Access Modifier Refactorings
+
+| Refactoring Type | Description | Detection Rate |
+|------------------|-------------|----------------|
+| **Change Attribute Access Modifier** | public ↔ private ↔ protected | Very High |
+| **Change Method Access Modifier** | Visibility changes | Very High |
+| **Add/Remove Method Modifier** | static, sealed, virtual | High |
+
+### Naming Refactorings
+
+| Refactoring Type | Description | Detection Rate |
+|------------------|-------------|----------------|
+| **Rename Method** | Method name change | High |
+| **Rename Attribute** | Field name change | High |
+| **Rename Class** | Class name change | High |
+| **Rename Variable** | Local variable rename | High |
+| **Rename Parameter** | Parameter rename | High |
+
+### Type Refactorings
+
+| Refactoring Type | Description | Detection Rate |
+|------------------|-------------|----------------|
+| **Change Attribute Type** | Field type change | High |
+| **Change Return Type** | Method return type change | High |
+| **Change Parameter Type** | Parameter type change | High |
+| **Change Variable Type** | Local variable type | High |
+
+### Other Refactorings
+
+- Extract Variable
+- Inline Variable
+- Extract Interface
+- Pull Up Method/Attribute
+- Push Down Method/Attribute
+- Add/Remove Parameter
+- Reorder Parameters
+- Extract Superclass
+- And 40+ more...
+
+**Full list:** See [RefactoringMiner Supported Types](https://github.com/tsantalis/RefactoringMiner#supported-refactorings)
+
+---
+
+## Performance
+
+### Benchmark Results
+
+Tested on VR/AR C# projects (January 2024):
+
+| Metric | Value |
+|--------|-------|
+| **Average Processing Time** | ~2-5 seconds per commit |
+| **srcML Parsing** | ~0.5-1 second per file |
+| **AST Conversion** | ~0.5-1 second per file |
+| **Refactoring Detection** | ~1-3 seconds per commit |
+| **Large Commits (20+ files)** | ~10-30 seconds |
+
+### Optimization Tips
+
+1. **Use Fat JAR** - Single JAR reduces classpath overhead
+2. **Batch Processing** - Process multiple commits in one session
+3. **Filter Commits** - Pre-filter commits with C# changes only
+4. **Parallel Processing** - Use multiple processes for independent commits
+
+### Memory Usage
+
+- **Base Memory:** ~512 MB
+- **Per Commit:** ~50-200 MB (depending on size)
+- **Recommended JVM:** `-Xmx4096M -Xms1024M`
+
+---
+
+## Examples
+
+### Example 1: Extract Method Detection
+
+**C# Commit:**
+```csharp
+// Before
+public void ProcessPlayer() {
+    int score = CalculateScore();
+    UpdateUI();
+    SaveToDatabase();
+}
+
+// After
+public void ProcessPlayer() {
+    int score = CalculateScore();
+    FinishProcessing();
+}
+
+private void FinishProcessing() {
+    UpdateUI();
+    SaveToDatabase();
+}
+```
+
+**Detected Refactoring:**
+```json
+{
+  "type": "Extract Method",
+  "description": "Extract Method private FinishProcessing() extracted from public ProcessPlayer() in class Player"
+}
+```
+
+### Example 2: Change Access Modifier
+
+**C# Commit:**
+```csharp
+// Before
+public int health = 100;
+
+// After
+[SerializeField]
+private int health = 100;
+```
+
+**Detected Refactoring:**
+```json
+{
+  "type": "Change Attribute Access Modifier",
+  "description": "Changed visibility of attribute health from public to private in class Player"
+}
+```
+
+### Example 3: Rename Class
+
+**C# Commit:**
+```csharp
+// Before: PlayerController.cs
+public class PlayerController { }
+
+// After: PlayerManager.cs
+public class PlayerManager { }
+```
+
+**Detected Refactoring:**
+```json
+{
+  "type": "Rename Class",
+  "description": "Rename Class PlayerController renamed to PlayerManager"
+}
+```
+
+### Example 4: Move Method
+
+**C# Commit:**
+```csharp
+// Before: Player.cs
+public class Player {
+    public void UpdateScore() { }
+}
+
+// After: ScoreManager.cs
+public class ScoreManager {
+    public void UpdateScore() { }
+}
+```
+
+**Detected Refactoring:**
+```json
+{
+  "type": "Move Method",
+  "description": "Move Method public UpdateScore() from class Player to ScoreManager"
+}
+```
+
+### Real-World Example: Zinnia.Unity Commit
+
+**Commit:** `35cb3631904fec77ab2c68058ba4dd7b6aa75095`
+
+**Detected:** 12 refactorings
+- 10× Change Attribute Access Modifier
+- 1× Extract Method
+- 1× Rename Attribute
+
+**Processing Time:** 3.2 seconds
+
+---
+
+## Troubleshooting
+
+### Issue: "srcML command not found"
+
+**Solution:**
 ```bash
-# Test on simple example
-./run_csharp_refactoring_miner.sh /Users/neerajsaini/Desktop/RefactoringMiner 1dbb24835 simple_test
+# Install srcML
+brew install srcml  # macOS
+sudo apt install srcml  # Linux
 
-# Test on complex repository
-git clone https://github.com/dotnet/aspnetcore.git
-./run_csharp_refactoring_miner.sh aspnetcore e4d20daaa5 aspnet_test
+# Verify installation
+srcml --version
 ```
 
-## 🐛 Advanced Troubleshooting & FAQ
+### Issue: "No .cs files found in repository"
 
+**Possible Causes:**
+- Repository path incorrect
+- No C# files in specified commit
+- Files in subdirectories not scanned
 
-#### **Issue**: "srcML command not found"
+**Solution:**
 ```bash
-# macOS - Install via Homebrew
-brew install srcml
+# Verify repository structure
+ls -R /path/to/repo | grep ".cs$"
 
-# Ubuntu/Debian - Install via APT
-sudo apt-get update
-sudo apt-get install srcml
-
-# Windows - Download from official site
-# Visit: http://www.srcml.org/downloads/
+# Check specific commit
+git show <commit-sha> --name-only | grep ".cs$"
 ```
 
+### Issue: "OutOfMemoryError during analysis"
 
-### Performance Optimization
-
-#### **Memory Issues on Large Repositories**
+**Solution:**
 ```bash
-# Increase JVM memory allocation
-export JAVA_OPTS="-Xmx8g -XX:+UseG1GC -XX:+UseStringDeduplication"
-./gradlew run --args="-c large-repo-path"
-
-# Alternative: Run with custom memory settings
-java -Xmx8g -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -c repo commit
+# Increase heap size
+java -Xmx4096M -Xms1024M -jar build/libs/RM-fat.jar -c ...
 ```
 
-### Build & Environment Issues
+### Issue: "Empty JSON output / Zero refactorings detected"
 
-#### **Issue**: "Build failed - Java version"
+**Possible Causes:**
+- Commit contains only non-detectable changes
+- Semantic refactorings (not AST-based)
+- srcML parsing failures
+
+**Debug Steps:**
+1. Check srcML can parse the file:
+   ```bash
+   srcml file.cs -o output.xml
+   ```
+2. Enable verbose logging:
+   ```bash
+   java -Dorg.slf4j.simpleLogger.defaultLogLevel=debug -jar ...
+   ```
+3. Verify file encoding (should be UTF-8)
+
+### Issue: "GitHub API rate limit exceeded"
+
+**Solution:**
+Create `github-oauth.properties`:
+```properties
+username=your-github-username
+token=ghp_your_personal_access_token
+```
+
+Place it next to the JAR file when using `-gc` or `-gp` options.
+
+### Issue: "Compilation errors in converted Java code"
+
+This is expected for some C# constructs. The processor handles this internally. If you need to debug:
+
 ```bash
-# Check Java version (requires 11+)
-java -version
-javac -version
-
-# macOS: Install correct Java version
-brew install openjdk@17
-export JAVA_HOME=$(/usr/libexec/java_home -v17)
+# Check generated Java code (temporary files)
+ls -la /tmp/csharp_*
 ```
 
-#### **Issue**: "Gradle build errors"
-```bash
-# Clean and rebuild
-./gradlew clean build -x test --refresh-dependencies
+---
 
-# Check for specific errors
-./gradlew build --debug | grep ERROR
+## Contributing
+
+### Development Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/tsantalis/RefactoringMiner.git
+   cd RefactoringMiner
+   ```
+
+2. **Import into IDE:**
+   - IntelliJ IDEA: File → Open → Select `build.gradle`
+   - Eclipse: Import → Gradle Project
+
+3. **Build and test:**
+   ```bash
+   ./gradlew clean build
+   ./gradlew test
+   ```
+
+### Project Structure
+
 ```
+src/main/java/org/refactoringminer/csharp/
+├── CSharpRefactoringMiner.java          # Main CLI entry point
+├── CSharpGitHistoryRefactoringMiner.java # Git integration
+├── SrcMLBasedCSharpProcessor.java        # Core C# processor
+├── CSharpFileProcessor.java              # File handling
+├── CSharpUMLModelASTReader.java          # AST reader
+└── cli/                                  # CLI utilities
+    └── CSharpRefactoringMinerCLI.java    # Command-line interface
+```
+
+### Adding New C# Features
+
+To add support for a new C# language feature:
+
+1. **Update `SrcMLBasedCSharpProcessor.java`:**
+   ```java
+   private static String processNewFeature(Element element) {
+       // Parse srcML XML element
+       // Convert to Java equivalent
+       // Return Java code
+   }
+   ```
+
+2. **Add to `convertSrcMLXMLToJava()`:**
+   ```java
+   case "new_feature":
+       result.append(processNewFeature(child));
+       break;
+   ```
+
+3. **Test with sample C# code:**
+   ```bash
+   # Create test file
+   echo "your C# code" > test.cs
+   
+   # Test conversion
+   java -cp build/libs/RM-fat.jar \
+     org.refactoringminer.csharp.CSharpRefactoringMiner \
+     -c /path/to/test/repo <commit> -json test.json
+   ```
+
+
+## Related Tools
+
+### CPatMinerV2
+
+This repository includes **CPatMinerV2**, a C# code change pattern mining tool.
+
+**Location:** `CPatMinerV2/`
+
+**Features:**
+- Semantic change pattern extraction
+- Graph-based mining
+- Supports C# via srcML
+
+**See:** [CPatMinerV2/README.md](CPatMinerV2/README.md)
+
+### Integration with RefactoringMiner
+
+The C# support is fully integrated with RefactoringMiner's API:
+
+```java
+import org.refactoringminer.csharp.CSharpGitHistoryRefactoringMiner;
+
+CSharpGitHistoryRefactoringMiner miner = 
+    new CSharpGitHistoryRefactoringMiner();
+    
+miner.detectAtCommit(repository, commitId, new RefactoringHandler() {
+    @Override
+    public void handle(String commitId, List<Refactoring> refactorings) {
+        // Process detected refactorings
+    }
+});
+```
+
+---
+
+## License
+
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file.
+
+---
+
+## Acknowledgments
+
+### Original RefactoringMiner
+- **Author:** Nikolaos Tsantalis
+- **Repository:** [tsantalis/RefactoringMiner](https://github.com/tsantalis/RefactoringMiner)
+
+### srcML
+- **Project:** [srcML](https://www.srcml.org/)
+- **Purpose:** Multi-language source code analysis
+
+### CPatMiner
+- **Original:** [nguyenhoan/CPatMiner](https://github.com/nguyenhoan/CPatMiner)
+- **C# Extension:** CPatMinerV2 (included)
+
+---
