@@ -1,0 +1,519 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "e0bc6824933cc237782d9586c707a3224e43a117",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/e0bc6824933cc237782d9586c707a3224e43a117",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Pushpin renamed to PushpinComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Pushpin.cs",
+		"startLine": 7,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Pushpin"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PushpinComponent.cs",
+		"startLine": 7,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "PushpinComponent"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(showHorizonView), if(isReady)] to if(isReady && showHorizonView) in method package FixedUpdate() : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 323,
+		"endLine": 342,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(showHorizonView)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 297,
+		"endLine": 343,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(isReady)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 295,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 301,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(isReady && showHorizonView)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 299,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package FixedUpdate() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(isReady), if(showHorizonView)] to if(isReady && showHorizonView) in method package FixedUpdate() : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 297,
+		"endLine": 343,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(isReady)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(showHorizonView)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 295,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 301,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(isReady && showHorizonView)"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 299,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package FixedUpdate() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute newLocationLatLng : Vector2 to currentLocation : LatLng in method package handleSelectNewLocation(newCity string) : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newLocationLatLng : Vector2"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 25,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "currentLocation : LatLng"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 25,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type newLocationLatLng : Vector2 to currentLocation : LatLng in method package handleSelectNewLocation(newCity string) : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newLocationLatLng : Vector2"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 25,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "currentLocation : LatLng"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 25,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lastPin : Pushpin to lastPin : PushpinComponent in class InteractionDetect",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionDetect.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lastPin : Pushpin"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionDetect.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lastPin : PushpinComponent"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type latLng : Vector2 to latLng : LatLng in method public UpdateLocationPanel(latLng LatLng, description string) : void from class LocationPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 37,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "latLng : Vector2"
+}, {
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 37,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "latLng : LatLng"
+}, {
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type latLong : Vector2 to latLong : LatLng in method private handleInteraction(latLong LatLng) : void from class LocationPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "latLong : Vector2"
+}, {
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "latLong : LatLng"
+}, {
+		"filePath": "Assets/Scripts/LocationPanel.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type latLng : Vector2 to latLng : LatLng in method private updateLocationPanel(latLng LatLng, description string) : void from class MainUIController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 38,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "latLng : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 530,
+		"endLine": 530,
+		"startColumn": 38,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "latLng : LatLng"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter locCoords : LatLng in method public Snapshot(dt DateTime, loc string, locCoords LatLng) from class Snapshot",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Snapshot.cs",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Snapshot(dt DateTime, loc string)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Snapshot.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 46,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "locCoords : LatLng"
+}, {
+		"filePath": "Assets/Scripts/Snapshot.cs",
+		"startLine": 8,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Snapshot(dt DateTime, loc string, locCoords LatLng)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter locationCoords : LatLng in method public CreateSnapshot(dt DateTime, location String, locationCoords LatLng) : void from class SnapshotsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SnapshotsController.cs",
+		"startLine": 32,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateSnapshot(dt DateTime, location String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/SnapshotsController.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 62,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "locationCoords : LatLng"
+}, {
+		"filePath": "Assets/Scripts/SnapshotsController.cs",
+		"startLine": 33,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public CreateSnapshot(dt DateTime, location String, locationCoords LatLng) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable lon : float to lng : float in method public LatLngFromPosition(pos Vector3, rad float) : LatLng from class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 15,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "lon : float"
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 15,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "lng : float"
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Vector2 to LatLng in method public LatLngFromPosition(pos Vector3, rad float) : LatLng from class Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Vector2"
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 111,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LatLngFromPosition(pos Vector3, rad float) : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "LatLng"
+}, {
+		"filePath": "Assets/Scripts/Utilities/Utils.cs",
+		"startLine": 111,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public LatLngFromPosition(pos Vector3, rad float) : LatLng"
+}]
+}
+]
+}]
+}

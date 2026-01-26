@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "3b75b9718642c8ea60a989f1b24022125e8d27ca",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/3b75b9718642c8ea60a989f1b24022125e8d27ca",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private StartRemapping(dictionaryPath string) : void extracted from private RunRetargetToScript() : void in class AssemblyInformation",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 178,
+		"endLine": 199,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private RunRetargetToScript() : void"
+}, {
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 200,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private StartRemapping(dictionaryPath string) : void"
+}, {
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 158,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private RunRetargetToScript() : void"
+}, {
+		"filePath": "Assets/MRTK/Tools/MSBuild/Scripts/AssetScriptReferenceRetargeter.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "StartRemapping(path)"
+}]
+}
+]
+}]
+}

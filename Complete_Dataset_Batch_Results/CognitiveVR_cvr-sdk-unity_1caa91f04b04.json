@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "1caa91f04b046c56955c1a5de43c801ce58e694a",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/1caa91f04b046c56955c1a5de43c801ce58e694a",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private ExportQuad(v GameObject, meshes List<BakeableMesh>, type ExportQuadType, dyn bool) : GameObject renamed to private BakeQuadGameObject(v GameObject, meshes List<BakeableMesh>, type ExportQuadType, dyn bool) : GameObject in class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 719,
+		"endLine": 778,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ExportQuad(v GameObject, meshes List<BakeableMesh>, type ExportQuadType, dyn bool) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 719,
+		"endLine": 795,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private BakeQuadGameObject(v GameObject, meshes List<BakeableMesh>, type ExportQuadType, dyn bool) : GameObject"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ExportQuad(meshName string, width float, height float) : Mesh renamed to public GenerateQuadMesh(meshName string, width float, height float) : Mesh in class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1131,
+		"endLine": 1192,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ExportQuad(meshName string, width float, height float) : Mesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1148,
+		"endLine": 1209,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GenerateQuadMesh(meshName string, width float, height float) : Mesh"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable uploadList : in to subdirectories : in in method package foreach(v var) from class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1536,
+		"endLine": 1536,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "uploadList : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1536,
+		"endLine": 1536,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1576,
+		"endLine": 1576,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "subdirectories : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1576,
+		"endLine": 1576,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable uploadList : in to subdirectories : in in method package foreach(v var) from class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1536,
+		"endLine": 1536,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "uploadList : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1536,
+		"endLine": 1536,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1616,
+		"endLine": 1616,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "subdirectories : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1616,
+		"endLine": 1616,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable subdirectories : in to uploadList : in in method package foreach(v var) from class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1559,
+		"endLine": 1559,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "subdirectories : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1559,
+		"endLine": 1559,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1553,
+		"endLine": 1553,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "uploadList : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1553,
+		"endLine": 1553,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable subdirectories : in to uploadList : in in method package foreach(v var) from class ExportUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1599,
+		"endLine": 1599,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "subdirectories : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1599,
+		"endLine": 1599,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1553,
+		"endLine": 1553,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "uploadList : in"
+}, {
+		"filePath": "Editor/ExportUtility.cs",
+		"startLine": 1553,
+		"endLine": 1553,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

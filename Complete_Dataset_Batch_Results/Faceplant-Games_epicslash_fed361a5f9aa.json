@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Faceplant-Games/epicslash.git",
+	"sha1": "fed361a5f9aae8cad1388d2fbb227c40ab60dc1e",
+	"url": "https://github.com/Faceplant-Games/epicslash/commit/fed361a5f9aae8cad1388d2fbb227c40ab60dc1e",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private ChangeStage() : IEnumerator extracted from private StageDown() : IEnumerator in class GameManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 225,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private StageDown() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 229,
+		"endLine": 234,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 230,
+		"endLine": 234,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 248,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ChangeStage() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 250,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 251,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 241,
+		"endLine": 246,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private StageDown() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ChangeStage()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private ChangeStage() : IEnumerator extracted from private StageUp() : IEnumerator in class GameManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 238,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private StageUp() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 242,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 243,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 248,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ChangeStage() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 250,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 251,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 234,
+		"endLine": 239,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private StageUp() : IEnumerator"
+}, {
+		"filePath": "Assets/scripts/Managers/GameManager.cs",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ChangeStage()"
+}]
+}
+]
+}]
+}

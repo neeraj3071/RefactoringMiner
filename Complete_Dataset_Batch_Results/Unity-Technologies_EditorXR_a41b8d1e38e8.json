@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "a41b8d1e38e8b91e121010dbdf73a3adb6deaa4f",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/a41b8d1e38e8b91e121010dbdf73a3adb6deaa4f",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public Setup() : void renamed to package Start() : void in class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 189,
+		"endLine": 206,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Setup() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 189,
+		"endLine": 209,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Start() : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 189,
+		"endLine": 206,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Setup() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 189,
+		"endLine": 209,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Start() : void"
+}]
+}
+]
+}]
+}

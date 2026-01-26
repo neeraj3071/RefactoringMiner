@@ -1,0 +1,216 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/rogerbarton/vr-modeling.git",
+	"sha1": "5153d5a1076fa53f32dbf847e9fabc7bf9efef8f",
+	"url": "https://github.com/rogerbarton/vr-modeling/commit/5153d5a1076fa53f32dbf847e9fabc7bf9efef8f",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute uiListItemPrefab : GameObject to _uiListItemPrefab : GameObject in class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "uiListItemPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_uiListItemPrefab : GameObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private _uiListItemPrefab : GameObject from class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uiListItemPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _uiListItemPrefab : GameObject"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetupUI(meshPrefab GameObject) : void extracted from private Start() : void in class MeshManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 15,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 28,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 33,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetupUI(meshPrefab GameObject) : void"
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 38,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 15,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetupUI(mesh)"
+}, {
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute uiListItemPrefab : GameObject to _uiListItemPrefab : GameObject in class MeshManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "uiListItemPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_uiListItemPrefab : GameObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private _uiListItemPrefab : GameObject from class MeshManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uiListItemPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _uiListItemPrefab : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute activeMesh : LibiglMesh to ActiveMesh : LibiglMesh in class MeshManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "activeMesh : LibiglMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MeshManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ActiveMesh : LibiglMesh"
+}]
+}
+]
+}]
+}

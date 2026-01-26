@@ -1,0 +1,297 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "41722ca90cb12d63cf01f1c57bf5feaca927d04d",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/41722ca90cb12d63cf01f1c57bf5feaca927d04d",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class VR_IK_Creator renamed to VrikCreator",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/VR_IK_Creator.cs",
+		"startLine": 3,
+		"endLine": 66,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VR_IK_Creator"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/VrikCreator.cs",
+		"startLine": 4,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VrikCreator"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public isPulling : bool from class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private isPulling : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public isPulling : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public isPulling : bool from class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private isPulling : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public isPulling : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute isPulling : bool to pulling : bool in class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "isPulling : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "pulling : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute c_startedPulling : bool to startedPulling : bool in class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "c_startedPulling : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "startedPulling : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute c_isPulling : bool to isPulling : bool in class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "c_isPulling : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "isPulling : bool"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class CameraUtils",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/CameraUtils.cs",
+		"startLine": 7,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "CameraUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/CameraUtils.cs",
+		"startLine": 7,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "CameraUtils"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class LayerUtils",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/LayerUtils.cs",
+		"startLine": 46,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "LayerUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/LayerUtils.cs",
+		"startLine": 46,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "LayerUtils"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class LogUtils",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/LogUtils.cs",
+		"startLine": 5,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "LogUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/LogUtils.cs",
+		"startLine": 5,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "LogUtils"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class VHVRConfig",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/VHVRConfig.cs",
+		"startLine": 12,
+		"endLine": 522,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "VHVRConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/VHVRConfig.cs",
+		"startLine": 12,
+		"endLine": 522,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "VHVRConfig"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class VRAssetManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/VRAssetManager.cs",
+		"startLine": 13,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "VRAssetManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/VRAssetManager.cs",
+		"startLine": 13,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "VRAssetManager"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class WeaponUtils",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/WeaponUtils.cs",
+		"startLine": 8,
+		"endLine": 203,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "WeaponUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/WeaponUtils.cs",
+		"startLine": 6,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "WeaponUtils"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/iamtomhewitt/vr-pacman.git",
+	"sha1": "7600b1e22fe65534c24e170a7441b915921bf8b5",
+	"url": "https://github.com/iamtomhewitt/vr-pacman/commit/7600b1e22fe65534c24e170a7441b915921bf8b5",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private foodCount : int from class GameObjectManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public foodCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private foodCount : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Reset() : void renamed to public ResetSpeed() : void in class PacmanMovement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanMovement.cs",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Reset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanMovement.cs",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ResetSpeed() : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public ResetPosition(offset int) : void extracted from public ResetEntityPositions() : void in class GameObjectManager & moved to class Ghost",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 120,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public ResetEntityPositions() : void"
+}, {
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ResetPosition(offset int) : void"
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 117,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public ResetEntityPositions() : void"
+}, {
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ghosts[i].ResetPosition(i)"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable i : int to offset : int in method public ResetPosition(offset int) : void from class Ghost",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 22,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "Assets/Scripts/Manager/GameObjectManager.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public RemoveLife(index int) : void extracted from private Die() : IEnumerator in class PacmanCollision & moved to class PacmanHud",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanCollision.cs",
+		"startLine": 94,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Die() : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/Pacman/PacmanCollision.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanHud.cs",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RemoveLife(index int) : void"
+}, {
+		"filePath": "Assets/Scripts/Pacman/PacmanHud.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Pacman/PacmanCollision.cs",
+		"startLine": 91,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Die() : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/Pacman/PacmanCollision.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PacmanHud.instance.RemoveLife(currentLives)"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public lifeSprites : GameObject[] from class PacmanCollision to public lifeSprites : GameObject[] from class PacmanHud",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanCollision.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public lifeSprites : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Pacman/PacmanHud.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public lifeSprites : GameObject[]"
+}]
+}
+]
+}]
+}

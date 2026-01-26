@@ -1,0 +1,309 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aestheticinteractive/Hover-UI-Kit.git",
+	"sha1": "0750c5ee7d4af7a2186ec05e0db258f291e47c4a",
+	"url": "https://github.com/aestheticinteractive/Hover-UI-Kit/commit/0750c5ee7d4af7a2186ec05e0db258f291e47c4a",
+	"refactorings": [{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable CanvasSizeX : float to textX : float in method public UpdateAfterRenderer() : void from class HoverRendererLabel",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "CanvasSizeX : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "textX : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable CanvasSizeY : float to textSizeX : float in method public UpdateAfterRenderer() : void from class HoverRendererLabel",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "CanvasSizeY : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "textSizeX : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter pCanvas : HoverRendererCanvas in method private BuildLabel(pCanvas HoverRendererCanvas) : HoverRendererLabel from class HoverRenderer",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildLabel() : HoverRendererLabel"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 41,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "pCanvas : HoverRendererCanvas"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 95,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private BuildLabel(pCanvas HoverRendererCanvas) : HoverRendererLabel"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CanvasSizeX : float from class HoverRendererLabel to public CanvasSizeX : float from class HoverRendererCanvas",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CanvasSizeX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererCanvas.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CanvasSizeX : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CanvasSizeY : float from class HoverRendererLabel to public CanvasSizeY : float from class HoverRendererCanvas",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CanvasSizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererCanvas.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CanvasSizeY : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverRendererCanvas from class HoverRendererLabel",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 8,
+		"endLine": 92,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverRendererLabel"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CanvasSizeX : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CanvasSizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 9,
+		"endLine": 84,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverRendererLabel"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererCanvas.cs",
+		"startLine": 8,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverRendererCanvas"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererCanvas.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CanvasSizeX : float"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererCanvas.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CanvasSizeY : float"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to HoverRendererCanvas in method private BuildCanvas() : HoverRendererCanvas from class HoverRenderer",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 72,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 11,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "HoverRendererCanvas"
+}, {
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 88,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private BuildCanvas() : HoverRendererCanvas"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private BuildElements() : void from class HoverRendererLabel to private BuildCanvas() : HoverRendererCanvas from class HoverRenderer",
+	"leftSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/Elements/HoverRendererLabel.cs",
+		"startLine": 72,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Core/Solution/Hover.Board/Renderers/HoverRenderer.cs",
+		"startLine": 88,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private BuildCanvas() : HoverRendererCanvas"
+}]
+}
+]
+}]
+}

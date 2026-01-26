@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "39d7d49589821c41fe3f3f55f7243b8cf41cd539",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/39d7d49589821c41fe3f3f55f7243b8cf41cd539",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pairs : List<OSCRouterPair> to pairs : List<OSCRouterEndpoints> in method public Initialise(pairs List<OSCRouterEndpoints>) : void from class OSCRouter",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/OSC/OSCRouter.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pairs : List<OSCRouterPair>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/OSC/OSCRouter.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 28,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pairs : List<OSCRouterEndpoints>"
+}]
+}
+]
+}]
+}

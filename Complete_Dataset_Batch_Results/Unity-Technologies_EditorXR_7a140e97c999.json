@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "7a140e97c99994233cca7ce764183491914746d8",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/7a140e97c99994233cca7ce764183491914746d8",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to bool in method public Execute() : bool from class IAction",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/IAction.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Scripts/Interfaces/IAction.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Execute() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/IAction.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Scripts/Interfaces/IAction.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public Execute() : bool"
+}]
+}
+]
+}]
+}

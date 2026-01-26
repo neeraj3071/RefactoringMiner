@@ -1,0 +1,279 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RyanStonebraker/Derelict.git",
+	"sha1": "07c77b6a69187994753b19b3a345a4b609e6904c",
+	"url": "https://github.com/RyanStonebraker/Derelict/commit/07c77b6a69187994753b19b3a345a4b609e6904c",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public placeShipOnWaterGrid() : void extracted from public Update() : void in class ShipController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 110,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 4,
+		"endColumn": 147,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 105,
+		"endLine": 107,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public placeShipOnWaterGrid() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 146,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 122,
+		"endLine": 132,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "placeShipOnWaterGrid()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public hideShip() : void extracted from public Update() : void in class ShipController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 110,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 4,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 109,
+		"endLine": 111,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public hideShip() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 122,
+		"endLine": 132,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hideShip()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public setShipRotation() : void extracted from public Update() : void in class ShipController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 110,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 4,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 120,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 84,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 87,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 113,
+		"endLine": 120,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setShipRotation() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 4,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 114,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 114,
+		"endLine": 116,
+		"startColumn": 84,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 87,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 122,
+		"endLine": 132,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setShipRotation()"
+}]
+}
+]
+}]
+}

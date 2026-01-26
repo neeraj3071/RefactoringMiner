@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "5c94a983c6a1b945bf4574d4fd167d97efdda253",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/5c94a983c6a1b945bf4574d4fd167d97efdda253",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder VRCFaceTracking.Core/OSC to VRCFaceTracking.Core/Services",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscQueryService.cs",
+		"startLine": 15,
+		"endLine": 175,
+		"startColumn": 16,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OscQueryService"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/OscQueryService.cs",
+		"startLine": 15,
+		"endLine": 175,
+		"startColumn": 16,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "OscQueryService"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable chars : string to k_chars : string in initializer OscQueryService from class OscQueryService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscQueryService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 18,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "chars : string"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscQueryService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 11,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/OscQueryService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 26,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "k_chars : string"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/OscQueryService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

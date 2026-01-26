@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/NgoJunHaoJason/CZ4001.git",
+	"sha1": "79a2c2c89e69a7d67754af5dc28e27107d02c3f9",
+	"url": "https://github.com/NgoJunHaoJason/CZ4001/commit/79a2c2c89e69a7d67754af5dc28e27107d02c3f9",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private maxHealth : float from class AnimalHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public maxHealth : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private maxHealth : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private fightFleeThreshold : float from class AnimalHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 18,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fightFleeThreshold : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private fightFleeThreshold : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute attackedByPlayer : bool to AttackedByPlayer : bool in class AnimalHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "attackedByPlayer : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/AnimalBehaviour/AnimalHealth.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AttackedByPlayer : bool"
+}]
+}
+]
+}]
+}

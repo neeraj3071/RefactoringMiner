@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "bdd871504068e25159e753859cfd6daf491e7d79",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/bdd871504068e25159e753859cfd6daf491e7d79",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(spatialScrollData != null && toolslMenuInput.select.wasJustPressed), if(spatialScrollData != null && toolslMenuInput.show.isHeld), if(spatialScrollData != null && !toolslMenuInput.show.isHeld && !toolslMenuInput.select.isHeld)] to if(SpatialScrollDataDeprecated != null && !toolslMenuInput.show.isHeld && !toolslMenuInput.select.isHeld) in method public ProcessInput(input ActionMapInput, consumeControl ConsumeControlDelegate) : void from class ToolsMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 230,
+		"endLine": 242,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(spatialScrollData != null && toolslMenuInput.select.wasJustPressed)"
+}, {
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 224,
+		"endLine": 281,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(spatialScrollData != null && toolslMenuInput.show.isHeld)"
+}, {
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 264,
+		"endLine": 281,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(spatialScrollData != null && !toolslMenuInput.show.isHeld && !toolslMenuInput.select.isHeld)"
+}, {
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 183,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ProcessInput(input ActionMapInput, consumeControl ConsumeControlDelegate) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 264,
+		"endLine": 281,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(SpatialScrollDataDeprecated != null && !toolslMenuInput.show.isHeld && !toolslMenuInput.select.isHeld)"
+}, {
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 183,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public ProcessInput(input ActionMapInput, consumeControl ConsumeControlDelegate) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute spatialScrollData : SpatialScrollModule.SpatialScrollData to SpatialScrollDataDeprecated : SpatialScrollModule.SpatialScrollDataDeprecated in class ToolsMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 54,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialScrollData : SpatialScrollModule.SpatialScrollData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 64,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SpatialScrollDataDeprecated : SpatialScrollModule.SpatialScrollDataDeprecated"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialScrollData : SpatialScrollModule.SpatialScrollData to SpatialScrollDataDeprecated : SpatialScrollModule.SpatialScrollDataDeprecated in class ToolsMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 54,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialScrollData : SpatialScrollModule.SpatialScrollData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 64,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "SpatialScrollDataDeprecated : SpatialScrollModule.SpatialScrollDataDeprecated"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public PerformSpatialScroll() : SpatialScrollModule.SpatialScrollData renamed to public PerformSpatialScrollDeprecated() : SpatialScrollModule.SpatialScrollDataDeprecated in class IControlSpatialScrollingMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerformSpatialScroll() : SpatialScrollModule.SpatialScrollData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 65,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public PerformSpatialScrollDeprecated() : SpatialScrollModule.SpatialScrollDataDeprecated"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type SpatialScrollModule.SpatialScrollData to SpatialScrollModule.SpatialScrollDataDeprecated in method public PerformSpatialScrollDeprecated() : SpatialScrollModule.SpatialScrollDataDeprecated from class IControlSpatialScrollingMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 23,
+		"endColumn": 60,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "SpatialScrollModule.SpatialScrollData"
+}, {
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerformSpatialScroll() : SpatialScrollModule.SpatialScrollData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 23,
+		"endColumn": 70,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "SpatialScrollModule.SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 65,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public PerformSpatialScrollDeprecated() : SpatialScrollModule.SpatialScrollDataDeprecated"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute performSpatialScroll : PerformSpatialScrollDelegate to performSpatialScrollDeprecated : PerformSpatialScrollDelegateDeprecated in class IControlSpatialScrollingMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 54,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "performSpatialScroll : PerformSpatialScrollDelegate"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 64,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "performSpatialScrollDeprecated : PerformSpatialScrollDelegateDeprecated"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type performSpatialScroll : PerformSpatialScrollDelegate to performSpatialScrollDeprecated : PerformSpatialScrollDelegateDeprecated in class IControlSpatialScrollingMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 54,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "performSpatialScroll : PerformSpatialScrollDelegate"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IControlSpatialScrolling.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 64,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "performSpatialScrollDeprecated : PerformSpatialScrollDelegateDeprecated"
+}]
+}
+]
+}]
+}

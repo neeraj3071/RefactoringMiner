@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/RyanStonebraker/Derelict.git",
+	"sha1": "82a5e1fa14044f93316edd19bf843203256e8c7c",
+	"url": "https://github.com/RyanStonebraker/Derelict/commit/82a5e1fa14044f93316edd19bf843203256e8c7c",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter shipPiece : int in method public checkHit(shipPiece int) : bool from class ShipController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "shipPiece : int"
+}, {
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkHit(shipPiece int) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Ships/Scripts/ShipController.cs",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public checkHit() : bool"
+}]
+}
+]
+}]
+}

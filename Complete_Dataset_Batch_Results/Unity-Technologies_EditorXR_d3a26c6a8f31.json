@@ -1,0 +1,468 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "d3a26c6a8f31975ffc14aad58143867f4220780c",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/d3a26c6a8f31975ffc14aad58143867f4220780c",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter icon : Texture2D in method public AssetData(name string, instanceID int, icon Texture2D, type string) from class AssetData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "icon : Texture2D"
+}, {
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 18,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AssetData(name string, instanceID int, icon Texture2D, type string)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public AssetData(name string, instanceID int, type string)"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type in to IEnumerator in method package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1912,
+		"startColumn": 18,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1921,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateFolderData() : in"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1912,
+		"startColumn": 2,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IEnumerator"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1958,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter callback : Action<FolderData,bool> in method package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1921,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateFolderData() : in"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1912,
+		"startColumn": 31,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "callback : Action<FolderData,bool>"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1958,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter assetTypes : HashSet<string> in method package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1921,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateFolderData() : in"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1912,
+		"startColumn": 66,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "assetTypes : HashSet<string>"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1958,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter hasNext : bool in method package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1921,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateFolderData() : in"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1912,
+		"startColumn": 94,
+		"endColumn": 106,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "hasNext : bool"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1912,
+		"endLine": 1958,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package CreateFolderData(callback Action<FolderData,bool>, assetTypes HashSet<string>, hasNext bool) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute assetListView : AssetGridViewController to assetGridView : AssetGridViewController in class ProjectUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "assetListView : AssetGridViewController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "assetGridView : AssetGridViewController"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type target : var to obj : UnityObject in method public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : var"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 46,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "obj : UnityObject"
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 6,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 6,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 312,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable target : var to obj : UnityObject in method public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : var"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 46,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : UnityObject"
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 6,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 6,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 312,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter callback : Action<Texture> in method public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAssetPreview() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 63,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "callback : Action<Texture>"
+}, {
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 323,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAssetPreview() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 323,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAssetPreview() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 323,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetAssetPreview() : IEnumerator from class InspectorComponentItem to public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAssetPreview() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 305,
+		"endLine": 323,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetAssetPreview(obj UnityObject, callback Action<Texture>) : IEnumerator"
+}]
+}
+]
+}]
+}

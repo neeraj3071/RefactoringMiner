@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "c552dfbcae19b574901120c82da5950f9638573b",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/c552dfbcae19b574901120c82da5950f9638573b",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type source : MultipleRayInputModule.RaycastSource to source : RaycastSource in method package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void from class MultipleRayInputModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 562,
+		"endLine": 562,
+		"startColumn": 42,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "source : MultipleRayInputModule.RaycastSource"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 564,
+		"endLine": 564,
+		"startColumn": 6,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/MultipleRayInputModule/MultipleRayInputModule.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : RaycastSource"
+}, {
+		"filePath": "Scripts/Modules/MultipleRayInputModule/MultipleRayInputModule.cs",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void from class EditorVR.Rays to package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void from class MultipleRayInputModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 560,
+		"endLine": 565,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/MultipleRayInputModule/MultipleRayInputModule.cs",
+		"startLine": 466,
+		"endLine": 471,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void"
+}]
+}
+]
+}]
+}

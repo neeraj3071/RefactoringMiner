@@ -1,0 +1,402 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/quintesse/PlayoVR.git",
+	"sha1": "fd1e85d36174c98256a2752169316bb3bb1c4c15",
+	"url": "https://github.com/quintesse/PlayoVR/commit/fd1e85d36174c98256a2752169316bb3bb1c4c15",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class NetworkInterpolatingTransform renamed to NetworkObject",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 6,
+		"endLine": 313,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "NetworkInterpolatingTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 6,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "NetworkObject"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class NetworkInterpolatingTransform.ComponentInterpolator moved and renamed to NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 82,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "NetworkInterpolatingTransform.ComponentInterpolator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 114,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "NetworkObject.ComponentInterpolator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected updateStates(lhs State, rhs State, t float) : void renamed to package HasChanged() in class NetworkObject",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 312,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateStates(lhs State, rhs State, t float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package HasChanged()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected Obtain() : void extracted from package OnPhotonSerializeView(stream PhotonStream, info PhotonMessageInfo) : void in class NetworkObject",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 47,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package OnPhotonSerializeView(stream PhotonStream, info PhotonMessageInfo) : void"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 47,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Obtain() : void"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 34,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package OnPhotonSerializeView(stream PhotonStream, info PhotonMessageInfo) : void"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Obtain()"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 58,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter lhs : State in method protected updateStates(lhs State, rhs State, t float) : void from class NetworkInterpolatingTransform",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 41,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "lhs : State"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 312,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateStates(lhs State, rhs State, t float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package HasChanged()"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter rhs : State in method protected updateStates(lhs State, rhs State, t float) : void from class NetworkInterpolatingTransform",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 52,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "rhs : State"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 312,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateStates(lhs State, rhs State, t float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package HasChanged()"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter t : float in method protected updateStates(lhs State, rhs State, t float) : void from class NetworkInterpolatingTransform",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 63,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "t : float"
+}, {
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 312,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateStates(lhs State, rhs State, t float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package HasChanged()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package HasChanged() from class NetworkObject",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 257,
+		"endLine": 312,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateStates(lhs State, rhs State, t float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package HasChanged()"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type nit : NetworkInterpolatingTransform to nit : NetworkObject in class NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 51,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "nit : NetworkInterpolatingTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 37,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "nit : NetworkObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected nit : NetworkObject from class NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 51,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private nit : NetworkInterpolatingTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 37,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected nit : NetworkObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected state : State from class NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 31,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package state : State"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected state : State"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package state : State from class NetworkInterpolatingTransform to protected state : State from class NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 31,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package state : State"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected state : State"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package state : State from class NetworkInterpolatingTransform to protected state : State from class NetworkObject.ComponentInterpolator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkInterpolatingTransform.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 31,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package state : State"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Libraries/NetBase/NetworkObject.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected state : State"
+}]
+}
+]
+}]
+}

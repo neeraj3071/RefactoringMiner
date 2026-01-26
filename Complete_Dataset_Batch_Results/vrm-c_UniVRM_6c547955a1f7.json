@@ -1,0 +1,828 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "6c547955a1f7729051e31bc55d33458da2b8ba28",
+	"url": "https://github.com/vrm-c/UniVRM/commit/6c547955a1f7729051e31bc55d33458da2b8ba28",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Task<GameObject> to void in method public LoadVrmAsync(context VRMImporterContext, onLoaded Action<GameObject>, onError Action<Exception>) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Task<GameObject>"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 349,
+		"endLine": 354,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadVrmAsync(path string, show bool) : Task<GameObject>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 50,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public LoadVrmAsync(context VRMImporterContext, onLoaded Action<GameObject>, onError Action<Exception>) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Unit to void in method package OnLoadModel() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Unit"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnLoadModel(context VRMImporterContext) : Unit"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package OnLoadModel() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter context : VRMImporterContext in method public OnLoadModel(context VRMImporterContext) : Unit from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 40,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "context : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnLoadModel(context VRMImporterContext) : Unit"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package OnLoadModel() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnLoadModel() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnLoadModel(context VRMImporterContext) : Unit"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnLoadModel() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public OnLoadModel(context VRMImporterContext) : Unit from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnLoadModel(context VRMImporterContext) : Unit"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package OnLoadModel() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnLoadModel(context VRMImporterContext) : Unit from class VRMImporter to package OnLoadModel() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnLoadModel(context VRMImporterContext) : Unit"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 140,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnLoadModel() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter context : VRMImporterContext in method package LoadMeta(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 30,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "context : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 75,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadMeta(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 167,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package LoadMeta() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package LoadMeta(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 75,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadMeta(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 167,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package LoadMeta() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadMeta(context VRMImporterContext) : void from class VRMImporter to package LoadMeta() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 75,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadMeta(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 167,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadMeta() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter context : VRMImporterContext in method package LoadFirstPerson(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 37,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "context : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 94,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadFirstPerson(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 186,
+		"endLine": 206,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package LoadFirstPerson() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package LoadFirstPerson(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 94,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadFirstPerson(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 186,
+		"endLine": 206,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package LoadFirstPerson() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadFirstPerson(context VRMImporterContext) : void from class VRMImporter to package LoadFirstPerson() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 94,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadFirstPerson(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 186,
+		"endLine": 206,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadFirstPerson() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter context : VRMImporterContext in method private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 58,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "context : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 135,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 227,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 135,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 227,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 135,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 227,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip from class VRMImporter to package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 135,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadBlendShapeBind(context VRMImporterContext, group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 227,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadBlendShapeBind(group glTF_VRM_BlendShapeGroup) : BlendShapeClip"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package ToHumanBoneName(b HumanBodyBones) : String from class VRMImporter to package ToHumanBoneName(b HumanBodyBones) : String from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 221,
+		"endLine": 232,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ToHumanBoneName(b HumanBodyBones) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 312,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package ToHumanBoneName(b HumanBodyBones) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package ToSkeletonBone(t Transform) : SkeletonBone from class VRMImporter to package ToSkeletonBone(t Transform) : SkeletonBone from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 234,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ToSkeletonBone(t Transform) : SkeletonBone"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 325,
+		"endLine": 333,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package ToSkeletonBone(t Transform) : SkeletonBone"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter context : VRMImporterContext in method private LoadHumanoid(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 42,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "context : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 244,
+		"endLine": 261,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadHumanoid(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 335,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private LoadHumanoid() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private LoadHumanoid(context VRMImporterContext) : void from class VRMImporter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 244,
+		"endLine": 261,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadHumanoid(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 335,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private LoadHumanoid() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private LoadHumanoid(context VRMImporterContext) : void from class VRMImporter to private LoadHumanoid() : void from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 244,
+		"endLine": 261,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadHumanoid(context VRMImporterContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 335,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private LoadHumanoid() : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Load(path string) : VRMImporterContext extracted from public LoadFromPath(path string) : GameObject in class VRMImporter & moved to class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 21,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LoadFromPath(path string) : GameObject"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 21,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Load(path string) : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LoadFromPath(path string) : GameObject"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 20,
+		"endColumn": 49,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VRMImporterContext.Load(path)"
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Load(bytes Byte[]) : VRMImporterContext extracted from public LoadFromBytes(bytes Byte[]) : GameObject in class VRMImporter & moved to class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LoadFromBytes(bytes Byte[]) : GameObject"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Load(bytes Byte[]) : VRMImporterContext"
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LoadFromBytes(bytes Byte[]) : GameObject"
+}, {
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 20,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VRMImporterContext.Load(bytes)"
+}, {
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package OnLoad : region from class VRMImporter to package OnLoad : region from class VRMImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporter.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package OnLoad : region"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Format/VRMImporterContext.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package OnLoad : region"
+}]
+}
+]
+}]
+}

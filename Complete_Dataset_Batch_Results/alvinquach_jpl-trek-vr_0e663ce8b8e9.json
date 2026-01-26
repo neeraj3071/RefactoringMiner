@@ -1,0 +1,615 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/alvinquach/jpl-trek-vr.git",
+	"sha1": "0e663ce8b8e9a5366cc26633bb6bffe8987096d3",
+	"url": "https://github.com/alvinquach/jpl-trek-vr/commit/0e663ce8b8e9a5366cc26633bb6bffe8987096d3",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class BasePartialTerrainMeshGenerator renamed to PartialTerrainMeshGenerator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Threaded/TerrainModel/Mesh/BasePartialTerrainMeshGenerator.cs",
+		"startLine": 8,
+		"endLine": 76,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "BasePartialTerrainMeshGenerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Threaded/TerrainModel/Mesh/PartialTerrainMeshGenerator.cs",
+		"startLine": 8,
+		"endLine": 76,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "PartialTerrainMeshGenerator"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class TerrainModelBase renamed to TerrainModel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/TerrainModel/TerrainModelBase.cs",
+		"startLine": 8,
+		"endLine": 294,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TerrainModelBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/TerrainModel/TerrainModel.cs",
+		"startLine": 8,
+		"endLine": 294,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "TerrainModel"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type terrainMesh : TerrainModelBase to terrainModel : TerrainModel in method package Update() : void from class TempKeyboardInputController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 38,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainMesh : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 34,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainMesh : TerrainModelBase to terrainModel : TerrainModel in method package Update() : void from class TempKeyboardInputController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 38,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainMesh : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 34,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Input/KeyboardMouse/TempKeyboardInputController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _terrainModels : List<TerrainModelBase> to _terrainModels : List<TerrainModel> in class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_terrainModels : List<TerrainModelBase>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 32,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_terrainModels : List<TerrainModel>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type TerrainModelBase to TerrainModel in method public Create(demPath string, albedoPath string) : TerrainModel from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 84,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Create(demPath string, albedoPath string) : TerrainModelBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 84,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public Create(demPath string, albedoPath string) : TerrainModel"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type TerrainModelBase to TerrainModel in method public CreatePartial(boundingBox Vector4, demPath string, albedoPath string) : TerrainModel from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 109,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreatePartial(boundingBox Vector4, demPath string, albedoPath string) : TerrainModelBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 109,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public CreatePartial(boundingBox Vector4, demPath string, albedoPath string) : TerrainModel"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type terrainModel : TerrainModelBase to terrainModel : TerrainModel in method public ShowTerrainModel(terrainModel TerrainModel, cloneRotation bool) : bool from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 34,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "terrainModel : TerrainModelBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 34,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type oldest : TerrainModelBase to oldest : TerrainModel in method private AddTerrainModel(terrainModel TerrainModel) : TerrainModel from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 30,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "oldest : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 26,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "oldest : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type terrainModel : TerrainModelBase to terrainModel : TerrainModel in method private AddTerrainModel(terrainModel TerrainModel) : TerrainModel from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 46,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "terrainModel : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type TerrainModelBase to TerrainModel in method private AddTerrainModel(terrainModel TerrainModel) : TerrainModel from class TerrainModelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private AddTerrainModel(terrainModel TerrainModelBase) : TerrainModelBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/Services/TerrainModel/TerrainModelManager.cs",
+		"startLine": 194,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private AddTerrainModel(terrainModel TerrainModel) : TerrainModel"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _baseMeshGenerator : BasePartialTerrainMeshGenerator to _baseMeshGenerator : PartialTerrainMeshGenerator in class PartialTerrainModel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/TerrainModel/PartialTerrainModel.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 45,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_baseMeshGenerator : BasePartialTerrainMeshGenerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/TerrainModel/PartialTerrainModel.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 41,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_baseMeshGenerator : PartialTerrainMeshGenerator"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type terrainMesh : TerrainModelBase to terrainModel : TerrainModel in method public OnTriggerDown(sender XRController, point Vector3, normal Vector3, e ClickedEventArgs) : void from class XRMenuTestButton",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 34,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainMesh : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 30,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 17,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainMesh : TerrainModelBase to terrainModel : TerrainModel in method public OnTriggerDown(sender XRController, point Vector3, normal Vector3, e ClickedEventArgs) : void from class XRMenuTestButton",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 34,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainMesh : TerrainModelBase"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 30,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainModel : TerrainModel"
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 17,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Unity/MonoBehaviors/XRInteraction/UIElements/Menu/Test/XRMenuTestButton.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

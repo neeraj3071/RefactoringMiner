@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/iamtomhewitt/vr-pacman.git",
+	"sha1": "ee1d1224ce37c97344eeffa5c3a8d35338c63a1a",
+	"url": "https://github.com/iamtomhewitt/vr-pacman/commit/ee1d1224ce37c97344eeffa5c3a8d35338c63a1a",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public StopFlashing() : void extracted from public BecomeEdible() : void in class Ghost",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 88,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public BecomeEdible() : void"
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 93,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 97,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public StopFlashing() : void"
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 100,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 90,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public BecomeEdible() : void"
+}, {
+		"filePath": "Assets/Scripts/Ghosts/Ghost.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "StopFlashing()"
+}]
+}
+]
+}]
+}

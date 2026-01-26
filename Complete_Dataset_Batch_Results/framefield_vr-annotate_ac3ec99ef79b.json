@@ -1,0 +1,222 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/framefield/vr-annotate.git",
+	"sha1": "ac3ec99ef79b505ce36f3a1bc65668ec0a367d3b",
+	"url": "https://github.com/framefield/vr-annotate/commit/ac3ec99ef79b505ce36f3a1bc65668ec0a367d3b",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private WriteAnnotationToLocalDirectory(annotation Annotation) : void from class AnnotationManager to public WriteAnnotationToLocalDirectory(annotation Annotation) : void from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public WriteAnnotationToLocalDirectory(annotation Annotation) : void from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public WriteAnnotationToLocalDirectory(annotation Annotation) : void from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private WriteAnnotationToServer(annotation Annotation) : IEnumerator from class AnnotationManager to public WriteAnnotationToServer(annotation Annotation) : IEnumerator from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 69,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 145,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public WriteAnnotationToServer(annotation Annotation) : IEnumerator from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 69,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 145,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public WriteAnnotationToServer(annotation Annotation) : IEnumerator from class Serialization",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 69,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 145,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Serialization from class AnnotationManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 18,
+		"endLine": 223,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "AnnotationManager"
+}, {
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}, {
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 69,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/viz/AnnotationManager/AnnotationManager.cs",
+		"startLine": 18,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "AnnotationManager"
+}, {
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 11,
+		"endLine": 163,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Serialization"
+}, {
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public WriteAnnotationToLocalDirectory(annotation Annotation) : void"
+}, {
+		"filePath": "Assets/vr_annotate/ff.vr.annotate/helpers/Serialization.cs",
+		"startLine": 145,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public WriteAnnotationToServer(annotation Annotation) : IEnumerator"
+}]
+}
+]
+}]
+}

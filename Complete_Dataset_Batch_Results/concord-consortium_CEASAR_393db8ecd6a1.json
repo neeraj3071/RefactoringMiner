@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "393db8ecd6a1a449bf9acc794a7a0d6988d91891",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/393db8ecd6a1a449bf9acc794a7a0d6988d91891",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter player : Player in method private addPlayerToList(playerName string, player Player) : void from class InfoPanelController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/InfoPanelController.cs",
+		"startLine": 197,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addPlayerToList(playerName string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/InfoPanelController.cs",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 53,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "player : Player"
+}, {
+		"filePath": "Assets/Scripts/UI/InfoPanelController.cs",
+		"startLine": 198,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private addPlayerToList(playerName string, player Player) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Jamy4000/VRDF.git",
+	"sha1": "82494a31949bb922c9bda417d623c071eb8ce3ca",
+	"url": "https://github.com/Jamy4000/VRDF/commit/82494a31949bb922c9bda417d623c071eb8ce3ca",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type TouchEvents : Dictionary<CBRAInteractionType,Dictionary<ActionType,Action>> to TouchEvents : Dictionary<Entity,Dictionary<ActionType,Action>> in class CBRADelegatesHolder",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Static_Class/CBRADelegatesHolder.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 87,
+		"endColumn": 170,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "TouchEvents : Dictionary<CBRAInteractionType,Dictionary<ActionType,Action>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Static_Class/CBRADelegatesHolder.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 74,
+		"endColumn": 144,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "TouchEvents : Dictionary<Entity,Dictionary<ActionType,Action>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ClickEvents : Dictionary<CBRAInteractionType,Dictionary<ActionType,Action>> to ClickEvents : Dictionary<Entity,Dictionary<ActionType,Action>> in class CBRADelegatesHolder",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Static_Class/CBRADelegatesHolder.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 87,
+		"endColumn": 170,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ClickEvents : Dictionary<CBRAInteractionType,Dictionary<ActionType,Action>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Static_Class/CBRADelegatesHolder.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 74,
+		"endColumn": 144,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ClickEvents : Dictionary<Entity,Dictionary<ActionType,Action>>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package OnUpdate() : void from class CBRAClickUpdateSystem",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Systems/CBRAClickUpdateSystem .cs",
+		"startLine": 26,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Systems/CBRAClickUpdateSystem .cs",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnUpdate() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package OnUpdate() : void from class CBRATouchUpdateSystem",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Systems/CBRATouchUpdateSystem.cs",
+		"startLine": 26,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/CBRA/Systems/CBRATouchUpdateSystem.cs",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnUpdate() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected OnCreate() : void from class RightTriggerInputCaptureSystem",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/Inputs/Systems/Crossplatform/Right/RightTriggerInputCaptureSystem.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnCreate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Scripts/Core/Inputs/Systems/Crossplatform/Right/RightTriggerInputCaptureSystem.cs",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected OnCreate() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,216 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/yanorei32/VRChatRejoinTool.git",
+	"sha1": "a07bc24346a0f1f0c8666621b03c730d126d1a2f",
+	"url": "https://github.com/yanorei32/VRChatRejoinTool/commit/a07bc24346a0f1f0c8666621b03c730d126d1a2f",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable killVRChat : bool to killVRC : bool in initializer MainForm from class MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 7,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "killVRChat : bool"
+}, {
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "killVRC : bool"
+}, {
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 2,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter killVRChat : bool to killVRC : bool in method public MainForm(sortedHistory List<Visit>, killVRC bool) from class MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 45,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "killVRChat : bool"
+}, {
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 45,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "killVRC : bool"
+}, {
+		"filePath": "src/Form/MainForm.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable killVrc : bool to killVRC : bool in method public Main(Args string[]) : void from class Program",
+	"leftSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "killVrc : bool"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/Program.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "killVRC : bool"
+}, {
+		"filePath": "src/Program.cs",
+		"startLine": 65,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public KillExistProcesses() : void renamed to private killExistProcesses() : void in class VRChat",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public KillExistProcesses() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private killExistProcesses() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private killExistProcesses() : void from class VRChat",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public KillExistProcesses() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 4,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private killExistProcesses() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter killVRC : bool in method public Launch(instanceId string, killVRC bool) : void from class VRChat",
+	"leftSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Launch(instanceId string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/VRChat.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 47,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "killVRC : bool"
+}, {
+		"filePath": "src/VRChat.cs",
+		"startLine": 9,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Launch(instanceId string, killVRC bool) : void"
+}]
+}
+]
+}]
+}

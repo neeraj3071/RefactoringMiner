@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/holojam/HolojamSDK-Unity.git",
+	"sha1": "671575199aec40cc5d2768c63d90b2a04319f1d3",
+	"url": "https://github.com/holojam/HolojamSDK-Unity/commit/671575199aec40cc5d2768c63d90b2a04319f1d3",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class SynchronizedTransform renamed to SynchronizableComponent",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Demo/Scripts/SynchronizedTransform.cs",
+		"startLine": 7,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SynchronizedTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Demo/Scripts/SynchronizableComponent.cs",
+		"startLine": 7,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "SynchronizableComponent"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute sending : bool to AutoHost : bool in class Synchronizable",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Synchronizable.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "sending : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Synchronizable.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AutoHost : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public AutoHost : bool from class Synchronizable",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Synchronizable.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private sending : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Synchronizable.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public AutoHost : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected smooth : bool from class Trackable",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package smooth : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 37,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected smooth : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute localSpace : bool to LocalSpace : bool in class Trackable",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localSpace : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "LocalSpace : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnDrawGizmos() : void from class Trackable to package OnDrawGizmos() : void from class TrackableComponent",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 99,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnDrawGizmos() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Demo/Scripts/TrackableComponent.cs",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnDrawGizmos() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnDrawGizmosSelected() : void from class Trackable to package OnDrawGizmosSelected() : void from class TrackableComponent",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 102,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnDrawGizmosSelected() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Demo/Scripts/TrackableComponent.cs",
+		"startLine": 19,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnDrawGizmosSelected() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected DrawGizmoGhost() : void from class Trackable to protected DrawGizmoGhost() : void from class TrackableComponent",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Trackable.cs",
+		"startLine": 112,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected DrawGizmoGhost() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Demo/Scripts/TrackableComponent.cs",
+		"startLine": 30,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected DrawGizmoGhost() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "afb91884fd9bbb4d03b5eb3a9ac0622602c87636",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/afb91884fd9bbb4d03b5eb3a9ac0622602c87636",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class SettingBoolCard renamed to BoolAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Settings/SettingBoolCard.cs",
+		"startLine": 12,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SettingBoolCard"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/BoolAttributeCard.cs",
+		"startLine": 12,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "BoolAttributeCard"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type parametersFlow : FillFlowContainer<ParameterCard> to parametersFlow : FillFlowContainer<AttributeCard> in method private load() : void from class ParametersFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/ParametersFlow.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parametersFlow : FillFlowContainer<ParameterCard>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/ParametersFlow.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "parametersFlow : FillFlowContainer<AttributeCard>"
+}]
+}
+]
+}]
+}

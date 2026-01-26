@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/fralvarezz/Intention-Prediction-VR-DNN.git",
+	"sha1": "f8c3c5dc2298238a62668b29937f2c1fb53c34d4",
+	"url": "https://github.com/fralvarezz/Intention-Prediction-VR-DNN/commit/f8c3c5dc2298238a62668b29937f2c1fb53c34d4",
+	"refactorings": [{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(random) to var index=random ? Random.Range(0,itemsToHighlight.Count) : 0; in method package HighlightItem() : void from class ExperimentManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 56,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(random)"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 54,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package HighlightItem() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "var index=random ? Random.Range(0,itemsToHighlight.Count) : 0;\n"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 54,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "package HighlightItem() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type randomIndex : int to index : var in method package HighlightItem() : void from class ExperimentManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "randomIndex : int"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "index : var"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable randomIndex : int to index : var in method package HighlightItem() : void from class ExperimentManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "randomIndex : int"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "index : var"
+}, {
+		"filePath": "Assets/_Scripts/ExperimentManager.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BIVROST/360PlayerWindows.git",
+	"sha1": "99a78ff228619790ef8d1d88fd533175dd43e856",
+	"url": "https://github.com/BIVROST/360PlayerWindows/commit/99a78ff228619790ef8d1d88fd533175dd43e856",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class BrowserPluginManagement",
+	"leftSideLocations": [{
+		"filePath": "360Player/Logic/BrowserPluginManagement.cs",
+		"startLine": 13,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "BrowserPluginManagement"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/Logic/BrowserPluginManagement.cs",
+		"startLine": 13,
+		"endLine": 260,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "BrowserPluginManagement"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CheckForBrowsers() : void from class BrowserPluginManagement",
+	"leftSideLocations": [{
+		"filePath": "360Player/Logic/Logic.cs",
+		"startLine": 228,
+		"endLine": 290,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CheckForBrowsers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/Logic/BrowserPluginManagement.cs",
+		"startLine": 18,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CheckForBrowsers() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CheckForBrowsers() : void from class Logic to public CheckForBrowsers() : void from class BrowserPluginManagement",
+	"leftSideLocations": [{
+		"filePath": "360Player/Logic/Logic.cs",
+		"startLine": 228,
+		"endLine": 290,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CheckForBrowsers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/Logic/BrowserPluginManagement.cs",
+		"startLine": 18,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CheckForBrowsers() : void"
+}]
+}
+]
+}]
+}

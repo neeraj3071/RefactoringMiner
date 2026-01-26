@@ -1,0 +1,285 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Vivero/Kerbal-VR.git",
+	"sha1": "fc4c5fd2684f0c52ebcd42125df18fc59b69921b",
+	"url": "https://github.com/Vivero/Kerbal-VR/commit/fc4c5fd2684f0c52ebcd42125df18fc59b69921b",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable Constants : region to Properties : region in initializer DeviceManager from class DeviceManager",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "Constants : region"
+}, {
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "Properties : region"
+}, {
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable Properties : region to Constants : region in initializer Manipulator from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "Properties : region"
+}, {
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "Constants : region"
+}, {
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected SetManipulatorSize(size float) : void from class DeviceManager to protected SetManipulatorSize(size float) : void from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 277,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetManipulatorSize(size float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 118,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected SetManipulatorSize(size float) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Vector3 : readonly from class DeviceManager to public Vector3 : readonly from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Vector3 : readonly from class DeviceManager to public Vector3 : readonly from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Vector3 : readonly from class DeviceManager to public Vector3 : readonly from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Vector3 : readonly from class DeviceManager to public Vector3 : readonly from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Vector3 : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package Properties : region from class DeviceManager to package Properties : region from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Properties : region"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package Properties : region"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _manipulatorSize : float from class DeviceManager to private _manipulatorSize : float from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _manipulatorSize : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _manipulatorSize : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ManipulatorSize : float from class DeviceManager to public ManipulatorSize : float from class Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_DeviceManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ManipulatorSize : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ManipulatorSize : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "762231f98e3c92b973ce30ac68f019cabd633336",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/762231f98e3c92b973ce30ac68f019cabd633336",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type item : var to item : SerializedPreferenceItem in method package DeserializePreferences(serializedPreferences string) : void from class SerializedPreferencesModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "item : var"
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 31,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : SerializedPreferenceItem"
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

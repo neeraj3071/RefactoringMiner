@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "9b631ea034d6094103f90eb63e5614704cc29f52",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/9b631ea034d6094103f90eb63e5614704cc29f52",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable address : var in method protected SendParameter(key string, value object) : void from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "address : var"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Settings : Dictionary<string,ModuleSettingData> to Settings : Dictionary<string,object> in class ModuleData",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleData.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 50,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Settings : Dictionary<string,ModuleSettingData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleData.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 39,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Settings : Dictionary<string,object>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Parameters : Dictionary<string,ModuleOscParameterData> to Parameters : Dictionary<string,string> in class ModuleData",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleData.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 55,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Parameters : Dictionary<string,ModuleOscParameterData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleData.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 39,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Parameters : Dictionary<string,string>"
+}]
+}
+]
+}]
+}

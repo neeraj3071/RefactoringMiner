@@ -1,0 +1,435 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/rogerbarton/vr-modeling.git",
+	"sha1": "79b7a4448fa0370d74b6ee0ee27313c6321ea882",
+	"url": "https://github.com/rogerbarton/vr-modeling/commit/79b7a4448fa0370d74b6ee0ee27313c6321ea882",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private Start() : void renamed to private Awake() : void in class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 26,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 25,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private Awake() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private SetupAction(action MeshAction) : void renamed to private SetupActionUi(action MeshAction) : void in class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 115,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetupAction(action MeshAction) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 75,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private SetupActionUi(action MeshAction) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public get : MeshActions from class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 32,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private get : MeshActions"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 31,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public get : MeshActions"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public RegisterAction(action MeshAction) : void from class MeshActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RegisterAction(action MeshAction) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 59,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public RegisterAction(action MeshAction) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private PostExecute() : void extracted from private Update() : void in class LibiglMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 72,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Update() : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 86,
+		"endLine": 87,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 108,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private PostExecute() : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 116,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 93,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Update() : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PostExecute()"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetExecutingActions(actionType MeshActionType) : void extracted from private ExecuteActions() : void in class LibiglMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 52,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private ExecuteActions() : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 55,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetExecutingActions(actionType MeshActionType) : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 73,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private ExecuteActions(actionType MeshActionType) : void"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetExecutingActions(actionType)"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 17,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 62,
+		"endLine": 66,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 58,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter actionType : MeshActionType in method private ExecuteActions(actionType MeshActionType) : void from class LibiglMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 52,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ExecuteActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "actionType : MeshActionType"
+}, {
+		"filePath": "Assets/Scripts/LibiglIntegration/LibiglMesh.cs",
+		"startLine": 73,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private ExecuteActions(actionType MeshActionType) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _keywordRecognizer : KeywordRecognizer from class MeshActions to private _keywordRecognizer : KeywordRecognizer from class MeshAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Actions/MeshActions.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _keywordRecognizer : KeywordRecognizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/LibiglIntegration/MeshAction.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 35,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _keywordRecognizer : KeywordRecognizer"
+}]
+}
+]
+}]
+}

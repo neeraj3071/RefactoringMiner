@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "27c36ea87efa8cd5e1f7443a69a1df61d5d2cc93",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/27c36ea87efa8cd5e1f7443a69a1df61d5d2cc93",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter tool : Type to toolType : Type in method private SelectTool(targetNode Node, toolType Type) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 43,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tool : Type"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 881,
+		"endLine": 881,
+		"startColumn": 43,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "toolType : Type"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter visible : bool in method private SpawnMainMenu(type Type, device InputDevice, visible bool) : IMainMenu from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 612,
+		"endLine": 623,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SpawnMainMenu(type Type, device InputDevice) : IMainMenu"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 683,
+		"endLine": 683,
+		"startColumn": 65,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "visible : bool"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 683,
+		"endLine": 694,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private SpawnMainMenu(type Type, device InputDevice, visible bool) : IMainMenu"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter deviceData : DeviceData in method private DespawnTool(deviceData DeviceData, tool ITool) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 846,
+		"endLine": 864,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DespawnTool(tool ITool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 933,
+		"endLine": 933,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "deviceData : DeviceData"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 933,
+		"endLine": 945,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private DespawnTool(deviceData DeviceData, tool ITool) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public CreateToolButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void renamed to public CreateFaceButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void in class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 292,
+		"endLine": 319,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateToolButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 289,
+		"endLine": 316,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public CreateFaceButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void"
+}]
+}
+]
+}]
+}

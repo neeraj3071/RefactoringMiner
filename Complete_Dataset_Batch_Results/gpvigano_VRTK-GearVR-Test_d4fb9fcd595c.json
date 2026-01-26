@@ -1,0 +1,2115 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gpvigano/VRTK-GearVR-Test.git",
+	"sha1": "d4fb9fcd595cd2e7ab0b10ff2b38466224160cac",
+	"url": "https://github.com/gpvigano/VRTK-GearVR-Test/commit/d4fb9fcd595cd2e7ab0b10ff2b38466224160cac",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable io : VRTK_InteractableObject to contentInteractableObject : VRTK_InteractableObject in method protected Start() : void from class VRTK_ContentHandler",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/Utilities/VRTK_ContentHandler.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 37,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "io : VRTK_InteractableObject"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/Utilities/VRTK_ContentHandler.cs",
+		"startLine": 26,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/Utilities/VRTK_ContentHandler.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "contentInteractableObject : VRTK_InteractableObject"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/Utilities/VRTK_ContentHandler.cs",
+		"startLine": 26,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package MAX_AUTODETECT_ACTIVATION_LENGTH : float from class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 30,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAX_AUTODETECT_ACTIVATION_LENGTH : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package MAX_AUTODETECT_ACTIVATION_LENGTH : float"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private MAX_AUTODETECT_ACTIVATION_LENGTH : float from class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 30,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAX_AUTODETECT_ACTIVATION_LENGTH : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package MAX_AUTODETECT_ACTIVATION_LENGTH : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable direction : ButtonDirection to returnDirection : ButtonDirection in method private DetectDirection() : ButtonDirection from class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : ButtonDirection"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 29,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnDirection : ButtonDirection"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cf : ConstantForce to buttonForce : ConstantForce in class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 31,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cf : ConstantForce"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "buttonForce : ConstantForce"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cj : ConfigurableJoint to buttonJoint : ConfigurableJoint in class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 35,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cj : ConfigurableJoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "buttonJoint : ConfigurableJoint"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable direction : Direction to returnDirection : Direction in method private DetectDirection() : Direction from class VRTK_Chest",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 23,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 23,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnDirection : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute lidHj : HingeJoint to lidJoint : HingeJoint in class VRTK_Chest",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lidHj : HingeJoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "lidJoint : HingeJoint"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute lidHjCreated : bool to lidJointCreated : bool in class VRTK_Chest",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lidHjCreated : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Chest.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "lidJointCreated : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package MIN_OPENING_DISTANCE : float from class VRTK_Control",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MIN_OPENING_DISTANCE : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package MIN_OPENING_DISTANCE : float"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private MIN_OPENING_DISTANCE : float from class VRTK_Control",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MIN_OPENING_DISTANCE : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package MIN_OPENING_DISTANCE : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable length : float to extensionLength : float in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "length : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "extensionLength : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dir : Vector3 to firstDirection : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dir : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 25,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 25,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 21,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "firstDirection : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 25,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 25,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 25,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dir2 : Vector3 to secondDirection : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dir2 : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 25,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 25,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "secondDirection : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 25,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 25,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable p1 : Vector3 to point1Start : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 25,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "p1 : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "point1Start : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 17,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable p1end : Vector3 to point1End : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 25,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "p1end : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 25,
+		"endColumn": 156,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "point1End : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable p2 : Vector3 to point2Start : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 25,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "p2 : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "point2Start : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 17,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable p2end : Vector3 to point2End : Vector3 in method protected OnDrawGizmos() : void from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 25,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "p2end : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 25,
+		"endColumn": 156,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "point2End : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 157,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable axis : Vector3 to returnAxis : Vector3 in method private Direction2Axis(givenDirection Direction) : Vector3 from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "axis : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnAxis : Vector3"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter direction : Direction to givenDirection : Direction in method private Direction2Axis(givenDirection Direction) : Vector3 from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 40,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 313,
+		"endLine": 324,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 40,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "givenDirection : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 317,
+		"endLine": 328,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable direction : Direction to returnDirection : Direction in method private DetectDirection() : Direction from class VRTK_Door",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 23,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 23,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnDirection : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Door.cs",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable limit : SoftJointLimit to drawerJointLimit : SoftJointLimit in method package DetectSetup() from class VRTK_Drawer",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "limit : SoftJointLimit"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 32,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "drawerJointLimit : SoftJointLimit"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable direction : Direction to returnDirection : Direction in method private DetectDirection() : Direction from class VRTK_Drawer",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 23,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 23,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnDirection : Direction"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package MAX_AUTODETECT_KNOB_WIDTH : float from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 30,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAX_AUTODETECT_KNOB_WIDTH : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 29,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package MAX_AUTODETECT_KNOB_WIDTH : float"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private MAX_AUTODETECT_KNOB_WIDTH : float from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 30,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAX_AUTODETECT_KNOB_WIDTH : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 29,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package MAX_AUTODETECT_KNOB_WIDTH : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable direction : KnobDirection to returnDirection : KnobDirection in method private DetectDirection() : KnobDirection from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 27,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : KnobDirection"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 27,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "returnDirection : KnobDirection"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable value : float to calculatedValue : float in method private CalculateValue() : float from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "value : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 17,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 17,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 13,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "calculatedValue : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cj : ConfigurableJoint to knobJoint : ConfigurableJoint in class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 35,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cj : ConfigurableJoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 35,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "knobJoint : ConfigurableJoint"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cjCreated : bool to knobJointCreated : bool in class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cjCreated : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 22,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "knobJointCreated : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hjCreated : bool to leverHingeJointCreated : bool in class VRTK_Lever",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hjCreated : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "leverHingeJointCreated : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected leverHingeJointCreated : bool from class VRTK_Lever",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hjCreated : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected leverHingeJointCreated : bool"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable limits : JointLimits to leverJointLimits : JointLimits in method package DetectSetup() from class VRTK_Lever",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 29,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "limits : JointLimits"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "leverJointLimits : JointLimits"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hj : HingeJoint to leverHingeJoint : HingeJoint in class VRTK_Lever",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 30,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hj : HingeJoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "leverHingeJoint : HingeJoint"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,2079 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/plaidpants/ANKH-VR.git",
+	"sha1": "02395a640980343565702882450b69ad0bb4e0c8",
+	"url": "https://github.com/plaidpants/ANKH-VR/commit/02395a640980343565702882450b69ad0bb4e0c8",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class World.NPC_MOVEMENT_MODE moved to Settlement.NPC_MOVEMENT_MODE",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World.NPC_MOVEMENT_MODE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 7,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Settlement.NPC_MOVEMENT_MODE"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class World.NPC_STRING_INDEX moved to Settlement.NPC_STRING_INDEX",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 399,
+		"endLine": 414,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World.NPC_STRING_INDEX"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 15,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Settlement.NPC_STRING_INDEX"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class World.SETTLEMENT moved to Settlement.SETTLEMENT",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 417,
+		"endLine": 442,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World.SETTLEMENT"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 33,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Settlement.SETTLEMENT"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type settlement : SETTLEMENT to settlement : Settlement.SETTLEMENT in method package Update() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1517,
+		"endLine": 1517,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "settlement : SETTLEMENT"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1520,
+		"endLine": 1520,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1524,
+		"endLine": 1524,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1538,
+		"endLine": 1546,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1547,
+		"endLine": 1555,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1040,
+		"endLine": 1040,
+		"startColumn": 39,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "settlement : Settlement.SETTLEMENT"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1043,
+		"endLine": 1043,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1047,
+		"endLine": 1047,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1061,
+		"endLine": 1069,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1070,
+		"endLine": 1078,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class World to public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter underPartyTile : Tile.TILE in method public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 86,
+		"endColumn": 110,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "underPartyTile : Tile.TILE"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter partyTile : Tile.TILE in method public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 112,
+		"endColumn": 131,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "partyTile : Tile.TILE"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter monsterTile : Tile.TILE in method public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 133,
+		"endColumn": 154,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "monsterTile : Tile.TILE"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter underMonsterTile : Tile.TILE in method public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 156,
+		"endColumn": 182,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "underMonsterTile : Tile.TILE"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter tile : Tile.TILE in method public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 79,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "tile : Tile.TILE"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 103,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(tile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Convert_Tile_to_Combat_Terrian(underPartyTile Tile.TILE, partyTile Tile.TILE, monsterTile Tile.TILE, underMonsterTile Tile.TILE) : U4_Decompiled_AVATAR.COMBAT_TERRAIN"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadCombatMap(combatMapFilepath string) : void from class World to public LoadCombatMap(combatMapFilepath string) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 198,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadCombatMap(combatMapFilepath string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 114,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadCombatMap(combatMapFilepath string) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadCombatMap(combatMapFilepath string) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 198,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadCombatMap(combatMapFilepath string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 114,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadCombatMap(combatMapFilepath string) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadCombatMap(combatMapFilepath string) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 198,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadCombatMap(combatMapFilepath string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 114,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadCombatMap(combatMapFilepath string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CreateCombatTerrains() : void from class World to public CreateCombatTerrains(offset_z int) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 270,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateCombatTerrains() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 186,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateCombatTerrains(offset_z int) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter offset_z : int in method public CreateCombatTerrains(offset_z int) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 270,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateCombatTerrains() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 45,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "offset_z : int"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 186,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public CreateCombatTerrains(offset_z int) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public CreateCombatTerrains(offset_z int) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 270,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateCombatTerrains() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 186,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public CreateCombatTerrains(offset_z int) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateCombatTerrains(offset_z int) : void from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 270,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateCombatTerrains() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 186,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateCombatTerrains(offset_z int) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CombatTerrains : GameObject[] from class World to public CombatTerrains : GameObject[] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public CombatTerrains : GameObject[] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CenterOfCombatTerrain : GameObject from class World to public CenterOfCombatTerrain : GameObject from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 30,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public CenterOfCombatTerrain : GameObject from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 30,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package combatMonsterStartPositions : CombatMonsterStartPositions[][] from class World to public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1215,
+		"endLine": 1215,
+		"startColumn": 37,
+		"endColumn": 146,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatMonsterStartPositions : CombatMonsterStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 174,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type combatMonsterStartPositions : CombatMonsterStartPositions[][] to combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][] in class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1215,
+		"endLine": 1215,
+		"startColumn": 37,
+		"endColumn": 146,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "combatMonsterStartPositions : CombatMonsterStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 174,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1215,
+		"endLine": 1215,
+		"startColumn": 37,
+		"endColumn": 146,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatMonsterStartPositions : CombatMonsterStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 174,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1215,
+		"endLine": 1215,
+		"startColumn": 37,
+		"endColumn": 146,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatMonsterStartPositions : CombatMonsterStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 174,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package combatPartyStartPositions : CombatPartyStartPositions[][] from class World to public combatPartyStartPositions : Combat.CombatPartyStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 35,
+		"endColumn": 140,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatPartyStartPositions : CombatPartyStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 168,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public combatPartyStartPositions : Combat.CombatPartyStartPositions[][]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type combatPartyStartPositions : CombatPartyStartPositions[][] to combatPartyStartPositions : Combat.CombatPartyStartPositions[][] in class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 35,
+		"endColumn": 140,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "combatPartyStartPositions : CombatPartyStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 168,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "combatPartyStartPositions : Combat.CombatPartyStartPositions[][]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public combatPartyStartPositions : Combat.CombatPartyStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 35,
+		"endColumn": 140,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatPartyStartPositions : CombatPartyStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 168,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public combatPartyStartPositions : Combat.CombatPartyStartPositions[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public combatPartyStartPositions : Combat.CombatPartyStartPositions[][] from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 35,
+		"endColumn": 140,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatPartyStartPositions : CombatPartyStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 168,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public combatPartyStartPositions : Combat.CombatPartyStartPositions[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CombatMonsterStartPositions : struct from class World to public CombatMonsterStartPositions : struct from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatMonsterStartPositions : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CombatMonsterStartPositions : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public start_x : int from class World to public start_x : int from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public start_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public start_x : int from class World to public start_x : int from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public start_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public start_y : int from class World to public start_y : int from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public start_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public start_y : int from class World to public start_y : int from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public start_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CombatPartyStartPositions : struct from class World to public CombatPartyStartPositions : struct from class Combat",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatPartyStartPositions : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combat.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CombatPartyStartPositions : struct"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LoadSettlements() : void from class World to public LoadSettlements() : void from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 462,
+		"endLine": 639,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadSettlements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 78,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadSettlements() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadSettlements() : void from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 462,
+		"endLine": 639,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadSettlements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 78,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadSettlements() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public npc : struct from class World to public npc : struct from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npc : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public npc : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public tile : Tile.TILE from class World to public tile : Tile.TILE from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 446,
+		"endLine": 446,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tile : Tile.TILE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public tile : Tile.TILE"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public pos_x : byte from class World to public pos_x : byte from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pos_x : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public pos_x : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public pos_y : byte from class World to public pos_y : byte from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pos_y : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public pos_y : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public movement : NPC_MOVEMENT_MODE from class World to public movement : NPC_MOVEMENT_MODE from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 449,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public movement : NPC_MOVEMENT_MODE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public movement : NPC_MOVEMENT_MODE"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public conversationIndex : int from class World to public conversationIndex : int from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public conversationIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public conversationIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public strings : List<string> from class World to public strings : List<string> from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public strings : List<string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public strings : List<string>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public probabilityOfTurningAway : int from class World to public probabilityOfTurningAway : int from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public probabilityOfTurningAway : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public probabilityOfTurningAway : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public questionAffectHumility : bool from class World to public questionAffectHumility : bool from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public questionAffectHumility : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public questionAffectHumility : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public questionTriggerIndex : int from class World to public questionTriggerIndex : int from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public questionTriggerIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public questionTriggerIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public settlementNPCs : npc[][] from class World to public settlementNPCs : npc[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 20,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public settlementNPCs : npc[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 27,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public settlementNPCs : npc[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public settlementNPCs : npc[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 20,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public settlementNPCs : npc[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 27,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public settlementNPCs : npc[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public npcQuestionTriggerIndex : int[][] from class World to public npcQuestionTriggerIndex : int[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 20,
+		"endColumn": 76,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 27,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public npcQuestionTriggerIndex : int[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 20,
+		"endColumn": 76,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 27,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public npcQuestionAffectHumility : bool[][] from class World to public npcQuestionAffectHumility : bool[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 28,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public npcQuestionAffectHumility : bool[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 28,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public npcProbabilityOfTurningAway : int[][] from class World to public npcProbabilityOfTurningAway : int[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 20,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 27,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public npcProbabilityOfTurningAway : int[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 20,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 27,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public npcStrings : List<string>[][] from class World to public npcStrings : List<string>[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 29,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcStrings : List<string>[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 36,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public npcStrings : List<string>[][]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public npcStrings : List<string>[][] from class Settlement",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 29,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcStrings : List<string>[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 36,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public npcStrings : List<string>[][]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Combat from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 3253,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 198,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadCombatMap(combatMapFilepath string) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatMonsterStartPositions : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_x : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_y : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CombatPartyStartPositions : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_x : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public start_y : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1215,
+		"endLine": 1215,
+		"startColumn": 37,
+		"endColumn": 146,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatMonsterStartPositions : CombatMonsterStartPositions[][]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 35,
+		"endColumn": 140,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combatPartyStartPositions : CombatPartyStartPositions[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 2751,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 5,
+		"endLine": 249,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Combat"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 114,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadCombatMap(combatMapFilepath string) : void"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CombatTerrains : GameObject[]"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 30,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CenterOfCombatTerrain : GameObject"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CombatMonsterStartPositions : struct"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public start_x : int"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public start_y : int"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CombatPartyStartPositions : struct"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public start_x : int"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public start_y : int"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 174,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public combatMonsterStartPositions : Combat.CombatMonsterStartPositions[][]"
+}, {
+		"filePath": "Assets/Combat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 168,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public combatPartyStartPositions : Combat.CombatPartyStartPositions[][]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Settlement from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 3253,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 462,
+		"endLine": 639,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadSettlements() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npc : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 446,
+		"endLine": 446,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tile : Tile.TILE"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pos_x : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pos_y : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 449,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public movement : NPC_MOVEMENT_MODE"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public conversationIndex : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public strings : List<string>"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public probabilityOfTurningAway : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public questionAffectHumility : bool"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public questionTriggerIndex : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 20,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public settlementNPCs : npc[][]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 20,
+		"endColumn": 76,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 20,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 29,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public npcStrings : List<string>[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 2751,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 5,
+		"endLine": 258,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Settlement"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 78,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadSettlements() : void"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public npc : struct"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public tile : Tile.TILE"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public pos_x : byte"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public pos_y : byte"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public movement : NPC_MOVEMENT_MODE"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public conversationIndex : int"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public strings : List<string>"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public probabilityOfTurningAway : int"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public questionAffectHumility : bool"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public questionTriggerIndex : int"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 27,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public settlementNPCs : npc[][]"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 27,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public npcQuestionTriggerIndex : int[][]"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 28,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public npcQuestionAffectHumility : bool[][]"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 27,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public npcProbabilityOfTurningAway : int[][]"
+}, {
+		"filePath": "Assets/Settlement.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 36,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public npcStrings : List<string>[][]"
+}]
+}
+]
+}]
+}

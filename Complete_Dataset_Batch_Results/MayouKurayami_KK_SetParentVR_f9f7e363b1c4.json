@@ -1,0 +1,219 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MayouKurayami/KK_SetParentVR.git",
+	"sha1": "f9f7e363b1c4b815e403f36291f53d509b1fe9c9",
+	"url": "https://github.com/MayouKurayami/KK_SetParentVR/commit/f9f7e363b1c4b815e403f36291f53d509b1fe9c9",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute sMThreshold2Ratio : float to strongMotionMultiplier : float in class AnimSpeedController",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "sMThreshold2Ratio : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "strongMotionMultiplier : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute threshold1 : float to animMinThreshold : float in class AnimSpeedController",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "threshold1 : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "animMinThreshold : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute threshold2 : float to animMaxThreshold : float in class AnimSpeedController",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "threshold2 : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/AnimSpeedController.cs",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "animMaxThreshold : float"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void renamed to public Start() : void in class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 15,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package bool : internal from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 2310,
+		"endLine": 2310,
+		"startColumn": 19,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package bool : internal"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 2244,
+		"endLine": 2244,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package bool : internal"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter scene : Scene in method private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "scene : Scene"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 15,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter sceneMode : LoadSceneMode in method private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 43,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "sceneMode : LoadSceneMode"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 15,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Start() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSceneLoaded(scene Scene, sceneMode LoadSceneMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 15,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Start() : void"
+}]
+}
+]
+}]
+}

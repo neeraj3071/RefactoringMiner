@@ -1,0 +1,351 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BIVROST/360PlayerWindows.git",
+	"sha1": "903da77935a3a3c83692f371be3527ae8b7951f5",
+	"url": "https://github.com/BIVROST/360PlayerWindows/commit/903da77935a3a3c83692f371be3527ae8b7951f5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter context : LicensingConnector.IContext in method public LicenseChangeViewModel(context LicensingConnector.IContext, reason LicenseManagementViewModel.LicenseChangeReason, oldLicense string, openLicenseVerify Action<string>, licenseClear System.Action) from class LicenseChangeViewModel",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseChangeViewModel.cs",
+		"startLine": 28,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseChangeViewModel(reason LicenseManagementViewModel.LicenseChangeReason, oldLicense string, openLicenseVerify Action<string>, licenseClear System.Action)"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicenseChangeViewModel.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 33,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "context : LicensingConnector.IContext"
+}, {
+		"filePath": "LicenseNinja/LicenseChangeViewModel.cs",
+		"startLine": 29,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LicenseChangeViewModel(context LicensingConnector.IContext, reason LicenseManagementViewModel.LicenseChangeReason, oldLicense string, openLicenseVerify Action<string>, licenseClear System.Action)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter context : LicensingConnector.IContext in method public LicenseManagementViewModel(context LicensingConnector.IContext, changeKey bool) from class LicenseManagementViewModel",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 21,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseManagementViewModel(changeKey bool, onCommit System.Action)"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 37,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "context : LicensingConnector.IContext"
+}, {
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 20,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LicenseManagementViewModel(context LicensingConnector.IContext, changeKey bool)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter onCommit : System.Action in method public LicenseManagementViewModel(changeKey bool, onCommit System.Action) from class LicenseManagementViewModel",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 53,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "onCommit : System.Action"
+}, {
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 21,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseManagementViewModel(changeKey bool, onCommit System.Action)"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagementViewModel.cs",
+		"startLine": 20,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LicenseManagementViewModel(context LicensingConnector.IContext, changeKey bool)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter context : LicensingConnector.IContext in method public LicenseServerUnreachableViewModel(context LicensingConnector.IContext, useBasicFeaturesCallback System.Action, retryCallback System.Action) from class LicenseServerUnreachableViewModel",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseServerUnreachableViewModel.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseServerUnreachableViewModel(useBasicFeaturesCallback System.Action, retryCallback System.Action)"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicenseServerUnreachableViewModel.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 44,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "context : LicensingConnector.IContext"
+}, {
+		"filePath": "LicenseNinja/LicenseServerUnreachableViewModel.cs",
+		"startLine": 13,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LicenseServerUnreachableViewModel(context LicensingConnector.IContext, useBasicFeaturesCallback System.Action, retryCallback System.Action)"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public Action : event from class ShellViewModel",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/ShellViewModel.cs",
+		"startLine": 1282,
+		"endLine": 1282,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/ShellViewModel.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Action : event from class ShellViewModel",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/ShellViewModel.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/ShellViewModel.cs",
+		"startLine": 1334,
+		"endLine": 1334,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter onLicenseCommit : Action in method public OpenLicenseManagement(onLicenseCommit Action) : void from class LicenseManagement",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 44,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "onLicenseCommit : Action"
+}, {
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OpenLicenseManagement(onLicenseCommit Action) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OpenLicenseManagement() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public OpenLicenseManagement(onLicenseCommit Action) : void from class LicenseManagement",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 13,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OpenLicenseManagement(onLicenseCommit Action) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public OpenLicenseManagement() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter onLicenseCommit : Action in method public LicenseCheck(onLicenseCommit Action) : void from class LicenseManagement",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 35,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "onLicenseCommit : Action"
+}, {
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseCheck(onLicenseCommit Action) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LicenseCheck() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public LicenseCheck(onLicenseCommit Action) : void from class LicenseManagement",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LicenseCheck(onLicenseCommit Action) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public LicenseCheck() : void"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class LicenseManagement",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 9,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "LicenseManagement"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 3,
+		"endLine": 91,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "LicensingConnector"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class LicenseManagement renamed to LicensingConnector",
+	"leftSideLocations": [{
+		"filePath": "LicenseNinja/LicenseManagement.cs",
+		"startLine": 9,
+		"endLine": 23,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LicenseManagement"
+}],
+	"rightSideLocations": [{
+		"filePath": "LicenseNinja/LicensingConnector.cs",
+		"startLine": 3,
+		"endLine": 91,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "LicensingConnector"
+}]
+}
+]
+}]
+}

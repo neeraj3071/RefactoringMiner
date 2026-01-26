@@ -1,0 +1,219 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "aa59d7944c38076e1861dfe5264d3e4840422667",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/aa59d7944c38076e1861dfe5264d3e4840422667",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package GetChildProperties(parent PropertyData, property SerializedProperty, obj SerializedObject) : InspectorData[] renamed to package GetSubProperties(property SerializedProperty, obj SerializedObject) : InspectorData[] in class InspectorWorkspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 233,
+		"endLine": 253,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetChildProperties(parent PropertyData, property SerializedProperty, obj SerializedObject) : InspectorData[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 236,
+		"endLine": 256,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package GetSubProperties(property SerializedProperty, obj SerializedObject) : InspectorData[]"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter parent : PropertyData in method package GetChildProperties(parent PropertyData, property SerializedProperty, obj SerializedObject) : InspectorData[] from class InspectorWorkspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "parent : PropertyData"
+}, {
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 233,
+		"endLine": 253,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetChildProperties(parent PropertyData, property SerializedProperty, obj SerializedObject) : InspectorData[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 236,
+		"endLine": 256,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package GetSubProperties(property SerializedProperty, obj SerializedObject) : InspectorData[]"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package AnimateToPreviewScale() : IEnumerator renamed to package ShowGrabbedObject() : IEnumerator in class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 384,
+		"endLine": 419,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateToPreviewScale() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 416,
+		"endLine": 451,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package ShowGrabbedObject() : IEnumerator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package AnimatedHide(itemToHide GameObject, cubeRenderer Renderer, rayOrigin Transform) : IEnumerator renamed to package HideGrabbedObject(itemToHide GameObject, cubeRenderer Renderer) : IEnumerator in class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 421,
+		"endLine": 437,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimatedHide(itemToHide GameObject, cubeRenderer Renderer, rayOrigin Transform) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 453,
+		"endLine": 469,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package HideGrabbedObject(itemToHide GameObject, cubeRenderer Renderer) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter m_TransitionCoroutine : ref to m_PreviewCoroutine : ref in method package StopCoroutine(m_PreviewCoroutine ref) from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 23,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_TransitionCoroutine : ref"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 336,
+		"endLine": 336,
+		"startColumn": 23,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_PreviewCoroutine : ref"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter rayOrigin : Transform in method package AnimatedHide(itemToHide GameObject, cubeRenderer Renderer, rayOrigin Transform) : IEnumerator from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 73,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 421,
+		"endLine": 437,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimatedHide(itemToHide GameObject, cubeRenderer Renderer, rayOrigin Transform) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 453,
+		"endLine": 469,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package HideGrabbedObject(itemToHide GameObject, cubeRenderer Renderer) : IEnumerator"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package HideGrabbedObject(itemToHide GameObject, cubeRenderer Renderer) : IEnumerator from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 421,
+		"endLine": 437,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimatedHide(itemToHide GameObject, cubeRenderer Renderer, rayOrigin Transform) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 453,
+		"endLine": 469,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package HideGrabbedObject(itemToHide GameObject, cubeRenderer Renderer) : IEnumerator"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type selectFolder : Action<FolderData> to selectFolder : Action<string> in class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "selectFolder : Action<FolderData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "selectFolder : Action<string>"
+}]
+}
+]
+}]
+}

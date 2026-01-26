@@ -1,0 +1,453 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vitrivr/vitrivr-vr.git",
+	"sha1": "ec4a3110728a027a482189407fe1d765fd93c062",
+	"url": "https://github.com/vitrivr/vitrivr-vr/commit/ec4a3110728a027a482189407fe1d765fd93c062",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private GETSelectedInputField() : InputFieldController renamed to private GetSelectedInputField() : TMP_InputField in class TextInputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 102,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GETSelectedInputField() : InputFieldController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GetSelectedInputField() : TMP_InputField"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public InputEvent(inputEvent Event) : void extracted from public InputReturn() : void in class TextInputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 54,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public InputReturn() : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 58,
+		"endLine": 61,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 39,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InputEvent(inputEvent Event) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public InputKeyboardEvent(eventString string) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InputEvent(Event.KeyboardEvent(eventString))"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public InputEvent(inputEvent Event) : void extracted from public InputTabulator() : void in class TextInputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 90,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public InputTabulator() : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 94,
+		"endLine": 97,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 39,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InputEvent(inputEvent Event) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public InputKeyboardEvent(eventString string) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InputEvent(Event.KeyboardEvent(eventString))"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type InputFieldController to TMP_InputField in method private GetSelectedInputField() : TMP_InputField from class TextInputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "InputFieldController"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 102,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GETSelectedInputField() : InputFieldController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "TMP_InputField"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private GetSelectedInputField() : TMP_InputField"
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public InputText(text string) : void moved from class InputFieldController to class TextInputManager & inlined to public InputText(text string) : void",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/InputFieldController.cs",
+		"startLine": 30,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public InputText(text string) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/InputFieldController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/InputFieldController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 68,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/InputFieldController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 67,
+		"endColumn": 90,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 30,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public InputText(text string) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "inputField.InputText(text)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 18,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public InputText(text string) : void"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 68,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 67,
+		"endColumn": 90,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

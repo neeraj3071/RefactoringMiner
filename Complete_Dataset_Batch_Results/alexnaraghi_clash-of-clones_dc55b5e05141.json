@@ -1,0 +1,339 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/alexnaraghi/clash-of-clones.git",
+	"sha1": "dc55b5e0514135f1f4eb3fbaf04652461846029d",
+	"url": "https://github.com/alexnaraghi/clash-of-clones/commit/dc55b5e0514135f1f4eb3fbaf04652461846029d",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable shellInstance : Rigidbody to projectileRigidbody : Rigidbody in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 159,
+		"endLine": 160,
+		"startColumn": 19,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "shellInstance : Rigidbody"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 159,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 55,
+		"endLine": 56,
+		"startColumn": 19,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "projectileRigidbody : Rigidbody"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 55,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable explosion : var to projectile : var in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "explosion : var"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 169,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "projectile : var"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 65,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter target : Entity to creator : Entity in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "target : Entity"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 39,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "creator : Entity"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter projectilePrefab : Rigidbody in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 55,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "projectilePrefab : Rigidbody"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter fireTransform : Transform in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 83,
+		"endColumn": 106,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "fireTransform : Transform"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter destination : Vector3 in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "destination : Vector3"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter secondsToFlyHorizontalMeter : float in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 30,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "secondsToFlyHorizontalMeter : float"
+}, {
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private fireProjectile(target Entity) : void from class TankShooting to public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void from class CombatUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/TankShooting.cs",
+		"startLine": 153,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private fireProjectile(target Entity) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UnitComponents/CombatUtils.cs",
+		"startLine": 44,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public FireProjectile(creator Entity, projectilePrefab Rigidbody, fireTransform Transform, destination Vector3, secondsToFlyHorizontalMeter float) : void"
+}]
+}
+]
+}]
+}

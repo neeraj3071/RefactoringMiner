@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Twometer/twometer-vr.git",
+	"sha1": "784a24c08734aa3788970d77f688d10f98e82596",
+	"url": "https://github.com/Twometer/twometer-vr/commit/784a24c08734aa3788970d77f688d10f98e82596",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder TVR.Service/TVR.Service.Core/Network to TVR.Service/TVR.Service.Core/Network/Unicast",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/TrackerWatchdog.cs",
+		"startLine": 8,
+		"endLine": 30,
+		"startColumn": 14,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TrackerWatchdog"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Unicast/TrackerWatchdog.cs",
+		"startLine": 8,
+		"endLine": 31,
+		"startColumn": 14,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "TrackerWatchdog"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class ITrackerIdProvider renamed to IIdProvider",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Model/ITrackerIdProvider.cs",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ITrackerIdProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Model/IIdProvider.cs",
+		"startLine": 3,
+		"endLine": 8,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "IIdProvider"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Trackers : ICollection<Tracker> to Trackers : IEnumerable<Tracker> in class TrackerManager",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Model/TrackerManager.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 37,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Trackers : ICollection<Tracker>"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Model/TrackerManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 37,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Trackers : IEnumerable<Tracker>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public HandleTrackerConnect(tracker Tracker) : void renamed to private SendTrackerConnect(tracker Tracker) : void in class DriverClient",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleTrackerConnect(tracker Tracker) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private SendTrackerConnect(tracker Tracker) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public HandleTrackerDisconnect(tracker Tracker) : void renamed to private SendTrackerDisconnect(tracker Tracker) : void in class DriverClient",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleTrackerDisconnect(tracker Tracker) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private SendTrackerDisconnect(tracker Tracker) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public HandleStateChange(trackers IEnumerable<Tracker>) : void renamed to public SendTrackerStates(trackers IEnumerable<Tracker>) : void in class DriverClient",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 36,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleStateChange(trackers IEnumerable<Tracker>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SendTrackerStates(trackers IEnumerable<Tracker>) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SendTrackerConnect(tracker Tracker) : void from class DriverClient",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleTrackerConnect(tracker Tracker) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SendTrackerConnect(tracker Tracker) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SendTrackerDisconnect(tracker Tracker) : void from class DriverClient",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleTrackerDisconnect(tracker Tracker) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Network/Driver/DriverClient.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SendTrackerDisconnect(tracker Tracker) : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class TrackingEngine",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Tracking/TrackingEngine.cs",
+		"startLine": 11,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "TrackingEngine"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/Tracking/TrackingEngine.cs",
+		"startLine": 11,
+		"endLine": 81,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "TrackingEngine"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private UpdateVideo() : void renamed to private VideoLoop() : void in class TvrService",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/TvrService.cs",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateVideo() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/TvrService.cs",
+		"startLine": 102,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private VideoLoop() : void"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Version : string from class TvrService",
+	"leftSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/TvrService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Version : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "TVR.Service/TVR.Service.Core/TvrService.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Version : string"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/chrisjz/sm64vr.git",
+	"sha1": "eb83ac6d5d9b050d93e83bc6f371f49c6bdf2aab",
+	"url": "https://github.com/chrisjz/sm64vr/commit/eb83ac6d5d9b050d93e83bc6f371f49c6bdf2aab",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private player : GameObject from class AutoRotateSprite",
+	"leftSideLocations": [{
+		"filePath": "Assets/Objects/Scripts/AutoRotateSprite.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public player : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Objects/Scripts/AutoRotateSprite.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private player : GameObject"
+}]
+}
+]
+}]
+}

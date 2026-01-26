@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/KandoozStudio/Kinteractions-VR.git",
+	"sha1": "2a718266f4032f232dda568a9efd8a83574d93c1",
+	"url": "https://github.com/KandoozStudio/Kinteractions-VR/commit/2a718266f4032f232dda568a9efd8a83574d93c1",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private DrawPropertyAndIncreaseheight(property SerializedProperty, line Rect, name string) : Rect renamed to private DrawPropertyAndIncreaseHeight(property SerializedProperty, line Rect, name string) : Rect in class PosePropertyDrawer",
+	"leftSideLocations": [{
+		"filePath": "Animations/Editor/PosePropertyDrawer.cs",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DrawPropertyAndIncreaseheight(property SerializedProperty, line Rect, name string) : Rect"
+}],
+	"rightSideLocations": [{
+		"filePath": "Animations/Editor/PosePropertyDrawer.cs",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private DrawPropertyAndIncreaseHeight(property SerializedProperty, line Rect, name string) : Rect"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnGUI(position Rect, property SerializedProperty, label GUIContent) : void from class PosePropertyDrawer",
+	"leftSideLocations": [{
+		"filePath": "Animations/Editor/PosePropertyDrawer.cs",
+		"startLine": 15,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnGUI(position Rect, property SerializedProperty, label GUIContent) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Animations/Editor/PosePropertyDrawer.cs",
+		"startLine": 15,
+		"endLine": 36,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnGUI(position Rect, property SerializedProperty, label GUIContent) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CreateGraphAndSetItsoutputs() : void renamed to private CreateGraphAndSetItsOutputs() : void in class HandPoseController",
+	"leftSideLocations": [{
+		"filePath": "Animations/Runtime/HandPoseController.cs",
+		"startLine": 92,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateGraphAndSetItsoutputs() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Animations/Runtime/HandPoseController.cs",
+		"startLine": 97,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CreateGraphAndSetItsOutputs() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CreateTweenablePose(poseID int, data PoseData) : IPose renamed to private CreateDynamicPose(poseID int, data PoseData) : IPose in class HandPoseController",
+	"leftSideLocations": [{
+		"filePath": "Animations/Runtime/HandPoseController.cs",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateTweenablePose(poseID int, data PoseData) : IPose"
+}],
+	"rightSideLocations": [{
+		"filePath": "Animations/Runtime/HandPoseController.cs",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CreateDynamicPose(poseID int, data PoseData) : IPose"
+}]
+}
+]
+}]
+}

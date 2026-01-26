@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "04feb78a75d63554f0319d77873df50eff1b4b5e",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/04feb78a75d63554f0319d77873df50eff1b4b5e",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type OnControlDrag : Action<Transform,Workspace.Direction> to OnControlDrag : Action<Transform,Transform> in class ChessboardPrefab",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/ChessboardPrefab.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 48,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "OnControlDrag : Action<Transform,Workspace.Direction>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/ChessboardPrefab.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 38,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "OnControlDrag : Action<Transform,Transform>"
+}]
+}
+]
+}]
+}

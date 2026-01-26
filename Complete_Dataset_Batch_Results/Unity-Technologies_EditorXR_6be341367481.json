@@ -1,0 +1,567 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "6be341367481ede9a4cf1c4254965f67ca6279ba",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/6be341367481ede9a4cf1c4254965f67ca6279ba",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_HandleTip : Transform from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_HandleTip : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_HandleTip : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_Plane : Plane from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_Plane : Plane"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_Plane : Plane"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_LastPosition : Vector3 from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 19,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_LastPosition : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_LastPosition : Vector3"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rayOrigin : Transform to rayOrigin : var in method protected OnHandleDragging(eventData HandleEventData) : void from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "rayOrigin : var"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 4,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type worldPosition : Vector3 to worldPosition : var in method protected OnHandleDragging(eventData HandleEventData) : void from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 12,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "worldPosition : Vector3"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 4,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 8,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "worldPosition : var"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ray : Ray to ray : var in method protected OnHandleDragging(eventData HandleEventData) : void from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 8,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ray : Ray"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 113,
+		"endLine": 114,
+		"startColumn": 4,
+		"endColumn": 74,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 8,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ray : var"
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 115,
+		"endLine": 116,
+		"startColumn": 4,
+		"endColumn": 74,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package OnDisable() : void from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 33,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDisable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 35,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnDisable() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package UpdateHandleTip(eventData LinearHandleEventData) : void from class .LinearHandle..LinearHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 61,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateHandleTip(eventData LinearHandleEventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/LinearHandle.cs",
+		"startLine": 63,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package UpdateHandleTip(eventData LinearHandleEventData) : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to package in class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 10,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": ".PlaneHandle..PlaneHandleEventData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 13,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": ".PlaneHandle..PlaneHandleEventData"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_PlaneMaterial : Material from class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_PlaneMaterial : Material"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_PlaneMaterial : Material"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_Plane : Plane from class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_Plane : Plane"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_Plane : Plane"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_LastPosition : Vector3 from class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 19,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_LastPosition : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_LastPosition : Vector3"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rayOrigin : Transform to rayOrigin : var in method protected OnHandleDragging(eventData HandleEventData) : void from class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "rayOrigin : var"
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ray : Ray to ray : var in method protected OnHandleDragging(eventData HandleEventData) : void from class .PlaneHandle..PlaneHandleEventData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 8,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ray : Ray"
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 53,
+		"endLine": 54,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 8,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ray : var"
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/PlaneHandle.cs",
+		"startLine": 55,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter constraint : ConstrainedAxis to constraints : ConstrainedAxis in method package Translate(delta Vector3, rayOrigin Transform, constraints ConstrainedAxis) : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 540,
+		"endLine": 540,
+		"startColumn": 54,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "constraint : ConstrainedAxis"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 540,
+		"endLine": 540,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "constraints : ConstrainedAxis"
+}]
+}
+]
+}]
+}

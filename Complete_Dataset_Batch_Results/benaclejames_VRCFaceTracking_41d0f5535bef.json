@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "41d0f5535bef3d90238a873b2db4faa67523eabc",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/41d0f5535bef3d90238a873b2db4faa67523eabc",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parameterOutputService : ParameterOutputService to parameterOutputService : OscQueryService in method public MainStandalone(loggerFactory ILoggerFactory, parameterOutputService OscQueryService, libManager ILibManager, mutator UnifiedTrackingMutator) from class MainStandalone",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parameterOutputService : ParameterOutputService"
+}, {
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parameterOutputService : OscQueryService"
+}, {
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class OscQueryService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscQueryService.cs",
+		"startLine": 11,
+		"endLine": 268,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "OscQueryService"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscQueryService.cs",
+		"startLine": 14,
+		"endLine": 290,
+		"startColumn": 16,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "OscQueryService"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parameterOutputService : ParameterOutputService to parameterOutputService : OscQueryService in method public ActivationService(defaultHandler ActivationHandler<LaunchActivatedEventArgs>, activationHandlers IEnumerable<IActivationHandler>, themeSelectorService IThemeSelectorService, parameterOutputService OscQueryService, mainService IMainService, moduleDataService IModuleDataService, moduleInstaller ModuleInstaller, libManager ILibManager, loggerFactory ILoggerFactory) from class ActivationService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Services/ActivationService.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 105,
+		"endColumn": 150,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parameterOutputService : ParameterOutputService"
+}, {
+		"filePath": "VRCFaceTracking/Services/ActivationService.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Services/ActivationService.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parameterOutputService : OscQueryService"
+}, {
+		"filePath": "VRCFaceTracking/Services/ActivationService.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ParameterOutputService : ParameterOutputService to ParameterOutputService : OscQueryService in class MainViewModel",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/MainViewModel.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 35,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ParameterOutputService : ParameterOutputService"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/MainViewModel.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ParameterOutputService : OscQueryService"
+}]
+}
+]
+}]
+}

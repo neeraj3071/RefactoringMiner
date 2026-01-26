@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "9c2d3a22ef5ddda4a667e44276dba32c6777cdad",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/9c2d3a22ef5ddda4a667e44276dba32c6777cdad",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public OnHandleDragStart(handle BaseHandle, eventData HandleDragEventData) : void from class Workspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Base/Workspace.cs",
+		"startLine": 133,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 16,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnHandleDragStart(handle BaseHandle, eventData HandleDragEventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Base/Workspace.cs",
+		"startLine": 121,
+		"endLine": 129,
+		"startColumn": 2,
+		"endColumn": 16,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public OnHandleDragStart(handle BaseHandle, eventData HandleDragEventData) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/stefaanvermassen/virtual-museum-app.git",
+	"sha1": "cb76f9f2706634c872f645af47a3f29d40b3eb4e",
+	"url": "https://github.com/stefaanvermassen/virtual-museum-app/commit/cb76f9f2706634c872f645af47a3f29d40b3eb4e",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private STORE_MODE_STRING : string from class Storage",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private STORE_MODE_STRING : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 27,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private STORE_MODE_STRING : string"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private SaveLocal : void from class Storage",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SaveLocal : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private SaveLocal : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute MUSEUM_FOLDER : string to MuseumFolder : string in class Storage",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 20,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "MUSEUM_FOLDER : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 20,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "MuseumFolder : string"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(MODE == StoreMode.Always_Local_Remote_On_Wifi && wifi) to [if(wifi), if(MODE == StoreMode.Always_Local_Remote_On_Wifi)] in initializer Storage from class Storage",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(MODE == StoreMode.Always_Local_Remote_On_Wifi && wifi)"
+}, {
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 41,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "INITIALIZER",
+		"description": "original initializer declaration",
+		"codeElement": "Storage"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(wifi)"
+}, {
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(MODE == StoreMode.Always_Local_Remote_On_Wifi)"
+}, {
+		"filePath": "Assets/Scripts/Data/Storage.cs",
+		"startLine": 53,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "INITIALIZER",
+		"description": "initializer declaration with split conditional",
+		"codeElement": "Storage"
+}]
+}
+]
+}]
+}

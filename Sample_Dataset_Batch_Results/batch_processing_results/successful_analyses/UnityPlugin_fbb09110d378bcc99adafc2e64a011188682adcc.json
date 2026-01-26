@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "fbb09110d378bcc99adafc2e64a011188682adcc",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/fbb09110d378bcc99adafc2e64a011188682adcc",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class HandTrackingFeatureBuildHooks",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking OpenXR/Editor/Scripts/HandTrackingFeatureBuildHooks.cs",
+		"startLine": 12,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "HandTrackingFeatureBuildHooks"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking OpenXR/Editor/Scripts/HandTrackingFeatureBuildHooks.cs",
+		"startLine": 10,
+		"endLine": 67,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "HandTrackingFeatureBuildHooks"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public AddApplicationMetadata(name string, value string) : void renamed to public AddMetadata(name string, value string) : void in class HandTrackingFeatureBuildHooks.AndroidManifest",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking OpenXR/Editor/Scripts/HandTrackingFeatureBuildHooks.cs",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddApplicationMetadata(name string, value string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking OpenXR/Editor/Scripts/AndroidManifest.cs",
+		"startLine": 111,
+		"endLine": 132,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public AddMetadata(name string, value string) : void"
+}]
+}
+]
+}]
+}

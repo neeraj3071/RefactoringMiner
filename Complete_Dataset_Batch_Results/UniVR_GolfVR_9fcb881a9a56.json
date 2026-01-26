@@ -1,0 +1,321 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/UniVR/GolfVR.git",
+	"sha1": "9fcb881a9a565fa00f5948fb0de05af4efd84bd7",
+	"url": "https://github.com/UniVR/GolfVR/commit/9fcb881a9a565fa00f5948fb0de05af4efd84bd7",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class PlayerActions.ActionRotation moved and renamed to MovementState",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 18,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "PlayerActions.ActionRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 13,
+		"endLine": 18,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "MovementState"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class PlayerActions renamed to MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 5,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "PlayerActions"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 20,
+		"endLine": 208,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "MainScript"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private ball : GameObject from class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ball : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private ball : GameObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private player : GameObject from class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public player : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private player : GameObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private clubForceCoef : float from class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public clubForceCoef : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private clubForceCoef : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private clubAngle : float from class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public clubAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private clubAngle : float"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public TurnLeft() : void renamed to public WatchButtonLeft() : void in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TurnLeft() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 181,
+		"endLine": 186,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public WatchButtonLeft() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public TurnRight() : void renamed to public WatchButtonRight() : void in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TurnRight() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 195,
+		"endLine": 200,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public WatchButtonRight() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute PlayerToBallSpeed : float to moveVelocity : float in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 15,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "PlayerToBallSpeed : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 15,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "moveVelocity : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute offset : Vector3 to playerOffsetWithBall : Vector3 in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "offset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 18,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "playerOffsetWithBall : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute action : ActionRotation to currentMovement : MovementState in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "action : ActionRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "currentMovement : MovementState"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type action : ActionRotation to currentMovement : MovementState in class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "action : ActionRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "currentMovement : MovementState"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public currentMovement : MovementState from class MainScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private action : ActionRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MainScript.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public currentMovement : MovementState"
+}]
+}
+]
+}]
+}

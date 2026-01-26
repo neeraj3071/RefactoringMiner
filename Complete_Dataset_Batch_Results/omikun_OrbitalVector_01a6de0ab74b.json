@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/omikun/OrbitalVector.git",
+	"sha1": "01a6de0ab74b2d4a3a8d5343ed27217b9e012b8c",
+	"url": "https://github.com/omikun/OrbitalVector/commit/01a6de0ab74b2d4a3a8d5343ed27217b9e012b8c",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class Orbit.Global moved to OrbitData.Global",
+	"leftSideLocations": [{
+		"filePath": "Assets/Orbit.cs",
+		"startLine": 76,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Orbit.Global"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/OrbitData.cs",
+		"startLine": 15,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "OrbitData.Global"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class DataStore",
+	"leftSideLocations": [{
+		"filePath": "Assets/DataStore.cs",
+		"startLine": 4,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "DataStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/DataStore.cs",
+		"startLine": 4,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "DataStore"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public userSelection : GameObject from class DataStore",
+	"leftSideLocations": [{
+		"filePath": "Assets/DataStore.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public userSelection : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/DataStore.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public userSelection : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package r : double from class Orbit to package r : double from class OrbitData",
+	"leftSideLocations": [{
+		"filePath": "Assets/Orbit.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package r : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/OrbitData.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package r : double"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package m : double from class Orbit to package m : double from class OrbitData",
+	"leftSideLocations": [{
+		"filePath": "Assets/Orbit.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/OrbitData.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package m : double"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package G : double from class Orbit to package G : double from class OrbitData",
+	"leftSideLocations": [{
+		"filePath": "Assets/Orbit.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package G : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/OrbitData.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package G : double"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public parentGM : double from class Orbit to public parentGM : double from class OrbitData",
+	"leftSideLocations": [{
+		"filePath": "Assets/Orbit.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public parentGM : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/OrbitData.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public parentGM : double"
+}]
+}
+]
+}]
+}

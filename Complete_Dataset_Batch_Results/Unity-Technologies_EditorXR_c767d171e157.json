@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "c767d171e15709085bc729acfd3636915c1ce381",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/c767d171e15709085bc729acfd3636915c1ce381",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class DirectSelectInput renamed to TransformInput",
+	"leftSideLocations": [{
+		"filePath": "Action Maps/DirectSelectInput.cs",
+		"startLine": 7,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DirectSelectInput"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformInput.cs",
+		"startLine": 7,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "TransformInput"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter directSelectInput : ActionMapInput in method public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, directSelectInput ActionMapInput, tester IntersectionTester) from class EditorVR.MiniWorlds..MiniWorldRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 101,
+		"endColumn": 133,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "directSelectInput : ActionMapInput"
+}, {
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 84,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, directSelectInput ActionMapInput, tester IntersectionTester)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, tester IntersectionTester)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter directSelectInput : ActionMapInput in method public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, directSelectInput ActionMapInput, tester IntersectionTester) from class .EditorVR..MiniWorldRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 101,
+		"endColumn": 133,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "directSelectInput : ActionMapInput"
+}, {
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 84,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, directSelectInput ActionMapInput, tester IntersectionTester)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 83,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public MiniWorldRay(originalRayOrigin Transform, miniWorld IMiniWorld, proxy IProxy, node Node, tester IntersectionTester)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type input : DirectSelectInput to input : TransformInput in initializer TransformTool from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "input : DirectSelectInput"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "input : TransformInput"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute directSelectInput : var to m_Input : TransformInput in method public ProcessInput(input ActionMapInput, consumeControl ConsumeControlDelegate) : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "directSelectInput : var"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_Input : TransformInput"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type directSelectInput : var to m_Input : TransformInput in method public ProcessInput(input ActionMapInput, consumeControl ConsumeControlDelegate) : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "directSelectInput : var"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "m_Input : TransformInput"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

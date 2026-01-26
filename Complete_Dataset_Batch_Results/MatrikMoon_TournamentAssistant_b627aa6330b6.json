@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MatrikMoon/TournamentAssistant.git",
+	"sha1": "b627aa6330b6e3b1c4deb0a18146381b7d917172",
+	"url": "https://github.com/MatrikMoon/TournamentAssistant/commit/b627aa6330b6e3b1c4deb0a18146381b7d917172",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @event.Type in method package AddCoordinator(MatchCoordinator as) from class SystemServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/SystemServer.cs",
+		"startLine": 463,
+		"endLine": 463,
+		"startColumn": 25,
+		"endColumn": 82,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AddCoordinator(MatchCoordinator as)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/SystemServer.cs",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@event.Type"
+}, {
+		"filePath": "Shared/SystemServer.cs",
+		"startLine": 455,
+		"endLine": 458,
+		"startColumn": 25,
+		"endColumn": 82,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "package AddCoordinator(MatchCoordinator as)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter userId : ulong in method public MockClient(endpoint string, port int, username string, userId ulong) from class MockClient",
+	"leftSideLocations": [{
+		"filePath": "TournamentAssistantUI/Misc/MockClient.cs",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MockClient(endpoint string, port int, username string)"
+}],
+	"rightSideLocations": [{
+		"filePath": "TournamentAssistantUI/Misc/MockClient.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 71,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "userId : ulong"
+}, {
+		"filePath": "TournamentAssistantUI/Misc/MockClient.cs",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public MockClient(endpoint string, port int, username string, userId ulong)"
+}]
+}
+]
+}]
+}

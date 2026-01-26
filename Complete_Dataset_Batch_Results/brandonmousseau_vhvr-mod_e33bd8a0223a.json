@@ -1,0 +1,588 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "e33bd8a0223a63f7abb454e4845fedb147e7b87c",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/e33bd8a0223a63f7abb454e4845fedb147e7b87c",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private checkInteractions() : void from class VRPlayer to public checkInteractions() : void from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 909,
+		"endLine": 919,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkInteractions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 15,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public checkInteractions() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public checkInteractions() : void from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 909,
+		"endLine": 919,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkInteractions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 15,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public checkInteractions() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public checkInteractions() : void from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 909,
+		"endLine": 919,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkInteractions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 15,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public checkInteractions() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void from class VRPlayer to private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 921,
+		"endLine": 957,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 28,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 921,
+		"endLine": 957,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 28,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isHoldingItem(isRightHand bool) : bool from class VRPlayer to private isHoldingItem(isRightHand bool) : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1045,
+		"endLine": 1048,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private isHoldingItem(isRightHand bool) : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1045,
+		"endLine": 1048,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isUnpressSheath() : bool from class VRPlayer to private isUnpressSheath() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1031,
+		"endLine": 1034,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isUnpressSheath() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private isUnpressSheath() : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private isUnpressSheath() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1031,
+		"endLine": 1034,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isUnpressSheath() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private isUnpressSheath() : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isHoldingThrowable() : bool from class VRPlayer to private isHoldingThrowable() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1035,
+		"endLine": 1039,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingThrowable() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private isHoldingThrowable() : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private isHoldingThrowable() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1035,
+		"endLine": 1039,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingThrowable() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private isHoldingThrowable() : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isBuildingTool() : bool from class VRPlayer to private isBuildingTool() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1040,
+		"endLine": 1044,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isBuildingTool() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private isBuildingTool() : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private isBuildingTool() : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1040,
+		"endLine": 1044,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isBuildingTool() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private isBuildingTool() : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public toggleShowLeftHand : bool from class VRPlayer to public toggleShowLeftHand : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public toggleShowLeftHand : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public toggleShowLeftHand : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public toggleShowRightHand : bool from class VRPlayer to public toggleShowRightHand : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public toggleShowRightHand : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public toggleShowRightHand : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public justUnsheathed : bool from class VRPlayer to public justUnsheathed : bool from class Pose",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public justUnsheathed : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public justUnsheathed : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Pose from class VRPlayer",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 28,
+		"endLine": 1049,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRPlayer"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 909,
+		"endLine": 919,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkInteractions() : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 921,
+		"endLine": 957,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1031,
+		"endLine": 1034,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isUnpressSheath() : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1035,
+		"endLine": 1039,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingThrowable() : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1040,
+		"endLine": 1044,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isBuildingTool() : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 1045,
+		"endLine": 1048,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public justUnsheathed : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public toggleShowLeftHand : bool"
+}, {
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public toggleShowRightHand : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/VRPlayer.cs",
+		"startLine": 29,
+		"endLine": 978,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VRPlayer"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 9,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Pose"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 15,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public checkInteractions() : void"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 28,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkHandOverShoulder(isRightHand bool, hand Hand, inputSource SteamVR_Input_Sources, bool ref) : void"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isUnpressSheath() : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isHoldingThrowable() : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isBuildingTool() : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isHoldingItem(isRightHand bool) : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public justUnsheathed : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public toggleShowLeftHand : bool"
+}, {
+		"filePath": "ValheimVRMod/Utilities/Pose.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public toggleShowRightHand : bool"
+}]
+}
+]
+}]
+}

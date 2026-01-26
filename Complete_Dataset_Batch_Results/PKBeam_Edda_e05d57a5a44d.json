@@ -1,0 +1,1383 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PKBeam/Edda.git",
+	"sha1": "e05d57a5a44df2232139512d48e78719416a9020",
+	"url": "https://github.com/PKBeam/Edda/commit/e05d57a5a44df2232139512d48e78719416a9020",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable oldPreviewStream : var to oldSongPreviewController : var in method private AppMainWindow_Closed(sender object, e EventArgs) : void from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "oldPreviewStream : var"
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "oldSongPreviewController : var"
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private LoadPreview() : void from class MainWindow to package LoadPreview(mapEditor MapEditor) : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1193,
+		"endLine": 1207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 93,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadPreview(mapEditor MapEditor) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter mapEditor : MapEditor in method package LoadPreview(mapEditor MapEditor) : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1193,
+		"endLine": 1207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 35,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "mapEditor : MapEditor"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 93,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package LoadPreview(mapEditor MapEditor) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package LoadPreview(mapEditor MapEditor) : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1193,
+		"endLine": 1207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 93,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package LoadPreview(mapEditor MapEditor) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private InitPreviewPlayer() : void from class MainWindow to package InitPreviewPlayer() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1208,
+		"endLine": 1219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitPreviewPlayer() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 94,
+		"endLine": 105,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package InitPreviewPlayer() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package InitPreviewPlayer() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1208,
+		"endLine": 1219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitPreviewPlayer() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 94,
+		"endLine": 105,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package InitPreviewPlayer() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private UnloadPreview() : void from class MainWindow to package UnloadPreview() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UnloadPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package UnloadPreview() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package UnloadPreview() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UnloadPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package UnloadPreview() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private PlayPreview() : void from class MainWindow to package PlayPreview() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1234,
+		"endLine": 1258,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlayPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 113,
+		"endLine": 137,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package PlayPreview() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package PlayPreview() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1234,
+		"endLine": 1258,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlayPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 113,
+		"endLine": 137,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package PlayPreview() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package StopPreview() : void from class MainWindow to package StopPreview() : void from class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1259,
+		"endLine": 1267,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StopPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 138,
+		"endLine": 146,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package StopPreview() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package UpdateVolume() : void extracted from private LoadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1193,
+		"endLine": 1207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private LoadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1199,
+		"endLine": 1199,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 163,
+		"endLine": 167,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package UpdateVolume() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 93,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package LoadPreview(mapEditor MapEditor) : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateVolume()"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 41,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package EnablePreviewButton() : void extracted from private LoadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1193,
+		"endLine": 1207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private LoadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1201,
+		"endLine": 1201,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1202,
+		"endLine": 1202,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 169,
+		"endLine": 174,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package EnablePreviewButton() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 81,
+		"endLine": 93,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package LoadPreview(mapEditor MapEditor) : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "EnablePreviewButton()"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 40,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private UnloadPreviewStream() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1222,
+		"endLine": 1222,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1223,
+		"endLine": 1223,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1224,
+		"endLine": 1224,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UnloadPreviewStream() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private UnloadPreviewPlayer() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnloadPreviewStream()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private UnloadPreviewStream() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1222,
+		"endLine": 1222,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1223,
+		"endLine": 1223,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1224,
+		"endLine": 1224,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UnloadPreviewStream() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package UnloadPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnloadPreviewStream()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private UnloadPreviewPlayer() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1227,
+		"endLine": 1227,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1228,
+		"endLine": 1228,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1229,
+		"endLine": 1229,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UnloadPreviewPlayer() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package UnloadPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnloadPreviewPlayer()"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private UnloadPreviewPlayer() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1228,
+		"endLine": 1228,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 62,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UnloadPreviewPlayer() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 75,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private UnloadPreviewTempoStream() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnloadPreviewPlayer()"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private UnloadPreviewTempoStream() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1228,
+		"endLine": 1228,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 75,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UnloadPreviewTempoStream() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package UnloadPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnloadPreviewTempoStream()"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package DisablePreviewButton() : void extracted from private UnloadPreview() : void in class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1231,
+		"endLine": 1231,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1232,
+		"endLine": 1232,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 176,
+		"endLine": 179,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package DisablePreviewButton() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package UnloadPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DisablePreviewButton()"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SongPreviewController from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 31,
+		"endLine": 1452,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MainWindow"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1208,
+		"endLine": 1219,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitPreviewPlayer() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1220,
+		"endLine": 1233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UnloadPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1234,
+		"endLine": 1258,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlayPreview() : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 1259,
+		"endLine": 1267,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StopPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 31,
+		"endLine": 1375,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "MainWindow"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 14,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SongPreviewController"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 94,
+		"endLine": 105,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package InitPreviewPlayer() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package UnloadPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 113,
+		"endLine": 137,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package PlayPreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 138,
+		"endLine": 146,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package StopPreview() : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method package TogglePreview() : void extracted from private BtnPlayPreview_Click(sender object, e RoutedEventArgs) : void in class MainWindow & moved to class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 392,
+		"endLine": 398,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private BtnPlayPreview_Click(sender object, e RoutedEventArgs) : void"
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 393,
+		"endLine": 397,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 393,
+		"endLine": 395,
+		"startColumn": 36,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 395,
+		"endLine": 397,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 148,
+		"endLine": 154,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package TogglePreview() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 36,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 151,
+		"endLine": 153,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 386,
+		"endLine": 388,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private BtnPlayPreview_Click(sender object, e RoutedEventArgs) : void"
+}, {
+		"filePath": "Windows/MainWindow.UIControls.cs",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "songPreviewController.TogglePreview()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method package Restart() : void extracted from public UpdatePlaybackDevice(newPlaybackDeviceID string, isDefaultDevice bool) : void in class MainWindow & moved to class SongPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 957,
+		"endLine": 974,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public UpdatePlaybackDevice(newPlaybackDeviceID string, isDefaultDevice bool) : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 968,
+		"endLine": 968,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 969,
+		"endLine": 969,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 970,
+		"endLine": 970,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 971,
+		"endLine": 971,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Restart() : void"
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Classes/UI/SongPreviewController.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 952,
+		"endLine": 966,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public UpdatePlaybackDevice(newPlaybackDeviceID string, isDefaultDevice bool) : void"
+}, {
+		"filePath": "Windows/MainWindow.xaml.cs",
+		"startLine": 963,
+		"endLine": 963,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "songPreviewController.Restart()"
+}]
+}
+]
+}]
+}

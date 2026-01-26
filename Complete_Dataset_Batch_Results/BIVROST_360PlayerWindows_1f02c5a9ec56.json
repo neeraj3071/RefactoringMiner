@@ -1,0 +1,216 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BIVROST/360PlayerWindows.git",
+	"sha1": "1f02c5a9ec567559811b3962922bc0094241c84f",
+	"url": "https://github.com/BIVROST/360PlayerWindows/commit/1f02c5a9ec567559811b3962922bc0094241c84f",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private IsYoutubeUpToDate() : bool from class StreamingServices to private IsYoutubeUpToDate() : bool from class YoutubeParser",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 235,
+		"endLine": 254,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private IsYoutubeUpToDate() : bool from class StreamingServices",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 235,
+		"endLine": 254,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private YoutubeUpdate() : void from class StreamingServices to private YoutubeUpdate() : void from class YoutubeParser",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 256,
+		"endLine": 279,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private YoutubeUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 306,
+		"endLine": 334,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private YoutubeUpdate() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private YoutubeUpdate() : void from class StreamingServices",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 256,
+		"endLine": 279,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private YoutubeUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 306,
+		"endLine": 334,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private YoutubeUpdate() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private YoutubeDL(arguments string) : string from class StreamingServices to private YoutubeDL(arguments string) : string from class YoutubeParser",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 281,
+		"endLine": 318,
+		"startColumn": 3,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private YoutubeDL(arguments string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 337,
+		"endLine": 389,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private YoutubeDL(arguments string) : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class YoutubeParser from class StreamingServices",
+	"leftSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 17,
+		"endLine": 371,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "StreamingServices"
+}, {
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 235,
+		"endLine": 254,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}, {
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 256,
+		"endLine": 279,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private YoutubeUpdate() : void"
+}, {
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 281,
+		"endLine": 318,
+		"startColumn": 3,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private YoutubeDL(arguments string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "PlayerUI/Tools/StreamingServices.cs",
+		"startLine": 17,
+		"endLine": 182,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "StreamingServices"
+}, {
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 16,
+		"endLine": 390,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "YoutubeParser"
+}, {
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private IsYoutubeUpToDate() : bool"
+}, {
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 306,
+		"endLine": 334,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private YoutubeUpdate() : void"
+}, {
+		"filePath": "PlayerUI/Streaming/YoutubeParser.cs",
+		"startLine": 337,
+		"endLine": 389,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private YoutubeDL(arguments string) : string"
+}]
+}
+]
+}]
+}

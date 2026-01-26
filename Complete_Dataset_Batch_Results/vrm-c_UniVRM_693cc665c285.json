@@ -1,0 +1,579 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "693cc665c285846d8a1a80ac933c791c4befd9d0",
+	"url": "https://github.com/vrm-c/UniVRM/commit/693cc665c285846d8a1a80ac933c791c4befd9d0",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter getTexture : GetTextureAsyncFunc in method public LoadMaterials(getTexture GetTextureAsyncFunc) : IEnumerator from class MaterialFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 148,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadMaterials() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 42,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "getTexture : GetTextureAsyncFunc"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 73,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LoadMaterials(getTexture GetTextureAsyncFunc) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTextureAsync(index int) from class MaterialFactory to package LoadTextureAsync(index int) from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 139,
+		"endLine": 146,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTextureAsync(index int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 43,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadTextureAsync(index int)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetTextureAsync(param GetTextureParam) from class MaterialFactory to package GetTextureAsync(param GetTextureParam) from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 54,
+		"endLine": 65,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetTextureAsync(param GetTextureParam)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 60,
+		"endLine": 71,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetTextureAsync(param GetTextureParam)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTextureAsync() : await from class MaterialFactory to package LoadTextureAsync() : await from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 31,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTextureAsync() : await"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 31,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadTextureAsync() : await"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ImageBaseDir : UnityPath from class MaterialFactory to public ImageBaseDir : UnityPath from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ImageBaseDir : UnityPath"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ImageBaseDir : UnityPath"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package m_textuers : List<Texture2D> from class MaterialFactory to package m_textuers : List<Texture2D> from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_textuers : List<Texture2D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package m_textuers : List<Texture2D>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package m_textureCache : Dictionary<GetTextureParam,Texture2D> from class MaterialFactory to package m_textureCache : Dictionary<GetTextureParam,Texture2D> from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 48,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_textureCache : Dictionary<GetTextureParam,Texture2D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 48,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package m_textureCache : Dictionary<GetTextureParam,Texture2D>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Task : virtual from class MaterialFactory to public Task : virtual from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Task : virtual"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Task : virtual"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Task : async from class MaterialFactory to public Task : async from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 22,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Task : async"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 22,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Task : async"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package converted : var from class MaterialFactory to package converted : var from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package converted : var"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package converted : var from class MaterialFactory to package converted : var from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 119,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 29,
+		"endColumn": 119,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package converted : var"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package converted : var from class MaterialFactory to package converted : var from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 29,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 29,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package converted : var"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package textureAssetPath : var from class MaterialFactory to package textureAssetPath : var from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package textureAssetPath : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 33,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package textureAssetPath : var"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class TextureFactory from class MaterialFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 13,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MaterialFactory"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 54,
+		"endLine": 65,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetTextureAsync(param GetTextureParam)"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 31,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTextureAsync() : await"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 139,
+		"endLine": 146,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTextureAsync(index int)"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ImageBaseDir : UnityPath"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_textuers : List<Texture2D>"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 48,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_textureCache : Dictionary<GetTextureParam,Texture2D>"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 22,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Task : async"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package textureAssetPath : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 119,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 29,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Task : virtual"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/MaterialFactory.cs",
+		"startLine": 10,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "MaterialFactory"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 10,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "TextureFactory"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 60,
+		"endLine": 71,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetTextureAsync(param GetTextureParam)"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 31,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package LoadTextureAsync() : await"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 43,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package LoadTextureAsync(index int)"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ImageBaseDir : UnityPath"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package m_textuers : List<Texture2D>"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 48,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package m_textureCache : Dictionary<GetTextureParam,Texture2D>"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Task : virtual"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 33,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package textureAssetPath : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 33,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package converted : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/MaterialFacotry/TextureLoader/TextureFactory.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Task : virtual"
+}]
+}
+]
+}]
+}

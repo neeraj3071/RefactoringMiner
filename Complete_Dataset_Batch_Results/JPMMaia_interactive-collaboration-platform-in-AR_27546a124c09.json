@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JPMMaia/interactive-collaboration-platform-in-AR.git",
+	"sha1": "27546a124c0932d37a177dd681b85fdaeae31ce9",
+	"url": "https://github.com/JPMMaia/interactive-collaboration-platform-in-AR/commit/27546a124c0932d37a177dd681b85fdaeae31ce9",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Data : SceneObject2.Data to Data : IEnumerable<SceneObject2.Data> in class .ClientController..NetworkEventArgs",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ClientController.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 38,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Data : SceneObject2.Data"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ClientController.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Data : IEnumerable<SceneObject2.Data>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter netMsg : NetworkMessage to networkMessage : NetworkMessage in method private OnAddSceneObjectData(networkMessage NetworkMessage) : void from class ClientController",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ClientController.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 43,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "netMsg : NetworkMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ClientController.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 43,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "networkMessage : NetworkMessage"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter netMsg : NetworkMessage to networkMessage : NetworkMessage in method private OnAddSceneObjectData(networkMessage NetworkMessage) : void from class ServerController",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ServerController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 43,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "netMsg : NetworkMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Network/ServerController.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 43,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "networkMessage : NetworkMessage"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable SceneObjects : in to _sceneObjects : in in method public FixedUpdate() : void from class Scene2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 38,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "SceneObjects : in"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 42,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_sceneObjects : in"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable SceneObjects : in to _sceneObjects : in in method public FrameUpdate() : void from class Scene2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 38,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "SceneObjects : in"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_sceneObjects : in"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

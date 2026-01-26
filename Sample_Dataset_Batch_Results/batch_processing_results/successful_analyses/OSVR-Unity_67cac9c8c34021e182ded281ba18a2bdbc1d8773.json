@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/OSVR/OSVR-Unity.git",
+	"sha1": "67cac9c8c34021e182ded281ba18a2bdbc1d8773",
+	"url": "https://github.com/OSVR/OSVR-Unity/commit/67cac9c8c34021e182ded281ba18a2bdbc1d8773",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class VRHead renamed to VRViewer",
+	"leftSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/VRHead.cs",
+		"startLine": 33,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRHead"
+}],
+	"rightSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/VRViewer.cs",
+		"startLine": 33,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VRViewer"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type $missing$ : vrHead.AddComponent<AudioListener> @$missing$ [] to $missing$ : vrViewer.AddComponent<AudioListener> @$missing$ [] in method private CreateHeadAndEyes() : void from class DisplayController",
+	"leftSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 53,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "$missing$ : vrHead.AddComponent<AudioListener> @$missing$ []"
+}],
+	"rightSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 59,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "$missing$ : vrViewer.AddComponent<AudioListener> @$missing$ []"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Head : VRHead to Viewers : VRViewer[] in class DisplayController",
+	"leftSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Head : VRHead"
+}],
+	"rightSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Viewers : VRViewer[]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Head : VRHead to Viewers : VRViewer[] in class DisplayController",
+	"leftSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Head : VRHead"
+}],
+	"rightSideLocations": [{
+		"filePath": "OSVR-Unity/Assets/OSVRUnity/src/DisplayController.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Viewers : VRViewer[]"
+}]
+}
+]
+}]
+}

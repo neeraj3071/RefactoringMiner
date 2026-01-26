@@ -1,0 +1,78 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/halsafar/BeatSaberSongBrowser.git",
+	"sha1": "6056be7f08fa35caf3c58ee5f54ffbfa2728520e",
+	"url": "https://github.com/halsafar/BeatSaberSongBrowser/commit/6056be7f08fa35caf3c58ee5f54ffbfa2728520e",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method private UpdateSongInfos(gameplayMode GameplayMode) : void inlined to public UpdateSongLists(gameplayMode GameplayMode) : void in class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 272,
+		"endLine": 293,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private UpdateSongInfos(gameplayMode GameplayMode) : void"
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 277,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 215,
+		"endLine": 267,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public UpdateSongLists(gameplayMode GameplayMode) : void"
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "this.UpdateSongInfos(_currentGamePlayMode)"
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 13,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 218,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public UpdateSongLists(gameplayMode GameplayMode) : void"
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserModel.cs",
+		"startLine": 230,
+		"endLine": 284,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

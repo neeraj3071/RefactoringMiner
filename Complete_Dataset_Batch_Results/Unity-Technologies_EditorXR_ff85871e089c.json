@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "ff85871e089c8543b0ff045b30ba78cbd860c738",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/ff85871e089c8543b0ff045b30ba78cbd860c738",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to MainMenuButton in method public CreateFaceButton(buttonData ButtonData) : MainMenuButton from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 274,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateFaceButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MainMenuButton"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 275,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public CreateFaceButton(buttonData ButtonData) : MainMenuButton"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter buttonCreationCallback : Action<MainMenuButton> in method public CreateFaceButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 55,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "buttonCreationCallback : Action<MainMenuButton>"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 274,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateFaceButton(buttonData ButtonData, buttonCreationCallback Action<MainMenuButton>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 249,
+		"endLine": 275,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public CreateFaceButton(buttonData ButtonData) : MainMenuButton"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to GameObject in method public CreateCustomButton(prefab GameObject, buttonData ButtonData) : GameObject from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 276,
+		"endLine": 295,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateCustomButton(prefab GameObject, buttonData ButtonData, buttonCreationCallback Action<GameObject>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 10,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "GameObject"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 277,
+		"endLine": 297,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public CreateCustomButton(prefab GameObject, buttonData ButtonData) : GameObject"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter buttonCreationCallback : Action<GameObject> in method public CreateCustomButton(prefab GameObject, buttonData ButtonData, buttonCreationCallback Action<GameObject>) : void from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 76,
+		"endColumn": 117,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "buttonCreationCallback : Action<GameObject>"
+}, {
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 276,
+		"endLine": 295,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateCustomButton(prefab GameObject, buttonData ButtonData, buttonCreationCallback Action<GameObject>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 277,
+		"endLine": 297,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public CreateCustomButton(prefab GameObject, buttonData ButtonData) : GameObject"
+}]
+}
+]
+}]
+}

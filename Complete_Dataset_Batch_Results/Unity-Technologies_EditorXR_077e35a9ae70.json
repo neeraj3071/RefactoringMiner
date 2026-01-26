@@ -1,0 +1,453 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "077e35a9ae709ec0c20f53bd2b9cd1f0c3b8aa9c",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/077e35a9ae709ec0c20f53bd2b9cd1f0c3b8aa9c",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class EditorVR.ToolStack renamed to EditorVR.DeviceData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EditorVR.ToolStack"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "EditorVR.DeviceData"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CreateToolStacks() : void renamed to private CreateDeviceData() : void in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 79,
+		"endLine": 98,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateToolStacks() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 79,
+		"endLine": 98,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CreateDeviceData() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ToolStacks : in to m_DeviceData : in in method private Update() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ToolStacks : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_DeviceData : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ToolStacks : in to m_DeviceData : in in method private UpdatePlayerHandleMaps() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 32,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ToolStacks : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 3,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_DeviceData : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ToolStacks : in to m_DeviceData : in in method private UpdatePlayerHandleMaps() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 35,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ToolStacks : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 6,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 37,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_DeviceData : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 6,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ToolStacks : in to m_DeviceData : in in method private UpdatePlayerHandleMaps() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 35,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ToolStacks : in"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_DeviceData : in"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable toolStack : in to deviceData : in in method private UpdatePlayerHandleMaps() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "toolStack : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 269,
+		"endLine": 270,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceData : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 268,
+		"endLine": 269,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ToolStacks : in to m_DeviceData : in in method private GetInputDeviceForTool(tool ITool) : InputDevice from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ToolStacks : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_DeviceData : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable toolStack : var to deviceData : var in method private CreateDeviceData() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 91,
+		"endLine": 95,
+		"startColumn": 8,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "toolStack : var"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 91,
+		"endLine": 95,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 91,
+		"endLine": 95,
+		"startColumn": 8,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceData : var"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 91,
+		"endLine": 95,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_ToolStacks : Dictionary<InputDevice,ToolStack> to m_DeviceData : Dictionary<InputDevice,DeviceData> in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 48,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_ToolStacks : Dictionary<InputDevice,ToolStack>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 49,
+		"endColumn": 105,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_DeviceData : Dictionary<InputDevice,DeviceData>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_ToolStacks : Dictionary<InputDevice,ToolStack> to m_DeviceData : Dictionary<InputDevice,DeviceData> in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 48,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_ToolStacks : Dictionary<InputDevice,ToolStack>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 49,
+		"endColumn": 105,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_DeviceData : Dictionary<InputDevice,DeviceData>"
+}]
+}
+]
+}]
+}

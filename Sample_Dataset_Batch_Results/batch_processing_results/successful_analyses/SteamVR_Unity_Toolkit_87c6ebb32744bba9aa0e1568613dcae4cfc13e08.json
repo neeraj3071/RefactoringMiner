@@ -1,0 +1,1914 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/giveaphuk/SteamVR_Unity_Toolkit.git",
+	"sha1": "87c6ebb32744bba9aa0e1568613dcae4cfc13e08",
+	"url": "https://github.com/giveaphuk/SteamVR_Unity_Toolkit/commit/87c6ebb32744bba9aa0e1568613dcae4cfc13e08",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable targetName : string in method package DebugLogger(index uint, action string, target Transform, distance float, tipPosition Vector3) : void from class SteamVR_ControllerPointerEvents_ListenerExample",
+	"leftSideLocations": [{
+		"filePath": "Assets/Examples/Scripts/SteamVR_ControllerPointerEvents_ListenerExample.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 195,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Examples/Scripts/SteamVR_ControllerPointerEvents_ListenerExample.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "targetName : string"
+}, {
+		"filePath": "Assets/Examples/Scripts/SteamVR_ControllerPointerEvents_ListenerExample.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 194,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected Start() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 35,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private InitProjectedBeams() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 52,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitProjectedBeams() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 95,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private InitProjectedBeams() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected InitPointer() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 68,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitPointer() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 43,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected InitPointer() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private GetForwardBeamLength() : float from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 88,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetForwardBeamLength() : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 111,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetForwardBeamLength() : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ProjectForwardBeam() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 116,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ProjectForwardBeam() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 139,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ProjectForwardBeam() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ProjectDownBeam() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 137,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ProjectDownBeam() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 160,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ProjectDownBeam() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private SetPointerCursor() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 164,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetPointerCursor() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 189,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetPointerCursor() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected TogglePointer(state bool) : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 180,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package TogglePointer(state bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 67,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected TogglePointer(state bool) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable destinationY : float in method protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 197,
+		"endLine": 199,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 19,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "destinationY : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 193,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 74,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private DisplayCurvedBeam() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 207,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DisplayCurvedBeam() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 204,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private DisplayCurvedBeam() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 221,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 217,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected Start() : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 46,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected InitPointer() : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 60,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitPointer() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 36,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected InitPointer() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private SetPointerTransform(setLength float, setThicknes float) : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 90,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetPointerTransform(setLength float, setThicknes float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 86,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetPointerTransform(setLength float, setThicknes float) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected TogglePointer(state bool) : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 109,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package TogglePointer(state bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 72,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected TogglePointer(state bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 116,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 107,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 164,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 148,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Start() : void from class SteamVR_BezierPointer to protected Start() : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 35,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected Start() : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 35,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected Start() : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 46,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_BezierPointer to protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 187,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 187,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 150,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public pointerFacingAxis : AxisType from class SteamVR_BezierPointer to public pointerFacingAxis : AxisType from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private pointerContactDistance : float from class SteamVR_BezierPointer to protected pointerContactDistance : float from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected pointerContactDistance : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pointerContactDistance : float from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pointerContactDistance : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pointerContactDistance : float from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pointerContactDistance : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private pointerContactTarget : Transform from class SteamVR_BezierPointer to protected pointerContactTarget : Transform from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected pointerContactTarget : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pointerContactTarget : Transform from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pointerContactTarget : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pointerContactTarget : Transform from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pointerContactTarget : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private controllerIndex : uint from class SteamVR_BezierPointer to protected controllerIndex : uint from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected controllerIndex : uint from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected controllerIndex : uint from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Start() : void from class SteamVR_SimplePointer to protected Start() : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 46,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Start() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_SimplePointer to protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 150,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public pointerFacingAxis : AxisType from class SteamVR_SimplePointer to public pointerFacingAxis : AxisType from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private pointerContactDistance : float from class SteamVR_SimplePointer to protected pointerContactDistance : float from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected pointerContactDistance : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private pointerContactTarget : Transform from class SteamVR_SimplePointer to protected pointerContactTarget : Transform from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected pointerContactTarget : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private controllerIndex : uint from class SteamVR_SimplePointer to protected controllerIndex : uint from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SteamVR_WorldPointer from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 4,
+		"endLine": 231,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SteamVR_BezierPointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 35,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 187,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 19,
+		"endLine": 227,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SteamVR_BezierPointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 59,
+		"endLine": 272,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SteamVR_WorldPointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Start() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected pointerContactDistance : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected pointerContactTarget : Transform"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SteamVR_WorldPointer from class SteamVR_BezierPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 4,
+		"endLine": 231,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SteamVR_BezierPointer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 19,
+		"endLine": 227,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SteamVR_BezierPointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 59,
+		"endLine": 272,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SteamVR_WorldPointer"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SteamVR_WorldPointer from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 20,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SteamVR_SimplePointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 46,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 150,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactDistance : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerContactTarget : Transform"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controllerIndex : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 19,
+		"endLine": 158,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SteamVR_SimplePointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 59,
+		"endLine": 272,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SteamVR_WorldPointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 130,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Start() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected EnablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public pointerFacingAxis : AxisType"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected pointerContactDistance : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected pointerContactTarget : Transform"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected controllerIndex : uint"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SteamVR_WorldPointer from class SteamVR_SimplePointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 20,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SteamVR_SimplePointer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 19,
+		"endLine": 158,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SteamVR_SimplePointer"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 59,
+		"endLine": 272,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SteamVR_WorldPointer"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void extracted from package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void in class SteamVR_SimplePointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 169,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.DisablePointerBeam(sender,e)"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerIn() : void extracted from package ProjectDownBeam() : void in class SteamVR_BezierPointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 137,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package ProjectDownBeam() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 148,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 176,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerIn() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 127,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 160,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private ProjectDownBeam() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerIn()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerIn() : void extracted from package GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float in class SteamVR_SimplePointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 116,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 141,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 176,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerIn() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 127,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 107,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerIn()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerOut() : void extracted from package ProjectDownBeam() : void in class SteamVR_BezierPointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 137,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package ProjectDownBeam() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 17,
+		"endColumn": 153,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 181,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerOut() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 128,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 160,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private ProjectDownBeam() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerOut()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerOut() : void extracted from package GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float in class SteamVR_SimplePointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 116,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 17,
+		"endColumn": 146,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 181,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerOut() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 128,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 107,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private GetPointerBeamLength(hasRayHit bool, collidedWith RaycastHit) : float"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerOut()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerSet() : void extracted from package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void in class SteamVR_BezierPointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 193,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 13,
+		"endColumn": 140,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 186,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerSet() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 13,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 74,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerSet()"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 188,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PointerSet() : void extracted from package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void in class SteamVR_SimplePointer & moved to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 149,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 186,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PointerSet() : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 13,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected DisablePointerBeam(sender object, e ControllerClickedEventArgs) : void"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_SimplePointer.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "base.PointerSet()"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 188,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pointerMaterial : Material from class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerColor : Material"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pointerMaterial : Material"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private pointerColor : Material renamed to protected pointerMaterial : Material and moved from class SteamVR_BezierPointer to class SteamVR_WorldPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/SteamVR_BezierPointer.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pointerColor : Material"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Abstractions/SteamVR_WorldPointer.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "protected pointerMaterial : Material"
+}]
+}
+]
+}]
+}

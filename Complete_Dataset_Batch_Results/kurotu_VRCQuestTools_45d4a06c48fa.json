@@ -1,0 +1,468 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "45d4a06c48fa1ddc7e6c4993e766dd085c05bfca",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/45d4a06c48fa1ddc7e6c4993e766dd085c05bfca",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class EditorPrefsKey moved and renamed to UnitySettings.EditorPrefsKeys",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EditorPrefsKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "UnitySettings.EditorPrefsKeys"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class EditorUserSettingsKey moved and renamed to KRTQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EditorUserSettingsKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 61,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "KRTQuestToolsSettings.Keys"
+}]
+},
+{
+	"type": "Split Package",
+	"description": "Split Package  to [KRTQuestToolsSettings, UnitySettings]",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EditorPrefsKey"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EditorUserSettingsKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "UnitySettings.EditorPrefsKeys"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 61,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "KRTQuestToolsSettings.Keys"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class UnitySettings.EditorPrefsKeys",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "EditorPrefsKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "UnitySettings.EditorPrefsKeys"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class KRTQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "EditorUserSettingsKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 61,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "KRTQuestToolsSettings.Keys"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package FALSE : string from class UnitySettingsWindow to package FALSE : string from class KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package FALSE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package FALSE : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package TRUE : string from class UnitySettingsWindow to package TRUE : string from class KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package TRUE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package TRUE : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class KRTQuestToolsSettings from class UnitySettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 51,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "UnitySettingsWindow"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package FALSE : string"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package TRUE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 93,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "UnitySettingsWindow"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 59,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "KRTQuestToolsSettings"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package FALSE : string"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package TRUE : string"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public ValidateCacheServerMode() : bool extracted from private OnGUI() : void in class UnitySettingsWindow & moved to class UnitySettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 78,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ValidateCacheServerMode() : bool"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 121,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 18,
+		"endColumn": 57,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnitySettings.ValidateCacheServerMode()"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(UnitySettings.GetCacheServerMode() == CacheServerMode.Disable) to return GetCacheServerMode() != CacheServerMode.Disable; in method public ValidateCacheServerMode() : bool from class UnitySettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 86,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(UnitySettings.GetCacheServerMode() == CacheServerMode.Disable)"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 78,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return GetCacheServerMode() != CacheServerMode.Disable;\n"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public ValidateCacheServerMode() : bool"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public ValidateAndroidTextureCompression() : bool extracted from private OnGUI() : void in class UnitySettingsWindow & moved to class UnitySettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 78,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 48,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ValidateAndroidTextureCompression() : bool"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 121,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 18,
+		"endColumn": 67,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnitySettings.ValidateAndroidTextureCompression()"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(UnitySettings.GetAndroidTextureCompression() != MobileTextureSubtarget.ASTC) to return GetAndroidTextureCompression() == MobileTextureSubtarget.ASTC; in method public ValidateAndroidTextureCompression() : bool from class UnitySettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 101,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(UnitySettings.GetAndroidTextureCompression() != MobileTextureSubtarget.ASTC)"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 78,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return GetAndroidTextureCompression() == MobileTextureSubtarget.ASTC;\n"
+}, {
+		"filePath": "Editor/UnitySettings.cs",
+		"startLine": 48,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public ValidateAndroidTextureCompression() : bool"
+}]
+}
+]
+}]
+}

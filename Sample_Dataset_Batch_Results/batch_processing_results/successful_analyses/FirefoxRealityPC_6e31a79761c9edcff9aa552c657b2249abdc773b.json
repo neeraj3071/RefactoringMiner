@@ -1,0 +1,795 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MozillaReality/FirefoxRealityPC.git",
+	"sha1": "6e31a79761c9edcff9aa552c657b2249abdc773b",
+	"url": "https://github.com/MozillaReality/FirefoxRealityPC/commit/6e31a79761c9edcff9aa552c657b2249abdc773b",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fxrWindow : FxRWindow to fxrWindow : FxRPointableSurface in method private Update() : void from class FxRLaserPointer",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 23,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fxrWindow : FxRWindow"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 50,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 326,
+		"endLine": 329,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 352,
+		"endLine": 357,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 363,
+		"endLine": 366,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 379,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 33,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fxrWindow : FxRPointableSurface"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 50,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 326,
+		"endLine": 329,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 352,
+		"endLine": 357,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 363,
+		"endLine": 366,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.cs",
+		"startLine": 379,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public fxr_plugin : FxRPlugin from class FxRVideoController to public fxr_plugin : FxRPlugin from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _windowIndex : int from class FxRVideoController to protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerEnter() : void from class FxRWindow to public PointerEnter() : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 159,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerEnter() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 11,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerEnter() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerExit() : void from class FxRWindow to public PointerExit() : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 165,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerExit() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerExit() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerOver(texCoord Vector2) : void from class FxRWindow to public PointerOver(texCoord Vector2) : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 171,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 23,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerPress(texCoord Vector2) : void from class FxRWindow to public PointerPress(texCoord Vector2) : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 179,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerRelease(texCoord Vector2) : void from class FxRWindow to public PointerRelease(texCoord Vector2) : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 187,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PointerScrollDiscrete(delta Vector2) : void from class FxRWindow to public PointerScrollDiscrete(delta Vector2) : void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 195,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public fxr_plugin : FxRPlugin from class FxRWindow to public fxr_plugin : FxRPlugin from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private videoSize : Vector2Int from class FxRWindow to protected videoSize : Vector2Int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private videoSize : Vector2Int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected videoSize : Vector2Int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected videoSize : Vector2Int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private videoSize : Vector2Int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected videoSize : Vector2Int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _windowIndex : int from class FxRWindow to protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class FxRPointableSurface from class FxRVideoController",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 6,
+		"endLine": 350,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FxRVideoController"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 6,
+		"endLine": 346,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "FxRVideoController"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 5,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "FxRPointableSurface"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class FxRPointableSurface from class FxRWindow",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 5,
+		"endLine": 249,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FxRWindow"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 159,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerEnter() : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 165,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerExit() : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 171,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 179,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 187,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 195,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private videoSize : Vector2Int"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 5,
+		"endLine": 203,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "FxRWindow"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 5,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "FxRPointableSurface"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 11,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerEnter() : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerExit() : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 23,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : void"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected videoSize : Vector2Int"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _windowIndex : int"
+}]
+}
+]
+}]
+}

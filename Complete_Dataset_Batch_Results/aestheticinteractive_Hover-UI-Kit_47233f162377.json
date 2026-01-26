@@ -1,0 +1,156 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aestheticinteractive/Hover-UI-Kit.git",
+	"sha1": "47233f162377a4874e7e1903c78930a59fabdb6c",
+	"url": "https://github.com/aestheticinteractive/Hover-UI-Kit/commit/47233f162377a4874e7e1903c78930a59fabdb6c",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Test renamed to HandDisplay",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 9,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Test"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 8,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "HandDisplay"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable isActive : bool in method public Update() : void from class HandDisplay",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "isActive : bool"
+}, {
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable vFingerObjList : in to vFingerDisplays : in in method public Update() : void from class HandDisplay",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "vFingerObjList : in"
+}, {
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 39,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "vFingerDisplays : in"
+}, {
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute vFingerObjList : IList<GameObject> to vFingerDisplays : FingerDisplay[] in class HandDisplay",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "vFingerObjList : IList<GameObject>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "vFingerDisplays : FingerDisplay[]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type vFingerObjList : IList<GameObject> to vFingerDisplays : FingerDisplay[] in class HandDisplay",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/Test.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "vFingerObjList : IList<GameObject>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/HandMenu/Scripts/HandDisplay.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "vFingerDisplays : FingerDisplay[]"
+}]
+}
+]
+}]
+}

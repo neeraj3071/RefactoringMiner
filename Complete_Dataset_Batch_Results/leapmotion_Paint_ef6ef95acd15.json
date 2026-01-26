@@ -1,0 +1,3873 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/leapmotion/Paint.git",
+	"sha1": "ef6ef95acd15944f826e2ec22852d4bf1789495b",
+	"url": "https://github.com/leapmotion/Paint/commit/ef6ef95acd15944f826e2ec22852d4bf1789495b",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method package OnEnable() : void from class LeapBoxGraphicEditor to package OnEnable() : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 22,
+		"endLine": 35,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnEnable() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnInspectorGUI() : void from class LeapBoxGraphicEditor to public OnInspectorGUI() : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 37,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnInspectorGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 35,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public OnInspectorGUI() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawSourceData(property SerializedProperty) : void from class LeapBoxGraphicEditor to private drawSourceData(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 49,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawSourceData(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 47,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawSourceData(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawResolution(property SerializedProperty) : void from class LeapBoxGraphicEditor to private drawResolution(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 124,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawResolution(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 124,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawResolution(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mainType : LeapBoxGraphic.ResolutionType to mainType : LeapPanelOutlineGraphic.ResolutionType in method private drawResolution(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 37,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mainType : LeapBoxGraphic.ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 135,
+		"endLine": 139,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 154,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 46,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "mainType : LeapPanelOutlineGraphic.ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 135,
+		"endLine": 140,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 155,
+		"endLine": 169,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawSize(property SerializedProperty) : void from class LeapBoxGraphicEditor to private drawSize(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 172,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawSize(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 182,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawSize(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnEnable() : void from class LeapGuiProceduralPanelEditor to package OnEnable() : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 22,
+		"endLine": 35,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnEnable() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnInspectorGUI() : void from class LeapGuiProceduralPanelEditor to public OnInspectorGUI() : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 37,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnInspectorGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 35,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public OnInspectorGUI() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawSourceData(property SerializedProperty) : void from class LeapGuiProceduralPanelEditor to private drawSourceData(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 49,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawSourceData(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 47,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawSourceData(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawResolution(property SerializedProperty) : void from class LeapGuiProceduralPanelEditor to private drawResolution(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 124,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawResolution(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 124,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawResolution(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mainType : LeapPanelGraphic.ResolutionType to mainType : LeapPanelOutlineGraphic.ResolutionType in method private drawResolution(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 39,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mainType : LeapPanelGraphic.ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 135,
+		"endLine": 139,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 154,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 46,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "mainType : LeapPanelOutlineGraphic.ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 135,
+		"endLine": 140,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 155,
+		"endLine": 169,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private drawSize(property SerializedProperty) : void from class LeapGuiProceduralPanelEditor to private drawSize(property SerializedProperty) : void from class LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 172,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private drawSize(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 182,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private drawSize(property SerializedProperty) : void"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class LeapPanelGraphic.ResolutionType moved to .LeapSlicedGraphic.calculateVertAxis.ResolutionType",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 311,
+		"endLine": 314,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapPanelGraphic.ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 356,
+		"endLine": 358,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".LeapSlicedGraphic.calculateVertAxis.ResolutionType"
+}]
+},
+{
+	"type": "Merge Class",
+	"description": "Merge Class [LeapBoxGraphicEditor, LeapGuiProceduralPanelEditor] merged to LeapSlicedGraphicEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapBoxGraphicEditor.cs",
+		"startLine": 20,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapBoxGraphicEditor"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelGraphicEditor.cs",
+		"startLine": 20,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapGuiProceduralPanelEditor"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapSlicedGraphicEditor.cs",
+		"startLine": 20,
+		"endLine": 202,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "new type declaration",
+		"codeElement": "LeapSlicedGraphicEditor"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Tooltip() from class LeapBoxGraphic to package Tooltip() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Tooltip()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Tooltip() from class LeapBoxGraphic to package Tooltip() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Tooltip()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package MinValue() from class LeapBoxGraphic to package MinValue() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package MinValue()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected Reset() : void from class LeapBoxGraphic to protected Reset() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 166,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Reset() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected OnValidate() : void from class LeapBoxGraphic to protected OnValidate() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 173,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnValidate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected OnValidate() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapBoxGraphic to public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private assignDefaultSourceValue() : void from class LeapBoxGraphic to protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 505,
+		"endLine": 507,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 505,
+		"endLine": 507,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 301,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 336,
+		"endLine": 338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private setSourceFeatureDirty() : void from class LeapBoxGraphic to protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 509,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 509,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 305,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 340,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public RefreshMeshData() : void from class LeapBoxGraphic to public RefreshMeshData() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 196,
+		"endLine": 470,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _sourceDataIndex : int from class LeapBoxGraphic to protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolutionType : ResolutionType from class LeapBoxGraphic to protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_x : int from class LeapBoxGraphic to protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_y : int from class LeapBoxGraphic to protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_verts_per_meter : Vector2 from class LeapBoxGraphic to protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _size : Vector3 from class LeapBoxGraphic to protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _size : Vector3 to _size : Vector2 in class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_size : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_size : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _nineSliced : bool from class LeapBoxGraphic to protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public resolutionType : ResolutionType from class LeapBoxGraphic to public resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public rect : Rect from class LeapBoxGraphic to public rect : Rect from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public rect : Rect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public nineSliced : bool from class LeapBoxGraphic to public nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public canNineSlice : bool from class LeapBoxGraphic to public canNineSlice : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public uvChannel : UVChannelFlags from class LeapBoxGraphic to public uvChannel : UVChannelFlags from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public sourceData : LeapFeatureData from class LeapBoxGraphic to public sourceData : LeapFeatureData from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Tooltip() from class LeapPanelGraphic to package Tooltip() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Tooltip()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Tooltip() from class LeapPanelGraphic to package Tooltip() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Tooltip()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package MinValue() from class LeapPanelGraphic to package MinValue() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package MinValue()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected Reset() : void from class LeapPanelGraphic to protected Reset() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 159,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Reset() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected OnValidate() : void from class LeapPanelGraphic to protected OnValidate() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 166,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnValidate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected OnValidate() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapPanelGraphic to public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private assignDefaultSourceValue() : void from class LeapPanelGraphic to protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 301,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private setSourceFeatureDirty() : void from class LeapPanelGraphic to protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 305,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public RefreshMeshData() : void from class LeapPanelGraphic to public RefreshMeshData() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 188,
+		"endLine": 281,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _sourceDataIndex : int from class LeapPanelGraphic to protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolutionType : ResolutionType from class LeapPanelGraphic to protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_x : int from class LeapPanelGraphic to protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_y : int from class LeapPanelGraphic to protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_verts_per_meter : Vector2 from class LeapPanelGraphic to protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _size : Vector2 from class LeapPanelGraphic to protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _nineSliced : bool from class LeapPanelGraphic to protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public resolutionType : ResolutionType from class LeapPanelGraphic to public resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public rect : Rect from class LeapPanelGraphic to public rect : Rect from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public rect : Rect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public nineSliced : bool from class LeapPanelGraphic to public nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public canNineSlice : bool from class LeapPanelGraphic to public canNineSlice : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public uvChannel : UVChannelFlags from class LeapPanelGraphic to public uvChannel : UVChannelFlags from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public sourceData : LeapFeatureData from class LeapPanelGraphic to public sourceData : LeapFeatureData from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package MinValue() from class LeapPanelOutlineGraphic to package MinValue() from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package MinValue()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected Reset() : void from class LeapPanelOutlineGraphic to protected Reset() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 164,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Reset() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapPanelOutlineGraphic to public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 68,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private assignDefaultSourceValue() : void from class LeapPanelOutlineGraphic to protected assignDefaultSourceValue() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 336,
+		"endLine": 338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private setSourceFeatureDirty() : void from class LeapPanelOutlineGraphic to protected setSourceFeatureDirty() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 340,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public RefreshMeshData() : void from class LeapPanelOutlineGraphic to public RefreshMeshData() : void from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 193,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _sourceDataIndex : int from class LeapPanelOutlineGraphic to protected _sourceDataIndex : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolutionType : ResolutionType from class LeapPanelOutlineGraphic to protected _resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_x : int from class LeapPanelOutlineGraphic to protected _resolution_vert_x : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_vert_y : int from class LeapPanelOutlineGraphic to protected _resolution_vert_y : int from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _resolution_verts_per_meter : Vector2 from class LeapPanelOutlineGraphic to protected _resolution_verts_per_meter : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _size : Vector2 from class LeapPanelOutlineGraphic to protected _size : Vector2 from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _nineSliced : bool from class LeapPanelOutlineGraphic to protected _nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected _nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public resolutionType : ResolutionType from class LeapPanelOutlineGraphic to public resolutionType : ResolutionType from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public rect : Rect from class LeapPanelOutlineGraphic to public rect : Rect from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public rect : Rect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public nineSliced : bool from class LeapPanelOutlineGraphic to public nineSliced : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public canNineSlice : bool from class LeapPanelOutlineGraphic to public canNineSlice : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public uvChannel : UVChannelFlags from class LeapPanelOutlineGraphic to public uvChannel : UVChannelFlags from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public sourceData : LeapFeatureData from class LeapPanelOutlineGraphic to public sourceData : LeapFeatureData from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class LeapSlicedGraphic from class LeapBoxGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 22,
+		"endLine": 519,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapBoxGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 166,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 173,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnValidate() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 196,
+		"endLine": 470,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 505,
+		"endLine": 507,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 509,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapBoxGraphic.cs",
+		"startLine": 27,
+		"endLine": 274,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "LeapBoxGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 27,
+		"endLine": 383,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "LeapSlicedGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Tooltip()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected OnValidate() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class LeapSlicedGraphic from class LeapPanelGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 26,
+		"endLine": 315,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapPanelGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Tooltip()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 159,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 166,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnValidate() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 188,
+		"endLine": 281,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 301,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 305,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelGraphic.cs",
+		"startLine": 24,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "LeapPanelGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 27,
+		"endLine": 383,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "LeapSlicedGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Tooltip()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected OnValidate() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class LeapSlicedGraphic from class LeapPanelOutlineGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 26,
+		"endLine": 350,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LeapPanelOutlineGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 68,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 164,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 193,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 336,
+		"endLine": 338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 340,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _size : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapPanelOutlineGraphic.cs",
+		"startLine": 23,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "LeapPanelOutlineGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 27,
+		"endLine": 383,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "LeapSlicedGraphic"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package MinValue()"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public IsValidDataSource(dataSource LeapFeatureData) : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Reset() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 231,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RefreshMeshData() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected assignDefaultSourceValue() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 221,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected setSourceFeatureDirty() : void"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _sourceDataIndex : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_x : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_vert_y : int"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _resolution_verts_per_meter : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected _size : Vector2"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public sourceData : LeapFeatureData"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public resolutionType : ResolutionType"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public rect : Rect"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public nineSliced : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public canNineSlice : bool"
+}, {
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public uvChannel : UVChannelFlags"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute index : int to _sourceDataIndex : int in method public IsValidDataSource(dataSource LeapFeatureData) : bool from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelOutlineGraphicEditor.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 11,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "index : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_sourceDataIndex : int"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute index : int to _sourceDataIndex : int in method public RectMargins(left float, top float, right float, bottom float) from class LeapSlicedGraphic",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/Editor/LeapPanelOutlineGraphicEditor.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 11,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "index : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Modules/GraphicRenderer/Scripts/Graphics/ProceduralMeshGraphics/LeapSlicedGraphic.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_sourceDataIndex : int"
+}]
+}
+]
+}]
+}

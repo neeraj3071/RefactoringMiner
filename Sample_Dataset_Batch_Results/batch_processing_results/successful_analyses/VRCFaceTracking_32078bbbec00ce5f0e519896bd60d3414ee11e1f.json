@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "32078bbbec00ce5f0e519896bd60d3414ee11e1f",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/32078bbbec00ce5f0e519896bd60d3414ee11e1f",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class MutationProperty.TrackingMutation",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 54,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MutationProperty.TrackingMutation"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 55,
+		"endLine": 96,
+		"startColumn": 25,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "MutationProperty.TrackingMutation"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier abstract in class MutationProperty.TrackingMutation",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 54,
+		"endLine": 107,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MutationProperty.TrackingMutation"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 55,
+		"endLine": 96,
+		"startColumn": 25,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "MutationProperty.TrackingMutation"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Properties : List<MutationProperty> to Properties : List<MutationProperty<object>> in class MutationProperty.TrackingMutation",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 44,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Properties : List<MutationProperty>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Params/Data/Mutation/TrackingMutation.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 43,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Properties : List<MutationProperty<object>>"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,276 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "2ddeb2f8f3ba5577c08f3ce4c5601908f83c044d",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/2ddeb2f8f3ba5577c08f3ce4c5601908f83c044d",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class FarFieldDirection renamed to WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/FarFieldDirection.cs",
+		"startLine": 41,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FarFieldDirection"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 37,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "WristShoulderFarFieldRay"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(!Application.isPlaying), if(!drawDebugGizmos)] to if(!Application.isPlaying || !drawDebugGizmos) in method private OnDrawGizmos() : void from class InferredBodyPositions",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 254,
+		"endLine": 257,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!Application.isPlaying)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 259,
+		"endLine": 262,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!drawDebugGizmos)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 252,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDrawGizmos() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 239,
+		"endLine": 242,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(!Application.isPlaying || !drawDebugGizmos)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 237,
+		"endLine": 269,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private OnDrawGizmos() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute NeckPositionLocalOffset : Vector3 to NeckPositionLocalSpace : Vector3 in class InferredBodyPositions",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "NeckPositionLocalOffset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "NeckPositionLocalSpace : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute NeckPositionWorldOffset : Vector3 to NeckPositionWorldSpace : Vector3 in class InferredBodyPositions",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "NeckPositionWorldOffset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "NeckPositionWorldSpace : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute drawRawHead : bool to drawHeadPosition : bool in class InferredBodyPositions",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "drawRawHead : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "drawHeadPosition : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute drawDeadzonedShoulders : bool to drawShoulderPositions : bool in class InferredBodyPositions",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "drawDeadzonedShoulders : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/InferredBodyPositions.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "drawShoulderPositions : bool"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type rayDirection : FarFieldDirection to rayDirection : WristShoulderFarFieldRay in class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "rayDirection : FarFieldDirection"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "rayDirection : WristShoulderFarFieldRay"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private wristOffset : Vector3 from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/FarFieldDirection.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 24,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public wristOffset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 25,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private wristOffset : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute wristShoulderLerpAmount : float to wristShoulderBlendAmount : float in class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/FarFieldDirection.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "wristShoulderLerpAmount : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 37,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "wristShoulderBlendAmount : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute transformHelper : Transform to wristOffsetTransformHelper : Transform in class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/FarFieldDirection.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "transformHelper : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "wristOffsetTransformHelper : Transform"
+}]
+}
+]
+}]
+}

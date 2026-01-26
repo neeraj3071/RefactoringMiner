@@ -1,0 +1,516 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "e92d9037af28ac342d9b71fff8624ba6ca4ec18e",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/e92d9037af28ac342d9b71fff8624ba6ca4ec18e",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package ForEachRayOrigin(callback ForEachRayOriginCallback) : void renamed to package IterateRayOrigins(callback ForEachRayOriginCallback) : void in class EditorVR.Rays",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 332,
+		"endLine": 335,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ForEachRayOrigin(callback ForEachRayOriginCallback) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 332,
+		"endLine": 335,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package IterateRayOrigins(callback ForEachRayOriginCallback) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable kGroupingDistance : float to groupingDistance : float in method package GetNewSessionHolder() : GameObject from class AnnotationTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 15,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "kGroupingDistance : float"
+}, {
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 15,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "groupingDistance : float"
+}, {
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter mainHolderTrans : Transform in method package GetNewSessionHolder(mainHolderTrans Transform) : GameObject from class AnnotationTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "mainHolderTrans : Transform"
+}, {
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 251,
+		"endLine": 282,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetNewSessionHolder(mainHolderTrans Transform) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 298,
+		"endLine": 321,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package GetNewSessionHolder() : GameObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LateBindInterfaceMethods(provider Tools) : void from class EditorVR.Menus to public LateBindInterfaceMethods(provider Tools) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 101,
+		"endLine": 104,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LateBindInterfaceMethods(provider Tools) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 119,
+		"endLine": 122,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LateBindInterfaceMethods(provider Tools) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package UpdateAlternateMenuForDevice(deviceData DeviceData) : void from class EditorVR.Menus to package UpdateAlternateMenuForDevice(deviceData DeviceData) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 106,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateAlternateMenuForDevice(deviceData DeviceData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 124,
+		"endLine": 133,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package UpdateAlternateMenuForDevice(deviceData DeviceData) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetCustomMenuOrigin(rayOrigin Transform) : Transform from class EditorVR.Menus to package GetCustomMenuOrigin(rayOrigin Transform) : Transform from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetCustomMenuOrigin(rayOrigin Transform) : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 135,
+		"endLine": 148,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetCustomMenuOrigin(rayOrigin Transform) : Transform"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetCustomAlternateMenuOrigin(rayOrigin Transform) : Transform from class EditorVR.Menus to package GetCustomAlternateMenuOrigin(rayOrigin Transform) : Transform from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 132,
+		"endLine": 145,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetCustomAlternateMenuOrigin(rayOrigin Transform) : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 150,
+		"endLine": 163,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetCustomAlternateMenuOrigin(rayOrigin Transform) : Transform"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package UpdateMenuVisibilities() : void from class EditorVR.Menus to package UpdateMenuVisibilities() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 147,
+		"endLine": 270,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 165,
+		"endLine": 288,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CheckDirectSelection(deviceData DeviceData, menuHideData Dictionary<IMenu,MenuHideData>, alternateMenuVisible bool) : void from class EditorVR.Menus to package CheckDirectSelection(deviceData DeviceData, menuHideData Dictionary<IMenu,MenuHideData>, alternateMenuVisible bool) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 272,
+		"endLine": 311,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CheckDirectSelection(deviceData DeviceData, menuHideData Dictionary<IMenu,MenuHideData>, alternateMenuVisible bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 290,
+		"endLine": 329,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package CheckDirectSelection(deviceData DeviceData, menuHideData Dictionary<IMenu,MenuHideData>, alternateMenuVisible bool) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CheckMenuWorkspaceOverlaps(menu IMenu, menuHideData MenuHideData) : void from class EditorVR.Menus to package CheckMenuWorkspaceOverlaps(menu IMenu, menuHideData MenuHideData) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 313,
+		"endLine": 342,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CheckMenuWorkspaceOverlaps(menu IMenu, menuHideData MenuHideData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 331,
+		"endLine": 360,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package CheckMenuWorkspaceOverlaps(menu IMenu, menuHideData MenuHideData) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package IsValidHover(source MultipleRayInputModule.RaycastSource) : bool from class EditorVR.Menus to package IsValidHover(source MultipleRayInputModule.RaycastSource) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 344,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package IsValidHover(source MultipleRayInputModule.RaycastSource) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 362,
+		"endLine": 400,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package IsValidHover(source MultipleRayInputModule.RaycastSource) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void from class EditorVR.Menus to package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 384,
+		"endLine": 390,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 402,
+		"endLine": 408,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package SetAlternateMenuVisibility(rayOrigin Transform, visible bool) : void from class EditorVR.Menus to package SetAlternateMenuVisibility(rayOrigin Transform, visible bool) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 392,
+		"endLine": 408,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetAlternateMenuVisibility(rayOrigin Transform, visible bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 410,
+		"endLine": 426,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package SetAlternateMenuVisibility(rayOrigin Transform, visible bool) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnMainMenuActivatorSelected(rayOrigin Transform, targetRayOrigin Transform) : void from class EditorVR.Menus to package OnMainMenuActivatorSelected(rayOrigin Transform, targetRayOrigin Transform) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 410,
+		"endLine": 458,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnMainMenuActivatorSelected(rayOrigin Transform, targetRayOrigin Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 428,
+		"endLine": 476,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnMainMenuActivatorSelected(rayOrigin Transform, targetRayOrigin Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InstantiateMenuUI(rayOrigin Transform, prefab IMenu) : GameObject from class EditorVR.Menus to package InstantiateMenuUI(rayOrigin Transform, prefab IMenu) : GameObject from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 460,
+		"endLine": 486,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InstantiateMenuUI(rayOrigin Transform, prefab IMenu) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 478,
+		"endLine": 504,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package InstantiateMenuUI(rayOrigin Transform, prefab IMenu) : GameObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package SpawnMainMenuActivator(device InputDevice) : MainMenuActivator from class EditorVR.Menus to package SpawnMainMenuActivator(device InputDevice) : MainMenuActivator from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 517,
+		"endLine": 523,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SpawnMainMenuActivator(device InputDevice) : MainMenuActivator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 535,
+		"endLine": 541,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package SpawnMainMenuActivator(device InputDevice) : MainMenuActivator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SpawnPinnedToolButton(device InputDevice) : PinnedToolButton from class EditorVR.Menus to public SpawnPinnedToolButton(device InputDevice) : PinnedToolButton from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 525,
+		"endLine": 531,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SpawnPinnedToolButton(device InputDevice) : PinnedToolButton"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 543,
+		"endLine": 549,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SpawnPinnedToolButton(device InputDevice) : PinnedToolButton"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package UpdateAlternateMenuActions() : void from class EditorVR.Menus to package UpdateAlternateMenuActions() : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 533,
+		"endLine": 542,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateAlternateMenuActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 551,
+		"endLine": 560,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package UpdateAlternateMenuActions() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package IsMainMenuVisible(rayOrigin Transform) : bool from class EditorVR.Menus to package IsMainMenuVisible(rayOrigin Transform) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 544,
+		"endLine": 553,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package IsMainMenuVisible(rayOrigin Transform) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 562,
+		"endLine": 571,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package IsMainMenuVisible(rayOrigin Transform) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnDeserializePreferences(obj object) : void from class LocomotionTool to public OnDeserializePreferences(obj object) : void from class AnnotationTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.cs",
+		"startLine": 594,
+		"endLine": 610,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnDeserializePreferences(obj object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/AnnotationTool/AnnotationTool.cs",
+		"startLine": 695,
+		"endLine": 700,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public OnDeserializePreferences(obj object) : void"
+}]
+}
+]
+}]
+}

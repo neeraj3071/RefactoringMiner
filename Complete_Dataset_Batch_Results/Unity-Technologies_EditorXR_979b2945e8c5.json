@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "979b2945e8c535d3f05020bd92fa662c570b369d",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/979b2945e8c535d3f05020bd92fa662c570b369d",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable objectsGrabber : var to directSelection : var in method package UpdateMiniWorlds() : void from class EditorVR.MiniWorlds",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "objectsGrabber : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 113,
+		"endLine": 345,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "directSelection : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.MiniWorlds.cs",
+		"startLine": 178,
+		"endLine": 329,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

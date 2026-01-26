@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/intiface/intiface-game-haptics-router.git",
+	"sha1": "566a5897e40ca3ab4b2f82b8a1d1ff41727c98cd",
+	"url": "https://github.com/intiface/intiface-game-haptics-router/commit/566a5897e40ca3ab4b2f82b8a1d1ff41727c98cd",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _lastVibration : Vibration to _lastVibration : XInputHaptics in class IntifaceControl",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/IntifaceControl.xaml.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 27,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_lastVibration : Vibration"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/IntifaceControl.xaml.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 31,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_lastVibration : XInputHaptics"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _lastSentVibration : Vibration to _lastSentVibration : XInputHaptics in class IntifaceControl",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/IntifaceControl.xaml.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 27,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_lastSentVibration : Vibration"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/IntifaceControl.xaml.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 31,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_lastSentVibration : XInputHaptics"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected OnTimer(aObj object, aArgs ElapsedEventArgs) : void renamed to protected OnVRTimer(aObj object, aArgs ElapsedEventArgs) : void in class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/MainWindow.xaml.cs",
+		"startLine": 49,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnTimer(aObj object, aArgs ElapsedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/MainWindow.xaml.cs",
+		"startLine": 73,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected OnVRTimer(aObj object, aArgs ElapsedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Attach(aProcessId int) : void from class XInputMod",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 73,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Attach(aProcessId int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 75,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Attach(aProcessId int) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter aMsg : string to aIgnored : EventArgs in method private OnVibrationPingMessage(aObj object, aIgnored EventArgs) : void from class XInputMod",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 58,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "aMsg : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 58,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "aIgnored : EventArgs"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type aMsg : string to aIgnored : EventArgs in method private OnVibrationPingMessage(aObj object, aIgnored EventArgs) : void from class XInputMod",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 58,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "aMsg : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 58,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "aIgnored : EventArgs"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter aTrue : bool to aIgnored : EventArgs in method private OnVibrationExit(aObj object, aIgnored EventArgs) : void from class XInputMod",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 51,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "aTrue : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 51,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "aIgnored : EventArgs"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type aTrue : bool to aIgnored : EventArgs in method private OnVibrationExit(aObj object, aIgnored EventArgs) : void from class XInputMod",
+	"leftSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 51,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "aTrue : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "IntifaceGameHapticsRouter/XInputMod.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 51,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "aIgnored : EventArgs"
+}]
+}
+]
+}]
+}

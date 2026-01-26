@@ -1,0 +1,546 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "4c4af227d85ddd58a1c057794e62e19ff58c737e",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/4c4af227d85ddd58a1c057794e62e19ff58c737e",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private choosePlayerName() : void from class ColyseusClient to private choosePlayerName() : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 76,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private choosePlayerName() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 76,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private choosePlayerName() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_ConnectButton : Button from class ColyseusClient to public m_ConnectButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_ConnectButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_ConnectButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_JoinButton : Button from class ColyseusClient to public m_JoinButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_JoinButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_JoinButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_ReJoinButton : Button from class ColyseusClient to public m_ReJoinButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_ReJoinButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_ReJoinButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_SendMessageButton : Button from class ColyseusClient to public m_SendMessageButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_SendMessageButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_SendMessageButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_LeaveButton : Button from class ColyseusClient to public m_LeaveButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 87,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_LeaveButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 87,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_LeaveButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_GetAvailableRoomsButton : Button from class ColyseusClient to public m_GetAvailableRoomsButton : Button from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 102,
+		"endColumn": 127,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_GetAvailableRoomsButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 102,
+		"endColumn": 127,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_GetAvailableRoomsButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_EndpointField : InputField from class ColyseusClient to public m_EndpointField : InputField from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_IdText : Text from class ColyseusClient to public m_IdText : Text from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_IdText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_IdText : Text"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_SessionIdText : Text from class ColyseusClient to public m_SessionIdText : Text from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_SessionIdText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_SessionIdText : Text"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public avatar : GameObject from class ColyseusClient to public avatar : GameObject from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public avatar : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public avatar : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private localPlayerAvatar : GameObject from class ColyseusClient to private localPlayerAvatar : GameObject from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localPlayerAvatar : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private localPlayerAvatar : GameObject"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class NetworkController from class ColyseusClient",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 12,
+		"endLine": 366,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ColyseusClient"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 76,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private choosePlayerName() : void"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_ConnectButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_JoinButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_ReJoinButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_SendMessageButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 87,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_LeaveButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 102,
+		"endColumn": 127,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_GetAvailableRoomsButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_IdText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_SessionIdText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public avatar : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localPlayerAvatar : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/ColyseusClient.cs",
+		"startLine": 12,
+		"endLine": 341,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ColyseusClient"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 12,
+		"endLine": 366,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "NetworkController"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 76,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private choosePlayerName() : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_ConnectButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_JoinButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_ReJoinButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_SendMessageButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 87,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_LeaveButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 102,
+		"endColumn": 127,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_GetAvailableRoomsButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_IdText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_SessionIdText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public avatar : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private localPlayerAvatar : GameObject"
+}]
+}
+]
+}]
+}

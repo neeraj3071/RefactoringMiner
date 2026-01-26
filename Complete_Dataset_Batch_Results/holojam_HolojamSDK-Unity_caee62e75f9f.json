@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/holojam/HolojamSDK-Unity.git",
+	"sha1": "caee62e75f9f8ab88e16045144126fbec5401566",
+	"url": "https://github.com/holojam/HolojamSDK-Unity/commit/caee62e75f9f8ab88e16045144126fbec5401566",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ex : XmlException to ex : System.Exception in method package LoadConfiguration() : Queue<string> from class Configuration",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ex : XmlException"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 14,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ex : System.Exception"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Queue<string> in method package LoadConfiguration() : Queue<string> from class Configuration",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 31,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadConfiguration() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Queue<string>"
+}, {
+		"filePath": "Holojam/Tools/Configuration.cs",
+		"startLine": 43,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package LoadConfiguration() : Queue<string>"
+}]
+}
+]
+}]
+}

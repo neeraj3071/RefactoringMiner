@@ -1,0 +1,186 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "1f7a7145c5480d0d4fc424d60fe4f6b14559e5fb",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/1f7a7145c5480d0d4fc424d60fe4f6b14559e5fb",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class .TwoHandedProxyBase..SerializedFeedback moved and renamed to SerializedProxyFeedback",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 31,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".TwoHandedProxyBase..SerializedFeedback"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/Data/SerializedProxyFeedback.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "SerializedProxyFeedback"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter preferences : SerializedPreferences in method package Deserialize(preferences SerializedPreferences, serializer ISerializePreferences) : void from class SerializedPreferencesModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 134,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Deserialize(serializer ISerializePreferences) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 33,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "preferences : SerializedPreferences"
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 145,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Deserialize(preferences SerializedPreferences, serializer ISerializePreferences) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package Deserialize(preferences SerializedPreferences, serializer ISerializePreferences) : void from class SerializedPreferencesModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 134,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Deserialize(serializer ISerializePreferences) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.cs",
+		"startLine": 145,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package Deserialize(preferences SerializedPreferences, serializer ISerializePreferences) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable leftNode : var in method public OnSerializePreferences() : object from class TwoHandedProxyBase",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 217,
+		"endLine": 221,
+		"startColumn": 13,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "leftNode : var"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable rightNode : var in method public OnSerializePreferences() : object from class TwoHandedProxyBase",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 217,
+		"endLine": 221,
+		"startColumn": 13,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "rightNode : var"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type leftNode : ProxyNode.SerializedFeedback to leftNode : SerializedProxyNodeFeedback in class SerializedProxyFeedback",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 49,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "leftNode : ProxyNode.SerializedFeedback"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/Data/SerializedProxyFeedback.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 44,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "leftNode : SerializedProxyNodeFeedback"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type rightNode : ProxyNode.SerializedFeedback to rightNode : SerializedProxyNodeFeedback in class SerializedProxyFeedback",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 49,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "rightNode : ProxyNode.SerializedFeedback"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/Data/SerializedProxyFeedback.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 44,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "rightNode : SerializedProxyNodeFeedback"
+}]
+}
+]
+}]
+}

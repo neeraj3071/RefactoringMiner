@@ -1,0 +1,645 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "446b7275a34414129fad0705f24d3f0bb82b0833",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/446b7275a34414129fad0705f24d3f0bb82b0833",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ModuleMetadata renamed to ModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleMetadata.cs",
+		"startLine": 8,
+		"endLine": 18,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ModuleMetadata"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 6,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ModuleSetting"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type string : readonly to string : internal in class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "string : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 14,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "string : internal"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package string : internal from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private string : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 14,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package string : internal"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type address : string to parameter : ModuleParameter in method public SetParameter(key Enum, parameter ModuleParameter) : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 40,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 40,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parameter : ModuleParameter"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter address : string to parameter : ModuleParameter in method public SetParameter(key Enum, parameter ModuleParameter) : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 40,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 40,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parameter : ModuleParameter"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Storage : readonly to storage : Storage in class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Storage : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "storage : Storage"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Storage : readonly to storage : Storage in class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Storage : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "storage : Storage"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class ModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleMetadata.cs",
+		"startLine": 8,
+		"endLine": 18,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "ModuleMetadata"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSetting.cs",
+		"startLine": 6,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "ModuleSetting"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Save(storage Storage, dataManager ModuleDataManager) : void extracted from private saveData() : void in class ModuleDataManager & moved to class ModuleStorage",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 82,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private saveData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 19,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 19,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 16,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Save(storage Storage, dataManager ModuleDataManager) : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 19,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 19,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private saveData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ModuleStorage.Save(storage,this)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Load(storage Storage, moduleName string) extracted from public LoadData() : void in class ModuleDataManager & moved to class ModuleStorage",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 62,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 29,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Load(storage Storage, moduleName string)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ModuleStorage.Load(storage,ModuleName)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 19,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 19,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package storage_directory : string from class ModuleDataManager to package storage_directory : string from class ModuleStorage",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package storage_directory : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package storage_directory : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package T : string from class ModuleSettingsManager to package T : string from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleSettingsManager.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 47,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package T : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 50,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package T : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ModuleStorage from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 16,
+		"endLine": 159,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ModuleDataManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 12,
+		"endLine": 199,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ModuleDataManager"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleStorage.cs",
+		"startLine": 12,
+		"endLine": 232,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ModuleStorage"
+}]
+}
+]
+}]
+}

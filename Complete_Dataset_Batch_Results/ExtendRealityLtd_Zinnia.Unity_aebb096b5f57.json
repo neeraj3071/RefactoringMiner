@@ -1,0 +1,150 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ExtendRealityLtd/Zinnia.Unity.git",
+	"sha1": "aebb096b5f5718f6243f657a6b146d23cac85807",
+	"url": "https://github.com/ExtendRealityLtd/Zinnia.Unity/commit/aebb096b5f5718f6243f657a6b146d23cac85807",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class GameObjectEventProxyEmitter.UnityEvent moved to .GameObjectEventProxyEmitter..UnityEvent",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 24,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "GameObjectEventProxyEmitter.UnityEvent"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 16,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".GameObjectEventProxyEmitter..UnityEvent"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package IsValid() from class GameObjectEventProxyEmitter.UnityEvent to package IsValid() from class RestrictableSingleEventProxyEmitter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package IsValid()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Event/RestrictableSingleEventProxyEmitter.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package IsValid()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method package GetTargetToCheck() extracted from package IsValid() in class GameObjectEventProxyEmitter.UnityEvent & moved to class .GameObjectEventProxyEmitter..UnityEvent",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package IsValid()"
+}, {
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 63,
+		"endColumn": 70,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetTargetToCheck()"
+}, {
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Event/RestrictableSingleEventProxyEmitter.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package IsValid()"
+}, {
+		"filePath": "Scripts/Event/RestrictableSingleEventProxyEmitter.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 63,
+		"endColumn": 81,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetTargetToCheck()"
+}, {
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected bool : override from class GameObjectEventProxyEmitter.UnityEvent to protected bool : override from class RestrictableSingleEventProxyEmitter",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Event/GameObjectEventProxyEmitter.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected bool : override"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Event/RestrictableSingleEventProxyEmitter.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected bool : override"
+}]
+}
+]
+}]
+}

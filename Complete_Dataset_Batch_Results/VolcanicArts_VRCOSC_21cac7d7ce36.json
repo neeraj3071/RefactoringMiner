@@ -1,0 +1,174 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "21cac7d7ce36e0340fbbfececcd8115a5626774e",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/21cac7d7ce36e0340fbbfececcd8115a5626774e",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type settings : Container to settings : SeparatedAttributeFlow in class ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settings : Container"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "settings : SeparatedAttributeFlow"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type parameters : Container to parameters : SeparatedAttributeFlow in class ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "parameters : Container"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 36,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parameters : SeparatedAttributeFlow"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Clear() : void extracted from package Clear() : void in class ModuleEditingContent & moved to class ModuleEditingContent.SeparatedAttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 147,
+		"endLine": 153,
+		"startColumn": 16,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Clear() : void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 167,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Clear() : void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 126,
+		"endLine": 131,
+		"startColumn": 16,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Clear() : void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 53,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "child.Clear()"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private outputParametersFlowContainer : AttributeFlow renamed to private attributeFlow : AttributeFlow and moved from class ModuleEditingContent to class ModuleEditingContent.SeparatedAttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 27,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outputParametersFlowContainer : AttributeFlow"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private attributeFlow : AttributeFlow"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ModuleEditingContent.SeparatedAttributeFlow from class ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 17,
+		"endLine": 154,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ModuleEditingContent"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 18,
+		"endLine": 172,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ModuleEditingContent"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.cs",
+		"startLine": 133,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ModuleEditingContent.SeparatedAttributeFlow"
+}]
+}
+]
+}]
+}

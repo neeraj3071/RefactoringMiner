@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "2d4d5315ba34fcacd658a57073e075f2cc60580f",
+	"url": "https://github.com/vrm-c/UniVRM/commit/2d4d5315ba34fcacd658a57073e075f2cc60580f",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable convertedName : var in method public CreateNameExt(gltf glTF, textureIndex int, textureType TextureImportTypes) : TextureImportName from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "convertedName : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 13,
+		"endColumn": 110,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 13,
+		"endColumn": 108,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package occlusionBaseTexture : TextureLoadInfo from class TextureLoadFlags.TextureFactory to package occlusionBaseTexture : TextureLoadInfo from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 41,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package occlusionBaseTexture : TextureLoadInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package occlusionBaseTexture : TextureLoadInfo"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package converted : var from class TextureLoadFlags.TextureFactory to package converted : var from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 29,
+		"endColumn": 179,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package converted : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureFactory.cs",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 33,
+		"endColumn": 183,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package converted : var"
+}]
+}
+]
+}]
+}

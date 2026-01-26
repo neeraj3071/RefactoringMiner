@@ -1,0 +1,405 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/alvinquach/jpl-trek-vr.git",
+	"sha1": "06846d60142e079f726dde9187d5b9eba1d0ba52",
+	"url": "https://github.com/alvinquach/jpl-trek-vr/commit/06846d60142e079f726dde9187d5b9eba1d0ba52",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class TerrainGroup renamed to TerrainGroupController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/TerrainGroup.cs",
+		"startLine": 7,
+		"endLine": 81,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TerrainGroup"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/TerrainGroupController.cs",
+		"startLine": 3,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "TerrainGroupController"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type planet : TerrainGroup to planet : TerrainGroupController in class BookmarkMenuTest",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Menus/BookmarkMenuTest.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "planet : TerrainGroup"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Menus/BookmarkMenuTest.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 35,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "planet : TerrainGroupController"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private GetBufferCoroutine(resourceUrl string, callback ResponseCallback) : IEnumerator renamed to private BufferRequestCoroutine(request UnityWebRequest, callback ResponseCallback) : IEnumerator in class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 34,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetBufferCoroutine(resourceUrl string, callback ResponseCallback) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private BufferRequestCoroutine(request UnityWebRequest, callback ResponseCallback) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private GetFileCoroutine(resourceUrl string, filePath string, callback VoidCallback) : IEnumerator renamed to private FileRequestCoroutine(resourceUrl string, filePath string, callback VoidCallback) : IEnumerator in class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 95,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetFileCoroutine(resourceUrl string, filePath string, callback VoidCallback) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 59,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private FileRequestCoroutine(resourceUrl string, filePath string, callback VoidCallback) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private GetTextureCoroutine(resourceUrl string, callback TypedObjectCallback<Texture2D>) : IEnumerator renamed to private TextureRequestCoroutine(resourceUrl string, callback TypedObjectCallback<Texture2D>) : IEnumerator in class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 127,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureCoroutine(resourceUrl string, callback TypedObjectCallback<Texture2D>) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 87,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private TextureRequestCoroutine(resourceUrl string, callback TypedObjectCallback<Texture2D>) : IEnumerator"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable request : UnityWebRequest to request : UnityWebRequest in method private BufferRequestCoroutine(request UnityWebRequest, callback ResponseCallback) : IEnumerator from class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : UnityWebRequest"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 37,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 48,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "request : UnityWebRequest"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 34,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter resourceUrl : string in method private GetBufferCoroutine(resourceUrl string, callback ResponseCallback) : IEnumerator from class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 44,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "resourceUrl : string"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 34,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetBufferCoroutine(resourceUrl string, callback ResponseCallback) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private BufferRequestCoroutine(request UnityWebRequest, callback ResponseCallback) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetContentType(data object) : string from class WebService to private GetContentType(data object) : string from class WebRequestUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 149,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetContentType(data object) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 43,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetContentType(data object) : string"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetContentType(data object) : string from class WebRequestUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 149,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetContentType(data object) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 43,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetContentType(data object) : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class WebRequestUtils from class WebService",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 7,
+		"endLine": 156,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "WebService"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 142,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConvertToJsonString(data object) : string"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 149,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetContentType(data object) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 6,
+		"endLine": 100,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "WebService"
+}, {
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 4,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "WebRequestUtils"
+}, {
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 36,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ToJsonString(data object) : string"
+}, {
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 43,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetContentType(data object) : string"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private ToJsonString(data object) : string from class WebRequestUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 142,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConvertToJsonString(data object) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 36,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private ToJsonString(data object) : string"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private ConvertToJsonString(data object) : string from class WebService to private ToJsonString(data object) : string from class WebRequestUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/Services/Web/WebService.cs",
+		"startLine": 142,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ConvertToJsonString(data object) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/WebRequestUtils.cs",
+		"startLine": 36,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ToJsonString(data object) : string"
+}]
+}
+]
+}]
+}

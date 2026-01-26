@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/myieye/cube-arena.git",
+	"sha1": "398775c9627a11c8f6b8bc703cc657f3b5d24783",
+	"url": "https://github.com/myieye/cube-arena/commit/398775c9627a11c8f6b8bc703cc657f3b5d24783",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class .CursorController..CursorMode moved to CursorMode",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyPrefabs/Cursor/CursorController.cs",
+		"startLine": 17,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".CursorController..CursorMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyPrefabs/Cursor/CursorMode.cs",
+		"startLine": 2,
+		"endLine": 2,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "CursorMode"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type CurrentCursorMode : CursorController.CursorMode to CurrentCursorMode : CursorMode in class UIModeManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/UIModes/UIModeManager.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 38,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "CurrentCursorMode : CursorController.CursorMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/UIModes/UIModeManager.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "CurrentCursorMode : CursorMode"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type cursorMode : CursorController.CursorMode to cursorMode : CursorMode in method public InCursorMode(cursorMode CursorMode) : bool from class UIModeManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/UIModes/UIModeManager.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 36,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cursorMode : CursorController.CursorMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/UIModes/UIModeManager.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 36,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "cursorMode : CursorMode"
+}]
+}
+]
+}]
+}

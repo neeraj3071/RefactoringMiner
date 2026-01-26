@@ -1,0 +1,237 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "256eeff34cc169e725d64a48d33d5b44fd47546a",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/256eeff34cc169e725d64a48d33d5b44fd47546a",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter moduleManager : ModuleManager to game : VRCOSCGame in method private load(configManager VRCOSCConfigManager, game VRCOSCGame) : void from class Footer",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleListing/Footer.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 58,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "moduleManager : ModuleManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleListing/Footer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 58,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "game : VRCOSCGame"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type moduleManager : ModuleManager to game : VRCOSCGame in method private load(configManager VRCOSCConfigManager, game VRCOSCGame) : void from class Footer",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleListing/Footer.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 58,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "moduleManager : ModuleManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleListing/Footer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 58,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "game : VRCOSCGame"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter game : VRCOSCGame in method private load(game VRCOSCGame) : void from class RunningPopover",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleRun/RunningPopover.cs",
+		"startLine": 35,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private load() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleRun/RunningPopover.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "game : VRCOSCGame"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleRun/RunningPopover.cs",
+		"startLine": 31,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private load(game VRCOSCGame) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package Stop() renamed to package stop() in class ModuleManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 94,
+		"endLine": 108,
+		"startColumn": 23,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Stop()"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 100,
+		"endLine": 110,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package stop()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Start() : void renamed to private start() : void in class ModuleManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 68,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 75,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private start() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private Task : async from class ModuleManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Task : async"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 19,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Task : async"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(vrChat.Length != 0 && autoStartStop.Value && !Running.Value && !autoStarted), if(vrChat.Length == 0 && autoStartStop.Value && Running.Value)] to if(vrChat.Length == 0 && autoStartStop.Value && game.ModulesRunning.Value) in method private checkForVrChat() : void from class ModuleManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 55,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(vrChat.Length != 0 && autoStartStop.Value && !Running.Value && !autoStarted)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 61,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(vrChat.Length == 0 && autoStartStop.Value && Running.Value)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 49,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkForVrChat() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 68,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(vrChat.Length == 0 && autoStartStop.Value && game.ModulesRunning.Value)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 56,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private checkForVrChat() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private start() : void from class ModuleManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 68,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleManager.cs",
+		"startLine": 75,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private start() : void"
+}]
+}
+]
+}]
+}

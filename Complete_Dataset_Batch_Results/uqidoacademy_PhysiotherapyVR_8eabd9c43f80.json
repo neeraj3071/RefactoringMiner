@@ -1,0 +1,693 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/uqidoacademy/PhysiotherapyVR.git",
+	"sha1": "8eabd9c43f809885b1f27ed1322d5c9f44332cde",
+	"url": "https://github.com/uqidoacademy/PhysiotherapyVR/commit/8eabd9c43f809885b1f27ed1322d5c9f44332cde",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Core renamed to ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 9,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Core"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 15,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ExerciseEvaluator"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _armEvaluator : Core to _armEvaluator : ExerciseEvaluator in class AIManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/AIManager.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_armEvaluator : Core"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/AIManager.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_armEvaluator : ExerciseEvaluator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Restart() : void renamed to public RestartExercise() : void in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Restart() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public RestartExercise() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError> renamed to public EvaluateExerciseStep(currentStep ExerciseStep) : Dictionary<string,ArticolationError> in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 92,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 101,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public EvaluateExerciseStep(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private IsTrainingSetValid(trainingSet ExerciseEvaluatorTrainingSet) : bool extracted from public Init(idealMovementSteps ExerciseStep[], timing float) : void in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Init(idealMovementSteps ExerciseStep[], timing float) : void"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private IsTrainingSetValid(trainingSet ExerciseEvaluatorTrainingSet) : bool"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Init(trainingSet ExerciseEvaluatorTrainingSet) : void"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "IsTrainingSetValid(trainingSet)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private CalculateSpeedError(idealMagnitude1 Vector3, idealMagnitude2 Vector3, realMagnitude1 Vector3, realMagnitude2 Vector3, timing float) : Vector3 extracted from public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError> in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 92,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 21,
+		"endColumn": 124,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CalculateSpeedError(idealMagnitude1 Vector3, idealMagnitude2 Vector3, realMagnitude1 Vector3, realMagnitude2 Vector3, timing float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 142,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 76,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private CalculateSpeedErrors(articolationError ArticolationError, currentArticolationPoint ArticolationPoint, previousArticolationPoint ArticolationPoint, currentIdealArticolationPoint ArticolationPoint, previousIdealArticolationPoint ArticolationPoint) : void"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 52,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CalculateSpeedError(currentIdealArticolationPoint.Position,previousIdealArticolationPoint.Position,currentArticolationPoint.Position,previousArticolationPoint.Position,_trainingSet.timing)"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 49,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CalculateSpeedError(currentIdealArticolationPoint.Angle,previousIdealArticolationPoint.Angle,currentArticolationPoint.Angle,previousArticolationPoint.Angle,_trainingSet.timing)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private CalculateSpeedError(idealMagnitude1 Vector3, idealMagnitude2 Vector3, realMagnitude1 Vector3, realMagnitude2 Vector3, timing float) : Vector3 extracted from public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError> in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 92,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 126,
+		"endLine": 127,
+		"startColumn": 21,
+		"endColumn": 118,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CalculateSpeedError(idealMagnitude1 Vector3, idealMagnitude2 Vector3, realMagnitude1 Vector3, realMagnitude2 Vector3, timing float) : Vector3"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 142,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 76,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private CalculateSpeedErrors(articolationError ArticolationError, currentArticolationPoint ArticolationPoint, previousArticolationPoint ArticolationPoint, currentIdealArticolationPoint ArticolationPoint, previousIdealArticolationPoint ArticolationPoint) : void"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 52,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CalculateSpeedError(currentIdealArticolationPoint.Position,previousIdealArticolationPoint.Position,currentArticolationPoint.Position,previousArticolationPoint.Position,_trainingSet.timing)"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 49,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CalculateSpeedError(currentIdealArticolationPoint.Angle,previousIdealArticolationPoint.Angle,currentArticolationPoint.Angle,previousArticolationPoint.Angle,_trainingSet.timing)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private CalculateSpeedErrors(articolationError ArticolationError, currentArticolationPoint ArticolationPoint, previousArticolationPoint ArticolationPoint, currentIdealArticolationPoint ArticolationPoint, previousIdealArticolationPoint ArticolationPoint) : void extracted from public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError> in class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 92,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Evaluate(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 122,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 123,
+		"endLine": 128,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 129,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 76,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CalculateSpeedErrors(articolationError ArticolationError, currentArticolationPoint ArticolationPoint, previousArticolationPoint ArticolationPoint, currentIdealArticolationPoint ArticolationPoint, previousIdealArticolationPoint ArticolationPoint) : void"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 80,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 81,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 101,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public EvaluateExerciseStep(currentStep ExerciseStep) : Dictionary<string,ArticolationError>"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 172,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CalculateSpeedErrors(articolationError,currentArticolationPoint,previousArticolationPoint,currentIdealArticolationPoint,previousIdealArticolationPoint)"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter shift : int to shiftFromLastPerformedIndex : int in method private GetIdealStep(shiftFromLastPerformedIndex int) : ExerciseStep from class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 43,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "shift : int"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 43,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "shiftFromLastPerformedIndex : int"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter shift : int to shiftFromLastPerformedIndex : int in method private GetPerformedStep(shiftFromLastPerformedIndex int) : ExerciseStep from class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "shift : int"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 47,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "shiftFromLastPerformedIndex : int"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter trainingSet : ExerciseEvaluatorTrainingSet in method public Init(trainingSet ExerciseEvaluatorTrainingSet) : void from class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(idealMovementSteps ExerciseStep[], timing float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "trainingSet : ExerciseEvaluatorTrainingSet"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Init(trainingSet ExerciseEvaluatorTrainingSet) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter idealMovementSteps : ExerciseStep[] in method public Init(idealMovementSteps ExerciseStep[], timing float) : void from class Core",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 26,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "idealMovementSteps : ExerciseStep[]"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(idealMovementSteps ExerciseStep[], timing float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Init(trainingSet ExerciseEvaluatorTrainingSet) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter timing : float in method public Init(idealMovementSteps ExerciseStep[], timing float) : void from class Core",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 61,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "timing : float"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 39,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(idealMovementSteps ExerciseStep[], timing float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Init(trainingSet ExerciseEvaluatorTrainingSet) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable lastStepIndex : int in method public EvaluateExerciseStep(currentStep ExerciseStep) : Dictionary<string,ArticolationError> from class ExerciseEvaluator",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 21,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "lastStepIndex : int"
+}, {
+		"filePath": "Assets/Scripts/AI/Core.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Value : Vector3 to Magnitude : Vector3 in class MovementError",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Errors.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Value : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AI/Errors.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Magnitude : Vector3"
+}]
+}
+]
+}]
+}

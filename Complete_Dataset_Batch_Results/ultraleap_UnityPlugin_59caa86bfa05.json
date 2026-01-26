@@ -1,0 +1,591 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "59caa86bfa05ac3d29e8be75e4523469d5f50736",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/59caa86bfa05ac3d29e8be75e4523469d5f50736",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private CastRays() : void renamed to private CalculateRayDirection() : void in class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 168,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CastRays() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 134,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CalculateRayDirection() : void"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public Action : event from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handShoulder : HandShoulder to hand : Hand in method private GetRayOrigin(hand Hand, shoulderPosition Vector3) : Vector3 from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 38,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handShoulder : HandShoulder"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 13,
+		"endColumn": 128,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 38,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter handShoulder : HandShoulder to hand : Hand in method private GetRayOrigin(hand Hand, shoulderPosition Vector3) : Vector3 from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 38,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handShoulder : HandShoulder"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 13,
+		"endColumn": 128,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 38,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter hand : Hand in method private GetWristOffsetPosition(hand Hand) : Vector3 from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 194,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetWristOffsetPosition(handShoulder HandShoulder) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 48,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 162,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private GetWristOffsetPosition(hand Hand) : Vector3"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter handShoulder : HandShoulder in method private GetWristOffsetPosition(handShoulder HandShoulder) : Vector3 from class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 48,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "handShoulder : HandShoulder"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 194,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetWristOffsetPosition(handShoulder HandShoulder) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 162,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private GetWristOffsetPosition(hand Hand) : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute FarFieldRays : FarFieldHandDirection[] to FarFieldRay : FarFieldHandDirection in class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 58,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "FarFieldRays : FarFieldHandDirection[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 56,
+		"endColumn": 97,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "FarFieldRay : FarFieldHandDirection"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type FarFieldRays : FarFieldHandDirection[] to FarFieldRay : FarFieldHandDirection in class WristShoulderFarFieldRay",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 58,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "FarFieldRays : FarFieldHandDirection[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/FarFieldInteractions/Scripts/WristShoulderFarFieldRay.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 56,
+		"endColumn": 97,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "FarFieldRay : FarFieldHandDirection"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private RayOrigin : Transform from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RayOrigin : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private RayOrigin : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public rayDirection : WristShoulderFarFieldRay from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package rayDirection : WristShoulderFarFieldRay"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 41,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public rayDirection : WristShoulderFarFieldRay"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lastPinchState : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 14,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastPinchState : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 22,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lastPinchState : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lastGrabState : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 14,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastGrabState : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lastGrabState : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lastPinchTime : float from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastPinchTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lastPinchTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lastGrabTime : float from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 15,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastGrabTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lastGrabTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lengthGrabPinchTime : float from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 15,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lengthGrabPinchTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lengthGrabPinchTime : float"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(HandModel.GetLeapHand().IsPinching() && !lastPinchState) to [if(!hand.IsPinching() && lastPinchState), if(hand.IsPinching() && !lastPinchState)] in method private getInteractionState(pose InteractionPose, hand Hand) : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(HandModel.GetLeapHand().IsPinching() && !lastPinchState)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 129,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInteractionState(pose InteractionPose) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 161,
+		"endLine": 168,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(!hand.IsPinching() && lastPinchState)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 164,
+		"endLine": 168,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(hand.IsPinching() && !lastPinchState)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 146,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private getInteractionState(pose InteractionPose, hand Hand) : bool"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(HandModel.GetLeapHand().IsPinching() && !lastPinchState), if(HandModel.GetLeapHand().IsPinching() && lastPinchState && Time.time - lastPinchTime > lengthGrabPinchTime), if(!HandModel.GetLeapHand().IsPinching() && lastPinchState)] to if(hand.IsPinching() && lastPinchState && Time.time - lastPinchTime > lengthGrabPinchTime) in method private getInteractionState(pose InteractionPose, hand Hand) : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(HandModel.GetLeapHand().IsPinching() && !lastPinchState)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 141,
+		"endLine": 151,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(HandModel.GetLeapHand().IsPinching() && lastPinchState && Time.time - lastPinchTime > lengthGrabPinchTime)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 144,
+		"endLine": 151,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!HandModel.GetLeapHand().IsPinching() && lastPinchState)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 129,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInteractionState(pose InteractionPose) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 158,
+		"endLine": 168,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(hand.IsPinching() && lastPinchState && Time.time - lastPinchTime > lengthGrabPinchTime)"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 146,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private getInteractionState(pose InteractionPose, hand Hand) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter hand : Hand in method private getInteractionState(pose InteractionPose, hand Hand) : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 129,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInteractionState(pose InteractionPose) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 146,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private getInteractionState(pose InteractionPose, hand Hand) : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private getInteractionState(pose InteractionPose, hand Hand) : bool from class TrackedHandsController",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 129,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInteractionState(pose InteractionPose) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking Preview/XR Interaction Toolkit Integration/Runtime/TrackedHandsController.cs",
+		"startLine": 146,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private getInteractionState(pose InteractionPose, hand Hand) : bool"
+}]
+}
+]
+}]
+}

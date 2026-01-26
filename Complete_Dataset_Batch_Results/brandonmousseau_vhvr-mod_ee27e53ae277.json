@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "ee27e53ae2770404b0b6cd571e14d3c17863ba14",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/ee27e53ae2770404b0b6cd571e14d3c17863ba14",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition allowHidingNonDominantHandItem=!isDominantHand; to shouldPatch=isDominantHand ? HandItemPatchTarget.DominantHand : HandItemPatchTarget.NonDominantHand; in method public HideLocalPlayerHandItem(isDominantHand bool) : void from class PatchHideHandItems",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "allowHidingNonDominantHandItem=!isDominantHand;\n"
+}, {
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HideLocalPlayerHandItem(isDominantHand bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 115,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "shouldPatch=isDominantHand ? HandItemPatchTarget.DominantHand : HandItemPatchTarget.NonDominantHand;\n"
+}, {
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public HideLocalPlayerHandItem(isDominantHand bool) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute allowHidingDominantHandItem : bool to shouldPatch : HandItemPatchTarget in class PatchHideHandItems",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "allowHidingDominantHandItem : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 44,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "shouldPatch : HandItemPatchTarget"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type allowHidingDominantHandItem : bool to shouldPatch : HandItemPatchTarget in class PatchHideHandItems",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "allowHidingDominantHandItem : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Patches/InteractionPatches.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 44,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "shouldPatch : HandItemPatchTarget"
+}]
+}
+]
+}]
+}

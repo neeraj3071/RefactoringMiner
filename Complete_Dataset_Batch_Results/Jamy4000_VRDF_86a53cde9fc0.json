@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Jamy4000/VRDF.git",
+	"sha1": "86a53cde9fc0d185d2f439535911a2f18aeabd6e",
+	"url": "https://github.com/Jamy4000/VRDF/commit/86a53cde9fc0d185d2f439535911a2f18aeabd6e",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public TryLoadScene() : bool renamed to public TryToLoadMultiplayerScene() : bool in class MultiplayerSceneLoader",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRDF/Multiplayer/Scripts/ConnectionScene/MultiplayerSceneLoader.cs",
+		"startLine": 36,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TryLoadScene() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRDF/Multiplayer/Scripts/ConnectionScene/MultiplayerSceneLoader.cs",
+		"startLine": 36,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public TryToLoadMultiplayerScene() : bool"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected OnDestro() : void renamed to protected OnDestroy() : void in class VRDFMultiplayerGameManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRDF/Multiplayer/Scripts/InRoom/VRDFMultiplayerGameManager.cs",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDestro() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRDF/Multiplayer/Scripts/InRoom/VRDFMultiplayerGameManager.cs",
+		"startLine": 43,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected OnDestroy() : void"
+}]
+}
+]
+}]
+}

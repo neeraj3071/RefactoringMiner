@@ -1,0 +1,4209 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aestheticinteractive/Hover-UI-Kit.git",
+	"sha1": "ad758ae85a7763c80c8293aed6c3beeb0db872b8",
+	"url": "https://github.com/aestheticinteractive/Hover-UI-Kit/commit/ad758ae85a7763c80c8293aed6c3beeb0db872b8",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected BuildElements() : void from class HoverAlphaRendererArcButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 143,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected BuildElements() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package BuildElements() : void from class HoverAlphaRendererArcSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 241,
+		"endLine": 257,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 153,
+		"endLine": 169,
+		"startColumn": 22,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package BuildElements() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetNearestWorldPosition(pFromWorldPosition Vector3) from class HoverAlphaRendererArcSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 214,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 126,
+		"endLine": 134,
+		"startColumn": 27,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetNearestWorldPosition(pFromWorldPosition Vector3)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type slider : HoverAlphaRendererArcSlider to rend : HoverAlphaRenderer in method private FadeRow(pRow HoverLayoutArcRow, pAlpha float) : void from class HovercastRowAlpha",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "slider : HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 50,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "rend : HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 48,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable slider : HoverAlphaRendererArcSlider to rend : HoverAlphaRenderer in method private FadeRow(pRow HoverLayoutArcRow, pAlpha float) : void from class HovercastRowAlpha",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "slider : HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 50,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "rend : HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Interfaces/HovercastRowAlpha.cs",
+		"startLine": 48,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected BuildElements() : void from class HoverAlphaRendererRectButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 136,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected BuildElements() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected BuildElements() : void from class HoverAlphaRendererRectSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 227,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildElements() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 145,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected BuildElements() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetNearestWorldPosition(pFromWorldPosition Vector3) from class HoverAlphaRendererRectSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 207,
+		"endLine": 215,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 125,
+		"endLine": 133,
+		"startColumn": 27,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetNearestWorldPosition(pFromWorldPosition Vector3)"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _OuterRadius : float from class HoverAlphaRendererArcButton to private _OuterRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _InnerRadius : float from class HoverAlphaRendererArcButton to private _InnerRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _ArcAngle : float from class HoverAlphaRendererArcButton to private _ArcAngle : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public OuterRadius : float from class HoverAlphaRendererArcButton to public OuterRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public InnerRadius : float from class HoverAlphaRendererArcButton to public InnerRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ArcAngle : float from class HoverAlphaRendererArcButton to public ArcAngle : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _OuterRadius : float from class HoverAlphaRendererArcSlider to private _OuterRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _InnerRadius : float from class HoverAlphaRendererArcSlider to private _InnerRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _ArcAngle : float from class HoverAlphaRendererArcSlider to private _ArcAngle : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public OuterRadius : float from class HoverAlphaRendererArcSlider to public OuterRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public InnerRadius : float from class HoverAlphaRendererArcSlider to public InnerRadius : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ArcAngle : float from class HoverAlphaRendererArcSlider to public ArcAngle : float from class HoverAlphaRendererArc",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Awake() : void from class HoverAlphaRendererArcButton to public Awake() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 112,
+		"endLine": 117,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Start() : void from class HoverAlphaRendererArcButton to public Start() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRendererArcButton to public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 135,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 135,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public RendererController : ISettingsController from class HoverAlphaRendererArcButton to public RendererController : ISettingsController from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Controllers : ISettingsControllerMap from class HoverAlphaRendererArcButton to public Controllers : ISettingsControllerMap from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LabelText : string from class HoverAlphaRendererArcButton to public LabelText : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LabelText : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IconOuterType : HoverIcon.IconOffset from class HoverAlphaRendererArcButton to public IconOuterType : HoverIcon.IconOffset from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IconInnerType : HoverIcon.IconOffset from class HoverAlphaRendererArcButton to public IconInnerType : HoverIcon.IconOffset from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public HighlightProgress : float from class HoverAlphaRendererArcButton to public HighlightProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SelectionProgress : float from class HoverAlphaRendererArcButton to public SelectionProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ShowEdge : bool from class HoverAlphaRendererArcButton to public ShowEdge : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsEnabled : bool from class HoverAlphaRendererArcButton to private _IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SortingLayer : string from class HoverAlphaRendererArcButton to private _SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsBuilt : bool from class HoverAlphaRendererArcButton to private _IsBuilt : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IsEnabled : bool from class HoverAlphaRendererArcButton to public IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EnabledAlpha : float from class HoverAlphaRendererArcButton to public EnabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DisabledAlpha : float from class HoverAlphaRendererArcButton to public DisabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SortingLayer : string from class HoverAlphaRendererArcButton to public SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Awake() : void from class HoverAlphaRendererArcSlider to public Awake() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 189,
+		"endLine": 194,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Start() : void from class HoverAlphaRendererArcSlider to public Start() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 197,
+		"endLine": 199,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public RendererController : ISettingsController from class HoverAlphaRendererArcSlider to public RendererController : ISettingsController from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Controllers : ISettingsControllerMap from class HoverAlphaRendererArcSlider to public Controllers : ISettingsControllerMap from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LabelText : string from class HoverAlphaRendererArcSlider to public LabelText : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LabelText : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public HighlightProgress : float from class HoverAlphaRendererArcSlider to public HighlightProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SelectionProgress : float from class HoverAlphaRendererArcSlider to public SelectionProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ShowEdge : bool from class HoverAlphaRendererArcSlider to public ShowEdge : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsEnabled : bool from class HoverAlphaRendererArcSlider to private _IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SortingLayer : string from class HoverAlphaRendererArcSlider to private _SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsBuilt : bool from class HoverAlphaRendererArcSlider to private _IsBuilt : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IsEnabled : bool from class HoverAlphaRendererArcSlider to public IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EnabledAlpha : float from class HoverAlphaRendererArcSlider to public EnabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DisabledAlpha : float from class HoverAlphaRendererArcSlider to public DisabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SortingLayer : string from class HoverAlphaRendererArcSlider to public SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Awake() : void from class HoverAlphaRendererRectButton to public Awake() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Start() : void from class HoverAlphaRendererRectButton to public Start() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRendererRectButton to public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3 from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public abstract GetNearestWorldPosition(pFromWorldPosition Vector3) : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public RendererController : ISettingsController from class HoverAlphaRendererRectButton to public RendererController : ISettingsController from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Controllers : ISettingsControllerMap from class HoverAlphaRendererRectButton to public Controllers : ISettingsControllerMap from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LabelText : string from class HoverAlphaRendererRectButton to public LabelText : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LabelText : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IconOuterType : HoverIcon.IconOffset from class HoverAlphaRendererRectButton to public IconOuterType : HoverIcon.IconOffset from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IconInnerType : HoverIcon.IconOffset from class HoverAlphaRendererRectButton to public IconInnerType : HoverIcon.IconOffset from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public HighlightProgress : float from class HoverAlphaRendererRectButton to public HighlightProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SelectionProgress : float from class HoverAlphaRendererRectButton to public SelectionProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ShowEdge : bool from class HoverAlphaRendererRectButton to public ShowEdge : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsEnabled : bool from class HoverAlphaRendererRectButton to private _IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SortingLayer : string from class HoverAlphaRendererRectButton to private _SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsBuilt : bool from class HoverAlphaRendererRectButton to private _IsBuilt : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IsEnabled : bool from class HoverAlphaRendererRectButton to public IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EnabledAlpha : float from class HoverAlphaRendererRectButton to public EnabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DisabledAlpha : float from class HoverAlphaRendererRectButton to public DisabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SortingLayer : string from class HoverAlphaRendererRectButton to public SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Awake() : void from class HoverAlphaRendererRectSlider to public Awake() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 181,
+		"endLine": 186,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Start() : void from class HoverAlphaRendererRectSlider to public Start() : void from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public RendererController : ISettingsController from class HoverAlphaRendererRectSlider to public RendererController : ISettingsController from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Controllers : ISettingsControllerMap from class HoverAlphaRendererRectSlider to public Controllers : ISettingsControllerMap from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LabelText : string from class HoverAlphaRendererRectSlider to public LabelText : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LabelText : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public HighlightProgress : float from class HoverAlphaRendererRectSlider to public HighlightProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SelectionProgress : float from class HoverAlphaRendererRectSlider to public SelectionProgress : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ShowEdge : bool from class HoverAlphaRendererRectSlider to public ShowEdge : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsEnabled : bool from class HoverAlphaRendererRectSlider to private _IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SortingLayer : string from class HoverAlphaRendererRectSlider to private _SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _IsBuilt : bool from class HoverAlphaRendererRectSlider to private _IsBuilt : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IsEnabled : bool from class HoverAlphaRendererRectSlider to public IsEnabled : bool from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EnabledAlpha : float from class HoverAlphaRendererRectSlider to public EnabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DisabledAlpha : float from class HoverAlphaRendererRectSlider to public DisabledAlpha : float from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SortingLayer : string from class HoverAlphaRendererRectSlider to public SortingLayer : string from class HoverAlphaRenderer",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SizeX : float from class HoverAlphaRendererRectButton to private _SizeX : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SizeX : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SizeY : float from class HoverAlphaRendererRectButton to private _SizeY : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SizeY : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Anchor : AnchorTypeWithCustom from class HoverAlphaRendererRectButton to public Anchor : AnchorTypeWithCustom from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SizeX : float from class HoverAlphaRendererRectButton to public SizeX : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SizeX : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SizeY : float from class HoverAlphaRendererRectButton to public SizeY : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SizeY : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SizeX : float from class HoverAlphaRendererRectSlider to private _SizeX : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SizeX : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _SizeY : float from class HoverAlphaRendererRectSlider to private _SizeY : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _SizeY : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Anchor : AnchorTypeWithCustom from class HoverAlphaRendererRectSlider to public Anchor : AnchorTypeWithCustom from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SizeX : float from class HoverAlphaRendererRectSlider to public SizeX : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SizeX : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SizeY : float from class HoverAlphaRendererRectSlider to public SizeY : float from class HoverAlphaRendererRect",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SizeY : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRendererArc from class HoverAlphaRendererArcButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 12,
+		"endLine": 236,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererArcButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 10,
+		"endLine": 135,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererArcButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 7,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRendererArc"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRendererArc from class HoverAlphaRendererArcSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 14,
+		"endLine": 426,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 14,
+		"endLine": 337,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 7,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRendererArc"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _ArcAngle : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public OuterRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public InnerRadius : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArc.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ArcAngle : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRenderer from class HoverAlphaRendererArcButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 12,
+		"endLine": 236,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererArcButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 112,
+		"endLine": 117,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcButton.cs",
+		"startLine": 10,
+		"endLine": 135,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererArcButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 10,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRenderer from class HoverAlphaRendererArcSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 14,
+		"endLine": 426,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 189,
+		"endLine": 194,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 197,
+		"endLine": 199,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Arc/HoverAlphaRendererArcSlider.cs",
+		"startLine": 14,
+		"endLine": 337,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererArcSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 10,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRenderer from class HoverAlphaRendererRectButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 12,
+		"endLine": 233,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererRectButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 12,
+		"endLine": 141,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererRectButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 10,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IconOuterType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IconInnerType : HoverIcon.IconOffset"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRenderer from class HoverAlphaRendererRectSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 14,
+		"endLine": 416,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererRectSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 181,
+		"endLine": 186,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 12,
+		"endLine": 333,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererRectSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 10,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRenderer"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Awake() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Start() : void"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RendererController : ISettingsController"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Controllers : ISettingsControllerMap"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LabelText : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public HighlightProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SelectionProgress : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ShowEdge : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EnabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DisabledAlpha : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SortingLayer : string"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _IsBuilt : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsEnabled : bool"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/HoverAlphaRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SortingLayer : string"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRendererRect from class HoverAlphaRendererRectButton",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 12,
+		"endLine": 233,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererRectButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeY : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectButton.cs",
+		"startLine": 12,
+		"endLine": 141,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererRectButton"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 7,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRendererRect"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SizeY : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SizeY : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HoverAlphaRendererRect from class HoverAlphaRendererRectSlider",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 14,
+		"endLine": 416,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HoverAlphaRendererRectSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _SizeY : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SizeY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRectSlider.cs",
+		"startLine": 12,
+		"endLine": 333,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "HoverAlphaRendererRectSlider"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 7,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HoverAlphaRendererRect"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _SizeY : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 31,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Anchor : AnchorTypeWithCustom"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SizeX : float"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Packs/Alpha/Rect/HoverAlphaRendererRect.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SizeY : float"
+}]
+}
+]
+}]
+}

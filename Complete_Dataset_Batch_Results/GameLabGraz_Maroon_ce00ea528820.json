@@ -1,0 +1,216 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/GameLabGraz/Maroon.git",
+	"sha1": "ce00ea528820511fe871230bb8d237fa84190dce",
+	"url": "https://github.com/GameLabGraz/Maroon/commit/ce00ea528820511fe871230bb8d237fa84190dce",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private AddLineRendererForPen(pen PenController) : void renamed to private AddDrawLineController(pen PenController) : DrawLineController in class DrawBoardController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private AddLineRendererForPen(pen PenController) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private AddDrawLineController(pen PenController) : DrawLineController"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type lineRenderer : LineRenderer to drawLineConroller : DrawLineController in method private AddDrawLineController(pen PenController) : DrawLineController from class DrawBoardController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "lineRenderer : LineRenderer"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "drawLineConroller : DrawLineController"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable lineRenderer : LineRenderer to drawLineConroller : DrawLineController in method private AddDrawLineController(pen PenController) : DrawLineController from class DrawBoardController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "lineRenderer : LineRenderer"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "drawLineConroller : DrawLineController"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to DrawLineController in method private AddDrawLineController(pen PenController) : DrawLineController from class DrawBoardController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private AddLineRendererForPen(pen PenController) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "DrawLineController"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 57,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private AddDrawLineController(pen PenController) : DrawLineController"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute penPositionsOld : Dictionary<PenController,Vector3> to penPositions : Dictionary<PenController,Vector3> in class DrawBoardController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "penPositionsOld : Dictionary<PenController,Vector3>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawBoardController.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 48,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "penPositions : Dictionary<PenController,Vector3>"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private lineRenderer : LineRenderer from class DrawLineController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawLineController.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lineRenderer : LineRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/DrawLineController.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private lineRenderer : LineRenderer"
+}, {
+		"filePath": "Assets/Scripts/Controller/DrawLineController.cs",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public GetLineRenderer() : LineRenderer"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,705 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/nomai-vr.git",
+	"sha1": "624766d08a15c7636ca1db5f00aaf4e04164df7d",
+	"url": "https://github.com/Raicuparta/nomai-vr/commit/624766d08a15c7636ca1db5f00aaf4e04164df7d",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ModConfig renamed to ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 6,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ModConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 7,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ModSettings"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package _speed : float from class SmoothFollowCameraRotation",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ReusableBehaviours/SmoothFollowCameraRotation.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _speed : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ReusableBehaviours/SmoothFollowCameraRotation.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package _speed : float"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 6,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "ModConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 7,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "ModSettings"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ModConfig(config IModConfig) renamed to public SetConfig(config IModConfig) : void in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 21,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ModConfig(config IModConfig)"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 23,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SetConfig(config IModConfig) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public SetConfig(config IModConfig) : void from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 21,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ModConfig(config IModConfig)"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 23,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public SetConfig(config IModConfig) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute overrideRefreshRate : int to OverrideRefreshRate : int in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "overrideRefreshRate : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "OverrideRefreshRate : int"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public OverrideRefreshRate : int from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public overrideRefreshRate : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public OverrideRefreshRate : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute vibrationStrength : float to VibrationStrength : float in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "vibrationStrength : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "VibrationStrength : float"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public VibrationStrength : float from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public vibrationStrength : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public VibrationStrength : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute showHelmet : bool to ShowHelmet : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "showHelmet : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ShowHelmet : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public ShowHelmet : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public showHelmet : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public ShowHelmet : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hideHudInConversations : bool to PreventCursorLock : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hideHudInConversations : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "PreventCursorLock : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public PreventCursorLock : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public hideHudInConversations : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public PreventCursorLock : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute controllerOrientedMovement : bool to ControllerOrientedMovement : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "controllerOrientedMovement : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ControllerOrientedMovement : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public ControllerOrientedMovement : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public controllerOrientedMovement : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public ControllerOrientedMovement : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute enableGesturePrompts : bool to EnableGesturePrompts : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "enableGesturePrompts : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "EnableGesturePrompts : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public EnableGesturePrompts : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 21,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public enableGesturePrompts : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public EnableGesturePrompts : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute preventCursorLock : bool to DebugMode : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "preventCursorLock : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "DebugMode : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public DebugMode : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public preventCursorLock : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public DebugMode : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute debugMode : bool to AutoHideToolbelt : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "debugMode : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AutoHideToolbelt : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public AutoHideToolbelt : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public debugMode : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public AutoHideToolbelt : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public AutoHideToolbelt : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public autoHideToolbelt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public AutoHideToolbelt : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute bypassFatalErrors : bool to BypassFatalErrors : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "bypassFatalErrors : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "BypassFatalErrors : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public BypassFatalErrors : bool from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public bypassFatalErrors : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public BypassFatalErrors : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hudScale : float to HudScale : float in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hudScale : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "HudScale : float"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public HudScale : float from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public hudScale : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public HudScale : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute toolbeltHeight : float to ToolbeltHeight : float in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 22,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "toolbeltHeight : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ToolbeltHeight : float"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public ToolbeltHeight : float from class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 22,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public toolbeltHeight : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 29,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public ToolbeltHeight : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute autoHideToolbelt : bool to AutoHideToolbelt : bool in class ModSettings",
+	"leftSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModConfig.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "autoHideToolbelt : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "NomaiVR/ModConfig/ModSettings.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AutoHideToolbelt : bool"
+}]
+}
+]
+}]
+}

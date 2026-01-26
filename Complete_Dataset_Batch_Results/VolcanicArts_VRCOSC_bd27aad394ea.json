@@ -1,0 +1,630 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "bd27aad394ea036276bc339a445bef0c3dc14c6b",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/bd27aad394ea036276bc339a445bef0c3dc14c6b",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method package LoadData() : void from class Module to public LoadData() : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 124,
+		"endLine": 157,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadData() : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 124,
+		"endLine": 157,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private saveData() : void from class Module to private saveData() : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 110,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private saveData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 73,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private saveData() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private copyDataFrom(dataToCopy ModuleDataManager) : void extracted from package LoadData() : void in class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 124,
+		"endLine": 157,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 155,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private copyDataFrom(dataToCopy ModuleDataManager) : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 158,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 163,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 47,
+		"endColumn": 77,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "copyDataFrom(deserializedData)"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deserializedData : var to dataToCopy : ModuleDataManager in method private copyDataFrom(dataToCopy ModuleDataManager) : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 21,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deserializedData : var"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataToCopy : ModuleDataManager"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 158,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 163,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable deserializedData : var to dataToCopy : ModuleDataManager in method private copyDataFrom(dataToCopy ModuleDataManager) : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 21,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deserializedData : var"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "dataToCopy : ModuleDataManager"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 158,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 163,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package storage_directory : string from class Module to package storage_directory : string from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package storage_directory : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package storage_directory : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private Storage : readonly from class Module to private Storage : readonly from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Storage : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private Storage : readonly"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ModuleDataManager from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 22,
+		"endLine": 175,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Module"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 110,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private saveData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 124,
+		"endLine": 157,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package storage_directory : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Storage : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 18,
+		"endLine": 108,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Module"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 17,
+		"endLine": 170,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ModuleDataManager"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 73,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private saveData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadData() : void"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package storage_directory : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private Storage : readonly"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter key : string in method public UpdateSetting(key string, value object) : void from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "key : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSetting(key string, value object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter value : object in method public UpdateSetting(key string, value object) : void from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "value : object"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSetting(key string, value object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public UpdateSetting(key string, value object) : void from class Module to public LoadData() : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSetting(key string, value object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter key : string in method public UpdateParameter(key string, address string) : void from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 33,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "key : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 104,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateParameter(key string, address string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter address : string in method public UpdateParameter(key string, address string) : void from class Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 45,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "address : string"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 104,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateParameter(key string, address string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public LoadData() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public UpdateParameter(key string, address string) : void from class Module to public LoadData() : void from class ModuleDataManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.cs",
+		"startLine": 104,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateParameter(key string, address string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/ModuleDataManager.cs",
+		"startLine": 51,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadData() : void"
+}]
+}
+]
+}]
+}

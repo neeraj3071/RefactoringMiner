@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "2abb2144c40e7f7cc5f9066287ba5b0d3caf8b81",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/2abb2144c40e7f7cc5f9066287ba5b0d3caf8b81",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type setManipulatorsVisible : Action<bool> to setManipulatorsVisible : Action<ISetManipulatorsVisible,bool> in class ISetManipulatorsVisible",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/ISetManipulatorsVisible.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "setManipulatorsVisible : Action<bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/ISetManipulatorsVisible.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 41,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "setManipulatorsVisible : Action<ISetManipulatorsVisible,bool>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type setManipulatorsVisible : Action<bool> to setManipulatorsVisible : Action<ISetManipulatorsVisible,bool> in class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 23,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "setManipulatorsVisible : Action<bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 48,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "setManipulatorsVisible : Action<ISetManipulatorsVisible,bool>"
+}]
+}
+]
+}]
+}

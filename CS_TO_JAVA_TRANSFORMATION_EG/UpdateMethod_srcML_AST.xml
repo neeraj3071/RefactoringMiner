@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0">
+    <unit language="C#" filename="UpdateMethod.cs">
+        <using>using <name>System</name>;</using>
+        <using>using <name><name>System</name>.<name>Collections</name>.<name>Generic</name></name>;</using>
+        
+        <namespace>namespace <name>TransformationExample</name>
+        <block>{
+            <class><specifier>public</specifier> class <name>UpdateMethod</name>
+            <block>{
+                <function><type><specifier>public</specifier> <name>void</name></type> <name>Update</name><parameter_list>(<parameter><decl><type><name>List</name><argument_list>&lt;<argument><name>string</name></argument>&gt;</argument_list></type> <name>items</name></decl></parameter>, <parameter><decl><type><name>string</name></type> <name>text</name></decl></parameter>)</parameter_list>
+                <block>{
+                    <foreach>foreach <control>(<decl><type><name>var</name></type> <name>item</name></decl> <range>in <expr><name>items</name></expr></range>)</control>
+                        <expr_stmt><expr><call><name><name>Console</name>.<name>WriteLine</name></name><argument_list>(<argument><expr><name>item</name> <operator>??</operator> <name>text</name></expr></argument>)</argument_list></call></expr>;</expr_stmt></foreach>
+                }</block></function>
+            }</block></class>
+        }</block></namespace>
+    </unit>
+</unit>

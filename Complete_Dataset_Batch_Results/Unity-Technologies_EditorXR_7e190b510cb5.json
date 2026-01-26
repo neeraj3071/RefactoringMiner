@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "7e190b510cb5a46584acce452ec793ff61264aa0",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/7e190b510cb5a46584acce452ec793ff61264aa0",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method protected RecycleItem(template string, item MonoBehaviour) : void renamed to protected RecycleGridItem(data AssetData) : void in class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 119,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RecycleItem(template string, item MonoBehaviour) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 121,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected RecycleGridItem(data AssetData) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private UpdateItem(t Transform, offset int, animating bool) : void renamed to private UpdateGridItem(data AssetData, offset int) : void in class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 176,
+		"endLine": 187,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateItem(t Transform, offset int, animating bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 198,
+		"endLine": 210,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private UpdateGridItem(data AssetData, offset int) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable kRecycleDuration : float to kTransitionDuration : float in initializer AssetGridViewController from class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "kRecycleDuration : float"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 22,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "kTransitionDuration : float"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 2,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package UpdateVisibleItem(data AssetData, offset int) : void from class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 167,
+		"endLine": 174,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected UpdateVisibleItem(data AssetData, offset int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 173,
+		"endLine": 180,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package UpdateVisibleItem(data AssetData, offset int) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,432 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "b689b124361fb1755b53aa72565f7b93620107d9",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/b689b124361fb1755b53aa72565f7b93620107d9",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable deleteOldChildren : var to childrenToDelete : var in method package ClearSubMenuElements() : void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deleteOldChildren : var"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 304,
+		"endLine": 313,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "childrenToDelete : var"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 309,
+		"endLine": 319,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_ProviderToHomeMenuElements : in to spatialMenuData : in in method public DisplayHighlightedSubMenuContents() : void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 26,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_ProviderToHomeMenuElements : in"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "spatialMenuData : in"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type provider : ISpatialMenuProvider to providerCollectionPosition : int in method public HighlightHomeSectionMenuElement(providerCollectionPosition int) : void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 49,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "provider : ISpatialMenuProvider"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 49,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "providerCollectionPosition : int"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter provider : ISpatialMenuProvider to providerCollectionPosition : int in method public HighlightHomeSectionMenuElement(providerCollectionPosition int) : void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 49,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "provider : ISpatialMenuProvider"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 49,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "providerCollectionPosition : int"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.cs",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package visible : bool from class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private visible : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 14,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package visible : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package spatialinterfaceState : SpatialinterfaceState from class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 39,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private spatialinterfaceState : SpatialinterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package spatialinterfaceState : SpatialinterfaceState"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_HighlightedButtonPosition : int to m_HighlightedMenuElementPosition : int in class SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_HighlightedButtonPosition : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_HighlightedMenuElementPosition : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public spatialMenuName : string from class ISpatialMenuProvider to public spatialMenuName : string from class .SpatialMenu..SpatialMenuData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 16,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public spatialMenuName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public spatialMenuName : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public spatialMenuDescription : string from class ISpatialMenuProvider to public spatialMenuDescription : string from class .SpatialMenu..SpatialMenuData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public spatialMenuDescription : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public spatialMenuDescription : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public displayingSpatially : bool from class ISpatialMenuProvider to public displayingSpatially : bool from class .SpatialMenu..SpatialMenuData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 14,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public displayingSpatially : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public displayingSpatially : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class .SpatialMenu..SpatialMenuData from class ISpatialMenuProvider",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 9,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ISpatialMenuProvider"
+}, {
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 16,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public spatialMenuName : string"
+}, {
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public spatialMenuDescription : string"
+}, {
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 14,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public displayingSpatially : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 9,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ISpatialMenuProvider"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 28,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": ".SpatialMenu..SpatialMenuData"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public spatialMenuName : string"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public spatialMenuDescription : string"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public displayingSpatially : bool"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class SpatialMenu.SpatialUITableElement renamed to SpatialMenu.SpatialMenuElement",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 196,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SpatialMenu.SpatialUITableElement"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.cs",
+		"startLine": 251,
+		"endLine": 271,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "SpatialMenu.SpatialMenuElement"
+}]
+}
+]
+}]
+}

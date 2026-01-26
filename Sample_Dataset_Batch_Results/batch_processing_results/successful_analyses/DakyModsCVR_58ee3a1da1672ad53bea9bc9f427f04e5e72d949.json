@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dakyneko/DakyModsCVR.git",
+	"sha1": "58ee3a1da1672ad53bea9bc9f427f04e5e72d949",
+	"url": "https://github.com/dakyneko/DakyModsCVR/commit/58ee3a1da1672ad53bea9bc9f427f04e5e72d949",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private BuildMelonPrefsMenus() : void renamed to private BuildOurMelonPrefsMenus() : void in class ActionMenuMod",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 280,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private BuildMelonPrefsMenus() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 282,
+		"endLine": 286,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private BuildOurMelonPrefsMenus() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public BuildMelonPrefsMenus(melonPrefs List<MelonPreferences_Entry>) : Menus extracted from private BuildMelonPrefsMenus() : void in class ActionMenuMod",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 280,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private BuildMelonPrefsMenus() : void"
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 284,
+		"endLine": 302,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 288,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public BuildMelonPrefsMenus(melonPrefs List<MelonPreferences_Entry>) : Menus"
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 297,
+		"endLine": 326,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 282,
+		"endLine": 286,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private BuildOurMelonPrefsMenus() : void"
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 31,
+		"endColumn": 71,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "BuildMelonPrefsMenus(melonPrefs.Entries)"
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

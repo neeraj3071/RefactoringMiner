@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BIVROST/360PlayerWindows.git",
+	"sha1": "b0669c17ad3b10b35dd6ac1a60235afa542c7257",
+	"url": "https://github.com/BIVROST/360PlayerWindows/commit/b0669c17ad3b10b35dd6ac1a60235afa542c7257",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Action : event from class MediaDecoder",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public Action : event from class MediaDecoder",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _projection : MediaDecoder.ProjectionMode to Media : ServiceResult in class HeadsetError.Headset",
+	"leftSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_projection : MediaDecoder.ProjectionMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Media : ServiceResult"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _projection : MediaDecoder.ProjectionMode to Media : ServiceResult in class HeadsetError.Headset",
+	"leftSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_projection : MediaDecoder.ProjectionMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Media : ServiceResult"
+}]
+}
+]
+}]
+}

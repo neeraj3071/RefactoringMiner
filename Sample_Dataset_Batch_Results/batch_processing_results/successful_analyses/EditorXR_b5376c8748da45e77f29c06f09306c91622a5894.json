@@ -1,0 +1,333 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "b5376c8748da45e77f29c06f09306c91622a5894",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/b5376c8748da45e77f29c06f09306c91622a5894",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter rayOrigin : Transform in method package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 538,
+		"endLine": 541,
+		"startColumn": 2,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateAlternateMenuOnSelectionChanged() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 534,
+		"endLine": 534,
+		"startColumn": 45,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 534,
+		"endLine": 537,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package UpdateAlternateMenuOnSelectionChanged(rayOrigin Transform) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package List : readonly from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 19,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package List : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package m_SelectedObject : GameObject from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_SelectedObject : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package m_SelectedObject : GameObject"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package UpdateActionIcon(go GameObject) : void extracted from package Awake() : void in class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 42,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Awake() : void"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 86,
+		"endLine": 89,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package UpdateActionIcon(go GameObject) : void"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 44,
+		"endColumn": 54,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Awake() : void"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateActionIcon(null)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable go : var in method public OnSelectionChanged() : void from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 3,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "go : var"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type newLockState : bool to newLockState : var in method package ToggleLocked() : bool from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 8,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newLockState : bool"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newLockState : var"
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package ToggleLocked() : bool from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 55,
+		"endLine": 60,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToggleLocked() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 54,
+		"endLine": 59,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package ToggleLocked() : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package SetCurrentSelectedObject(go GameObject) : void from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 62,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetCurrentSelectedObject(go GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 61,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SetCurrentSelectedObject(go GameObject) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetLocked(go GameObject, locked bool) : void from class LockModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 67,
+		"endLine": 88,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetLocked(go GameObject, locked bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/Lock/LockModule.cs",
+		"startLine": 67,
+		"endLine": 84,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetLocked(go GameObject, locked bool) : void"
+}]
+}
+]
+}]
+}

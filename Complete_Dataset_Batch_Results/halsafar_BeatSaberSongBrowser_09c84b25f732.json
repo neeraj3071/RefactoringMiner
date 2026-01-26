@@ -1,0 +1,1452 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/halsafar/BeatSaberSongBrowser.git",
+	"sha1": "09c84b25f7329fd0d8e55e56cd760700635b5537",
+	"url": "https://github.com/halsafar/BeatSaberSongBrowser/commit/09c84b25f7329fd0d8e55e56cd760700635b5537",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder SongBrowserPlugin to SongBrowserPlugin/DataAccess",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserSettings.cs",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SongSortMode"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserSettings.cs",
+		"startLine": 20,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SongBrowserSettings"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserSettings.cs",
+		"startLine": 10,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "SongSortMode"
+}, {
+		"filePath": "SongBrowserPlugin/DataAccess/SongBrowserSettings.cs",
+		"startLine": 20,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "SongBrowserSettings"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder SongBrowserPlugin to SongBrowserPlugin/UI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SongSortButton"
+}, {
+		"filePath": "SongBrowserPlugin/UIBuilder.cs",
+		"startLine": 10,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "UIBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongSortButton.cs",
+		"startLine": 6,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "SongSortButton"
+}, {
+		"filePath": "SongBrowserPlugin/UI/UIBuilder.cs",
+		"startLine": 10,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "UIBuilder"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class SongBrowserMasterViewController renamed to SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 18,
+		"endLine": 501,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SongBrowserMasterViewController"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 17,
+		"endLine": 480,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "SongBrowserUI"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Update() : void renamed to private LateUpdate() : void in class SongBrowserApplication",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserApplication.cs",
+		"startLine": 190,
+		"endLine": 207,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserApplication.cs",
+		"startLine": 162,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private LateUpdate() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _sortedSongs : List<LevelStaticData> to _sortedSongs : List<StandardLevelSO> in class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_sortedSongs : List<LevelStaticData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_sortedSongs : List<StandardLevelSO>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _originalSongs : List<LevelStaticData> to _originalSongs : List<StandardLevelSO> in class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 39,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_originalSongs : List<LevelStaticData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 39,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_originalSongs : List<StandardLevelSO>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type SortedSongList : List<LevelStaticData> to SortedSongList : List<StandardLevelSO> in class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 38,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "SortedSongList : List<LevelStaticData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 38,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "SortedSongList : List<StandardLevelSO>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type LevelIdToCustomSongInfos : Dictionary<String,SongLoaderPlugin.CustomSongInfo> to LevelIdToCustomSongInfos : Dictionary<String,SongLoaderPlugin.OverrideClasses.CustomLevel> in class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 68,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "LevelIdToCustomSongInfos : Dictionary<String,SongLoaderPlugin.CustomSongInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 81,
+		"endColumn": 105,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "LevelIdToCustomSongInfos : Dictionary<String,SongLoaderPlugin.OverrideClasses.CustomLevel>"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter beatSaberSongAccessor : IBeatSaberSongList in method public Init(beatSaberSongAccessor IBeatSaberSongList) : void from class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "beatSaberSongAccessor : IBeatSaberSongList"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 68,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(beatSaberSongAccessor IBeatSaberSongList) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 63,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Init() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter updateSongInfos : bool to gameplayMode : GameplayMode in method public UpdateSongLists(gameplayMode GameplayMode) : void from class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 37,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "updateSongInfos : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "gameplayMode : GameplayMode"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type updateSongInfos : bool to gameplayMode : GameplayMode in method public UpdateSongLists(gameplayMode GameplayMode) : void from class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 37,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "updateSongInfos : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "gameplayMode : GameplayMode"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter gameplayMode : GameplayMode in method private UpdateSongInfos(gameplayMode GameplayMode) : void from class SongBrowserModel",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 134,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateSongInfos() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 38,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "gameplayMode : GameplayMode"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserModel.cs",
+		"startLine": 99,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private UpdateSongInfos(gameplayMode GameplayMode) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private InitModel() : void renamed to package base() in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 109,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitModel() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 48,
+		"endLine": 56,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package base()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private OnDidSelectSongEvent(songListViewController SongListViewController) : void renamed to private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 213,
+		"endLine": 229,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDidSelectSongEvent(songListViewController SongListViewController) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private HandleDeleteSelectedSong() : void renamed to private HandleDeleteSelectedLevel() : void in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 260,
+		"endLine": 275,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleDeleteSelectedSong() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 213,
+		"endLine": 234,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private HandleDeleteSelectedLevel() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public HandleSimpleDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void renamed to public HandleDeleteDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 282,
+		"endLine": 298,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleSimpleDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 241,
+		"endLine": 264,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public HandleDeleteDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Update() : void renamed to public LateUpdate() : void in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 433,
+		"endLine": 436,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 398,
+		"endLine": 404,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public LateUpdate() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type as : _songDetailViewController.transform to as : _levelDetailViewController.transform in class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 79,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "as : _songDetailViewController.transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 85,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "as : _levelDetailViewController.transform"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type songInfo : LevelStaticData to songInfo : IStandardLevel in method private ToggleSongInFavorites() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 29,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songInfo : LevelStaticData"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 306,
+		"endLine": 317,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 28,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "songInfo : IStandardLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 272,
+		"endLine": 283,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type _difficultyViewController : DifficultyViewController to levelListTableView : StandardLevelListTableView in method private CheckDebugUserInput() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "_difficultyViewController : DifficultyViewController"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 462,
+		"endLine": 500,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 44,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "levelListTableView : StandardLevelListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 436,
+		"endLine": 479,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable _difficultyViewController : DifficultyViewController to levelListTableView : StandardLevelListTableView in method private CheckDebugUserInput() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "_difficultyViewController : DifficultyViewController"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 462,
+		"endLine": 500,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 44,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "levelListTableView : StandardLevelListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 436,
+		"endLine": 479,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package base() from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 109,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitModel() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 48,
+		"endLine": 56,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package base()"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable level : LevelStaticData to level : IStandardLevel in method private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level : LevelStaticData"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 216,
+		"endLine": 220,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 82,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "level : IStandardLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 193,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type level : LevelStaticData to level : IStandardLevel in method private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level : LevelStaticData"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 216,
+		"endLine": 220,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 82,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "level : IStandardLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 193,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter view : StandardLevelListViewController in method private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 213,
+		"endLine": 229,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDidSelectSongEvent(songListViewController SongListViewController) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 44,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "view : StandardLevelListViewController"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter songListViewController : SongListViewController in method private OnDidSelectSongEvent(songListViewController SongListViewController) : void from class SongBrowserMasterViewController",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 43,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "songListViewController : SongListViewController"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 213,
+		"endLine": 229,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDidSelectSongEvent(songListViewController SongListViewController) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 190,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private OnDidSelectLevelEvent(view StandardLevelListViewController, level IStandardLevel) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type songInfo : SongLoaderPlugin.CustomSongInfo to customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel in method private HandleDeleteSelectedLevel() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 45,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songInfo : SongLoaderPlugin.CustomSongInfo"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 13,
+		"endColumn": 191,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 58,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 13,
+		"endColumn": 196,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type level : LevelStaticData to level : IStandardLevel in method private HandleDeleteSelectedLevel() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 29,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level : LevelStaticData"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 28,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "level : IStandardLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable songInfo : SongLoaderPlugin.CustomSongInfo to customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel in method private HandleDeleteSelectedLevel() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 45,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songInfo : SongLoaderPlugin.CustomSongInfo"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 13,
+		"endColumn": 191,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 58,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 13,
+		"endColumn": 196,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type songInfo : SongLoaderPlugin.CustomSongInfo to customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel in method public HandleDeleteDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 49,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songInfo : SongLoaderPlugin.CustomSongInfo"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 62,
+		"endColumn": 122,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 17,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type level : LevelStaticData to level : IStandardLevel in method public HandleDeleteDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 33,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level : LevelStaticData"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 32,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "level : IStandardLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 17,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable songInfo : SongLoaderPlugin.CustomSongInfo to customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel in method public HandleDeleteDialogPromptViewControllerDidFinish(viewController SimpleDialogPromptViewController, ok bool) : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 49,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songInfo : SongLoaderPlugin.CustomSongInfo"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 62,
+		"endColumn": 122,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "customLevel : SongLoaderPlugin.OverrideClasses.CustomLevel"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 17,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type songListArray : LevelStaticData[] to levels : StandardLevelSO[] in method public RefreshSongList() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songListArray : LevelStaticData[]"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 35,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "levels : StandardLevelSO[]"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type songListTableView : SongListTableView to _songListTableView : StandardLevelListTableView in method public RefreshSongList() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songListTableView : SongListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 390,
+		"endLine": 418,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 44,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "_songListTableView : StandardLevelListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 346,
+		"endLine": 374,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable songListArray : LevelStaticData[] to levels : StandardLevelSO[] in method public RefreshSongList() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songListArray : LevelStaticData[]"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 35,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "levels : StandardLevelSO[]"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable songListTableView : SongListTableView to _songListTableView : StandardLevelListTableView in method public RefreshSongList() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "songListTableView : SongListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 390,
+		"endLine": 418,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 44,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "_songListTableView : StandardLevelListTableView"
+}, {
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 346,
+		"endLine": 374,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter songList : List<LevelStaticData> in method public RefreshSongList(songList List<LevelStaticData>) : void from class SongBrowserMasterViewController",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 37,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "songList : List<LevelStaticData>"
+}, {
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 367,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RefreshSongList(songList List<LevelStaticData>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 333,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RefreshSongList() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public LateUpdate() : void from class SongBrowserUI",
+	"leftSideLocations": [{
+		"filePath": "SongBrowserPlugin/SongBrowserMasterViewController.cs",
+		"startLine": 433,
+		"endLine": 436,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SongBrowserPlugin/UI/SongBrowserUI.cs",
+		"startLine": 398,
+		"endLine": 404,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LateUpdate() : void"
+}]
+}
+]
+}]
+}

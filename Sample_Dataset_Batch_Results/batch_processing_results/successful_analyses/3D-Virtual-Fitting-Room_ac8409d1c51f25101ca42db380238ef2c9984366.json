@@ -1,0 +1,366 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/monkog/3D-Virtual-Fitting-Room.git",
+	"sha1": "ac8409d1c51f25101ca42db380238ef2c9984366",
+	"url": "https://github.com/monkog/3D-Virtual-Fitting-Room/commit/ac8409d1c51f25101ca42db380238ef2c9984366",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void from class MainWindow to private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 145,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 28,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline from class MainWindow to private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 185,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline"
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetJointPoint(joint Joint) : Point from class MainWindow to private GetJointPoint(joint Joint) : Point from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 197,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetJointPoint(joint Joint) : Point"
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 170,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetJointPoint(joint Joint) : Point"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private CreateBody() : JointType[] extracted from private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void in class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 145,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 164,
+		"endLine": 177,
+		"startColumn": 25,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 68,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CreateBody() : JointType[]"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 70,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 55,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private DrawSkeleton(skeleton Skeleton, brush Brush) : void"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 71,
+		"endColumn": 83,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateBody()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private DrawSkeleton(skeleton Skeleton, brush Brush) : void extracted from private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void in class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 145,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 25,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 55,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private DrawSkeleton(skeleton Skeleton, brush Brush) : void"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 28,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DrawSkeleton(skeleton,brush)"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 13,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private m_skeletons : Skeleton[] from class MainWindow to private m_skeletons : Skeleton[] from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_skeletons : Skeleton[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private m_skeletons : Skeleton[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class MainWindow from class MainWindow",
+	"leftSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 22,
+		"endLine": 248,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MainWindow"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 145,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 185,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 197,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetJointPoint(joint Joint) : Point"
+}, {
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_skeletons : Skeleton[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "MainWindow.xaml.cs",
+		"startLine": 22,
+		"endLine": 182,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "MainWindow"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 13,
+		"endLine": 178,
+		"startColumn": 20,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "MainWindow"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 28,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private KinectSensor_SkeletonFrameReady(sender object, e SkeletonFrameReadyEventArgs) : void"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 153,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CreateFigure(skeleton Skeleton, brush Brush, joints JointType[]) : Polyline"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 170,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetJointPoint(joint Joint) : Point"
+}, {
+		"filePath": "DebugHelpers/SkeletonDrawing.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private m_skeletons : Skeleton[]"
+}]
+}
+]
+}]
+}

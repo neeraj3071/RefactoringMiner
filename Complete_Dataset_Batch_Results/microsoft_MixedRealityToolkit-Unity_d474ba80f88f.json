@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "d474ba80f88f32bb3547016ce1e86693dc9f7d73",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d474ba80f88f32bb3547016ce1e86693dc9f7d73",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/MixedRealityToolkit/Providers/Hands to Assets/MixedRealityToolkit/Providers/Hands/HandRay",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/HandRay.cs",
+		"startLine": 9,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "HandRay"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/HandRay/HandRay.cs",
+		"startLine": 9,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "HandRay"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/MixedRealityToolkit/Providers/Hands to Assets/MixedRealityToolkit/Utilities",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/HandRay.cs",
+		"startLine": 128,
+		"endLine": 188,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "StabilizedRay"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Utilities/StabilizedRay.cs",
+		"startLine": 19,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "StabilizedRay"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class StabilizedRay",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/HandRay.cs",
+		"startLine": 128,
+		"endLine": 188,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "StabilizedRay"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Utilities/StabilizedRay.cs",
+		"startLine": 19,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "StabilizedRay"
+}]
+}
+]
+}]
+}

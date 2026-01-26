@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/WetzoldStudios/traVRsal-sdk.git",
+	"sha1": "517465baa19776de5ad1f62025821f015c9aba5b",
+	"url": "https://github.com/WetzoldStudios/traVRsal-sdk/commit/517465baa19776de5ad1f62025821f015c9aba5b",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public invalidAPIToken : bool from class SDKUtil",
+	"leftSideLocations": [{
+		"filePath": "Editor/BasicEditorUI.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public invalidAPIToken : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Helpers/SDKUtil.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public invalidAPIToken : bool"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public networkIssue : bool from class SDKUtil",
+	"leftSideLocations": [{
+		"filePath": "Editor/BasicEditorUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public networkIssue : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Helpers/SDKUtil.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public networkIssue : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public invalidAPIToken : bool from class BasicEditorUI to public invalidAPIToken : bool from class SDKUtil",
+	"leftSideLocations": [{
+		"filePath": "Editor/BasicEditorUI.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public invalidAPIToken : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Helpers/SDKUtil.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public invalidAPIToken : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public networkIssue : bool from class BasicEditorUI to public networkIssue : bool from class SDKUtil",
+	"leftSideLocations": [{
+		"filePath": "Editor/BasicEditorUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public networkIssue : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Helpers/SDKUtil.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public networkIssue : bool"
+}]
+}
+]
+}]
+}

@@ -10,9 +10,8 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
+import java.nio.file.Files;
 import java.util.*;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 /**
  * SrcMLBasedCSharpProcessor - Enhanced Direct srcML integration without GumTree
@@ -83,6 +82,12 @@ public class SrcMLBasedCSharpProcessor {
                 System.err.println("SrcMLBasedCSharpProcessor: Failed to convert XML to Java for " + filePath);
                 return null;
             }
+            
+            // DEBUG: Print generated Java code
+            System.out.println("SrcMLBasedCSharpProcessor: Generated Java code:");
+            System.out.println("=== START JAVA CODE ===");
+            System.out.println(javaCode);
+            System.out.println("=== END JAVA CODE ===");
             
             // Step 4: Parse Java syntax to CompilationUnit
             CompilationUnit compilationUnit = parseJavaCode(javaCode, filePath);
@@ -161,15 +166,50 @@ public class SrcMLBasedCSharpProcessor {
      */
     private static String convertSrcMLXMLToJava(Document doc, String filePath) {
         try {
-            StringBuilder javaCode = new StringBuilder();
+            StringBuilder imports = new StringBuilder();
+            StringBuilder packageDecl = new StringBuilder();
+            StringBuilder classes = new StringBuilder();
+            
             Element root = doc.getDocumentElement();
             
-            // Process the XML structure to generate Java code
-            processXMLNode(root, javaCode, 0);
+            // First pass: collect package and imports
+            NodeList children = root.getChildNodes();
+            for (int i = 0; i < children.getLength(); i++) {
+                Node child = children.item(i);
+                if (child instanceof Element) {
+                    Element el = (Element) child;
+                    if ("using".equals(el.getTagName()) && !hasChildElement(el, "block")) {
+                        processUsingDirective(el, imports);
+                    } else if ("namespace".equals(el.getTagName())) {
+                        String namespaceName = getChildElementText(el, "name");
+                        if (namespaceName != null) {
+                            packageDecl.append("package ").append(namespaceName).append(";\\n\\n");
+                        }
+                    }
+                }
+            }
+            
+            // Second pass: process everything else
+            processXMLNode(root, classes, 0);
+            
+            // Combine in correct order: package, imports, classes
+            StringBuilder javaCode = new StringBuilder();
+            if (packageDecl.length() > 0) {
+                javaCode.append(packageDecl.toString().replace("\\n", "\n"));
+            }
+            if (imports.length() > 0) {
+                javaCode.append(imports.toString().replace("\\n", "\n")).append("\n");
+            }
+            // Remove duplicate package and import declarations from classes
+            String classContent = classes.toString();
+            classContent = classContent.replaceAll("package [^;]+;\\s*", "");
+            classContent = classContent.replaceAll("import [^;]+;\\s*", "");
+            classContent = classContent.replace("\\n", "\n");
+            javaCode.append(classContent);
             
             String result = javaCode.toString();
-            System.out.println("SrcMLBasedCSharpProcessor: Generated Java code for " + filePath + 
-                             " (" + result.length() + " chars)");
+            // DEBUG: System.out.println("SrcMLBasedCSharpProcessor: Generated Java code for " + filePath + 
+            //                       " (" + result.length() + " chars)");
             
             return result;
             
@@ -191,8 +231,19 @@ public class SrcMLBasedCSharpProcessor {
             
             switch (tagName) {
                 case "using":
-                    // Convert C# using to Java import with proper mappings
-                    processUsingDirective(element, javaCode);
+                    // Check if it's using directive or using statement
+                    if (hasChildElement(element, "block")) {
+                        // using statement (IDisposable) -> try-with-resources
+                        processUsingStatement(element, javaCode, depth);
+                    } else {
+                        // using directive -> import
+                        processUsingDirective(element, javaCode);
+                    }
+                    break;
+                    
+                case "using_stmt":
+                    // using statement (IDisposable) -> try-with-resources
+                    processUsingStatement(element, javaCode, depth);
                     break;
                     
                 case "namespace":
@@ -276,9 +327,50 @@ public class SrcMLBasedCSharpProcessor {
                     processLoop(element, javaCode, depth);
                     break;
                     
+                case "while":
+                case "do":
+                    // Process while/do-while loops
+                    processWhileLoop(element, javaCode, depth);
+                    break;
+                    
+                case "try":
+                    // Process try-catch-finally
+                    processTryCatch(element, javaCode, depth);
+                    break;
+                    
+                case "throw":
+                    // Process throw statement
+                    processThrow(element, javaCode, depth);
+                    break;
+                    
+                case "switch":
+                    // Process switch statement
+                    processSwitch(element, javaCode, depth);
+                    break;
+                    
+                case "break":
+                    // Process break statement
+                    javaCode.append(getIndent(depth)).append("break;\n");
+                    break;
+                    
+                case "continue":
+                    // Process continue statement
+                    javaCode.append(getIndent(depth)).append("continue;\n");
+                    break;
+                    
                 case "attribute":
                     // Convert C# attributes to Java annotations
                     processAttribute(element, javaCode, depth);
+                    break;
+                    
+                case "return":
+                    // Process return statement
+                    processReturnStatement(element, javaCode, depth);
+                    break;
+                    
+                case "block_content":
+                    // Transparent wrapper - just process children
+                    processChildren(element, javaCode, depth);
                     break;
                     
                 default:
@@ -292,10 +384,35 @@ public class SrcMLBasedCSharpProcessor {
     }
     
     /**
+     * Process method declaration without body (abstract methods)
+     */
+    private static void processMethodDeclaration(Element methodElement, StringBuilder javaCode, int depth) {
+        String methodName = getDirectChildElementText(methodElement, "name");
+        String returnType = getMethodReturnType(methodElement);
+        String parameters = getMethodParameters(methodElement);
+        
+        if (methodName != null) {
+            javaCode.append(getIndent(depth));
+            
+            // Add modifiers
+            String modifiers = getMethodModifiers(methodElement, false);
+            javaCode.append(modifiers);
+            
+            // Return type
+            javaCode.append(returnType != null ? convertType(returnType) : "void")
+                   .append(" ")
+                   .append(methodName)
+                   .append("(")
+                   .append(parameters != null ? parameters : "")
+                   .append(");\n");
+        }
+    }
+    
+    /**
      * Process method declarations with async/await and extension method support
      */
     private static void processMethod(Element methodElement, StringBuilder javaCode, int depth) {
-        String methodName = getChildElementText(methodElement, "name");
+        String methodName = getDirectChildElementText(methodElement, "name");
         String returnType = getMethodReturnType(methodElement);
         String parameters = getMethodParameters(methodElement);
         boolean isAsync = isAsyncMethod(methodElement);
@@ -340,9 +457,67 @@ public class SrcMLBasedCSharpProcessor {
     
     /**
      * Process expression statements with LINQ and string interpolation support
+     * FIXED: Now detects and processes C# events
      */
     private static void processExpressionStatement(Element exprElement, StringBuilder javaCode, int depth) {
+        // FIRST: Check if this is a lambda property (public Type PropertyName => expression;)
+        Element exprChild = getChildElement(exprElement, "expr");
+        if (exprChild != null) {
+            Element lambdaElement = getChildElement(exprChild, "lambda");
+            if (lambdaElement != null) {
+                // This is a lambda property: public Type PropertyName => expression;
+                Element paramList = getChildElement(lambdaElement, "parameter_list");
+                Element block = getChildElement(lambdaElement, "block");
+                
+                if (paramList != null && block != null) {
+                    // Extract modifiers and type from preceding siblings
+                    String modifiers = extractModifiersFromExpr(exprChild);
+                    String returnType = extractTypeFromExpr(exprChild);
+                    String propertyName = getTextContent(paramList).trim();
+                    String expression = getTextContent(block).trim();
+                    
+                    if (propertyName != null && !propertyName.isEmpty()) {
+                        // Generate getter method: public Type getPropertyName() { return expression; }
+                        String getterName = "get" + Character.toUpperCase(propertyName.charAt(0)) + propertyName.substring(1);
+                        javaCode.append(getIndent(depth)).append(modifiers).append(" ")
+                               .append(convertType(returnType)).append(" ")
+                               .append(getterName).append("() {\n");
+                        javaCode.append(getIndent(depth + 1)).append("return ").append(expression).append(";\n");
+                        javaCode.append(getIndent(depth)).append("}\n");
+                        return; // Lambda property processed, done
+                    }
+                }
+            }
+        }
+        
         String exprText = getTextContent(exprElement);
+        
+        // Check if this is a C# event declaration (public event Action EventName)
+        if (exprText.contains("event")) {
+            if (exprChild != null) {
+                String eventDecl = getTextContent(exprChild);
+                if (eventDecl.contains("event")) {
+                    // Extract event type and name
+                    String[] parts = eventDecl.trim().split("\\s+");
+                    String eventType = null;
+                    String eventName = null;
+                    
+                    for (int i = 0; i < parts.length; i++) {
+                        if (parts[i].equals("event") && i + 2 < parts.length) {
+                            eventType = parts[i + 1];
+                            eventName = parts[i + 2].replace(";", "");
+                            break;
+                        }
+                    }
+                    
+                    if (eventName != null) {
+                        // Generate listener pattern for the event
+                        generateEventListenerPattern(eventName, eventType, javaCode, depth);
+                        return; // Event processed, don't continue with normal expression
+                    }
+                }
+            }
+        }
         
         // Convert string interpolation $"..." to String.format
         exprText = convertStringInterpolation(exprText);
@@ -359,6 +534,9 @@ public class SrcMLBasedCSharpProcessor {
         // Convert await to CompletableFuture
         exprText = exprText.replaceAll("await\\s+", "").replaceAll("\\.Result", ".get()");
         
+        // Convert C# expressions (null operators, APIs, etc.)
+        exprText = convertExpression(exprText);
+        
         // Convert common C# types
         exprText = convertType(exprText);
         
@@ -369,7 +547,6 @@ public class SrcMLBasedCSharpProcessor {
         javaCode.append("\n");
     }
     
-    // ========== NEW ENHANCED METHODS ==========
     
     /**
      * Process using directives with proper Java import mapping
@@ -490,30 +667,57 @@ public class SrcMLBasedCSharpProcessor {
     
     /**
      * Process C# properties - convert to getter/setter methods
+     * FIXED: Now handles lambda-style accessors (get => expr, set => expr)
      */
     private static void processProperty(Element element, StringBuilder javaCode, int depth) {
-        String propertyName = getChildElementText(element, "name");
+        String propertyName = getDirectChildElementText(element, "name");
         String propertyType = getPropertyType(element);
         
         if (propertyName != null && propertyType != null) {
-            String fieldName = "_" + Character.toLowerCase(propertyName.charAt(0)) + propertyName.substring(1);
+            // Convert property name to field name (lowercase first char)
+            String fieldName = Character.toLowerCase(propertyName.charAt(0)) + propertyName.substring(1);
             propertyType = convertType(propertyType);
             
-            javaCode.append(getIndent(depth)).append("private ").append(propertyType)
-                   .append(" ").append(fieldName).append(";\n");
+            // Check if there's already a backing field by looking for get/set lambda expressions
+            boolean hasBackingField = hasExistingBackingField(element);
+            String backingFieldName = hasBackingField ? getBackingFieldName(element) : fieldName;
             
+            // Only create field if no backing field exists
+            if (!hasBackingField) {
+                javaCode.append(getIndent(depth)).append("private ").append(propertyType)
+                       .append(" ").append(fieldName).append(";\n");
+            }
+            
+            // Generate getter if property has get accessor
             if (hasGetter(element)) {
                 javaCode.append(getIndent(depth)).append("public ").append(propertyType)
                        .append(" get").append(propertyName).append("() {\n");
-                javaCode.append(getIndent(depth + 1)).append("return ").append(fieldName).append(";\n");
+                
+                // Get the getter body (from lambda or block)
+                String getterBody = getGetterBody(element);
+                if (getterBody != null && !getterBody.trim().isEmpty()) {
+                    javaCode.append(getIndent(depth + 1)).append("return ").append(getterBody).append(";\n");
+                } else {
+                    javaCode.append(getIndent(depth + 1)).append("return ").append(backingFieldName).append(";\n");
+                }
+                
                 javaCode.append(getIndent(depth)).append("}\n");
             }
             
+            // Generate setter if property has set accessor
             if (hasSetter(element)) {
                 javaCode.append(getIndent(depth)).append("public void set").append(propertyName)
                        .append("(").append(propertyType).append(" value) {\n");
-                javaCode.append(getIndent(depth + 1)).append("this.").append(fieldName)
-                       .append(" = value;\n");
+                
+                // Get the setter body (from lambda or block)
+                String setterBody = getSetterBody(element);
+                if (setterBody != null && !setterBody.trim().isEmpty()) {
+                    javaCode.append(getIndent(depth + 1)).append(setterBody).append(";\n");
+                } else {
+                    javaCode.append(getIndent(depth + 1)).append("this.").append(backingFieldName)
+                           .append(" = value;\n");
+                }
+                
                 javaCode.append(getIndent(depth)).append("}\n");
             }
         }
@@ -539,22 +743,6 @@ public class SrcMLBasedCSharpProcessor {
         }
     }
     
-    /**
-     * Process method declaration (interface methods without body)
-     */
-    private static void processMethodDeclaration(Element element, StringBuilder javaCode, int depth) {
-        String methodName = getChildElementText(element, "name");
-        String returnType = getMethodReturnType(element);
-        String parameters = getMethodParameters(element);
-        
-        if (methodName != null) {
-            javaCode.append(getIndent(depth))
-                   .append(returnType != null ? convertType(returnType) : "void")
-                   .append(" ").append(methodName)
-                   .append("(").append(parameters != null ? parameters : "")
-                   .append(");\n");
-        }
-    }
     
     /**
      * Process C# events - convert to listener pattern
@@ -650,20 +838,56 @@ public class SrcMLBasedCSharpProcessor {
     
     /**
      * Process declaration statements with nullable type support
+     * FIXED: Handle nested <decl> elements and extract type/name correctly using direct children
      */
     private static void processDeclarationStatement(Element element, StringBuilder javaCode, int depth) {
-        Element typeElement = getChildElement(element, "type");
-        Element nameElement = getChildElement(element, "name");
+        // Try to get decl child first (field declarations have this structure)
+        Element declElement = getChildElement(element, "decl");
+        if (declElement != null) {
+            element = declElement;
+        }
+        
+        // Use getDirectChildElement to get only direct children, not nested descendants
+        Element typeElement = getDirectChildElement(element, "type");
+        Element nameElement = getDirectChildElement(element, "name");
         
         if (typeElement != null && nameElement != null) {
-            String type = getTextContent(typeElement);
+            // Get type name (not including specifiers like "private")
+            String type = getChildElementText(typeElement, "name");
+            if (type == null) {
+                type = getTextContent(typeElement);
+            }
+            
+            // Check for nullable modifier (int?, bool?, etc.)
+            Element modifier = getChildElement(typeElement, "modifier");
+            boolean isNullable = false;
+            if (modifier != null) {
+                String modText = getTextContent(modifier);
+                if ("?".equals(modText)) {
+                    isNullable = true;
+                }
+            }
+            
+            // Get variable name from direct child
             String name = getTextContent(nameElement);
             String init = getInitializer(element);
             
-            type = convertNullableType(type);
-            type = convertType(type);
+            // Get visibility from specifier
+            String visibility = getChildElementText(typeElement, "specifier");
+            if (visibility != null) {
+                visibility = visibility.trim() + " ";
+            } else {
+                visibility = "";
+            }
             
-            javaCode.append(getIndent(depth)).append(type).append(" ").append(name);
+            if (isNullable) {
+                type = convertNullableType(type + "?");
+            } else {
+                type = convertNullableType(type);
+                type = convertType(type);
+            }
+            
+            javaCode.append(getIndent(depth)).append(visibility).append(type).append(" ").append(name);
             if (init != null && !init.isEmpty()) {
                 javaCode.append(" = ").append(init);
             }
@@ -672,32 +896,682 @@ public class SrcMLBasedCSharpProcessor {
     }
     
     /**
+     * Process return statement
+     */
+    private static void processReturnStatement(Element element, StringBuilder javaCode, int depth) {
+        javaCode.append(getIndent(depth)).append("return");
+        
+        Element expr = getChildElement(element, "expr");
+        if (expr != null) {
+            String exprText = getTextContent(expr);
+            javaCode.append(" ").append(convertExpression(exprText));
+        }
+        
+        javaCode.append(";\n");
+    }
+    
+    /**
+     * Process while and do-while loops
+     */
+    private static void processWhileLoop(Element element, StringBuilder javaCode, int depth) {
+        String tagName = element.getTagName();
+        
+        if ("do".equals(tagName)) {
+            javaCode.append(getIndent(depth)).append("do {\n");
+            Element block = getChildElement(element, "block");
+            if (block != null) {
+                processChildren(block, javaCode, depth + 1);
+            }
+            javaCode.append(getIndent(depth)).append("} while (");
+            Element condition = getChildElement(element, "condition");
+            if (condition != null) {
+                javaCode.append(convertExpression(getTextContent(condition)));
+            }
+            javaCode.append(");\n");
+        } else {
+            Element condition = getChildElement(element, "condition");
+            javaCode.append(getIndent(depth)).append("while (");
+            if (condition != null) {
+                javaCode.append(convertExpression(getTextContent(condition)));
+            }
+            javaCode.append(") {\n");
+            Element block = getChildElement(element, "block");
+            if (block != null) {
+                processChildren(block, javaCode, depth + 1);
+            }
+            javaCode.append(getIndent(depth)).append("}\n");
+        }
+    }
+    
+    /**
+     * Process try-catch-finally blocks
+     */
+    private static void processTryCatch(Element element, StringBuilder javaCode, int depth) {
+        javaCode.append(getIndent(depth)).append("try {\n");
+        
+        Element block = getChildElement(element, "block");
+        if (block != null) {
+            processChildren(block, javaCode, depth + 1);
+        }
+        
+        javaCode.append(getIndent(depth)).append("}");
+        
+        // Process catch blocks
+        NodeList catches = element.getElementsByTagName("catch");
+        for (int i = 0; i < catches.getLength(); i++) {
+            Element catchBlock = (Element) catches.item(i);
+            javaCode.append(" catch (");
+            
+            Element param = getChildElement(catchBlock, "param");
+            if (param != null) {
+                Element decl = getChildElement(param, "decl");
+                if (decl != null) {
+                    String type = getChildElementText(decl, "type");
+                    String name = getDirectChildElementText(decl, "name");
+                    javaCode.append(convertType(type)).append(" ").append(name);
+                }
+            } else {
+                javaCode.append("Exception e");
+            }
+            
+            javaCode.append(") {\n");
+            Element catchBlockContent = getChildElement(catchBlock, "block");
+            if (catchBlockContent != null) {
+                processChildren(catchBlockContent, javaCode, depth + 1);
+            }
+            javaCode.append(getIndent(depth)).append("}");
+        }
+        
+        // Process finally block
+        NodeList finallys = element.getElementsByTagName("finally");
+        if (finallys.getLength() > 0) {
+            javaCode.append(" finally {\n");
+            Element finallyBlock = (Element) finallys.item(0);
+            Element finallyBlockContent = getChildElement(finallyBlock, "block");
+            if (finallyBlockContent != null) {
+                processChildren(finallyBlockContent, javaCode, depth + 1);
+            }
+            javaCode.append(getIndent(depth)).append("}");
+        }
+        
+        javaCode.append("\n");
+    }
+    
+    /**
+     * Process throw statement
+     */
+    private static void processThrow(Element element, StringBuilder javaCode, int depth) {
+        javaCode.append(getIndent(depth)).append("throw ");
+        
+        Element expr = getChildElement(element, "expr");
+        if (expr != null) {
+            String exprText = getTextContent(expr).trim();
+            if (!exprText.isEmpty()) {
+                // Handle 'throw new Exception(msg)'
+                exprText = convertExpression(exprText);
+                // Convert C# exception types to Java
+                exprText = exprText.replace("ArgumentException", "IllegalArgumentException");
+                exprText = exprText.replace("InvalidOperationException", "UnsupportedOperationException");
+                javaCode.append(exprText);
+            } else {
+                // C# empty throw (rethrow) - use 'e' as default exception variable
+                javaCode.append("e");
+            }
+        } else {
+            // No expression means rethrow - use 'e' as default exception variable
+            javaCode.append("e");
+        }
+        
+        javaCode.append(";\n");
+    }
+    
+    /**
+     * Process switch statement
+     */
+    private static void processSwitch(Element element, StringBuilder javaCode, int depth) {
+        Element condition = getChildElement(element, "condition");
+        javaCode.append(getIndent(depth)).append("switch (");
+        if (condition != null) {
+            javaCode.append(convertExpression(getTextContent(condition)));
+        }
+        javaCode.append(") {\n");
+        
+        Element block = getChildElement(element, "block");
+        if (block != null) {
+            Element blockContent = getChildElement(block, "block_content");
+            if (blockContent != null) {
+                // Process children sequentially - case labels come before their statements
+                NodeList children = blockContent.getChildNodes();
+                boolean inCase = false;
+                
+                for (int i = 0; i < children.getLength(); i++) {
+                    Node child = children.item(i);
+                    if (child instanceof Element) {
+                        Element childEl = (Element) child;
+                        String tagName = childEl.getTagName();
+                        
+                        if ("case".equals(tagName)) {
+                            Element expr = getChildElement(childEl, "expr");
+                            javaCode.append(getIndent(depth + 1)).append("case ");
+                            if (expr != null) {
+                                javaCode.append(convertExpression(getTextContent(expr)));
+                            }
+                            javaCode.append(":\n");
+                            inCase = true;
+                        } else if ("default".equals(tagName)) {
+                            javaCode.append(getIndent(depth + 1)).append("default:\n");
+                            inCase = true;
+                        } else if (inCase) {
+                            // Process statements under the case
+                            processXMLNode(child, javaCode, depth + 2);
+                        }
+                    }
+                }
+            }
+        }
+        
+        javaCode.append(getIndent(depth)).append("}\n");
+    }
+    
+    /**
+     * Process using statement (IDisposable -> try-with-resources)
+     */
+    private static void processUsingStatement(Element element, StringBuilder javaCode, int depth) {
+        javaCode.append(getIndent(depth)).append("try (");
+        
+        // Look for declaration in condition or init
+        Element condition = getChildElement(element, "condition");
+        Element init = getChildElement(element, "init");
+        Element target = condition != null ? condition : init;
+        
+        if (target != null) {
+            Element declStmt = getChildElement(target, "decl_stmt");
+            if (declStmt != null) {
+                Element decl = getChildElement(declStmt, "decl");
+                if (decl != null) {
+                    String type = getChildElementText(decl, "type");
+                    String name = getDirectChildElementText(decl, "name");
+                    Element initExpr = getChildElement(decl, "init");
+                    javaCode.append(convertType(type)).append(" ").append(name);
+                    if (initExpr != null) {
+                        Element expr = getChildElement(initExpr, "expr");
+                        if (expr != null) {
+                            javaCode.append(" = ").append(convertExpression(getTextContent(expr)));
+                        }
+                    }
+                }
+            } else {
+                // Direct decl without decl_stmt wrapper
+                Element decl = getChildElement(target, "decl");
+                if (decl != null) {
+                    String type = getChildElementText(decl, "type");
+                    String name = getDirectChildElementText(decl, "name");
+                    Element initExpr = getChildElement(decl, "init");
+                    javaCode.append(convertType(type)).append(" ").append(name);
+                    if (initExpr != null) {
+                        Element expr = getChildElement(initExpr, "expr");
+                        if (expr != null) {
+                            javaCode.append(" = ").append(convertExpression(getTextContent(expr)));
+                        }
+                    }
+                }
+            }
+        }
+        
+        javaCode.append(") {\n");
+        
+        Element block = getChildElement(element, "block");
+        if (block != null) {
+            processChildren(block, javaCode, depth + 1);
+        }
+        
+        javaCode.append(getIndent(depth)).append("}\n");
+    }
+    
+    /**
+     * Convert C# expressions to Java (handles ??, ??=, ?., ?[], and C# API calls)
+     */
+    private static String convertExpression(String expr) {
+        if (expr == null) return null;
+        
+        // Null-coalescing assignment: a ?? = b -> a = (a != null ? a : b) 
+        // Handle the space that srcML puts between ?? and = and remove trailing semicolon
+        expr = expr.replaceAll("(\\w+)\\s*\\?\\?\\s*=\\s*([^;]+);?", "$1 = ($1 != null ? $1 : $2)");
+        
+        // Convert C# API method calls to Java equivalents
+        // Handle DateTime.Now.Ticks first (before general .Now and .Ticks conversion)
+        expr = expr.replaceAll("DateTime\\.Now\\.Ticks\\b", "System.currentTimeMillis()");
+        expr = expr.replaceAll("LocalDateTime\\.Now\\.Ticks\\b", "System.currentTimeMillis()");
+        
+        expr = expr.replaceAll("\\.Length\\b", ".length()");
+        expr = expr.replaceAll("\\.ToUpper\\(\\)", ".toUpperCase()");
+        expr = expr.replaceAll("\\.ToLower\\(\\)", ".toLowerCase()");
+        expr = expr.replaceAll("\\.ToString\\(\\)", ".toString()");
+        expr = expr.replaceAll("\\.Message\\b", ".getMessage()");
+        expr = expr.replaceAll("LocalDateTime\\.Now\\b", "LocalDateTime.now()");
+        expr = expr.replaceAll("\\.Ticks\\b", "");
+        
+        // Null-conditional element access: a?[i] -> (a != null && a.length() > i ? a.charAt(i) : null)
+        expr = expr.replaceAll("(\\w+)\\?\\[(\\d+)\\]", "($1 != null && $1.length() > $2 ? $1.charAt($2) : null)");
+        
+        // Null-conditional operator: a?.b -> (a != null ? a.b : null)
+        expr = expr.replaceAll("(\\w+)\\?\\.([\\w()]+)", "($1 != null ? $1.$2 : null)");
+        
+        // Null-coalescing operator: a ?? b ?? c -> nested ternary operators
+        // Strategy: Process from left to right, repeatedly replacing the FIRST ?? operator
+        // This handles chained ?? correctly: a ?? b ?? c becomes (a != null ? a : b) ?? c then ((a != null ? a : b) != null ? (a != null ? a : b) : c)
+        expr = convertNullCoalescing(expr);
+        
+        // C# property references to field references
+        // Match the full pattern including the dot: value.HasValue -> value != null
+        expr = expr.replaceAll("(\\w+)\\.HasValue\\b", "$1 != null");
+        expr = expr.replaceAll("\\.Value\\b", "");
+        
+        // Convert C# types in expressions
+        expr = convertType(expr);
+        
+        return expr;
+    }
+    
+    /**
+     * Check if element has a child with given tag name
+     */
+    private static boolean hasChildElement(Element parent, String tagName) {
+        NodeList children = parent.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element && ((Element) child).getTagName().equals(tagName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    /**
+     * Convert null-coalescing operators (??) to Java ternary operators.
+     * Handles complex nested expressions including method calls, property access, and chained ??.
+     * Uses recursive strategy to handle ?? inside method arguments.
+     */
+    private static String convertNullCoalescing(String expr) {
+        if (!expr.contains("??")) {
+            return expr;
+        }
+        
+        // First, recursively process any method arguments that contain ??
+        expr = processMethodArgumentsRecursively(expr);
+        
+        // Now handle ?? at the top level
+        java.util.List<String> parts = splitByNullCoalescingTopLevel(expr);
+        
+        if (parts.size() <= 1) {
+            return expr; // No top-level ?? found
+        }
+        
+        // Build the ternary expression from left to right
+        String result = parts.get(0).trim();
+        for (int i = 1; i < parts.size(); i++) {
+            String rightOperand = parts.get(i).trim();
+            result = "(" + result + " != null ? " + result + " : " + rightOperand + ")";
+        }
+        
+        return result;
+    }
+    
+    /**
+     * Recursively process method arguments to convert ?? operators inside them
+     */
+    private static String processMethodArgumentsRecursively(String expr) {
+        StringBuilder result = new StringBuilder();
+        int i = 0;
+        
+        while (i < expr.length()) {
+            // Find method call opening parenthesis
+            if (expr.charAt(i) == '(' && i > 0 && Character.isLetterOrDigit(expr.charAt(i - 1))) {
+                result.append('(');
+                i++;
+                
+                // Extract the argument list
+                StringBuilder args = new StringBuilder();
+                int depth = 1;
+                boolean inString = false;
+                
+                while (i < expr.length() && depth > 0) {
+                    char c = expr.charAt(i);
+                    
+                    if (c == '"' && (i == 0 || expr.charAt(i - 1) != '\\')) {
+                        inString = !inString;
+                    }
+                    
+                    if (!inString) {
+                        if (c == '(') depth++;
+                        else if (c == ')') depth--;
+                    }
+                    
+                    if (depth > 0) {
+                        args.append(c);
+                    }
+                    i++;
+                }
+                
+                // Recursively convert ?? in the arguments
+                String convertedArgs = args.toString();
+                if (convertedArgs.contains("??")) {
+                    // Split by commas at depth 0 to handle multiple arguments
+                    java.util.List<String> argList = splitArguments(convertedArgs);
+                    StringBuilder convertedArgList = new StringBuilder();
+                    for (int j = 0; j < argList.size(); j++) {
+                        if (j > 0) convertedArgList.append(", ");
+                        String arg = argList.get(j);
+                        if (arg.contains("??")) {
+                            // Recursively convert this argument
+                            convertedArgList.append(convertNullCoalescing(arg));
+                        } else {
+                            convertedArgList.append(arg);
+                        }
+                    }
+                    convertedArgs = convertedArgList.toString();
+                }
+                
+                result.append(convertedArgs);
+                result.append(')');
+            } else {
+                result.append(expr.charAt(i));
+                i++;
+            }
+        }
+        
+        return result.toString();
+    }
+    
+    /**
+     * Split arguments by comma at depth 0 (not inside nested parentheses)
+     */
+    private static java.util.List<String> splitArguments(String args) {
+        java.util.List<String> result = new java.util.ArrayList<>();
+        StringBuilder current = new StringBuilder();
+        int depth = 0;
+        boolean inString = false;
+        
+        for (int i = 0; i < args.length(); i++) {
+            char c = args.charAt(i);
+            
+            if (c == '"' && (i == 0 || args.charAt(i - 1) != '\\')) {
+                inString = !inString;
+            }
+            
+            if (!inString) {
+                if (c == '(') depth++;
+                else if (c == ')') depth--;
+                else if (c == ',' && depth == 0) {
+                    result.add(current.toString());
+                    current = new StringBuilder();
+                    continue;
+                }
+            }
+            
+            current.append(c);
+        }
+        
+        if (current.length() > 0) {
+            result.add(current.toString());
+        }
+        
+        return result;
+    }
+    
+    /**
+     * Split by ?? at top level only (depth 0)
+     */
+    private static java.util.List<String> splitByNullCoalescingTopLevel(String expr) {
+        java.util.List<String> parts = new java.util.ArrayList<>();
+        StringBuilder current = new StringBuilder();
+        boolean inString = false;
+        int parenDepth = 0;
+        
+        for (int i = 0; i < expr.length(); i++) {
+            char c = expr.charAt(i);
+            
+            if (c == '"' && (i == 0 || expr.charAt(i - 1) != '\\')) {
+                inString = !inString;
+                current.append(c);
+                continue;
+            }
+            
+            if (inString) {
+                current.append(c);
+                continue;
+            }
+            
+            if (c == '(') {
+                parenDepth++;
+                current.append(c);
+                continue;
+            } else if (c == ')') {
+                parenDepth--;
+                current.append(c);
+                continue;
+            }
+            
+            // Check for ?? at depth 0 only
+            if (parenDepth == 0 && i + 1 < expr.length() && c == '?' && expr.charAt(i + 1) == '?') {
+                parts.add(current.toString());
+                current = new StringBuilder();
+                i++; // Skip the second ?
+                continue;
+            }
+            
+            current.append(c);
+        }
+        
+        if (current.length() > 0) {
+            parts.add(current.toString());
+        }
+        
+        return parts;
+    }
+    
+
+    
+    /**
+     * Find the end of the next single operand (not continuing past the next ?? operator).
+     * This is used for the RIGHT operand of ?? to ensure we only capture one term at a time.
+     * 
+     * For: "first ?? second ?? third"
+     * When at position after first "??", this should return end of "second" (not "second ?? third")
+     */
+    private static int findNextOperandEnd(String expr, int startIndex) {
+        int pos = startIndex;
+        int parenDepth = 0;
+        boolean inString = false;
+        boolean foundNonWhitespace = false;
+        
+        while (pos < expr.length()) {
+            char c = expr.charAt(pos);
+            
+            // Handle string literals
+            if (c == '"' && (pos == 0 || expr.charAt(pos - 1) != '\\')) {
+                if (!inString) {
+                    inString = true;
+                    foundNonWhitespace = true;
+                } else {
+                    // End of string literal
+                    return pos + 1;
+                }
+                pos++;
+                continue;
+            }
+            
+            if (inString) {
+                pos++;
+                continue;
+            }
+            
+            // Handle parentheses
+            if (c == '(') {
+                parenDepth++;
+                foundNonWhitespace = true;
+                pos++;
+                continue;
+            } else if (c == ')') {
+                if (parenDepth == 0) {
+                    // End of outer expression
+                    return pos;
+                }
+                parenDepth--;
+                pos++;
+                // If we just closed all parens and found something, this completes the operand
+                if (parenDepth == 0 && foundNonWhitespace) {
+                    return pos;
+                }
+                continue;
+            }
+            
+            // At depth 0, look for operators and boundaries
+            if (parenDepth == 0) {
+                // Whitespace handling
+                if (Character.isWhitespace(c)) {
+                    if (foundNonWhitespace) {
+                        // We've captured an operand, now check if next non-space is ?? or other delimiter
+                        int lookahead = pos + 1;
+                        while (lookahead < expr.length() && Character.isWhitespace(expr.charAt(lookahead))) {
+                            lookahead++;
+                        }
+                        if (lookahead + 1 < expr.length()) {
+                            if (expr.charAt(lookahead) == '?' && expr.charAt(lookahead + 1) == '?') {
+                                // Next operator is ?? - stop here
+                                return pos;
+                            }
+                            // Other delimiters
+                            char next = expr.charAt(lookahead);
+                            if (next == ';' || next == ',' || next == ')') {
+                                return pos;
+                            }
+                        }
+                    }
+                    pos++;
+                    continue;
+                }
+                
+                // Check for ?? operator immediately (without whitespace before)
+                if (foundNonWhitespace && pos + 1 < expr.length() && c == '?' && expr.charAt(pos + 1) == '?') {
+                    return pos;
+                }
+                
+                // Statement/expression delimiters
+                if (c == ';' || c == ',') {
+                    return pos;
+                }
+                
+                // Track that we found content
+                foundNonWhitespace = true;
+            }
+            
+            pos++;
+        }
+        
+        return expr.length(); // End of string
+    }
+    
+    /**
+     * Find the start index of the left operand for a ?? operator.
+     * Handles method calls with (), property chains with ., and parenthesized expressions.
+     */
+    private static int findLeftOperandStart(String expr, int operatorIndex) {
+        int pos = operatorIndex - 1;
+        
+        // Skip trailing whitespace
+        while (pos >= 0 && Character.isWhitespace(expr.charAt(pos))) {
+            pos--;
+        }
+        
+        // Track parentheses depth for complex expressions
+        int parenDepth = 0;
+        boolean inString = false;
+        
+        // Work backwards
+        while (pos >= 0) {
+            char c = expr.charAt(pos);
+            
+            // Handle string literals
+            if (c == '"' && (pos == 0 || expr.charAt(pos - 1) != '\\')) {
+                inString = !inString;
+                pos--;
+                continue;
+            }
+            
+            if (inString) {
+                pos--;
+                continue;
+            }
+            
+            // Handle parentheses
+            if (c == ')') {
+                parenDepth++;
+            } else if (c == '(') {
+                parenDepth--;
+                if (parenDepth < 0) {
+                    // We've gone past the start of this expression
+                    return pos + 1;
+                }
+            }
+            
+            // If we're at depth 0 and hit a boundary character, stop
+            if (parenDepth == 0) {
+                if (c == ';' || c == ',' || c == '=' || c == '+' || c == '-' || 
+                    c == '*' || c == '/' || c == '&' || c == '|' || c == '<' || c == '>') {
+                    // Check if it's part of an operator like ==, !=, <=, >=, etc.
+                    if (pos > 0 && (expr.charAt(pos - 1) == '=' || expr.charAt(pos - 1) == '!' || 
+                                    expr.charAt(pos - 1) == '<' || expr.charAt(pos - 1) == '>')) {
+                        pos--;
+                        continue;
+                    }
+                    return pos + 1;
+                }
+            }
+            
+            pos--;
+        }
+        
+        return 0; // Start of string
+    }
+    
+    /**
      * Process if statements with pattern matching support
      */
     private static void processIfStatement(Element element, StringBuilder javaCode, int depth) {
         Element condition = getChildElement(element, "condition");
-        Element thenBlock = getChildElement(element, "then");
-        Element elseBlock = getChildElement(element, "else");
+        Element block = getChildElement(element, "block");
+        Element elseBlock = null;
+        
+        // Check for else
+        NodeList elseNodes = element.getElementsByTagName("else");
+        if (elseNodes.getLength() > 0) {
+            elseBlock = (Element) elseNodes.item(0);
+        }
         
         javaCode.append(getIndent(depth)).append("if (");
         
         if (condition != null) {
             String conditionText = getTextContent(condition);
             conditionText = convertPatternMatching(conditionText);
+            conditionText = convertExpression(conditionText); // Apply all expression conversions
             javaCode.append(conditionText);
         }
         
         javaCode.append(") {\n");
         
-        if (thenBlock != null) {
-            processChildren(thenBlock, javaCode, depth + 1);
+        if (block != null) {
+            processChildren(block, javaCode, depth + 1);
         }
         
         javaCode.append(getIndent(depth)).append("}");
         
         if (elseBlock != null) {
             javaCode.append(" else {\n");
-            processChildren(elseBlock, javaCode, depth + 1);
+            Element elseBlockContent = getChildElement(elseBlock, "block");
+            if (elseBlockContent != null) {
+                processChildren(elseBlockContent, javaCode, depth + 1);
+            }
             javaCode.append(getIndent(depth)).append("}");
         }
         
@@ -730,11 +1604,26 @@ public class SrcMLBasedCSharpProcessor {
             Element incr = getChildElement(element, "incr");
             
             javaCode.append(getIndent(depth)).append("for (");
-            if (init != null) javaCode.append(getTextContent(init));
+            if (init != null) {
+                String initText = getTextContent(init).trim();
+                // Remove any trailing semicolons from init
+                initText = initText.replaceAll(";+$", "");
+                javaCode.append(initText);
+            }
             javaCode.append("; ");
-            if (condition != null) javaCode.append(getTextContent(condition));
+            if (condition != null) {
+                String condText = getTextContent(condition).trim();
+                // Remove any trailing semicolons from condition
+                condText = condText.replaceAll(";+$", "");
+                javaCode.append(condText);
+            }
             javaCode.append("; ");
-            if (incr != null) javaCode.append(getTextContent(incr));
+            if (incr != null) {
+                String incrText = getTextContent(incr).trim();
+                // Remove any trailing semicolons from increment
+                incrText = incrText.replaceAll(";+$", "");
+                javaCode.append(incrText);
+            }
             javaCode.append(") {\n");
             
             Element block = getChildElement(element, "block");
@@ -752,6 +1641,34 @@ public class SrcMLBasedCSharpProcessor {
         for (int i = 0; i < children.getLength(); i++) {
             processXMLNode(children.item(i), javaCode, depth);
         }
+    }
+    
+    /**
+     * Get direct child element text (not nested)
+     */
+    private static String getDirectChildElementText(Element parent, String childTagName) {
+        NodeList children = parent.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element && ((Element) child).getTagName().equals(childTagName)) {
+                return child.getTextContent().trim();
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * Get direct child element (not descendants)
+     */
+    private static Element getDirectChildElement(Element parent, String childTagName) {
+        NodeList children = parent.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child instanceof Element && ((Element) child).getTagName().equals(childTagName)) {
+                return (Element) child;
+            }
+        }
+        return null;
     }
     
     private static String getChildElementText(Element parent, String childTagName) {
@@ -779,7 +1696,17 @@ public class SrcMLBasedCSharpProcessor {
         if (typeElement != null) {
             String type = getChildElementText(typeElement, "name");
             if (type != null) {
-                return type.equals("void") ? "void" : type.replace("string", "String");
+                if (type.equals("void")) {
+                    return "void";
+                }
+                // Check for nullable modifier: <modifier>?</modifier>
+                Element modifierElement = getChildElement(typeElement, "modifier");
+                if (modifierElement != null && "?".equals(modifierElement.getTextContent().trim())) {
+                    type = type + "?";
+                }
+                // Convert nullable types (int? -> Integer, char? -> Character)
+                type = convertNullableType(type);
+                return type.replace("string", "String");
             }
         }
         return "void";
@@ -788,13 +1715,54 @@ public class SrcMLBasedCSharpProcessor {
     private static String getMethodParameters(Element methodElement) {
         Element paramListElement = getChildElement(methodElement, "parameter_list");
         if (paramListElement != null) {
-            String params = getTextContent(paramListElement);
-            // Convert C# parameter syntax to Java
-            params = params.replaceAll("string\\[\\]", "String[]");
-            params = params.replaceAll("\\bstring\\b", "String");
-            params = params.replaceAll("\\bthis\\s+", ""); // Remove 'this' from extension method parameters
-            params = convertType(params);
-            return params.replaceAll("[()]", "");
+            StringBuilder params = new StringBuilder();
+            NodeList paramElements = paramListElement.getElementsByTagName("parameter");
+            
+            for (int i = 0; i < paramElements.getLength(); i++) {
+                Element paramElement = (Element) paramElements.item(i);
+                Element declElement = getChildElement(paramElement, "decl");
+                
+                if (declElement != null) {
+                    Element typeElement = getChildElement(declElement, "type");
+                    
+                    // Get parameter name - it's a direct child of decl, not nested in type
+                    String paramName = null;
+                    NodeList declChildren = declElement.getChildNodes();
+                    for (int j = 0; j < declChildren.getLength(); j++) {
+                        Node child = declChildren.item(j);
+                        if (child instanceof Element && ((Element) child).getTagName().equals("name") 
+                            && child.getParentNode() == declElement) {
+                            paramName = child.getTextContent().trim();
+                            break;
+                        }
+                    }
+                    
+                    if (typeElement != null && paramName != null) {
+                        String type = getChildElementText(typeElement, "name");
+                        
+                        // Check for nullable modifier
+                        Element modifierElement = getChildElement(typeElement, "modifier");
+                        if (modifierElement != null && "?".equals(modifierElement.getTextContent().trim())) {
+                            type = type + "?";
+                        }
+                        
+                        // Convert nullable and other types
+                        type = convertNullableType(type);
+                        type = convertType(type);
+                        type = type.replace("string", "String");
+                        
+                        // Handle 'this' keyword for extension methods
+                        paramName = paramName.replaceAll("\\bthis\\s+", "");
+                        
+                        if (i > 0) {
+                            params.append(", ");
+                        }
+                        params.append(type).append(" ").append(paramName);
+                    }
+                }
+            }
+            
+            return params.toString();
         }
         return "";
     }
@@ -830,6 +1798,9 @@ public class SrcMLBasedCSharpProcessor {
      */
     private static String convertNullableType(String type) {
         if (type == null) return null;
+        
+        // Remove whitespace around ?
+        type = type.replaceAll("\\s*\\?", "?");
         
         if (type.endsWith("?")) {
             String baseType = type.substring(0, type.length() - 1).trim();
@@ -953,13 +1924,22 @@ public class SrcMLBasedCSharpProcessor {
     
     /**
      * Get generics declaration from class/interface
+     * FIXED: Ignore pseudo parameter lists (from lambda expressions)
      */
     private static String getGenerics(Element element) {
-        Element genericsElement = getChildElement(element, "parameter_list");
-        if (genericsElement != null) {
-            String generics = getTextContent(genericsElement);
-            if (!generics.isEmpty()) {
-                return "<" + generics + ">";
+        NodeList paramLists = element.getElementsByTagName("parameter_list");
+        for (int i = 0; i < paramLists.getLength(); i++) {
+            Element paramList = (Element) paramLists.item(i);
+            // Skip pseudo parameter lists (from lambda expressions in properties)
+            String type = paramList.getAttribute("type");
+            if (type == null || !type.equals("pseudo")) {
+                // Check if it's a direct child of the class/interface element
+                if (paramList.getParentNode() == element) {
+                    String generics = getTextContent(paramList);
+                    if (!generics.isEmpty()) {
+                        return "<" + generics + ">";
+                    }
+                }
             }
         }
         return null;
@@ -969,6 +1949,20 @@ public class SrcMLBasedCSharpProcessor {
      * Get base class from class declaration
      */
     private static String getBaseClass(Element element) {
+        // Check for super_list (C# style: class Derived : Base)
+        Element superList = getChildElement(element, "super_list");
+        if (superList != null) {
+            Element superClass = getChildElement(superList, "super");
+            if (superClass != null) {
+                String className = getChildElementText(superClass, "name");
+                // If it doesn't start with I (interface convention), it's likely a base class
+                if (className != null && !(className.startsWith("I") && className.length() > 1 && Character.isUpperCase(className.charAt(1)))) {
+                    return className;
+                }
+            }
+        }
+        
+        // Fallback: check for super with extends
         Element superElement = getChildElement(element, "super");
         if (superElement != null) {
             NodeList extendsList = superElement.getElementsByTagName("extends");
@@ -984,6 +1978,34 @@ public class SrcMLBasedCSharpProcessor {
      * Get implemented interfaces from class declaration
      */
     private static String getImplementedInterfaces(Element element) {
+        // Check for super_list (C# style: class MyClass : IInterface1, IInterface2)
+        Element superList = getChildElement(element, "super_list");
+        if (superList != null) {
+            NodeList supers = superList.getElementsByTagName("super");
+            StringBuilder interfaces = new StringBuilder();
+            
+            for (int i = 0; i < supers.getLength(); i++) {
+                Element sup = (Element) supers.item(i);
+                String name = getChildElementText(sup, "name");
+                if (name != null) {
+                    // If it starts with I and next char is uppercase, it's likely an interface
+                    if (name.startsWith("I") && name.length() > 1 && Character.isUpperCase(name.charAt(1))) {
+                        if (interfaces.length() > 0) interfaces.append(", ");
+                        interfaces.append(name);
+                    } else if (i > 0) {
+                        // After first one, rest are interfaces in C#
+                        if (interfaces.length() > 0) interfaces.append(", ");
+                        interfaces.append(name);
+                    }
+                }
+            }
+            
+            if (interfaces.length() > 0) {
+                return interfaces.toString();
+            }
+        }
+        
+        // Fallback: check for super with implements
         Element superElement = getChildElement(element, "super");
         if (superElement != null) {
             NodeList implementsList = superElement.getElementsByTagName("implements");
@@ -999,11 +2021,50 @@ public class SrcMLBasedCSharpProcessor {
      * Get specifier (public, private, protected, static, etc.)
      */
     private static String getSpecifier(Element element) {
-        Element specifierElement = getChildElement(element, "specifier");
-        if (specifierElement != null) {
-            return getTextContent(specifierElement);
+        StringBuilder specifiers = new StringBuilder();
+        NodeList specifierElements = element.getElementsByTagName("specifier");
+        
+        for (int i = 0; i < specifierElements.getLength(); i++) {
+            Element specEl = (Element) specifierElements.item(i);
+            // Only get direct children, not nested ones
+            if (specEl.getParentNode() == element) {
+                String spec = getTextContent(specEl);
+                if (spec != null && !spec.isEmpty()) {
+                    if (specifiers.length() > 0) specifiers.append(" ");
+                    specifiers.append(spec);
+                }
+            }
+        }
+        
+        if (specifiers.length() > 0) {
+            return convertModifiers(specifiers.toString());
         }
         return null;
+    }
+    
+    /**
+     * Convert C# modifiers to Java modifiers
+     */
+    private static String convertModifiers(String modifiers) {
+        if (modifiers == null) return null;
+        
+        // sealed -> final
+        modifiers = modifiers.replace("sealed", "final");
+        
+        // Remove C#-specific modifiers that don't exist in Java
+        modifiers = modifiers.replace("virtual", "");
+        modifiers = modifiers.replace("override", "");
+        modifiers = modifiers.replace("new", "");
+        modifiers = modifiers.replace("partial", "");
+        modifiers = modifiers.replace("internal", "");
+        modifiers = modifiers.replace("unsafe", "");
+        modifiers = modifiers.replace("readonly", "final");
+        modifiers = modifiers.replace("const", "static final");
+        
+        // Clean up extra spaces
+        modifiers = modifiers.trim().replaceAll("\\s+", " ");
+        
+        return modifiers;
     }
     
     /**
@@ -1067,19 +2128,89 @@ public class SrcMLBasedCSharpProcessor {
     }
     
     /**
-     * Check if property has getter
+     * Check if property has getter (handles lambda-style, block-style, and auto-property accessors)
      */
     private static boolean hasGetter(Element propertyElement) {
+        // Check for <get> tag (old style)
         NodeList accessors = propertyElement.getElementsByTagName("get");
-        return accessors.getLength() > 0;
+        if (accessors.getLength() > 0) return true;
+        
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            // Check for lambda-style getter (get => ...)
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                String text = getTextContent(stmt);
+                if (text.contains("get") && text.contains("=>")) {
+                    return true;
+                }
+            }
+            
+            // Check for block-style getter (<function><name>get</name>)
+            NodeList functions = block.getElementsByTagName("function");
+            for (int i = 0; i < functions.getLength(); i++) {
+                Element func = (Element) functions.item(i);
+                String funcName = getChildElementText(func, "name");
+                if ("get".equals(funcName)) {
+                    return true;
+                }
+            }
+            
+            // Check for auto-property getter (<function_decl><name>get</name>)
+            NodeList funcDecls = block.getElementsByTagName("function_decl");
+            for (int i = 0; i < funcDecls.getLength(); i++) {
+                Element funcDecl = (Element) funcDecls.item(i);
+                String funcName = getChildElementText(funcDecl, "name");
+                if ("get".equals(funcName)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
     
     /**
-     * Check if property has setter
+     * Check if property has setter (handles lambda-style, block-style, and auto-property accessors)
      */
     private static boolean hasSetter(Element propertyElement) {
+        // Check for <set> tag (old style)
         NodeList accessors = propertyElement.getElementsByTagName("set");
-        return accessors.getLength() > 0;
+        if (accessors.getLength() > 0) return true;
+        
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            // Check for lambda-style setter (set => ...)
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                String text = getTextContent(stmt);
+                if (text.contains("set") && text.contains("=>")) {
+                    return true;
+                }
+            }
+            
+            // Check for block-style setter (<function><name>set</name>)
+            NodeList functions = block.getElementsByTagName("function");
+            for (int i = 0; i < functions.getLength(); i++) {
+                Element func = (Element) functions.item(i);
+                String funcName = getChildElementText(func, "name");
+                if ("set".equals(funcName)) {
+                    return true;
+                }
+            }
+            
+            // Check for auto-property setter (<function_decl><name>set</name>)
+            NodeList funcDecls = block.getElementsByTagName("function_decl");
+            for (int i = 0; i < funcDecls.getLength(); i++) {
+                Element funcDecl = (Element) funcDecls.item(i);
+                String funcName = getChildElementText(funcDecl, "name");
+                if ("set".equals(funcName)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
     
     /**
@@ -1088,6 +2219,34 @@ public class SrcMLBasedCSharpProcessor {
     private static String getEventType(Element eventElement) {
         Element typeElement = getChildElement(eventElement, "type");
         if (typeElement != null) {
+            // Check for generic type with <argument_list type="generic">
+            Element nameElement = getChildElement(typeElement, "name");
+            if (nameElement != null) {
+                Element argumentList = getChildElement(nameElement, "argument_list");
+                if (argumentList != null && "generic".equals(argumentList.getAttribute("type"))) {
+                    // Generic type: Action<T>, EventHandler<T>, etc.
+                    StringBuilder typeBuilder = new StringBuilder();
+                    String baseName = getDirectTextContent(nameElement); // e.g., "Action"
+                    typeBuilder.append(baseName);
+                    
+                    // Extract generic arguments
+                    NodeList arguments = argumentList.getElementsByTagName("argument");
+                    if (arguments.getLength() > 0) {
+                        typeBuilder.append("<");
+                        for (int i = 0; i < arguments.getLength(); i++) {
+                            if (i > 0) typeBuilder.append(", ");
+                            Element arg = (Element) arguments.item(i);
+                            String argType = getTextContent(arg).trim();
+                            typeBuilder.append(convertType(argType));
+                        }
+                        typeBuilder.append(">");
+                    }
+                    return typeBuilder.toString();
+                } else {
+                    // Non-generic type
+                    return getTextContent(nameElement);
+                }
+            }
             return getTextContent(typeElement);
         }
         return null;
@@ -1119,23 +2278,48 @@ public class SrcMLBasedCSharpProcessor {
      * Get loop variable for foreach
      */
     private static String getLoopVariable(Element loopElement) {
-        Element declElement = getChildElement(loopElement, "decl");
-        if (declElement != null) {
-            String decl = getTextContent(declElement);
-            return decl.trim();
+        // Navigate: foreach -> control -> init -> decl
+        Element controlElement = getChildElement(loopElement, "control");
+        if (controlElement != null) {
+            Element initElement = getChildElement(controlElement, "init");
+            if (initElement != null) {
+                Element declElement = getChildElement(initElement, "decl");
+                if (declElement != null) {
+                    // Get type and name, skip the "in" part
+                    String typeText = getDirectChildElementText(declElement, "type");
+                    String nameText = getDirectChildElementText(declElement, "name");
+                    if (typeText != null && nameText != null) {
+                        String javaType = convertType(typeText);
+                        return javaType + " " + nameText;
+                    }
+                }
+            }
         }
-        return "item";
+        return "var item";
     }
     
     /**
      * Get loop collection for foreach
      */
     private static String getLoopCollection(Element loopElement) {
-        Element exprElement = getChildElement(loopElement, "expr");
-        if (exprElement != null) {
-            return getTextContent(exprElement);
+        // Navigate: foreach -> control -> init -> decl -> range -> expr
+        Element controlElement = getChildElement(loopElement, "control");
+        if (controlElement != null) {
+            Element initElement = getChildElement(controlElement, "init");
+            if (initElement != null) {
+                Element declElement = getChildElement(initElement, "decl");
+                if (declElement != null) {
+                    Element rangeElement = getChildElement(declElement, "range");
+                    if (rangeElement != null) {
+                        Element exprElement = getChildElement(rangeElement, "expr");
+                        if (exprElement != null) {
+                            return getTextContent(exprElement).trim();
+                        }
+                    }
+                }
+            }
         }
-        return "";
+        return "collection";
     }
     
     /**
@@ -1167,17 +2351,197 @@ public class SrcMLBasedCSharpProcessor {
     }
     
     /**
+     * Check if property has an existing backing field
+     */
+    private static boolean hasExistingBackingField(Element propertyElement) {
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                Element lambdaElem = getChildElement(stmt, "expr");
+                if (lambdaElem != null) {
+                    lambdaElem = getChildElement(lambdaElem, "lambda");
+                    if (lambdaElem != null) {
+                        Element blockContent = getChildElement(lambdaElem, "block");
+                        if (blockContent != null) {
+                            String content = getTextContent(blockContent);
+                            // Check if it references a field (starts with _ or lowercase)
+                            if (content.contains("_") || (content.matches(".*[a-z][a-zA-Z0-9]*.*"))) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    
+    /**
+     * Get backing field name from property lambda expressions
+     */
+    private static String getBackingFieldName(Element propertyElement) {
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                String text = getTextContent(stmt);
+                // Look for field references in get => _field or set => _field = value
+                if (text.contains("=>")) {
+                    String[] parts = text.split("=>");
+                    if (parts.length > 1) {
+                        String body = parts[1].trim();
+                        // Extract field name (first identifier)
+                        String[] tokens = body.split("[\\s=;]+");
+                        for (String token : tokens) {
+                            if (token.matches("[_a-zA-Z][_a-zA-Z0-9]*")) {
+                                return token;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * Get getter body from lambda or block-style accessor
+     */
+    private static String getGetterBody(Element propertyElement) {
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            // Check for lambda-style (get => _health)
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                String text = getTextContent(stmt);
+                if (text.contains("get") && text.contains("=>")) {
+                    String[] parts = text.split("=>");
+                    if (parts.length > 1) {
+                        return parts[1].replace(";", "").trim();
+                    }
+                }
+            }
+            
+            // Check for block-style (get { return _health; })
+            NodeList functions = block.getElementsByTagName("function");
+            for (int i = 0; i < functions.getLength(); i++) {
+                Element func = (Element) functions.item(i);
+                String funcName = getChildElementText(func, "name");
+                if ("get".equals(funcName)) {
+                    // Extract return statement
+                    NodeList returns = func.getElementsByTagName("return");
+                    if (returns.getLength() > 0) {
+                        Element returnStmt = (Element) returns.item(0);
+                        Element expr = getChildElement(returnStmt, "expr");
+                        if (expr != null) {
+                            return getTextContent(expr);
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * Get setter body from lambda or block-style accessor
+     */
+    private static String getSetterBody(Element propertyElement) {
+        Element block = getChildElement(propertyElement, "block");
+        if (block != null) {
+            // Check for lambda-style (set => _health = value)
+            NodeList stmts = block.getElementsByTagName("expr_stmt");
+            for (int i = 0; i < stmts.getLength(); i++) {
+                Element stmt = (Element) stmts.item(i);
+                String text = getTextContent(stmt);
+                if (text.contains("set") && text.contains("=>")) {
+                    String[] parts = text.split("=>");
+                    if (parts.length > 1) {
+                        return parts[1].replace(";", "").trim();
+                    }
+                }
+            }
+            
+            // Check for block-style (set { _health = value; })
+            NodeList functions = block.getElementsByTagName("function");
+            for (int i = 0; i < functions.getLength(); i++) {
+                Element func = (Element) functions.item(i);
+                String funcName = getChildElementText(func, "name");
+                if ("set".equals(funcName)) {
+                    // Extract assignment statement
+                    Element funcBlock = getChildElement(func, "block");
+                    if (funcBlock != null) {
+                        NodeList setStmts = funcBlock.getElementsByTagName("expr_stmt");
+                        if (setStmts.getLength() > 0) {
+                            Element setStmt = (Element) setStmts.item(0);
+                            Element expr = getChildElement(setStmt, "expr");
+                            if (expr != null) {
+                                return getTextContent(expr);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * Generate event listener pattern (add/remove/fire methods + interface)
+     */
+    private static void generateEventListenerPattern(String eventName, String eventType, StringBuilder javaCode, int depth) {
+        // Remove "On" prefix if it exists
+        String cleanEventName = eventName.startsWith("On") ? eventName.substring(2) : eventName;
+        
+        String listenerField = "on" + cleanEventName + "Listeners";
+        String listenerInterface = "On" + cleanEventName + "Listener";
+        
+        // Generate listener list field
+        javaCode.append(getIndent(depth)).append("private java.util.List<").append(listenerInterface)
+               .append("> ").append(listenerField).append(" = new java.util.ArrayList<>();\n");
+        
+        // Generate add listener method
+        javaCode.append(getIndent(depth)).append("public void add").append(listenerInterface)
+               .append("(").append(listenerInterface).append(" listener) {\n");
+        javaCode.append(getIndent(depth + 1)).append(listenerField).append(".add(listener);\n");
+        javaCode.append(getIndent(depth)).append("}\n");
+        
+        // Generate remove listener method
+        javaCode.append(getIndent(depth)).append("public void remove").append(listenerInterface)
+               .append("(").append(listenerInterface).append(" listener) {\n");
+        javaCode.append(getIndent(depth + 1)).append(listenerField).append(".remove(listener);\n");
+        javaCode.append(getIndent(depth)).append("}\n");
+        
+        // Generate fire method
+        javaCode.append(getIndent(depth)).append("protected void fire").append(cleanEventName).append("() {\n");
+        javaCode.append(getIndent(depth + 1)).append("for (").append(listenerInterface)
+               .append(" listener : ").append(listenerField).append(") {\n");
+        javaCode.append(getIndent(depth + 2)).append("listener.on").append(cleanEventName).append("();\n");
+        javaCode.append(getIndent(depth + 1)).append("}\n");
+        javaCode.append(getIndent(depth)).append("}\n");
+        
+        // Generate listener interface
+        javaCode.append(getIndent(depth)).append("public interface ").append(listenerInterface).append(" {\n");
+        javaCode.append(getIndent(depth + 1)).append("void on").append(cleanEventName).append("();\n");
+        javaCode.append(getIndent(depth)).append("}\n");
+    }
+    
+    /**
      * Parse Java source code to CompilationUnit
      */
     @SuppressWarnings({ "rawtypes", "unchecked" })
     private static CompilationUnit parseJavaCode(String javaCode, String fileName) {
         try {
             Map options = JavaCore.getOptions();
-            options.put(JavaCore.COMPILER_COMPLIANCE, JavaCore.VERSION_1_8);
-            options.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, JavaCore.VERSION_1_8);
-            options.put(JavaCore.COMPILER_SOURCE, JavaCore.VERSION_1_8);
+            options.put(JavaCore.COMPILER_COMPLIANCE, JavaCore.VERSION_11);
+            options.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, JavaCore.VERSION_11);
+            options.put(JavaCore.COMPILER_SOURCE, JavaCore.VERSION_11);
             
-            ASTParser parser = ASTParser.newParser(AST.JLS8);
+            ASTParser parser = ASTParser.newParser(AST.JLS11);
             parser.setSource(javaCode.toCharArray());
             parser.setCompilerOptions(options);
             parser.setResolveBindings(false);
@@ -1193,5 +2557,106 @@ public class SrcMLBasedCSharpProcessor {
             System.err.println("SrcMLBasedCSharpProcessor: Java parsing error: " + e.getMessage());
         }
         return null;
+    }
+    
+    public static void main(String[] args) {
+        if (args.length < 1) {
+            System.err.println("Usage: java SrcMLBasedCSharpProcessor <csharp-file>");
+            System.exit(1);
+        }
+        
+        String fileName = args[0];
+        try {
+            File file = new File(fileName);
+            String content = new String(Files.readAllBytes(file.toPath()));
+            CompilationUnit cu = transformCSharpToJavaAST(content, fileName);
+            if (cu != null) {
+                System.out.println("Successfully created CompilationUnit with " + cu.types().size() + " types");
+            } else {
+                System.err.println("Failed to create CompilationUnit");
+                System.exit(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+    
+    /**
+     * Extract modifiers (public, private, static, etc.) from an expression element
+     */
+    private static String extractModifiersFromExpr(Element exprElement) {
+        StringBuilder modifiers = new StringBuilder();
+        NodeList specifiers = exprElement.getElementsByTagName("specifier");
+        for (int i = 0; i < specifiers.getLength(); i++) {
+            String spec = specifiers.item(i).getTextContent().trim();
+            if (!spec.isEmpty() && !isTypeKeyword(spec)) {
+                if (modifiers.length() > 0) modifiers.append(" ");
+                modifiers.append(spec);
+            }
+        }
+        return modifiers.length() > 0 ? modifiers.toString() : "public";
+    }
+    
+    /**
+     * Extract return type from an expression element
+     */
+    private static String extractTypeFromExpr(Element exprElement) {
+        // First try to find a type element
+        Element typeElement = getChildElement(exprElement, "type");
+        if (typeElement != null) {
+            return getTextContent(typeElement).trim();
+        }
+        
+        // Otherwise, look through specifiers for type keywords
+        NodeList specifiers = exprElement.getElementsByTagName("specifier");
+        for (int i = 0; i < specifiers.getLength(); i++) {
+            String spec = specifiers.item(i).getTextContent().trim();
+            if (isTypeKeyword(spec)) {
+                return convertType(spec);
+            }
+        }
+        
+        // Look for name element that could be the type
+        Element nameElement = getChildElement(exprElement, "name");
+        if (nameElement != null) {
+            String name = getTextContent(nameElement).trim();
+            // Filter out actual variable names (heuristic: if it's a known type)
+            if (isTypeKeyword(name) || name.matches("[A-Z][a-zA-Z0-9]*")) {
+                return convertType(name);
+            }
+        }
+        
+        return "Object"; // Default fallback
+    }
+    
+    /**
+     * Get direct text content of an element (immediate text, not nested)
+     */
+    private static String getDirectTextContent(Element element) {
+        if (element == null) return "";
+        StringBuilder content = new StringBuilder();
+        NodeList children = element.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child.getNodeType() == Node.TEXT_NODE) {
+                content.append(child.getTextContent());
+            } else if (child instanceof Element) {
+                Element childEl = (Element) child;
+                if ("name".equals(childEl.getTagName())) {
+                    content.append(getTextContent(childEl));
+                    break;
+                }
+            }
+        }
+        return content.toString().trim();
+    }
+    
+    /**
+     * Check if a string is a C# type keyword
+     */
+    private static boolean isTypeKeyword(String word) {
+        return word.matches("(int|string|bool|double|float|decimal|long|short|byte|void|object|" +
+                           "List|Dictionary|Array|Tuple|Func|Action|Task|void|var)");
     }
 }

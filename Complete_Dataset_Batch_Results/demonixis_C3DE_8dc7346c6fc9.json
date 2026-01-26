@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/demonixis/C3DE.git",
+	"sha1": "8dc7346c6fc9f50608ded0e752a09715bd40bf94",
+	"url": "https://github.com/demonixis/C3DE/commit/8dc7346c6fc9f50608ded0e752a09715bd40bf94",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Wheel : int to Wheel : float in class EDMouseComponent",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/Editor/Components/EDMouseComponent.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Wheel : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/Editor/Components/EDMouseComponent.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Wheel : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable _sceneObjectToAdd : in to _toAdd : in in method protected Update(timer Stopwatch) : void from class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 35,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "_sceneObjectToAdd : in"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 141,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 35,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_toAdd : in"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _sceneObjectToAdd : List<string> to _toAdd : List<string> in class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_sceneObjectToAdd : List<string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_toAdd : List<string>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _selectedObject : SceneObject to _selected : SceneObject in class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 29,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_selectedObject : SceneObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 29,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_selected : SceneObject"
+}]
+}
+]
+}]
+}

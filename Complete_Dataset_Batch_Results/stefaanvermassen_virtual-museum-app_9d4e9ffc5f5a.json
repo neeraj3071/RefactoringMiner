@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/stefaanvermassen/virtual-museum-app.git",
+	"sha1": "9d4e9ffc5f5a2eae0d67fce893df8808b9589bfd",
+	"url": "https://github.com/stefaanvermassen/virtual-museum-app/commit/9d4e9ffc5f5a2eae0d67fce893df8808b9589bfd",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public hide() : void renamed to package close() : void in class GUIControl",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hide() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package close() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public show() : void renamed to public open() : void in class GUIControl",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 25,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public show() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public open() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package close() : void from class GUIControl",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hide() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Gui/GUIControl.cs",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package close() : void"
+}]
+}
+]
+}]
+}

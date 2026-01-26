@@ -1,0 +1,504 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/DSprtn/GTFO_VR_Plugin.git",
+	"sha1": "232a1fe77eb7e2c4ddea1c4f238aca9b8df8a6c8",
+	"url": "https://github.com/DSprtn/GTFO_VR_Plugin/commit/232a1fe77eb7e2c4ddea1c4f238aca9b8df8a6c8",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class InjectRemoveCrosshair renamed to InjectAimSpreadInVR",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectRemoveCrosshair.cs",
+		"startLine": 17,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "InjectRemoveCrosshair"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectWeaponRecoilForVRControllers.cs",
+		"startLine": 21,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "InjectAimSpreadInVR"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private CreatePointerObjects() : void extracted from private Start() : void in class LaserPointer",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 22,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 89,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CreatePointerObjects() : void"
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "GTFO_VR/LaserPointer.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreatePointerObjects()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public GetMainControllerForward() : Vector3 renamed to public GetAimForward() : Vector3 in class VRInitiator",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 112,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainControllerForward() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 135,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetAimForward() : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public GetMainControllerPosition() : Vector3 renamed to public GetControllerPosition() : Vector3 in class VRInitiator",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 121,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainControllerPosition() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 183,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetControllerPosition() : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public GetMainControllerRotation() : Quaternion renamed to public GetControllerRotation() : Quaternion in class VRInitiator",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 130,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainControllerRotation() : Quaternion"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 174,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetControllerRotation() : Quaternion"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetupOrigin() : void extracted from private Setup() : void in class VRInitiator",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 149,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Setup() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 215,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetupOrigin() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 202,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Setup() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetupOrigin()"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetupLaserPointer() : void extracted from private Setup() : void in class VRInitiator",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 149,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Setup() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 154,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 222,
+		"endLine": 228,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetupLaserPointer() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 225,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 202,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Setup() : void"
+}, {
+		"filePath": "GTFO_VR/VRInitiator.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetupLaserPointer()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package Postfix(__instance FirstPersonItemHolder, ___WieldedItem ItemEquippable) : void renamed to package Prefix(__instance FirstPersonItemHolder, ___WieldedItem ItemEquippable) : void in class InjectControllerAim",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectControllerAim.cs",
+		"startLine": 20,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Postfix(__instance FirstPersonItemHolder, ___WieldedItem ItemEquippable) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectControllerAim.cs",
+		"startLine": 20,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Prefix(__instance FirstPersonItemHolder, ___WieldedItem ItemEquippable) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type __instance : CrosshairGuiLayer to __instance : BulletWeapon in method package Prefix(__instance BulletWeapon) : void from class InjectAimSpreadInVR",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectRemoveCrosshair.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "__instance : CrosshairGuiLayer"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR_BepInEx/Core/InjectWeaponRecoilForVRControllers.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "__instance : BulletWeapon"
+}]
+}
+]
+}]
+}

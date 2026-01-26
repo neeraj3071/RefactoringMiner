@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Saticmotion/Vivista.git",
+	"sha1": "9d9856139b29c1da13d78929512aa7cf7c7c9574",
+	"url": "https://github.com/Saticmotion/Vivista/commit/9d9856139b29c1da13d78929512aa7cf7c7c9574",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable ulTriggerValue : ulong to triggerValue : ulong in method package Update() : void from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ulTriggerValue : ulong"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 10,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 16,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "triggerValue : ulong"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 10,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public Play() : void extracted from public TogglePlay() : void in class VideoController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 175,
+		"endLine": 191,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public TogglePlay() : void"
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 4,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 189,
+		"endLine": 194,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Play() : void"
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 175,
+		"endLine": 187,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public TogglePlay() : void"
+}, {
+		"filePath": "Assets/Scripts/VideoController.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 10,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Play()"
+}]
+}
+]
+}]
+}

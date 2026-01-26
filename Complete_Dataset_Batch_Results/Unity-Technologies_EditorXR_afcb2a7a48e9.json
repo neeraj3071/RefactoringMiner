@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "afcb2a7a48e97b237c000e959715ba6e06e6cee2",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/afcb2a7a48e97b237c000e959715ba6e06e6cee2",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private OnWorkspaceClosed(workspace Workspace) : void renamed to private OnWorkspaceDestroyed(workspace Workspace) : void in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 818,
+		"endLine": 821,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnWorkspaceClosed(workspace Workspace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 818,
+		"endLine": 821,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private OnWorkspaceDestroyed(workspace Workspace) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package OnDestroy() : void from class ChessboardWorkspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Chessboard/ChessboardWorkspace.cs",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDestroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Chessboard/ChessboardWorkspace.cs",
+		"startLine": 172,
+		"endLine": 176,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnDestroy() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,552 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "9c17f045b3b17e6dfe0cf34176768b30ac344010",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/9c17f045b3b17e6dfe0cf34176768b30ac344010",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type offset : int to offset : float in method protected UpdateVisibleItem(data TData, offset float) : void from class ListViewController",
+	"leftSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewController.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 56,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "Scripts/ListView/ListViewController.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewController.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 56,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : float"
+}, {
+		"filePath": "Scripts/ListView/ListViewController.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected UpdateItemTransform(t Transform, offset int) : void renamed to protected UpdateItem(t Transform, offset float) : void in class ListViewControllerBase",
+	"leftSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewControllerBase.cs",
+		"startLine": 171,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected UpdateItemTransform(t Transform, offset int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewControllerBase.cs",
+		"startLine": 170,
+		"endLine": 175,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected UpdateItem(t Transform, offset float) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type offset : int to offset : float in method protected UpdateItem(t Transform, offset float) : void from class ListViewControllerBase",
+	"leftSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewControllerBase.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 59,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/ListView/ListViewControllerBase.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 50,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : float"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_ExpandedDataLength : int to m_ExpandedDataLength : float in class NestedListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_ExpandedDataLength : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_ExpandedDataLength : float"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type count : int to count : float in method package UpdateNestedItem(data TData, count float, depth int) : void from class NestedListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 55,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 55,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "count : float"
+}, {
+		"filePath": "Workspaces/Common/Scripts/NestedListViewController.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_VisibleItemCount : int to m_VisibleItemHeight : float in class HierarchyListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Hierarchy/Scripts/HierarchyListViewController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_VisibleItemCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Hierarchy/Scripts/HierarchyListViewController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_VisibleItemHeight : float"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_VisibleItemCount : int to m_VisibleItemHeight : float in class HierarchyListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Hierarchy/Scripts/HierarchyListViewController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_VisibleItemCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Hierarchy/Scripts/HierarchyListViewController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_VisibleItemHeight : float"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable inspectorListView : var to listView : var in method protected OnBoundsChanged() : void from class InspectorWorkspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 8,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "inspectorListView : var"
+}, {
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 4,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 8,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "listView : var"
+}, {
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected UpdateRecursively(data List<InspectorData>) : void from class InspectorListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/InspectorListViewController.cs",
+		"startLine": 132,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateRecursively(data List<InspectorData>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/InspectorListViewController.cs",
+		"startLine": 122,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateRecursively(data List<InspectorData>) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter noSettle : bool in method package UpdateItem(t Transform, offset float, noSettle bool) : void from class InspectorListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/InspectorListViewController.cs",
+		"startLine": 182,
+		"endLine": 186,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateItem(t Transform, offset float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/InspectorListViewController.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 46,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "noSettle : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/InspectorListViewController.cs",
+		"startLine": 175,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package UpdateItem(t Transform, offset float, noSettle bool) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type offset : int to offset : float in method protected UpdateVisibleItem(data AssetData, offset float) : void from class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 61,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 61,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : float"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type offset : int to offset : float in method package UpdateGridItem(item AssetGridItem, offset float) : void from class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 43,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 4,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : float"
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 4,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type offset : int to offset : float in method package UpdateFolderItem(data FolderData, offset float, depth int, expanded bool) : void from class FolderListViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListViewController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "Workspaces/Project/Scripts/FolderListViewController.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListViewController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : float"
+}, {
+		"filePath": "Workspaces/Project/Scripts/FolderListViewController.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type folderScrollHandle : BaseHandle to folderScrollHandle : LinearHandle in class ProjectUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "folderScrollHandle : BaseHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "folderScrollHandle : LinearHandle"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_FolderScrollHandle : BaseHandle to m_FolderScrollHandle : LinearHandle in class ProjectUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 22,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_FolderScrollHandle : BaseHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 24,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_FolderScrollHandle : LinearHandle"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type assetScrollHandle : BaseHandle to assetScrollHandle : LinearHandle in class ProjectUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "assetScrollHandle : BaseHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "assetScrollHandle : LinearHandle"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_AssetScrollHandle : BaseHandle to m_AssetScrollHandle : LinearHandle in class ProjectUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 22,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_AssetScrollHandle : BaseHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/ProjectUI.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_AssetScrollHandle : LinearHandle"
+}]
+}
+]
+}]
+}

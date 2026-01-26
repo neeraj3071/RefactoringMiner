@@ -1,0 +1,405 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "a308b5759fab2c8a029055a314c24cc2910493c3",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/a308b5759fab2c8a029055a314c24cc2910493c3",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 6,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "DeltaBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 9,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "DeltaBuffer"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _buffer : RingBuffer<Vector3> to _buffer : RingBuffer<ValueTimePair<T>> in class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_buffer : RingBuffer<Vector3>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 42,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_buffer : RingBuffer<ValueTimePair<T>>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _buffer : RingBuffer<ValueTimePair<T>> from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _buffer : RingBuffer<Vector3>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 42,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _buffer : RingBuffer<ValueTimePair<T>>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private _previousSampleTime : float from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package _previousSampleTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _previousSampleTime : float"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Vector3 to T in method public Get(idx int) : T from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Get(idx int) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 10,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "T"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public Get(idx int) : T"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Vector3 to T in method public GetLatest() : T from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLatest() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 10,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "T"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetLatest() : T"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sample : Vector3 to sample : T in method public Add(sample T, sampleTime float) : void from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 19,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sample : Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sample : T"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sample : Vector3 to sample : T in method public Set(idx int, sample T, sampleTime float) : void from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sample : Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sample : T"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sample : Vector3 to sample : T in method public SetLatest(sample T, sampleTime float) : void from class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sample : Vector3"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 25,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sample : T"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Delta() : float from class DeltaFloatBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 140,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Delta() : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 90,
+		"endLine": 100,
+		"startColumn": 19,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Delta() : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute isFull : bool to IsFull : bool in class RingBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/RingBuffer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 15,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "isFull : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/RingBuffer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 15,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "IsFull : bool"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public isFull : bool renamed to public IsFull : bool and moved from class DeltaFloatBuffer to class DeltaBuffer",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 15,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public isFull : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/DataStructures/DeltaBuffer.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 15,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public IsFull : bool"
+}]
+}
+]
+}]
+}

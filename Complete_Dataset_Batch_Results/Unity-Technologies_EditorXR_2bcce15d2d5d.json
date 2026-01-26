@@ -1,0 +1,279 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "2bcce15d2d5dfa9c76d713cbd4d6d62fad59d3fa",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/2bcce15d2d5dfa9c76d713cbd4d6d62fad59d3fa",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method package TestAssignability(obj Object) : bool extracted from package SetObject(obj Object) : bool in class InspectorObjectFieldItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 31,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package SetObject(obj Object) : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 59,
+		"endLine": 62,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package TestAssignability(obj Object) : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 31,
+		"endLine": 52,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package SetObject(obj Object) : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "TestAssignability(obj)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package UpdateVisuals(obj Object) : void extracted from package SetObject(obj Object) : bool in class InspectorObjectFieldItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 31,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package SetObject(obj Object) : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 6,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 4,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 37,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 44,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 40,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 43,
+		"endLine": 47,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 64,
+		"endLine": 79,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package UpdateVisuals(obj Object) : void"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 67,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 31,
+		"endLine": 52,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package SetObject(obj Object) : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 21,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateVisuals(obj)"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 11,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 4,
+		"endColumn": 11,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type Object : is to Object : as in method package CanDropForFieldBlock(fieldBlock Transform, dropObject object) from class InspectorObjectFieldItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "Object : is"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorObjectFieldItem.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "Object : as"
+}]
+}
+]
+}]
+}

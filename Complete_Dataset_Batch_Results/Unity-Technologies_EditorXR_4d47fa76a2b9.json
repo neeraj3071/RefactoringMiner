@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "4d47fa76a2b9abf38e01b4182e4a5bb32e975a82",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/4d47fa76a2b9abf38e01b4182e4a5bb32e975a82",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class IUsesProxyType renamed to IUsesDeviceType",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IUsesProxyType.cs",
+		"startLine": 9,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "IUsesProxyType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IUsesDeviceType.cs",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "IUsesDeviceType"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute package Dictionary : readonly from class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 18,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "package Dictionary : readonly"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package Dictionary : readonly from class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 18,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package Dictionary : readonly"
+}]
+}
+]
+}]
+}

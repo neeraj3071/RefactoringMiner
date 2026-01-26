@@ -1,0 +1,195 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MozillaReality/FirefoxRealityPC.git",
+	"sha1": "69f5b9feb5cb84a2b723412c94fbb0acf911aadf",
+	"url": "https://github.com/MozillaReality/FirefoxRealityPC/commit/69f5b9feb5cb84a2b723412c94fbb0acf911aadf",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public ShowVideo(videoTexture Texture2D, windowIndex int) : void renamed to private ProjectVideo360(videoTexture Texture2D) : void in class FxRVideoController",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 34,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowVideo(videoTexture Texture2D, windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 85,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ProjectVideo360(videoTexture Texture2D) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter windowIndex : int in method public ShowVideo(videoTexture Texture2D, windowIndex int) : void from class FxRVideoController",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 51,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "windowIndex : int"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 34,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowVideo(videoTexture Texture2D, windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 85,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private ProjectVideo360(videoTexture Texture2D) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ProjectVideo360(videoTexture Texture2D) : void from class FxRVideoController",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 34,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowVideo(videoTexture Texture2D, windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 85,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ProjectVideo360(videoTexture Texture2D) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _videoSphere : GameObject to _videoProjection : GameObject in class FxRVideoController",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_videoSphere : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRVideoController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_videoProjection : GameObject"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private HandleFullScreenVideoClosed(windowIndex int) : void renamed to public RecreateVideoTexture() : void in class FxRWindow",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 46,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleFullScreenVideoClosed(windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 56,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public RecreateVideoTexture() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter windowIndex : int in method private HandleFullScreenVideoClosed(windowIndex int) : void from class FxRWindow",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 46,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "windowIndex : int"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 46,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleFullScreenVideoClosed(windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 56,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RecreateVideoTexture() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public RecreateVideoTexture() : void from class FxRWindow",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 46,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleFullScreenVideoClosed(windowIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.cs",
+		"startLine": 56,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public RecreateVideoTexture() : void"
+}]
+}
+]
+}]
+}

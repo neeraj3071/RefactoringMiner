@@ -1,0 +1,1242 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/stefaanvermassen/virtual-museum-app.git",
+	"sha1": "917488b7b9ba6a91dd4ba5acd0337813c3f54e60",
+	"url": "https://github.com/stefaanvermassen/virtual-museum-app/commit/917488b7b9ba6a91dd4ba5acd0337813c3f54e60",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package RotateUpdate() : void renamed to package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 110,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RotateUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package PlaceObjectUpdate() : void renamed to package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 150,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PlaceObjectUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package PlaceArtUpdate() : void renamed to package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 176,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PlaceArtUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 132,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type tool : int to tool : Tools in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "tool : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 18,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "tool : Tools"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method package MoveUpdate() : void inlined to package Update() : void in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 87,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package MoveUpdate() : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 90,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 101,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 92,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 90,
+		"endLine": 97,
+		"startColumn": 62,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 101,
+		"endLine": 107,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 92,
+		"endLine": 96,
+		"startColumn": 90,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 45,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "MoveUpdate()"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 90,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 50,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 56,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 71,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 56,
+		"endLine": 67,
+		"startColumn": 62,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 71,
+		"endLine": 100,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 122,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dir : var to dragPointWorld : var in method package Update() : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dir : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dragPointWorld : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable info : RaycastHit to mouseInfo : RaycastHit in method package Update() : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "info : RaycastHit"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mouseInfo : RaycastHit"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable info : RaycastHit to mouseInfo : RaycastHit in method package Update() : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 24,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "info : RaycastHit"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mouseInfo : RaycastHit"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package Move(dragPointWorld Vector3, anchorPointWorld Vector3) : void extracted from package Update() : void in class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 45,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Move(dragPointWorld Vector3, anchorPointWorld Vector3) : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 133,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 50,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Move(dragPointWorld,anchorPointWorld)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable dragPointWorld : var in method package Update() : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "dragPointWorld : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 133,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter dragPointScreen : Vector3 in method package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 110,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RotateUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dragPointScreen : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter anchorPointScreen : Vector3 in method package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 110,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RotateUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "anchorPointScreen : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter centerPointWorld : Vector3 in method package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 110,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RotateUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 69,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "centerPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type point : var to dragPointWorld : Vector3 in method package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 21,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "point : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dragPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable point : var to dragPointWorld : Vector3 in method package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 21,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "point : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "dragPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter anchorPointWorld : Vector3 in method package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 150,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PlaceObjectUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 46,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "anchorPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type point : var to dragPointWorld : Vector3 in method package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 21,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "point : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dragPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable point : var to dragPointWorld : Vector3 in method package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 21,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "point : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "dragPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter anchorPointWorld : Vector3 in method package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 176,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PlaceArtUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 43,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "anchorPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 132,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package PlaceArt(dragPointWorld Vector3, anchorPointWorld Vector3) : void"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable dragPoint : Vector3 to dragPointScreen : var in method package Update() : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dragPoint : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dragPointScreen : var"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute dragAnchor : Vector3 to anchorPointWorld : Vector3 in method package Move(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dragAnchor : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 39,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "anchorPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 133,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute dragPoint : Vector3 to anchorPointScreen : Vector3 in method package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dragPoint : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 13,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "anchorPointScreen : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute dragAnchor : Vector3 to centerPointWorld : Vector3 in method package Rotate(dragPointScreen Vector3, anchorPointScreen Vector3, centerPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dragAnchor : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 69,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "centerPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute dragPoint : Vector3 to anchorPointWorld : Vector3 in method package PlaceObject(dragPointWorld Vector3, anchorPointWorld Vector3) : void from class DrawController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dragPoint : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 145,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 46,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "anchorPointWorld : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Building/DrawController.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 144,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

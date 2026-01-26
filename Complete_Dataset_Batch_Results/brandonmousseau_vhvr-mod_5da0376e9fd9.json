@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "5da0376e9fd95a2cfcc5ab6a73895c26f601688e",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/5da0376e9fd95a2cfcc5ab6a73895c26f601688e",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter distance : float in method public ThrowCalculate(throwSpeed float, distance float) from class ThrowableManager.ThrowCalculate",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 327,
+		"endLine": 333,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ThrowCalculate(posStart Vector3, posEnd Vector3, throwSpeed float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 53,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "distance : float"
+}, {
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 286,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ThrowCalculate(throwSpeed float, distance float)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter posStart : Vector3 in method public ThrowCalculate(posStart Vector3, posEnd Vector3, throwSpeed float) from class ThrowableManager.ThrowCalculate",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 35,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "posStart : Vector3"
+}, {
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 327,
+		"endLine": 333,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ThrowCalculate(posStart Vector3, posEnd Vector3, throwSpeed float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 286,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ThrowCalculate(throwSpeed float, distance float)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter posEnd : Vector3 in method public ThrowCalculate(posStart Vector3, posEnd Vector3, throwSpeed float) from class ThrowableManager.ThrowCalculate",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 53,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "posEnd : Vector3"
+}, {
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 327,
+		"endLine": 333,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ThrowCalculate(posStart Vector3, posEnd Vector3, throwSpeed float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 286,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ThrowCalculate(throwSpeed float, distance float)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter direction : Vector3 in method private CalculateThrowAndDistance(direction Vector3) : ThrowCalculate from class ThrowableManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 336,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateThrowAndDistance() : ThrowCalculate"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 58,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "direction : Vector3"
+}, {
+		"filePath": "ValheimVRMod/Scripts/ThrowableManager.cs",
+		"startLine": 293,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private CalculateThrowAndDistance(direction Vector3) : ThrowCalculate"
+}]
+}
+]
+}]
+}

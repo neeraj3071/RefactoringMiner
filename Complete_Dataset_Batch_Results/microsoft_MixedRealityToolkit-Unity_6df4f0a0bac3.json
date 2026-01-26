@@ -1,0 +1,222 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "6df4f0a0bac3fae67f2c96131ca9831af807c127",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/6df4f0a0bac3fae67f2c96131ca9831af807c127",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method package PerformStrafe() : void extracted from public OnInputChanged(eventData InputEventData<Vector2>) : void in class TeleportPointer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 396,
+		"endLine": 515,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnInputChanged(eventData InputEventData<Vector2>) : void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 41,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 473,
+		"endLine": 473,
+		"startColumn": 41,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 41,
+		"endColumn": 143,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 41,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 41,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 278,
+		"endLine": 299,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package PerformStrafe() : void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 13,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 463,
+		"endLine": 578,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnInputChanged(eventData InputEventData<Vector2>) : void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 539,
+		"endLine": 539,
+		"startColumn": 41,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PerformStrafe()"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 21,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 290,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 289,
+		"endLine": 292,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 287,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 286,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 295,
+		"endLine": 298,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Pointers/TeleportPointer.cs",
+		"startLine": 296,
+		"endLine": 298,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

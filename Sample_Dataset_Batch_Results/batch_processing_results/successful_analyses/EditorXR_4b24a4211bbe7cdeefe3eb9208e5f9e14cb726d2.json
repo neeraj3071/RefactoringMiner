@@ -1,0 +1,369 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "4b24a4211bbe7cdeefe3eb9208e5f9e14cb726d2",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/4b24a4211bbe7cdeefe3eb9208e5f9e14cb726d2",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private Dictionary : readonly from class MeshData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/MeshData.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/MeshData.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private Dictionary : readonly"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private Dictionary : readonly from class MeshData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/MeshData.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/MeshData.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private Dictionary : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_CellSize : float from class SpatialHash",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_CellSize : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_CellSize : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private Dictionary : readonly from class SpatialHash",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 12,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Dictionary : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private List : readonly from class SpatialHash",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private List : readonly"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private RemoveObjectFromBuckets(buckets ICollection<Vector4i>, spatialObject SpatialObject) : void from class SpatialHash",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 12,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveObjectFromBuckets(buckets ICollection<Vector4i>, spatialObject SpatialObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/SpatialHash.cs",
+		"startLine": 121,
+		"endLine": 127,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private RemoveObjectFromBuckets(buckets ICollection<Vector4i>, spatialObject SpatialObject) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package OnIntersection(tester IntersectionTester, obj SpatialObject) : void renamed to package OnIntersectionEnter(tester IntersectionTester, obj SpatialObject) : void in class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 134,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnIntersection(tester IntersectionTester, obj SpatialObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 166,
+		"endLine": 170,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package OnIntersectionEnter(tester IntersectionTester, obj SpatialObject) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_ConeSegments : int from class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_ConeSegments : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 15,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_ConeSegments : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_ConeRadius : float from class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_ConeRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_ConeRadius : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_ConeHeight : float from class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_ConeHeight : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_ConeHeight : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private Dictionary : readonly from class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 12,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Dictionary : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_Testers : IntersectionTester[] from class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 24,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_Testers : IntersectionTester[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 32,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_Testers : IntersectionTester[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private s_ProcessedObjectCount : int from class SpatialHashUpdateModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 14,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package s_ProcessedObjectCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private s_ProcessedObjectCount : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private s_FrameStartTime : float from class SpatialHashUpdateModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package s_FrameStartTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private s_FrameStartTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private s_MaxDeltaTime : float from class SpatialHashUpdateModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 16,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package s_MaxDeltaTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialHashUpdateModule.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private s_MaxDeltaTime : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,252 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dantman/elite-vr-cockpit.git",
+	"sha1": "13c90cf1aab5de60be56134fc8df6e6405c876a8",
+	"url": "https://github.com/dantman/elite-vr-cockpit/commit/13c90cf1aab5de60be56134fc8df6e6405c876a8",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class EDControlBindings.EDControlAxis moved to .EDControlBindings.SendControlButton.EDControlAxis",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/EDControlBindings.cs",
+		"startLine": 13,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EDControlBindings.EDControlAxis"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/EDControlBindings.cs",
+		"startLine": 49,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".EDControlBindings.SendControlButton.EDControlAxis"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class EDControlBindings.EDControlButton moved to .EDControlBindings.SendControlButton.EDControlButton",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/EDControlBindings.cs",
+		"startLine": 64,
+		"endLine": 293,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EDControlBindings.EDControlButton"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/EDControlBindings.cs",
+		"startLine": 100,
+		"endLine": 328,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".EDControlBindings.SendControlButton.EDControlButton"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter string : ref in method package GetDefaultKeycombo(string ref) from class BooleanControlButtonAsset",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ControlButtonAssets/BooleanControlButtonAsset.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 49,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "string : ref"
+}, {
+		"filePath": "Assets/Scripts/ControlButtonAssets/BooleanControlButtonAsset.cs",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 30,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetDefaultKeycombo(string ref)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ControlButtonAssets/BooleanControlButtonAsset.cs",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 53,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package GetDefaultKeycombo()"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter string : ref in method package GetDefaultKeycombo(string ref) from class SimpleControlButtonAsset",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ControlButtonAssets/SimpleControlButtonAsset.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 49,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "string : ref"
+}, {
+		"filePath": "Assets/Scripts/ControlButtonAssets/SimpleControlButtonAsset.cs",
+		"startLine": 33,
+		"endLine": 37,
+		"startColumn": 30,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetDefaultKeycombo(string ref)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ControlButtonAssets/SimpleControlButtonAsset.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 53,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package GetDefaultKeycombo()"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected directionKeys : Dictionary<Direction,string> from class MenuController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 47,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private directionKeys : Dictionary<Direction,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 49,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected directionKeys : Dictionary<Direction,string>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected Select() : void from class MenuController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Select() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 72,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Select() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected Back() : void from class MenuController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Back() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Back() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter button : ActionsController.DirectionAction in method protected NavigateDirection(direction Direction, button ActionsController.DirectionAction) : void from class MenuController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private NavigateDirection(direction Direction) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 71,
+		"endColumn": 111,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "button : ActionsController.DirectionAction"
+}, {
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected NavigateDirection(direction Direction, button ActionsController.DirectionAction) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected NavigateDirection(direction Direction, button ActionsController.DirectionAction) : void from class MenuController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 79,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private NavigateDirection(direction Direction) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MenuController.cs",
+		"startLine": 82,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected NavigateDirection(direction Direction, button ActionsController.DirectionAction) : void"
+}]
+}
+]
+}]
+}

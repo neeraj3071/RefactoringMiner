@@ -1,0 +1,234 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "3ff2b99b4e54ef539472eb2241666326f4587ff6",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/3ff2b99b4e54ef539472eb2241666326f4587ff6",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public OnInspectorGUI() : void from class RayButtonEditor",
+	"leftSideLocations": [{
+		"filePath": "Editor/RayButtonEditor.cs",
+		"startLine": 8,
+		"endLine": 14,
+		"startColumn": 18,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnInspectorGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/RayButtonEditor.cs",
+		"startLine": 16,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public OnInspectorGUI() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rayEventData : RayEventData to eventData : RayEventData in method package DragNumericValue(eventData RayEventData) : void from class NumericInputField",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 24,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rayEventData : RayEventData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "eventData : RayEventData"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Open() : void from class NumericInputField",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 127,
+		"endLine": 146,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Open() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 148,
+		"endLine": 165,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Open() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private OnKeyPress(keyChar char) : void from class NumericInputField",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 158,
+		"endLine": 181,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnKeyPress(keyChar char) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 177,
+		"endLine": 183,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private OnKeyPress(keyChar char) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter keyChars : char[] in method public Setup(keyChars char[]) : void from class NumericKeyboardUI",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericKeyboardUI.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "keyChars : char[]"
+}, {
+		"filePath": "Scripts/UI/NumericKeyboardUI.cs",
+		"startLine": 25,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Setup(keyChars char[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/NumericKeyboardUI.cs",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Setup() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package OnEnable() : void from class NumericInputFieldEditor",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 22,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/NumericInputFieldEditor.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnEnable() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package OnEnable() : void from class NumericInputFieldEditor",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDisable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/NumericInputFieldEditor.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnEnable() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected OnEnable() : void from class NumericInputField to package OnEnable() : void from class NumericInputFieldEditor",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 22,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/NumericInputFieldEditor.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnEnable() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method protected OnDisable() : void from class NumericInputField to package OnEnable() : void from class NumericInputFieldEditor",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/NumericInputField.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDisable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/NumericInputFieldEditor.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnEnable() : void"
+}]
+}
+]
+}]
+}

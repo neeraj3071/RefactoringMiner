@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "1b11d68d27c9faacc8a24d9e8b526d5bf9f48328",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/1b11d68d27c9faacc8a24d9e8b526d5bf9f48328",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ConfigParser renamed to AvatarConfigParser",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/ConfigParser.cs",
+		"startLine": 15,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ConfigParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/AvatarConfigFileParser.cs",
+		"startLine": 15,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "AvatarConfigParser"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type configParser : ConfigParser to avatarConfigParser : AvatarConfigParser in method public OscService(localSettingsService ILocalSettingsService, loggerFactory ILoggerFactory, avatarConfigParser AvatarConfigParser, paramSupervisor IParamSupervisor) from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "configParser : ConfigParser"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "avatarConfigParser : AvatarConfigParser"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter configParser : ConfigParser to avatarConfigParser : AvatarConfigParser in method public OscService(localSettingsService ILocalSettingsService, loggerFactory ILoggerFactory, avatarConfigParser AvatarConfigParser, paramSupervisor IParamSupervisor) from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "configParser : ConfigParser"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "avatarConfigParser : AvatarConfigParser"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parserLogger : ILogger<ConfigParser> to parserLogger : ILogger<AvatarConfigParser> in method public AvatarConfigParser(parserLogger ILogger<AvatarConfigParser>) from class AvatarConfigParser",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/ConfigParser.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parserLogger : ILogger<ConfigParser>"
+}, {
+		"filePath": "VRCFaceTracking.Core/ConfigParser.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/AvatarConfigFileParser.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 31,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parserLogger : ILogger<AvatarConfigParser>"
+}, {
+		"filePath": "VRCFaceTracking.Core/AvatarConfigFileParser.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

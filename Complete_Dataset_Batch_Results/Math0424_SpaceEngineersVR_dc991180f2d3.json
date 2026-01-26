@@ -1,0 +1,858 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Math0424/SpaceEngineersVR.git",
+	"sha1": "dc991180f2d326fa3453243e5b5b8a30629b375f",
+	"url": "https://github.com/Math0424/SpaceEngineersVR/commit/dc991180f2d326fa3453243e5b5b8a30629b375f",
+	"refactorings": [{
+	"type": "Move Attribute",
+	"description": "Move Attribute private unsafe : readonly from class Actions to private unsafe : readonly from class Button",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package InputDigitalActionData_t_size : uint from class Actions to package InputDigitalActionData_t_size : uint from class Button",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 45,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package InputDigitalActionData_t_size : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 45,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package InputDigitalActionData_t_size : uint"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private unsafe : readonly from class Actions to private unsafe : readonly from class Joystick",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package InputAnalogActionData_t_size : uint from class Actions to package InputAnalogActionData_t_size : uint from class Joystick",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 45,
+		"endColumn": 113,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package InputAnalogActionData_t_size : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 45,
+		"endColumn": 113,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package InputAnalogActionData_t_size : uint"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Position : ulong from class Actions to public Position : Vector2 from class Joystick",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Position : ulong"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Position : Vector2"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Position : ulong to Position : Vector2 in class Joystick",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Position : ulong"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Position : Vector2"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Button from class Actions",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 5,
+		"endLine": 319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Actions"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 45,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package InputDigitalActionData_t_size : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 3,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Actions"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 6,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Button"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Button.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 45,
+		"endColumn": 115,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package InputDigitalActionData_t_size : uint"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Joystick from class Actions",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 5,
+		"endLine": 319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Actions"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 45,
+		"endColumn": 113,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package InputAnalogActionData_t_size : uint"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Position : ulong"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 3,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Actions"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 7,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Joystick"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 45,
+		"endColumn": 113,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package InputAnalogActionData_t_size : uint"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private unsafe : readonly"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Position : Vector2"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Joystick from class Actions",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 5,
+		"endLine": 319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Actions"
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 3,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Actions"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 7,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Joystick"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Update() : void extracted from public Update() : void in class Actions & moved to class Joystick",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 239,
+		"endLine": 318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 13,
+		"endColumn": 161,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 130,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 131,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "RightHandSkeleton.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "LeftHandSkeleton.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Teleport.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SpectatorMode.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SignalMode.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VoiceChat.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Pause.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ToggleView.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Chat.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Contract.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "BlockSelector.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ToolbarConfig.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "BuildPlanner.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ColorPicker.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ColorSelector.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Inventory.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Terminal.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "TabletHand.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CubeSize.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PlacementMode.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SymmetrySetup.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ToggleSymmetry.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VoxelHands.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Respawn.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Lights.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Power.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Park.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Broadcasting.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Dampeners.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Jetpack.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Helmet.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Interact.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Next.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Previous.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Unequip.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Reload.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Secondary.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Primary.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ToolHand.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Crouch.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Jump.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Roll.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Vertical.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Thrust.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Rotate.Update()"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Move.Update()"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable input : var in method public Update() : void from class Actions",
+	"leftSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "input : var"
+}, {
+		"filePath": "SpaceEngineersVR/Player/Actions.cs",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 13,
+		"endColumn": 161,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "SpaceEngineersVR/Player/Joystick.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 130,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

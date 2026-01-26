@@ -1,0 +1,720 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/pcriadoperez/readyPlayer2.git",
+	"sha1": "14947960b74dffd820f8c224c9ef50c740b6eab1",
+	"url": "https://github.com/pcriadoperez/readyPlayer2/commit/14947960b74dffd820f8c224c9ef50c740b6eab1",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 8,
+		"endLine": 59,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "AutoConfigureWindow"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 9,
+		"endLine": 161,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "AutoConfigureWindow"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private SaveSetting(cap PlayerSettings.WSACapability) : void renamed to private ApplySetting(setting PlayerSettings.WSACapability) : void in class CapabilitySettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SaveSetting(cap PlayerSettings.WSACapability) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ApplySetting(setting PlayerSettings.WSACapability) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter cap : PlayerSettings.WSACapability to setting : PlayerSettings.WSACapability in method private LoadSetting(setting PlayerSettings.WSACapability) : void from class CapabilitySettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cap : PlayerSettings.WSACapability"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 28,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "setting : PlayerSettings.WSACapability"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 4,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected LoadSettings() : void from class CapabilitySettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadSettings() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 38,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected LoadSettings() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter cap : PlayerSettings.WSACapability to setting : PlayerSettings.WSACapability in method private ApplySetting(setting PlayerSettings.WSACapability) : void from class CapabilitySettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 28,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cap : PlayerSettings.WSACapability"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 29,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "setting : PlayerSettings.WSACapability"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 4,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private LoadDefaults() : void renamed to protected LoadSettings() : void in class ProjectSettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 219,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadDefaults() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 238,
+		"endLine": 244,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected LoadSettings() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected ApplySettings() : void from class ProjectSettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 33,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ApplySettings() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 180,
+		"endLine": 236,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected ApplySettings() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected LoadStrings() : void from class ProjectSettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 227,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadStrings() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 246,
+		"endLine": 262,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected LoadStrings() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected LoadSettings() : void from class ProjectSettingsWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 219,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadDefaults() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 238,
+		"endLine": 244,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected LoadSettings() : void"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private currentCaps : Dictionary<PlayerSettings.WSACapability,bool> renamed to public Values : Dictionary<TSetting,bool> and moved from class CapabilitySettingsWindow to class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 58,
+		"endColumn": 124,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private currentCaps : Dictionary<PlayerSettings.WSACapability,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private settings : Dictionary<ProjectSetting,bool> renamed to public Values : Dictionary<TSetting,bool> and moved from class ProjectSettingsWindow to class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 44,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private settings : Dictionary<ProjectSetting,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private names : Dictionary<ProjectSetting,string> renamed to public Names : Dictionary<TSetting,string> and moved from class ProjectSettingsWindow to class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 46,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private names : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 39,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public Names : Dictionary<TSetting,string>"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private descriptions : Dictionary<ProjectSetting,string> renamed to public Descriptions : Dictionary<TSetting,string> and moved from class ProjectSettingsWindow to class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 46,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private descriptions : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public Descriptions : Dictionary<TSetting,string>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type setting : ProjectSetting to setting : TSetting in method private SettingToggle(setting TSetting) : void from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "setting : ProjectSetting"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 4,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "setting : TSetting"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 4,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SettingToggle(setting ProjectSetting) : void from class ProjectSettingsWindow to private SettingToggle(setting TSetting) : void from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 268,
+		"endLine": 279,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SettingToggle(setting ProjectSetting) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SettingToggle(setting TSetting) : void"
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method protected OnApply() : void moved from class CapabilitySettingsWindow to class AutoConfigureWindow & inlined to protected OnGUI() : void",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 57,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "protected OnApply() : void"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 35,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "protected OnGUI() : void"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "OnApply()"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 72,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "protected OnGUI() : void"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 13,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type currentCaps : Dictionary<PlayerSettings.WSACapability,bool> to Values : Dictionary<TSetting,bool> in class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 58,
+		"endColumn": 124,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "currentCaps : Dictionary<PlayerSettings.WSACapability,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public Values : Dictionary<TSetting,bool> from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/CapabilitySettingsWindow.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 58,
+		"endColumn": 124,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private currentCaps : Dictionary<PlayerSettings.WSACapability,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public Values : Dictionary<TSetting,bool> from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 44,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private settings : Dictionary<ProjectSetting,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type settings : Dictionary<ProjectSetting,bool> to Values : Dictionary<TSetting,bool> in class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 44,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settings : Dictionary<ProjectSetting,bool>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Values : Dictionary<TSetting,bool>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type names : Dictionary<ProjectSetting,string> to Names : Dictionary<TSetting,string> in class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 46,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "names : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 39,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Names : Dictionary<TSetting,string>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public Names : Dictionary<TSetting,string> from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 46,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private names : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 39,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public Names : Dictionary<TSetting,string>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type descriptions : Dictionary<ProjectSetting,string> to Descriptions : Dictionary<TSetting,string> in class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 46,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "descriptions : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Descriptions : Dictionary<TSetting,string>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public Descriptions : Dictionary<TSetting,string> from class AutoConfigureWindow",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/ProjectSettingsWindow.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 46,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private descriptions : Dictionary<ProjectSetting,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Editor/AutoConfigureWindow.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public Descriptions : Dictionary<TSetting,string>"
+}]
+}
+]
+}]
+}

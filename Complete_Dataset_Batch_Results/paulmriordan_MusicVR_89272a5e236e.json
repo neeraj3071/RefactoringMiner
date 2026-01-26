@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/paulmriordan/MusicVR.git",
+	"sha1": "89272a5e236e2b1f4bc3b3cb5f2f941642c9d666",
+	"url": "https://github.com/paulmriordan/MusicVR/commit/89272a5e236e2b1f4bc3b3cb5f2f941642c9d666",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_selectPressed : bool to m_pointerSelectDown : bool in initializer VRPointerEvents from class VRPointerEvents",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "m_selectPressed : bool"
+}, {
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 10,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "m_pointerSelectDown : bool"
+}, {
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public OnPointerSelectedButtonPressed() : void renamed to public OnPointerStay() : void in class WallButton",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/WallButton.cs",
+		"startLine": 176,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPointerSelectedButtonPressed() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/WallButton.cs",
+		"startLine": 176,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnPointerStay() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public OnPointerSelectedButtonReleased() : void renamed to public OnPointerUp() : void in class WallButton",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/WallButton.cs",
+		"startLine": 187,
+		"endLine": 203,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPointerSelectedButtonReleased() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/WallButton.cs",
+		"startLine": 187,
+		"endLine": 203,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnPointerUp() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter eventName : string in method package TryIssuePointerSelectedDownEvent(eventName string) : void from class VRPointerEvents",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 72,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package TryIssuePointerSelectedDownEvent() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "eventName : string"
+}, {
+		"filePath": "Assets/Scripts/VRTKSubclasses/VRPointerEvents.cs",
+		"startLine": 84,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package TryIssuePointerSelectedDownEvent(eventName string) : void"
+}]
+}
+]
+}]
+}

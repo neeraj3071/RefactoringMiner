@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ronellsicat/DxR.git",
+	"sha1": "23ce3772f4cfb9ed436d31424edf6ad10a07c37c",
+	"url": "https://github.com/ronellsicat/DxR/commit/23ce3772f4cfb9ed436d31424edf6ad10a07c37c",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(selectedObject.transform.Find(\"SliderBar\") == null) to if(selectedObject.transform.Find(\"SliderBar\") != null) in method public ThresholdFilterUpdated() : void from class Interactions",
+	"leftSideLocations": [{
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(selectedObject.transform.Find(\"SliderBar\") == null)"
+}, {
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 327,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ThresholdFilterUpdated() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 347,
+		"endLine": 357,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(selectedObject.transform.Find(\"SliderBar\") != null)"
+}, {
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 338,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public ThresholdFilterUpdated() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ThresholdFilterUpdated() : void from class Interactions",
+	"leftSideLocations": [{
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 327,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ThresholdFilterUpdated() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/DxR/Scripts/Interactions.cs",
+		"startLine": 338,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ThresholdFilterUpdated() : void"
+}]
+}
+]
+}]
+}

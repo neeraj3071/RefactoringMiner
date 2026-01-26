@@ -1,0 +1,1005 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ExtendRealityLtd/Zinnia.Unity.git",
+	"sha1": "2b96c317985fb876fe295ee57ed9706d8662b129",
+	"url": "https://github.com/ExtendRealityLtd/Zinnia.Unity/commit/2b96c317985fb876fe295ee57ed9706d8662b129",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract UpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract UpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract UpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdatePosition(source Transform, target Transform) : void renamed to protected DoUpdatePosition(source Transform, target Transform) : void in class ModifyRigidbodyVelocity",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 49,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 49,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdatePosition(source Transform, target Transform) : void from class ModifyRigidbodyVelocity",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 49,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 49,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package UpdatePosition(source Transform, target Transform) : void renamed to package DoUpdatePosition(source Transform, target Transform) : void in class ModifyTransform",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 15,
+		"endLine": 23,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 15,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateRotation(source Transform, target Transform) : void renamed to protected DoUpdateRotation(source Transform, target Transform) : void in class ModifyTransform",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 30,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateScale(source Transform, target Transform) : void renamed to protected DoUpdateScale(source Transform, target Transform) : void in class ModifyTransform",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 45,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdateRotation(source Transform, target Transform) : void from class ModifyTransform",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 30,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdateScale(source Transform, target Transform) : void from class ModifyTransform",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 45,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyTransform.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdatePosition(source Transform, target Transform) : void renamed to protected DoUpdatePosition(source Transform, target Transform) : void in class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 520,
+		"endLine": 523,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 520,
+		"endLine": 523,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateRotation(source Transform, target Transform) : void renamed to protected DoUpdateRotation(source Transform, target Transform) : void in class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 525,
+		"endLine": 528,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 525,
+		"endLine": 528,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateScale(source Transform, target Transform) : void renamed to protected DoUpdateScale(source Transform, target Transform) : void in class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 530,
+		"endLine": 533,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 530,
+		"endLine": 533,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdatePosition(source Transform, target Transform) : void from class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 520,
+		"endLine": 523,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 520,
+		"endLine": 523,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdateRotation(source Transform, target Transform) : void from class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 525,
+		"endLine": 528,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 525,
+		"endLine": 528,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdateScale(source Transform, target Transform) : void from class FollowModifierMock",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 530,
+		"endLine": 533,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/Tracking/Follow/ObjectFollowTest.cs",
+		"startLine": 530,
+		"endLine": 533,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 23,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdatePosition(source Transform, target Transform) : void from class SourceFollowActiveTarget to public UpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 67,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 67,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateRotation(source Transform, target Transform) : void from class SourceFollowActiveTarget to public UpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isActiveAndEnabled || appliedModifier == null) to if(isActiveAndEnabled && ValidateCache(source,target)) in method public UpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isActiveAndEnabled || appliedModifier == null)"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isActiveAndEnabled && ValidateCache(source,target))"
+}, {
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateScale(source Transform, target Transform) : void from class SourceFollowActiveTarget to public UpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/SourceFollowActiveTarget.cs",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdatePosition(source Transform, target Transform) : void from class TargetsFollowSource to public UpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 21,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateRotation(source Transform, target Transform) : void from class TargetsFollowSource to public UpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateScale(source Transform, target Transform) : void from class TargetsFollowSource to public UpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/TargetsFollowSource.cs",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public abstract UpdatePosition(source Transform, target Transform) : void renamed to protected abstract DoUpdatePosition(source Transform, target Transform) : void in class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected abstract DoUpdatePosition(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdatePosition(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected abstract DoUpdatePosition(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public abstract UpdateRotation(source Transform, target Transform) : void renamed to protected abstract DoUpdateRotation(source Transform, target Transform) : void in class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected abstract DoUpdateRotation(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected abstract DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public abstract UpdateScale(source Transform, target Transform) : void renamed to protected abstract DoUpdateScale(source Transform, target Transform) : void in class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected abstract DoUpdateScale(source Transform, target Transform) : void from class FollowModifier",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/FollowModifier.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected abstract DoUpdateScale(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateRotation(source Transform, target Transform) : void renamed to protected DoUpdateRotation(source Transform, target Transform) : void in class ModifyRigidbodyVelocity",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 71,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 71,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected DoUpdateRotation(source Transform, target Transform) : void from class ModifyRigidbodyVelocity",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 71,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateRotation(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 71,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DoUpdateRotation(source Transform, target Transform) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package UpdateScale(source Transform, target Transform) : void renamed to package DoUpdateScale(source Transform, target Transform) : void in class ModifyRigidbodyVelocity",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 102,
+		"endLine": 104,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateScale(source Transform, target Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Tracking/Follow/Modifier/ModifyRigidbodyVelocity.cs",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package DoUpdateScale(source Transform, target Transform) : void"
+}]
+}
+]
+}]
+}

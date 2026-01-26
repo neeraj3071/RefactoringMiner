@@ -1,0 +1,675 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Vivero/Kerbal-VR.git",
+	"sha1": "5c2e43898570cb2d35cf333d9e725a415e70a77f",
+	"url": "https://github.com/Vivero/Kerbal-VR/commit/5c2e43898570cb2d35cf333d9e725a415e70a77f",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter signal : int in method package OnStageInput(signal int) : void from class KVR_AvionicsComputer",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_AvionicsComputer.cs",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnStageInput() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_AvionicsComputer.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "signal : int"
+}, {
+		"filePath": "KerbalVR/Components/KVR_AvionicsComputer.cs",
+		"startLine": 64,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package OnStageInput(signal int) : void"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 6,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "KVR_Switch"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 6,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "KVR_Switch"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected animationName : string from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private animationName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected animationName : string"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected animationState : AnimationState from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private animationState : AnimationState"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected animationState : AnimationState"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected targetAnimationEndTime : float from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 23,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private targetAnimationEndTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected targetAnimationEndTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected isAnimationPlayingPrev : bool from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private isAnimationPlayingPrev : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected isAnimationPlayingPrev : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract Update() : void from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 81,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract Update() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract OnColliderEntered(thisObject Collider, otherObject Collider) : void from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 127,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract OnColliderExited(thisObject Collider, otherObject Collider) : void from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected GoToState(state State) : void from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 154,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GoToState(state State) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 47,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected GoToState(state State) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected PlayToState(state State) : void from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 163,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlayToState(state State) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 56,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected PlayToState(state State) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected GetNormalizedTimeForState(state State) : float from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 187,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetNormalizedTimeForState(state State) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 80,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected GetNormalizedTimeForState(state State) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Update() : void from class KVR_Switch to public Update() : void from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 81,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 58,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Update() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private UpdateFSM(input StateInput) : void from class KVR_Switch to private UpdateFSM(input StateInput) : void from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 93,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateFSM(input StateInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 70,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private UpdateFSM(input StateInput) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnColliderEntered(thisObject Collider, otherObject Collider) : void from class KVR_Switch to public OnColliderEntered(thisObject Collider, otherObject Collider) : void from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 127,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 109,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public OnColliderExited(thisObject Collider, otherObject Collider) : void from class KVR_Switch to public OnColliderExited(thisObject Collider, otherObject Collider) : void from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 123,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ColliderTransform : Transform from class KVR_Switch to public ColliderTransform : Transform from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ColliderTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ColliderTransform : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private colliderGameObject : GameObject from class KVR_Switch to private colliderGameObject : GameObject from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private colliderGameObject : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private colliderGameObject : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private fsmState : FSMState from class KVR_Switch to private fsmState : FSMState from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fsmState : FSMState"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private fsmState : FSMState"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package Constructors : region from class KVR_Switch to package Constructors : region from class KVR_SwitchMomentary",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Constructors : region"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package Constructors : region"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class KVR_SwitchMomentary from class KVR_Switch",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 6,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KVR_Switch"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 81,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 93,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateFSM(input StateInput) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 127,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ColliderTransform : Transform"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private colliderGameObject : GameObject"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fsmState : FSMState"
+}, {
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Constructors : region"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_Switch.cs",
+		"startLine": 6,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "KVR_Switch"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 6,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "KVR_SwitchMomentary"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 58,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Update() : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 70,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UpdateFSM(input StateInput) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 109,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 123,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ColliderTransform : Transform"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private colliderGameObject : GameObject"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private fsmState : FSMState"
+}, {
+		"filePath": "KerbalVR/Components/KVR_SwitchMomentary.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package Constructors : region"
+}]
+}
+]
+}]
+}

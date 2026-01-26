@@ -1,0 +1,387 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "cc29b675a66c8761b83182ad4a1bc00ed20bb446",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/cc29b675a66c8761b83182ad4a1bc00ed20bb446",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected DetachFromCurrentTrackedObject() : void extracted from protected OnDestroy() : void in class SolverHandler",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 167,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected OnDestroy() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 169,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 170,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 199,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected DetachFromCurrentTrackedObject() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 203,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected OnDestroy() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DetachFromCurrentTrackedObject()"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected DetachFromCurrentTrackedObject() : void extracted from protected OnControllerLost() : void in class SolverHandler",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 185,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected OnControllerLost() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 189,
+		"endLine": 193,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 199,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected DetachFromCurrentTrackedObject() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 203,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 185,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected OnControllerLost() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DetachFromCurrentTrackedObject()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected DetachFromCurrentTrackedObject() : void extracted from public RefreshTrackedObject() : void in class SolverHandler",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 199,
+		"endLine": 210,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public RefreshTrackedObject() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 203,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 199,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected DetachFromCurrentTrackedObject() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 203,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 193,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public RefreshTrackedObject() : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Utilities/Solvers/SolverHandler.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DetachFromCurrentTrackedObject()"
+}]
+}
+]
+}]
+}

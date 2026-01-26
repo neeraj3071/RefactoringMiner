@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/UniVR/GolfVR.git",
+	"sha1": "0e55e8505c5b95b813f6c4289a45784d43cf5566",
+	"url": "https://github.com/UniVR/GolfVR/commit/0e55e8505c5b95b813f6c4289a45784d43cf5566",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute movePlayerScript : MovePlayer to playerScript : PlayerActions in class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "movePlayerScript : MovePlayer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "playerScript : PlayerActions"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type movePlayerScript : MovePlayer to playerScript : PlayerActions in class ClubScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "movePlayerScript : MovePlayer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/ClubScript.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "playerScript : PlayerActions"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public MovePlayerToBall() : void from class MovePlayer to public MovePlayerToBall() : void from class PlayerActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MovePlayer.cs",
+		"startLine": 27,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MovePlayerToBall() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 107,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public MovePlayerToBall() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private offset : Vector3 from class PlayerActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MovePlayer.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public offset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private offset : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public offset : Vector3 from class MovePlayer to private offset : Vector3 from class PlayerActions",
+	"leftSideLocations": [{
+		"filePath": "Assets/Game/Scripts/MovePlayer.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public offset : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Game/Scripts/PlayerActions.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private offset : Vector3"
+}]
+}
+]
+}]
+}

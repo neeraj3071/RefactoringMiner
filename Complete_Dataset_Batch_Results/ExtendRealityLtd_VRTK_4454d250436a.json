@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ExtendRealityLtd/VRTK.git",
+	"sha1": "4454d250436a5fed6ecd523a07dafa9883f48c5f",
+	"url": "https://github.com/ExtendRealityLtd/VRTK/commit/4454d250436a5fed6ecd523a07dafa9883f48c5f",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package OnInspectorGUI() : void from class VRTK_PolicyListEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Editor/VRTK_PolicyListEditor.cs",
+		"startLine": 18,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnInspectorGUI() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Editor/VRTK_PolicyListEditor.cs",
+		"startLine": 12,
+		"endLine": 20,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnInspectorGUI() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ArrayGUI(property SerializedProperty) : void from class VRTK_PolicyListEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Editor/VRTK_PolicyListEditor.cs",
+		"startLine": 29,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ArrayGUI(property SerializedProperty) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Source/Editor/VRTK_PolicyListEditor.cs",
+		"startLine": 37,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ArrayGUI(property SerializedProperty) : void"
+}]
+}
+]
+}]
+}

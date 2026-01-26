@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/tterpi/VRSketchingGeometry.git",
+	"sha1": "cc3c98308f5de016cd89d68e46faea26105f8608",
+	"url": "https://github.com/tterpi/VRSketchingGeometry/commit/cc3c98308f5de016cd89d68e46faea26105f8608",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public GenerateVerticesOfPatch(controlPoints List<Vector3>, width int, height int, resolutionWidth int, resolutionHeight int) : Vector3[] renamed to public GenerateVerticesOfPatch_Original(controlPoints List<Vector3>, width int, height int, resolutionWidth int, resolutionHeight int) : Vector3[] in class PatchMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Plugins/VRSketchingGeometry/Scripts/ModelingKernel/PatchMesh.cs",
+		"startLine": 20,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GenerateVerticesOfPatch(controlPoints List<Vector3>, width int, height int, resolutionWidth int, resolutionHeight int) : Vector3[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Plugins/VRSketchingGeometry/Scripts/ModelingKernel/PatchMesh.cs",
+		"startLine": 91,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GenerateVerticesOfPatch_Original(controlPoints List<Vector3>, width int, height int, resolutionWidth int, resolutionHeight int) : Vector3[]"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class RibbonMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Plugins/VRSketchingGeometry/Scripts/ModelingKernel/RibbonMesh.cs",
+		"startLine": 14,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "RibbonMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Plugins/VRSketchingGeometry/Scripts/ModelingKernel/RibbonMesh.cs",
+		"startLine": 14,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "RibbonMesh"
+}]
+}
+]
+}]
+}

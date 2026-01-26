@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "ae2a06f66b36ecfb9a9f4a809dfaeff20a4fe197",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/ae2a06f66b36ecfb9a9f4a809dfaeff20a4fe197",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private defaultColor : Color from class VirtualButton",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public defaultColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 23,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private defaultColor : Color"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private selectedColor : Color from class VirtualButton",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public selectedColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 23,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private selectedColor : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package Start() : void from class VirtualButton",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 116,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 125,
+		"endLine": 135,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Start() : void"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [dynamicallyResize : bool, rectTransform : RectTransform, boxCollider : BoxCollider] to resizeSettings : ResizeSettings in class VirtualButton",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "dynamicallyResize : bool"
+}, {
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "rectTransform : RectTransform"
+}, {
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "boxCollider : BoxCollider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/VirtualButton.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "resizeSettings : ResizeSettings"
+}]
+}
+]
+}]
+}

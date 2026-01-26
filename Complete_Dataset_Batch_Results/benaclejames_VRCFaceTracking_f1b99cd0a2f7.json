@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "f1b99cd0a2f751d432917794231892fb903af75d",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/f1b99cd0a2f751d432917794231892fb903af75d",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable module : var in method public GetLegacyModules() : IEnumerable<InstallableTrackingModule> from class ModuleDataService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 75,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 14,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "module : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 74,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable content : var in method package GetMyRatingAsync(moduleMetadata TrackingModuleMetadata) from class ModuleDataService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "content : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 97,
+		"endLine": 106,
+		"startColumn": 30,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SetMyRatingAsync(moduleMetadata TrackingModuleMetadata, rating int) from class ModuleDataService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 126,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetMyRatingAsync(moduleMetadata TrackingModuleMetadata, rating int) : Task"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleDataService.cs",
+		"startLine": 119,
+		"endLine": 134,
+		"startColumn": 23,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SetMyRatingAsync(moduleMetadata TrackingModuleMetadata, rating int)"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(newPath != null) to if(newPath == null) in method private MoveDirectory(source string, dest string) : void from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(newPath != null)"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 22,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private MoveDirectory(source string, dest string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(newPath == null)"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 24,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private MoveDirectory(source string, dest string) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tempZipPath : moduleMetadata to dllPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dllPath : moduleMetadata to tempZipPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(remoteModule.Version != installedModule.Version) to remoteModule.InstallationState=remoteModule.Version != installedModule.Version ? InstallState.Outdated : InstallState.Installed; in method public OnNavigatedTo(parameter object) : void from class ModuleRegistryViewModel",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/ModuleRegistryViewModel.cs",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(remoteModule.Version != installedModule.Version)"
+}, {
+		"filePath": "VRCFaceTracking/ViewModels/ModuleRegistryViewModel.cs",
+		"startLine": 29,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnNavigatedTo(parameter object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/ModuleRegistryViewModel.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 147,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "remoteModule.InstallationState=remoteModule.Version != installedModule.Version ? InstallState.Outdated : InstallState.Installed;\n"
+}, {
+		"filePath": "VRCFaceTracking/ViewModels/ModuleRegistryViewModel.cs",
+		"startLine": 29,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public OnNavigatedTo(parameter object) : void"
+}]
+}
+]
+}]
+}

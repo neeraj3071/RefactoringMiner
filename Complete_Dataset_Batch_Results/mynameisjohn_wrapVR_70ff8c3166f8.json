@@ -1,0 +1,78 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/mynameisjohn/wrapVR.git",
+	"sha1": "70ff8c3166f83031dc1e4ba131445d1c6e468aab",
+	"url": "https://github.com/mynameisjohn/wrapVR/commit/70ff8c3166f83031dc1e4ba131445d1c6e468aab",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method package GetMenu() extracted from protected CheckInput() : void in class OculusVRInput",
+	"leftSideLocations": [{
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 138,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected CheckInput() : void"
+}, {
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 296,
+		"endLine": 299,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetMenu()"
+}, {
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 141,
+		"endLine": 234,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected CheckInput() : void"
+}, {
+		"filePath": "Assets/wrapVR/Scripts/SDK_Inputs/OculusVRInput.cs",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetMenu()"
+}]
+}
+]
+}]
+}

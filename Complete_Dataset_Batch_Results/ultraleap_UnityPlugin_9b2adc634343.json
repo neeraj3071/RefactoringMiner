@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "9b2adc63434348220ce06d9ff3985de915c42582",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/9b2adc63434348220ce06d9ff3985de915c42582",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public GetActiveHandsInScene() : List<HandModelBase> renamed to public GetAllActiveRegisteredHands() : List<HandModelBase> in class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 218,
+		"endLine": 236,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetActiveHandsInScene() : List<HandModelBase>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 219,
+		"endLine": 237,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetAllActiveRegisteredHands() : List<HandModelBase>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable unpairedHandModels : HandModelBase[] to potentiallyUnpairedHandModels : HandModelBase[] in method public RegisterAllUnregisteredHandModels() : void from class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 29,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "unpairedHandModels : HandModelBase[]"
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 48,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 29,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "potentiallyUnpairedHandModels : HandModelBase[]"
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 21,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 48,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private IsRegistered(handModel HandModelBase) : bool from class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 62,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsRegistered(handModel HandModelBase) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 62,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private IsRegistered(handModel HandModelBase) : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private GetDistinctHandModelId(desiredHandModelId string) : string from class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 116,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetDistinctHandModelId(desiredHandModelId string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 116,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetDistinctHandModelId(desiredHandModelId string) : string"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable handModelPairs : in to HandModelPairs : in in method public GetAllActiveRegisteredHands() : List<HandModelBase> from class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 50,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handModelPairs : in"
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 50,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "HandModelPairs : in"
+}, {
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute handModelPairs : List<HandModelPair> to HandModelPairs : List<HandModelPair> in class HandModelManager",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handModelPairs : List<HandModelPair>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Hands/Runtime/Scripts/HandModelManager.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "HandModelPairs : List<HandModelPair>"
+}]
+}
+]
+}]
+}
