@@ -13,13 +13,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.util.*;
 
-/**
- * SrcMLBasedCSharpProcessor - Enhanced Direct srcML integration without GumTree
- * 
- * This class bypasses the GumTree dependency issue by calling srcML directly
- * and parsing the resulting XML AST to create Java CompilationUnit objects.
- * Flow: C# Source → srcML XML → Parse XML → Enhanced Java Conversion → CompilationUnit
- */
+
 public class SrcMLBasedCSharpProcessor {
     
     private static final String SRCML_COMMAND = "/opt/homebrew/bin/srcml";
