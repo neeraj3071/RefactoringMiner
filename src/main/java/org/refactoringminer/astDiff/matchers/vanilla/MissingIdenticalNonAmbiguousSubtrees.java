@@ -17,35 +17,35 @@ import java.util.function.Predicate;
 /* Created by pourya on 2023-06-14 2:10 p.m. */
 public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher implements TreeMatcher {
 
-    private final static boolean ONLY_JAVA_DOCS = false;
+    private static boolean onlyJavaDocs = false;
     private static final int DEFAULT_MIN_PRIORITY = 1;
-    protected int minPriority = DEFAULT_MIN_PRIORITY;
-    protected final Predicate<Mapping> acceptance;
+    private final Predicate<Mapping> mappingAcceptance;
     public final int tooAmbiguousThreshold = 5;
+    private ExtendedMultiMappingStore extendedMappings;
 
     public MissingIdenticalNonAmbiguousSubtrees(Predicate<Mapping> acceptance) {
-        this.acceptance = acceptance;
+        this.mappingAcceptance = acceptance;
+        setMinPriority(DEFAULT_MIN_PRIORITY);
+        this.priorityCalculator = PriorityTreeQueue.getPriorityCalculator(DEFAULT_PRIORITY_CALCULATOR_NAME);
     }
 
     public MissingIdenticalNonAmbiguousSubtrees() {
-        this.acceptance = (m) -> isAcceptable(m.first, m.second);
+        this.mappingAcceptance = (m) -> isAcceptable(m.first, m.second);
+        setMinPriority(DEFAULT_MIN_PRIORITY);
+        this.priorityCalculator = PriorityTreeQueue.getPriorityCalculator(DEFAULT_PRIORITY_CALCULATOR_NAME);
     }
 
-    private static final String DEFAULT_PRIORITY_CALCULATOR = "height";
-    protected Function<Tree, Integer> priorityCalculator = PriorityTreeQueue
-            .getPriorityCalculator(DEFAULT_PRIORITY_CALCULATOR);
-
-    protected Tree src;
-    protected Tree dst;
-    protected ExtendedMultiMappingStore mappings;
+    private static final String DEFAULT_PRIORITY_CALCULATOR_NAME = "height";
+    
 
     @Override
     public void match(Tree src, Tree dst, ExtendedMultiMappingStore mappingStore) {
         this.src = src;
         this.dst = dst;
-        this.mappings = mappingStore;
+        this.mappings = mappingStore.getMonoMappingStore();
+        this.extendedMappings = mappingStore;
 
-        var multiMappings = new MultiMappingStore();
+        MultiMappingStore multiMappings = new MultiMappingStore();
         PriorityTreeQueue srcTrees = new DefaultPriorityTreeQueue(src, this.minPriority, this.priorityCalculator);
         PriorityTreeQueue dstTrees = new DefaultPriorityTreeQueue(dst, this.minPriority, this.priorityCalculator);
 
@@ -54,47 +54,46 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
             if (srcTrees.isEmpty() || dstTrees.isEmpty())
                 break;
 
-            var currentPrioritySrcTrees = srcTrees.pop();
-            var currentPriorityDstTrees = dstTrees.pop();
+            List<Tree> currentPrioritySrcTrees = srcTrees.pop();
+            List<Tree> currentPriorityDstTrees = dstTrees.pop();
 
-            for (var currentSrc : currentPrioritySrcTrees)
-                for (var currentDst : currentPriorityDstTrees)
+            for (Tree currentSrc : currentPrioritySrcTrees)
+                for (Tree currentDst : currentPriorityDstTrees)
                     if (currentSrc.getMetrics().hash == currentDst.getMetrics().hash)
                         if (TreeUtilFunctions.isIsomorphicTo(currentSrc, currentDst)) {
                             if (!mappingStore.isSrcMappedConsideringSubTrees(currentSrc) && !mappingStore.isDstMappedConsideringSubTrees(currentDst))
                                 multiMappings.addMapping(currentSrc, currentDst);
                         }
 
-            for (var t : currentPrioritySrcTrees)
+            for (Tree t : currentPrioritySrcTrees)
                 if (!multiMappings.hasSrc(t))
                     srcTrees.open(t);
-            for (var t : currentPriorityDstTrees)
+            for (Tree t : currentPriorityDstTrees)
                 if (!multiMappings.hasDst(t))
                     dstTrees.open(t);
         }
 
         filterMappings(multiMappings);
     }
-    @Override
     public void filterMappings(MultiMappingStore multiMappings) {
         List<Mapping> ambiguousList = new ArrayList<>();
         Set<Tree> ignored = new HashSet<>();
         Set<Tree> trees = new TreeSet<>(Comparator.comparingInt(Tree::getPos));
         trees.addAll(multiMappings.allMappedSrcs());
-        for (var src : trees) {
-            var isMappingUnique = false;
-            if (tinyTrees(src,multiMappings,minPriority))
+        for (Tree candidateSrc : trees) {
+            boolean mappingIsUnique = false;
+            if (tinyTrees(candidateSrc, minPriority))
                 continue;
-            if (multiMappings.isSrcUnique(src)) {
-                var dst = multiMappings.getDsts(src).stream().findAny().get();
-                if (multiMappings.isDstUnique(dst)) {
-                    if (acceptance.test(new Mapping(src,dst)))
-                        mappings.addMappingRecursively(src,dst);
-                    isMappingUnique = true;
+            if (multiMappings.isSrcUnique(candidateSrc)) {
+                Tree mappedDst = multiMappings.getDsts(candidateSrc).stream().findAny().get();
+                if (multiMappings.isDstUnique(mappedDst)) {
+                    if (mappingAcceptance.test(new Mapping(candidateSrc, mappedDst)))
+                        extendedMappings.addMappingRecursively(candidateSrc, mappedDst);
+                    mappingIsUnique = true;
                 }
             }
-            if (!isMappingUnique){
-                Set<Tree> dsts = multiMappings.getDsts(src);
+            if (!mappingIsUnique){
+                Set<Tree> dsts = multiMappings.getDsts(candidateSrc);
                 boolean tooAmbiguous = false;
                 if (dsts.size() > 5) {
                     Tree anyDst = dsts.stream().findAny().get();
@@ -105,10 +104,10 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
                 }
                 if (tooAmbiguous) continue;
             }
-            if (!tinyTrees(src,multiMappings,minPriority) && !(ignored.contains(src) || isMappingUnique))
+            if (!tinyTrees(candidateSrc, minPriority) && !(ignored.contains(candidateSrc) || mappingIsUnique))
             {
-                var adsts = multiMappings.getDsts(src);
-                var asrcs = multiMappings.getSrcs(multiMappings.getDsts(src).iterator().next());
+                Set<Tree> adsts = multiMappings.getDsts(candidateSrc);
+                Set<Tree> asrcs = multiMappings.getSrcs(multiMappings.getDsts(candidateSrc).iterator().next());
                 for (Tree asrc : asrcs)
                     for (Tree adst : adsts) {
                         ambiguousList.add(new Mapping(asrc, adst));
@@ -117,14 +116,14 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
             }
             Set<Tree> srcIgnored = new HashSet<>();
             Set<Tree> dstIgnored = new HashSet<>();
-            Collections.sort(ambiguousList, new CustomTopDownMatcher.ExtendedFullMappingComparator(mappings.getMonoMappingStore()));
+            Collections.sort(ambiguousList, new CustomTopDownMatcher.ExtendedFullMappingComparator(extendedMappings.getMonoMappingStore()));
             // Select the best ambiguous mappings
             retainBestMapping(ambiguousList, srcIgnored, dstIgnored);
         }
     }
 
     private boolean isAcceptable(Tree src, Tree dst) {
-        if (ONLY_JAVA_DOCS)
+        if (onlyJavaDocs)
         {
             if (src.getType().name.equals(Constants.JAVA_DOC))
                 return true;
@@ -189,7 +188,7 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
         return true;
     }
 
-    private static boolean tinyTrees(Tree src, MultiMappingStore multiMappings, int minP) {
+    private static boolean tinyTrees(Tree src, int minP) {
         if (src.getMetrics().height <= minP){
             if (src.getType().name.equals(Constants.METHOD_INVOCATION_RECEIVER))
                 return true;
@@ -204,7 +203,6 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
         return false;
     }
 
-    @Override
     protected void retainBestMapping(List<Mapping> mappingList, Set<Tree> srcIgnored, Set<Tree> dstIgnored) {
         List<Mapping> verifiedList = new ArrayList<>();
         for (Mapping mapping : mappingList) {
@@ -212,10 +210,10 @@ public class MissingIdenticalNonAmbiguousSubtrees extends GreedySubtreeMatcher i
                 verifiedList.add(mapping);
         }
         while (!verifiedList.isEmpty()) {
-            var mapping = verifiedList.remove(0);
+            Mapping mapping = verifiedList.remove(0);
             if (!(srcIgnored.contains(mapping.first) || dstIgnored.contains(mapping.second)))
             {
-                mappings.addMappingRecursively(mapping.first, mapping.second);
+                extendedMappings.addMappingRecursively(mapping.first, mapping.second);
                 srcIgnored.add(mapping.first);
                 srcIgnored.addAll(mapping.first.getDescendants());
                 dstIgnored.add(mapping.second);

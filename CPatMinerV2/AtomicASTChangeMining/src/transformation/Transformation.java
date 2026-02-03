@@ -16,12 +16,12 @@ public class Transformation {
             Tree tree_csharp = tc.getRoot();
             Tree transformedTree = TransformationUtils.transformTree(tree_csharp);
             String tree_string = tree_csharp.toTreeString();
-            //System.out.println(tree_string);
+            System.out.println(tree_string);
 
             SrcMLTreeVisitor visitor = new SrcMLTreeVisitor();
             if (transformedTree instanceof UnitNode) {
                 CompilationUnit m = visitor.visit((UnitNode) transformedTree);
-                //System.out.println(m.toString());
+                System.out.println(m.toString());
                 return m;
             }
 
@@ -42,7 +42,7 @@ public class Transformation {
             Tree tree_csharp = tc.getRoot();
             //Tree tree_yaml = new YamlTreeGenerator().generateFrom().file(yaml_file).getRoot();
 
-            //System.out.println(tree_csharp.toTreeString());
+            System.out.println(tree_csharp.toTreeString());
             Tree transformedTree = TransformationUtils.transformTree(tree_csharp);
             transformedTree.toString();
 

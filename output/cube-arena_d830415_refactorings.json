@@ -1,0 +1,87 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/myieye/cube-arena.git",
+	"sha1": "d830415431350d11fd85b5c94f45058ad492a1cd",
+	"url": "https://github.com/myieye/cube-arena/commit/d830415431350d11fd85b5c94f45058ad492a1cd",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private InFirstRound() : bool extracted from private StartNewRound() : void in class RoundManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 99,
+		"endLine": 124,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private StartNewRound() : void"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 10,
+		"endColumn": 21,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 10,
+		"endColumn": 21,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 175,
+		"endLine": 177,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private InFirstRound() : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 99,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private StartNewRound() : void"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InFirstRound()"
+}]
+}
+]
+}]
+}

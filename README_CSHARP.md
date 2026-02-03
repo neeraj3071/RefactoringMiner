@@ -1,18 +1,15 @@
 # C# RefactoringMiner Support
 
 ![C# Support](https://img.shields.io/badge/language-C%23-239120?style=flat&logo=csharp)
-![Status](https://img.shields.io/badge/status-experimental-orange)
 ![RefactoringMiner](https://img.shields.io/badge/RefactoringMiner-3.0.11-blue)
-
 
 ## Overview
 
-RefactoringMiner C# Support extends the original [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) tool to detect refactorings in C# projects. This implementation uses **srcML** for parsing C# code and converting it to Java AST representations that RefactoringMiner can analyze.
+RefactoringMiner C# Support extends the original [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) tool to detect refactorings in C# projects. This implementation uses **CpatMinerV2** for parsing C# code and converting it to Java AST representations that RefactoringMiner can analyze.
 
 ### Key Highlights
 
-- **Direct srcML Integration** - Uses srcML for reliable C# parsing
-- **Enhanced C# Features** - Supports async/await, LINQ, properties, events, and more
+- **Direct CpatminerV2 Integration** - Uses CpatminerV2 for reliable C# parsing
 - **Compatible with RefactoringMiner API** - Uses the same command-line interface
 - **Batch Processing Support** - Analyze multiple commits efficiently
 
@@ -20,34 +17,118 @@ RefactoringMiner C# Support extends the original [RefactoringMiner](https://gith
 
 ## Architecture
 
-### Processing Pipeline
+### 8-Stage Refactoring Detection Pipeline
+
+The C# RefactoringMiner implements a complete refactoring detection pipeline with distinct stages:
 
 ```
-C# Source Code
-      ↓
-   srcML Parser (XML AST)
-      ↓
-Enhanced C# Processor
-      ↓
-Java AST (CompilationUnit)
-      ↓
-RefactoringMiner Core
-      ↓
-Detected Refactorings (JSON)
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 1: Git Repository Cloning/Checkout                        │
+│ Entry Point: CSharpRefactoringMiner CLI                         │
+│ Output: Clean git repository at specified commit                │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 2: C# File Detection & Reading                            │
+│ Component: CSharpFileProcessor                                  │
+│ Process: Find all .cs files in repo or commit delta             │
+│ Output: Set of C# source file contents (String)                 │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 3: srcML Parsing (C# → XML AST)                           │
+│ Tool: srcML CLI (external process)                              │
+│ Process: Convert C# code to structured XML representation       │
+│ Output: XML AST tree (DOM Document)                             │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 4: GumTree XML Parsing & Tree Construction                │
+│ Library: GumTree 4.0.0-beta6                                    │
+│ Process: Parse XML into GumTree node types                      │
+│ Output: Typed tree with INode, TreeNode implementations         │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 5: SrcML AST → Java AST Transformation                    │
+│ Component: SrcMLTreeVisitor (2028 lines, 75 visitor methods)    │
+│ Process: Pattern matching to convert C# AST to Java AST nodes   │
+│ Output: Eclipse JDT CompilationUnit                             │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 6: Tree Diffing (Before vs After Commit)                  │
+│ Library: GumTree tree diff algorithm                            │
+│ Process: Compare parent-commit AST with child-commit AST        │
+│ Output: Edit script (Insert, Delete, Move, Update nodes)        │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 7: Refactoring Pattern Matching                           │
+│ Component: RefactoringMiner Core Engine                         │
+│ Process: Apply 60+ predefined refactoring detection rules       │
+│ Output: List of detected Refactoring objects                    │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 8: JSON Serialization & Output                            │
+│ Format: RefactoringMiner standard JSON schema                   │
+│ Output: refactorings.json with detected changes                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 5-Stage AST Transformation (Stage 5 Details)
+
+Inside Stage 5, the SrcMLTreeVisitor performs detailed structural transformation:
+
+```
+Stage 5.1: srcML XML Node Processing
+├─ Input: GumTree INode (from srcML XML)
+├─ Logic: Identify node type (class, method, property, lambda, LINQ, etc.)
+└─ Output: Routed to specific visitor method
+
+Stage 5.2: C# Language Construct Mapping
+├─ Properties → Getter/Setter pairs (Java patterns)
+├─ Events → Observer pattern delegates
+├─ Async/Await → Method markers + Task wrapping
+├─ LINQ → Stream chains or loop equivalents
+├─ Lambda → FunctionExpression (with body handling)
+└─ Attributes → Java annotations
+
+Stage 5.3: Method Body Transformation
+├─ Input: BlockNode (C# method body)
+├─ Process: Recursively visit all statement nodes
+├─ Handle: 20+ statement types (if, while, foreach, switch, try, etc.)
+└─ Output: Block with transformed statements
+
+Stage 5.4: Expression Transformation
+├─ Input: ExprNode (C# expressions)
+├─ Process: Convert expressions preserving semantics
+├─ Handle: Method calls, field access, operators, literals
+└─ Output: Expression nodes in Java AST
+
+Stage 5.5: AST Assembly
+├─ Combine all transformed pieces
+├─ Link parent-child relationships
+├─ Return: Complete Eclipse JDT CompilationUnit
+└─ Ready for: Stage 6 (Tree Diffing)
 ```
 
 ### Key Components
 
-1. **`SrcMLBasedCSharpProcessor`** - Core processor that handles C# to Java AST conversion
-2. **`CSharpGitHistoryRefactoringMiner`** - Git integration for C# repositories
-3. **`CSharpRefactoringMiner`** - CLI entry point compatible with RefactoringMiner
-4. **`CSharpFileProcessor`** - Handles .cs file detection and processing
+1. **`CSharpRefactoringMiner`** - CLI entry point, handles command parsing and git operations (Stage 1-2)
+2. **`CSharpGitHistoryRefactoringMiner`** - Git integration, repository cloning and commit navigation
+3. **`CSharpFileProcessor`** - C# file detection and reading from git commits (Stage 2)
+4. **`SrcMLBasedCSharpProcessor`** - Orchestrates srcML parsing and tree transformation (Stage 3-5)
+5. **`SrcMLTreeVisitor`** - Core pattern matching engine with 75 visitor methods for AST transformation (Stage 5)
+6. **`CPatMinerExecutor`** - Dynamic bridge for CPatMiner integration (alternative analysis path)
+7. **RefactoringMiner Core** - Tree diffing, refactoring detection rules, and JSON serialization (Stage 6-8)
 
 ---
 
 ## Features
 
-### 🎯 Enhanced C# Language Support
+###  Enhanced C# Language Support
 
 The processor implements **14 enhanced C# features** for accurate refactoring detection:
 
@@ -107,21 +188,37 @@ cd RefactoringMiner
 ./gradlew shadowJar
 ```
 
-The fat JAR will be created at: `build/libs/RM-fat.jar`
-
-### Verify Installation
-
-```bash
-# Verify srcML is installed
-srcml --version
-
-# Verify RefactoringMiner build
-java -jar build/libs/RM-fat.jar -h
-```
-
 ---
 
-## Usage
+## Quick Reference
+
+### One-Liners for Common Tasks
+
+```bash
+# 1. Quick analysis of a single commit
+java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -c /repo abc1234 -json out.json
+
+# 2. Check if srcML and Java are installed
+srcml --version && java -version
+
+# 3. Build and create fat JAR in one step
+./gradlew clean shadowJar && ls -lh build/libs/RM-fat.jar
+
+# 4. Run analysis on specific branch
+java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -a /repo main -json out.json
+
+# 5. Analyze commits between two tags
+java -cp build/libs/RM-fat.jar org.refactoringminer.csharp.CSharpRefactoringMiner -bt /repo v1.0 v2.0 4 -json out.json
+
+# 6. Count refactorings in JSON output
+cat out.json | jq '[.commits[].refactorings | length] | add'
+
+# 7. Show refactoring types summary
+cat out.json | jq -r '.commits[].refactorings[].type' | sort | uniq -c | sort -rn
+
+# 8. Extract first 10 lines of JSON for preview
+cat out.json | python3 -m json.tool | head -20
+```
 
 ### Quick Start Guide
 
@@ -206,7 +303,7 @@ java -cp build/libs/RM-fat.jar \
 
 ### Usage Examples
 
-#### Example 1: Analyze a Single Commit
+#### Example : Analyze a Single Commit
 
 Analyze refactorings in a specific commit:
 
@@ -225,152 +322,6 @@ java -cp build/libs/RM-fat.jar \
 ```
 
 **Output:** Creates `refactorings.json` with all detected refactorings in the commit.
-
-#### Example 2: Analyze All Commits on a Branch
-
-Analyze every commit on a specific branch:
-
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -a /path/to/csharp-repo main -json all_refactorings.json
-```
-
-**Use case:** Full repository analysis for research or documentation.
-
-**Note:** This may take significant time for large repositories. Consider using commit ranges instead.
-
-#### Example 3: Analyze Commits Between Two Tags
-
-Analyze refactorings between two release versions:
-
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -bt /path/to/csharp-repo v1.0.0 v2.0.0 10 -json version_refactorings.json
-```
-
-**Parameters:**
-- `v1.0.0` - Starting tag/version
-- `v2.0.0` - Ending tag/version
-- `10` - Number of parallel threads (adjust based on CPU cores)
-
-**Use case:** Release comparison, migration analysis.
-
-#### Example 4: Analyze Commits Between Two Commit SHAs
-
-Analyze a range of commits:
-
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -bc /path/to/csharp-repo abc1234 def5678 8 -json range_refactorings.json
-```
-
-**Use case:** Feature branch analysis, specific commit range investigation.
-
-#### Example 5: Analyze GitHub Repository Directly
-
-Analyze a commit from GitHub without cloning (requires OAuth token):
-
-```bash
-# First, create github-oauth.properties with your token
-echo "token=ghp_YourGitHubPersonalAccessToken" > github-oauth.properties
-
-# Run analysis
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -gc https://github.com/ExtendRealityLtd/Zinnia.Unity.git 35cb3631 10 \
-  -json zinnia_github.json
-```
-
-**Requirements:**
-- GitHub Personal Access Token (create at https://github.com/settings/tokens)
-- Place `github-oauth.properties` in the same directory as the JAR
-
-#### Example 6: Analyze GitHub Pull Request
-
-Analyze all commits in a pull request:
-
-```bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner \
-  -gp https://github.com/user/repo.git 123 10 -json pr_refactorings.json
-```
-
-**Parameters:**
-- `123` - Pull request number
-- `10` - Thread count for parallel processing
-
-**Use case:** Code review automation, PR quality analysis.
-
----
-
-### Using the Shell Script (Simplified)
-
-A convenient shell script wraps the Java command for easier usage:
-
-```bash
-# Make the script executable (first time only)
-chmod +x csharp-refactoring-miner.sh
-
-# Single commit analysis
-./csharp-refactoring-miner.sh -c /path/to/repo abc1234 -json output.json
-
-# All commits on branch
-./csharp-refactoring-miner.sh -a /path/to/repo main -json all.json
-
-# Commits between tags
-./csharp-refactoring-miner.sh -bt /path/to/repo v1.0 v2.0 10 -json versions.json
-```
-
-**Script contents:**
-```bash
-#!/bin/bash
-java -cp build/libs/RM-fat.jar \
-  org.refactoringminer.csharp.CSharpRefactoringMiner "$@"
-```
-
----
-
-### Batch Processing Multiple Commits
-
-For analyzing multiple commits from a list or Excel file, use the batch processor:
-
-#### Setup
-
-```bash
-# Install required Python packages
-pip install pandas openpyxl gitpython
-
-# Prepare your Excel file with columns:
-# - "Commit URL" (format: https://github.com/user/repo/commit/sha)
-# - Any other metadata columns
-```
-
-#### Run Batch Processing
-
-```bash
-python3 batch_process_commits.py
-```
-
-**Script configuration:**
-Edit the script to set:
-- `EXCEL_FILE` - Path to your commits Excel file
-- `OUTPUT_DIR` - Directory for JSON results
-- `RM_JAR_PATH` - Path to RM-fat.jar
-- `THREAD_COUNT` - Parallel processing threads
-
-#### Example Excel Format
-
-| Commit URL | Project | Date | Notes |
-|------------|---------|------|-------|
-| https://github.com/user/repo/commit/abc123 | MyProject | 2024-01-15 | Feature X |
-| https://github.com/user/repo/commit/def456 | MyProject | 2024-01-20 | Bug fix |
-
-**Output:** Creates individual JSON files for each commit in the output directory.
-
----
 
 ### Understanding the Output
 
@@ -398,23 +349,6 @@ The output JSON follows RefactoringMiner's standard format:
 }
 ```
 
-#### Processing Results
-
-```bash
-# View refactorings in formatted JSON
-cat refactorings.json | python -m json.tool
-
-# Count total refactorings
-cat refactorings.json | jq '.commits[].refactorings | length' | awk '{s+=$1} END {print s}'
-
-# Extract specific refactoring types
-cat refactorings.json | jq '.commits[].refactorings[] | select(.type == "Extract Method")'
-
-# Generate summary report
-cat refactorings.json | jq -r '.commits[].refactorings[].type' | sort | uniq -c | sort -rn
-```
-
----
 
 ## Supported C# Features
 
@@ -605,221 +539,6 @@ RefactoringMiner C# detects **60+ refactoring types**. The most commonly detecte
 
 ---
 
-## Performance
-
-### Benchmark Results
-
-Tested on VR/AR C# projects (January 2024):
-
-| Metric | Value |
-|--------|-------|
-| **Average Processing Time** | ~2-5 seconds per commit |
-| **srcML Parsing** | ~0.5-1 second per file |
-| **AST Conversion** | ~0.5-1 second per file |
-| **Refactoring Detection** | ~1-3 seconds per commit |
-| **Large Commits (20+ files)** | ~10-30 seconds |
-
-### Optimization Tips
-
-1. **Use Fat JAR** - Single JAR reduces classpath overhead
-2. **Batch Processing** - Process multiple commits in one session
-3. **Filter Commits** - Pre-filter commits with C# changes only
-4. **Parallel Processing** - Use multiple processes for independent commits
-
-### Memory Usage
-
-- **Base Memory:** ~512 MB
-- **Per Commit:** ~50-200 MB (depending on size)
-- **Recommended JVM:** `-Xmx4096M -Xms1024M`
-
----
-
-## Examples
-
-### Example 1: Extract Method Detection
-
-**C# Commit:**
-```csharp
-// Before
-public void ProcessPlayer() {
-    int score = CalculateScore();
-    UpdateUI();
-    SaveToDatabase();
-}
-
-// After
-public void ProcessPlayer() {
-    int score = CalculateScore();
-    FinishProcessing();
-}
-
-private void FinishProcessing() {
-    UpdateUI();
-    SaveToDatabase();
-}
-```
-
-**Detected Refactoring:**
-```json
-{
-  "type": "Extract Method",
-  "description": "Extract Method private FinishProcessing() extracted from public ProcessPlayer() in class Player"
-}
-```
-
-### Example 2: Change Access Modifier
-
-**C# Commit:**
-```csharp
-// Before
-public int health = 100;
-
-// After
-[SerializeField]
-private int health = 100;
-```
-
-**Detected Refactoring:**
-```json
-{
-  "type": "Change Attribute Access Modifier",
-  "description": "Changed visibility of attribute health from public to private in class Player"
-}
-```
-
-### Example 3: Rename Class
-
-**C# Commit:**
-```csharp
-// Before: PlayerController.cs
-public class PlayerController { }
-
-// After: PlayerManager.cs
-public class PlayerManager { }
-```
-
-**Detected Refactoring:**
-```json
-{
-  "type": "Rename Class",
-  "description": "Rename Class PlayerController renamed to PlayerManager"
-}
-```
-
-### Example 4: Move Method
-
-**C# Commit:**
-```csharp
-// Before: Player.cs
-public class Player {
-    public void UpdateScore() { }
-}
-
-// After: ScoreManager.cs
-public class ScoreManager {
-    public void UpdateScore() { }
-}
-```
-
-**Detected Refactoring:**
-```json
-{
-  "type": "Move Method",
-  "description": "Move Method public UpdateScore() from class Player to ScoreManager"
-}
-```
-
-### Real-World Example: Zinnia.Unity Commit
-
-**Commit:** `35cb3631904fec77ab2c68058ba4dd7b6aa75095`
-
-**Detected:** 12 refactorings
-- 10× Change Attribute Access Modifier
-- 1× Extract Method
-- 1× Rename Attribute
-
-**Processing Time:** 3.2 seconds
-
----
-
-## Troubleshooting
-
-### Issue: "srcML command not found"
-
-**Solution:**
-```bash
-# Install srcML
-brew install srcml  # macOS
-sudo apt install srcml  # Linux
-
-# Verify installation
-srcml --version
-```
-
-### Issue: "No .cs files found in repository"
-
-**Possible Causes:**
-- Repository path incorrect
-- No C# files in specified commit
-- Files in subdirectories not scanned
-
-**Solution:**
-```bash
-# Verify repository structure
-ls -R /path/to/repo | grep ".cs$"
-
-# Check specific commit
-git show <commit-sha> --name-only | grep ".cs$"
-```
-
-### Issue: "OutOfMemoryError during analysis"
-
-**Solution:**
-```bash
-# Increase heap size
-java -Xmx4096M -Xms1024M -jar build/libs/RM-fat.jar -c ...
-```
-
-### Issue: "Empty JSON output / Zero refactorings detected"
-
-**Possible Causes:**
-- Commit contains only non-detectable changes
-- Semantic refactorings (not AST-based)
-- srcML parsing failures
-
-**Debug Steps:**
-1. Check srcML can parse the file:
-   ```bash
-   srcml file.cs -o output.xml
-   ```
-2. Enable verbose logging:
-   ```bash
-   java -Dorg.slf4j.simpleLogger.defaultLogLevel=debug -jar ...
-   ```
-3. Verify file encoding (should be UTF-8)
-
-### Issue: "GitHub API rate limit exceeded"
-
-**Solution:**
-Create `github-oauth.properties`:
-```properties
-username=your-github-username
-token=ghp_your_personal_access_token
-```
-
-Place it next to the JAR file when using `-gc` or `-gp` options.
-
-### Issue: "Compilation errors in converted Java code"
-
-This is expected for some C# constructs. The processor handles this internally. If you need to debug:
-
-```bash
-# Check generated Java code (temporary files)
-ls -la /tmp/csharp_*
-```
-
----
-
 ## Contributing
 
 ### Development Setup
@@ -844,78 +563,15 @@ ls -la /tmp/csharp_*
 
 ```
 src/main/java/org/refactoringminer/csharp/
-├── CSharpRefactoringMiner.java          # Main CLI entry point
-├── CSharpGitHistoryRefactoringMiner.java # Git integration
-├── SrcMLBasedCSharpProcessor.java        # Core C# processor
-├── CSharpFileProcessor.java              # File handling
-├── CSharpUMLModelASTReader.java          # AST reader
+├── CSharpRefactoringMiner.java          # Main CLI entry point (Stage 1)
+├── CSharpGitHistoryRefactoringMiner.java # Git integration (Stage 1-2)
+├── CSharpFileProcessor.java              # File detection (Stage 2)
+├── SrcMLBasedCSharpProcessor.java        # srcML & GumTree orchestration (Stage 3-4)
+├── SrcMLTreeVisitor.java                 # AST transformation - 75 visitor methods (Stage 5) 
+├── CSharpUMLModelASTReader.java          # AST reader utility
+├── CPatMinerExecutor.java                # CPatMiner dynamic bridge
 └── cli/                                  # CLI utilities
     └── CSharpRefactoringMinerCLI.java    # Command-line interface
-```
-
-### Adding New C# Features
-
-To add support for a new C# language feature:
-
-1. **Update `SrcMLBasedCSharpProcessor.java`:**
-   ```java
-   private static String processNewFeature(Element element) {
-       // Parse srcML XML element
-       // Convert to Java equivalent
-       // Return Java code
-   }
-   ```
-
-2. **Add to `convertSrcMLXMLToJava()`:**
-   ```java
-   case "new_feature":
-       result.append(processNewFeature(child));
-       break;
-   ```
-
-3. **Test with sample C# code:**
-   ```bash
-   # Create test file
-   echo "your C# code" > test.cs
-   
-   # Test conversion
-   java -cp build/libs/RM-fat.jar \
-     org.refactoringminer.csharp.CSharpRefactoringMiner \
-     -c /path/to/test/repo <commit> -json test.json
-   ```
-
-
-## Related Tools
-
-### CPatMinerV2
-
-This repository includes **CPatMinerV2**, a C# code change pattern mining tool.
-
-**Location:** `CPatMinerV2/`
-
-**Features:**
-- Semantic change pattern extraction
-- Graph-based mining
-- Supports C# via srcML
-
-**See:** [CPatMinerV2/README.md](CPatMinerV2/README.md)
-
-### Integration with RefactoringMiner
-
-The C# support is fully integrated with RefactoringMiner's API:
-
-```java
-import org.refactoringminer.csharp.CSharpGitHistoryRefactoringMiner;
-
-CSharpGitHistoryRefactoringMiner miner = 
-    new CSharpGitHistoryRefactoringMiner();
-    
-miner.detectAtCommit(repository, commitId, new RefactoringHandler() {
-    @Override
-    public void handle(String commitId, List<Refactoring> refactorings) {
-        // Process detected refactorings
-    }
-});
 ```
 
 ---
@@ -935,9 +591,21 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 ### srcML
 - **Project:** [srcML](https://www.srcml.org/)
 - **Purpose:** Multi-language source code analysis
+- **Used in:** C# parsing (Stage 3)
+
+### GumTree
+- **Version:** 4.0.0-beta6
+- **Purpose:** Tree diffing algorithm
+- **Used in:** Tree comparison (Stage 6)
+
+### Eclipse JDT
+- **Project:** Eclipse Java Development Tools
+- **Purpose:** Java AST representation
+- **Used in:** Target AST format (Stage 5 output)
 
 ### CPatMiner
 - **Original:** [nguyenhoan/CPatMiner](https://github.com/nguyenhoan/CPatMiner)
 - **C# Extension:** CPatMinerV2 (included)
+- **Purpose:** Semantic pattern mining (alternative to structural analysis)
 
 ---

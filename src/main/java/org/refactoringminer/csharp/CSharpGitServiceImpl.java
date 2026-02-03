@@ -1,5 +1,8 @@
 package org.refactoringminer.csharp;
 
+import java.util.Map;
+import java.util.Set;
+
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.lib.ObjectId;
@@ -8,12 +11,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.refactoringminer.util.GitServiceImpl;
 
-import java.util.Map;
-import java.util.Set;
-
 /**
- * CSharpGitServiceImpl - Extended GitService that supports C# files alongside Java files
- * 
  * This class extends the standard GitServiceImpl to detect and process .cs files
  * in addition to .java files, enabling RefactoringMiner to work with C# repositories.
  */

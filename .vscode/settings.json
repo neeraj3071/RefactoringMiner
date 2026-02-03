@@ -1,5 +1,17 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "git.ignoreLimitWarning": true
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "git.ignoreLimitWarning": true,
+    "java.debug.settings.hotCodeReplace": "auto",
+    "java.debug.settings.console": "integratedTerminal",
+    "java.debug.settings.forceBuildBeforeLaunch": false,
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ],
+    "java.project.resourceFilters": [
+        "!**/src/test/resources/oracle/**"
+    ],
+    "files.exclude": {
+        "**/src/test/resources/oracle/**/*.java": true
+    }
 }

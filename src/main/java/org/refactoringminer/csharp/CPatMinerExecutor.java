@@ -22,11 +22,12 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
  * 1. Loading CPatMiner JAR dynamically
  * 2. Executing CPatMiner's transform_csharp_to_java() method
  * 3. Capturing the generated CompilationUnit AST
- * 4. Managing temporary files for C# content
+ * 
+ * NOTE: CPatMiner is REQUIRED for C# support. If initialization fails, C# files cannot be processed.
  */
 public class CPatMinerExecutor {
     
-    private static final String CPATMINER_JAR_PATH = "CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT.jar";
+    private static final String CPATMINER_JAR_PATH = "CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar";
     private static URLClassLoader cpatMinerClassLoader;
     private static Class<?> transformationClass;
     private static Method transformMethod;
@@ -45,87 +46,113 @@ public class CPatMinerExecutor {
             // Get the absolute path to CPatMiner JAR
             File jarFile = new File(CPATMINER_JAR_PATH);
             if (!jarFile.exists()) {
-                throw new RuntimeException("CPatMiner JAR not found at: " + jarFile.getAbsolutePath());
+                System.err.println("CPatMinerExecutor: ERROR - CPatMiner JAR not found at: " + jarFile.getAbsolutePath());
+                System.err.println("CPatMinerExecutor: C# file support requires CPatMiner. Build it with: mvn clean package -DskipTests in CPatMinerV2/AtomicASTChangeMining");
+                transformationClass = null;
+                transformMethod = null;
+                return;
             }
             
             System.out.println("CPatMinerExecutor: Loading CPatMiner JAR from: " + jarFile.getAbsolutePath());
             
-            // Create URLClassLoader for CPatMiner JAR
+            // Create URLClassLoader with CPatMiner JAR
+            // Use the current classloader as parent, which includes all RefactoringMiner dependencies
             URL jarUrl = jarFile.toURI().toURL();
-            cpatMinerClassLoader = new URLClassLoader(new URL[]{jarUrl}, CPatMinerExecutor.class.getClassLoader());
+            ClassLoader parentLoader = CPatMinerExecutor.class.getClassLoader();
+            cpatMinerClassLoader = new URLClassLoader(new URL[]{jarUrl}, parentLoader);
+            
+            System.out.println("CPatMinerExecutor: Created classloader with parent: " + parentLoader.getClass().getName());
             
             // Load the Transformation class
             transformationClass = cpatMinerClassLoader.loadClass("transformation.Transformation");
+            System.out.println("CPatMinerExecutor: Loaded Transformation class");
             
             // Get the transform_csharp_to_java method
             transformMethod = transformationClass.getMethod("transform_csharp_to_java", String.class);
+            System.out.println("CPatMinerExecutor: Found transform_csharp_to_java method");
             
             System.out.println("CPatMinerExecutor: Successfully initialized CPatMiner integration");
             
+        } catch (ClassNotFoundException e) {
+            System.err.println("CPatMinerExecutor: ERROR - Failed to load transformation.Transformation class: " + e.getMessage());
+            System.err.println("CPatMinerExecutor: This usually means GumTree or other dependencies are not properly packaged in the CPatMiner JAR");
+            System.err.println("CPatMinerExecutor: C# support is disabled. Rebuild CPatMiner: mvn clean package -DskipTests");
+            transformationClass = null;
+            transformMethod = null;
+        } catch (NoSuchMethodException e) {
+            System.err.println("CPatMinerExecutor: ERROR - Failed to find transform_csharp_to_java method: " + e.getMessage());
+            System.err.println("CPatMinerExecutor: The CPatMiner JAR appears to be corrupted or incomplete");
+            transformationClass = null;
+            transformMethod = null;
         } catch (Exception e) {
-            System.err.println("CPatMinerExecutor: Failed to initialize CPatMiner: " + e.getMessage());
-            e.printStackTrace();
-            throw new RuntimeException("Failed to initialize CPatMiner", e);
+            System.err.println("CPatMinerExecutor: ERROR - Failed to initialize CPatMiner: " + e.getMessage());
+            System.err.println("CPatMinerExecutor: C# support is disabled");
+            transformationClass = null;
+            transformMethod = null;
         }
     }
     
     /**
-     * Transform C# content to Java AST using CPatMiner
-     * Falls back to direct srcML if CPatMiner fails due to dependencies
+     * Transform C# content to Java AST using CPatMiner (REQUIRED for C# support)
      * 
      * @param csharpContent The C# source code content
      * @param filePath The original file path (for debugging)
      * @return CompilationUnit representing the Java AST equivalent
      */
     public static CompilationUnit transformCSharpToJavaAST(String csharpContent, String filePath) {
-        System.out.println("CPatMinerExecutor: Attempting C# to Java AST transformation for: " + filePath);
-        
-        // First try CPatMiner (preferred method)
-        CompilationUnit result = tryCPatMinerTransformation(csharpContent, filePath);
-        
-        if (result != null) {
-            System.out.println("CPatMinerExecutor: Successfully used CPatMiner for " + filePath);
-            return result;
+        if (transformationClass == null || transformMethod == null) {
+            System.err.println("CPatMinerExecutor: ERROR - CPatMiner not initialized. C# file processing unavailable: " + filePath);
+            return null;
         }
         
-        // Fallback to direct srcML approach
-        System.out.println("CPatMinerExecutor: CPatMiner failed, falling back to direct srcML for " + filePath);
-        result = SrcMLBasedCSharpProcessor.transformCSharpToJavaAST(csharpContent, filePath);
-        
-        if (result != null) {
-            System.out.println("CPatMinerExecutor: Successfully used direct srcML fallback for " + filePath);
-            return result;
-        }
-        
-        System.err.println("CPatMinerExecutor: Both CPatMiner and srcML fallback failed for " + filePath);
-        return null;
+        System.out.println("CPatMinerExecutor: Transforming C# file to Java AST: " + filePath);
+        return tryCPatMinerTransformation(csharpContent, filePath);
     }
     
-    /**
-     * Try CPatMiner transformation (may fail due to GumTree dependencies)
-     */
     private static CompilationUnit tryCPatMinerTransformation(String csharpContent, String filePath) {
+        // CPatMiner must be initialized at this point
+        if (transformationClass == null || transformMethod == null) {
+            System.err.println("CPatMinerExecutor: ERROR - CPatMiner not initialized when attempting transformation");
+            return null;
+        }
+        
         try {
-            System.out.println("CPatMinerExecutor: Trying CPatMiner transformation for: " + filePath);
-            System.out.println("CPatMinerExecutor: C# content length: " + csharpContent.length());
+            System.out.println("CPatMinerExecutor: Executing CPatMiner transformation (" + csharpContent.length() + " chars)...");
             
             // Call CPatMiner's transform_csharp_to_java method
             Object result = transformMethod.invoke(null, csharpContent);
             
             if (result instanceof CompilationUnit) {
                 CompilationUnit compilationUnit = (CompilationUnit) result;
-                System.out.println("CPatMinerExecutor: CPatMiner generated Java AST with " + 
-                                 compilationUnit.types().size() + " types for " + filePath);
+                System.out.println("CPatMinerExecutor: SUCCESS - Generated Java AST with " + 
+                                 compilationUnit.types().size() + " types");
                 return compilationUnit;
+            } else if (result == null) {
+                System.err.println("CPatMinerExecutor: ERROR - CPatMiner returned null");
+                return null;
             } else {
-                System.err.println("CPatMinerExecutor: CPatMiner returned non-CompilationUnit result: " + 
-                                 (result != null ? result.getClass().getName() : "null"));
+                System.err.println("CPatMinerExecutor: ERROR - CPatMiner returned unexpected type: " + 
+                                 result.getClass().getName());
                 return null;
             }
             
-        } catch (Exception e) {
-            System.err.println("CPatMinerExecutor: CPatMiner transformation failed for " + filePath + ": " + e.getMessage());
-            // Don't print full stack trace here as we have a fallback
+        } catch (java.lang.reflect.InvocationTargetException e) {
+            Throwable cause = e.getCause();
+            String errorMsg = cause != null ? cause.getClass().getSimpleName() : "unknown";
+            String detail = cause != null ? cause.getMessage() : "";
+            System.err.println("CPatMinerExecutor: ERROR - CPatMiner execution failed: " + errorMsg);
+            if (detail != null && !detail.isEmpty()) {
+                System.err.println("CPatMinerExecutor: Details: " + detail);
+            }
+            if (System.getProperty("debug") != null) {
+                e.getCause().printStackTrace();
+            }
+            return null;
+        } catch (Throwable e) {
+            System.err.println("CPatMinerExecutor: ERROR - CPatMiner transformation failed: " + e.getClass().getSimpleName() + " - " + e.getMessage());
+            if (System.getProperty("debug") != null) {
+                e.printStackTrace();
+            }
             return null;
         }
     }

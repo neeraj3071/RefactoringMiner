@@ -15,6 +15,30 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<!-- Build fat JAR with all dependencies included -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.4.2</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>transformation.Transformation</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -100,7 +124,7 @@
 		<dependency>
 			<groupId>com.github.gumtreediff</groupId>
 			<artifactId>core</artifactId>
-			<version>3.0.0</version>
+			<version>4.0.0-beta6</version>
 			<scope>compile</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -125,14 +149,14 @@
 		<dependency>
 			<groupId>com.github.gumtreediff</groupId>
 			<artifactId>client</artifactId>
-			<version>3.0.0</version>
+			<version>4.0.0-beta6</version>
 			<scope>compile</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.gumtreediff/gen.srcml -->
 		<dependency>
 			<groupId>com.github.gumtreediff</groupId>
 			<artifactId>gen.srcml</artifactId>
-			<version>3.0.0</version>
+			<version>4.0.0-beta6</version>
 			<scope>compile</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
@@ -145,7 +169,7 @@
 		<dependency>
 			<groupId>com.github.gumtreediff</groupId>
 			<artifactId>gen.jdt</artifactId>
-			<version>3.0.0</version>
+			<version>4.0.0-beta6</version>
 		</dependency>
 
 

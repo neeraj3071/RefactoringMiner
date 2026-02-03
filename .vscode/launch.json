@@ -1,0 +1,94 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug C# RefactoringMiner - Single Commit",
+            "request": "launch",
+            "mainClass": "org.refactoringminer.csharp.CSharpRefactoringMiner",
+            "projectName": "RefactoringMiner",
+            "args": [
+                "-c",
+                "${workspaceFolder}/CS_TO_JAVA_TRANSFORMATION_EG",
+                "HEAD",
+                "-json",
+                "${workspaceFolder}/output/debug-refactorings.json"
+            ],
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Debug CPatMiner Transformation",
+            "request": "launch",
+            "mainClass": "org.refactoringminer.csharp.CPatMinerTest",
+            "projectName": "RefactoringMiner",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Debug C# AST to UMLModel Flow",
+            "request": "launch",
+            "mainClass": "org.refactoringminer.csharp.debug.ASTFlowDebugger",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Debug JUnit Test (Current File)",
+            "request": "launch",
+            "mainClass": "org.junit.platform.console.ConsoleLauncher",
+            "projectName": "RefactoringMiner",
+            "args": [
+                "--select-class",
+                "${file}"
+            ],
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Debug RefactoringMiner CLI",
+            "request": "launch",
+            "mainClass": "org.refactoringminer.RefactoringMiner",
+            "projectName": "RefactoringMiner",
+            "args": [
+                "-c",
+                "${input:repoPath}",
+                "${input:commitHash}",
+                "-json",
+                "${workspaceFolder}/output/refactorings.json"
+            ],
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Attach to Remote Java Process",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
+        }
+    ],
+    "inputs": [
+        {
+            "id": "repoPath",
+            "type": "promptString",
+            "description": "Enter the repository path:",
+            "default": "${workspaceFolder}"
+        },
+        {
+            "id": "commitHash",
+            "type": "promptString",
+            "description": "Enter the commit hash:",
+            "default": "HEAD"
+        }
+    ]
+}

@@ -14,7 +14,6 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 		setMinPriority(minP);
 	}
 
-	@Override
 	protected void retainBestMapping(List<Mapping> mappingList, Set<Tree> srcIgnored, Set<Tree> dstIgnored) {
 		List<Mapping> verifiedList = new ArrayList<>();
 		for (Mapping mapping : mappingList) {
@@ -24,7 +23,17 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 			}
 			else verifiedList.add(mapping);
 		}
-		super.retainBestMapping(verifiedList, srcIgnored, dstIgnored);
+		while (!verifiedList.isEmpty()) {
+			Mapping mapping = verifiedList.remove(0);
+			if (!(srcIgnored.contains(mapping.first) || dstIgnored.contains(mapping.second)))
+			{
+				mappings.addMappingRecursively(mapping.first, mapping.second);
+				srcIgnored.add(mapping.first);
+				srcIgnored.addAll(mapping.first.getDescendants());
+				dstIgnored.add(mapping.second);
+				dstIgnored.addAll(mapping.second.getDescendants());
+			}
+		}
 	}
 
 	private static boolean isAcceptableMatch(Mapping mapping) {
@@ -68,18 +77,14 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 	}
 
 	private static boolean isSamePositionInConditional(Tree input1, Tree input2) {
-		int input1Index = getIndexInConditional(input1);
-		int input2Index = getIndexInConditional(input2);
-		return input1Index == input2Index;
+		return getIndexInConditional(input1) == getIndexInConditional(input2);
 	}
 
 	private static int getIndexInConditional(Tree input1) {
-		int input1Index = 0;
-		while (!input1.getParent().getType().name.equals(Constants.CONDITIONAL_EXPRESSION))
-			input1 = input1.getParent();
-		int input2Index = 0;
-		input1Index = input1.positionInParent();
-		return input1Index;
+		Tree current = input1;
+		while (!current.getParent().getType().name.equals(Constants.CONDITIONAL_EXPRESSION))
+			current = current.getParent();
+		return current.positionInParent();
 	}
 
 	@Override
@@ -88,7 +93,7 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 		this.dst = dst;
 		this.mappings = mappings;
 
-		var multiMappings = new MultiMappingStore();
+		MultiMappingStore multiMappings = new MultiMappingStore();
 		PriorityTreeQueue srcTrees = new DefaultPriorityTreeQueue(src, this.minPriority, this.priorityCalculator);
 		PriorityTreeQueue dstTrees = new DefaultPriorityTreeQueue(dst, this.minPriority, this.priorityCalculator);
 
@@ -97,11 +102,11 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 			if (srcTrees.isEmpty() || dstTrees.isEmpty())
 				break;
 
-			var currentPrioritySrcTrees = srcTrees.pop();
-			var currentPriorityDstTrees = dstTrees.pop();
+			List<Tree> currentPrioritySrcTrees = srcTrees.pop();
+			List<Tree> currentPriorityDstTrees = dstTrees.pop();
 
-			for (var currentSrc : currentPrioritySrcTrees)
-				for (var currentDst : currentPriorityDstTrees)
+			for (Tree currentSrc : currentPrioritySrcTrees)
+				for (Tree currentDst : currentPriorityDstTrees)
 					if (currentSrc.getMetrics().hash == currentDst.getMetrics().hash) {
 						if (TreeUtilFunctions.isIsomorphicTo(currentSrc,currentDst)) {
 							if (!isOnlyOneMethodInvocation(currentSrc, currentDst))
@@ -121,10 +126,10 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 
 
 
-			for (var t : currentPrioritySrcTrees)
+			for (Tree t : currentPrioritySrcTrees)
 				if (!multiMappings.hasSrc(t))
 					srcTrees.open(t);
-			for (var t : currentPriorityDstTrees)
+			for (Tree t : currentPriorityDstTrees)
 				if (!multiMappings.hasDst(t))
 					dstTrees.open(t);
 		}
@@ -133,24 +138,23 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 		return this.mappings;
 	}
 
-	@Override
 	public void filterMappings(MultiMappingStore multiMappings) {
 		// Select unique mappings first and extract ambiguous mappings.
 		List<Mapping> ambiguousList = new ArrayList<>();
 		Set<Tree> ignored = new HashSet<>();
-		for (var src : multiMappings.allMappedSrcs()) {
-			var isMappingUnique = false;
-			if (multiMappings.isSrcUnique(src)) {
-				var dst = multiMappings.getDsts(src).stream().findAny().get();
-				if (multiMappings.isDstUnique(dst)) {
-					mappings.addMappingRecursively(src, dst);
-					isMappingUnique = true;
+		for (Tree srcTree : multiMappings.allMappedSrcs()) {
+			boolean mappingIsUnique = false;
+			if (multiMappings.isSrcUnique(srcTree)) {
+				Tree mappedDst = multiMappings.getDsts(srcTree).stream().findAny().get();
+				if (multiMappings.isDstUnique(mappedDst)) {
+					mappings.addMappingRecursively(srcTree, mappedDst);
+					mappingIsUnique = true;
 				}
 			}
 
-			if (!(ignored.contains(src) || isMappingUnique)) {
-				var adsts = multiMappings.getDsts(src);
-				var asrcs = multiMappings.getSrcs(multiMappings.getDsts(src).iterator().next());
+			if (!(ignored.contains(srcTree) || mappingIsUnique)) {
+				Set<Tree> adsts = multiMappings.getDsts(srcTree);
+				Set<Tree> asrcs = multiMappings.getSrcs(multiMappings.getDsts(srcTree).iterator().next());
 				for (Tree asrc : asrcs)
 					for (Tree adst : adsts) {
 						ambiguousList.add(new Mapping(asrc, adst));
@@ -170,7 +174,6 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 	}
 
 	private void ambiguousLeafModification(List<Mapping> ambiguousList, Set<Tree> srcIgnored, Set<Tree> dstIgnored) {
-		List<Mapping> ret = new ArrayList<>();
 		for (Mapping mapping : ambiguousList) {
 			Tree asrc = mapping.first;
 			Tree adst = mapping.second;
@@ -185,7 +188,6 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 					int j = adst.positionInParent();
 					if (i == j && asrc.getParent().getType().name.equals(adst.getParent().getType().name))
 					{
-						ret.add(mapping);
 						srcIgnored.add(asrc);
 						dstIgnored.add(adst);
 					}
@@ -194,7 +196,6 @@ public class CustomTopDownMatcher extends GreedySubtreeMatcher {
 						Tree dstYoungerSibling = adst.getParent().getChild(j - 1);
 						if (mappings.getSrcForDst(dstYoungerSibling) != null)
 							if (mappings.getSrcForDst(dstYoungerSibling).equals(srcYoungerSibling)) {
-								ret.add(mapping);
 								srcIgnored.add(asrc);
 								dstIgnored.add(adst);
 							}

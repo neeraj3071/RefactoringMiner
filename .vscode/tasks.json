@@ -1,0 +1,78 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build RefactoringMiner",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": [
+                "build",
+                "-x",
+                "test",
+                "-x",
+                "javadoc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build and Run Tests",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": [
+                "test",
+                "--info"
+            ],
+            "group": "test",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": [
+                "clean",
+                "build"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run C# Debug Test",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": [
+                "runDebugger"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Create Debug Output Directory",
+            "type": "shell",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${workspaceFolder}/output"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
