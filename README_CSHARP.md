@@ -29,100 +29,128 @@ The C# RefactoringMiner implements a complete refactoring detection pipeline wit
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 2: C# File Detection & Reading                            │
-│ Component: CSharpFileProcessor                                  │
-│ Process: Find all .cs files in repo or commit delta             │
-│ Output: Set of C# source file contents (String)                 │
+│ Stage 2: C# File Detection                                      │
+│ Component: CSharpGitServiceImpl                                 │
+│ Process: Extend GitServiceImpl to detect .cs files              │
+│ Output: Set of file paths (javaFilesBefore, javaFilesCurrent)   │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 3: srcML Parsing (C# → XML AST)                           │
-│ Tool: srcML CLI (external process)                              │
-│ Process: Convert C# code to structured XML representation       │
-│ Output: XML AST tree (DOM Document)                             │
+│ Stage 3: File Content Reading                                   │
+│ Component: GitServiceImpl.populateFileContents() (JGit)         │
+│ Process: Read file contents from git using TreeWalk             │
+│ Output: Map<String, String> fileContents                        │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 4: GumTree XML Parsing & Tree Construction                │
-│ Library: GumTree 4.0.0-beta6                                    │
-│ Process: Parse XML into GumTree node types                      │
-│ Output: Typed tree with INode, TreeNode implementations         │
+│ Stage 4: UML Model Creation Router                              │
+│ Component: CSharpGitHistoryRefactoringMiner.createModel()       │
+│ Logic: Count .cs files → route to C# or Java reader             │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 5: SrcML AST → Java AST Transformation                    │
-│ Component: SrcMLTreeVisitor (2028 lines, 75 visitor methods)    │
-│ Process: Pattern matching to convert C# AST to Java AST nodes   │
-│ Output: Eclipse JDT CompilationUnit                             │
+│ Stage 5: C# AST Reader                                          │
+│ Component: CSharpUMLModelASTReader                              │
+│ Process: Orchestrate CPatMiner integration                      │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 6: Tree Diffing (Before vs After Commit)                  │
-│ Library: GumTree tree diff algorithm                            │
-│ Process: Compare parent-commit AST with child-commit AST        │
-│ Output: Edit script (Insert, Delete, Move, Update nodes)        │
+│ Stage 6: CPatMiner JAR Loading                                  │
+│ Component: CPatMinerExecutor                                    │
+│ Process: Load CPatMiner JAR via URLClassLoader, get transform   │
+│         method via reflection                                   │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 7: Refactoring Pattern Matching                           │
-│ Component: RefactoringMiner Core Engine                         │
-│ Process: Apply 60+ predefined refactoring detection rules       │
-│ Output: List of detected Refactoring objects                    │
+│ Stage 7: CPatMiner C# → Java AST (INSIDE CPATMINER JAR)        │
+│ Component: Transformation.transform_csharp_to_java()            │
+│ Substages:                                                      │
+│   7a: srcML Parsing (C# → XML AST) - external srcML tool        │
+│   7b: GumTree XML Parsing - parse XML into GumTree nodes        │
+│   7c: SrcMLTreeVisitor - 75+ visitor methods transform tree     │
+│ Output: CompilationUnit (Eclipse JDT Java AST)                  │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 8: JSON Serialization & Output                            │
+│ Stage 8: AST to String Conversion                               │
+│ Component: CPatMinerExecutor.astToString()                      │
+│ Process: Convert CompilationUnit back to Java source strings    │
+│ Output: Map<String, String> with Java code                      │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 9: UML Model Building                                     │
+│ Component: UMLModelASTReader (RefactoringMiner core)            │
+│ Process: Parse Java strings into UMLModel                       │
+│ Output: UMLModel (before and after commit)                      │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 10: Refactoring Detection                                 │
+│ Component: GitHistoryRefactoringMinerImpl.detectRefactorings()  │
+│ Process: Compare before/after UML models, apply 60+ rules       │
+│ Output: List<Refactoring>                                       │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│ Stage 11: JSON Serialization & Output                           │
+│ Component: CSharpRefactoringMiner (handler callbacks)           │
 │ Format: RefactoringMiner standard JSON schema                   │
 │ Output: refactorings.json with detected changes                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 5-Stage AST Transformation (Stage 5 Details)
+### AST Transformation Inside CPatMiner (Stage 7 Details)
 
-Inside Stage 5, the SrcMLTreeVisitor performs detailed structural transformation:
+Inside CPatMiner's `transform_csharp_to_java()` method, the transformation occurs in substages:
 
 ```
-Stage 5.1: srcML XML Node Processing
+Stage 7a: srcML C# Parsing (External Process)
+├─ Input: C# source code string
+├─ Tool: srcML command-line utility
+├─ Process: Parse C# syntax into XML representation
+└─ Output: XML AST document
+
+Stage 7b: GumTree XML Parsing
+├─ Input: srcML XML document
+├─ Library: GumTree 4.0.0-beta6
+├─ Process: Parse XML into typed tree nodes (INode, TreeNode)
+└─ Output: GumTree AST with C# node types
+
+Stage 7c: SrcMLTreeVisitor Transformation (2000+ lines)
 ├─ Input: GumTree INode (from srcML XML)
-├─ Logic: Identify node type (class, method, property, lambda, LINQ, etc.)
-└─ Output: Routed to specific visitor method
+├─ Process: 75+ visitor methods for node transformation
+├─ Logic: Pattern match on node types (class, method, property, lambda, LINQ)
+├─ C# Language Construct Mapping:
+│  ├─ Properties → Getter/Setter pairs (Java patterns)
+│  ├─ Events → Observer pattern delegates
+│  ├─ Async/Await → Method markers + Task wrapping
+│  ├─ LINQ → Stream chains or loop equivalents
+│  ├─ Lambda → FunctionExpression (with body handling)
+│  └─ Attributes → Java annotations
+├─ Statement Handling: 20+ types (if, while, foreach, switch, try, etc.)
+├─ Expression Handling: Method calls, field access, operators, literals
+└─ Output: Eclipse JDT CompilationUnit (Java AST)
 
-Stage 5.2: C# Language Construct Mapping
-├─ Properties → Getter/Setter pairs (Java patterns)
-├─ Events → Observer pattern delegates
-├─ Async/Await → Method markers + Task wrapping
-├─ LINQ → Stream chains or loop equivalents
-├─ Lambda → FunctionExpression (with body handling)
-└─ Attributes → Java annotations
-
-Stage 5.3: Method Body Transformation
-├─ Input: BlockNode (C# method body)
-├─ Process: Recursively visit all statement nodes
-├─ Handle: 20+ statement types (if, while, foreach, switch, try, etc.)
-└─ Output: Block with transformed statements
-
-Stage 5.4: Expression Transformation
-├─ Input: ExprNode (C# expressions)
-├─ Process: Convert expressions preserving semantics
-├─ Handle: Method calls, field access, operators, literals
-└─ Output: Expression nodes in Java AST
-
-Stage 5.5: AST Assembly
-├─ Combine all transformed pieces
-├─ Link parent-child relationships
-├─ Return: Complete Eclipse JDT CompilationUnit
-└─ Ready for: Stage 6 (Tree Diffing)
+Stage 7d: Return to RefactoringMiner
+├─ CPatMiner returns CompilationUnit to CPatMinerExecutor
+├─ RefactoringMiner continues with Stage 8 (AST to String)
+└─ Ready for: UML Model Building (Stage 9)
 ```
 
 ### Key Components
 
-1. **`CSharpRefactoringMiner`** - CLI entry point, handles command parsing and git operations (Stage 1-2)
-2. **`CSharpGitHistoryRefactoringMiner`** - Git integration, repository cloning and commit navigation
-3. **`CSharpFileProcessor`** - C# file detection and reading from git commits (Stage 2)
-4. **`SrcMLBasedCSharpProcessor`** - Orchestrates srcML parsing and tree transformation (Stage 3-5)
-5. **`SrcMLTreeVisitor`** - Core pattern matching engine with 75 visitor methods for AST transformation (Stage 5)
-6. **`CPatMinerExecutor`** - Dynamic bridge for CPatMiner integration (alternative analysis path)
-7. **RefactoringMiner Core** - Tree diffing, refactoring detection rules, and JSON serialization (Stage 6-8)
+1. **`CSharpRefactoringMiner`** - CLI entry point, handles command parsing and git operations (Stage 1)
+2. **`CSharpGitHistoryRefactoringMiner`** - Git integration, repository cloning and commit navigation (Stage 2)
+3. **`CSharpGitServiceImpl`** - Extends GitServiceImpl to detect .cs files alongside .java files (Stage 3)
+4. **`CSharpUMLModelASTReader`** - Orchestrates CPatMiner integration for C# AST generation (Stage 6)
+5. **`CPatMinerExecutor`** - Dynamically loads and executes CPatMiner JAR via reflection (Stage 7)
+6. **CPatMiner Internal Components** (inside JAR):
+   - **`Transformation.transform_csharp_to_java()`** - Main entry point for C# parsing
+   - **`SrcMLTreeVisitor`** - 2000+ line visitor with 75+ methods for C# to Java AST transformation
+   - **srcML integration** - External tool for C# source to XML AST parsing
+   - **GumTree** - XML parsing and tree construction
+7. **RefactoringMiner Core** - Tree diffing, refactoring detection rules, and JSON serialization (Stage 10-11)
 
 ---
 
@@ -439,15 +467,28 @@ RefactoringMiner C# detects **60+ refactoring types**. The most commonly detecte
 
 ```
 src/main/java/org/refactoringminer/csharp/
-├── CSharpRefactoringMiner.java          # Main CLI entry point (Stage 1)
-├── CSharpGitHistoryRefactoringMiner.java # Git integration (Stage 1-2)
-├── CSharpFileProcessor.java              # File detection (Stage 2)
-├── SrcMLBasedCSharpProcessor.java        # srcML & GumTree orchestration (Stage 3-4)
-├── SrcMLTreeVisitor.java                 # AST transformation - 75 visitor methods (Stage 5) 
-├── CSharpUMLModelASTReader.java          # AST reader utility
-├── CPatMinerExecutor.java                # CPatMiner dynamic bridge
-└── cli/                                  # CLI utilities
-    └── CSharpRefactoringMinerCLI.java    # Command-line interface
+├── CSharpRefactoringMiner.java           # Main CLI entry point (Stage 1)
+├── CSharpGitHistoryRefactoringMiner.java # Git integration, overrides createModel() (Stage 2, 4)
+├── CSharpGitServiceImpl.java             # Extends GitServiceImpl for .cs files (Stage 3)
+├── CSharpUMLModelASTReader.java          # Orchestrates CPatMiner integration (Stage 5)
+└── CPatMinerExecutor.java                # Dynamic JAR loader & executor (Stage 6)
+
+CPatMinerV2/AtomicASTChangeMining/src/transformation/
+├── Transformation.java                   # Main entry: transform_csharp_to_java()
+├── SrcMLTreeVisitor.java                 # 2000+ lines, 75+ visitor methods (Stage 7c)
+├── nodes/                                # C# AST node types
+│   ├── BlockNode.java
+│   ├── ClassNode.java
+│   ├── ExprNode.java
+│   ├── MethodNode.java
+│   └── ... (50+ node types)
+└── utils/                                # Parsing utilities
+
+External Dependencies:
+├── srcML CLI                             # C# to XML parser (Stage 7a)
+├── GumTree 4.0.0-beta6                   # XML to tree parser (Stage 7b)
+├── Eclipse JDT                           # Java AST representation
+└── RefactoringMiner Core                 # Refactoring detection (Stage 10)
 ```
 
 ---
