@@ -1,8 +1,6 @@
 package org.refactoringminer.csharp;
 
 import gr.uom.java.xmi.UMLModel;
-import gr.uom.java.xmi.diff.MoveSourceFolderRefactoring;
-import gr.uom.java.xmi.diff.UMLModelDiff;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
@@ -21,6 +19,27 @@ import java.util.*;
 public class CSharpGitHistoryRefactoringMiner extends GitHistoryRefactoringMinerImpl {
 
     /**
+     * PUBLIC STATIC OVERRIDE - Required to intercept parent class's createModel() calls
+     * Checks if C# files are present and routes to appropriate parser
+     */
+    public static UMLModel createModel(Map<String, String> fileContents, Set<String> repositoryDirectories) throws Exception {
+        // Count C# files
+        long csharpFiles = fileContents.keySet().stream()
+            .filter(path -> path != null && path.toLowerCase().endsWith(".cs"))
+            .count();
+        
+        if (csharpFiles > 0) {
+            System.out.println("CSharpGitHistoryRefactoringMiner.createModel: Found " + csharpFiles + 
+                             " C# files - using CSharpUMLModelASTReader");
+            return new CSharpUMLModelASTReader(fileContents, repositoryDirectories, false).getUmlModel();
+        } else {
+            // No C# files - use parent class's standard Java parser
+            System.out.println("CSharpGitHistoryRefactoringMiner.createModel: No C# files found - using standard UMLModelASTReader");
+            return GitHistoryRefactoringMinerImpl.createModel(fileContents, repositoryDirectories);
+        }
+    }
+
+    /**
      * Override detectRefactorings to use C# GitService that supports .cs files
      */
     @Override
@@ -30,26 +49,6 @@ public class CSharpGitHistoryRefactoringMiner extends GitHistoryRefactoringMiner
         // Use our C# GitService instead of the provided one
         CSharpGitServiceImpl csharpGitService = new CSharpGitServiceImpl();
         return super.detectRefactorings(csharpGitService, repository, handler, currentCommit);
-    }
-
-    /**
-     * Create model using C# processing if C# files are present
-     */
-    private UMLModel createModelWithCSharpSupport(Map<String, String> fileContents, Set<String> repositoryDirectories) throws Exception {
-        System.out.println("CSharpGitHistoryRefactoringMiner: Creating model with C# file processing for " + fileContents.size() + " files");
-        
-        // Count C# files
-        long csharpFiles = fileContents.keySet().stream()
-            .filter(path -> path.toLowerCase().endsWith(".cs"))
-            .count();
-        
-        if (csharpFiles > 0) {
-            System.out.println("Found " + csharpFiles + " C# files - processing with CSharp transformation");
-            return new CSharpUMLModelASTReader(fileContents, repositoryDirectories, false).getUmlModel();
-        } else {
-            System.out.println("No C# files found - using standard Java processing");
-            return createModelForASTDiff(fileContents, repositoryDirectories);
-        }
     }
 
     @Override
