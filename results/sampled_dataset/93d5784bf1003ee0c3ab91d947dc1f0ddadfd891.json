@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PKBeam/Edda.git",
+	"sha1": "93d5784bf1003ee0c3ab91d947dc1f0ddadfd891",
+	"url": "https://github.com/PKBeam/Edda/commit/93d5784bf1003ee0c3ab91d947dc1f0ddadfd891",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class DifficultyPredictor renamed to DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.cs",
+		"startLine": 10,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DifficultyPredictor"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 16,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "DifficultyPredictorNytilde"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public PredictDifficulty(mapEditor MapEditor, difficultyIndex int) from class DifficultyPredictor",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.cs",
+		"startLine": 12,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PredictDifficulty(mapEditor MapEditor, difficultyIndex int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 22,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public PredictDifficulty(mapEditor MapEditor, difficultyIndex int)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter model : byte[] in method private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float from class DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.cs",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EvaluateModel(noteDensity float, averageTimeDifference float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 44,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "model : byte[]"
+}, {
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 45,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter melchiorDiffScore : float in method private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float from class DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.cs",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EvaluateModel(noteDensity float, averageTimeDifference float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 106,
+		"endColumn": 129,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "melchiorDiffScore : float"
+}, {
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.cs",
+		"startLine": 45,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}]
+}
+]
+}]
+}

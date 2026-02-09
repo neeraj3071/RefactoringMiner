@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "5e3bdf2268793f7d3b3c7692112634d86f43bf33",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/5e3bdf2268793f7d3b3c7692112634d86f43bf33",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter scene : Scene to loadingScene : Scene in method private SceneManager_SceneLoaded(loadingScene Scene, mode LoadSceneMode) : void from class Cognitive3D_Manager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 47,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scene : Scene"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 47,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "loadingScene : Scene"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 446,
+		"endLine": 446,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable replacingSceneId : bool to loadingSceneHasSceneId : bool in method private SceneManager_SceneLoaded(loadingScene Scene, mode LoadSceneMode) : void from class Cognitive3D_Manager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 18,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "replacingSceneId : bool"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 429,
+		"endLine": 446,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 429,
+		"endLine": 429,
+		"startColumn": 18,
+		"endColumn": 129,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "loadingSceneHasSceneId : bool"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 444,
+		"endLine": 448,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter scene : Scene to unloadingScene : Scene in method private SceneManager_SceneUnloaded(unloadingScene Scene) : void from class Cognitive3D_Manager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 49,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scene : Scene"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 49,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "unloadingScene : Scene"
+}, {
+		"filePath": "Runtime/Scripts/Cognitive3D_Manager.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

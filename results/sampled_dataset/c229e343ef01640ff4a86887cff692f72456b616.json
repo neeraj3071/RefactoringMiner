@@ -1,0 +1,774 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "c229e343ef01640ff4a86887cff692f72456b616",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/c229e343ef01640ff4a86887cff692f72456b616",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Material : readonly to Material : Material in class MaterialBase",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Material : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Material : Material"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to package in attribute package Material : Material from class MaterialBase",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Material : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package Material : Material"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable material : var to material : MaterialBase in method private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "material : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 50,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "material : MaterialBase"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type material : var to material : MaterialBase in method private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "material : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 50,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "material : MaterialBase"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter maxTextureSize : int to maxTextureSize : var in method private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 497,
+		"startColumn": 50,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "maxTextureSize : int"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 29,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 510,
+		"endLine": 515,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 29,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "maxTextureSize : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 29,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 57,
+		"endLine": 62,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type maxTextureSize : int to maxTextureSize : var in method private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 497,
+		"startColumn": 50,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "maxTextureSize : int"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 29,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 510,
+		"endLine": 515,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 29,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "maxTextureSize : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 29,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 57,
+		"endLine": 62,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter saveDirectory : string to texturesPath : string in method private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 497,
+		"startColumn": 103,
+		"endColumn": 123,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "saveDirectory : string"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 106,
+		"endColumn": 125,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "texturesPath : string"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter m : Material in method private GenerateToonLitTexture(maxTextureSize int, settings ToonLitConvertSettings, saveDirectory string, m Material) : Texture2D from class AvatarConverter",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 497,
+		"startColumn": 125,
+		"endColumn": 135,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "m : Material"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 530,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GenerateToonLitTexture(maxTextureSize int, settings ToonLitConvertSettings, saveDirectory string, m Material) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 44,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GenerateToonLitTexture(maxTextureSize int, settings ToonLitConvertSettings, saveDirectory string, m Material) : Texture2D from class AvatarConverter to private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 497,
+		"endLine": 530,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GenerateToonLitTexture(maxTextureSize int, settings ToonLitConvertSettings, saveDirectory string, m Material) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 44,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GenerateToonLitTexture(material MaterialBase, settings ToonLitConvertSettings, texturesPath string) : Texture2D"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public GenerateMaterial(material MaterialBase, texturesPath string) : Material extracted from package ConvertMaterialsForAndroid(materials Material[], avatarConverterSettings AvatarConverterSettings, assetsDirectory string, progressCallback TextureProgressCallback) in class AvatarConverter & moved to class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 266,
+		"endLine": 324,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package ConvertMaterialsForAndroid(materials Material[], avatarConverterSettings AvatarConverterSettings, assetsDirectory string, progressCallback TextureProgressCallback)"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 33,
+		"endColumn": 145,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 288,
+		"endLine": 294,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 289,
+		"endLine": 294,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 27,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GenerateMaterial(material MaterialBase, texturesPath string) : Material"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 264,
+		"endLine": 315,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package ConvertMaterialsForAndroid(materials Material[], avatarConverterSettings AvatarConverterSettings, assetsDirectory string, progressCallback TextureProgressCallback)"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 38,
+		"endColumn": 140,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "new ToonLitGenerator(toonLitConvertSettings).GenerateMaterial(material,$)"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable texDir : var in method package ConvertMaterialsForAndroid(materials Material[], avatarConverterSettings AvatarConverterSettings, assetsDirectory string, progressCallback TextureProgressCallback) from class AvatarConverter",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 37,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "texDir : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 33,
+		"endColumn": 145,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type output : Material to newMaterial : var in method public GenerateMaterial(material MaterialBase, texturesPath string) : Material from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "output : Material"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newMaterial : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tex : var to texture : var in method public GenerateMaterial(material MaterialBase, texturesPath string) : Material from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 37,
+		"endColumn": 144,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tex : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 33,
+		"endColumn": 145,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 21,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "texture : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable output : Material to newMaterial : var in method public GenerateMaterial(material MaterialBase, texturesPath string) : Material from class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "output : Material"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "newMaterial : var"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public GenerateTextures(material MaterialBase, texturesPath string) : void extracted from package GenerateAndroidTextures(materials Material[], assetsDirectory string, settings AvatarConverterSettings, progressCallback TextureProgressCallback) in class AvatarConverter & moved to class ToonLitGenerator",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 218,
+		"endLine": 256,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package GenerateAndroidTextures(materials Material[], assetsDirectory string, settings AvatarConverterSettings, progressCallback TextureProgressCallback)"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 33,
+		"endColumn": 152,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GenerateTextures(material MaterialBase, texturesPath string) : void"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/MaterialGenerators/ToonLitGenerator.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 217,
+		"endLine": 254,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package GenerateAndroidTextures(materials Material[], assetsDirectory string, settings AvatarConverterSettings, progressCallback TextureProgressCallback) : void"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 33,
+		"endColumn": 113,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "new ToonLitGenerator(toonLitConvertSettings).GenerateTextures(m2,saveDirectory)"
+}]
+}
+]
+}]
+}

@@ -62,7 +62,7 @@ The C# RefactoringMiner implements a complete refactoring detection pipeline wit
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│ Stage 7: CPatMiner C# → Java AST (INSIDE CPATMINER JAR)        │
+│ Stage 7: CPatMiner C# → Java AST (INSIDE CPATMINER JAR)         │
 │ Component: Transformation.transform_csharp_to_java()            │
 │ Substages:                                                      │
 │   7a: srcML Parsing (C# → XML AST) - external srcML tool        │

@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "fe01f4543b941bc840fc4fb408e5100079516920",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/fe01f4543b941bc840fc4fb408e5100079516920",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type positionPreview : ObjectPlacementModule.PositionPreviewDelegate to positionPreview : PositionPreviewDelegate in class IPositionPreview",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/IPlacePreview.cs",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "positionPreview : ObjectPlacementModule.PositionPreviewDelegate"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/IPlacePreview.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 26,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "positionPreview : PositionPreviewDelegate"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type positionPreview : ObjectPlacementModule.PositionPreviewDelegate to positionPreview : PositionPreviewDelegate in class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 55,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "positionPreview : ObjectPlacementModule.PositionPreviewDelegate"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "positionPreview : PositionPreviewDelegate"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type positionPreview : ObjectPlacementModule.PositionPreviewDelegate to positionPreview : PositionPreviewDelegate in class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 55,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "positionPreview : ObjectPlacementModule.PositionPreviewDelegate"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "positionPreview : PositionPreviewDelegate"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute selectedObject : GameObject to dragObject : GameObject in class EditorVR.MiniWorldRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "selectedObject : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "dragObject : GameObject"
+}]
+}
+]
+}]
+}

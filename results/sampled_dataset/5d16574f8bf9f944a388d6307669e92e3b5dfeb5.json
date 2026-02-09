@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/deanstein/CinderellaCityProject.git",
+	"sha1": "5d16574f8bf9f944a388d6307669e92e3b5dfeb5",
+	"url": "https://github.com/deanstein/CinderellaCityProject/commit/5d16574f8bf9f944a388d6307669e92e3b5dfeb5",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ManageTagsEditor renamed to ManageTags",
+	"leftSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/Editor/ManageTagsEditor.cs",
+		"startLine": 9,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ManageTagsEditor"
+}],
+	"rightSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/Editor/ManageTags.cs",
+		"startLine": 6,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ManageTags"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class .ManageTags..TagGlobals moved and renamed to .ManageTaggedObjects..TaggedObjectGlobals",
+	"leftSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTags.cs",
+		"startLine": 11,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".ManageTags..TagGlobals"
+}],
+	"rightSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTaggedObjects.cs",
+		"startLine": 11,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": ".ManageTaggedObjects..TaggedObjectGlobals"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class UpdateAnimatorBySpeed renamed to UpdateNPCAnimatorByState",
+	"leftSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/UpdateAnimatorBySpeed.cs",
+		"startLine": 11,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "UpdateAnimatorBySpeed"
+}],
+	"rightSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/UpdateNPCAnimatorByState.cs",
+		"startLine": 11,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "UpdateNPCAnimatorByState"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class ManageTags renamed to ManageTaggedObjects",
+	"leftSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTags.cs",
+		"startLine": 9,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ManageTags"
+}],
+	"rightSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTaggedObjects.cs",
+		"startLine": 9,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ManageTaggedObjects"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public FindAndStoreAllScriptHostObjectsByTypes(types string[]) : void renamed to public GetScriptHostObjectsByTypes(types string[]) : void in class ManageTaggedObjects",
+	"leftSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTags.cs",
+		"startLine": 28,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FindAndStoreAllScriptHostObjectsByTypes(types string[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "CinderellaCitySimulation/Assets/Scripts/ManageTaggedObjects.cs",
+		"startLine": 27,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetScriptHostObjectsByTypes(types string[]) : void"
+}]
+}
+]
+}]
+}

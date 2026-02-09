@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "76c3e830868a0d44a16be5492a0673700b384005",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/76c3e830868a0d44a16be5492a0673700b384005",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable pinnedToolButtonActivePosition : var to toolButtonActivePosition : var in method package SpawnDefaultTools(proxy IProxy) : void from class EditorVR.Tools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 10,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pinnedToolButtonActivePosition : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 6,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 6,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 10,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "toolButtonActivePosition : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 6,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter rayOrigin : Transform in method package SetupPinnedToolButtonsForDevice(deviceData DeviceData, rayOrigin Transform, activeToolType Type) : PinnedToolButton from class EditorVR.Tools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 251,
+		"endLine": 275,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetupPinnedToolButtonsForDevice(deviceData DeviceData) : PinnedToolButton"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 76,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 257,
+		"endLine": 292,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package SetupPinnedToolButtonsForDevice(deviceData DeviceData, rayOrigin Transform, activeToolType Type) : PinnedToolButton"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter activeToolType : Type in method package SetupPinnedToolButtonsForDevice(deviceData DeviceData, rayOrigin Transform, activeToolType Type) : PinnedToolButton from class EditorVR.Tools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 251,
+		"endLine": 275,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetupPinnedToolButtonsForDevice(deviceData DeviceData) : PinnedToolButton"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 97,
+		"endColumn": 116,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "activeToolType : Type"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 257,
+		"endLine": 292,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package SetupPinnedToolButtonsForDevice(deviceData DeviceData, rayOrigin Transform, activeToolType Type) : PinnedToolButton"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute pinnedToolButton : var to pinnedToolButtons : List<PinnedToolButton> in method package SpawnDefaultTools(proxy IProxy) : void from class EditorVR.Tools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 10,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pinnedToolButton : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 6,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 34,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "pinnedToolButtons : List<PinnedToolButton>"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Tools.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

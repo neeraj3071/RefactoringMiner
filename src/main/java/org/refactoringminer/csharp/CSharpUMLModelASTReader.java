@@ -1,13 +1,12 @@
 package org.refactoringminer.csharp;
 
-import gr.uom.java.xmi.UMLModel;
-import gr.uom.java.xmi.UMLModelASTReader;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.jdt.core.dom.CompilationUnit;
+
+import gr.uom.java.xmi.UMLModelASTReader;
 
 /**
  * CSharpUMLModelASTReader - Creates UMLModel from CPatMiner generated AST
