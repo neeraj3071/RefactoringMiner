@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "74beb293daa7f8f3a6d9bdc0c5d2d93461c7b709",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/74beb293daa7f8f3a6d9bdc0c5d2d93461c7b709",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable miniWorldRaysCopy : var in method private OnWorkspaceDestroyed(workspace Workspace) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 892,
+		"endLine": 892,
+		"startColumn": 3,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 899,
+		"endLine": 899,
+		"startColumn": 7,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "miniWorldRaysCopy : var"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 900,
+		"endLine": 900,
+		"startColumn": 3,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_MiniWorldRays : in to miniWorldRaysCopy : in in method private OnWorkspaceDestroyed(workspace Workspace) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 892,
+		"endLine": 892,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_MiniWorldRays : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 892,
+		"endLine": 892,
+		"startColumn": 3,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 900,
+		"endLine": 900,
+		"startColumn": 20,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "miniWorldRaysCopy : in"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 900,
+		"endLine": 900,
+		"startColumn": 3,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

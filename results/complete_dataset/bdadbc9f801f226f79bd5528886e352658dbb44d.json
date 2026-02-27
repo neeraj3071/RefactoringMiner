@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "bdadbc9f801f226f79bd5528886e352658dbb44d",
+	"url": "https://github.com/vrm-c/UniVRM/commit/bdadbc9f801f226f79bd5528886e352658dbb44d",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_textureCache : Dictionary<GetTextureParam,Texture2D> to m_textureCache : Dictionary<GetTextureParam,TextureLoadInfo> in class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 48,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_textureCache : Dictionary<GetTextureParam,Texture2D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 54,
+		"endColumn": 121,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_textureCache : Dictionary<GetTextureParam,TextureLoadInfo>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Textures : IEnumerable<Texture2D> to Textures : IEnumerable<TextureLoadInfo> in class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 39,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Textures : IEnumerable<Texture2D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 45,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Textures : IEnumerable<TextureLoadInfo>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter externalMap : IEnumerable<KeyValuePair<string,UnityEngine.Object>> in method public TextureFactory(gltf glTF, storage IStorage, externalMap IEnumerable<KeyValuePair<string,UnityEngine.Object>>) from class TextureFactory",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TextureFactory(gltf glTF, storage IStorage)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 60,
+		"endColumn": 125,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "externalMap : IEnumerable<KeyValuePair<string,UnityEngine.Object>>"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TextureFactory(gltf glTF, storage IStorage, externalMap IEnumerable<KeyValuePair<string,UnityEngine.Object>>)"
+}]
+}
+]
+}]
+}

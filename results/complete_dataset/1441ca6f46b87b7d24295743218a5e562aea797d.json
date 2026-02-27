@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Saticmotion/Vivista.git",
+	"sha1": "1441ca6f46b87b7d24295743218a5e562aea797d",
+	"url": "https://github.com/Saticmotion/Vivista/commit/1441ca6f46b87b7d24295743218a5e562aea797d",
+	"refactorings": [{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(sortAscending) to int direction=sortAscending ? 1 : -1; in method private UpdateDir() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 222,
+		"endLine": 231,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(sortAscending)"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 204,
+		"endLine": 279,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateDir() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "int direction=sortAscending ? 1 : -1;\n"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 197,
+		"endLine": 260,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private UpdateDir() : void"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(sortAscending) to int direction=sortAscending ? 1 : -1; in method private UpdateDir() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 236,
+		"endLine": 245,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(sortAscending)"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 204,
+		"endLine": 279,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateDir() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "int direction=sortAscending ? 1 : -1;\n"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 197,
+		"endLine": 260,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private UpdateDir() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable direction : int in method private UpdateDir() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 8,
+		"endColumn": 21,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 8,
+		"endColumn": 21,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "direction : int"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable files : in to patterns : in in method private UpdateDir() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "files : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "patterns : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable explorer : in to entries : in in method private ClearItems() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 22,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "explorer : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 283,
+		"endLine": 291,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 22,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "entries : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 4,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 264,
+		"endLine": 276,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable explorer : in to entries : in in method private FillItems() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 22,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "explorer : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 22,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "entries : in"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable entry : var in method private SelectDisk() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 8,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "entry : var"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 314,
+		"endLine": 320,
+		"startColumn": 4,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fullName : var to fullName : string in method public OpenButtonClicked() : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 8,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fullName : var"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 362,
+		"endLine": 362,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 360,
+		"endLine": 367,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 11,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fullName : string"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 343,
+		"endLine": 350,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type path : String to path : string in method private Answer(path string) : void from class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 22,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "path : String"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 22,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "path : string"
+}, {
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute explorer : List<ExplorerEntry> to entries : List<ExplorerEntry> in class ExplorerPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "explorer : List<ExplorerEntry>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UIScripts/ExplorerPanel.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "entries : List<ExplorerEntry>"
+}]
+}
+]
+}]
+}

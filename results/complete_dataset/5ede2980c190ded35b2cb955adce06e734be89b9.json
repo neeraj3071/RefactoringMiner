@@ -1,0 +1,300 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "5ede2980c190ded35b2cb955adce06e734be89b9",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/5ede2980c190ded35b2cb955adce06e734be89b9",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter parameterOutputService : OscQueryService in method public MainStandalone(loggerFactory ILoggerFactory, parameterOutputService OscQueryService, libManager ILibManager, mutator UnifiedTrackingMutator) from class MainStandalone",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "parameterOutputService : OscQueryService"
+}, {
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 25,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MainStandalone(loggerFactory ILoggerFactory, parameterOutputService OscQueryService, libManager ILibManager, mutator UnifiedTrackingMutator)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/MainStandalone.cs",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public MainStandalone(loggerFactory ILoggerFactory, libManager ILibManager, mutator UnifiedTrackingMutator)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : var in method public DNSPacket(stream BigReader) from class DNSPacket",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : var"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : var in method public DNSPacket(stream BigReader) from class DNSPacket",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : var"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : var in method public DNSPacket(stream BigReader) from class DNSPacket",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : var"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : var in method public DNSPacket(stream BigReader) from class DNSPacket",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : var"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/DNSPacket.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public Advertise(serviceName string, instanceName string, port int, address IPAddress) : void from class QueryRegistrar",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/QueryRegistrar.cs",
+		"startLine": 262,
+		"endLine": 273,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Advertise(serviceName string, instanceName string, port int, address IPAddress) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/QueryRegistrar.cs",
+		"startLine": 263,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public Advertise(serviceName string, instanceName string, port int, address IPAddress) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter value : IPEndPoint in method package OnVrchatClientEndpointChanged(value IPEndPoint) : void from class QueryRegistrar",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/QueryRegistrar.cs",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 13,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnVrchatClientEndpointChanged() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/QueryRegistrar.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "value : IPEndPoint"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/Query/mDNS/QueryRegistrar.cs",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 13,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package OnVrchatClientEndpointChanged(value IPEndPoint) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter parameterSendService : ParameterSenderService in method public RiskySettingsViewModel(mainService IMainService, parameterSendService ParameterSenderService, logger ILogger<RiskySettingsViewModel>) from class RiskySettingsViewModel",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "parameterSendService : ParameterSenderService"
+}, {
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 22,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RiskySettingsViewModel(mainService IMainService, parameterSendService ParameterSenderService, logger ILogger<RiskySettingsViewModel>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 22,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RiskySettingsViewModel(mainService IMainService, logger ILogger<RiskySettingsViewModel>)"
+}]
+}
+]
+}]
+}

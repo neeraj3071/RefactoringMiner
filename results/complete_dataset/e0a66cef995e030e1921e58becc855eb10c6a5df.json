@@ -1,0 +1,513 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/DSprtn/GTFO_VR_Plugin.git",
+	"sha1": "e0a66cef995e030e1921e58becc855eb10c6a5df",
+	"url": "https://github.com/DSprtn/GTFO_VR_Plugin/commit/e0a66cef995e030e1921e58becc855eb10c6a5df",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private GetColorStateForState() : ColorTransitionState extracted from public OnPointerExit(ev PointerEvent) : void in class PhysicalButton",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 186,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnPointerExit(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 189,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 190,
+		"endLine": 192,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 194,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 163,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetColorStateForState() : ColorTransitionState"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 165,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private HandleStateChange() : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 45,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetColorStateForState()"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 170,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 169,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private HandleStateChange() : void extracted from public OnPointerExit(ev PointerEvent) : void in class PhysicalButton",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 186,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnPointerExit(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 17,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private HandleStateChange() : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnPointerExit(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "HandleStateChange()"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private GetColorStateForState() : ColorTransitionState extracted from public OnPointerDown(ev PointerEvent) : void in class PhysicalButton",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 207,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnPointerDown(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 163,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetColorStateForState() : ColorTransitionState"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private HandleStateChange() : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 45,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetColorStateForState()"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 165,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 170,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 169,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private HandleStateChange() : void extracted from public OnPointerDown(ev PointerEvent) : void in class PhysicalButton",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 207,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnPointerDown(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 179,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private HandleStateChange() : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 224,
+		"endLine": 233,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnPointerDown(ev PointerEvent) : void"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "HandleStateChange()"
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "GTFO_VR/Core/UI/Terminal/Pointer/PhysicalButton.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_currentFrameKeycode : KeyCode to m_currentFrameKeycode : HashSet<KeyCode> in class TerminalKeyboardInterface",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/TerminalKeyboardInterface.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 32,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_currentFrameKeycode : KeyCode"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/TerminalKeyboardInterface.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 41,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_currentFrameKeycode : HashSet<KeyCode>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_prevFrameKeycode : KeyCode to m_prevFrameKeycode : HashSet<KeyCode> in class TerminalKeyboardInterface",
+	"leftSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/TerminalKeyboardInterface.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_prevFrameKeycode : KeyCode"
+}],
+	"rightSideLocations": [{
+		"filePath": "GTFO_VR/Core/UI/Terminal/TerminalKeyboardInterface.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 41,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_prevFrameKeycode : HashSet<KeyCode>"
+}]
+}
+]
+}]
+}

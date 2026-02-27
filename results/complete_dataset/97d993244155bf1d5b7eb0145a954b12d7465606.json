@@ -1,0 +1,1449 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Sauceke/LoveMachine.git",
+	"sha1": "97d993244155bf1d5b7eb0145a954b12d7465606",
+	"url": "https://github.com/Sauceke/LoveMachine/commit/97d993244155bf1d5b7eb0145a954b12d7465606",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder LoveMachine.Core to LoveMachine.Core/Buttplug",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugWsClient.cs",
+		"startLine": 12,
+		"endLine": 262,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ButtplugWsClient"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 5,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Device"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 28,
+		"endLine": 56,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DeviceListMessage"
+}, {
+		"filePath": "LoveMachine.Core/DeviceManager.cs",
+		"startLine": 6,
+		"endLine": 56,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DeviceManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/ButtplugWsClient.cs",
+		"startLine": 12,
+		"endLine": 262,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "ButtplugWsClient"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 12,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Device"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 38,
+		"endLine": 46,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "DeviceListMessage"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/DeviceManager.cs",
+		"startLine": 6,
+		"endLine": 56,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "DeviceManager"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected abstract GetFemaleAnimator(girlIndex int) : Animator from class ButtplugController to protected abstract GetFemaleAnimator(girlIndex int) : Animator from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetFemaleAnimator(girlIndex int) : Animator"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected abstract GetFemaleAnimator(girlIndex int) : Animator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected abstract GetFemaleBones(girlIndex int) : List<Transform> from class ButtplugController to protected abstract GetFemaleBones(girlIndex int) : List<Transform> from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetFemaleBones(girlIndex int) : List<Transform>"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected abstract GetFemaleBones(girlIndex int) : List<Transform>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected abstract GetMaleBone() : Transform from class ButtplugController to protected abstract GetMaleBone() : Transform from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetMaleBone() : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected abstract GetMaleBone() : Transform"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected abstract GetPose(girlIndex int) : string from class ButtplugController to protected abstract GetPose(girlIndex int) : string from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetPose(girlIndex int) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected abstract GetPose(girlIndex int) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo from class ButtplugController to protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 317,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 22,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected GetExactPose(girlIndex int, boneIndex int) : string from class ButtplugController to private GetExactPose(girlIndex int, boneIndex int) : string from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 15,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetExactPose(girlIndex int, boneIndex int) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetExactPose(girlIndex int, boneIndex int) : string"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private GetExactPose(girlIndex int, boneIndex int) : string from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 15,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetExactPose(girlIndex int, boneIndex int) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetExactPose(girlIndex int, boneIndex int) : string"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method protected GetExactPose(girlIndex int, boneIndex int) : string from class ButtplugController",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 15,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetExactPose(girlIndex int, boneIndex int) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private GetExactPose(girlIndex int, boneIndex int) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected TryGetPhase(girlIndex int, boneIndex int) : bool from class ButtplugController to protected TryGetPhase(girlIndex int, boneIndex int) : bool from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 23,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected TryGetPhase(girlIndex int, boneIndex int) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 28,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected TryGetPhase(girlIndex int, boneIndex int) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int from class ButtplugController to protected GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 37,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 37,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float from class ButtplugController to protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 153,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 48,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ComputeAnimationOffsets(girlIndex int) : IEnumerator from class ButtplugController to private ComputeAnimationOffsets(girlIndex int) : IEnumerator from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 242,
+		"endLine": 295,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ComputeAnimationOffsets(girlIndex int) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 65,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ComputeAnimationOffsets(girlIndex int) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetFrequency() : int from class ButtplugController to private GetFrequency() : int from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 297,
+		"endLine": 315,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetFrequency() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 120,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetFrequency() : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected AnimationLayer : int from class ButtplugController to protected AnimationLayer : int from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected AnimationLayer : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected AnimationLayer : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private Measurement : struct from class ButtplugController to private Measurement : struct from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Measurement : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private Measurement : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public BoneIndex : int from class ButtplugController to public BoneIndex : int from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Time : float from class ButtplugController to public Time : float from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Time : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Time : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DistanceSq : float from class ButtplugController to public DistanceSq : float from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistanceSq : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DistanceSq : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package HandleCoroutine(coroutine IEnumerator) from class ButtplugController to package HandleCoroutine(coroutine IEnumerator) from class CoroutineHandler",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 115,
+		"endLine": 118,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package HandleCoroutine(coroutine IEnumerator)"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package HandleCoroutine(coroutine IEnumerator)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected HandleExceptions(coroutine IEnumerator) : IEnumerator from class ButtplugController to protected HandleExceptions(coroutine IEnumerator) : IEnumerator from class CoroutineHandler",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 120,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected HandleExceptions(coroutine IEnumerator) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 14,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected HandleExceptions(coroutine IEnumerator) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private TryNext(coroutine IEnumerator) : bool from class ButtplugController to private TryNext(coroutine IEnumerator) : bool from class CoroutineHandler",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 128,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TryNext(coroutine IEnumerator) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private TryNext(coroutine IEnumerator) : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected Coroutine : internal from class ButtplugController to protected Coroutine : internal from class CoroutineHandler",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Coroutine : internal"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected Coroutine : internal"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class AnimationAnalyzer from class ButtplugController",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 10,
+		"endLine": 340,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ButtplugController"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 15,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetExactPose(girlIndex int, boneIndex int) : string"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 23,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected TryGetPhase(girlIndex int, boneIndex int) : bool"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 37,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 153,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 242,
+		"endLine": 295,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ComputeAnimationOffsets(girlIndex int) : IEnumerator"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 297,
+		"endLine": 315,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetFrequency() : int"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 317,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetFemaleAnimator(girlIndex int) : Animator"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetFemaleBones(girlIndex int) : List<Transform>"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetMaleBone() : Transform"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract GetPose(girlIndex int) : string"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected AnimationLayer : int"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Measurement : struct"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Time : float"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistanceSq : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 7,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ButtplugController"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 8,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "AnimationAnalyzer"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetExactPose(girlIndex int, boneIndex int) : string"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 28,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected TryGetPhase(girlIndex int, boneIndex int) : bool"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected GetStrokesPerAnimationCycle(girlIndex int, boneIndex int) : int"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 48,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected GetStrokeTimeSecs(girlIndex int, boneIndex int) : float"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 65,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ComputeAnimationOffsets(girlIndex int) : IEnumerator"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 120,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetFrequency() : int"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 22,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected GetAnimatorStateInfo(girlIndex int) : AnimatorStateInfo"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected abstract GetFemaleAnimator(girlIndex int) : Animator"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected abstract GetFemaleBones(girlIndex int) : List<Transform>"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected abstract GetMaleBone() : Transform"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected abstract GetPose(girlIndex int) : string"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected AnimationLayer : int"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private Measurement : struct"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Time : float"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DistanceSq : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class AnimationAnalyzer from class ButtplugController",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 10,
+		"endLine": 340,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ButtplugController"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 7,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ButtplugController"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 8,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "AnimationAnalyzer"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class CoroutineHandler from class ButtplugController",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 10,
+		"endLine": 340,
+		"startColumn": 5,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ButtplugController"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 115,
+		"endLine": 118,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package HandleCoroutine(coroutine IEnumerator)"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 120,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected HandleExceptions(coroutine IEnumerator) : IEnumerator"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 128,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TryNext(coroutine IEnumerator) : bool"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Coroutine : internal"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 7,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ButtplugController"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 7,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "CoroutineHandler"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package HandleCoroutine(coroutine IEnumerator)"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 14,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected HandleExceptions(coroutine IEnumerator) : IEnumerator"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 22,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private TryNext(coroutine IEnumerator) : bool"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/CoroutineHandler.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected Coroutine : internal"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DeviceName : string from class DeviceListMessage to public DeviceName : string from class DeviceSettings",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DeviceName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DeviceName : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public GirlIndex : int from class DeviceListMessage to public GirlIndex : int from class DeviceSettings",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public BoneIndex : int from class DeviceListMessage to public BoneIndex : int from class DeviceSettings",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public GirlIndex : int from class Device to public GirlIndex : int from class DeviceSettings",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public BoneIndex : int from class Device to public BoneIndex : int from class DeviceSettings",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class DeviceSettings from class DeviceListMessage",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 28,
+		"endLine": 56,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DeviceListMessage"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DeviceName : string"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 38,
+		"endLine": 46,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "DeviceListMessage"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 5,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "DeviceSettings"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DeviceName : string"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class DeviceSettings from class Device",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 5,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Device"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/Device.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 12,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Device"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 5,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "DeviceSettings"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public GirlIndex : int"
+}, {
+		"filePath": "LoveMachine.Core/Buttplug/Device.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public BoneIndex : int"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method package ClearMeasurements() : void extracted from public OnEndH() : void in class ButtplugController & moved to class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 50,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnEndH() : void"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 140,
+		"endLine": 144,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package ClearMeasurements() : void"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 28,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnEndH() : void"
+}, {
+		"filePath": "LoveMachine.Core/ButtplugController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ClearMeasurements()"
+}, {
+		"filePath": "LoveMachine.Core/AnimationTools/AnimationAnalyzer.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder LoveMachine.Core to LoveMachine.Core/Lovense",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

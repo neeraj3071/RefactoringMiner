@@ -1,0 +1,252 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/demonixis/C3DE.git",
+	"sha1": "200ef290b176c5549919f472158df9e8a1f71250",
+	"url": "https://github.com/demonixis/C3DE/commit/200ef290b176c5549919f472158df9e8a1f71250",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _gizmos : MeshPrefab<CubeGeometry>[] to _gizmos : MeshPrefab<CylinderGeometry>[] in class Gizmo",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/Core/Gizmo.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 44,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_gizmos : MeshPrefab<CubeGeometry>[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/Core/Gizmo.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 48,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_gizmos : MeshPrefab<CylinderGeometry>[]"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter position : Vector3 in method public SetVisible(isVisible bool, position Vector3) : void from class Gizmo",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/Core/Gizmo.cs",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetVisible(isVisible bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/Core/Gizmo.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "position : Vector3"
+}, {
+		"filePath": "C3DE.Editor/Core/Gizmo.cs",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public SetVisible(isVisible bool, position Vector3) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private InternalAddSceneObject(sceneObject SceneObject) : void extracted from private PastSelection(m BasicMessage) : void in class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 110,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private PastSelection(m BasicMessage) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 116,
+		"endLine": 135,
+		"startColumn": 17,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 360,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private InternalAddSceneObject(sceneObject SceneObject) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 362,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 110,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private PastSelection(m BasicMessage) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InternalAddSceneObject(sceneObject)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private InternalAddSceneObject(sceneObject SceneObject) : void extracted from private InternalAddSceneObject(type string) : void in class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 329,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private InternalAddSceneObject(type string) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 366,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 360,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private InternalAddSceneObject(sceneObject SceneObject) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 362,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 320,
+		"endLine": 358,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private InternalAddSceneObject(type string) : void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InternalAddSceneObject(sceneObject)"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to string in method public SaveScene(path string) : string from class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 383,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SaveScene(path string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "string"
+}, {
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 387,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public SaveScene(path string) : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _copy : SceneObject to _editorCopy : SceneObject in class C3DEGameHost",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_copy : SceneObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Editor/MonoGameBridge/C3DEGameHost.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_editorCopy : SceneObject"
+}]
+}
+]
+}]
+}

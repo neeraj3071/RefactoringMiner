@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "6b099526e4bac3b462567f911b6a1ab7073416b3",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/6b099526e4bac3b462567f911b6a1ab7073416b3",
+	"refactorings": [{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable PosedHand : Hand to PosedHand : Hand in method package OnValidate() : void from class PoseDetectionEditor",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "PosedHand : Hand"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "PosedHand : Hand"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute poseScriptableObject : HandPoseScriptableObject to leftHandPoseObject : HandPoseScriptableObject in class PoseDetectionEditor",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "poseScriptableObject : HandPoseScriptableObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Scripts/HandPoses/PoseDetectionEditor.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 34,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "leftHandPoseObject : HandPoseScriptableObject"
+}]
+}
+]
+}]
+}

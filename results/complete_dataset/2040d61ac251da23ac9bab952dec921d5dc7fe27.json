@@ -1,0 +1,387 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/holojam/HolojamSDK-Unity.git",
+	"sha1": "2040d61ac251da23ac9bab952dec921d5dc7fe27",
+	"url": "https://github.com/holojam/HolojamSDK-Unity/commit/2040d61ac251da23ac9bab952dec921d5dc7fe27",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class Exchange.Emitter moved to Emitter",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 178,
+		"endLine": 266,
+		"startColumn": 19,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Exchange.Emitter"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 263,
+		"endLine": 420,
+		"startColumn": 12,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Emitter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class Exchange.Sink moved to Sink",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 271,
+		"endLine": 376,
+		"startColumn": 19,
+		"endColumn": 12,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Exchange.Sink"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 425,
+		"endLine": 541,
+		"startColumn": 12,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Sink"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package FixedUpdate() : void renamed to package Refresh() : void in class Client",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 84,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 148,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Refresh() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public SendUpdate(controllers List<Controller>) : void renamed to public PrepareUpdate(controllers List<Controller>) : bool in class Emitter",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 210,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SendUpdate(controllers List<Controller>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 347,
+		"endLine": 360,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public PrepareUpdate(controllers List<Controller>) : bool"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to bool in method public PrepareUpdate(controllers List<Controller>) : bool from class Emitter",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 210,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SendUpdate(controllers List<Controller>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 347,
+		"endLine": 360,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public PrepareUpdate(controllers List<Controller>) : bool"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute package lockObject : UnityEngine.Object renamed to protected ThreadLock : UnityEngine.Object and moved from class Exchange.Sink to class Exchange",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lockObject : UnityEngine.Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "protected ThreadLock : UnityEngine.Object"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package ResetDebugData() from class Exchange to package ResetDebugData() from class Sink",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 400,
+		"endLine": 407,
+		"startColumn": 28,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ResetDebugData()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 532,
+		"endLine": 539,
+		"startColumn": 28,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package ResetDebugData()"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public advanced : bool from class Client",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Editor/ClientEditor.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package advanced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public advanced : bool"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package advanced : bool from class ClientEditor",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Editor/ClientEditor.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package advanced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public advanced : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package running : bool from class Exchange",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public running : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package running : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected ThreadLock : UnityEngine.Object from class Exchange",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lockObject : UnityEngine.Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected ThreadLock : UnityEngine.Object"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public string : override from class Exchange to public string : override from class Sink",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public string : override"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 532,
+		"endLine": 532,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public string : override"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package advanced : bool from class ClientEditor to public advanced : bool from class Client",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Editor/ClientEditor.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package advanced : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public advanced : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public running : bool from class Exchange.Sink to package running : bool from class Exchange",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public running : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package running : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package thread : Thread from class Exchange.Sink to package thread : Thread from class Exchange",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package thread : Thread"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Network/Client.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package thread : Thread"
+}]
+}
+]
+}]
+}

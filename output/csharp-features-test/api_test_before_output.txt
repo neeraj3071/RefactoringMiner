@@ -1,0 +1,191 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/api_test_before.cs
+Size: 334 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+namespace TestAPI
+{
+    class ApiTestBefore
+    {
+        void TestMethod()
+        {
+            string message = "Hello";
+            Console.WriteLine(message);
+            Console.WriteLine("World");
+        }
+        
+        void AnotherMethod()
+        {
+            Console.WriteLine("Test");
+        }
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/api_test_before.cs
+CPatMinerExecutor: Executing CPatMiner transformation (334 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    namespace [15,333]
+        name: TestAPI [25,32]
+        block [33,333]
+            class [39,331]
+                name: ApiTestBefore [45,58]
+                block [63,331]
+                    function [73,228]
+                        type [73,77]
+                            name: void [73,77]
+                        name: TestMethod [78,88]
+                        parameter_list [88,90]
+                        block [99,228]
+                            block_content [100,227]
+                                decl_stmt [113,138]
+                                    decl [113,137]
+                                        type [113,119]
+                                            name: string [113,119]
+                                        name: message [120,127]
+                                        init [128,137]
+                                            expr [130,137]
+                                                literal: "Hello" [130,137]
+                                expr_stmt [151,178]
+                                    expr [151,177]
+                                        call [151,177]
+                                            name [151,168]
+                                                name: Console [151,158]
+                                                operator: . [158,159]
+                                                name: WriteLine [159,168]
+                                            argument_list [168,177]
+                                                argument [169,176]
+                                                    expr [169,176]
+                                                        name: message [169,176]
+                                expr_stmt [191,218]
+                                    expr [191,217]
+                                        call [191,217]
+                                            name [191,208]
+                                                name: Console [191,198]
+                                                operator: . [198,199]
+                                                name: WriteLine [199,208]
+                                            argument_list [208,217]
+                                                argument [209,216]
+                                                    expr [209,216]
+                                                        literal: "World" [209,216]
+                    function [246,325]
+                        type [246,250]
+                            name: void [246,250]
+                        name: AnotherMethod [251,264]
+                        parameter_list [264,266]
+                        block [275,325]
+                            block_content [276,324]
+                                expr_stmt [289,315]
+                                    expr [289,314]
+                                        call [289,314]
+                                            name [289,306]
+                                                name: Console [289,296]
+                                                operator: . [296,297]
+                                                name: WriteLine [297,306]
+                                            argument_list [306,314]
+                                                argument [307,313]
+                                                    expr [307,313]
+                                                        literal: "Test" [307,313]
+package TestAPI;
+import System;
+class ApiTestBefore {
+  Void TestMethod(){
+    String message="Hello";
+    Console.WriteLine(message);
+    Console.WriteLine("World");
+  }
+  Void AnotherMethod(){
+    Console.WriteLine("Test");
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 232 chars
+  - Number of lines: 12
+
+=== Generated Java Code (Full Output) ===
+package TestAPI;
+import System;
+class ApiTestBefore {
+  Void TestMethod(){
+    String message="Hello";
+    Console.WriteLine(message);
+    Console.WriteLine("World");
+  }
+  Void AnotherMethod(){
+    Console.WriteLine("Test");
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/api_test_before.java
+  - File contents size: 232 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/api_test_before.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestAPI.ApiTestBefore
+  Type: Class
+  Package: TestAPI
+  Source file: tests/api_test_before.java
+  Operations: 2
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+    • AnotherMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

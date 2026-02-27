@@ -1,0 +1,369 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/08_type_conversions.cs
+Size: 1705 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    using System.Collections.Generic;
+    
+    /// <summary>
+    /// Test case for C# to Java type conversions.
+    /// Tests transformation of C# primitive and common types to Java equivalents.
+    /// </summary>
+    public class TypeConversions
+    {
+        // Primitive type conversions
+        public string stringField;      // string -> String
+        public bool boolField;           // bool -> boolean
+        public int intField;             // in
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/08_type_conversions.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1705 chars)...
+unit [0,0]
+    namespace [0,1704]
+        name: TestFeatures [10,22]
+        block [23,1704]
+            using [29,42]
+                name: System [35,41]
+            using [47,80]
+                name [53,79]
+                    name: System [53,59]
+                    operator: . [59,60]
+                    name: Collections [60,71]
+                    operator: . [71,72]
+                    name: Generic [72,79]
+            comment: ///<summary> [90,103]
+            comment: /// Test case for C# to Java type conversions. [108,154]
+            comment: /// Tests transformation of C# primitive and common types to Java equivalents. [159,237]
+            comment: ///</summary> [242,256]
+            class [261,1702]
+                specifier: public [261,267]
+                name: TypeConversions [274,289]
+                block [294,1702]
+                    comment: // Primitive type conversions [304,333]
+                    decl_stmt [342,368]
+                        decl [342,367]
+                            type [342,355]
+                                specifier: public [342,348]
+                                name: string [349,355]
+                            name: stringField [356,367]
+                    comment: // string ->String [374,393]
+                    decl_stmt [402,424]
+                        decl [402,423]
+                            type [402,413]
+                                specifier: public [402,408]
+                                name: bool [409,413]
+                            name: boolField [414,423]
+                    comment: // bool ->boolean [435,453]
+                    decl_stmt [462,482]
+                        decl [462,481]
+                            type [462,472]
+                                specifier: public [462,468]
+                                name: int [469,472]
+                            name: intField [473,481]
+                    comment: // int ->int [495,508]
+                    decl_stmt [517,539]
+                        decl [517,538]
+                            type [517,528]
+                                specifier: public [517,523]
+                                name: long [524,528]
+                            name: longField [529,538]
+                    comment: // long ->long [550,565]
+                    decl_stmt [574,598]
+                        decl [574,597]
+                            type [574,586]
+                                specifier: public [574,580]
+                                name: float [581,586]
+                            name: floatField [587,597]
+                    comment: // float ->float [607,624]
+                    decl_stmt [633,659]
+                        decl [633,658]
+                            type [633,646]
+                                specifier: public [633,639]
+                                name: double [640,646]
+                            name: doubleField [647,658]
+                    comment: // double ->double [666,685]
+                    decl_stmt [694,716]
+                        decl [694,715]
+                            type [694,705]
+                                specifier: public [694,700]
+                                name: char [701,705]
+                            name: charField [706,715]
+                    comment: // char ->char [727,742]
+                    decl_stmt [751,773]
+                        decl [751,772]
+                            type [751,762]
+                                specifier: public [751,757]
+                                name: byte [758,762]
+                            name: byteField [763,772]
+                    comment: // byte ->byte [784,799]
+                    decl_stmt [808,832]
+                        decl [808,831]
+                            type [808,820]
+                                specifier: public [808,814]
+                                name: short [815,820]
+                            name: shortField [821,831]
+                    comment: // short ->short [841,858]
+                    comment: // Object type [876,890]
+                    decl_stmt [899,922]
+                        decl [899,921]
+                            type [899,912]
+                                specifier: public [899,905]
+                                name: object [906,912]
+                            name: objField [913,921]
+                    comment: // object ->Object [932,951]
+                    comment: // Generic collections [969,991]
+                    decl_stmt [1000,1031]
+                        decl [1000,1030]
+                            type [1000,1019]
+                                specifier: public [1000,1006]
+                                name [1007,1019]
+                                    name: List [1007,1011]
+                                    argument_list [1011,1019]
+                                        argument [1012,1018]
+                                            name: string [1012,1018]
+                            name: stringList [1020,1030]
+                    comment: // List<string>->List<String> [1045,1076]
+                    decl_stmt [1085,1110]
+                        decl [1085,1109]
+                            type [1085,1101]
+                                specifier: public [1085,1091]
+                                name [1092,1101]
+                                    name: List [1092,1096]
+                                    argument_list [1096,1101]
+                                        argument [1097,1100]
+                                            name: int [1097,1100]
+                            name: intList [1102,1109]
+                    comment: // List<int>->List<Integer> [1130,1159]
+                    decl_stmt [1168,1210]
+                        decl [1168,1209]
+                            type [1168,1198]
+                                specifier: public [1168,1174]
+                                name [1175,1198]
+                                    name: Dictionary [1175,1185]
+                                    argument_list [1185,1198]
+                                        argument [1186,1192]
+                                            name: string [1186,1192]
+                                        argument [1194,1197]
+                                            name: int [1194,1197]
+                            name: dictionary [1199,1209]
+                    comment: // Dictionary ->Map [1213,1233]
+                    comment: // Method with type conversions [1251,1282]
+                    function [1291,1378]
+                        type [1291,1304]
+                            specifier: public [1291,1297]
+                            name: string [1298,1304]
+                        name: ProcessString [1305,1318]
+                        parameter_list [1318,1332]
+                            parameter [1319,1331]
+                                decl [1319,1331]
+                                    type [1319,1325]
+                                        name: string [1319,1325]
+                                    name: input [1326,1331]
+                        block [1341,1378]
+                            block_content [1342,1377]
+                                return [1355,1368]
+                                    expr [1362,1367]
+                                        name: input [1362,1367]
+                    function [1396,1488]
+                        type [1396,1407]
+                            specifier: public [1396,1402]
+                            name: bool [1403,1407]
+                        name: CheckCondition [1408,1422]
+                        parameter_list [1422,1438]
+                            parameter [1423,1437]
+                                decl [1423,1437]
+                                    type [1423,1427]
+                                        name: bool [1423,1427]
+                                    name: condition [1428,1437]
+                        block [1447,1488]
+                            block_content [1448,1487]
+                                return [1461,1478]
+                                    expr [1468,1477]
+                                        name: condition [1468,1477]
+                    function [1506,1584]
+                        type [1506,1519]
+                            specifier: public [1506,1512]
+                            name: object [1513,1519]
+                        name: GetObject [1520,1529]
+                        parameter_list [1529,1531]
+                        block [1540,1584]
+                            block_content [1541,1583]
+                                return [1554,1574]
+                                    expr [1561,1573]
+                                        operator: new [1561,1564]
+                                        call [1565,1573]
+                                            name: object [1565,1571]
+                                            argument_list [1571,1573]
+                    function [1602,1696]
+                        type [1602,1621]
+                            specifier: public [1602,1608]
+                            name [1609,1621]
+                                name: List [1609,1613]
+                                argument_list [1613,1621]
+                                    argument [1614,1620]
+                                        name: string [1614,1620]
+                        name: GetStringList [1622,1635]
+                        parameter_list [1635,1637]
+                        block [1646,1696]
+                            block_content [1647,1695]
+                                return [1660,1686]
+                                    expr [1667,1685]
+                                        operator: new [1667,1670]
+                                        call [1671,1685]
+                                            name [1671,1683]
+                                                name: List [1671,1675]
+                                                argument_list [1675,1683]
+                                                    argument [1676,1682]
+                                                        name: string [1676,1682]
+                                            argument_list [1683,1685]
+package TestFeatures;
+public class TypeConversions {
+  public String stringField;
+  public boolean boolField;
+  public int intField;
+  public long longField;
+  public float floatField;
+  public double doubleField;
+  public char charField;
+  public byte byteField;
+  public short shortField;
+  public Object objField;
+  public List<String> stringList;
+  public List<Integer> intList;
+  public Dictionary<String,Integer> dictionary;
+  public String ProcessString(  String input){
+    return input;
+  }
+  public boolean CheckCondition(  boolean condition){
+    return condition;
+  }
+  public Object GetObject(){
+    return new Object();
+  }
+  public List<String> GetStringList(){
+    return new List<String>();
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 714 chars
+  - Number of lines: 28
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class TypeConversions {
+  public String stringField;
+  public boolean boolField;
+  public int intField;
+  public long longField;
+  public float floatField;
+  public double doubleField;
+  public char charField;
+  public byte byteField;
+  public short shortField;
+  public Object objField;
+  public List<String> stringList;
+  public List<Integer> intList;
+  public Dictionary<String,Integer> dictionary;
+  public String ProcessString(  String input){
+    return input;
+  }
+  public boolean CheckCondition(  boolean condition){
+    return condition;
+  }
+  public Object GetObject(){
+    return new Object();
+  }
+  public List<String> GetStringList(){
+    return new List<String>();
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/08_type_conversions.java
+  - File contents size: 714 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/08_type_conversions.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.TypeConversions
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/08_type_conversions.java
+  Operations: 4
+  Attributes: 13
+  Fields:
+    • String stringField
+    • boolean boolField
+    • int intField
+    • long longField
+    • float floatField
+    • double doubleField
+    • char charField
+    • byte byteField
+    • short shortField
+    • Object objField
+    • List<String> stringList
+    • List<Integer> intList
+    • Dictionary<String,Integer> dictionary
+  Methods:
+    • ProcessString() - 2 param(s)
+    • CheckCondition() - 2 param(s)
+    • GetObject() - 1 param(s)
+    • GetStringList() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,310 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/04_auto_properties.cs
+Size: 1100 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for auto-implemented properties.
+    /// Tests transformation of C# auto-properties to Java backing field with getter/setter.
+    /// </summary>
+    public class AutoProperties
+    {
+        // Simple auto-property with get and set
+        public int Id { get; set; }
+        
+        // Auto-property with initial value
+        public string Name { get; set; } = "Default";
+        
+        // Auto-property with pr
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/04_auto_properties.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1100 chars)...
+unit [0,0]
+    namespace [0,1099]
+        name: TestFeatures [10,22]
+        block [23,1099]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for auto-implemented properties. [70,116]
+            comment: /// Tests transformation of C# auto-properties to Java backing field with getter/setter. [121,209]
+            comment: ///</summary> [214,228]
+            class [233,1097]
+                specifier: public [233,239]
+                name: AutoProperties [246,260]
+                block [265,1097]
+                    comment: // Simple auto-property with get and set [275,315]
+                    property [324,351]
+                        type [324,334]
+                            specifier: public [324,330]
+                            name: int [331,334]
+                        name: Id [335,337]
+                        block [338,351]
+                            function_decl [340,344]
+                                name: get [340,343]
+                            function_decl [345,349]
+                                name: set [345,348]
+                    comment: // Auto-property with initial value [369,404]
+                    property [413,445]
+                        type [413,426]
+                            specifier: public [413,419]
+                            name: string [420,426]
+                        name: Name [427,431]
+                        block [432,445]
+                            function_decl [434,438]
+                                name: get [434,437]
+                            function_decl [439,443]
+                                name: set [439,442]
+                    expr_stmt [446,458]
+                        expr [446,457]
+                            operator: = [446,447]
+                            literal: "Default" [448,457]
+                    comment: // Auto-property with private setter [476,512]
+                    property [521,564]
+                        type [521,531]
+                            specifier: public [521,527]
+                            name: int [528,531]
+                        name: ReadOnlyId [532,542]
+                        block [543,564]
+                            function_decl [545,549]
+                                name: get [545,548]
+                            function_decl [550,562]
+                                specifier: private [550,557]
+                                name: set [558,561]
+                    comment: // Auto-property with protected setter [582,620]
+                    property [629,680]
+                        type [629,642]
+                            specifier: public [629,635]
+                            name: string [636,642]
+                        name: ProtectedName [643,656]
+                        block [657,680]
+                            function_decl [659,663]
+                                name: get [659,662]
+                            function_decl [664,678]
+                                specifier: protected [664,673]
+                                name: set [674,677]
+                    comment: // Auto-property with only getter (truly read-only) [698,749]
+                    property [758,792]
+                        type [758,773]
+                            specifier: public [758,764]
+                            name: DateTime [765,773]
+                        name: CreatedAt [774,783]
+                        block [784,792]
+                            function_decl [786,790]
+                                name: get [786,789]
+                    comment: // Multiple auto-properties [810,837]
+                    property [846,881]
+                        type [846,857]
+                            specifier: public [846,852]
+                            name: bool [853,857]
+                        name: IsEnabled [858,867]
+                        block [868,881]
+                            function_decl [870,874]
+                                name: get [870,873]
+                            function_decl [875,879]
+                                name: set [875,878]
+                    property [890,923]
+                        type [890,903]
+                            specifier: public [890,896]
+                            name: double [897,903]
+                        name: Value [904,909]
+                        block [910,923]
+                            function_decl [912,916]
+                                name: get [912,915]
+                            function_decl [917,921]
+                                name: set [917,920]
+                    property [932,964]
+                        type [932,945]
+                            specifier: public [932,938]
+                            name: object [939,945]
+                        name: Data [946,950]
+                        block [951,964]
+                            function_decl [953,957]
+                                name: get [953,956]
+                            function_decl [958,962]
+                                name: set [958,961]
+                    constructor [982,1091]
+                        specifier: public [982,988]
+                        name: AutoProperties [989,1003]
+                        parameter_list [1003,1005]
+                        block [1014,1091]
+                            block_content [1015,1090]
+                                expr_stmt [1028,1053]
+                                    expr [1028,1052]
+                                        name: CreatedAt [1028,1037]
+                                        operator: = [1038,1039]
+                                        name [1040,1052]
+                                            name: DateTime [1040,1048]
+                                            operator: . [1048,1049]
+                                            name: Now [1049,1052]
+                                expr_stmt [1066,1081]
+                                    expr [1066,1080]
+                                        name: ReadOnlyId [1066,1076]
+                                        operator: = [1077,1078]
+                                        literal: 1 [1079,1080]
+package TestFeatures;
+public class AutoProperties {
+  public int Id;
+  void get();
+  void set();
+  public String Name;
+  void get();
+  void set();
+  int MISSING;
+  public int ReadOnlyId;
+  void get();
+  void set();
+  public String ProtectedName;
+  void get();
+  void set();
+  public DateTime CreatedAt;
+  void get();
+  public boolean IsEnabled;
+  void get();
+  void set();
+  public double Value;
+  void get();
+  void set();
+  public Object Data;
+  void get();
+  void set();
+  AutoProperties(){
+    CreatedAt=DateTime.Now;
+    ReadOnlyId=1;
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 546 chars
+  - Number of lines: 31
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class AutoProperties {
+  public int Id;
+  void get();
+  void set();
+  public String Name;
+  void get();
+  void set();
+  int MISSING;
+  public int ReadOnlyId;
+  void get();
+  void set();
+  public String ProtectedName;
+  void get();
+  void set();
+  public DateTime CreatedAt;
+  void get();
+  public boolean IsEnabled;
+  void get();
+  void set();
+  public double Value;
+  void get();
+  void set();
+  public Object Data;
+  void get();
+  void set();
+  AutoProperties(){
+    CreatedAt=DateTime.Now;
+    ReadOnlyId=1;
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/04_auto_properties.java
+  - File contents size: 546 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/04_auto_properties.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.AutoProperties
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/04_auto_properties.java
+  Operations: 16
+  Attributes: 9
+  Fields:
+    • int Id
+    • String Name
+    • int MISSING
+    • int ReadOnlyId
+    • String ProtectedName
+    • DateTime CreatedAt
+    • boolean IsEnabled
+    • double Value
+    • Object Data
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • AutoProperties()
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

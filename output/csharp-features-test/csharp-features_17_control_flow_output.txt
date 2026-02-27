@@ -1,0 +1,749 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/17_control_flow.cs
+Size: 3156 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for control flow statements: if, else, break, continue, return.
+    /// Tests transformation of C# control flow to Java control flow.
+    /// </summary>
+    public class ControlFlow
+    {
+        // Basic if statement
+        public void BasicIf(int value)
+        {
+            if (value > 0)
+            {
+                Console.WriteLine("Positive");
+            }
+        }
+        
+        // If-else statement
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/17_control_flow.cs
+CPatMinerExecutor: Executing CPatMiner transformation (3156 chars)...
+unit [0,0]
+    namespace [0,3155]
+        name: TestFeatures [10,22]
+        block [23,3155]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for control flow statements: if, else, break, continue, return. [70,147]
+            comment: /// Tests transformation of C# control flow to Java control flow. [152,217]
+            comment: ///</summary> [222,236]
+            class [241,3153]
+                specifier: public [241,247]
+                name: ControlFlow [254,265]
+                block [270,3153]
+                    comment: // Basic if statement [280,301]
+                    function [310,462]
+                        type [310,321]
+                            specifier: public [310,316]
+                            name: void [317,321]
+                        name: BasicIf [322,329]
+                        parameter_list [329,340]
+                            parameter [330,339]
+                                decl [330,339]
+                                    type [330,333]
+                                        name: int [330,333]
+                                    name: value [334,339]
+                        block [349,462]
+                            block_content [350,461]
+                                if_stmt [363,452]
+                                    if [363,452]
+                                        condition [366,377]
+                                            expr [367,376]
+                                                name: value [367,372]
+                                                operator: > [373,374]
+                                                literal: 0 [375,376]
+                                        block [390,452]
+                                            block_content [391,451]
+                                                expr_stmt [408,438]
+                                                    expr [408,437]
+                                                        call [408,437]
+                                                            name [408,425]
+                                                                name: Console [408,415]
+                                                                operator: . [415,416]
+                                                                name: WriteLine [416,425]
+                                                            argument_list [425,437]
+                                                                argument [426,436]
+                                                                    expr [426,436]
+                                                                        literal: "Positive" [426,436]
+                    comment: // If-else statement [480,500]
+                    function [509,756]
+                        type [509,520]
+                            specifier: public [509,515]
+                            name: void [516,520]
+                        name: IfElse [521,527]
+                        parameter_list [527,538]
+                            parameter [528,537]
+                                decl [528,537]
+                                    type [528,531]
+                                        name: int [528,531]
+                                    name: value [532,537]
+                        block [547,756]
+                            block_content [548,755]
+                                if_stmt [561,746]
+                                    if [561,650]
+                                        condition [564,575]
+                                            expr [565,574]
+                                                name: value [565,570]
+                                                operator: > [571,572]
+                                                literal: 0 [573,574]
+                                        block [588,650]
+                                            block_content [589,649]
+                                                expr_stmt [606,636]
+                                                    expr [606,635]
+                                                        call [606,635]
+                                                            name [606,623]
+                                                                name: Console [606,613]
+                                                                operator: . [613,614]
+                                                                name: WriteLine [614,623]
+                                                            argument_list [623,635]
+                                                                argument [624,634]
+                                                                    expr [624,634]
+                                                                        literal: "Positive" [624,634]
+                                    else [663,746]
+                                        block [680,746]
+                                            block_content [681,745]
+                                                expr_stmt [698,732]
+                                                    expr [698,731]
+                                                        call [698,731]
+                                                            name [698,715]
+                                                                name: Console [698,705]
+                                                                operator: . [705,706]
+                                                                name: WriteLine [706,715]
+                                                            argument_list [715,731]
+                                                                argument [716,730]
+                                                                    expr [716,730]
+                                                                        literal: "Non-positive" [716,730]
+                    comment: // If-else if-else chain [774,798]
+                    function [807,1160]
+                        type [807,818]
+                            specifier: public [807,813]
+                            name: void [814,818]
+                        name: IfElseIfChain [819,832]
+                        parameter_list [832,843]
+                            parameter [833,842]
+                                decl [833,842]
+                                    type [833,836]
+                                        name: int [833,836]
+                                    name: value [837,842]
+                        block [852,1160]
+                            block_content [853,1159]
+                                if_stmt [866,1150]
+                                    if [866,955]
+                                        condition [869,880]
+                                            expr [870,879]
+                                                name: value [870,875]
+                                                operator: > [876,877]
+                                                literal: 0 [878,879]
+                                        block [893,955]
+                                            block_content [894,954]
+                                                expr_stmt [911,941]
+                                                    expr [911,940]
+                                                        call [911,940]
+                                                            name [911,928]
+                                                                name: Console [911,918]
+                                                                operator: . [918,919]
+                                                                name: WriteLine [919,928]
+                                                            argument_list [928,940]
+                                                                argument [929,939]
+                                                                    expr [929,939]
+                                                                        literal: "Positive" [929,939]
+                                    if [968,1062]
+                                        condition [976,987]
+                                            expr [977,986]
+                                                name: value [977,982]
+                                                operator: < [983,984]
+                                                literal: 0 [985,986]
+                                        block [1000,1062]
+                                            block_content [1001,1061]
+                                                expr_stmt [1018,1048]
+                                                    expr [1018,1047]
+                                                        call [1018,1047]
+                                                            name [1018,1035]
+                                                                name: Console [1018,1025]
+                                                                operator: . [1025,1026]
+                                                                name: WriteLine [1026,1035]
+                                                            argument_list [1035,1047]
+                                                                argument [1036,1046]
+                                                                    expr [1036,1046]
+                                                                        literal: "Negative" [1036,1046]
+                                    else [1075,1150]
+                                        block [1092,1150]
+                                            block_content [1093,1149]
+                                                expr_stmt [1110,1136]
+                                                    expr [1110,1135]
+                                                        call [1110,1135]
+                                                            name [1110,1127]
+                                                                name: Console [1110,1117]
+                                                                operator: . [1117,1118]
+                                                                name: WriteLine [1118,1127]
+                                                            argument_list [1127,1135]
+                                                                argument [1128,1134]
+                                                                    expr [1128,1134]
+                                                                        literal: "Zero" [1128,1134]
+                    comment: // Nested if statements [1178,1201]
+                    function [1210,1560]
+                        type [1210,1221]
+                            specifier: public [1210,1216]
+                            name: void [1217,1221]
+                        name: NestedIf [1222,1230]
+                        parameter_list [1230,1244]
+                            parameter [1231,1236]
+                                decl [1231,1236]
+                                    type [1231,1234]
+                                        name: int [1231,1234]
+                                    name: x [1235,1236]
+                            parameter [1238,1243]
+                                decl [1238,1243]
+                                    type [1238,1241]
+                                        name: int [1238,1241]
+                                    name: y [1242,1243]
+                        block [1253,1560]
+                            block_content [1254,1559]
+                                if_stmt [1267,1550]
+                                    if [1267,1550]
+                                        condition [1270,1277]
+                                            expr [1271,1276]
+                                                name: x [1271,1272]
+                                                operator: > [1273,1274]
+                                                literal: 0 [1275,1276]
+                                        block [1290,1550]
+                                            block_content [1291,1549]
+                                                if_stmt [1308,1536]
+                                                    if [1308,1410]
+                                                        condition [1311,1318]
+                                                            expr [1312,1317]
+                                                                name: y [1312,1313]
+                                                                operator: > [1314,1315]
+                                                                literal: 0 [1316,1317]
+                                                        block [1335,1410]
+                                                            block_content [1336,1409]
+                                                                expr_stmt [1357,1392]
+                                                                    expr [1357,1391]
+                                                                        call [1357,1391]
+                                                                            name [1357,1374]
+                                                                                name: Console [1357,1364]
+                                                                                operator: . [1364,1365]
+                                                                                name: WriteLine [1365,1374]
+                                                                            argument_list [1374,1391]
+                                                                                argument [1375,1390]
+                                                                                    expr [1375,1390]
+                                                                                        literal: "Both positive" [1375,1390]
+                                                    else [1427,1536]
+                                                        block [1448,1536]
+                                                            block_content [1449,1535]
+                                                                expr_stmt [1470,1518]
+                                                                    expr [1470,1517]
+                                                                        call [1470,1517]
+                                                                            name [1470,1487]
+                                                                                name: Console [1470,1477]
+                                                                                operator: . [1477,1478]
+                                                                                name: WriteLine [1478,1487]
+                                                                            argument_list [1487,1517]
+                                                                                argument [1488,1516]
+                                                                                    expr [1488,1516]
+                                                                                        literal: "X positive, Y non-positive" [1488,1516]
+                    comment: // If with complex condition [1578,1606]
+                    function [1615,1938]
+                        type [1615,1626]
+                            specifier: public [1615,1621]
+                            name: void [1622,1626]
+                        name: ComplexCondition [1627,1643]
+                        parameter_list [1643,1668]
+                            parameter [1644,1649]
+                                decl [1644,1649]
+                                    type [1644,1647]
+                                        name: int [1644,1647]
+                                    name: a [1648,1649]
+                            parameter [1651,1656]
+                                decl [1651,1656]
+                                    type [1651,1654]
+                                        name: int [1651,1654]
+                                    name: b [1655,1656]
+                            parameter [1658,1667]
+                                decl [1658,1667]
+                                    type [1658,1662]
+                                        name: bool [1658,1662]
+                                    name: flag [1663,1667]
+                        block [1677,1938]
+                            block_content [1678,1937]
+                                if_stmt [1691,1928]
+                                    if [1691,1803]
+                                        condition [1694,1718]
+                                            expr [1695,1717]
+                                                name: a [1695,1696]
+                                                operator: > [1697,1698]
+                                                literal: 0 [1699,1700]
+                                                operator: && [1701,1703]
+                                                name: b [1704,1705]
+                                                operator: > [1706,1707]
+                                                literal: 0 [1708,1709]
+                                                operator: && [1710,1712]
+                                                name: flag [1713,1717]
+                                        block [1731,1803]
+                                            block_content [1732,1802]
+                                                expr_stmt [1749,1789]
+                                                    expr [1749,1788]
+                                                        call [1749,1788]
+                                                            name [1749,1766]
+                                                                name: Console [1749,1756]
+                                                                operator: . [1756,1757]
+                                                                name: WriteLine [1757,1766]
+                                                            argument_list [1766,1788]
+                                                                argument [1767,1787]
+                                                                    expr [1767,1787]
+                                                                        literal: "All conditions met" [1767,1787]
+                                    if [1816,1928]
+                                        condition [1824,1840]
+                                            expr [1825,1839]
+                                                name: a [1825,1826]
+                                                operator: > [1827,1828]
+                                                literal: 0 [1829,1830]
+                                                operator: || [1831,1833]
+                                                name: b [1834,1835]
+                                                operator: > [1836,1837]
+                                                literal: 0 [1838,1839]
+                                        block [1853,1928]
+                                            block_content [1854,1927]
+                                                expr_stmt [1871,1914]
+                                                    expr [1871,1913]
+                                                        call [1871,1913]
+                                                            name [1871,1888]
+                                                                name: Console [1871,1878]
+                                                                operator: . [1878,1879]
+                                                                name: WriteLine [1879,1888]
+                                                            argument_list [1888,1913]
+                                                                argument [1889,1912]
+                                                                    expr [1889,1912]
+                                                                        literal: "At least one positive" [1889,1912]
+                    comment: // Break statement in loop [1956,1982]
+                    function [1991,2234]
+                        type [1991,2002]
+                            specifier: public [1991,1997]
+                            name: void [1998,2002]
+                        name: BreakInLoop [2003,2014]
+                        parameter_list [2014,2016]
+                        block [2025,2234]
+                            block_content [2026,2233]
+                                for [2039,2224]
+                                    control [2043,2067]
+                                        init [2044,2054]
+                                            decl [2044,2053]
+                                                type [2044,2047]
+                                                    name: int [2044,2047]
+                                                name: i [2048,2049]
+                                                init [2050,2053]
+                                                    expr [2052,2053]
+                                                        literal: 0 [2052,2053]
+                                        condition [2055,2062]
+                                            expr [2055,2061]
+                                                name: i [2055,2056]
+                                                operator: < [2057,2058]
+                                                literal: 10 [2059,2061]
+                                        incr [2063,2066]
+                                            expr [2063,2066]
+                                                name: i [2063,2064]
+                                                operator: ++ [2064,2066]
+                                    block [2080,2224]
+                                        block_content [2081,2223]
+                                            if_stmt [2098,2172]
+                                                if [2098,2172]
+                                                    condition [2101,2109]
+                                                        expr [2102,2108]
+                                                            name: i [2102,2103]
+                                                            operator: == [2104,2106]
+                                                            literal: 5 [2107,2108]
+                                                    block [2126,2172]
+                                                        block_content [2127,2171]
+                                                            break [2148,2154]
+                                            expr_stmt [2189,2210]
+                                                expr [2189,2209]
+                                                    call [2189,2209]
+                                                        name [2189,2206]
+                                                            name: Console [2189,2196]
+                                                            operator: . [2196,2197]
+                                                            name: WriteLine [2197,2206]
+                                                        argument_list [2206,2209]
+                                                            argument [2207,2208]
+                                                                expr [2207,2208]
+                                                                    name: i [2207,2208]
+                    comment: // Continue statement in loop [2252,2281]
+                    function [2290,2543]
+                        type [2290,2301]
+                            specifier: public [2290,2296]
+                            name: void [2297,2301]
+                        name: ContinueInLoop [2302,2316]
+                        parameter_list [2316,2318]
+                        block [2327,2543]
+                            block_content [2328,2542]
+                                for [2341,2533]
+                                    control [2345,2369]
+                                        init [2346,2356]
+                                            decl [2346,2355]
+                                                type [2346,2349]
+                                                    name: int [2346,2349]
+                                                name: i [2350,2351]
+                                                init [2352,2355]
+                                                    expr [2354,2355]
+                                                        literal: 0 [2354,2355]
+                                        condition [2357,2364]
+                                            expr [2357,2363]
+                                                name: i [2357,2358]
+                                                operator: < [2359,2360]
+                                                literal: 10 [2361,2363]
+                                        incr [2365,2368]
+                                            expr [2365,2368]
+                                                name: i [2365,2366]
+                                                operator: ++ [2366,2368]
+                                    block [2382,2533]
+                                        block_content [2383,2532]
+                                            if_stmt [2400,2481]
+                                                if [2400,2481]
+                                                    condition [2403,2415]
+                                                        expr [2404,2414]
+                                                            name: i [2404,2405]
+                                                            operator: % [2406,2407]
+                                                            literal: 2 [2408,2409]
+                                                            operator: == [2410,2412]
+                                                            literal: 0 [2413,2414]
+                                                    block [2432,2481]
+                                                        block_content [2433,2480]
+                                                            continue [2454,2463]
+                                            expr_stmt [2498,2519]
+                                                expr [2498,2518]
+                                                    call [2498,2518]
+                                                        name [2498,2515]
+                                                            name: Console [2498,2505]
+                                                            operator: . [2505,2506]
+                                                            name: WriteLine [2506,2515]
+                                                        argument_list [2515,2518]
+                                                            argument [2516,2517]
+                                                                expr [2516,2517]
+                                                                    name: i [2516,2517]
+                    comment: // Early return [2561,2576]
+                    function [2585,2832]
+                        type [2585,2595]
+                            specifier: public [2585,2591]
+                            name: int [2592,2595]
+                        name: EarlyReturn [2596,2607]
+                        parameter_list [2607,2618]
+                            parameter [2608,2617]
+                                decl [2608,2617]
+                                    type [2608,2611]
+                                        name: int [2608,2611]
+                                    name: value [2612,2617]
+                        block [2627,2832]
+                            block_content [2628,2831]
+                                if_stmt [2641,2710]
+                                    if [2641,2710]
+                                        condition [2644,2655]
+                                            expr [2645,2654]
+                                                name: value [2645,2650]
+                                                operator: < [2651,2652]
+                                                literal: 0 [2653,2654]
+                                        block [2668,2710]
+                                            block_content [2669,2709]
+                                                return [2686,2696]
+                                                    expr [2693,2695]
+                                                        operator: - [2693,2694]
+                                                        literal: 1 [2694,2695]
+                                if_stmt [2723,2792]
+                                    if [2723,2792]
+                                        condition [2726,2738]
+                                            expr [2727,2737]
+                                                name: value [2727,2732]
+                                                operator: == [2733,2735]
+                                                literal: 0 [2736,2737]
+                                        block [2751,2792]
+                                            block_content [2752,2791]
+                                                return [2769,2778]
+                                                    expr [2776,2777]
+                                                        literal: 0 [2776,2777]
+                                return [2805,2822]
+                                    expr [2812,2821]
+                                        name: value [2812,2817]
+                                        operator: * [2818,2819]
+                                        literal: 2 [2820,2821]
+                    comment: // Ternary operator [2850,2869]
+                    function [2878,2992]
+                        type [2878,2891]
+                            specifier: public [2878,2884]
+                            name: string [2885,2891]
+                        name: TernaryOperator [2892,2907]
+                        parameter_list [2907,2923]
+                            parameter [2908,2922]
+                                decl [2908,2922]
+                                    type [2908,2912]
+                                        name: bool [2908,2912]
+                                    name: condition [2913,2922]
+                        block [2932,2992]
+                            block_content [2933,2991]
+                                return [2946,2982]
+                                    expr [2953,2981]
+                                        ternary [2953,2981]
+                                            condition [2953,2964]
+                                                expr [2953,2962]
+                                                    name: condition [2953,2962]
+                                            then [2964,2972]
+                                                expr [2965,2971]
+                                                    literal: "True" [2965,2971]
+                                            else [2972,2981]
+                                                expr [2974,2981]
+                                                    literal: "False" [2974,2981]
+                    comment: // Null coalescing operator [3010,3037]
+                    function [3046,3147]
+                        type [3046,3059]
+                            specifier: public [3046,3052]
+                            name: string [3053,3059]
+                        name: NullCoalescing [3060,3074]
+                        parameter_list [3074,3088]
+                            parameter [3075,3087]
+                                decl [3075,3087]
+                                    type [3075,3081]
+                                        name: string [3075,3081]
+                                    name: input [3082,3087]
+                        block [3097,3147]
+                            block_content [3098,3146]
+                                return [3111,3137]
+                                    expr [3118,3136]
+                                        name: input [3118,3123]
+                                        operator: ?? [3124,3126]
+                                        literal: "Default" [3127,3136]
+package TestFeatures;
+public class ControlFlow {
+  public Void BasicIf(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+  }
+  public Void IfElse(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+ else {
+      Console.WriteLine("Non-positive");
+    }
+  }
+  public Void IfElseIfChain(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+ else     if (value < 0) {
+      Console.WriteLine("Negative");
+    }
+ else {
+      Console.WriteLine("Zero");
+    }
+  }
+  public Void NestedIf(  int x,  int y){
+    if (x > 0) {
+      if (y > 0) {
+        Console.WriteLine("Both positive");
+      }
+ else {
+        Console.WriteLine("X positive, Y non-positive");
+      }
+    }
+  }
+  public Void ComplexCondition(  int a,  int b,  boolean flag){
+    if (a > 0 || b > 0) {
+      Console.WriteLine("At least one positive");
+    }
+  }
+  public Void BreakInLoop(){
+    for (int i=0; i < 10; i++) {
+      if (i == 5) {
+        break;
+      }
+      Console.WriteLine(i);
+    }
+  }
+  public Void ContinueInLoop(){
+    for (int i=0; i < 10; i++) {
+      if (i % 2 == 0) {
+        continue;
+      }
+      Console.WriteLine(i);
+    }
+  }
+  public int EarlyReturn(  int value){
+    if (value < 0) {
+      return -MISSING;
+    }
+    if (value == 0) {
+      return 0;
+    }
+    return value * 2;
+  }
+  public String TernaryOperator(  boolean condition){
+    return condition ? "True" : "False";
+  }
+  public String NullCoalescing(  String input){
+    return input != null ? input : "Default";
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 1554 chars
+  - Number of lines: 73
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class ControlFlow {
+  public Void BasicIf(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+  }
+  public Void IfElse(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+ else {
+      Console.WriteLine("Non-positive");
+    }
+  }
+  public Void IfElseIfChain(  int value){
+    if (value > 0) {
+      Console.WriteLine("Positive");
+    }
+ else     if (value < 0) {
+      Console.WriteLine("Negative");
+    }
+ else {
+      Console.WriteLine("Zero");
+    }
+  }
+  public Void NestedIf(  int x,  int y){
+    if (x > 0) {
+      if (y > 0) {
+        Console.WriteLine("Both positive");
+      }
+ else {
+        Console.WriteLine("X positive, Y non-positive");
+      }
+    }
+  }
+  public Void ComplexCondition(  int a,  int b,  boolean flag){
+    if (a > 0 || b > 0) {
+      Console.WriteLine("At least one positive");
+    }
+  }
+  public Void BreakInLoop(){
+    for (int i=0; i < 10; i++) {
+      if (i == 5) {
+        break;
+      }
+      Console.WriteLine(i);
+    }
+  }
+  public Void ContinueInLoop(){
+    for (int i=0; i < 10; i++) {
+      if (i % 2 == 0) {
+        continue;
+      }
+      Console.WriteLine(i);
+    }
+  }
+  public int EarlyReturn(  int value){
+    if (value < 0) {
+      return -MISSING;
+    }
+    if (value == 0) {
+      return 0;
+    }
+    return value * 2;
+  }
+  public String TernaryOperator(  boolean condition){
+    return condition ? "True" : "False";
+  }
+  public String NullCoalescing(  String input){
+    return input != null ? input : "Default";
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/17_control_flow.java
+  - File contents size: 1554 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/17_control_flow.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.ControlFlow
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/17_control_flow.java
+  Operations: 10
+  Attributes: 0
+  Methods:
+    • BasicIf() - 2 param(s)
+    • IfElse() - 2 param(s)
+    • IfElseIfChain() - 2 param(s)
+    • NestedIf() - 3 param(s)
+    • ComplexCondition() - 4 param(s)
+    • BreakInLoop() - 1 param(s)
+    • ContinueInLoop() - 1 param(s)
+    • EarlyReturn() - 2 param(s)
+    • TernaryOperator() - 2 param(s)
+    • NullCoalescing() - 2 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

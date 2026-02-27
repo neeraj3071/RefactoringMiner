@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/yutakasi634/Coral-iMD-VR.git",
+	"sha1": "b72582f9cfc16e58fa4169f5d221408ab68d3227",
+	"url": "https://github.com/yutakasi634/Coral-iMD-VR/commit/b72582f9cfc16e58fa4169f5d221408ab68d3227",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private box_size : float from class Particle",
+	"leftSideLocations": [{
+		"filePath": "Assets/Particle.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private box_size : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Particle.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private box_size : float"
+}, {
+		"filePath": "Assets/Particle.cs",
+		"startLine": 15,
+		"endLine": 18,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "package SetBoxSize(size float) : void"
+}]
+}
+]
+}]
+}

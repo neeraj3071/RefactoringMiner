@@ -1,0 +1,2187 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/plaidpants/ANKH-VR.git",
+	"sha1": "d20fcf090de4671b8c28478be9c955749a41654e",
+	"url": "https://github.com/plaidpants/ANKH-VR/commit/d20fcf090de4671b8c28478be9c955749a41654e",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class Title.CGA_COLOR moved to Palette.CGA_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 376,
+		"endLine": 383,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title.CGA_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 12,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Palette.CGA_COLOR"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class Title.EGA_COLOR moved to Palette.EGA_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 333,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title.EGA_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 21,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Palette.EGA_COLOR"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class Title.APPLE2_COLOR moved to Palette.APPLE2_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 395,
+		"endLine": 412,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title.APPLE2_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 42,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Palette.APPLE2_COLOR"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)) to [if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))] in method package LoadTilesEGA() : void from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 913,
+		"endLine": 963,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 800,
+		"endLine": 1097,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 576,
+		"endLine": 692,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 642,
+		"endLine": 692,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 529,
+		"endLine": 826,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)) to [if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))] in method package LoadTilesEGA() : void from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 1011,
+		"endLine": 1087,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 800,
+		"endLine": 1097,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 700,
+		"endLine": 816,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 740,
+		"endLine": 816,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 529,
+		"endLine": 826,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)), if((colorIndex == (int)EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if((colorIndex == (int)EGA_COLOR.BROWN) && tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM && height == 9)] to if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))) in method package LoadTilesEGA() : void from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 1011,
+		"endLine": 1087,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 971,
+		"endLine": 1087,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if((colorIndex == (int)EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 1005,
+		"endLine": 1087,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if((colorIndex == (int)EGA_COLOR.BROWN) && tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM && height == 9)"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 800,
+		"endLine": 1097,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 700,
+		"endLine": 816,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 529,
+		"endLine": 826,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)) to [if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))] in method package LoadTilesEGA() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 779,
+		"endLine": 829,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 666,
+		"endLine": 963,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 445,
+		"endLine": 561,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 511,
+		"endLine": 561,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 398,
+		"endLine": 695,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)) to [if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))] in method package LoadTilesEGA() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 877,
+		"endLine": 953,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 666,
+		"endLine": 963,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 569,
+		"endLine": 685,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 609,
+		"endLine": 685,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(((colorIndex == (int)Palette.EGA_COLOR.BLACK) || (colorIndex == (int)Palette.EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 398,
+		"endLine": 695,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS)), if((colorIndex == (int)EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))), if((colorIndex == (int)EGA_COLOR.BROWN) && tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM && height == 9)] to if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4))) in method package LoadTilesEGA() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 877,
+		"endLine": 953,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(((colorIndex == (int)EGA_COLOR.BLACK) || (colorIndex == (int)EGA_COLOR.GREEN)) && (tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.TOWN || tile == (int)U4_Decompiled.TILE.RUINS))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 837,
+		"endLine": 953,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if((colorIndex == (int)EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 871,
+		"endLine": 953,
+		"startColumn": 26,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if((colorIndex == (int)EGA_COLOR.BROWN) && tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM && height == 9)"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 666,
+		"endLine": 963,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTilesEGA() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 569,
+		"endLine": 685,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if((colorIndex == (int)Palette.EGA_COLOR.BLACK) && (tile == (int)U4_Decompiled.TILE.ANKH || tile == (int)U4_Decompiled.TILE.LADDER_UP || tile == (int)U4_Decompiled.TILE.LADDER_DOWN || tile == (int)U4_Decompiled.TILE.FOREST || tile == (int)U4_Decompiled.TILE.COOKING_FIRE || tile == (int)U4_Decompiled.TILE.SHRINE || tile == (int)U4_Decompiled.TILE.ALTAR || tile == (int)U4_Decompiled.TILE.BALOON || tile == (int)U4_Decompiled.TILE.CASTLE || tile == (int)U4_Decompiled.TILE.CASTLE_LEFT || tile == (int)U4_Decompiled.TILE.CASTLE_ENTRANCE || tile == (int)U4_Decompiled.TILE.CASTLE_RIGHT || tile == (int)U4_Decompiled.TILE.VILLAGE || tile == (int)U4_Decompiled.TILE.BRIDGE || tile == (int)U4_Decompiled.TILE.BRIDGE_BOTTOM || tile == (int)U4_Decompiled.TILE.BRIDGE_TOP || tile == (int)U4_Decompiled.TILE.BRUSH || tile == (int)U4_Decompiled.TILE.NIXIE || tile == (int)U4_Decompiled.TILE.NIXIE2 || (tile >= (int)U4_Decompiled.TILE.MISSLE_ATTACK_SMALL && tile <= (int)U4_Decompiled.TILE.MISSLE_ATTACK_RED) || (tile >= (int)U4_Decompiled.TILE.PARTY && tile <= (int)U4_Decompiled.TILE.SHEPHERD2) || (tile >= (int)U4_Decompiled.TILE.GUARD && tile <= (int)U4_Decompiled.TILE.LORD_BRITISH2) || (tile >= (int)U4_Decompiled.TILE.SERPENT && tile <= (int)U4_Decompiled.TILE.WATER_SPOUT2) || (tile >= (int)U4_Decompiled.TILE.BAT && tile <= (int)U4_Decompiled.TILE.TROLL4) || (tile >= (int)U4_Decompiled.TILE.INSECTS && tile <= (int)U4_Decompiled.TILE.INSECTS4) || (tile >= (int)U4_Decompiled.TILE.PHANTOM && tile <= (int)U4_Decompiled.TILE.MAGE_NPC4) || (tile >= (int)U4_Decompiled.TILE.LAVA_LIZARD && tile <= (int)U4_Decompiled.TILE.ZORN4) || (tile >= (int)U4_Decompiled.TILE.HYDRA && tile <= (int)U4_Decompiled.TILE.BALRON4)))"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 398,
+		"endLine": 695,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package LoadTilesEGA() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3931,
+		"endLine": 3931,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3931,
+		"endLine": 3931,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3931,
+		"endLine": 3931,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3931,
+		"endLine": 3931,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3051,
+		"endLine": 3051,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3051,
+		"endLine": 3051,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4154,
+		"endLine": 4154,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4154,
+		"endLine": 4154,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class Palette.CGA_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 376,
+		"endLine": 383,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Title.CGA_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 12,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Palette.CGA_COLOR"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class Palette.EGA_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 333,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Title.EGA_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 21,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Palette.EGA_COLOR"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class Palette.APPLE2_COLOR",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 395,
+		"endLine": 412,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Title.APPLE2_COLOR"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 42,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Palette.APPLE2_COLOR"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeEGAPalette() : void from class Title to public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 354,
+		"endLine": 374,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 354,
+		"endLine": 374,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 220,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 354,
+		"endLine": 374,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 220,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeCGAPalette() : void from class Title to public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 385,
+		"endLine": 393,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 385,
+		"endLine": 393,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 251,
+		"endLine": 259,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 385,
+		"endLine": 393,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 251,
+		"endLine": 259,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeApple2Palette() : void from class Title to public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 416,
+		"endLine": 437,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 416,
+		"endLine": 437,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 416,
+		"endLine": 437,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Title to public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 439,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 439,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 305,
+		"endLine": 375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 439,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 305,
+		"endLine": 375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Title to public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 511,
+		"endLine": 581,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 511,
+		"endLine": 581,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 377,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 511,
+		"endLine": 581,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 377,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Title to public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 583,
+		"endLine": 597,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 583,
+		"endLine": 597,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 463,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 583,
+		"endLine": 597,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 463,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CGAColorPalette : Color[] from class Title to public CGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public CGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public CGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public CGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public CGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EGAColorPalette : Color[] from class Title to public EGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public EGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public EGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public EGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public EGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Apple2ColorPalette : Color[] from class Title to public Apple2ColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Apple2ColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Apple2ColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeEGAPalette() : void from class World to public InitializeEGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 220,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeEGAPalette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeCGAPalette() : void from class World to public InitializeCGAPalette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 251,
+		"endLine": 259,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeCGAPalette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package InitializeApple2Palette() : void from class World to public InitializeApple2Palette() : void from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public InitializeApple2Palette() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class World to public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 305,
+		"endLine": 375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class World to public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 377,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class World to public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 463,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CGAColorPalette : Color[] from class World to public CGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EGAColorPalette : Color[] from class World to public EGAColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Apple2ColorPalette : Color[] from class World to public Apple2ColorPalette : Color[] from class Palette",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Palette from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 8,
+		"endLine": 4078,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 354,
+		"endLine": 374,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 385,
+		"endLine": 393,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 416,
+		"endLine": 437,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 439,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 511,
+		"endLine": 581,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 583,
+		"endLine": 597,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 8,
+		"endLine": 3807,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 5,
+		"endLine": 275,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Palette"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeEGAPalette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeCGAPalette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeApple2Palette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Palette from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 8,
+		"endLine": 8182,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 220,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeEGAPalette() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 251,
+		"endLine": 259,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeCGAPalette() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 282,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package InitializeApple2Palette() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 305,
+		"endLine": 375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 377,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 449,
+		"endLine": 463,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 8,
+		"endLine": 7914,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 5,
+		"endLine": 275,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Palette"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 61,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeEGAPalette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 83,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeCGAPalette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 93,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public InitializeApple2Palette() : void"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 116,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorOdd(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 188,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorEven(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 260,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Apple2ColorBW(highBitSet bool, previousPixel bool, pixel bool, nextPixel bool) : Color"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 27,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public EGAColorPalette : Color[]"
+}, {
+		"filePath": "Assets/Palette.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Apple2ColorPalette : Color[]"
+}]
+}
+]
+}]
+}

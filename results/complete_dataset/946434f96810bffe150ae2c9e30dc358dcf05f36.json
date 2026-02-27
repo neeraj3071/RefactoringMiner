@@ -1,0 +1,300 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "946434f96810bffe150ae2c9e30dc358dcf05f36",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/946434f96810bffe150ae2c9e30dc358dcf05f36",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [var mainMenuHidden=(mainMenuHideFlags & MenuHideFlags.Hidden) != 0;, if(Time.time > mainMenuHideData.autoHideTime + k_MainMenuAutoHideDelay)] to var temporarilyHidden=(mainMenuHideFlags & MenuHideFlags.Temporary) != 0 && Time.time > mainMenuHideData.autoHideTime + k_MainMenuAutoHideDelay; in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "var mainMenuHidden=(mainMenuHideFlags & MenuHideFlags.Hidden) != 0;\n"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 212,
+		"endLine": 215,
+		"startColumn": 12,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Time.time > mainMenuHideData.autoHideTime + k_MainMenuAutoHideDelay)"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 114,
+		"endLine": 246,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 193,
+		"endLine": 194,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "var temporarilyHidden=(mainMenuHideFlags & MenuHideFlags.Temporary) != 0 && Time.time > mainMenuHideData.autoHideTime + k_MainMenuAutoHideDelay;\n"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 101,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [var wasTemporary=(mainMenuHideData.lastHideFlags & MenuHideFlags.Temporary) != 0;, if(Time.time > mainMenuHideData.autoShowTime + k_MainMenuAutoShowDelay)] to var wasTemporarilyHidden=(lastMainMenuHideFlags & MenuHideFlags.Temporary) != 0 && Time.time > mainMenuHideData.autoShowTime + k_MainMenuAutoShowDelay; in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "var wasTemporary=(mainMenuHideData.lastHideFlags & MenuHideFlags.Temporary) != 0;\n"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 218,
+		"endLine": 222,
+		"startColumn": 11,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Time.time > mainMenuHideData.autoShowTime + k_MainMenuAutoShowDelay)"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 114,
+		"endLine": 246,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "var wasTemporarilyHidden=(lastMainMenuHideFlags & MenuHideFlags.Temporary) != 0 && Time.time > mainMenuHideData.autoShowTime + k_MainMenuAutoShowDelay;\n"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 101,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "package UpdateMenuVisibilities() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable lastMainMenuHideFlags : var in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 10,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "lastMainMenuHideFlags : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable permanentlyHidden : var in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "permanentlyHidden : var"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable wasPermanentlyHidden : var in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 10,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "wasPermanentlyHidden : var"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mainMenuHidden : var to temporarilyHidden : var in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mainMenuHidden : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 193,
+		"endLine": 194,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "temporarilyHidden : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 193,
+		"endLine": 194,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable wasTemporary : var to wasTemporarilyHidden : var in method package UpdateMenuVisibilities() : void from class EditorVR.Menus",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 11,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "wasTemporary : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "wasTemporarilyHidden : var"
+}, {
+		"filePath": "Scripts/Core/EditorVR.Menus.cs",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute package m_Visible : bool renamed to package m_MenuHideFlags : MenuHideFlags and moved from class MainMenu to class RadialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/MainMenu/MainMenu.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 8,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_Visible : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/RadialMenu/RadialMenu.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "package m_MenuHideFlags : MenuHideFlags"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,2223 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/plaidpants/ANKH-VR.git",
+	"sha1": "71f5e92e9d9b3b6e0335457bbeb5892b24a0af3f",
+	"url": "https://github.com/plaidpants/ANKH-VR/commit/71f5e92e9d9b3b6e0335457bbeb5892b24a0af3f",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class World.DUNGEON_TILE moved to Dungeon.DUNGEON_TILE",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 395,
+		"endLine": 440,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World.DUNGEON_TILE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 68,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Dungeon.DUNGEON_TILE"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class World.DUNGEONS moved to Dungeon.DUNGEONS",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 442,
+		"endLine": 453,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World.DUNGEONS"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 115,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Dungeon.DUNGEONS"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dun : DUNGEONS to dun : Dungeon.DUNGEONS in method package Update() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3423,
+		"endLine": 3423,
+		"startColumn": 30,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dun : DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3427,
+		"endLine": 3427,
+		"startColumn": 25,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3424,
+		"endLine": 3428,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2243,
+		"endLine": 2243,
+		"startColumn": 38,
+		"endColumn": 129,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dun : Dungeon.DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2247,
+		"endLine": 2247,
+		"startColumn": 25,
+		"endColumn": 108,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2244,
+		"endLine": 2248,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dun : DUNGEONS to dun : Dungeon.DUNGEONS in method package Update() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3500,
+		"endLine": 3500,
+		"startColumn": 26,
+		"endColumn": 109,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dun : DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3504,
+		"endLine": 3504,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3501,
+		"endLine": 3505,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2320,
+		"endLine": 2320,
+		"startColumn": 34,
+		"endColumn": 125,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dun : Dungeon.DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2324,
+		"endLine": 2324,
+		"startColumn": 21,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2321,
+		"endLine": 2325,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dun : DUNGEONS to dun : Dungeon.DUNGEONS in method package Update() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3537,
+		"endLine": 3537,
+		"startColumn": 26,
+		"endColumn": 109,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dun : DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3542,
+		"endLine": 3542,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3538,
+		"endLine": 3543,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2357,
+		"endLine": 2357,
+		"startColumn": 34,
+		"endColumn": 125,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dun : Dungeon.DUNGEONS"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2362,
+		"endLine": 2362,
+		"startColumn": 21,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2358,
+		"endLine": 2363,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadDungeons() : void from class World to public LoadDungeons() : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 798,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadDungeons() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 165,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadDungeons() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadDungeons() : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 798,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadDungeons() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 165,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadDungeons() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadDungeons() : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 798,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadDungeons() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 165,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadDungeons() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public AddDungeonMapMonsters() : void from class World to public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 989,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddDungeonMapMonsters() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 357,
+		"endLine": 472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter u4 : U4_Decompiled_AVATAR in method public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 989,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddDungeonMapMonsters() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 46,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "u4 : U4_Decompiled_AVATAR"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 357,
+		"endLine": 472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 989,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddDungeonMapMonsters() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 357,
+		"endLine": 472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject from class World to public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1105,
+		"endLine": 1113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 474,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1105,
+		"endLine": 1113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 474,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void from class World to public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1114,
+		"endLine": 1127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 484,
+		"endLine": 497,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1114,
+		"endLine": 1127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 484,
+		"endLine": 497,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CreateDungeons(dungeonsGameObject GameObject) : void from class World to public CreateDungeons(dungeonsGameObject GameObject) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1128,
+		"endLine": 1255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 499,
+		"endLine": 626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeons(dungeonsGameObject GameObject) : void from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1128,
+		"endLine": 1255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 499,
+		"endLine": 626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CreateDungeonHallway() from class World to public CreateDungeonHallway() from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1257,
+		"endLine": 1473,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonHallway()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 628,
+		"endLine": 844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeonHallway()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public CreateDungeonHallway() from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1257,
+		"endLine": 1473,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonHallway()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 628,
+		"endLine": 844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public CreateDungeonHallway()"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeonHallway() from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1257,
+		"endLine": 1473,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonHallway()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 628,
+		"endLine": 844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeonHallway()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CreateDungeonBlock(tileIndex Tile.TILE) : GameObject from class World to public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1474,
+		"endLine": 1513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 846,
+		"endLine": 885,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1474,
+		"endLine": 1513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 846,
+		"endLine": 885,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1474,
+		"endLine": 1513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 846,
+		"endLine": 885,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject from class World to public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1514,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 887,
+		"endLine": 1194,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1514,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 887,
+		"endLine": 1194,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1514,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 887,
+		"endLine": 1194,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CreateDungeonExpandedLevel(dungeon DUNGEONS, level int) : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public dungeon : GameObject from class World to public dungeon : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeon : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public dungeon : GameObject"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public dungeon : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeon : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public dungeon : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public dungeonMonsters : GameObject from class World to public dungeonMonsters : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeonMonsters : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public dungeonMonsters : GameObject"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public dungeonMonsters : GameObject from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeonMonsters : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public dungeonMonsters : GameObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public dungeons : DUNGEON[] from class World to public dungeons : DUNGEON[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 797,
+		"endLine": 797,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeons : DUNGEON[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public dungeons : DUNGEON[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public dungeons : DUNGEON[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 797,
+		"endLine": 797,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeons : DUNGEON[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public dungeons : DUNGEON[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[] from class World to public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 526,
+		"endLine": 544,
+		"startColumn": 50,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 18,
+		"endLine": 36,
+		"startColumn": 57,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 526,
+		"endLine": 544,
+		"startColumn": 50,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 18,
+		"endLine": 36,
+		"startColumn": 57,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public FLOOR_TRIGGER : struct from class World to public FLOOR_TRIGGER : struct from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public FLOOR_TRIGGER : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public FLOOR_TRIGGER : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public changeTile : Tile.TILE from class World to public changeTile : Tile.TILE from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile : Tile.TILE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public changeTile : Tile.TILE"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public trigger_x : int from class World to public trigger_x : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public trigger_x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public trigger_x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public trigger_y : int from class World to public trigger_y : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public trigger_y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public trigger_y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public changeTile_x1 : int from class World to public changeTile_x1 : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_x1 : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public changeTile_x1 : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public changeTile_y1 : int from class World to public changeTile_y1 : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_y1 : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public changeTile_y1 : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public changeTile_x2 : int from class World to public changeTile_x2 : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_x2 : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public changeTile_x2 : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public changeTile_y2 : int from class World to public changeTile_y2 : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_y2 : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public changeTile_y2 : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DUNGEON_MONSTER : struct from class World to public DUNGEON_MONSTER : struct from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 465,
+		"endLine": 465,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_MONSTER : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DUNGEON_MONSTER : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public monster : Tile.TILE from class World to public monster : Tile.TILE from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 467,
+		"endLine": 467,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public monster : Tile.TILE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public monster : Tile.TILE"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public x : int from class World to public x : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public x : int from class World to public x : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public x : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public x : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public y : int from class World to public y : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public y : int from class World to public y : int from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public y : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public y : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DUNGEON_PARTY_START_LOCATION : struct from class World to public DUNGEON_PARTY_START_LOCATION : struct from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_PARTY_START_LOCATION : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DUNGEON_PARTY_START_LOCATION : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DUNGEON_ROOM : struct from class World to public DUNGEON_ROOM : struct from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_ROOM : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DUNGEON_ROOM : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public triggers : FLOOR_TRIGGER[] from class World to public triggers : FLOOR_TRIGGER[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public triggers : FLOOR_TRIGGER[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public triggers : FLOOR_TRIGGER[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public monsters : DUNGEON_MONSTER[] from class World to public monsters : DUNGEON_MONSTER[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public monsters : DUNGEON_MONSTER[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public monsters : DUNGEON_MONSTER[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[] from class World to public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public partyEastEntry : DUNGEON_PARTY_START_LOCATION[] from class World to public partyEastEntry : DUNGEON_PARTY_START_LOCATION[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 483,
+		"endLine": 483,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyEastEntry : DUNGEON_PARTY_START_LOCATION[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public partyEastEntry : DUNGEON_PARTY_START_LOCATION[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public partySouthEntry : DUNGEON_PARTY_START_LOCATION[] from class World to public partySouthEntry : DUNGEON_PARTY_START_LOCATION[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partySouthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public partySouthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public partyWestEntry : DUNGEON_PARTY_START_LOCATION[] from class World to public partyWestEntry : DUNGEON_PARTY_START_LOCATION[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyWestEntry : DUNGEON_PARTY_START_LOCATION[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public partyWestEntry : DUNGEON_PARTY_START_LOCATION[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DUNGEON : struct from class World to public DUNGEON : struct from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DUNGEON : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public name : string from class World to public name : string from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public name : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public name : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public dungeonRooms : DUNGEON_ROOM[] from class World to public dungeonRooms : DUNGEON_ROOM[] from class Dungeon",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 494,
+		"endLine": 494,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeonRooms : DUNGEON_ROOM[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public dungeonRooms : DUNGEON_ROOM[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Dungeon from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 4433,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 798,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadDungeons() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 989,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddDungeonMapMonsters() : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1105,
+		"endLine": 1113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1114,
+		"endLine": 1127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1128,
+		"endLine": 1255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1257,
+		"endLine": 1473,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonHallway()"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1474,
+		"endLine": 1513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeon : GameObject"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeonMonsters : GameObject"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public FLOOR_TRIGGER : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile : Tile.TILE"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public trigger_x : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public trigger_y : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_x1 : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_y1 : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_x2 : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public changeTile_y2 : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 465,
+		"endLine": 465,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_MONSTER : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 467,
+		"endLine": 467,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public monster : Tile.TILE"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public x : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public y : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_PARTY_START_LOCATION : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public x : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public y : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON_ROOM : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public triggers : FLOOR_TRIGGER[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public monsters : DUNGEON_MONSTER[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 483,
+		"endLine": 483,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyEastEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partySouthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public partyWestEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DUNGEON : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public name : string"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 494,
+		"endLine": 494,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeonRooms : DUNGEON_ROOM[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 526,
+		"endLine": 544,
+		"startColumn": 50,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 797,
+		"endLine": 797,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public dungeons : DUNGEON[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 3253,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 5,
+		"endLine": 1194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Dungeon"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 165,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadDungeons() : void"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 357,
+		"endLine": 472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public AddDungeonMapMonsters(u4 U4_Decompiled_AVATAR) : void"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 474,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateDungeonRoom(DUNGEON_ROOM ref) : GameObject"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 484,
+		"endLine": 497,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateDungeonRooms(dungeonsRoomsObject GameObject) : void"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 499,
+		"endLine": 626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateDungeons(dungeonsGameObject GameObject) : void"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 628,
+		"endLine": 844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateDungeonHallway()"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 846,
+		"endLine": 885,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateDungeonBlock(tileIndex Tile.TILE) : GameObject"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 30,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public dungeon : GameObject"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public dungeonMonsters : GameObject"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public FLOOR_TRIGGER : struct"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public changeTile : Tile.TILE"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public trigger_x : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public trigger_y : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public changeTile_x1 : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public changeTile_y1 : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public changeTile_x2 : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 35,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public changeTile_y2 : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DUNGEON_MONSTER : struct"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public monster : Tile.TILE"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public x : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public y : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DUNGEON_PARTY_START_LOCATION : struct"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 20,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public x : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public y : int"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DUNGEON_ROOM : struct"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public triggers : FLOOR_TRIGGER[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public monsters : DUNGEON_MONSTER[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public partyNorthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public partyEastEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public partySouthEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public partyWestEntry : DUNGEON_PARTY_START_LOCATION[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DUNGEON : struct"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public name : string"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public dungeonRooms : DUNGEON_ROOM[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 18,
+		"endLine": 36,
+		"startColumn": 57,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public convertDungeonTileToCombat : U4_Decompiled_AVATAR.COMBAT_TERRAIN[]"
+}, {
+		"filePath": "Assets/Dungeon.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public dungeons : DUNGEON[]"
+}]
+}
+]
+}]
+}

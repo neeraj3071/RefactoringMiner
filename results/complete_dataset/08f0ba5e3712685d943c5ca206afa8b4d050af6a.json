@@ -1,0 +1,510 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "08f0ba5e3712685d943c5ca206afa8b4d050af6a",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/08f0ba5e3712685d943c5ca206afa8b4d050af6a",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void from class WindowsMixedRealityArticulatedHandDefinition to public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 77,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 73,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void from class WindowsMixedRealityArticulatedHandDefinition to public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 83,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 79,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private IMixedRealityInputSource : readonly from class WindowsMixedRealityArticulatedHandDefinition to protected IMixedRealityInputSource : readonly from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private IMixedRealityInputSource : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected IMixedRealityInputSource : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected IMixedRealityInputSource : readonly from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private IMixedRealityInputSource : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected IMixedRealityInputSource : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private Handedness : readonly from class WindowsMixedRealityArticulatedHandDefinition to protected Handedness : readonly from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Handedness : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected Handedness : readonly"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected Handedness : readonly from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Handedness : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected Handedness : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package cursorBeamBackwardTolerance : float from class WindowsMixedRealityArticulatedHandDefinition to package cursorBeamBackwardTolerance : float from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package cursorBeamBackwardTolerance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package cursorBeamBackwardTolerance : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package cursorBeamUpTolerance : float from class WindowsMixedRealityArticulatedHandDefinition to package cursorBeamUpTolerance : float from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package cursorBeamUpTolerance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package cursorBeamUpTolerance : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose> from class WindowsMixedRealityArticulatedHandDefinition to private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose> from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 64,
+		"endColumn": 134,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 64,
+		"endColumn": 134,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private currentIndexPose : MixedRealityPose from class WindowsMixedRealityArticulatedHandDefinition to private currentIndexPose : MixedRealityPose from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private currentIndexPose : MixedRealityPose"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 34,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private currentIndexPose : MixedRealityPose"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public DefaultInteractions : MixedRealityInteractionMapping[] from class WindowsMixedRealityArticulatedHandDefinition to public DefaultInteractions : MixedRealityInteractionMapping[] from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 37,
+		"endLine": 44,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DefaultInteractions : MixedRealityInteractionMapping[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 33,
+		"endLine": 40,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public DefaultInteractions : MixedRealityInteractionMapping[]"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IsInPointingPose : bool from class WindowsMixedRealityArticulatedHandDefinition to public IsInPointingPose : bool from class BaseArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsInPointingPose : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IsInPointingPose : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class BaseArticulatedHandDefinition from class WindowsMixedRealityArticulatedHandDefinition",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 17,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "WindowsMixedRealityArticulatedHandDefinition"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 77,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 83,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private IMixedRealityInputSource : readonly"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Handedness : readonly"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package cursorBeamBackwardTolerance : float"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package cursorBeamUpTolerance : float"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 64,
+		"endColumn": 134,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose>"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private currentIndexPose : MixedRealityPose"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 37,
+		"endLine": 44,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DefaultInteractions : MixedRealityInteractionMapping[]"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsInPointingPose : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/WindowsMixedReality/Shared/WindowsMixedRealityArticulatedHandDefinition.cs",
+		"startLine": 16,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "WindowsMixedRealityArticulatedHandDefinition"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 12,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "BaseArticulatedHandDefinition"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 73,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateHandJoints(jointPoses Dictionary<TrackedHandJoint,MixedRealityPose>) : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 79,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateCurrentIndexPose(interactionMapping MixedRealityInteractionMapping) : void"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected IMixedRealityInputSource : readonly"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected Handedness : readonly"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package cursorBeamBackwardTolerance : float"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package cursorBeamUpTolerance : float"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 64,
+		"endColumn": 134,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private unityJointPoses : Dictionary<TrackedHandJoint,MixedRealityPose>"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 34,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private currentIndexPose : MixedRealityPose"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 33,
+		"endLine": 40,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public DefaultInteractions : MixedRealityInteractionMapping[]"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/Providers/Hands/BaseArticulatedHandDefinition.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsInPointingPose : bool"
+}]
+}
+]
+}]
+}

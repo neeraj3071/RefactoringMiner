@@ -1,0 +1,268 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_type_mapping.cs
+Size: 546 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+using System.Collections.Generic;
+
+class TypeMappingTest {
+    void TestMethod() {
+        // Test various C# type mappings
+        int count = 10;
+        bool isValid = true;
+        string name = "test";
+        List<int> numbers = new List<int>();
+        Dictionary<string, int> map = new Dictionary<string, int>();
+        
+        // Test with foreach and var
+        foreach (var num in numbers)
+            Console.WriteLine(num);
+            
+        foreach (var pair in map)
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_type_mapping.cs
+CPatMinerExecutor: Executing CPatMiner transformation (546 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    using [14,47]
+        name [20,46]
+            name: System [20,26]
+            operator: . [26,27]
+            name: Collections [27,38]
+            operator: . [38,39]
+            name: Generic [39,46]
+    class [49,545]
+        name: TypeMappingTest [55,70]
+        block [71,545]
+            function [77,543]
+                type [77,81]
+                    name: void [77,81]
+                name: TestMethod [82,92]
+                parameter_list [92,94]
+                block [95,543]
+                    block_content [96,542]
+                        comment: // Test various C# type mappings [105,137]
+                        decl_stmt [146,161]
+                            decl [146,160]
+                                type [146,149]
+                                    name: int [146,149]
+                                name: count [150,155]
+                                init [156,160]
+                                    expr [158,160]
+                                        literal: 10 [158,160]
+                        decl_stmt [170,190]
+                            decl [170,189]
+                                type [170,174]
+                                    name: bool [170,174]
+                                name: isValid [175,182]
+                                init [183,189]
+                                    expr [185,189]
+                                        literal: true [185,189]
+                        decl_stmt [199,220]
+                            decl [199,219]
+                                type [199,205]
+                                    name: string [199,205]
+                                name: name [206,210]
+                                init [211,219]
+                                    expr [213,219]
+                                        literal: "test" [213,219]
+                        decl_stmt [229,265]
+                            decl [229,264]
+                                type [229,238]
+                                    name [229,238]
+                                        name: List [229,233]
+                                        argument_list [233,238]
+                                            argument [234,237]
+                                                name: int [234,237]
+                                name: numbers [239,246]
+                                init [247,264]
+                                    expr [249,264]
+                                        operator: new [249,252]
+                                        call [253,264]
+                                            name [253,262]
+                                                name: List [253,257]
+                                                argument_list [257,262]
+                                                    argument [258,261]
+                                                        name: int [258,261]
+                                            argument_list [262,264]
+                        decl_stmt [274,334]
+                            decl [274,333]
+                                type [274,297]
+                                    name [274,297]
+                                        name: Dictionary [274,284]
+                                        argument_list [284,297]
+                                            argument [285,291]
+                                                name: string [285,291]
+                                            argument [293,296]
+                                                name: int [293,296]
+                                name: map [298,301]
+                                init [302,333]
+                                    expr [304,333]
+                                        operator: new [304,307]
+                                        call [308,333]
+                                            name [308,331]
+                                                name: Dictionary [308,318]
+                                                argument_list [318,331]
+                                                    argument [319,325]
+                                                        name: string [319,325]
+                                                    argument [327,330]
+                                                        name: int [327,330]
+                                            argument_list [331,333]
+                        comment: // Test with foreach and var [352,380]
+                        foreach [389,453]
+                            control [397,417]
+                                init [398,416]
+                                    decl [398,416]
+                                        type [398,401]
+                                            name: var [398,401]
+                                        name: num [402,405]
+                                        range [406,416]
+                                            expr [409,416]
+                                                name: numbers [409,416]
+                            block [417,453]
+                                block_content [417,453]
+                                    expr_stmt [430,453]
+                                        expr [430,452]
+                                            call [430,452]
+                                                name [430,447]
+                                                    name: Console [430,437]
+                                                    operator: . [437,438]
+                                                    name: WriteLine [438,447]
+                                                argument_list [447,452]
+                                                    argument [448,451]
+                                                        expr [448,451]
+                                                            name: num [448,451]
+                        foreach [475,537]
+                            control [483,500]
+                                init [484,499]
+                                    decl [484,499]
+                                        type [484,487]
+                                            name: var [484,487]
+                                        name: pair [488,492]
+                                        range [493,499]
+                                            expr [496,499]
+                                                name: map [496,499]
+                            block [500,537]
+                                block_content [500,537]
+                                    expr_stmt [513,537]
+                                        expr [513,536]
+                                            call [513,536]
+                                                name [513,530]
+                                                    name: Console [513,520]
+                                                    operator: . [520,521]
+                                                    name: WriteLine [521,530]
+                                                argument_list [530,536]
+                                                    argument [531,535]
+                                                        expr [531,535]
+                                                            name: pair [531,535]
+import System;
+import System;
+class TypeMappingTest {
+  Void TestMethod(){
+    int count=10;
+    boolean isValid=true;
+    String name="test";
+    List<Integer> numbers=new List<Integer>();
+    Dictionary<String,Integer> map=new Dictionary<String,Integer>();
+    for (    Integer num : numbers) {
+      Console.WriteLine(num);
+    }
+    for (    String pair : map) {
+      Console.WriteLine(pair);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 2
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 410 chars
+  - Number of lines: 17
+
+=== Generated Java Code (Full Output) ===
+import System;
+import System;
+class TypeMappingTest {
+  Void TestMethod(){
+    int count=10;
+    boolean isValid=true;
+    String name="test";
+    List<Integer> numbers=new List<Integer>();
+    Dictionary<String,Integer> map=new Dictionary<String,Integer>();
+    for (    Integer num : numbers) {
+      Console.WriteLine(num);
+    }
+    for (    String pair : map) {
+      Console.WriteLine(pair);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_type_mapping.java
+  - File contents size: 410 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_type_mapping.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TypeMappingTest
+  Type: Class
+  Package: 
+  Source file: tests/test_type_mapping.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

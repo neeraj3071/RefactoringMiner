@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "4b0bcc84c45c12f9473425cd4024154d9c47ad1e",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/4b0bcc84c45c12f9473425cd4024154d9c47ad1e",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private EventDataToRay(eventData RayEventData) : Ray extracted from public OnBeginDrag(eventData RayEventData) : void in class SphereHandle",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 15,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnBeginDrag(eventData RayEventData) : void"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 67,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private EventDataToRay(eventData RayEventData) : Ray"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 15,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnBeginDrag(eventData RayEventData) : void"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "EventDataToRay(eventData)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private EventDataToRay(eventData RayEventData) : Ray extracted from public OnDrag(eventData RayEventData) : void in class SphereHandle",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 31,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnDrag(eventData RayEventData) : void"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 67,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private EventDataToRay(eventData RayEventData) : Ray"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 29,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnDrag(eventData RayEventData) : void"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "EventDataToRay(eventData)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rayOrigin : var in method public OnBeginDrag(eventData RayEventData) : void from class SphereHandle",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rayOrigin : var"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 4,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rayOrigin : var in method public OnDrag(eventData RayEventData) : void from class SphereHandle",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rayOrigin : var"
+}, {
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/SphereHandle.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

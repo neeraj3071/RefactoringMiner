@@ -1,0 +1,365 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/11_inheritance.cs
+Size: 1402 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Base class for inheritance testing.
+    /// </summary>
+    public class BaseDevice
+    {
+        protected string deviceId;
+        
+        public BaseDevice()
+        {
+            deviceId = "BASE-001";
+        }
+        
+        public virtual void Initialize()
+        {
+            Console.WriteLine("Base device initialization");
+        }
+        
+        public void CommonMethod()
+        {
+            Console.Write
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/11_inheritance.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1402 chars)...
+unit [0,0]
+    namespace [0,1401]
+        name: TestFeatures [10,22]
+        block [23,1401]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Base class for inheritance testing. [70,109]
+            comment: ///</summary> [114,128]
+            class [133,538]
+                specifier: public [133,139]
+                name: BaseDevice [146,156]
+                block [161,538]
+                    decl_stmt [171,197]
+                        decl [171,196]
+                            type [171,187]
+                                specifier: protected [171,180]
+                                name: string [181,187]
+                            name: deviceId [188,196]
+                    constructor [215,289]
+                        specifier: public [215,221]
+                        name: BaseDevice [222,232]
+                        parameter_list [232,234]
+                        block [243,289]
+                            block_content [244,288]
+                                expr_stmt [257,279]
+                                    expr [257,278]
+                                        name: deviceId [257,265]
+                                        operator: = [266,267]
+                                        literal: "BASE-001" [268,278]
+                    function [307,420]
+                        type [307,326]
+                            specifier: public [307,313]
+                            specifier: virtual [314,321]
+                            name: void [322,326]
+                        name: Initialize [327,337]
+                        parameter_list [337,339]
+                        block [348,420]
+                            block_content [349,419]
+                                expr_stmt [362,410]
+                                    expr [362,409]
+                                        call [362,409]
+                                            name [362,379]
+                                                name: Console [362,369]
+                                                operator: . [369,370]
+                                                name: WriteLine [370,379]
+                                            argument_list [379,409]
+                                                argument [380,408]
+                                                    expr [380,408]
+                                                        literal: "Base device initialization" [380,408]
+                    function [438,532]
+                        type [438,449]
+                            specifier: public [438,444]
+                            name: void [445,449]
+                        name: CommonMethod [450,462]
+                        parameter_list [462,464]
+                        block [473,532]
+                            block_content [474,531]
+                                expr_stmt [487,522]
+                                    expr [487,521]
+                                        call [487,521]
+                                            name [487,504]
+                                                name: Console [487,494]
+                                                operator: . [494,495]
+                                                name: WriteLine [495,504]
+                                            argument_list [504,521]
+                                                argument [505,520]
+                                                    expr [505,520]
+                                                        literal: "Common method" [505,520]
+            comment: ///<summary> [548,561]
+            comment: /// Test case for class inheritance. [566,602]
+            comment: /// Tests transformation of C# class inheritance to Java extends keyword. [607,680]
+            comment: ///</summary> [685,699]
+            class [704,1154]
+                specifier: public [704,710]
+                name: DerivedDevice [717,730]
+                super_list [731,743]
+                    super [733,743]
+                        name: BaseDevice [733,743]
+                block [748,1154]
+                    decl_stmt [758,780]
+                        decl [758,779]
+                            type [758,770]
+                                specifier: private [758,765]
+                                name: bool [766,770]
+                            name: isActive [771,779]
+                    constructor [798,870]
+                        specifier: public [798,804]
+                        name: DerivedDevice [805,818]
+                        parameter_list [818,820]
+                        block [829,870]
+                            block_content [830,869]
+                                expr_stmt [843,860]
+                                    expr [843,859]
+                                        name: isActive [843,851]
+                                        operator: = [852,853]
+                                        literal: false [854,859]
+                    function [888,1034]
+                        type [888,908]
+                            specifier: public [888,894]
+                            specifier: override [895,903]
+                            name: void [904,908]
+                        name: Initialize [909,919]
+                        parameter_list [919,921]
+                        block [930,1034]
+                            block_content [931,1033]
+                                expr_stmt [944,995]
+                                    expr [944,994]
+                                        call [944,994]
+                                            name [944,961]
+                                                name: Console [944,951]
+                                                operator: . [951,952]
+                                                name: WriteLine [952,961]
+                                            argument_list [961,994]
+                                                argument [962,993]
+                                                    expr [962,993]
+                                                        literal: "Derived device initialization" [962,993]
+                                expr_stmt [1008,1024]
+                                    expr [1008,1023]
+                                        name: isActive [1008,1016]
+                                        operator: = [1017,1018]
+                                        literal: true [1019,1023]
+                    function [1052,1148]
+                        type [1052,1063]
+                            specifier: public [1052,1058]
+                            name: void [1059,1063]
+                        name: DerivedMethod [1064,1077]
+                        parameter_list [1077,1079]
+                        block [1088,1148]
+                            block_content [1089,1147]
+                                expr_stmt [1102,1138]
+                                    expr [1102,1137]
+                                        call [1102,1137]
+                                            name [1102,1119]
+                                                name: Console [1102,1109]
+                                                operator: . [1109,1110]
+                                                name: WriteLine [1110,1119]
+                                            argument_list [1119,1137]
+                                                argument [1120,1136]
+                                                    expr [1120,1136]
+                                                        literal: "Derived method" [1120,1136]
+            comment: ///<summary> [1164,1177]
+            comment: /// Multiple level inheritance. [1182,1213]
+            comment: ///</summary> [1218,1232]
+            class [1237,1399]
+                specifier: public [1237,1243]
+                name: AdvancedDevice [1250,1264]
+                super_list [1265,1280]
+                    super [1267,1280]
+                        name: DerivedDevice [1267,1280]
+                block [1285,1399]
+                    function [1295,1393]
+                        type [1295,1306]
+                            specifier: public [1295,1301]
+                            name: void [1302,1306]
+                        name: AdvancedMethod [1307,1321]
+                        parameter_list [1321,1323]
+                        block [1332,1393]
+                            block_content [1333,1392]
+                                expr_stmt [1346,1383]
+                                    expr [1346,1382]
+                                        call [1346,1382]
+                                            name [1346,1363]
+                                                name: Console [1346,1353]
+                                                operator: . [1353,1354]
+                                                name: WriteLine [1354,1363]
+                                            argument_list [1363,1382]
+                                                argument [1364,1381]
+                                                    expr [1364,1381]
+                                                        literal: "Advanced method" [1364,1381]
+package TestFeatures;
+public class BaseDevice {
+  protected String deviceId;
+  BaseDevice(){
+    deviceId="BASE-001";
+  }
+  public Void Initialize(){
+    Console.WriteLine("Base device initialization");
+  }
+  public Void CommonMethod(){
+    Console.WriteLine("Common method");
+  }
+}
+public class DerivedDevice extends BaseDevice {
+  private boolean isActive;
+  DerivedDevice(){
+    isActive=false;
+  }
+  public Void Initialize(){
+    Console.WriteLine("Derived device initialization");
+    isActive=true;
+  }
+  public Void DerivedMethod(){
+    Console.WriteLine("Derived method");
+  }
+}
+public class AdvancedDevice extends DerivedDevice {
+  public Void AdvancedMethod(){
+    Console.WriteLine("Advanced method");
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 3 types
+✓ CompilationUnit created successfully!
+  - Number of types: 3
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 719 chars
+  - Number of lines: 31
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class BaseDevice {
+  protected String deviceId;
+  BaseDevice(){
+    deviceId="BASE-001";
+  }
+  public Void Initialize(){
+    Console.WriteLine("Base device initialization");
+  }
+  public Void CommonMethod(){
+    Console.WriteLine("Common method");
+  }
+}
+public class DerivedDevice extends BaseDevice {
+  private boolean isActive;
+  DerivedDevice(){
+    isActive=false;
+  }
+  public Void Initialize(){
+    Console.WriteLine("Derived device initialization");
+    isActive=true;
+  }
+  public Void DerivedMethod(){
+    Console.WriteLine("Derived method");
+  }
+}
+public class AdvancedDevice extends DerivedDevice {
+  public Void AdvancedMethod(){
+    Console.WriteLine("Advanced method");
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/11_inheritance.java
+  - File contents size: 719 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/11_inheritance.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 3
+  - Classes: 3
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.BaseDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/11_inheritance.java
+  Operations: 3
+  Attributes: 1
+  Fields:
+    • String deviceId
+  Methods:
+    • BaseDevice()
+    • Initialize() - 1 param(s)
+    • CommonMethod() - 1 param(s)
+
+Class: TestFeatures.DerivedDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/11_inheritance.java
+  Operations: 3
+  Attributes: 1
+  Fields:
+    • boolean isActive
+  Methods:
+    • DerivedDevice()
+    • Initialize() - 1 param(s)
+    • DerivedMethod() - 1 param(s)
+
+Class: TestFeatures.AdvancedDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/11_inheritance.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • AdvancedMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

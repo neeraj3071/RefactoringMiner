@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "64b498684158471a8c86be69bed7920c0844bdad",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/64b498684158471a8c86be69bed7920c0844bdad",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inputMap : float[] to inputMap : UnifiedExpressionsData in method public GetBlendedLipShape(inputMap UnifiedExpressionsData) : float from class PositiveNegativeShape",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 41,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inputMap : float[]"
+}, {
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 41,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inputMap : UnifiedExpressionsData"
+}, {
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 108,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Shapes : float[] to Shapes : UnifiedExpressionShape[] in class UnifiedExpressionsData",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/UnifiedData.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 24,
+		"endColumn": 75,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Shapes : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/UnifiedData.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 41,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Shapes : UnifiedExpressionShape[]"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inputMap : float[] to inputMap : UnifiedExpressionsData in method public GetBlendedLipShape(inputMap UnifiedExpressionsData) : float from class ICombinedShape",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inputMap : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Params/Lip/LipShapeConversion.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 34,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inputMap : UnifiedExpressionsData"
+}]
+}
+]
+}]
+}

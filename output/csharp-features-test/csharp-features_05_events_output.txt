@@ -1,0 +1,317 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/05_events.cs
+Size: 1217 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for C# events.
+    /// Tests transformation of C# events to Java listener pattern with add/remove/fire methods.
+    /// </summary>
+    public class EventDeclarations
+    {
+        // Simple event without arguments
+        public event Action OnStarted;
+        
+        // Event with single argument
+        public event Action<string> OnMessageReceived;
+        
+        // Event with multiple arguments
+        pub
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/05_events.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1217 chars)...
+unit [0,0]
+    namespace [0,1216]
+        name: TestFeatures [10,22]
+        block [23,1216]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for C# events. [70,98]
+            comment: /// Tests transformation of C# events to Java listener pattern with add/remove/fire methods. [103,195]
+            comment: ///</summary> [200,214]
+            class [219,1214]
+                specifier: public [219,225]
+                name: EventDeclarations [232,249]
+                block [254,1214]
+                    comment: // Simple event without arguments [264,297]
+                    expr_stmt [306,336]
+                        expr [306,335]
+                            specifier: public [306,312]
+                            name: Action [319,325]
+                            name: OnStarted [326,335]
+                    comment: // Event with single argument [354,383]
+                    expr_stmt [392,438]
+                        expr [392,437]
+                            specifier: public [392,398]
+                            name [405,419]
+                                name: Action [405,411]
+                                argument_list [411,419]
+                                    argument [412,418]
+                                        name: string [412,418]
+                            name: OnMessageReceived [420,437]
+                    comment: // Event with multiple arguments [456,488]
+                    expr_stmt [497,544]
+                        expr [497,543]
+                            specifier: public [497,503]
+                            name [510,529]
+                                name: Action [510,516]
+                                argument_list [516,529]
+                                    argument [517,520]
+                                        name: int [517,520]
+                                    argument [522,528]
+                                        name: string [522,528]
+                            name: OnDataChanged [530,543]
+                    comment: // Event with EventHandler pattern [562,596]
+                    expr_stmt [605,643]
+                        expr [605,642]
+                            specifier: public [605,611]
+                            name: EventHandler [618,630]
+                            name: OnCompleted [631,642]
+                    comment: // Private event [661,677]
+                    expr_stmt [686,723]
+                        expr [686,722]
+                            specifier: private [686,693]
+                            name: Action [700,706]
+                            name: OnInternalEvent [707,722]
+                    function [741,822]
+                        type [741,752]
+                            specifier: public [741,747]
+                            name: void [748,752]
+                        name: TriggerStarted [753,767]
+                        parameter_list [767,769]
+                        block [778,822]
+                            block_content [779,821]
+                                expr_stmt [792,812]
+                                    expr [792,811]
+                                        ternary [792,811]
+                                            condition [792,802]
+                                                expr [792,801]
+                                                    name: OnStarted [792,801]
+                                            then [802,811]
+                                                expr [802,811]
+                                                    operator: . [802,803]
+                                                    call [803,811]
+                                                        name: Invoke [803,809]
+                                                        argument_list [809,811]
+                    function [840,950]
+                        type [840,851]
+                            specifier: public [840,846]
+                            name: void [847,851]
+                        name: TriggerMessage [852,866]
+                        parameter_list [866,882]
+                            parameter [867,881]
+                                decl [867,881]
+                                    type [867,873]
+                                        name: string [867,873]
+                                    name: message [874,881]
+                        block [891,950]
+                            block_content [892,949]
+                                expr_stmt [905,940]
+                                    expr [905,939]
+                                        ternary [905,939]
+                                            condition [905,923]
+                                                expr [905,922]
+                                                    name: OnMessageReceived [905,922]
+                                            then [923,939]
+                                                expr [923,939]
+                                                    operator: . [923,924]
+                                                    call [924,939]
+                                                        name: Invoke [924,930]
+                                                        argument_list [930,939]
+                                                            argument [931,938]
+                                                                expr [931,938]
+                                                                    name: message [931,938]
+                    function [968,1084]
+                        type [968,979]
+                            specifier: public [968,974]
+                            name: void [975,979]
+                        name: TriggerDataChanged [980,998]
+                        parameter_list [998,1019]
+                            parameter [999,1005]
+                                decl [999,1005]
+                                    type [999,1002]
+                                        name: int [999,1002]
+                                    name: id [1003,1005]
+                            parameter [1007,1018]
+                                decl [1007,1018]
+                                    type [1007,1013]
+                                        name: string [1007,1013]
+                                    name: data [1014,1018]
+                        block [1028,1084]
+                            block_content [1029,1083]
+                                expr_stmt [1042,1074]
+                                    expr [1042,1073]
+                                        ternary [1042,1073]
+                                            condition [1042,1056]
+                                                expr [1042,1055]
+                                                    name: OnDataChanged [1042,1055]
+                                            then [1056,1073]
+                                                expr [1056,1073]
+                                                    operator: . [1056,1057]
+                                                    call [1057,1073]
+                                                        name: Invoke [1057,1063]
+                                                        argument_list [1063,1073]
+                                                            argument [1064,1066]
+                                                                expr [1064,1066]
+                                                                    name: id [1064,1066]
+                                                            argument [1068,1072]
+                                                                expr [1068,1072]
+                                                                    name: data [1068,1072]
+                    function [1102,1208]
+                        type [1102,1113]
+                            specifier: public [1102,1108]
+                            name: void [1109,1113]
+                        name: TriggerCompleted [1114,1130]
+                        parameter_list [1130,1132]
+                        block [1141,1208]
+                            block_content [1142,1207]
+                                expr_stmt [1155,1198]
+                                    expr [1155,1197]
+                                        ternary [1155,1197]
+                                            condition [1155,1167]
+                                                expr [1155,1166]
+                                                    name: OnCompleted [1155,1166]
+                                            then [1167,1197]
+                                                expr [1167,1197]
+                                                    operator: . [1167,1168]
+                                                    call [1168,1197]
+                                                        name: Invoke [1168,1174]
+                                                        argument_list [1174,1197]
+                                                            argument [1175,1179]
+                                                                expr [1175,1179]
+                                                                    name: this [1175,1179]
+                                                            argument [1181,1196]
+                                                                expr [1181,1196]
+                                                                    name [1181,1196]
+                                                                        name: EventArgs [1181,1190]
+                                                                        operator: . [1190,1191]
+                                                                        name: Empty [1191,1196]
+package TestFeatures;
+public class EventDeclarations {
+  public OnStarted Action;
+  public OnMessageReceived Action;
+  public OnDataChanged Action;
+  public OnCompleted EventHandler;
+  private OnInternalEvent Action;
+  public Void TriggerStarted(){
+    OnStarted != null ? OnStarted.Invoke() : null;
+  }
+  public Void TriggerMessage(  String message){
+    OnMessageReceived != null ? OnMessageReceived.Invoke(message) : null;
+  }
+  public Void TriggerDataChanged(  int id,  String data){
+    OnDataChanged != null ? OnDataChanged.Invoke(id,data) : null;
+  }
+  public Void TriggerCompleted(){
+    OnCompleted != null ? OnCompleted.Invoke(This,EventArgs.Empty) : null;
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 673 chars
+  - Number of lines: 20
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class EventDeclarations {
+  public OnStarted Action;
+  public OnMessageReceived Action;
+  public OnDataChanged Action;
+  public OnCompleted EventHandler;
+  private OnInternalEvent Action;
+  public Void TriggerStarted(){
+    OnStarted != null ? OnStarted.Invoke() : null;
+  }
+  public Void TriggerMessage(  String message){
+    OnMessageReceived != null ? OnMessageReceived.Invoke(message) : null;
+  }
+  public Void TriggerDataChanged(  int id,  String data){
+    OnDataChanged != null ? OnDataChanged.Invoke(id,data) : null;
+  }
+  public Void TriggerCompleted(){
+    OnCompleted != null ? OnCompleted.Invoke(This,EventArgs.Empty) : null;
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/05_events.java
+  - File contents size: 673 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/05_events.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.EventDeclarations
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/05_events.java
+  Operations: 4
+  Attributes: 5
+  Fields:
+    • OnStarted Action
+    • OnMessageReceived Action
+    • OnDataChanged Action
+    • OnCompleted EventHandler
+    • OnInternalEvent Action
+  Methods:
+    • TriggerStarted() - 1 param(s)
+    • TriggerMessage() - 2 param(s)
+    • TriggerDataChanged() - 3 param(s)
+    • TriggerCompleted() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "99fc54e9e305a644e277938f8f3ab5fca3ec6e71",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/99fc54e9e305a644e277938f8f3ab5fca3ec6e71",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package manager : SimulationManager from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private manager : SimulationManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package manager : SimulationManager"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter maxMagnitude : float in method public SetStarScale(maxMagnitude float, magnitudeScale float) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "maxMagnitude : float"
+}, {
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetStarScale(maxMagnitude float, magnitudeScale float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public SetStarScale(magnitudeScale float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public AllStarsInConstellation(constellationName string) : List<Star> from class SimulationManager to public AllStarsInConstellation(constellationName string) : List<Star> from class DataManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AllStarsInConstellation(constellationName string) : List<Star>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 97,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public AllStarsInConstellation(constellationName string) : List<Star>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public AllStarsInConstellationByFullName(constellationFullName string) : List<Star> from class SimulationManager to public AllStarsInConstellationByFullName(constellationFullName string) : List<Star> from class DataManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 126,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AllStarsInConstellationByFullName(constellationFullName string) : List<Star>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 101,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public AllStarsInConstellationByFullName(constellationFullName string) : List<Star>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetRelativeMagnitude(starMagnitude float) : float from class SimulationManager to public GetRelativeMagnitude(starMagnitude float) : float from class DataManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 195,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetRelativeMagnitude(starMagnitude float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 106,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetRelativeMagnitude(starMagnitude float) : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class DataManager from class SimulationManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 8,
+		"endLine": 224,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AllStarsInConstellation(constellationName string) : List<Star>"
+}, {
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 126,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AllStarsInConstellationByFullName(constellationFullName string) : List<Star>"
+}, {
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 195,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetRelativeMagnitude(starMagnitude float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 9,
+		"endLine": 203,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 12,
+		"endLine": 112,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "DataManager"
+}, {
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 97,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public AllStarsInConstellation(constellationName string) : List<Star>"
+}, {
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 101,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public AllStarsInConstellationByFullName(constellationFullName string) : List<Star>"
+}, {
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 106,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetRelativeMagnitude(starMagnitude float) : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public Stars : List<Star> from class DataManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private allStars : List<Star>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public Stars : List<Star>"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private allStars : List<Star> renamed to public Stars : List<Star> and moved from class SimulationManager to class DataManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManager.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private allStars : List<Star>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataManager.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public Stars : List<Star>"
+}]
+}
+]
+}]
+}

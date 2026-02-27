@@ -1,0 +1,166 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_string_interpolation.cs
+Size: 289 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+class TestStringInterpolation
+{
+    public void TestMethod()
+    {
+        int x = 42;
+        string name = "Test";
+        
+        // Test string interpolation: $"Value: {x}"
+        string result = $"Value: {x}, Name: {name}";
+        Console.WriteLine(result);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_string_interpolation.cs
+CPatMinerExecutor: Executing CPatMiner transformation (289 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    class [15,288]
+        name: TestStringInterpolation [21,44]
+        block [45,288]
+            function [51,286]
+                type [51,62]
+                    specifier: public [51,57]
+                    name: void [58,62]
+                name: TestMethod [63,73]
+                parameter_list [73,75]
+                block [80,286]
+                    block_content [81,285]
+                        decl_stmt [90,101]
+                            decl [90,100]
+                                type [90,93]
+                                    name: int [90,93]
+                                name: x [94,95]
+                                init [96,100]
+                                    expr [98,100]
+                                        literal: 42 [98,100]
+                        decl_stmt [110,131]
+                            decl [110,130]
+                                type [110,116]
+                                    name: string [110,116]
+                                name: name [117,121]
+                                init [122,130]
+                                    expr [124,130]
+                                        literal: "Test" [124,130]
+                        comment: // Test string interpolation: $"Value: {x}" [149,192]
+                        decl_stmt [201,245]
+                            decl [201,244]
+                                type [201,207]
+                                    name: string [201,207]
+                                name: result [208,214]
+                                init [215,244]
+                                    expr [217,244]
+                                        name: $ [217,218]
+                                        literal: "Value: {x}, Name: {name}" [218,244]
+                        expr_stmt [254,280]
+                            expr [254,279]
+                                call [254,279]
+                                    name [254,271]
+                                        name: Console [254,261]
+                                        operator: . [261,262]
+                                        name: WriteLine [262,271]
+                                    argument_list [271,279]
+                                        argument [272,278]
+                                            expr [272,278]
+                                                name: result [272,278]
+import System;
+class TestStringInterpolation {
+  public Void TestMethod(){
+    int x=42;
+    String name="Test";
+    String result="Value: " + x + ", Name: " + name;
+    Console.WriteLine(result);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 203 chars
+  - Number of lines: 9
+
+=== Generated Java Code (Full Output) ===
+import System;
+class TestStringInterpolation {
+  public Void TestMethod(){
+    int x=42;
+    String name="Test";
+    String result="Value: " + x + ", Name: " + name;
+    Console.WriteLine(result);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_string_interpolation.java
+  - File contents size: 203 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_string_interpolation.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestStringInterpolation
+  Type: Class
+  Package: 
+  Source file: tests/test_string_interpolation.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

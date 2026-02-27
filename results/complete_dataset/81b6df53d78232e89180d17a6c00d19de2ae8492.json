@@ -1,0 +1,495 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/xire-/graphulus.git",
+	"sha1": "81b6df53d78232e89180d17a6c00d19de2ae8492",
+	"url": "https://github.com/xire-/graphulus/commit/81b6df53d78232e89180d17a6c00d19de2ae8492",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/Scripts to Assets/Scripts/Utils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Billboard.cs",
+		"startLine": 3,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Billboard"
+}, {
+		"filePath": "Assets/Scripts/JsonLoader.cs",
+		"startLine": 6,
+		"endLine": 63,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "JsonLoader"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/Billboard.cs",
+		"startLine": 3,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Billboard"
+}, {
+		"filePath": "Assets/Scripts/Utils/JsonLoader.cs",
+		"startLine": 4,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "JsonLoader"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Start() : void renamed to private Awake() : void in class CameraMovement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/CameraMovement.cs",
+		"startLine": 7,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/CameraMovement.cs",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private Awake() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private LateUpdate() : void from class Edge",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Edge.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LateUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Edge.cs",
+		"startLine": 13,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private LateUpdate() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private updateDebug() : void renamed to private UpdateDebug() : void in class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 132,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateDebug() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 173,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private UpdateDebug() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private debugModeEnabled : bool from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public debugModeEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private debugModeEnabled : bool"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private StartForceDirectedGraph() : void extracted from private Start() : void in class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 41,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 69,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private StartForceDirectedGraph() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 57,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "StartForceDirectedGraph()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private StartNodesAndEdges() : void extracted from private Start() : void in class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 41,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 108,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private StartNodesAndEdges() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 57,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "StartNodesAndEdges()"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable debug : var to text : var in method private OnGUI() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "debug : var"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 43,
+		"endLine": 49,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "text : var"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 43,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable o : var to gameObject : var in method private Update() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "o : var"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "gameObject : var"
+}, {
+		"filePath": "Assets/Scripts/World.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public JsonNode : struct from class JsonLoader",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/JsonLoader.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private JsonNode : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/JsonLoader.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public JsonNode : struct"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public JsonEdge : struct from class JsonLoader",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/JsonLoader.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private JsonEdge : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/JsonLoader.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public JsonEdge : struct"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Start() : void renamed to private Awake() : void in class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private Awake() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,396 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "c050cc0728c40b668f1e2de4aaa816fb2054ea39",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/c050cc0728c40b668f1e2de4aaa816fb2054ea39",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type so : var to so : SerializedObject in method public AddTag(tag string) : void from class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "so : var"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 21,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "so : SerializedObject"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type so : var to so : SerializedObject in method public AddLayer(layerName string) : void from class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "so : var"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 21,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "so : SerializedObject"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public GetRequiredTags() : List<string> extracted from package EditorVR() in class EditorVR & moved to class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2978,
+		"endLine": 3011,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package EditorVR()"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 3009,
+		"endLine": 3009,
+		"startColumn": 31,
+		"endColumn": 32,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2992,
+		"endLine": 2992,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 101,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetRequiredTags() : List<string>"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2978,
+		"endLine": 3001,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package EditorVR()"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2992,
+		"endLine": 2992,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "TagManager.GetRequiredTags()"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 104,
+		"endLine": 108,
+		"startColumn": 4,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tags : var to requiredTags : var in method public GetRequiredTags() : List<string> from class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2992,
+		"endLine": 2992,
+		"startColumn": 8,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tags : var"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2992,
+		"endLine": 2992,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 8,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "requiredTags : var"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public GetRequiredLayers() : List<string> extracted from package EditorVR() in class EditorVR & moved to class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2978,
+		"endLine": 3011,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package EditorVR()"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2993,
+		"endLine": 2993,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 113,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetRequiredLayers() : List<string>"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2978,
+		"endLine": 3001,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package EditorVR()"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2993,
+		"endLine": 2993,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "TagManager.GetRequiredLayers()"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 116,
+		"endLine": 120,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable layers : var to requiredLayers : var in method public GetRequiredLayers() : List<string> from class TagManager",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2993,
+		"endLine": 2993,
+		"startColumn": 8,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "layers : var"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 2993,
+		"endLine": 2993,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 8,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "requiredLayers : var"
+}, {
+		"filePath": "Scripts/Utilities/TagManager.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,297 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "218a7167cee120eeeadcc361cc1f16ff63044f49",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/218a7167cee120eeeadcc361cc1f16ff63044f49",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Editor to Editor/Models",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 56,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCQuestToolsSettings"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 11,
+		"endLine": 123,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VRCQuestToolsSettings"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package LastVersionCheckDateTime : DateTime from class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 32,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LastVersionCheckDateTime : DateTime"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package LastVersionCheckDateTime : DateTime"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _i18n : I18nBase to i18n : I18nBase in class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_i18n : I18nBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "i18n : I18nBase"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute LAST_VERSION : string to LastVersion : string in class VRCQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 33,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "LAST_VERSION : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 35,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "LastVersion : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute SHOW_SETTINGS_ON_LOAD : string to ShowSettingsOnLoad : string in class VRCQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 33,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "SHOW_SETTINGS_ON_LOAD : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 35,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ShowSettingsOnLoad : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute AUTO_REMOVE_VERTEX_COLORS : string to AutoRemoveVertexColors : string in class VRCQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 33,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "AUTO_REMOVE_VERTEX_COLORS : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 35,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AutoRemoveVertexColors : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute LAST_VERSION_CHECK_DATE : string to LastVersionCheckData : string in class VRCQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 33,
+		"endColumn": 90,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "LAST_VERSION_CHECK_DATE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 35,
+		"endColumn": 89,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "LastVersionCheckData : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DISPLAY_LANGUAGE : string to DisplayLanguage : string in class VRCQuestToolsSettings.Keys",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DISPLAY_LANGUAGE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 35,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "DisplayLanguage : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute IsAutoRemoveVertexColorsEnabled : bool to IsVertexColorRemoverAutomatorEnabled : bool in class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 28,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "IsAutoRemoveVertexColorsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 30,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "IsVertexColorRemoverAutomatorEnabled : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package IsVertexColorRemoverAutomatorEnabled : bool from class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 28,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsAutoRemoveVertexColorsEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 30,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package IsVertexColorRemoverAutomatorEnabled : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute IsShowSettingsWindowOnLoadEnabled : bool to IsShowUnitySettingsWindowOnLoadEnabled : bool in class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "IsShowSettingsWindowOnLoadEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 30,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "IsShowUnitySettingsWindowOnLoadEnabled : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package IsShowUnitySettingsWindowOnLoadEnabled : bool from class VRCQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsShowSettingsWindowOnLoadEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRCQuestToolsSettings.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 30,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package IsShowUnitySettingsWindowOnLoadEnabled : bool"
+}]
+}
+]
+}]
+}

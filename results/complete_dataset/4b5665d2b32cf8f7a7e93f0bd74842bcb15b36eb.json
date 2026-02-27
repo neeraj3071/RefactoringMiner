@@ -1,0 +1,822 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gpvigano/VRTK-GearVR-Test.git",
+	"sha1": "4b5665d2b32cf8f7a7e93f0bd74842bcb15b36eb",
+	"url": "https://github.com/gpvigano/VRTK-GearVR-Test/commit/4b5665d2b32cf8f7a7e93f0bd74842bcb15b36eb",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable axisDirection : int to directionMultiplier : int in method protected Rotate(axis float, modifierActive bool) : float from class VRTK_SnapRotateTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "axisDirection : int"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "directionMultiplier : int"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 13,
+		"endColumn": 98,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected OnEnable() : void from class VRTK_RotateTouchpadControlAction to protected OnEnable() : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected OnEnable() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected OnEnable() : void from class VRTK_SnapRotateTouchpadControlAction to protected OnEnable() : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnEnable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected OnEnable() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void from class VRTK_RotateTouchpadControlAction to protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 47,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 47,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void from class VRTK_SnapRotateTouchpadControlAction to protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 56,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 47,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected RotateAroundPlayer(controlledGameObject GameObject, angle float) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter blinkSpeed : float in method protected Blink(blinkSpeed float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 80,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Blink() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 38,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "blinkSpeed : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 56,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected Blink(blinkSpeed float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected Blink() : void from class VRTK_SnapRotateTouchpadControlAction to protected Blink(blinkSpeed float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 80,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Blink() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 56,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected Blink(blinkSpeed float) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter blinkSpeed : float in method protected ReleaseBlink(blinkSpeed float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected ReleaseBlink() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 45,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "blinkSpeed : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected ReleaseBlink(blinkSpeed float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected ReleaseBlink() : void from class VRTK_SnapRotateTouchpadControlAction to protected ReleaseBlink(blinkSpeed float) : void from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected ReleaseBlink() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected ReleaseBlink(blinkSpeed float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetObjectCenter(checkObject Transform) from class VRTK_RotateTouchpadControlAction to package GetObjectCenter(checkObject Transform) from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 61,
+		"endLine": 80,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetObjectCenter(checkObject Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 70,
+		"endLine": 93,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetObjectCenter(checkObject Transform)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetObjectCenter(checkObject Transform) from class VRTK_SnapRotateTouchpadControlAction to package GetObjectCenter(checkObject Transform) from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 94,
+		"endLine": 113,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetObjectCenter(checkObject Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 70,
+		"endLine": 93,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetObjectCenter(checkObject Transform)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected GetAxisDirection(axis float) : int extracted from protected Rotate(axis float, modifierActive bool) : float in class VRTK_SnapRotateTouchpadControlAction & moved to class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 65,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected Rotate(axis float, modifierActive bool) : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 69,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 74,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 70,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 95,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected GetAxisDirection(axis float) : int"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 102,
+		"endLine": 105,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 98,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 99,
+		"endLine": 101,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected Rotate(axis float, modifierActive bool) : float"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 39,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetAxisDirection(axis)"
+}, {
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected controlledTransform : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controlledTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected controlledTransform : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected controlledTransform : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controlledTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected controlledTransform : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected playArea : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private playArea : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected playArea : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected playArea : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private playArea : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected playArea : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected centerCollider : Collider from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centerCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected centerCollider : Collider"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected centerCollider : Collider from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centerCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected centerCollider : Collider"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private controlledTransform : Transform from class VRTK_RotateTouchpadControlAction to protected controlledTransform : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controlledTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected controlledTransform : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private controlledTransform : Transform from class VRTK_SnapRotateTouchpadControlAction to protected controlledTransform : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private controlledTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected controlledTransform : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private playArea : Transform from class VRTK_RotateTouchpadControlAction to protected playArea : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private playArea : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected playArea : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private playArea : Transform from class VRTK_SnapRotateTouchpadControlAction to protected playArea : Transform from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private playArea : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected playArea : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private centerCollider : Collider from class VRTK_RotateTouchpadControlAction to protected centerCollider : Collider from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centerCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected centerCollider : Collider"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected Vector3 : virtual from class VRTK_RotateTouchpadControlAction to protected Vector3 : virtual from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_RotateTouchpadControlAction.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Vector3 : virtual"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected Vector3 : virtual"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private centerCollider : Collider from class VRTK_SnapRotateTouchpadControlAction to protected centerCollider : Collider from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centerCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected centerCollider : Collider"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected Vector3 : virtual from class VRTK_SnapRotateTouchpadControlAction to protected Vector3 : virtual from class VRTK_BaseTouchpadControlAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_SnapRotateTouchpadControlAction.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Vector3 : virtual"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Scripts/Locomotion/TouchpadControlActions/VRTK_BaseTouchpadControlAction.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected Vector3 : virtual"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Jamy4000/VRDF.git",
+	"sha1": "947ff51f2d660ee3867c69b045e68db9bf30b166",
+	"url": "https://github.com/Jamy4000/VRDF/commit/947ff51f2d660ee3867c69b045e68db9bf30b166",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter hapticAmplitude : EHapticAmplitude in method public OnHapticRequestedEvent(hand EHand, hapticDuration EHapticDuration, hapticAmplitude EHapticAmplitude) from class OnHapticRequestedEvent",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Haptic/Events/OnHapticRequestedEvent.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 83,
+		"endColumn": 115,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "hapticAmplitude : EHapticAmplitude"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Haptic/Events/OnHapticRequestedEvent.cs",
+		"startLine": 23,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnHapticRequestedEvent(hand EHand, hapticDuration EHapticDuration, hapticAmplitude EHapticAmplitude)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Haptic/Events/OnHapticRequestedEvent.cs",
+		"startLine": 30,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OnHapticRequestedEvent(hand EHand, hapticDuration EHapticDuration)"
+}]
+}
+]
+}]
+}

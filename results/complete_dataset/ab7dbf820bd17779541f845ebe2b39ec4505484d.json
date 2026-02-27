@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "ab7dbf820bd17779541f845ebe2b39ec4505484d",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/ab7dbf820bd17779541f845ebe2b39ec4505484d",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute retryDelay : float to minRetryDelay : float in class NetworkManager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "retryDelay : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "minRetryDelay : float"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(Time.time < retryDelay + clockTime && lastRequestFailed) to [if(lastRequestFailed), if(Time.time < currentDelay + clockTime)] in method package Post(url string, stringcontent string) : void from class NetworkManager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 420,
+		"endLine": 426,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Time.time < retryDelay + clockTime && lastRequestFailed)"
+}, {
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 417,
+		"endLine": 451,
+		"startColumn": 24,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Post(url string, stringcontent string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 418,
+		"endLine": 428,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(lastRequestFailed)"
+}, {
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 420,
+		"endLine": 424,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(Time.time < currentDelay + clockTime)"
+}, {
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 415,
+		"endLine": 458,
+		"startColumn": 24,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package Post(url string, stringcontent string) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter currentDelay : float to retryDelay : float in method private GetExponentialBackoff(retryDelay float) : float from class NetworkManager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 464,
+		"endLine": 464,
+		"startColumn": 45,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentDelay : float"
+}, {
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 466,
+		"endLine": 466,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 471,
+		"endLine": 471,
+		"startColumn": 45,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "retryDelay : float"
+}, {
+		"filePath": "Runtime/Internal/NetworkManager.cs",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

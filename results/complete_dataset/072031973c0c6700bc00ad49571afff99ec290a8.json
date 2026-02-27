@@ -1,0 +1,435 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "072031973c0c6700bc00ad49571afff99ec290a8",
+	"url": "https://github.com/vrm-c/UniVRM/commit/072031973c0c6700bc00ad49571afff99ec290a8",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 12,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Vrm10ControlBone"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 14,
+		"endLine": 104,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Vrm10ControlBone"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Traverse(humanoid UniHumanoid.Humanoid, current Transform, parent Vrm10ControlBone, boneMap Dictionary<HumanBodyBones,Vrm10ControlBone>) : void renamed to private BuildRecursively(humanoid UniHumanoid.Humanoid, current Transform, parent Vrm10ControlBone, boneMap Dictionary<HumanBodyBones,Vrm10ControlBone>) : void in class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 69,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Traverse(humanoid UniHumanoid.Humanoid, current Transform, parent Vrm10ControlBone, boneMap Dictionary<HumanBodyBones,Vrm10ControlBone>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 70,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private BuildRecursively(humanoid UniHumanoid.Humanoid, current Transform, parent Vrm10ControlBone, boneMap Dictionary<HumanBodyBones,Vrm10ControlBone>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ApplyRecursively() : void renamed to package ProcessRecursively() : void in class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 95,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ApplyRecursively() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 96,
+		"endLine": 103,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package ProcessRecursively() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private Quaternion : readonly from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Quaternion : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Quaternion : readonly"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter bone : HumanBodyBones to boneType : HumanBodyBones in method package Vrm10ControlBone(controlTarget Transform, boneType HumanBodyBones) : internal from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 52,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bone : HumanBodyBones"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 60,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "boneType : HumanBodyBones"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter current : Transform to controlTarget : Transform in method package Vrm10ControlBone(controlTarget Transform, boneType HumanBodyBones) : internal from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 33,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "current : Transform"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "controlTarget : Transform"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Vrm10ControlBone(controlTarget Transform, boneType HumanBodyBones) : internal from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 36,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Vrm10ControlBone(current Transform, bone HumanBodyBones)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 38,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Vrm10ControlBone(controlTarget Transform, boneType HumanBodyBones) : internal"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable Children : in to _children : in in method package ProcessRecursively() : void from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "Children : in"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_children : in"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package ProcessRecursively() : void from class Vrm10ControlBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 95,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ApplyRecursively() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/ControlRig/Vrm10ControlBone.cs",
+		"startLine": 96,
+		"endLine": 103,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package ProcessRecursively() : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class Vrm10RuntimeControlRig",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/Vrm10RuntimeControlRig.cs",
+		"startLine": 13,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Vrm10RuntimeControlRig"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/Vrm10RuntimeControlRig.cs",
+		"startLine": 13,
+		"endLine": 44,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "Vrm10RuntimeControlRig"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public InitialHipsHeight : float from class Vrm10RuntimeControlRig",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/Vrm10RuntimeControlRig.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package InitialHipsHeight : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/Vrm10Runtime/Vrm10RuntimeControlRig.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 22,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public InitialHipsHeight : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Sauceke/LoveMachine.git",
+	"sha1": "53fb33b6eb78e00ffad6398f3b68f05c5ac65f7a",
+	"url": "https://github.com/Sauceke/LoveMachine/commit/53fb33b6eb78e00ffad6398f3b68f05c5ac65f7a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type DeviceList : DeviceList<D> to DeviceList : DeviceList<T> in class .Buttplug.BatteryLevelCmd.DeviceListMessage",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Buttplug/Buttplug.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DeviceList : DeviceList<D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Buttplug/Buttplug.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "DeviceList : DeviceList<T>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Devices : List<D> to Devices : List<T> in class .Buttplug.BatteryLevelCmd.DeviceList",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Buttplug/Buttplug.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 28,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Devices : List<D>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Buttplug/Buttplug.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 28,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Devices : List<T>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type $missing$ : manager.AddComponent<G> @$missing$ [] to $missing$ : manager.AddComponent<TGame> @$missing$ [] in method package Start() : void from class LoveMachinePlugin",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 38,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "$missing$ : manager.AddComponent<G> @$missing$ []"
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 42,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "$missing$ : manager.AddComponent<TGame> @$missing$ []"
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,783 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/virtuallynaked/virtually-naked.git",
+	"sha1": "9dbabbbe15145a69ca0afbdd183754a50b3bd8e4",
+	"url": "https://github.com/virtuallynaked/virtually-naked/commit/9dbabbbe15145a69ca0afbdd183754a50b3bd8e4",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public ConstrainForwardRotation(boneIdx int, desiredRotation float) : float renamed to public ConstrainRotationAgainstChild(boneIdx int, desiredRotation float) : float in class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 62,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ConstrainForwardRotation(boneIdx int, desiredRotation float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 66,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ConstrainRotationAgainstChild(boneIdx int, desiredRotation float) : float"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ConstrainBackwardRotation(boneIdx int, desiredRotation float) : float renamed to public ConstraintRotationAgainstParent(boneIdx int, desiredRotation float) : float in class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 74,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ConstrainBackwardRotation(boneIdx int, desiredRotation float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ConstraintRotationAgainstParent(boneIdx int, desiredRotation float) : float"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter unposedPositions : List<Vector2> to unposedBoneVectors : List<Vector2> in method private FabrIkChain(bones List<Bone>, unposedBoneVectors List<Vector2>) from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 41,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "unposedPositions : List<Vector2>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 41,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "unposedBoneVectors : List<Vector2>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable target : Vector2 to targetEnd : Vector2 in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 12,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetEnd : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable center : Vector2 to currentEnd : Vector2 in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "center : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "currentEnd : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable newEnd : Vector2 to currentCenter : Vector2 in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newEnd : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "currentCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable desiredRotation : float to targetRotationDelta : float in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 11,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "desiredRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetRotationDelta : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 94,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable i : int to boneIdx : int in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 13,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 86,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "boneIdx : int"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 90,
+		"endLine": 104,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable newRotation : float to targetRotation : float in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 11,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable newCenter : Vector2 to targetCenter : Vector2 in method public DoForwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 13,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 13,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable target : Vector2 to targetCenter : Vector2 in method public DoBackwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 12,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 12,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable newCenter : Vector2 to currentCenter : Vector2 in method public DoBackwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "currentCenter : Vector2"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable desiredRotation : float to targetRotationDelta : float in method public DoBackwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 11,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "desiredRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetRotationDelta : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 117,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable i : int to boneIdx : int in method public DoBackwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 112,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "boneIdx : int"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 113,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable newRotation : float to targetRotation : float in method public DoBackwardPass() : void from class FabrIkChain",
+	"leftSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 11,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 11,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "targetRotation : float"
+}, {
+		"filePath": "Demos/src/FlatIk/FabrIkSolver.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

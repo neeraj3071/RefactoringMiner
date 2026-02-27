@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "0bad5b80eb344750fca51e7ba812f206befe32f7",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/0bad5b80eb344750fca51e7ba812f206befe32f7",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute p_valheim_Run : SteamVR_Action_Boolean to p_valheim_Grab : SteamVR_Action_Boolean in class SteamVR_Actions",
+	"leftSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 47,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "p_valheim_Run : SteamVR_Action_Boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "p_valheim_Grab : SteamVR_Action_Boolean"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute p_valheim_Crouch : SteamVR_Action_Boolean to p_valheim_QuickSwitch : SteamVR_Action_Boolean in class SteamVR_Actions",
+	"leftSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "p_valheim_Crouch : SteamVR_Action_Boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 47,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "p_valheim_QuickSwitch : SteamVR_Action_Boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private createString() : void renamed to private createNewString() : void in class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 77,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createString() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 84,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private createNewString() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private removeOldString() : void extracted from package Awake() : void in class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 23,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Awake() : void"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 31,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 43,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private removeOldString() : void"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 45,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 30,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Awake() : void"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "removeOldString()"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to bool in method private checkHandNearString() : bool from class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 132,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkHandNearString() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 182,
+		"endLine": 196,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private checkHandNearString() : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute valheim_Hide : SteamVR_Action_Boolean to valheim_Grab : SteamVR_Action_Boolean in class SteamVR_Actions",
+	"leftSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "valheim_Hide : SteamVR_Action_Boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/ValheimVR/Assets/SteamVR_Input/SteamVR_Input_Actions.cs",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "valheim_Grab : SteamVR_Action_Boolean"
+}]
+}
+]
+}]
+}

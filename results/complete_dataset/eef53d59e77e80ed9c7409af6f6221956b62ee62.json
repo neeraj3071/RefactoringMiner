@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/two-forks-vr.git",
+	"sha1": "eef53d59e77e80ed9c7409af6f6221956b62ee62",
+	"url": "https://github.com/Raicuparta/two-forks-vr/commit/eef53d59e77e80ed9c7409af6f6221956b62ee62",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetUp(playerRootBone Transform) : void from class VrFoot",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VRHand.cs",
+		"startLine": 99,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpShoeLid(playerRootBone Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VrFoot.cs",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetUp(playerRootBone Transform) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private SetUpShoeLid(playerRootBone Transform) : void from class VRHand to public SetUp(playerRootBone Transform) : void from class VrFoot",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VRHand.cs",
+		"startLine": 99,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpShoeLid(playerRootBone Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VrFoot.cs",
+		"startLine": 21,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetUp(playerRootBone Transform) : void"
+}]
+}
+]
+}]
+}

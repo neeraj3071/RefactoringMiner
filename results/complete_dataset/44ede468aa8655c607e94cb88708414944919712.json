@@ -1,0 +1,1587 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/plaidpants/ANKH-VR.git",
+	"sha1": "44ede468aa8655c607e94cb88708414944919712",
+	"url": "https://github.com/plaidpants/ANKH-VR/commit/44ede468aa8655c607e94cb88708414944919712",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public distance : float from class MySmoothFollow",
+	"leftSideLocations": [{
+		"filePath": "Assets/MySmoothFollow.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private distance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MySmoothFollow.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public distance : float"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to void in method package Cast_Ray() : void from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 3627,
+		"endLine": 3627,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 3627,
+		"endLine": 3680,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Cast_Ray() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2808,
+		"endLine": 2808,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2808,
+		"endLine": 2857,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package Cast_Ray() : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to void in method package raycast() : void from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 3717,
+		"endLine": 3717,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 3717,
+		"endLine": 3755,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package raycast() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2892,
+		"endLine": 2892,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2892,
+		"endLine": 2923,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package raycast() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3319,
+		"endLine": 3319,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4199,
+		"endLine": 4199,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4422,
+		"endLine": 4422,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to void in method package Cast_Ray() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6033,
+		"endLine": 6033,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 6033,
+		"endLine": 6086,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Cast_Ray() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 5228,
+		"endLine": 5228,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 5228,
+		"endLine": 5277,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package Cast_Ray() : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to void in method package raycast() : void from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6123,
+		"endLine": 6123,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 6123,
+		"endLine": 6173,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package raycast() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 5312,
+		"endLine": 5312,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 5312,
+		"endLine": 5356,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package raycast() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class Title to package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2562,
+		"endLine": 2601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2562,
+		"endLine": 2601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4473,
+		"endLine": 4512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class Title to package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2603,
+		"endLine": 2626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2603,
+		"endLine": 2626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4514,
+		"endLine": 4537,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSquareSize(o GameObject[]) : int from class Title to private GetTextureSquareSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2629,
+		"endLine": 2650,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSquareSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2629,
+		"endLine": 2650,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSquareSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4540,
+		"endLine": 4561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSquareSize() : int from class Title to private GetTextureSquareSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2652,
+		"endLine": 2676,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSquareSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2652,
+		"endLine": 2676,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSquareSize() : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSquareSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4563,
+		"endLine": 4587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSquareSize() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSize(o GameObject[]) : int from class Title to private GetTextureSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2678,
+		"endLine": 2697,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2678,
+		"endLine": 2697,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4589,
+		"endLine": 4608,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSize() : int from class Title to private GetTextureSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2699,
+		"endLine": 2716,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2699,
+		"endLine": 2716,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSize() : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GetTextureSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4610,
+		"endLine": 4627,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GetTextureSize() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Combine2(gameObject GameObject, useMipMaps bool) : void from class Title to public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2901,
+		"endLine": 3053,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2901,
+		"endLine": 3053,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4812,
+		"endLine": 4952,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 2901,
+		"endLine": 3053,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4812,
+		"endLine": 4952,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Combine3(mapGameObject GameObject) : void from class Title to public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 3296,
+		"endLine": 3617,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 3296,
+		"endLine": 3617,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 5195,
+		"endLine": 5516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 3296,
+		"endLine": 3617,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 5195,
+		"endLine": 5516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class World to package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4473,
+		"endLine": 4512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class World to package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[] from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4514,
+		"endLine": 4537,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSquareSize(o GameObject[]) : int from class World to private GetTextureSquareSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4540,
+		"endLine": 4561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSquareSize() : int from class World to private GetTextureSquareSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4563,
+		"endLine": 4587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSize(o GameObject[]) : int from class World to private GetTextureSize(o GameObject[]) : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4589,
+		"endLine": 4608,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTextureSize() : int from class World to private GetTextureSize() : int from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4610,
+		"endLine": 4627,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Combine2(gameObject GameObject, useMipMaps bool) : void from class World to public Combine2(gameObject GameObject, useMipMaps bool) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 4812,
+		"endLine": 4952,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Combine3(mapGameObject GameObject) : void from class World to public Combine3(mapGameObject GameObject) : void from class Combine",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 5195,
+		"endLine": 5516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Combine from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 8,
+		"endLine": 4918,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2562,
+		"endLine": 2601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2603,
+		"endLine": 2626,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2629,
+		"endLine": 2650,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2652,
+		"endLine": 2676,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2678,
+		"endLine": 2697,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2699,
+		"endLine": 2716,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 2901,
+		"endLine": 3053,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 3296,
+		"endLine": 3617,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 8,
+		"endLine": 4078,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 19,
+		"endLine": 833,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Combine"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Combine from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 8,
+		"endLine": 9001,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4473,
+		"endLine": 4512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4514,
+		"endLine": 4537,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4540,
+		"endLine": 4561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4563,
+		"endLine": 4587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4589,
+		"endLine": 4608,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4610,
+		"endLine": 4627,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 4812,
+		"endLine": 4952,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine2(gameObject GameObject, useMipMaps bool) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 5195,
+		"endLine": 5516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Combine3(mapGameObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 8,
+		"endLine": 8182,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 19,
+		"endLine": 833,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Combine"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 22,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 63,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetAllChildrenWithMeshRenderers2(gameObject GameObject) : GameObject[]"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSquareSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 112,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSquareSize() : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSize(o GameObject[]) : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 159,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private GetTextureSize() : int"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 336,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Combine2(gameObject GameObject, useMipMaps bool) : void"
+}, {
+		"filePath": "Assets/Combine.cs",
+		"startLine": 489,
+		"endLine": 833,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Combine3(mapGameObject GameObject) : void"
+}]
+}
+]
+}]
+}

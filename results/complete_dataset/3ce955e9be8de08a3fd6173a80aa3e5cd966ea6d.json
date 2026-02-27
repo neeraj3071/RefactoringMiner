@@ -1,0 +1,366 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/alvinquach/jpl-trek-vr.git",
+	"sha1": "3ce955e9be8de08a3fd6173a80aa3e5cd966ea6d",
+	"url": "https://github.com/alvinquach/jpl-trek-vr/commit/3ce955e9be8de08a3fd6173a80aa3e5cd966ea6d",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _controller : SteamVR_TrackedController to controller : SteamVR_TrackedController in class CustomControllerBehavior",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 39,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_controller : SteamVR_TrackedController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "controller : SteamVR_TrackedController"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public controller : SteamVR_TrackedController from class CustomControllerBehavior",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 39,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _controller : SteamVR_TrackedController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public controller : SteamVR_TrackedController"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class XRInteractableObject",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractableObject.cs",
+		"startLine": 5,
+		"endLine": 18,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "XRInteractableObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractableObject.cs",
+		"startLine": 5,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "XRInteractableObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private CalculateGrabPointDistance() : float from class CustomControllerBehavior to private CalculateGrabPointDistance() : float from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 157,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateGrabPointDistance() : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 142,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private CalculateGrabPointDistance() : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Ungrab() : void from class CustomControllerBehavior to private Ungrab() : void from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 145,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Ungrab() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 157,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private Ungrab() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _maxGrabDistance : float from class CustomControllerBehavior to private _maxGrabDistance : float from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _maxGrabDistance : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _maxGrabDistance : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _grabbed : bool from class CustomControllerBehavior to private _grabbed : bool from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabbed : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _grabbed : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _grabPoint : Vector3 from class CustomControllerBehavior to private _grabPoint : Vector3 from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabPoint : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _grabPoint : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private _grabRadius : float from class CustomControllerBehavior to private _grabRadius : float from class XRInteractablePlanet",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private _grabRadius : float"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class XRInteractablePlanet from class CustomControllerBehavior",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 7,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "CustomControllerBehavior"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 145,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Ungrab() : void"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 157,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateGrabPointDistance() : float"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _maxGrabDistance : float"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabbed : bool"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabPoint : Vector3"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _grabRadius : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MonoBehaviors/CustomControllerBehavior.cs",
+		"startLine": 7,
+		"endLine": 95,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "CustomControllerBehavior"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 6,
+		"endLine": 165,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "XRInteractablePlanet"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 157,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private Ungrab() : void"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 142,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CalculateGrabPointDistance() : float"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _maxGrabDistance : float"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _grabbed : bool"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _grabPoint : Vector3"
+}, {
+		"filePath": "Assets/Scripts/MonoBehaviors/XRInteraction/XRInteractablePlanet.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _grabRadius : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,441 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "dd7130bd99a2349f8bcc21dd4f40c38b4d0a3856",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/dd7130bd99a2349f8bcc21dd4f40c38b4d0a3856",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class SROSCLib renamed to fti_osc",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OSCMessage.cs",
+		"startLine": 72,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SROSCLib"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/fti_osc.cs",
+		"startLine": 70,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "fti_osc"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private _meta : OscMessageMeta from class OscMessage",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OSCMessage.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 27,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _meta : OscMessageMeta"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OSCMessage.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _meta : OscMessageMeta"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private _metaPtr : IntPtr from class OscMessage",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OSCMessage.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected _metaPtr : IntPtr"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OSCMessage.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _metaPtr : IntPtr"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private _senderClient : Socket from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _senderClient : Socket"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private _senderClient : Socket"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private _receiverClient : Socket from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 42,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _receiverClient : Socket"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 35,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private _receiverClient : Socket"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute private _recvThreadCts : CancellationTokenSource from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 44,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _recvThreadCts : CancellationTokenSource"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 37,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private _recvThreadCts : CancellationTokenSource"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private SetField : bool from class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected SetField : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 18,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private SetField : bool"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private HandleNewAvatar() : void extracted from package FirstClientDiscovered() : void in class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 124,
+		"endLine": 137,
+		"startColumn": 15,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package FirstClientDiscovered() : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 39,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 21,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 133,
+		"endLine": 135,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 256,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private HandleNewAvatar() : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 31,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 259,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 260,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 136,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package FirstClientDiscovered() : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "HandleNewAvatar()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private HandleNewAvatar() : void extracted from private HandleNewMessage(msg OscMessage) : void in class OscService",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 258,
+		"endLine": 300,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private HandleNewMessage(msg OscMessage) : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 44,
+		"endColumn": 118,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 25,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 266,
+		"endLine": 269,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 267,
+		"endLine": 269,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 256,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private HandleNewAvatar() : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 31,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 259,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 260,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 265,
+		"endLine": 299,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private HandleNewMessage(msg OscMessage) : void"
+}, {
+		"filePath": "VRCFaceTracking.Core/OSC/OscService.cs",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "HandleNewAvatar()"
+}]
+}
+]
+}]
+}

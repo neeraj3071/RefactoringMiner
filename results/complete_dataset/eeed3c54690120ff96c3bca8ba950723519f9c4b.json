@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "eeed3c54690120ff96c3bca8ba950723519f9c4b",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/eeed3c54690120ff96c3bca8ba950723519f9c4b",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private RecordOculusUserData : bool from class OculusSocial",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/OculusSocial.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 22,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private RecordOculusUserData : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/OculusSocial.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 22,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private RecordOculusUserData : bool"
+}, {
+		"filePath": "Runtime/Components/OculusSocial.cs",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "package SetRecordOculusUserData(value bool) : void"
+}]
+}
+]
+}]
+}

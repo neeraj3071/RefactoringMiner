@@ -1,0 +1,345 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/UnityPlugin.git",
+	"sha1": "90e9d38039801b7f24210c526c9898d12fcee1b3",
+	"url": "https://github.com/ultraleap/UnityPlugin/commit/90e9d38039801b7f24210c526c9898d12fcee1b3",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package Connection() from class Connection",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Connection.cs",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Connection()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Connection.cs",
+		"startLine": 165,
+		"endLine": 168,
+		"startColumn": 10,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package Connection()"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package Connection() from class Connection",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Connection.cs",
+		"startLine": 155,
+		"endLine": 158,
+		"startColumn": 10,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Connection()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Connection.cs",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package Connection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION, connection Connection) : bool extracted from public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION) : bool in class Controller",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 509,
+		"endLine": 521,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION) : bool"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 511,
+		"endLine": 511,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 514,
+		"endLine": 514,
+		"startColumn": 72,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 76,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 140,
+		"endColumn": 152,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 22,
+		"endColumn": 152,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 517,
+		"endLine": 518,
+		"startColumn": 17,
+		"endColumn": 152,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 515,
+		"endLine": 519,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 514,
+		"endLine": 519,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 516,
+		"endLine": 519,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 508,
+		"endLine": 520,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION, connection Connection) : bool"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 72,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 516,
+		"endLine": 516,
+		"startColumn": 76,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 140,
+		"endColumn": 152,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 519,
+		"endLine": 519,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 22,
+		"endColumn": 152,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 516,
+		"endLine": 517,
+		"startColumn": 17,
+		"endColumn": 152,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 514,
+		"endLine": 518,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 513,
+		"endLine": 518,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 515,
+		"endLine": 518,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 529,
+		"endLine": 532,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION) : bool"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 531,
+		"endLine": 531,
+		"startColumn": 20,
+		"endColumn": 90,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Controller.CheckRequiredServiceVersion(minServiceVersion,_connection)"
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute _connection : Connection to connection : Connection in method public CheckRequiredServiceVersion(minServiceVersion LEAP_VERSION, connection Connection) : bool from class Controller",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "_connection : Connection"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 511,
+		"endLine": 511,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 508,
+		"endLine": 508,
+		"startColumn": 88,
+		"endColumn": 109,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "connection : Connection"
+}, {
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private MinServiceVersionForMultiModeSupport : LEAP_VERSION from class Controller to private MinServiceVersionForMultiModeSupport : LEAP_VERSION from class Connection",
+	"leftSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Controller.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 37,
+		"endColumn": 130,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MinServiceVersionForMultiModeSupport : LEAP_VERSION"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/Tracking/Core/Runtime/Plugins/LeapCSharp/Connection.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 37,
+		"endColumn": 130,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private MinServiceVersionForMultiModeSupport : LEAP_VERSION"
+}]
+}
+]
+}]
+}

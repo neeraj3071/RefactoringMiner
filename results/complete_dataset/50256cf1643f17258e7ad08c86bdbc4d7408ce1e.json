@@ -1,0 +1,102 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/virtuallynaked/virtually-naked.git",
+	"sha1": "50256cf1643f17258e7ad08c86bdbc4d7408ce1e",
+	"url": "https://github.com/virtuallynaked/virtually-naked/commit/50256cf1643f17258e7ad08c86bdbc4d7408ce1e",
+	"refactorings": [{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public GetDestDirForContentPack(contentPackName string) : DirectoryInfo moved from class ImporterPathManager to class ImporterMain & inlined to private Run(args string[]) : void",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/ImporterPathManager.cs",
+		"startLine": 28,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public GetDestDirForContentPack(contentPackName string) : DirectoryInfo"
+}, {
+		"filePath": "Importer/src/ImporterPathManager.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 40,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private Run(args string[]) : void"
+}, {
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 18,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "pathManager.GetDestDirForContentPack(contentPackConf.Name)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 40,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private Run(args string[]) : void"
+}, {
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable contentDestDir : var in method private Run(args string[]) : void from class ImporterMain",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/ImporterPathManager.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "contentDestDir : var"
+}, {
+		"filePath": "Importer/src/ImporterMain.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

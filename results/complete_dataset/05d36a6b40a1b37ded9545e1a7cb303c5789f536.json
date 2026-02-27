@@ -1,0 +1,477 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Saticmotion/Vivista.git",
+	"sha1": "05d36a6b40a1b37ded9545e1a7cb303c5789f536",
+	"url": "https://github.com/Saticmotion/Vivista/commit/05d36a6b40a1b37ded9545e1a7cb303c5789f536",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cameraRigMovable : bool[] to isControllerEligibleForRotation : bool[] in class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cameraRigMovable : bool[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "isControllerEligibleForRotation : bool[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type cameraRay : Ray to cameraRay : var in method package Update() : void from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 8,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cameraRay : Ray"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 8,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "cameraRay : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type controllerRay : Ray to controllerRay : var in method package Update() : void from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 8,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "controllerRay : Ray"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 8,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "controllerRay : var"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ray : Ray to interactionpointRay : Ray in method package Update() : void from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ray : Ray"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "interactionpointRay : Ray"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private crosshair : Image from class Player to private crosshair : Image from class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshair : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private crosshair : Image"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private crosshair : Image from class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshair : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private crosshair : Image"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private crosshairTimer : Image from class Player to private crosshairTimer : Image from class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshairTimer : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private crosshairTimer : Image"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private crosshairTimer : Image from class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshairTimer : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private crosshairTimer : Image"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Crosshair from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 34,
+		"endLine": 834,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Player"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshair : Image"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private crosshairTimer : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 34,
+		"endLine": 815,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Player"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 6,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Crosshair"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private crosshair : Image"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private crosshairTimer : Image"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Crosshair from class Player",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 34,
+		"endLine": 834,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Player"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 34,
+		"endLine": 815,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Player"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 6,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Crosshair"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Disable() : void extracted from package Update() : void in class Player & moved to class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 140,
+		"endLine": 485,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 22,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Disable() : void"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 131,
+		"endLine": 455,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 4,
+		"endColumn": 23,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Crosshair.Disable()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public Enable() : void extracted from package Update() : void in class Player & moved to class Crosshair",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 140,
+		"endLine": 485,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Enable() : void"
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Crosshair.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 131,
+		"endLine": 455,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Update() : void"
+}, {
+		"filePath": "Assets/Scripts/Player.cs",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Crosshair.Enable()"
+}]
+}
+]
+}]
+}

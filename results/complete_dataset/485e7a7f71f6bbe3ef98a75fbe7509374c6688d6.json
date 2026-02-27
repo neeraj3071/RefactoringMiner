@@ -1,0 +1,1686 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/mhwlng/fip-elite.git",
+	"sha1": "485e7a7f71f6bbe3ef98a75fbe7509374c6688d6",
+	"url": "https://github.com/mhwlng/fip-elite/commit/485e7a7f71f6bbe3ef98a75fbe7509374c6688d6",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public GetCurrentShip() : ShipData from class EliteHistory.UnsafeNativeMethods to public GetCurrentShip() : EliteShips.ShipData from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 160,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 213,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetCurrentShip() : EliteShips.ShipData"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ShipData to EliteShips.ShipData in method public GetCurrentShip() : EliteShips.ShipData from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 160,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "EliteShips.ShipData"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 213,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetCurrentShip() : EliteShips.ShipData"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public AddShip(shipId int, shipType string, starSystem string, stationName string) : void from class EliteHistory.UnsafeNativeMethods to public AddShip(shipId int, shipType string, starSystem string, stationName string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 166,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 218,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public AddShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public RemoveShip(shipId int, shipType string) : void from class EliteHistory.UnsafeNativeMethods to public RemoveShip(shipId int, shipType string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 192,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RemoveShip(shipId int, shipType string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 244,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public RemoveShip(shipId int, shipType string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void from class EliteHistory.UnsafeNativeMethods to public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 205,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 257,
+		"endLine": 265,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package foreach(s var) from class EliteHistory.UnsafeNativeMethods to package foreach(s var) from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 215,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package foreach(s var)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 267,
+		"endLine": 271,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package foreach(s var)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipDistance() : void from class EliteHistory.UnsafeNativeMethods to public HandleShipDistance() : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 221,
+		"endLine": 244,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipDistance() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 273,
+		"endLine": 294,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipDistance() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipFsdJump(starSystem string) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipFsdJump(starSystem string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 246,
+		"endLine": 252,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipFsdJump(starSystem string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 296,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipFsdJump(starSystem string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 254,
+		"endLine": 260,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 304,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 262,
+		"endLine": 268,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 312,
+		"endLine": 318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 270,
+		"endLine": 286,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 320,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ShipsList : in to EliteShips : in in method public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 28,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ShipsList : in"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "EliteShips : in"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 288,
+		"endLine": 315,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 338,
+		"endLine": 364,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 317,
+		"endLine": 325,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 366,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetModuleSize(item string) : int from class EliteHistory.UnsafeNativeMethods to public GetModuleSize(item string) : int from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 353,
+		"endLine": 363,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleSize(item string) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 376,
+		"endLine": 386,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetModuleSize(item string) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetModuleClass(item string) : string from class EliteHistory.UnsafeNativeMethods to public GetModuleClass(item string) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 365,
+		"endLine": 383,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleClass(item string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 388,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetModuleClass(item string) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetModuleArmourGrade(item string) : string from class EliteHistory.UnsafeNativeMethods to public GetModuleArmourGrade(item string) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 385,
+		"endLine": 409,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleArmourGrade(item string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 408,
+		"endLine": 432,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetModuleArmourGrade(item string) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateFuelCapacity(item string) : int from class EliteHistory.UnsafeNativeMethods to public UpdateFuelCapacity(item string) : int from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 411,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateFuelCapacity(item string) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 434,
+		"endLine": 445,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateFuelCapacity(item string) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateCargoCapacity(item string) : int from class EliteHistory.UnsafeNativeMethods to public UpdateCargoCapacity(item string) : int from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 424,
+		"endLine": 435,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 447,
+		"endLine": 458,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdatePowerPlant(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdatePowerPlant(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 437,
+		"endLine": 455,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePowerPlant(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 460,
+		"endLine": 478,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdatePowerPlant(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdatePowerDistributor(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdatePowerDistributor(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 457,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePowerDistributor(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 480,
+		"endLine": 498,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdatePowerDistributor(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateShieldGenerator(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateShieldGenerator(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 477,
+		"endLine": 499,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateShieldGenerator(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 500,
+		"endLine": 522,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateShieldGenerator(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateLifeSupport(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateLifeSupport(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 501,
+		"endLine": 514,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateLifeSupport(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 524,
+		"endLine": 537,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateLifeSupport(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateEngine(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateEngine(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 516,
+		"endLine": 529,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateEngine(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 539,
+		"endLine": 552,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateEngine(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateFrameShiftDrive(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateFrameShiftDrive(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 531,
+		"endLine": 544,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateFrameShiftDrive(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 554,
+		"endLine": 567,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateFrameShiftDrive(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateArmour(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateArmour(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 546,
+		"endLine": 558,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateArmour(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 569,
+		"endLine": 581,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateArmour(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateSensors(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateSensors(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 560,
+		"endLine": 573,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSensors(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 583,
+		"endLine": 596,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateSensors(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public UpdateGuardianFSDBooster(item string, data string, remove bool) : string from class EliteHistory.UnsafeNativeMethods to public UpdateGuardianFSDBooster(item string, data string, remove bool) : string from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 575,
+		"endLine": 587,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateGuardianFSDBooster(item string, data string, remove bool) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 598,
+		"endLine": 610,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateGuardianFSDBooster(item string, data string, remove bool) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipDocked(starSystem string, stationName string) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipDocked(starSystem string, stationName string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 327,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 612,
+		"endLine": 624,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleShipLocation(docked bool, starSystem string, stationName string) : void from class EliteHistory.UnsafeNativeMethods to public HandleShipLocation(docked bool, starSystem string, stationName string) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 341,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipLocation(docked bool, starSystem string, stationName string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 626,
+		"endLine": 636,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleShipLocation(docked bool, starSystem string, stationName string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 589,
+		"endLine": 640,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 670,
+		"endLine": 727,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 642,
+		"endLine": 661,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 729,
+		"endLine": 748,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 663,
+		"endLine": 695,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 750,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 697,
+		"endLine": 730,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 784,
+		"endLine": 816,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 732,
+		"endLine": 751,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 818,
+		"endLine": 837,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 753,
+		"endLine": 772,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 839,
+		"endLine": 858,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 774,
+		"endLine": 793,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 860,
+		"endLine": 879,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void from class EliteHistory.UnsafeNativeMethods to public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 795,
+		"endLine": 817,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 881,
+		"endLine": 903,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ShipData from class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 105,
+		"endLine": 991,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EliteHistory.UnsafeNativeMethods"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 160,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 166,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AddShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 192,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RemoveShip(shipId int, shipType string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 205,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 215,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package foreach(s var)"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 221,
+		"endLine": 244,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipDistance() : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 246,
+		"endLine": 252,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipFsdJump(starSystem string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 254,
+		"endLine": 260,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 262,
+		"endLine": 268,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 270,
+		"endLine": 286,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 288,
+		"endLine": 315,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 317,
+		"endLine": 325,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 327,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 341,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleShipLocation(docked bool, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 353,
+		"endLine": 363,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleSize(item string) : int"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 365,
+		"endLine": 383,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleClass(item string) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 385,
+		"endLine": 409,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetModuleArmourGrade(item string) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 411,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateFuelCapacity(item string) : int"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 424,
+		"endLine": 435,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 437,
+		"endLine": 455,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePowerPlant(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 457,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePowerDistributor(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 477,
+		"endLine": 499,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateShieldGenerator(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 501,
+		"endLine": 514,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateLifeSupport(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 516,
+		"endLine": 529,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateEngine(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 531,
+		"endLine": 544,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateFrameShiftDrive(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 546,
+		"endLine": 558,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateArmour(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 560,
+		"endLine": 573,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSensors(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 575,
+		"endLine": 587,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateGuardianFSDBooster(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 589,
+		"endLine": 640,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 642,
+		"endLine": 661,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 663,
+		"endLine": 695,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 697,
+		"endLine": 730,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 732,
+		"endLine": 751,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 753,
+		"endLine": 772,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 774,
+		"endLine": 793,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 795,
+		"endLine": 817,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 60,
+		"endLine": 306,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "EliteHistory.UnsafeNativeMethods"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 169,
+		"endLine": 904,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ShipData"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 213,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetCurrentShip() : EliteShips.ShipData"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 218,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public AddShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 244,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RemoveShip(shipId int, shipType string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 257,
+		"endLine": 265,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetCurrentShip(shipId int, shipType string, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 267,
+		"endLine": 271,
+		"startColumn": 13,
+		"endColumn": 9,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package foreach(s var)"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 273,
+		"endLine": 294,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipDistance() : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 296,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipFsdJump(starSystem string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 304,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipyardSell(info ShipyardSellEvent.ShipyardSellEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 312,
+		"endLine": 318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipyardBuy(info ShipyardBuyEvent.ShipyardBuyEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 320,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleStoredShips(info StoredShipsEvent.StoredShipsEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 338,
+		"endLine": 364,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 366,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 612,
+		"endLine": 624,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 626,
+		"endLine": 636,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleShipLocation(docked bool, starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 376,
+		"endLine": 386,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetModuleSize(item string) : int"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 388,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetModuleClass(item string) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 408,
+		"endLine": 432,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetModuleArmourGrade(item string) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 434,
+		"endLine": 445,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateFuelCapacity(item string) : int"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 447,
+		"endLine": 458,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 460,
+		"endLine": 478,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdatePowerPlant(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 480,
+		"endLine": 498,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdatePowerDistributor(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 500,
+		"endLine": 522,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateShieldGenerator(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 524,
+		"endLine": 537,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateLifeSupport(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 539,
+		"endLine": 552,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateEngine(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 554,
+		"endLine": 567,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateFrameShiftDrive(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 569,
+		"endLine": 581,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateArmour(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 583,
+		"endLine": 596,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateSensors(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 598,
+		"endLine": 610,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UpdateGuardianFSDBooster(item string, data string, remove bool) : string"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 670,
+		"endLine": 727,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 729,
+		"endLine": 748,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleRetrieve(info ModuleRetrieveEvent.ModuleRetrieveEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 750,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleBuy(info ModuleBuyEvent.ModuleBuyEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 784,
+		"endLine": 816,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleSwap(info ModuleSwapEvent.ModuleSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 818,
+		"endLine": 837,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleSell(info ModuleSellEvent.ModuleSellEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 839,
+		"endLine": 858,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleSellRemote(info ModuleSellRemoteEvent.ModuleSellRemoteEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 860,
+		"endLine": 879,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleModuleStore(info ModuleStoreEvent.ModuleStoreEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 881,
+		"endLine": 903,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HandleMassModuleStore(info MassModuleStoreEvent.MassModuleStoreEventArgs) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Dictionary : readonly from class EliteData to public Dictionary : readonly from class EliteShips",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Dictionary : readonly"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ShipsList : List<ShipData> from class EliteHistory to public ShipsList : List<ShipData> from class ShipData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 38,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShipsList : List<ShipData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteShips.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 38,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ShipsList : List<ShipData>"
+}]
+}
+]
+}]
+}

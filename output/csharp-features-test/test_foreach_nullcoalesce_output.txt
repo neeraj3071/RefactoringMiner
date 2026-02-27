@@ -1,0 +1,200 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_foreach_nullcoalesce.cs
+Size: 409 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+using System.Collections.Generic;
+
+namespace TestNamespace
+{
+    class TestClass
+    {
+        void TestMethod()
+        {
+            List<string> items = new List<string>();
+            string text = "default";
+            
+            // Test case: foreach with null coalescing operator on single line
+            foreach (var item in items)Console.WriteLine(item ?? text);
+        }
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_foreach_nullcoalesce.cs
+CPatMinerExecutor: Executing CPatMiner transformation (409 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    using [14,47]
+        name [20,46]
+            name: System [20,26]
+            operator: . [26,27]
+            name: Collections [27,38]
+            operator: . [38,39]
+            name: Generic [39,46]
+    namespace [49,408]
+        name: TestNamespace [59,72]
+        block [73,408]
+            class [79,406]
+                name: TestClass [85,94]
+                block [99,406]
+                    function [109,400]
+                        type [109,113]
+                            name: void [109,113]
+                        name: TestMethod [114,124]
+                        parameter_list [124,126]
+                        block [135,400]
+                            block_content [136,399]
+                                decl_stmt [149,189]
+                                    decl [149,188]
+                                        type [149,161]
+                                            name [149,161]
+                                                name: List [149,153]
+                                                argument_list [153,161]
+                                                    argument [154,160]
+                                                        name: string [154,160]
+                                        name: items [162,167]
+                                        init [168,188]
+                                            expr [170,188]
+                                                operator: new [170,173]
+                                                call [174,188]
+                                                    name [174,186]
+                                                        name: List [174,178]
+                                                        argument_list [178,186]
+                                                            argument [179,185]
+                                                                name: string [179,185]
+                                                    argument_list [186,188]
+                                decl_stmt [202,226]
+                                    decl [202,225]
+                                        type [202,208]
+                                            name: string [202,208]
+                                        name: text [209,213]
+                                        init [214,225]
+                                            expr [216,225]
+                                                literal: "default" [216,225]
+                                comment: // Test case: foreach with null coalescing operator on single line [252,318]
+                                foreach [331,390]
+                                    control [339,358]
+                                        init [340,357]
+                                            decl [340,357]
+                                                type [340,343]
+                                                    name: var [340,343]
+                                                name: item [344,348]
+                                                range [349,357]
+                                                    expr [352,357]
+                                                        name: items [352,357]
+                                    block [358,390]
+                                        block_content [358,390]
+                                            expr_stmt [358,390]
+                                                expr [358,389]
+                                                    call [358,389]
+                                                        name [358,375]
+                                                            name: Console [358,365]
+                                                            operator: . [365,366]
+                                                            name: WriteLine [366,375]
+                                                        argument_list [375,389]
+                                                            argument [376,388]
+                                                                expr [376,388]
+                                                                    name: item [376,380]
+                                                                    operator: ?? [381,383]
+                                                                    name: text [384,388]
+package TestNamespace;
+import System;
+import System;
+class TestClass {
+  Void TestMethod(){
+    List<String> items=new List<String>();
+    String text="default";
+    for (    String item : items) {
+      Console.WriteLine(item != null ? item : text);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 2
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 263 chars
+  - Number of lines: 12
+
+=== Generated Java Code (Full Output) ===
+package TestNamespace;
+import System;
+import System;
+class TestClass {
+  Void TestMethod(){
+    List<String> items=new List<String>();
+    String text="default";
+    for (    String item : items) {
+      Console.WriteLine(item != null ? item : text);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_foreach_nullcoalesce.java
+  - File contents size: 263 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_foreach_nullcoalesce.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestNamespace.TestClass
+  Type: Class
+  Package: TestNamespace
+  Source file: tests/test_foreach_nullcoalesce.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,186 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/pupil-labs/hmd-eyes.git",
+	"sha1": "7eea3809e7203919ba4c7d297faa28546ef909a1",
+	"url": "https://github.com/pupil-labs/hmd-eyes/commit/7eea3809e7203919ba4c7d297faa28546ef909a1",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package Update3d(gazeData GazeData) : void renamed to package Update() : void in class GazeVisualizer",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 82,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update3d(gazeData GazeData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 61,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Update() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private ApplyFixedDepth() : Vector3 renamed to private GetAsFixedDepth(localPosition Vector3) : Vector3 in class GazeVisualizer",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 111,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ApplyFixedDepth() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GetAsFixedDepth(localPosition Vector3) : Vector3"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter gazeData : GazeData in method package Update3d(gazeData GazeData) : void from class GazeVisualizer",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "gazeData : GazeData"
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 82,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update3d(gazeData GazeData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 61,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Update() : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable localPosition : Vector3 to localPosition : Vector3 in method private GetAsFixedDepth(localPosition Vector3) : Vector3 from class GazeVisualizer",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 21,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "localPosition : Vector3"
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "localPosition : Vector3"
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/Scripts/GazeVisualizer.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

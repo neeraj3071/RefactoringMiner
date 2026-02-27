@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "91d6b22a67cc16e788ef36c07a6c4a92a66436c3",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/91d6b22a67cc16e788ef36c07a6c4a92a66436c3",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter broadcastToNetwork : bool in method public HandleSelectStar(broadcastToNetwork bool) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 31,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HandleSelectStar() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "broadcastToNetwork : bool"
+}, {
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 31,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public HandleSelectStar(broadcastToNetwork bool) : void"
+}]
+}
+]
+}]
+}

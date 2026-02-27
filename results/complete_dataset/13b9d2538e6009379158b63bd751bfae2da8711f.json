@@ -1,0 +1,417 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Facepunch/sbox-tabletennis-vr.git",
+	"sha1": "13b9d2538e6009379158b63bd751bfae2da8711f",
+	"url": "https://github.com/Facepunch/sbox-tabletennis-vr/commit/13b9d2538e6009379158b63bd751bfae2da8711f",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method protected SetupPlayer(cl Client) : void renamed to public ClientJoined(cl Client) : void in class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.GameLoop.cs",
+		"startLine": 121,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetupPlayer(cl Client) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.GameLoop.cs",
+		"startLine": 121,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ClientJoined(cl Client) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public ClientJoined(cl Client) : void from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.GameLoop.cs",
+		"startLine": 121,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetupPlayer(cl Client) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.GameLoop.cs",
+		"startLine": 121,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ClientJoined(cl Client) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public DropBall() : void renamed to public ThrowBall() : void in class ServeHand",
+	"leftSideLocations": [{
+		"filePath": "code/Player/ServeHand.cs",
+		"startLine": 118,
+		"endLine": 123,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DropBall() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Player/ServeHand.cs",
+		"startLine": 118,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ThrowBall() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void from class TableTennisGame to public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.Net.cs",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public ClientServingBall(client Client) : void from class TableTennisGame to public ClientServingBall(client Client) : void from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 60,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ClientServingBall(client Client) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.Net.cs",
+		"startLine": 41,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ClientServingBall(client Client) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package BuildCamera(camSetup CameraSetup) from class TableTennisGame to package BuildCamera(camSetup CameraSetup) from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 129,
+		"endLine": 140,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package BuildCamera(camSetup CameraSetup)"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 5,
+		"endLine": 16,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package BuildCamera(camSetup CameraSetup)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Build(camSetup ref) from class TableTennisGame to package Build(camSetup ref) from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Build(camSetup ref)"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Build(camSetup ref)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package PostCameraSetup(camSetup ref) from class TableTennisGame to package PostCameraSetup(camSetup ref) from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PostCameraSetup(camSetup ref)"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package PostCameraSetup(camSetup ref)"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public CameraSetup : override from class TableTennisGame to public CameraSetup : override from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CameraSetup : override"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public CameraSetup : override"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class TableTennisGame from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 14,
+		"endLine": 153,
+		"startColumn": 16,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 60,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ClientServingBall(client Client) : void"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 99,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetBall(position Vector3, velocity Vector3, time float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 14,
+		"endLine": 74,
+		"startColumn": 16,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.Net.cs",
+		"startLine": 3,
+		"endLine": 52,
+		"startColumn": 16,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.Net.cs",
+		"startLine": 41,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ClientServingBall(client Client) : void"
+}, {
+		"filePath": "code/Game.Net.cs",
+		"startLine": 10,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public IHitTheBallCunt(position Vector3, velocity Vector3, time float) : void"
+}, {
+		"filePath": "code/Game.Net.cs",
+		"startLine": 22,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RPCBallHit(hittingClient Client, position Vector3, velocity Vector3, timeThen float) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class TableTennisGame from class TableTennisGame",
+	"leftSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 14,
+		"endLine": 153,
+		"startColumn": 16,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 129,
+		"endLine": 140,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package BuildCamera(camSetup CameraSetup)"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Build(camSetup ref)"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PostCameraSetup(camSetup ref)"
+}, {
+		"filePath": "code/Game.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public CameraSetup : override"
+}],
+	"rightSideLocations": [{
+		"filePath": "code/Game.cs",
+		"startLine": 14,
+		"endLine": 74,
+		"startColumn": 16,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 3,
+		"endLine": 29,
+		"startColumn": 16,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "TableTennisGame"
+}, {
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 5,
+		"endLine": 16,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package BuildCamera(camSetup CameraSetup)"
+}, {
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Build(camSetup ref)"
+}, {
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package PostCameraSetup(camSetup ref)"
+}, {
+		"filePath": "code/Game.NonVR.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public CameraSetup : override"
+}]
+}
+]
+}]
+}

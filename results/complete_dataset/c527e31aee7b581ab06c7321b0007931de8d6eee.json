@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "c527e31aee7b581ab06c7321b0007931de8d6eee",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/c527e31aee7b581ab06c7321b0007931de8d6eee",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Scripts/Proxies to Scripts/Helpers",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/TwoHandedProxyBase.cs",
+		"startLine": 19,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ProxyFeedbackRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Helpers/ProxyUI.cs",
+		"startLine": 20,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "ProxyFeedbackRequest"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class ProxyHelper",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Helpers/ProxyHelper.cs",
+		"startLine": 11,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "ProxyHelper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Helpers/ProxyHelper.cs",
+		"startLine": 11,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "ProxyHelper"
+}]
+}
+]
+}]
+}

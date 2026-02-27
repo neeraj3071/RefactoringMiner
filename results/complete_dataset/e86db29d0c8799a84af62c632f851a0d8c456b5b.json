@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/iamtomhewitt/jet-dash-vr.git",
+	"sha1": "e86db29d0c8799a84af62c632f851a0d8c456b5b",
+	"url": "https://github.com/iamtomhewitt/jet-dash-vr/commit/e86db29d0c8799a84af62c632f851a0d8c456b5b",
+	"refactorings": [{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute package TIME_NORMAL : float in class GameLevelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package TIME_NORMAL : float"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute package TIME_STOPPED : float in class GameLevelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package TIME_STOPPED : float"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/GameLevelManager.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetVrToggleText() : void extracted from private Start() : void in class SettingsLevelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 4,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetVrToggleText() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 14,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetVrToggleText()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private SetVrToggleText() : void extracted from public ToggleVR() : void in class SettingsLevelManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 21,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public ToggleVR() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 4,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetVrToggleText() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public ToggleVR() : void"
+}, {
+		"filePath": "Assets/Scripts/Level Manager/SettingsLevelManager.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetVrToggleText()"
+}]
+}
+]
+}]
+}

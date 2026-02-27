@@ -1,0 +1,324 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/omikun/OrbitalVector.git",
+	"sha1": "8054f269ed6243efb0a8210423505588a4abb309",
+	"url": "https://github.com/omikun/OrbitalVector/commit/8054f269ed6243efb0a8210423505588a4abb309",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public getOE() : OrbitalElements renamed to public GetOE() : OrbitalElements in class OrbitData",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Orbit/OrbitData.cs",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOE() : OrbitalElements"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Orbit/OrbitData.cs",
+		"startLine": 77,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetOE() : OrbitalElements"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter torque : float to input : float in method package PitchUp(input float, up bool) : void from class ShipPhysics",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 18,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "torque : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "input : float"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter torque : float to input : float in method package RollLeft(input float, left bool) : void from class ShipPhysics",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "torque : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "input : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public QueryControllers() : void from class ShipPhysics to public QueryControllers() : void from class InputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 11,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public QueryControllers() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 10,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public QueryControllers() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetController() : void from class ShipPhysics to public GetController() : void from class InputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 42,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetController() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 44,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetController() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable rotScalar : float to leftTrigHeight : float in method public GetController() : void from class InputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 19,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rotScalar : float"
+}, {
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 19,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "leftTrigHeight : float"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 13,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public controller : XboxController from class ShipPhysics to public controller : XboxController from class InputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public controller : XboxController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public controller : XboxController"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package lastPrint : bool from class ShipPhysics to package lastPrint : bool from class InputManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastPrint : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package lastPrint : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class InputManager from class ShipPhysics",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 8,
+		"endLine": 456,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ShipPhysics"
+}, {
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 11,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public QueryControllers() : void"
+}, {
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 42,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetController() : void"
+}, {
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public controller : XboxController"
+}, {
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastPrint : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ShipPhysics.cs",
+		"startLine": 6,
+		"endLine": 416,
+		"startColumn": 0,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "ShipPhysics"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 7,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "InputManager"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 10,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public QueryControllers() : void"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 44,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetController() : void"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public controller : XboxController"
+}, {
+		"filePath": "Assets/Scripts/InputManager.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package lastPrint : bool"
+}]
+}
+]
+}]
+}

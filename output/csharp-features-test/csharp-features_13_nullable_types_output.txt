@@ -1,0 +1,387 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/13_nullable_types.cs
+Size: 1648 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for nullable value types.
+    /// Tests transformation of C# nullable types (int?, bool?, etc.) to Java wrapper types (Integer, Boolean, etc.).
+    /// </summary>
+    public class NullableTypes
+    {
+        // Nullable primitive types
+        public int? nullableInt;
+        public bool? nullableBool;
+        public double? nullableDouble;
+        public long? nullableLong;
+        public float? nullableFloat;
+ 
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/13_nullable_types.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1648 chars)...
+unit [0,0]
+    namespace [0,1647]
+        name: TestFeatures [10,22]
+        block [23,1647]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for nullable value types. [70,109]
+            comment: /// Tests transformation of C# nullable types (int?, bool?, etc.) to Java wrapper types (Integer, Boolean, etc.). [114,227]
+            comment: ///</summary> [232,246]
+            class [251,1645]
+                specifier: public [251,257]
+                name: NullableTypes [264,277]
+                block [282,1645]
+                    comment: // Nullable primitive types [292,319]
+                    decl_stmt [328,352]
+                        decl [328,351]
+                            type [328,339]
+                                specifier: public [328,334]
+                                name: int [335,338]
+                                modifier: ? [338,339]
+                            name: nullableInt [340,351]
+                    decl_stmt [361,387]
+                        decl [361,386]
+                            type [361,373]
+                                specifier: public [361,367]
+                                name: bool [368,372]
+                                modifier: ? [372,373]
+                            name: nullableBool [374,386]
+                    decl_stmt [396,426]
+                        decl [396,425]
+                            type [396,410]
+                                specifier: public [396,402]
+                                name: double [403,409]
+                                modifier: ? [409,410]
+                            name: nullableDouble [411,425]
+                    decl_stmt [435,461]
+                        decl [435,460]
+                            type [435,447]
+                                specifier: public [435,441]
+                                name: long [442,446]
+                                modifier: ? [446,447]
+                            name: nullableLong [448,460]
+                    decl_stmt [470,498]
+                        decl [470,497]
+                            type [470,483]
+                                specifier: public [470,476]
+                                name: float [477,482]
+                                modifier: ? [482,483]
+                            name: nullableFloat [484,497]
+                    comment: // Method with nullable parameter [516,549]
+                    function [558,830]
+                        type [558,569]
+                            specifier: public [558,564]
+                            name: void [565,569]
+                        name: ProcessNullableInt [570,588]
+                        parameter_list [588,600]
+                            parameter [589,599]
+                                decl [589,599]
+                                    type [589,593]
+                                        name: int [589,592]
+                                        modifier: ? [592,593]
+                                    name: value [594,599]
+                        block [609,830]
+                            block_content [610,829]
+                                if_stmt [623,820]
+                                    if [623,723]
+                                        condition [626,641]
+                                            expr [627,640]
+                                                name: value [627,632]
+                                                operator: != [633,635]
+                                                literal: null [636,640]
+                                        block [654,723]
+                                            block_content [655,722]
+                                                expr_stmt [672,709]
+                                                    expr [672,708]
+                                                        call [672,708]
+                                                            name [672,689]
+                                                                name: Console [672,679]
+                                                                operator: . [679,680]
+                                                                name: WriteLine [680,689]
+                                                            argument_list [689,708]
+                                                                argument [690,707]
+                                                                    expr [690,707]
+                                                                        literal: "Value: " [690,699]
+                                                                        operator: + [700,701]
+                                                                        name: value [702,707]
+                                    else [736,820]
+                                        block [753,820]
+                                            block_content [754,819]
+                                                expr_stmt [771,806]
+                                                    expr [771,805]
+                                                        call [771,805]
+                                                            name [771,788]
+                                                                name: Console [771,778]
+                                                                operator: . [778,779]
+                                                                name: WriteLine [779,788]
+                                                            argument_list [788,805]
+                                                                argument [789,804]
+                                                                    expr [789,804]
+                                                                        literal: "Value is null" [789,804]
+                    comment: // Method with nullable return type [848,883]
+                    function [892,1065]
+                        type [892,903]
+                            specifier: public [892,898]
+                            name: int [899,902]
+                            modifier: ? [902,903]
+                        name: GetNullableValue [904,920]
+                        parameter_list [920,937]
+                            parameter [921,936]
+                                decl [921,936]
+                                    type [921,925]
+                                        name: bool [921,925]
+                                    name: returnNull [926,936]
+                        block [946,1065]
+                            block_content [947,1064]
+                                if_stmt [960,1032]
+                                    if [960,1032]
+                                        condition [963,975]
+                                            expr [964,974]
+                                                name: returnNull [964,974]
+                                        block [988,1032]
+                                            block_content [989,1031]
+                                                return [1006,1018]
+                                                    expr [1013,1017]
+                                                        literal: null [1013,1017]
+                                return [1045,1055]
+                                    expr [1052,1054]
+                                        literal: 42 [1052,1054]
+                    comment: // Method using HasValue property [1083,1116]
+                    function [1125,1222]
+                        type [1125,1136]
+                            specifier: public [1125,1131]
+                            name: bool [1132,1136]
+                        name: CheckNullableValue [1137,1155]
+                        parameter_list [1155,1167]
+                            parameter [1156,1166]
+                                decl [1156,1166]
+                                    type [1156,1160]
+                                        name: int [1156,1159]
+                                        modifier: ? [1159,1160]
+                                    name: value [1161,1166]
+                        block [1176,1222]
+                            block_content [1177,1221]
+                                return [1190,1212]
+                                    expr [1197,1211]
+                                        name [1197,1211]
+                                            name: value [1197,1202]
+                                            operator: . [1202,1203]
+                                            name: HasValue [1203,1211]
+                    comment: // Method using Value property [1240,1270]
+                    function [1279,1457]
+                        type [1279,1289]
+                            specifier: public [1279,1285]
+                            name: int [1286,1289]
+                        name: GetValueOrDefault [1290,1307]
+                        parameter_list [1307,1319]
+                            parameter [1308,1318]
+                                decl [1308,1318]
+                                    type [1308,1312]
+                                        name: int [1308,1311]
+                                        modifier: ? [1311,1312]
+                                    name: value [1313,1318]
+                        block [1328,1457]
+                            block_content [1329,1456]
+                                if_stmt [1342,1425]
+                                    if [1342,1425]
+                                        condition [1345,1361]
+                                            expr [1346,1360]
+                                                name [1346,1360]
+                                                    name: value [1346,1351]
+                                                    operator: . [1351,1352]
+                                                    name: HasValue [1352,1360]
+                                        block [1374,1425]
+                                            block_content [1375,1424]
+                                                return [1392,1411]
+                                                    expr [1399,1410]
+                                                        name [1399,1410]
+                                                            name: value [1399,1404]
+                                                            operator: . [1404,1405]
+                                                            name: Value [1405,1410]
+                                return [1438,1447]
+                                    expr [1445,1446]
+                                        literal: 0 [1445,1446]
+                    comment: // Method using GetValueOrDefault [1475,1508]
+                    function [1517,1639]
+                        type [1517,1527]
+                            specifier: public [1517,1523]
+                            name: int [1524,1527]
+                        name: GetValueWithDefault [1528,1547]
+                        parameter_list [1547,1577]
+                            parameter [1548,1558]
+                                decl [1548,1558]
+                                    type [1548,1552]
+                                        name: int [1548,1551]
+                                        modifier: ? [1551,1552]
+                                    name: value [1553,1558]
+                            parameter [1560,1576]
+                                decl [1560,1576]
+                                    type [1560,1563]
+                                        name: int [1560,1563]
+                                    name: defaultValue [1564,1576]
+                        block [1586,1639]
+                            block_content [1587,1638]
+                                return [1600,1629]
+                                    expr [1607,1628]
+                                        name: value [1607,1612]
+                                        operator: ?? [1613,1615]
+                                        name: defaultValue [1616,1628]
+package TestFeatures;
+public class NullableTypes {
+  public int nullableInt;
+  public boolean nullableBool;
+  public double nullableDouble;
+  public long nullableLong;
+  public float nullableFloat;
+  public Void ProcessNullableInt(  int value){
+    if (value != "null") {
+      Console.WriteLine("Value: " + value);
+    }
+ else {
+      Console.WriteLine("Value is null");
+    }
+  }
+  public int GetNullableValue(  boolean returnNull){
+    if (returnNull) {
+      return "null";
+    }
+    return 42;
+  }
+  public boolean CheckNullableValue(  int value){
+    return value.HasValue;
+  }
+  public int GetValueOrDefault(  int value){
+    if (value.HasValue) {
+      return value.Value;
+    }
+    return 0;
+  }
+  public int GetValueWithDefault(  int value,  int defaultValue){
+    return value != null ? value : defaultValue;
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 826 chars
+  - Number of lines: 34
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class NullableTypes {
+  public int nullableInt;
+  public boolean nullableBool;
+  public double nullableDouble;
+  public long nullableLong;
+  public float nullableFloat;
+  public Void ProcessNullableInt(  int value){
+    if (value != "null") {
+      Console.WriteLine("Value: " + value);
+    }
+ else {
+      Console.WriteLine("Value is null");
+    }
+  }
+  public int GetNullableValue(  boolean returnNull){
+    if (returnNull) {
+      return "null";
+    }
+    return 42;
+  }
+  public boolean CheckNullableValue(  int value){
+    return value.HasValue;
+  }
+  public int GetValueOrDefault(  int value){
+    if (value.HasValue) {
+      return value.Value;
+    }
+    return 0;
+  }
+  public int GetValueWithDefault(  int value,  int defaultValue){
+    return value != null ? value : defaultValue;
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/13_nullable_types.java
+  - File contents size: 826 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/13_nullable_types.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.NullableTypes
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/13_nullable_types.java
+  Operations: 5
+  Attributes: 5
+  Fields:
+    • int nullableInt
+    • boolean nullableBool
+    • double nullableDouble
+    • long nullableLong
+    • float nullableFloat
+  Methods:
+    • ProcessNullableInt() - 2 param(s)
+    • GetNullableValue() - 2 param(s)
+    • CheckNullableValue() - 2 param(s)
+    • GetValueOrDefault() - 2 param(s)
+    • GetValueWithDefault() - 3 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

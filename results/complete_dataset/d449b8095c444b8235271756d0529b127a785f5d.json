@@ -1,0 +1,138 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "d449b8095c444b8235271756d0529b127a785f5d",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/d449b8095c444b8235271756d0529b127a785f5d",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private Dictionary : readonly from class AssetGridViewController",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridViewController.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 19,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Dictionary : readonly"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public GetTotalBounds(t Transform) from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 294,
+		"endLine": 310,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTotalBounds(t Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 237,
+		"endLine": 253,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public GetTotalBounds(t Transform)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetTotalBounds(t Transform) from class AssetGridItem to public GetTotalBounds(t Transform) from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 294,
+		"endLine": 310,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetTotalBounds(t Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Object.cs",
+		"startLine": 237,
+		"endLine": 253,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetTotalBounds(t Transform)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter targetScale : Vector3 in method private PlaceObjectCoroutine(obj Transform, targetScale Vector3) : IEnumerator from class ObjectPlacementModule",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 218,
+		"endLine": 249,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlaceObjectWithBounds(obj Transform) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/ObjectPlacementModule.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 58,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "targetScale : Vector3"
+}, {
+		"filePath": "Scripts/Modules/ObjectPlacementModule.cs",
+		"startLine": 15,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private PlaceObjectCoroutine(obj Transform, targetScale Vector3) : IEnumerator"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private PlaceObjectWithBounds(obj Transform) : IEnumerator from class AssetGridItem to private PlaceObjectCoroutine(obj Transform, targetScale Vector3) : IEnumerator from class ObjectPlacementModule",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/AssetGridItem.cs",
+		"startLine": 218,
+		"endLine": 249,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PlaceObjectWithBounds(obj Transform) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/ObjectPlacementModule.cs",
+		"startLine": 15,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private PlaceObjectCoroutine(obj Transform, targetScale Vector3) : IEnumerator"
+}]
+}
+]
+}]
+}

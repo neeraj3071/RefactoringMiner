@@ -1,0 +1,340 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/03_block_properties.cs
+Size: 1472 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for block-style properties with explicit getter and setter bodies.
+    /// Tests transformation of C# block properties to Java getter/setter methods.
+    /// </summary>
+    public class BlockProperties
+    {
+        private int _count;
+        private string _description;
+        private bool _isValid;
+        
+        // Block property with simple getter and setter
+        public int Count
+        {
+            
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/03_block_properties.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1472 chars)...
+unit [0,0]
+    namespace [0,1471]
+        name: TestFeatures [10,22]
+        block [23,1471]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for block-style properties with explicit getter and setter bodies. [70,150]
+            comment: /// Tests transformation of C# block properties to Java getter/setter methods. [155,233]
+            comment: ///</summary> [238,252]
+            class [257,1469]
+                specifier: public [257,263]
+                name: BlockProperties [270,285]
+                block [290,1469]
+                    decl_stmt [300,319]
+                        decl [300,318]
+                            type [300,311]
+                                specifier: private [300,307]
+                                name: int [308,311]
+                            name: _count [312,318]
+                    decl_stmt [328,356]
+                        decl [328,355]
+                            type [328,342]
+                                specifier: private [328,335]
+                                name: string [336,342]
+                            name: _description [343,355]
+                    decl_stmt [365,387]
+                        decl [365,386]
+                            type [365,377]
+                                specifier: private [365,372]
+                                name: bool [373,377]
+                            name: _isValid [378,386]
+                    comment: // Block property with simple getter and setter [405,452]
+                    property [461,568]
+                        type [461,471]
+                            specifier: public [461,467]
+                            name: int [468,471]
+                        name: Count [472,477]
+                        block [486,568]
+                            function [500,522]
+                                name: get [500,503]
+                                block [504,522]
+                                    block_content [505,521]
+                                        return [506,520]
+                                            expr [513,519]
+                                                name: _count [513,519]
+                            function [535,558]
+                                name: set [535,538]
+                                block [539,558]
+                                    block_content [540,557]
+                                        expr_stmt [541,556]
+                                            expr [541,555]
+                                                name: _count [541,547]
+                                                operator: = [548,549]
+                                                name: value [550,555]
+                    comment: // Block property with validation in setter [586,629]
+                    property [638,881]
+                        type [638,651]
+                            specifier: public [638,644]
+                            name: string [645,651]
+                        name: Description [652,663]
+                        block [672,881]
+                            function [686,714]
+                                name: get [686,689]
+                                block [690,714]
+                                    block_content [691,713]
+                                        return [692,712]
+                                            expr [699,711]
+                                                name: _description [699,711]
+                            function [727,871]
+                                name: set [727,730]
+                                block [743,871]
+                                    block_content [744,870]
+                                        if_stmt [761,857]
+                                            if [761,857]
+                                                condition [764,779]
+                                                    expr [765,778]
+                                                        name: value [765,770]
+                                                        operator: != [771,773]
+                                                        literal: null [774,778]
+                                                block [796,857]
+                                                    block_content [797,856]
+                                                        expr_stmt [818,839]
+                                                            expr [818,838]
+                                                                name: _description [818,830]
+                                                                operator: = [831,832]
+                                                                name: value [833,838]
+                    comment: // Block property with computed getter [899,937]
+                    property [946,1067]
+                        type [946,956]
+                            specifier: public [946,952]
+                            name: int [953,956]
+                        name: DoubleCount [957,968]
+                        block [977,1067]
+                            function [991,1057]
+                                name: get [991,994]
+                                block [1007,1057]
+                                    block_content [1008,1056]
+                                        return [1025,1043]
+                                            expr [1032,1042]
+                                                name: _count [1032,1038]
+                                                operator: * [1039,1040]
+                                                literal: 2 [1041,1042]
+                    comment: // Block property with side effects in setter [1085,1130]
+                    property [1139,1332]
+                        type [1139,1150]
+                            specifier: public [1139,1145]
+                            name: bool [1146,1150]
+                        name: IsValid [1151,1158]
+                        block [1167,1332]
+                            function [1181,1205]
+                                name: get [1181,1184]
+                                block [1185,1205]
+                                    block_content [1186,1204]
+                                        return [1187,1203]
+                                            expr [1194,1202]
+                                                name: _isValid [1194,1202]
+                            function [1218,1322]
+                                name: set [1218,1221]
+                                block [1234,1322]
+                                    block_content [1235,1321]
+                                        expr_stmt [1252,1269]
+                                            expr [1252,1268]
+                                                name: _isValid [1252,1260]
+                                                operator: = [1261,1262]
+                                                name: value [1263,1268]
+                                        expr_stmt [1286,1308]
+                                            expr [1286,1307]
+                                                call [1286,1307]
+                                                    name: OnValidationChanged [1286,1305]
+                                                    argument_list [1305,1307]
+                    function [1350,1463]
+                        type [1350,1362]
+                            specifier: private [1350,1357]
+                            name: void [1358,1362]
+                        name: OnValidationChanged [1363,1382]
+                        parameter_list [1382,1384]
+                        block [1393,1463]
+                            block_content [1394,1462]
+                                expr_stmt [1407,1453]
+                                    expr [1407,1452]
+                                        call [1407,1452]
+                                            name [1407,1424]
+                                                name: Console [1407,1414]
+                                                operator: . [1414,1415]
+                                                name: WriteLine [1415,1424]
+                                            argument_list [1424,1452]
+                                                argument [1425,1451]
+                                                    expr [1425,1451]
+                                                        literal: "Validation state changed" [1425,1451]
+package TestFeatures;
+public class BlockProperties {
+  private int _count;
+  private String _description;
+  private boolean _isValid;
+  public int Count;
+  void get(){
+    return _count;
+  }
+  void set(){
+    _count=value;
+  }
+  public String Description;
+  void get(){
+    return _description;
+  }
+  void set(){
+    if (value != "null") {
+      _description=value;
+    }
+  }
+  public int DoubleCount;
+  void get(){
+    return _count * 2;
+  }
+  public boolean IsValid;
+  void get(){
+    return _isValid;
+  }
+  void set(){
+    _isValid=value;
+    OnValidationChanged();
+  }
+  private Void OnValidationChanged(){
+    Console.WriteLine("Validation state changed");
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 668 chars
+  - Number of lines: 37
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class BlockProperties {
+  private int _count;
+  private String _description;
+  private boolean _isValid;
+  public int Count;
+  void get(){
+    return _count;
+  }
+  void set(){
+    _count=value;
+  }
+  public String Description;
+  void get(){
+    return _description;
+  }
+  void set(){
+    if (value != "null") {
+      _description=value;
+    }
+  }
+  public int DoubleCount;
+  void get(){
+    return _count * 2;
+  }
+  public boolean IsValid;
+  void get(){
+    return _isValid;
+  }
+  void set(){
+    _isValid=value;
+    OnValidationChanged();
+  }
+  private Void OnValidationChanged(){
+    Console.WriteLine("Validation state changed");
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/03_block_properties.java
+  - File contents size: 668 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/03_block_properties.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.BlockProperties
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/03_block_properties.java
+  Operations: 8
+  Attributes: 7
+  Fields:
+    • int _count
+    • String _description
+    • boolean _isValid
+    • int Count
+    • String Description
+    • int DoubleCount
+    • boolean IsValid
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • OnValidationChanged() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

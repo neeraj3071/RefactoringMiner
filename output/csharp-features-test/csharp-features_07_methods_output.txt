@@ -1,0 +1,380 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/07_methods.cs
+Size: 1583 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for method declarations with various signatures and return types.
+    /// Tests transformation of C# methods to Java methods.
+    /// </summary>
+    public class Methods
+    {
+        // Void method without parameters
+        public void DoNothing()
+        {
+        }
+        
+        // Void method with single parameter
+        public void ProcessValue(int value)
+        {
+            Console.WriteLine(value);
+
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/07_methods.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1583 chars)...
+unit [0,0]
+    namespace [0,1582]
+        name: TestFeatures [10,22]
+        block [23,1582]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for method declarations with various signatures and return types. [70,149]
+            comment: /// Tests transformation of C# methods to Java methods. [154,209]
+            comment: ///</summary> [214,228]
+            class [233,1580]
+                specifier: public [233,239]
+                name: Methods [246,253]
+                block [258,1580]
+                    comment: // Void method without parameters [268,301]
+                    function [310,353]
+                        type [310,321]
+                            specifier: public [310,316]
+                            name: void [317,321]
+                        name: DoNothing [322,331]
+                        parameter_list [331,333]
+                        block [342,353]
+                            block_content [343,352]
+                    comment: // Void method with single parameter [371,407]
+                    function [416,509]
+                        type [416,427]
+                            specifier: public [416,422]
+                            name: void [423,427]
+                        name: ProcessValue [428,440]
+                        parameter_list [440,451]
+                            parameter [441,450]
+                                decl [441,450]
+                                    type [441,444]
+                                        name: int [441,444]
+                                    name: value [445,450]
+                        block [460,509]
+                            block_content [461,508]
+                                expr_stmt [474,499]
+                                    expr [474,498]
+                                        call [474,498]
+                                            name [474,491]
+                                                name: Console [474,481]
+                                                operator: . [481,482]
+                                                name: WriteLine [482,491]
+                                            argument_list [491,498]
+                                                argument [492,497]
+                                                    expr [492,497]
+                                                        name: value [492,497]
+                    comment: // Method with return value [527,554]
+                    function [563,627]
+                        type [563,573]
+                            specifier: public [563,569]
+                            name: int [570,573]
+                        name: GetValue [574,582]
+                        parameter_list [582,584]
+                        block [593,627]
+                            block_content [594,626]
+                                return [607,617]
+                                    expr [614,616]
+                                        literal: 42 [614,616]
+                    comment: // Method with multiple parameters [645,679]
+                    function [688,797]
+                        type [688,701]
+                            specifier: public [688,694]
+                            name: string [695,701]
+                        name: Concatenate [702,713]
+                        parameter_list [713,742]
+                            parameter [714,726]
+                                decl [714,726]
+                                    type [714,720]
+                                        name: string [714,720]
+                                    name: first [721,726]
+                            parameter [728,741]
+                                decl [728,741]
+                                    type [728,734]
+                                        name: string [728,734]
+                                    name: second [735,741]
+                        block [751,797]
+                            block_content [752,796]
+                                return [765,787]
+                                    expr [772,786]
+                                        name: first [772,777]
+                                        operator: + [778,779]
+                                        name: second [780,786]
+                    comment: // Method with complex return type [815,849]
+                    function [858,938]
+                        type [858,869]
+                            specifier: public [858,864]
+                            name: bool [865,869]
+                        name: Compare [870,877]
+                        parameter_list [877,891]
+                            parameter [878,883]
+                                decl [878,883]
+                                    type [878,881]
+                                        name: int [878,881]
+                                    name: a [882,883]
+                            parameter [885,890]
+                                decl [885,890]
+                                    type [885,888]
+                                        name: int [885,888]
+                                    name: b [889,890]
+                        block [900,938]
+                            block_content [901,937]
+                                return [914,928]
+                                    expr [921,927]
+                                        name: a [921,922]
+                                        operator: == [923,925]
+                                        name: b [926,927]
+                    comment: // Private method [956,973]
+                    function [982,1086]
+                        type [982,994]
+                            specifier: private [982,989]
+                            name: void [990,994]
+                        name: InternalProcess [995,1010]
+                        parameter_list [1010,1012]
+                        block [1021,1086]
+                            block_content [1022,1085]
+                                expr_stmt [1035,1076]
+                                    expr [1035,1075]
+                                        call [1035,1075]
+                                            name [1035,1052]
+                                                name: Console [1035,1042]
+                                                operator: . [1042,1043]
+                                                name: WriteLine [1043,1052]
+                                            argument_list [1052,1075]
+                                                argument [1053,1074]
+                                                    expr [1053,1074]
+                                                        literal: "Internal processing" [1053,1074]
+                    comment: // Protected method [1104,1123]
+                    function [1132,1241]
+                        type [1132,1146]
+                            specifier: protected [1132,1141]
+                            name: void [1142,1146]
+                        name: ProtectedOperation [1147,1165]
+                        parameter_list [1165,1167]
+                        block [1176,1241]
+                            block_content [1177,1240]
+                                expr_stmt [1190,1231]
+                                    expr [1190,1230]
+                                        call [1190,1230]
+                                            name [1190,1207]
+                                                name: Console [1190,1197]
+                                                operator: . [1197,1198]
+                                                name: WriteLine [1198,1207]
+                                            argument_list [1207,1230]
+                                                argument [1208,1229]
+                                                    expr [1208,1229]
+                                                        literal: "Protected operation" [1208,1229]
+                    comment: // Static method [1259,1275]
+                    function [1284,1365]
+                        type [1284,1301]
+                            specifier: public [1284,1290]
+                            specifier: static [1291,1297]
+                            name: int [1298,1301]
+                        name: Add [1302,1305]
+                        parameter_list [1305,1319]
+                            parameter [1306,1311]
+                                decl [1306,1311]
+                                    type [1306,1309]
+                                        name: int [1306,1309]
+                                    name: a [1310,1311]
+                            parameter [1313,1318]
+                                decl [1313,1318]
+                                    type [1313,1316]
+                                        name: int [1313,1316]
+                                    name: b [1317,1318]
+                        block [1328,1365]
+                            block_content [1329,1364]
+                                return [1342,1355]
+                                    expr [1349,1354]
+                                        name: a [1349,1350]
+                                        operator: + [1351,1352]
+                                        name: b [1353,1354]
+                    comment: // Method with multiple statements [1383,1417]
+                    function [1426,1574]
+                        type [1426,1436]
+                            specifier: public [1426,1432]
+                            name: int [1433,1436]
+                        name: Calculate [1437,1446]
+                        parameter_list [1446,1457]
+                            parameter [1447,1456]
+                                decl [1447,1456]
+                                    type [1447,1450]
+                                        name: int [1447,1450]
+                                    name: input [1451,1456]
+                        block [1466,1574]
+                            block_content [1467,1573]
+                                decl_stmt [1480,1503]
+                                    decl [1480,1502]
+                                        type [1480,1483]
+                                            name: int [1480,1483]
+                                        name: result [1484,1490]
+                                        init [1491,1502]
+                                            expr [1493,1502]
+                                                name: input [1493,1498]
+                                                operator: * [1499,1500]
+                                                literal: 2 [1501,1502]
+                                expr_stmt [1516,1537]
+                                    expr [1516,1536]
+                                        name: result [1516,1522]
+                                        operator: = [1523,1524]
+                                        name: result [1525,1531]
+                                        operator: + [1532,1533]
+                                        literal: 10 [1534,1536]
+                                return [1550,1564]
+                                    expr [1557,1563]
+                                        name: result [1557,1563]
+package TestFeatures;
+public class Methods {
+  public Void DoNothing(){
+  }
+  public Void ProcessValue(  int value){
+    Console.WriteLine(value);
+  }
+  public int GetValue(){
+    return 42;
+  }
+  public String Concatenate(  String first,  String second){
+    return first + second;
+  }
+  public boolean Compare(  int a,  int b){
+    return a == b;
+  }
+  private Void InternalProcess(){
+    Console.WriteLine("Internal processing");
+  }
+  protected Void ProtectedOperation(){
+    Console.WriteLine("Protected operation");
+  }
+  public static int Add(  int a,  int b){
+    return a + b;
+  }
+  public int Calculate(  int input){
+    int result=input * 2;
+    result=result + 10;
+    return result;
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 702 chars
+  - Number of lines: 31
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class Methods {
+  public Void DoNothing(){
+  }
+  public Void ProcessValue(  int value){
+    Console.WriteLine(value);
+  }
+  public int GetValue(){
+    return 42;
+  }
+  public String Concatenate(  String first,  String second){
+    return first + second;
+  }
+  public boolean Compare(  int a,  int b){
+    return a == b;
+  }
+  private Void InternalProcess(){
+    Console.WriteLine("Internal processing");
+  }
+  protected Void ProtectedOperation(){
+    Console.WriteLine("Protected operation");
+  }
+  public static int Add(  int a,  int b){
+    return a + b;
+  }
+  public int Calculate(  int input){
+    int result=input * 2;
+    result=result + 10;
+    return result;
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/07_methods.java
+  - File contents size: 702 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/07_methods.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.Methods
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/07_methods.java
+  Operations: 9
+  Attributes: 0
+  Methods:
+    • DoNothing() - 1 param(s)
+    • ProcessValue() - 2 param(s)
+    • GetValue() - 1 param(s)
+    • Concatenate() - 3 param(s)
+    • Compare() - 3 param(s)
+    • InternalProcess() - 1 param(s)
+    • ProtectedOperation() - 1 param(s)
+    • Add() - 3 param(s)
+    • Calculate() - 2 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

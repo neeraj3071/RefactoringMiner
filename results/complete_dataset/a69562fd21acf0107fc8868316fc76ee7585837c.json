@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "a69562fd21acf0107fc8868316fc76ee7585837c",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/a69562fd21acf0107fc8868316fc76ee7585837c",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private UpdateActionMapForDevice(actionMap ActionMap, device InputDevice) : void renamed to private IsValidActionMapForDevice(actionMap ActionMap, device InputDevice) : bool in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 577,
+		"endLine": 625,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateActionMapForDevice(actionMap ActionMap, device InputDevice) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 573,
+		"endLine": 610,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private IsValidActionMapForDevice(actionMap ActionMap, device InputDevice) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter device : InputDevice in method private CreateActionMapInput(map ActionMap, device InputDevice) : ActionMapInput from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 335,
+		"endLine": 341,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateActionMapInput(map ActionMap) : ActionMapInput"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 61,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "device : InputDevice"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 333,
+		"endLine": 347,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private CreateActionMapInput(map ActionMap, device InputDevice) : ActionMapInput"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to bool in method private IsValidActionMapForDevice(actionMap ActionMap, device InputDevice) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 577,
+		"endLine": 577,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 577,
+		"endLine": 625,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateActionMapForDevice(actionMap ActionMap, device InputDevice) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 573,
+		"endLine": 610,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private IsValidActionMapForDevice(actionMap ActionMap, device InputDevice) : bool"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter deviceType : var to deviceSlot : var in method package foreach(deviceSlot var) from class U.Input",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Input.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 14,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "deviceType : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/U.Input.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 14,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceSlot : var"
+}]
+}
+]
+}]
+}

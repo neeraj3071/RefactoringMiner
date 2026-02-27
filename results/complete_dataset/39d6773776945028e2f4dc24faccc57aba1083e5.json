@@ -1,0 +1,1299 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vitrivr/vitrivr-vr.git",
+	"sha1": "39d6773776945028e2f4dc24faccc57aba1083e5",
+	"url": "https://github.com/vitrivr/vitrivr-vr/commit/39d6773776945028e2f4dc24faccc57aba1083e5",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class TextInputController renamed to CanvasTextInputController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputController.cs",
+		"startLine": 9,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TextInputController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/CanvasTextInputController.cs",
+		"startLine": 12,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "CanvasTextInputController"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class SpinnerController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Behavior/SpinnerController.cs",
+		"startLine": 9,
+		"endLine": 12,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Behavior/SpinnerController.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private DownloadTexture(url string) : IEnumerator renamed to private DownloadThumbnailTexture(url string) : IEnumerator in class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 100,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DownloadTexture(url string) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 120,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private DownloadThumbnailTexture(url string) : IEnumerator"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type factor : float to factor : var in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "factor : float"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 11,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "factor : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 7,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scale : Vector3 to scale : var in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 15,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scale : Vector3"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 11,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scale : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 120,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PrepareCompleted(videoPlayer VideoPlayer) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 140,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private PrepareCompleted(videoPlayer VideoPlayer) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ErrorEncountered(videoPlayer VideoPlayer, error string) : void from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 132,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ErrorEncountered(videoPlayer VideoPlayer, error string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 152,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ErrorEncountered(videoPlayer VideoPlayer, error string) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type www : UnityWebRequest to www : var in method private DownloadThumbnailTexture(url string) : IEnumerator from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 23,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "www : UnityWebRequest"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 105,
+		"endLine": 117,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 11,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "www : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 125,
+		"endLine": 137,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type loadedTexture : Texture2D to loadedTexture : var in method private DownloadThumbnailTexture(url string) : IEnumerator from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 19,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "loadedTexture : Texture2D"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 13,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "loadedTexture : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scale : Vector3 to scale : var in method private DownloadThumbnailTexture(url string) : IEnumerator from class CanvasMediaItemDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 17,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scale : Vector3"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scale : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/CanvasMediaItemDisplay.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class ThumbnailController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 12,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 15,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type www : UnityWebRequest to www : var in method private DownloadTexture(url string, renderer Renderer) : IEnumerator from class ThumbnailController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 23,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "www : UnityWebRequest"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 24,
+		"endLine": 36,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 11,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "www : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 27,
+		"endLine": 39,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type loadedTexture : Texture2D to loadedTexture : var in method private DownloadTexture(url string, renderer Renderer) : IEnumerator from class ThumbnailController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 19,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "loadedTexture : Texture2D"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "loadedTexture : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scale : Vector3 to scale : var in method private DownloadTexture(url string, renderer Renderer) : IEnumerator from class ThumbnailController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 17,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scale : Vector3"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scale : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private DownloadTexture(url string, renderer Renderer) : IEnumerator from class ThumbnailController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 19,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DownloadTexture(url string, renderer Renderer) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/ThumbnailController.cs",
+		"startLine": 22,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private DownloadTexture(url string, renderer Renderer) : IEnumerator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 13,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 16,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 31,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 34,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type factor : float to factor : var in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "factor : float"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 11,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "factor : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scale : Vector3 to scale : var in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 15,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scale : Vector3"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 11,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scale : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private PrepareCompleted(videoPlayer VideoPlayer) : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 46,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PrepareCompleted(videoPlayer VideoPlayer) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 47,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private PrepareCompleted(videoPlayer VideoPlayer) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ErrorEncountered(videoPlayer VideoPlayer, error string) : void from class VideoPreviewController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 58,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ErrorEncountered(videoPlayer VideoPlayer, error string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/VideoPreviewController.cs",
+		"startLine": 59,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ErrorEncountered(videoPlayer VideoPlayer, error string) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type transform1 : Transform to transform1 : var in method private Update() : void from class MediaCarouselController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transform1 : Transform"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 11,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "transform1 : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class MediaCarouselController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 22,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Display/MediaCarouselController.cs",
+		"startLine": 26,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(_localQueryGuid == localGuid) to if(_localQueryGuid != localGuid) in method public RunQuery() : void from class QueryController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/QueryController.cs",
+		"startLine": 61,
+		"endLine": 65,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(_localQueryGuid == localGuid)"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/QueryController.cs",
+		"startLine": 24,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RunQuery() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/QueryController.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(_localQueryGuid != localGuid)"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/QueryController.cs",
+		"startLine": 27,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public RunQuery() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Awake() : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Awake() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ClearTagButtons() : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 87,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTagButtons() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 97,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ClearTagButtons() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type buttonObject : GameObject to buttonObject : var in method private CreateNewTagButton(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 18,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "buttonObject : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 11,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "buttonObject : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type buttonTransform : RectTransform to buttonTransform : var in method private CreateNewTagButton(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "buttonTransform : RectTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 11,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "buttonTransform : var"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private CreateNewTagButton(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 98,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateNewTagButton(tagName string, tagId string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 108,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private CreateNewTagButton(tagName string, tagId string) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type item : GameObject to item : var in method private CreateNewTagItem(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 18,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "item : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 11,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type itemTransform : RectTransform to itemTransform : var in method private CreateNewTagItem(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "itemTransform : RectTransform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 11,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "itemTransform : var"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private CreateNewTagItem(tagName string, tagId string) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 115,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CreateNewTagItem(tagName string, tagId string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 125,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private CreateNewTagItem(tagName string, tagId string) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type index : int to index : var in method private RemoveTagItem(tagData TagData) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "index : int"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "index : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private RemoveTagItem(tagData TagData) : void from class CanvasQueryTermProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 143,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveTagItem(tagData TagData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Query/Term/CanvasQueryTermProvider.cs",
+		"startLine": 153,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private RemoveTagItem(tagData TagData) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Awake() : void from class CanvasTextInputController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/TextInputController.cs",
+		"startLine": 20,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Input/Text/CanvasTextInputController.cs",
+		"startLine": 23,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Awake() : void"
+}]
+}
+]
+}]
+}

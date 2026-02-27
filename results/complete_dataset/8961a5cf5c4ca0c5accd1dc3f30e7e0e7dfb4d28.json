@@ -1,0 +1,252 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/two-forks-vr.git",
+	"sha1": "8961a5cf5c4ca0c5accd1dc3f30e7e0e7dfb4d28",
+	"url": "https://github.com/Raicuparta/two-forks-vr/commit/8961a5cf5c4ca0c5accd1dc3f30e7e0e7dfb4d28",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable myLoadedAssetBundle : var to bundle : var in method private LoadBundle(assetName string) : AssetBundle from class VRAssetLoader",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/Assets/VRAssetLoader.cs",
+		"startLine": 25,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myLoadedAssetBundle : var"
+}, {
+		"filePath": "TwoForksVR/Assets/VRAssetLoader.cs",
+		"startLine": 25,
+		"endLine": 27,
+		"startColumn": 13,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Assets/VRAssetLoader.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 110,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "bundle : var"
+}, {
+		"filePath": "TwoForksVR/Assets/VRAssetLoader.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 13,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private OnUnityLog(condition string, stackTrace string, type LogType) : void from class TwoForksVRMod to private OnUnityLog(condition string, stackTrace string, type LogType) : void from class Logs",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 19,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnUnityLog(condition string, stackTrace string, type LogType) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 7,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private OnUnityLog(condition string, stackTrace string, type LogType) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LogInfo(data object) : void from class TwoForksVRMod to public LogInfo(data object) : void from class Logs",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogInfo(data object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LogInfo(data object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LogWarning(data object) : void from class TwoForksVRMod to public LogWarning(data object) : void from class Logs",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogWarning(data object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LogWarning(data object) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LogError(data object) : void from class TwoForksVRMod to public LogError(data object) : void from class Logs",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogError(data object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LogError(data object) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Logs from class TwoForksVRMod",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 10,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TwoForksVRMod"
+}, {
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 19,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnUnityLog(condition string, stackTrace string, type LogType) : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogInfo(data object) : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogWarning(data object) : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogError(data object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVRMod.cs",
+		"startLine": 9,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "TwoForksVRMod"
+}, {
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 5,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Logs"
+}, {
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 7,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private OnUnityLog(condition string, stackTrace string, type LogType) : void"
+}, {
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LogInfo(data object) : void"
+}, {
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LogWarning(data object) : void"
+}, {
+		"filePath": "TwoForksVR/Helpers/Logs.cs",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LogError(data object) : void"
+}]
+}
+]
+}]
+}

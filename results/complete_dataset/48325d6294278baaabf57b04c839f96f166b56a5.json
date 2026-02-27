@@ -1,0 +1,327 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BioMotionLab/TUX.git",
+	"sha1": "48325d6294278baaabf57b04c839f96f166b56a5",
+	"url": "https://github.com/BioMotionLab/TUX/commit/48325d6294278baaabf57b04c839f96f166b56a5",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package UpdateWithBlockValues(blockTrialTable DataTable, blockTableRow DataRow, blockIndex int) : DataTable renamed to package UpdateTrialTableWithBlockValues(blockTrialTable DataTable, blockTableRow DataRow, blockIndex int) : DataTable in class ExperimentDesign",
+	"leftSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 134,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateWithBlockValues(blockTrialTable DataTable, blockTableRow DataRow, blockIndex int) : DataTable"
+}],
+	"rightSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 101,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package UpdateTrialTableWithBlockValues(blockTrialTable DataTable, blockTableRow DataRow, blockIndex int) : DataTable"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package AddTrialAndBlockIndicesWhenNoBlocks(trialTable DataTable) : void extracted from package CreateAndAddBlocks() : void in class ExperimentDesign",
+	"leftSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 65,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package CreateAndAddBlocks() : void"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 21,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 21,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 21,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 65,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 92,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package AddTrialAndBlockIndicesWhenNoBlocks(trialTable DataTable) : void"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 17,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 93,
+		"endLine": 98,
+		"startColumn": 61,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 65,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package CreateAndAddBlocks() : void"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "AddTrialAndBlockIndicesWhenNoBlocks(trialTable)"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable sortedVariables : in to SortedVariables : in in method package UpdateParticipantValues() : void from class ExperimentDesign",
+	"leftSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 62,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sortedVariables : in"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 62,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "SortedVariables : in"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable trialIndexInBlock : int to i : int in method package UpdateTrialTableWithBlockValues(blockTrialTable DataTable, blockTableRow DataRow, blockIndex int) : DataTable from class ExperimentDesign",
+	"leftSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 26,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "trialIndexInBlock : int"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 21,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 21,
+		"endColumn": 108,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 140,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 21,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 108,
+		"endLine": 115,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package foreach(independentVariable IndependentVariable) from class ExperimentDesign to package foreach(independentVariable IndependentVariable) from class TrialTable",
+	"leftSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/ExperimentDesign.cs",
+		"startLine": 161,
+		"endLine": 179,
+		"startColumn": 13,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package foreach(independentVariable IndependentVariable)"
+}],
+	"rightSideLocations": [{
+		"filePath": "ExperimentalFrameworkProject/Assets/BML_ExperimentToolkit/Scripts/ExperimentParts/TrialTable.cs",
+		"startLine": 179,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package foreach(independentVariable IndependentVariable)"
+}]
+}
+]
+}]
+}

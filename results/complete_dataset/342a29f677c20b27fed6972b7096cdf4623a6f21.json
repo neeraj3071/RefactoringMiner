@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/KandoozStudio/Kinteractions-VR.git",
+	"sha1": "342a29f677c20b27fed6972b7096cdf4623a6f21",
+	"url": "https://github.com/KandoozStudio/Kinteractions-VR/commit/342a29f677c20b27fed6972b7096cdf4623a6f21",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type grabStrategy : IGrabStrategy to grabStrategy : GrabStrategy in class Grabable",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Interactions/Interactables/Grabable.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "grabStrategy : IGrabStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Interactions/Interactables/Grabable.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "grabStrategy : GrabStrategy"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package UnGrab(interactable Grabable, interactor InteractorBase) : void from class TransformGrabStrategy",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Interactions/Interactables/TransformGrabStrategy.cs",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UnGrab(interactable Grabable, interactor InteractorBase) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Interactions/Interactables/TransformGrabStrategy.cs",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package UnGrab(interactable Grabable, interactor InteractorBase) : void"
+}]
+}
+]
+}]
+}

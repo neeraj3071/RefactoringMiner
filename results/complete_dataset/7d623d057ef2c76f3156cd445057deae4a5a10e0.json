@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/pupil-labs/hmd-eyes.git",
+	"sha1": "7d623d057ef2c76f3156cd445057deae4a5a10e0",
+	"url": "https://github.com/pupil-labs/hmd-eyes/commit/7d623d057ef2c76f3156cd445057deae4a5a10e0",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lastTimeStamp : float from class CalibrationController",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastTimeStamp : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lastTimeStamp : float"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package lastTimeStamp : float from class CalibrationController",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastTimeStamp : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private lastTimeStamp : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public timeBetweenCalibrationPoints : float from class CalibrationSettings",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 16,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package timeBetweenCalibrationPoints : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationSettings.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public timeBetweenCalibrationPoints : float"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package timeBetweenCalibrationPoints : float from class CalibrationController",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 16,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package timeBetweenCalibrationPoints : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationSettings.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public timeBetweenCalibrationPoints : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package timeBetweenCalibrationPoints : float from class CalibrationController to public timeBetweenCalibrationPoints : float from class CalibrationSettings",
+	"leftSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 16,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package timeBetweenCalibrationPoints : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/Scripts/CalibrationSettings.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public timeBetweenCalibrationPoints : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,348 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/xire-/graphulus.git",
+	"sha1": "f1372846c09deb62d5d9c232d3d481f21784c642",
+	"url": "https://github.com/xire-/graphulus/commit/f1372846c09deb62d5d9c232d3d481f21784c642",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private OnSelect() : void renamed to private AnimateSelection(select bool) : void in class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSelect() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 29,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private AnimateSelection(select bool) : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private SelectAnim(status float, startColor Color, endColor Color, startScale Vector3, endScale Vector3) : void inlined to private AnimateSelection(select bool) : void in class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private SelectAnim(status float, startColor Color, endColor Color, startScale Vector3, endScale Vector3) : void"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private OnSelect() : void"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 134,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "SelectAnim(0f,GameSystem.Instance.Theme.nodeColor,GameSystem.Instance.Theme.nodeSelectedColor,_initialScale,endscale)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 29,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private AnimateSelection(select bool) : void"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter startColor : Color to startColor : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "startColor : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type startColor : Color to startColor : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "startColor : var"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter endColor : Color to endColor : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 61,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "endColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "endColor : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type endColor : Color to endColor : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 61,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "endColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "endColor : var"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter startScale : Vector3 to startScale : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 77,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startScale : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "startScale : var"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type startScale : Vector3 to startScale : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 77,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startScale : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "startScale : var"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable endscale : var to endScale : var in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "endscale : var"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "endScale : var"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter select : bool in method private AnimateSelection(select bool) : void from class Node",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnSelect() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "select : bool"
+}, {
+		"filePath": "Assets/Scripts/Node.cs",
+		"startLine": 29,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private AnimateSelection(select bool) : void"
+}]
+}
+]
+}]
+}

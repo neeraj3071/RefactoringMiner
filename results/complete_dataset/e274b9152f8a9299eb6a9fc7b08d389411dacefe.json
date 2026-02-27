@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Faceplant-Games/epicslash.git",
+	"sha1": "e274b9152f8a9299eb6a9fc7b08d389411dacefe",
+	"url": "https://github.com/Faceplant-Games/epicslash/commit/e274b9152f8a9299eb6a9fc7b08d389411dacefe",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract BeingHit() : void from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 34,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract BeingHit() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 9,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public BeingHit() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public BeingHit() : void from class Monster4B to public BeingHit() : void from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/scripts/Monsters/Behavior/Monster4B.cs",
+		"startLine": 73,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public BeingHit() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 9,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public BeingHit() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public hp : int from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/scripts/Monsters/Behavior/Monster4B.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public hp : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private hp : int from class Monster4B to public hp : int from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/scripts/Monsters/Behavior/Monster4B.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 17,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public hp : int"
+}]
+}
+]
+}]
+}

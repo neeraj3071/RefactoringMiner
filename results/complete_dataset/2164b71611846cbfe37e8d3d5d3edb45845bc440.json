@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aestheticinteractive/Hover-UI-Kit.git",
+	"sha1": "2164b71611846cbfe37e8d3d5d3edb45845bc440",
+	"url": "https://github.com/aestheticinteractive/Hover-UI-Kit/commit/2164b71611846cbfe37e8d3d5d3edb45845bc440",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type SliderRenderer : IRendererSlider to SliderRenderer : HoverRendererSlider in class HoverRendererUpdater",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "SliderRenderer : IRendererSlider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "SliderRenderer : HoverRendererSlider"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IRendererSlider : as to HoverRendererSlider : as in initializer HoverRendererUpdater from class HoverRendererUpdater",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 34,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "IRendererSlider : as"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 10,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "HoverRendererSlider : as"
+}, {
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private UpdateRenderer(pRenderer HoverRenderer, pHoverItem HoverItem) : void from class HoverRendererUpdater",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected UpdateRenderer(pRenderer HoverRenderer, pHoverItem HoverItem) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 197,
+		"endLine": 200,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private UpdateRenderer(pRenderer HoverRenderer, pHoverItem HoverItem) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private UpdateRendererCanvas(pRenderer HoverRenderer, pHoverItem HoverItem) : void from class HoverRendererUpdater",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 211,
+		"endLine": 257,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected UpdateRendererCanvas(pRenderer HoverRenderer, pHoverItem HoverItem) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 203,
+		"endLine": 249,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private UpdateRendererCanvas(pRenderer HoverRenderer, pHoverItem HoverItem) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private DrawProximityDebugLines() : void from class HoverRendererUpdater to private DrawProximityDebugLines() : void from class HoverRendererProximityDebugger",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererUpdater.cs",
+		"startLine": 324,
+		"endLine": 339,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DrawProximityDebugLines() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Hover/Scripts/Renderers/Elements/HoverRendererProximityDebugger.cs",
+		"startLine": 33,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private DrawProximityDebugLines() : void"
+}]
+}
+]
+}]
+}

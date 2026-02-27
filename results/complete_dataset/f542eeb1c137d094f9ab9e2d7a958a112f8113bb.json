@@ -1,0 +1,3486 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/plaidpants/ANKH-VR.git",
+	"sha1": "f542eeb1c137d094f9ab9e2d7a958a112f8113bb",
+	"url": "https://github.com/plaidpants/ANKH-VR/commit/f542eeb1c137d094f9ab9e2d7a958a112f8113bb",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class Title.PICTURE moved to Picture.PICTURE",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 1644,
+		"endLine": 1668,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title.PICTURE"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 7,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Picture.PICTURE"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class Title.PICTURE2 moved to Picture.PICTURE2",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 1670,
+		"endLine": 1687,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title.PICTURE2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 33,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "Picture.PICTURE2"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2363,
+		"endLine": 2363,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2363,
+		"endLine": 2363,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2806,
+		"endLine": 2806,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2806,
+		"endLine": 2806,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainGameObject : in to mapLabelsGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3466,
+		"endLine": 3466,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3466,
+		"endLine": 3466,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 2806,
+		"endLine": 2806,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 2806,
+		"endLine": 2806,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3243,
+		"endLine": 3243,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3243,
+		"endLine": 3243,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1926,
+		"endLine": 1926,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1926,
+		"endLine": 1926,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapLabelsGameObject : in to terrainGameObject : in in method package foreach(child Transform) from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3243,
+		"endLine": 3243,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapLabelsGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3243,
+		"endLine": 3243,
+		"startColumn": 34,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 3029,
+		"endLine": 3029,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainGameObject : in"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 3029,
+		"endLine": 3029,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package ClearTexture(texture Texture2D, color Color) : void from class Title to public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 831,
+		"endLine": 841,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 831,
+		"endLine": 841,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadAVATARPicFile(file string, texture Texture2D) : void from class Title to public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 80,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 80,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 843,
+		"endLine": 985,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 80,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 843,
+		"endLine": 985,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadAVATAREGAFile(file string, texture Texture2D) : void from class Title to public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 224,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 224,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 987,
+		"endLine": 1084,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 224,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 987,
+		"endLine": 1084,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Title to public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 323,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 323,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1086,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 323,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1086,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTITLEEGAPictureFile(file string) : byte[] from class Title to public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type byte[] to Texture2D in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "byte[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter texture : Texture2D in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 66,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "texture : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1106,
+		"endLine": 1124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1106,
+		"endLine": 1124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D from class Title to public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 394,
+		"endLine": 430,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter randomStuff : int in method public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 394,
+		"endLine": 430,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "randomStuff : int"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 394,
+		"endLine": 430,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1137,
+		"endLine": 1184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public EGA_To_Texture2D(raw byte[], texture Texture2D) : void from class Title to public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Texture2D in method public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 443,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter randomStuff : int in method public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 445,
+		"endLine": 445,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "randomStuff : int"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1186,
+		"endLine": 1231,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTITLEEGAPictureFile2(file string) : byte[] from class Title to public LoadTITLEEGAPictureFile2(file string) : byte[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 363,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile2(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 510,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile2(file string) : byte[]"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LoadTITLEEGAPictureFile2(file string) : byte[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 363,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile2(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 510,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile2(file string) : byte[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LoadTITLEEGAPictureFile2(file string) : byte[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 363,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile2(file string) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 510,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LoadTITLEEGAPictureFile2(file string) : byte[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void from class Title to public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 466,
+		"endLine": 516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 602,
+		"endLine": 652,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 466,
+		"endLine": 516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 602,
+		"endLine": 652,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public tHeader : struct from class Title to public tHeader : struct from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tHeader : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public tHeader : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public magic : ushort from class Title to public magic : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public magic : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public magic : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public xsize : ushort from class Title to public xsize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public xsize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public xsize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ysize : ushort from class Title to public ysize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ysize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ysize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __06 : byte from class Title to public __06 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __06 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __06 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __07 : byte from class Title to public __07 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __07 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __07 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __08 : byte from class Title to public __08 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __08 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __08 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __09 : byte from class Title to public __09 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __09 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __09 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public bitsinf : byte from class Title to public bitsinf : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public emark : byte from class Title to public emark : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public emark : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public emark : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public evideo : char from class Title to public evideo : char from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public evideo : char"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public evideo : char"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public edesc : byte from class Title to public edesc : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public edesc : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public edesc : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __0e : byte from class Title to public __0e : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __0e : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __0e : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public esize : ushort from class Title to public esize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public esize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public esize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public tBlock : struct from class Title to public tBlock : struct from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tBlock : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public tBlock : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PBSIZE : ushort from class Title to public PBSIZE : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public size : ushort from class Title to public size : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public size : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public size : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public MBYTE : byte from class Title to public MBYTE : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package RANDOM : ushort[] from class Title to public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 384,
+		"endLine": 393,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 384,
+		"endLine": 393,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1127,
+		"endLine": 1136,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 384,
+		"endLine": 393,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1127,
+		"endLine": 1136,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package ClearTexture(texture Texture2D, color Color) : void from class World to public ClearTexture(texture Texture2D, color Color) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 831,
+		"endLine": 841,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadAVATARPicFile(file string, texture Texture2D) : void from class World to public LoadAVATARPicFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 843,
+		"endLine": 985,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadAVATAREGAFile(file string, texture Texture2D) : void from class World to public LoadAVATAREGAFile(file string, texture Texture2D) : void from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 987,
+		"endLine": 1084,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class World to public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1086,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class World to public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1106,
+		"endLine": 1124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class World to public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1137,
+		"endLine": 1184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class World to public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1186,
+		"endLine": 1231,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public tHeader : struct from class World to public tHeader : struct from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 796,
+		"endLine": 796,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tHeader : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public tHeader : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public magic : ushort from class World to public magic : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 799,
+		"endLine": 799,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public magic : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public magic : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public xsize : ushort from class World to public xsize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 801,
+		"endLine": 801,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public xsize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public xsize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public ysize : ushort from class World to public ysize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 801,
+		"endLine": 801,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ysize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public ysize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __06 : byte from class World to public __06 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 803,
+		"endLine": 803,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __06 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __06 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __07 : byte from class World to public __07 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 804,
+		"endLine": 804,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __07 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __07 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __08 : byte from class World to public __08 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 805,
+		"endLine": 805,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __08 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __08 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __09 : byte from class World to public __09 : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 806,
+		"endLine": 806,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __09 : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __09 : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public bitsinf : byte from class World to public bitsinf : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 808,
+		"endLine": 808,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public emark : byte from class World to public emark : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public emark : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public emark : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public evideo : char from class World to public evideo : char from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 812,
+		"endLine": 812,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public evideo : char"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public evideo : char"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public edesc : byte from class World to public edesc : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 814,
+		"endLine": 814,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public edesc : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public edesc : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public __0e : byte from class World to public __0e : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 816,
+		"endLine": 816,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __0e : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public __0e : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public esize : ushort from class World to public esize : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 818,
+		"endLine": 818,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public esize : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public esize : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public tBlock : struct from class World to public tBlock : struct from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 821,
+		"endLine": 821,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tBlock : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public tBlock : struct"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PBSIZE : ushort from class World to public PBSIZE : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 824,
+		"endLine": 824,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public size : ushort from class World to public size : ushort from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public size : ushort"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public size : ushort"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public MBYTE : byte from class World to public MBYTE : byte from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 828,
+		"endLine": 828,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package RANDOM : ushort[] from class World to public RANDOM : ushort[] from class Picture",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 1127,
+		"endLine": 1136,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Picture from class Title",
+	"leftSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 6,
+		"endLine": 2071,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 80,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 224,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 323,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 343,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string) : byte[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 363,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile2(file string) : byte[]"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 394,
+		"endLine": 430,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 432,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 466,
+		"endLine": 516,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tHeader : struct"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public magic : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public xsize : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ysize : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __06 : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __07 : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __08 : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __09 : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public emark : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public evideo : char"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public edesc : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __0e : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public esize : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tBlock : struct"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public size : ushort"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}, {
+		"filePath": "Assets/Title.cs",
+		"startLine": 384,
+		"endLine": 393,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Title.cs",
+		"startLine": 6,
+		"endLine": 1536,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Title"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 5,
+		"endLine": 653,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Picture"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 490,
+		"endLine": 508,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string) : byte[]"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 510,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile2(file string) : byte[]"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 530,
+		"endLine": 566,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 568,
+		"endLine": 600,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 602,
+		"endLine": 652,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CopyTexture2D(raw byte[], src_x int, src_y int, dst_x int, dst_y int, width int, height int, randomStuff int, destination Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public tHeader : struct"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public magic : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public xsize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ysize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __06 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __07 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __08 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __09 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public emark : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public evideo : char"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public edesc : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __0e : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public esize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public tBlock : struct"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public size : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Picture from class World",
+	"leftSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 6288,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 831,
+		"endLine": 841,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClearTexture(texture Texture2D, color Color) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 843,
+		"endLine": 985,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATARPicFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 987,
+		"endLine": 1084,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1086,
+		"endLine": 1104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1106,
+		"endLine": 1124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1137,
+		"endLine": 1184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1186,
+		"endLine": 1231,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 796,
+		"endLine": 796,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tHeader : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 799,
+		"endLine": 799,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public magic : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 801,
+		"endLine": 801,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public xsize : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 801,
+		"endLine": 801,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ysize : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 803,
+		"endLine": 803,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __06 : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 804,
+		"endLine": 804,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __07 : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 805,
+		"endLine": 805,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __08 : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 806,
+		"endLine": 806,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __09 : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 808,
+		"endLine": 808,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public emark : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 812,
+		"endLine": 812,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public evideo : char"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 814,
+		"endLine": 814,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public edesc : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 816,
+		"endLine": 816,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public __0e : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 818,
+		"endLine": 818,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public esize : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 821,
+		"endLine": 821,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public tBlock : struct"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 824,
+		"endLine": 824,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public size : ushort"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 828,
+		"endLine": 828,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}, {
+		"filePath": "Assets/World.cs",
+		"startLine": 1127,
+		"endLine": 1136,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package RANDOM : ushort[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/World.cs",
+		"startLine": 6,
+		"endLine": 5807,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "World"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 5,
+		"endLine": 653,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Picture"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ClearTexture(texture Texture2D, color Color) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 111,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadAVATARPicFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 255,
+		"endLine": 352,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadAVATAREGAFile(file string, texture Texture2D) : void"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 354,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadTITLEPicPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 374,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LoadTITLEEGAPictureFile(file string, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 394,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public PIC_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 443,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public EGA_To_Texture2D(raw byte[], randomStuff int, texture Texture2D) : Texture2D"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public tHeader : struct"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public magic : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public xsize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public ysize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __06 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __07 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __08 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __09 : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public bitsinf : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public emark : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public evideo : char"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public edesc : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public __0e : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public esize : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public tBlock : struct"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public PBSIZE : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public size : ushort"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public MBYTE : byte"
+}, {
+		"filePath": "Assets/Picture.cs",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 28,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RANDOM : ushort[]"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,402 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedReality-WebRTC.git",
+	"sha1": "fe3d44686b96679c284f46b2f50bfa3532451907",
+	"url": "https://github.com/microsoft/MixedReality-WebRTC/commit/fe3d44686b96679c284f46b2f50bfa3532451907",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package DllImport() from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1551,
+		"endLine": 1555,
+		"startColumn": 30,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DllImport()"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1828,
+		"endLine": 1829,
+		"startColumn": 10,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package DllImport()"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package DllImport() from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1836,
+		"endLine": 1837,
+		"startColumn": 10,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DllImport()"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1549,
+		"endLine": 1553,
+		"startColumn": 30,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package DllImport()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public LocalSdpReadyToSendDelegate(type string, sdp string) : void from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 25,
+		"endColumn": 83,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LocalSdpReadyToSendDelegate(type string, sdp string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public LocalSdpReadyToSendDelegate(type string, sdp string) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter dataChannelHandle : IntPtr in method package RemoveDataChannel(dataChannelHandle IntPtr) from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1324,
+		"endLine": 1328,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveDataChannel(dataChannel DataChannel)"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1337,
+		"endLine": 1337,
+		"startColumn": 41,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dataChannelHandle : IntPtr"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1337,
+		"endLine": 1341,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package RemoveDataChannel(dataChannelHandle IntPtr)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter dataChannel : DataChannel in method package RemoveDataChannel(dataChannel DataChannel) from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1324,
+		"endLine": 1324,
+		"startColumn": 41,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "dataChannel : DataChannel"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1324,
+		"endLine": 1328,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveDataChannel(dataChannel DataChannel)"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1337,
+		"endLine": 1341,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package RemoveDataChannel(dataChannelHandle IntPtr)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void from class PeerConnection.TrackKind.CallbacksWrappers to public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void from class DataChannelInterop",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 850,
+		"endLine": 854,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 82,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void from class PeerConnection.TrackKind.CallbacksWrappers to public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void from class DataChannelInterop",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 857,
+		"endLine": 861,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 89,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DataChannelStateCallback(userData IntPtr, state int, id int) : void from class PeerConnection.TrackKind.CallbacksWrappers to public DataChannelStateCallback(userData IntPtr, state int, id int) : void from class DataChannelInterop",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 864,
+		"endLine": 868,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelStateCallback(userData IntPtr, state int, id int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 96,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DataChannelStateCallback(userData IntPtr, state int, id int) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class DataChannelInterop from class PeerConnection.TrackKind.CallbacksWrappers",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 578,
+		"endLine": 869,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "PeerConnection.TrackKind.CallbacksWrappers"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 850,
+		"endLine": 854,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 857,
+		"endLine": 861,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 864,
+		"endLine": 868,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DataChannelStateCallback(userData IntPtr, state int, id int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 601,
+		"endLine": 885,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "PeerConnection.TrackKind.CallbacksWrappers"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 7,
+		"endLine": 151,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "DataChannelInterop"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 82,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public DataChannelMessageCallback(userData IntPtr, data IntPtr, size ulong) : void"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 89,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public DataChannelBufferingCallback(userData IntPtr, previous ulong, current ulong, limit ulong) : void"
+}, {
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/Interop/DataChannelInterop.cs",
+		"startLine": 96,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public DataChannelStateCallback(userData IntPtr, state int, id int) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public EncodedIceServers : string from class PeerConnection.NativeMethods to public EncodedIceServers : string from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1449,
+		"endLine": 1449,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public EncodedIceServers : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1448,
+		"endLine": 1448,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public EncodedIceServers : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public IceTransportType : IceTransportType from class PeerConnection.NativeMethods to public IceTransportType : IceTransportType from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1450,
+		"endLine": 1450,
+		"startColumn": 41,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IceTransportType : IceTransportType"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1449,
+		"endLine": 1449,
+		"startColumn": 41,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public IceTransportType : IceTransportType"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public BundlePolicy : BundlePolicy from class PeerConnection.NativeMethods to public BundlePolicy : BundlePolicy from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1451,
+		"endLine": 1451,
+		"startColumn": 37,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public BundlePolicy : BundlePolicy"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1450,
+		"endLine": 1450,
+		"startColumn": 37,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public BundlePolicy : BundlePolicy"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SdpSemantic : SdpSemantic from class PeerConnection.NativeMethods to public SdpSemantic : SdpSemantic from class PeerConnection",
+	"leftSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1452,
+		"endLine": 1452,
+		"startColumn": 36,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SdpSemantic : SdpSemantic"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/Microsoft.MixedReality.WebRTC/PeerConnection.cs",
+		"startLine": 1451,
+		"endLine": 1451,
+		"startColumn": 36,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SdpSemantic : SdpSemantic"
+}]
+}
+]
+}]
+}

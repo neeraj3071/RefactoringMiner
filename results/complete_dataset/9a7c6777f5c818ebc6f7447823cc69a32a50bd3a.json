@@ -1,0 +1,366 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/yutakasi634/Coral-iMD-VR.git",
+	"sha1": "9a7c6777f5c818ebc6f7447823cc69a32a50bd3a",
+	"url": "https://github.com/yutakasi634/Coral-iMD-VR/commit/9a7c6777f5c818ebc6f7447823cc69a32a50bd3a",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class SystemManager renamed to SystemObserver",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 6,
+		"endLine": 66,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SystemManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SystemObserver.cs",
+		"startLine": 6,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "SystemObserver"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable system : TomlTable in method package Start() : void from class InitialConfGenerator",
+	"leftSideLocations": [{
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "system : TomlTable"
+}, {
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable particles : List<TomlTable> in method package Start() : void from class InitialConfGenerator",
+	"leftSideLocations": [{
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 25,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "particles : List<TomlTable>"
+}, {
+		"filePath": "Assets/InitialConfGenerator.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter upper_boundary : Vector3 in method package Init(general_particles List<GameObject>, upper_boundary Vector3, lower_boundary Vector3, timescale float) : void from class SystemManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "upper_boundary : Vector3"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 44,
+		"endLine": 52,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Init(general_particles List<GameObject>, upper_boundary Vector3, lower_boundary Vector3, timescale float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SystemObserver.cs",
+		"startLine": 17,
+		"endLine": 22,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Init(general_particles List<GameObject>, timescale float) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter lower_boundary : Vector3 in method package Init(general_particles List<GameObject>, upper_boundary Vector3, lower_boundary Vector3, timescale float) : void from class SystemManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "lower_boundary : Vector3"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 44,
+		"endLine": 52,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Init(general_particles List<GameObject>, upper_boundary Vector3, lower_boundary Vector3, timescale float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SystemObserver.cs",
+		"startLine": 17,
+		"endLine": 22,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Init(general_particles List<GameObject>, timescale float) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private FixedUpdate() : void from class SystemManager to private FixedUpdate() : void from class ReflectingBoundaryManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 20,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 16,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private FixedUpdate() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_GeneralParticles : in to m_Rigidbodies : in in method private FixedUpdate() : void from class ReflectingBoundaryManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 37,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_GeneralParticles : in"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_Rigidbodies : in"
+}, {
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private m_UpperBoundary : Vector3 from class SystemManager to private m_UpperBoundary : Vector3 from class ReflectingBoundaryManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_UpperBoundary : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private m_UpperBoundary : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private m_LowerBoundary : Vector3 from class SystemManager to private m_LowerBoundary : Vector3 from class ReflectingBoundaryManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_LowerBoundary : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private m_LowerBoundary : Vector3"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ReflectingBoundaryManager from class SystemManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 6,
+		"endLine": 66,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SystemManager"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 20,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private FixedUpdate() : void"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_UpperBoundary : Vector3"
+}, {
+		"filePath": "Assets/SystemManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_LowerBoundary : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SystemObserver.cs",
+		"startLine": 6,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SystemObserver"
+}, {
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 5,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ReflectingBoundaryManager"
+}, {
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 16,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private FixedUpdate() : void"
+}, {
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private m_UpperBoundary : Vector3"
+}, {
+		"filePath": "Assets/ReflectingBoundaryManager.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private m_LowerBoundary : Vector3"
+}]
+}
+]
+}]
+}

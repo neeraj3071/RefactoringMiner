@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "668b0aeaadee882185f9b9336bc9ded54991ca81",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/668b0aeaadee882185f9b9336bc9ded54991ca81",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable tempZipPath : moduleMetadata to dllPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dllPath : moduleMetadata to tempZipPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public ResetVRCAvatarConf() : void renamed to public ResetAvatarOscManifests() : void in class RiskySettingsViewModel",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 49,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ResetVRCAvatarConf() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 67,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ResetAvatarOscManifests() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private IParamSupervisor : readonly from class RiskySettingsViewModel",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IParamSupervisor : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/ViewModels/RiskySettingsViewModel.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 22,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private IParamSupervisor : readonly"
+}]
+}
+]
+}]
+}

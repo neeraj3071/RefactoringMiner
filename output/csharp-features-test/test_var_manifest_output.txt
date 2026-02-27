@@ -1,0 +1,140 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_var_manifest.cs
+Size: 184 chars
+--- C# Source Content (first 500 chars) ---
+public class TestManifest {
+    public void TestMethod() {
+        var manifest = new AggregationManifest();
+        AggregationManifest manifest2 = new AggregationManifest();
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_var_manifest.cs
+CPatMinerExecutor: Executing CPatMiner transformation (184 chars)...
+unit [0,0]
+    class [0,183]
+        specifier: public [0,6]
+        name: TestManifest [13,25]
+        block [26,183]
+            function [32,181]
+                type [32,43]
+                    specifier: public [32,38]
+                    name: void [39,43]
+                name: TestMethod [44,54]
+                parameter_list [54,56]
+                block [57,181]
+                    block_content [58,180]
+                        decl_stmt [67,108]
+                            decl [67,107]
+                                type [67,70]
+                                    name: var [67,70]
+                                name: manifest [71,79]
+                                init [80,107]
+                                    expr [82,107]
+                                        operator: new [82,85]
+                                        call [86,107]
+                                            name: AggregationManifest [86,105]
+                                            argument_list [105,107]
+                        decl_stmt [117,175]
+                            decl [117,174]
+                                type [117,136]
+                                    name: AggregationManifest [117,136]
+                                name: manifest2 [137,146]
+                                init [147,174]
+                                    expr [149,174]
+                                        operator: new [149,152]
+                                        call [153,174]
+                                            name: AggregationManifest [153,172]
+                                            argument_list [172,174]
+[VAR INFERENCE] Detected var type for variable: manifest
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: ClassInstanceCreation = new AggregationManifest()
+[VAR INFERENCE] SUCCESS - Inferred type: AggregationManifest
+public class TestManifest {
+  public Void TestMethod(){
+    AggregationManifest manifest=new AggregationManifest();
+    AggregationManifest manifest2=new AggregationManifest();
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 183 chars
+  - Number of lines: 6
+
+=== Generated Java Code (Full Output) ===
+public class TestManifest {
+  public Void TestMethod(){
+    AggregationManifest manifest=new AggregationManifest();
+    AggregationManifest manifest2=new AggregationManifest();
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_var_manifest.java
+  - File contents size: 183 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_var_manifest.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestManifest
+  Type: Class
+  Package: 
+  Source file: tests/test_var_manifest.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

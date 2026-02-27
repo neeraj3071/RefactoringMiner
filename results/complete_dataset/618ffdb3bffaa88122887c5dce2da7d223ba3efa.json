@@ -1,0 +1,993 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "618ffdb3bffaa88122887c5dce2da7d223ba3efa",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/618ffdb3bffaa88122887c5dce2da7d223ba3efa",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable enabledPanels : in to controlPanel : in in method package positionActivePanels() : void from class MainUIController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 32,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "enabledPanels : in"
+}, {
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "controlPanel : in"
+}, {
+		"filePath": "Assets/Scripts/MainUIController.cs",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package EnsureUsername() : void renamed to package ensureUsername() : void in class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 118,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EnsureUsername() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 135,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package ensureUsername() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private setNetworkAddress(destination NetworkConnection) : void renamed to public SetNetworkAddress(destination NetworkConnection) : void in class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setNetworkAddress(destination NetworkConnection) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 115,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SetNetworkAddress(destination NetworkConnection) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package UpdateLocalPlayerAvatar(username string) : void renamed to package updateLocalAvatar() : void in class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 245,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateLocalPlayerAvatar(username string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 224,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package updateLocalAvatar() : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method package SetUsername(uName string) : void inlined to public RandomizeUsername() : void in class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 164,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package SetUsername(uName string) : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 181,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public RandomizeUsername() : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "SetUsername(manager.GenerateUsername())"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 174,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 173,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 154,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public RandomizeUsername() : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute manager : SimulationManager to manager : SimulationManager in method public RandomizeUsername() : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 27,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "manager : SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "manager : SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Disconnect() : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 231,
+		"endLine": 243,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Disconnect() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 210,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Disconnect() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute manager : SimulationManager to manager : SimulationManager in method public SetNetworkAddress(destination NetworkConnection) : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 27,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "manager : SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "manager : SimulationManager"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetNetworkAddress(destination NetworkConnection) : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setNetworkAddress(destination NetworkConnection) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 115,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetNetworkAddress(destination NetworkConnection) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter username : string in method package UpdateLocalPlayerAvatar(username string) : void from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "username : string"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 245,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateLocalPlayerAvatar(username string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 224,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package updateLocalAvatar() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SetNetworkAddress(destination string) : void from class NetworkController to public SetNetworkAddress(address string) : void from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 74,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetNetworkAddress(destination string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetNetworkAddress(address string) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter destination : string to address : string in method public SetNetworkAddress(address string) : void from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 35,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destination : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "address : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public connectButton : Button from class NetworkController to public connectButton : Button from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public connectButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public randomizeUsernameButton : Button from class NetworkController to public randomizeUsernameButton : Button from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public randomizeUsernameButton : Button"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public randomizeUsernameButton : Button"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public connectButtonText : TMPro.TMP_Text from class NetworkController to public connectButtonText : TMPro.TMP_Text from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectButtonText : TMPro.TMP_Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public connectButtonText : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public m_EndpointField : InputField from class NetworkController to public m_EndpointField : TMPro.TMP_InputField from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public m_EndpointField : TMPro.TMP_InputField"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_EndpointField : InputField to m_EndpointField : TMPro.TMP_InputField in class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_EndpointField : InputField"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_EndpointField : TMPro.TMP_InputField"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public connectionStatusText : Text from class NetworkController to public connectionStatusText : TMPro.TMP_Text from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectionStatusText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public connectionStatusText : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type connectionStatusText : Text to connectionStatusText : TMPro.TMP_Text in class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "connectionStatusText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "connectionStatusText : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public usernameText : Text from class NetworkController to public usernameText : TMPro.TMP_Text from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public usernameText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public usernameText : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type usernameText : Text to usernameText : TMPro.TMP_Text in class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "usernameText : Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "usernameText : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public debugMessages : TMPro.TMP_Text from class NetworkController to public debugMessages : TMPro.TMP_Text from class NetworkUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public debugMessages : TMPro.TMP_Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public debugMessages : TMPro.TMP_Text"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class NetworkUI from class NetworkController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 14,
+		"endLine": 455,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "NetworkController"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 74,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetNetworkAddress(destination string) : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public randomizeUsernameButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectButtonText : TMPro.TMP_Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m_EndpointField : InputField"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public connectionStatusText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public usernameText : Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public debugMessages : TMPro.TMP_Text"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Network/NetworkController.cs",
+		"startLine": 11,
+		"endLine": 430,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "NetworkController"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 6,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "NetworkUI"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetNetworkAddress(address string) : void"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public connectButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public randomizeUsernameButton : Button"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public connectButtonText : TMPro.TMP_Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public m_EndpointField : TMPro.TMP_InputField"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public connectionStatusText : TMPro.TMP_Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public usernameText : TMPro.TMP_Text"
+}, {
+		"filePath": "Assets/Scripts/Network/NetworkUI.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public debugMessages : TMPro.TMP_Text"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/two-forks-vr.git",
+	"sha1": "bd8d6927f69b0bfe60346ba6424fdebb84a5fcfd",
+	"url": "https://github.com/Raicuparta/two-forks-vr/commit/bd8d6927f69b0bfe60346ba6424fdebb84a5fcfd",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter bodyTransform : Transform in method private HideBody(bodyTransform Transform) : void from class VRBodyManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 51,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpPlayerBody() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Body/VRBodyManager.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 31,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "bodyTransform : Transform"
+}, {
+		"filePath": "TwoForksVR/Body/VRBodyManager.cs",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private HideBody(bodyTransform Transform) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private SetUpPlayerBody() : void from class TwoForksVR to private HideBody(bodyTransform Transform) : void from class VRBodyManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 51,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpPlayerBody() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/Body/VRBodyManager.cs",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private HideBody(bodyTransform Transform) : void"
+}]
+}
+]
+}]
+}

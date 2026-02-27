@@ -1,0 +1,285 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/rogerbarton/vr-modeling.git",
+	"sha1": "1dbbb93add0a5e5ff746dd435a13104d0fe7027b",
+	"url": "https://github.com/rogerbarton/vr-modeling/commit/1dbbb93add0a5e5ff746dd435a13104d0fe7027b",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class UiDetails renamed to UiMeshDetails",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiMeshDetails.cs",
+		"startLine": 16,
+		"endLine": 299,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "UiDetails"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiMeshDetails.cs",
+		"startLine": 17,
+		"endLine": 300,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "UiMeshDetails"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter go : GameObject to item : GameObject in method public Remove(item GameObject) : void from class UiCollapsible",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiCollapsible.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "go : GameObject"
+}, {
+		"filePath": "Assets/Scripts/UI/Components/UiCollapsible.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiCollapsible.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 28,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "item : GameObject"
+}, {
+		"filePath": "Assets/Scripts/UI/Components/UiCollapsible.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SetMode(mode PivotMode) : void from class UiPivotMode",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiPivotMode.cs",
+		"startLine": 49,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetMode(mode PivotMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiPivotMode.cs",
+		"startLine": 55,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetMode(mode PivotMode) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SetMode(mode SelectionMode) : void from class UiSelectionMode",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 43,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetMode(mode SelectionMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 55,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetMode(mode SelectionMode) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ToggleNewSelectionOnDraw() : void from class UiSelectionMode",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 61,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToggleNewSelectionOnDraw() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 73,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ToggleNewSelectionOnDraw() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ToggleDiscardSelectionOnDraw() : void from class UiSelectionMode",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 77,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToggleDiscardSelectionOnDraw() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Components/UiSelectionMode.cs",
+		"startLine": 89,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ToggleDiscardSelectionOnDraw() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SetTooltip(data string, overrideExisting bool) : void from class UiInputHints",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 57,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetTooltip(data string, overrideExisting bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 182,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetTooltip(data string, overrideExisting bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ClearTooltip() : void from class UiInputHints",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ClearTooltip() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 188,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ClearTooltip() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private OnActiveMeshChanged() : void from class UiInputHints",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 173,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnActiveMeshChanged() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/Hints/UiInputHints.cs",
+		"startLine": 210,
+		"endLine": 217,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private OnActiveMeshChanged() : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type UiDetails to UiMeshDetails in method public CreateDetailsPanel() : UiMeshDetails from class UiManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiManager.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "UiDetails"
+}, {
+		"filePath": "Assets/Scripts/UI/UiManager.cs",
+		"startLine": 77,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateDetailsPanel() : UiDetails"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiManager.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "UiMeshDetails"
+}, {
+		"filePath": "Assets/Scripts/UI/UiManager.cs",
+		"startLine": 77,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public CreateDetailsPanel() : UiMeshDetails"
+}]
+}
+]
+}]
+}

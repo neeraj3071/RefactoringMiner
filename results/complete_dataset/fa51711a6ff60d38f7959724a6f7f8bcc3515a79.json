@@ -1,0 +1,459 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vitrivr/vitrivr-vr.git",
+	"sha1": "fa51711a6ff60d38f7959724a6f7f8bcc3515a79",
+	"url": "https://github.com/vitrivr/vitrivr-vr/commit/fa51711a6ff60d38f7959724a6f7f8bcc3515a79",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute MAXNeighbors : int to MaxNeighbors : int in class CanvasImageSequenceDisplay",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/Display/CanvasImageSequenceDisplay.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "MAXNeighbors : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Media/Display/CanvasImageSequenceDisplay.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "MaxNeighbors : int"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type QueryEvent.CategoryEnum to CategoryEnum in method private TermTypeToDresCategory() : CategoryEnum from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 341,
+		"endLine": 341,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "QueryEvent.CategoryEnum"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 341,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TermTypeToDresCategory() : QueryEvent.CategoryEnum"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CategoryEnum"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 270,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private TermTypeToDresCategory() : CategoryEnum"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private LogResults() : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 147,
+		"endLine": 155,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LogResults() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 113,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private LogResults() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private LogResults() : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 147,
+		"endLine": 155,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LogResults() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 113,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private LogResults() : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<ScoredSegment>, query SimilarityQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<ScoredSegment>, query SimilarityQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<ScoredSegment>, query StagedSimilarityQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<ScoredSegment>, query StagedSimilarityQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<TemporalObject>, query TemporalQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type timestamp : var to timestamp : long in method public LogResults(timestamp long, sortType string, results IEnumerable<TemporalObject>, query TemporalQuery) : void from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timestamp : var"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "timestamp : long"
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Instance : DresClient to _instance : DresClient in class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Instance : DresClient"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_instance : DresClient"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private _instance : DresClient from class DresClientManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Instance : DresClient"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VitrivrVR/Submission/DresClientManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _instance : DresClient"
+}]
+}
+]
+}]
+}

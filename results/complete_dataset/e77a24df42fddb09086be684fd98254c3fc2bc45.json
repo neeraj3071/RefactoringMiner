@@ -1,0 +1,255 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "e77a24df42fddb09086be684fd98254c3fc2bc45",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/e77a24df42fddb09086be684fd98254c3fc2bc45",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter defaultToExpanded : bool in method public PropertyData(template string, serializedObject SerializedObject, children InspectorData[], property SerializedProperty, defaultToExpanded bool) from class PropertyData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/PropertyData.cs",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PropertyData(template string, serializedObject SerializedObject, children InspectorData[], property SerializedProperty)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/PropertyData.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 129,
+		"endColumn": 151,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "defaultToExpanded : bool"
+}, {
+		"filePath": "Scripts/Data/PropertyData.cs",
+		"startLine": 13,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PropertyData(template string, serializedObject SerializedObject, children InspectorData[], property SerializedProperty, defaultToExpanded bool)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter expanded : bool in method public UpdateSelf(width float, depth int, expanded bool) : void from class InspectorArrayHeaderItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorArrayHeaderItem.cs",
+		"startLine": 14,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorArrayHeaderItem.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 58,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "expanded : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorArrayHeaderItem.cs",
+		"startLine": 13,
+		"endLine": 21,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSelf(width float, depth int, expanded bool) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter expanded : bool in method public UpdateSelf(width float, depth int, expanded bool) : void from class InspectorComponentItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 44,
+		"endLine": 52,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 58,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "expanded : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 43,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSelf(width float, depth int, expanded bool) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter expanded : bool in method public UpdateSelf(width float, depth int, expanded bool) : void from class InspectorListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorListItem.cs",
+		"startLine": 116,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorListItem.cs",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 57,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "expanded : bool"
+}, {
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorListItem.cs",
+		"startLine": 118,
+		"endLine": 132,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSelf(width float, depth int, expanded bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package ToggleExpanded(handle BaseHandle, eventData HandleEventData) : void from class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 116,
+		"endLine": 119,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ToggleExpanded(handle BaseHandle, eventData HandleEventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package ToggleExpanded(handle BaseHandle, eventData HandleEventData) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package SelectFolder(baseHandle BaseHandle, eventData HandleEventData) : void from class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 121,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SelectFolder(baseHandle BaseHandle, eventData HandleEventData) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SelectFolder(baseHandle BaseHandle, eventData HandleEventData) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter expanded : bool in method public UpdateSelf(width float, depth int, expanded bool, selected bool) : void from class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 84,
+		"endLine": 114,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 49,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "expanded : bool"
+}, {
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 85,
+		"endLine": 115,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSelf(width float, depth int, expanded bool, selected bool) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter selected : bool in method public UpdateSelf(width float, depth int, expanded bool, selected bool) : void from class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 84,
+		"endLine": 114,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 64,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "selected : bool"
+}, {
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 85,
+		"endLine": 115,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSelf(width float, depth int, expanded bool, selected bool) : void"
+}]
+}
+]
+}]
+}

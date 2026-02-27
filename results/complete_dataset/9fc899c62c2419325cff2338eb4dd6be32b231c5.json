@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/nightingaleproject/vrdr-dotnet.git",
+	"sha1": "9fc899c62c2419325cff2338eb4dd6be32b231c5",
+	"url": "https://github.com/nightingaleproject/vrdr-dotnet/commit/9fc899c62c2419325cff2338eb4dd6be32b231c5",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(dataAbsent != null || part.Value == null) to if(part != null && part.Value != null) in method private GetPartialDate(partialDateTime Extension, partURL string) from class DeathRecord",
+	"leftSideLocations": [{
+		"filePath": "VRDR/DeathRecord_util.cs",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(dataAbsent != null || part.Value == null)"
+}, {
+		"filePath": "VRDR/DeathRecord_util.cs",
+		"startLine": 42,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetPartialDate(partialDateTime Extension, partURL string)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRDR/DeathRecord_util.cs",
+		"startLine": 36,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(part != null && part.Value != null)"
+}, {
+		"filePath": "VRDR/DeathRecord_util.cs",
+		"startLine": 31,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private GetPartialDate(partialDateTime Extension, partURL string)"
+}]
+}
+]
+}]
+}

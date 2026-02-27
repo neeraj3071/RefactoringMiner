@@ -1,0 +1,609 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/myieye/cube-arena.git",
+	"sha1": "78118f0ef9c8a0979f5ff82a406f526c6518b8d9",
+	"url": "https://github.com/myieye/cube-arena/commit/78118f0ef9c8a0979f5ff82a406f526c6518b8d9",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter doOneTimeQuestions : bool in method public DoSurvey(players List<NetworkPlayer>, surveyFinishedListener SurveyFinishedListener, doOneTimeQuestions bool) : void from class Surveyer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DoSurvey(players List<NetworkPlayer>, surveyFinishedListener SurveyFinishedListener) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 60,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "doOneTimeQuestions : bool"
+}, {
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 80,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public DoSurvey(players List<NetworkPlayer>, surveyFinishedListener SurveyFinishedListener, doOneTimeQuestions bool) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter doOneTimeQuestions : bool in method public TargetDoSurvey(target NetworkConnection, playerId int, doOneTimeQuestions bool) : void from class Surveyer",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 91,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TargetDoSurvey(target NetworkConnection, playerId int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 77,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "doOneTimeQuestions : bool"
+}, {
+		"filePath": "Assets/MyScripts/Logging/Survey/Surveyer.cs",
+		"startLine": 93,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TargetDoSurvey(target NetworkConnection, playerId int, doOneTimeQuestions bool) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private InitRoundConfig() : bool renamed to private DoRoundSetup() : bool in class RoundManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 142,
+		"endLine": 167,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private InitRoundConfig() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 133,
+		"endLine": 146,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private DoRoundSetup() : bool"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute public InPracticeMode : bool from class RoundManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 15,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public InPracticeMode : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 15,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "public InPracticeMode : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 240,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "private IsTimeForNextUIMode() : bool"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private IsTimeForNextUIMode() : bool extracted from private StartNewRound() : void in class RoundManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 105,
+		"endLine": 140,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private StartNewRound() : void"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 8,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 240,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private IsTimeForNextUIMode() : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 105,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private StartNewRound() : void"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "IsTimeForNextUIMode()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private InitDeviceRoundConfig() : bool extracted from private InitRoundConfig() : bool in class RoundManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 142,
+		"endLine": 167,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private InitRoundConfig() : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 8,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 7,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 6,
+		"endColumn": 12,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 6,
+		"endColumn": 12,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 143,
+		"endLine": 164,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 146,
+		"endLine": 152,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 147,
+		"endLine": 149,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 157,
+		"endLine": 162,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 146,
+		"endLine": 152,
+		"startColumn": 99,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 147,
+		"endLine": 149,
+		"startColumn": 28,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 157,
+		"endLine": 162,
+		"startColumn": 89,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 148,
+		"endLine": 173,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private InitDeviceRoundConfig() : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 8,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 7,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 6,
+		"endColumn": 12,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 6,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 6,
+		"endColumn": 12,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 149,
+		"endLine": 170,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 152,
+		"endLine": 158,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 153,
+		"endLine": 155,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 163,
+		"endLine": 168,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 152,
+		"endLine": 158,
+		"startColumn": 99,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 153,
+		"endLine": 155,
+		"startColumn": 28,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 163,
+		"endLine": 168,
+		"startColumn": 89,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 133,
+		"endLine": 146,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private DoRoundSetup() : bool"
+}, {
+		"filePath": "Assets/MyScripts/PlayConfig/Rounds/RoundManager.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "InitDeviceRoundConfig()"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter withOneTimeQuestions : bool in method public GetShuffledSurveyQuestions(withOneTimeQuestions bool) : IList<Question> from class QuestionService",
+	"leftSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Models/QuestionService.cs",
+		"startLine": 89,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetShuffledSurveyQuestions() : IList<Question>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MyScripts/Logging/Survey/Models/QuestionService.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 67,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "withOneTimeQuestions : bool"
+}, {
+		"filePath": "Assets/MyScripts/Logging/Survey/Models/QuestionService.cs",
+		"startLine": 89,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GetShuffledSurveyQuestions(withOneTimeQuestions bool) : IList<Question>"
+}]
+}
+]
+}]
+}

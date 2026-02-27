@@ -1,0 +1,390 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "a96ced0fc03a0013696eda3de28bd155ae1bd1b3",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/a96ced0fc03a0013696eda3de28bd155ae1bd1b3",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class QueryableParameterValueEntryVisibilityConverter.QueryableParameterBoolValueEntryVisibilityConverter.QueryableParameterIntValueEntryVisibilityConverter.QueryableParameterFloatValueEntryVisibilityConverter.QueryableParameterHasActionVisibilityConverter.BoolValueConverter moved to QueryableParameterValueEntryVisibilityConverter.QueryableParameterBoolValueEntryVisibilityConverter.QueryableParameterIntValueEntryVisibilityConverter.QueryableParameterFloatValueEntryVisibilityConverter.BoolValueConverter",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterConverters.cs",
+		"startLine": 89,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "QueryableParameterValueEntryVisibilityConverter.QueryableParameterBoolValueEntryVisibilityConverter.QueryableParameterIntValueEntryVisibilityConverter.QueryableParameterFloatValueEntryVisibilityConverter.QueryableParameterHasActionVisibilityConverter.BoolValueConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterConverters.cs",
+		"startLine": 73,
+		"endLine": 94,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "QueryableParameterValueEntryVisibilityConverter.QueryableParameterBoolValueEntryVisibilityConverter.QueryableParameterIntValueEntryVisibilityConverter.QueryableParameterFloatValueEntryVisibilityConverter.BoolValueConverter"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class QueryableParameterEditWindow renamed to QueryableParameterListEditWindow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 17,
+		"endLine": 55,
+		"startColumn": 16,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "QueryableParameterEditWindow"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 16,
+		"endLine": 51,
+		"startColumn": 16,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "QueryableParameterListEditWindow"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class QueryableParameterSettingView renamed to QueryableParameterView",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterSettingView.xaml.cs",
+		"startLine": 12,
+		"endLine": 39,
+		"startColumn": 16,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "QueryableParameterSettingView"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterView.xaml.cs",
+		"startLine": 13,
+		"endLine": 37,
+		"startColumn": 16,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "QueryableParameterView"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public abstract Add() : void from class ListModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 20,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Add() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public abstract Add() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract Add() : void from class ListModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 20,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Add() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract Add() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public abstract Remove(item object) : void from class ListModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Remove(item object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public abstract Remove(item object) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract Remove(item object) : void from class ListModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Remove(item object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract Remove(item object) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter defaultValues : IEnumerable<T> in method protected ListModuleSetting(title string, description string, viewType Type, defaultValues IEnumerable<T>) from class ListModuleSetting",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 82,
+		"endColumn": 110,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "defaultValues : IEnumerable<T>"
+}, {
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected ListModuleSetting(title string, description string, viewType Type, defaultValues IEnumerable<T>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/SDK/Modules/Attributes/Settings/ListModuleSetting.cs",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected ListModuleSetting(title string, description string, viewType Type)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type QueryableParameterList : QueryableParameterList to QueryableParameterList : IEnumerable in class QueryableParameterListEditWindow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 35,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "QueryableParameterList : QueryableParameterList"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "QueryableParameterList : IEnumerable"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type queryableParameterList : QueryableParameterList to moduleSetting : ListModuleSetting in method public QueryableParameterListEditWindow(moduleSetting ListModuleSetting) from class QueryableParameterListEditWindow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 41,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "queryableParameterList : QueryableParameterList"
+}, {
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 45,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "moduleSetting : ListModuleSetting"
+}, {
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter queryableParameterList : QueryableParameterList to moduleSetting : ListModuleSetting in method public QueryableParameterListEditWindow(moduleSetting ListModuleSetting) from class QueryableParameterListEditWindow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 41,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "queryableParameterList : QueryableParameterList"
+}, {
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterEditWindow.xaml.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 45,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "moduleSetting : ListModuleSetting"
+}, {
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListEditWindow.xaml.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private QueryableParameterSettingView_OnLoaded(sender object, e RoutedEventArgs) : void from class QueryableParameterSettingView to private OnLoaded(sender object, e RoutedEventArgs) : void from class QueryableParameterListModuleSettingView",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterSettingView.xaml.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private QueryableParameterSettingView_OnLoaded(sender object, e RoutedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListModuleSettingView.xaml.cs",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private OnLoaded(sender object, e RoutedEventArgs) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private EditButton_OnClick(sender object, e RoutedEventArgs) : void from class QueryableParameterSettingView to private EditButton_OnClick(sender object, e RoutedEventArgs) : void from class QueryableParameterListModuleSettingView",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterSettingView.xaml.cs",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EditButton_OnClick(sender object, e RoutedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListModuleSettingView.xaml.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private EditButton_OnClick(sender object, e RoutedEventArgs) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private windowManager : WindowManager from class QueryableParameterSettingView to private windowManager : WindowManager from class QueryableParameterListModuleSettingView",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterSettingView.xaml.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private windowManager : WindowManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.App/UI/Views/Modules/Settings/QueryableParameter/QueryableParameterListModuleSettingView.xaml.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private windowManager : WindowManager"
+}]
+}
+]
+}]
+}

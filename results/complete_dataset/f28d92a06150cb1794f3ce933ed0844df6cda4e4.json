@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "f28d92a06150cb1794f3ce933ed0844df6cda4e4",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/f28d92a06150cb1794f3ce933ed0844df6cda4e4",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_InstanceID : int to instanceID : int in class AssetData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_InstanceID : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "instanceID : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public instanceID : int from class AssetData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_InstanceID : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public instanceID : int"
+}]
+}
+]
+}]
+}

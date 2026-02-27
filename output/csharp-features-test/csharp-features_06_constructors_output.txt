@@ -1,0 +1,366 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/06_constructors.cs
+Size: 1503 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for constructor declarations with various parameter patterns.
+    /// Tests transformation of C# constructors to Java constructors.
+    /// </summary>
+    public class Constructors
+    {
+        private int _id;
+        private string _name;
+        private bool _isActive;
+        
+        // Default parameterless constructor
+        public Constructors()
+        {
+            _id = 0;
+            _name = "Defaul
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/06_constructors.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1503 chars)...
+unit [0,0]
+    namespace [0,1502]
+        name: TestFeatures [10,22]
+        block [23,1502]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for constructor declarations with various parameter patterns. [70,145]
+            comment: /// Tests transformation of C# constructors to Java constructors. [150,215]
+            comment: ///</summary> [220,234]
+            class [239,1500]
+                specifier: public [239,245]
+                name: Constructors [252,264]
+                block [269,1500]
+                    decl_stmt [279,295]
+                        decl [279,294]
+                            type [279,290]
+                                specifier: private [279,286]
+                                name: int [287,290]
+                            name: _id [291,294]
+                    decl_stmt [304,325]
+                        decl [304,324]
+                            type [304,318]
+                                specifier: private [304,311]
+                                name: string [312,318]
+                            name: _name [319,324]
+                    decl_stmt [334,357]
+                        decl [334,356]
+                            type [334,346]
+                                specifier: private [334,341]
+                                name: bool [342,346]
+                            name: _isActive [347,356]
+                    comment: // Default parameterless constructor [375,411]
+                    constructor [420,544]
+                        specifier: public [420,426]
+                        name: Constructors [427,439]
+                        parameter_list [439,441]
+                        block [450,544]
+                            block_content [451,543]
+                                expr_stmt [464,472]
+                                    expr [464,471]
+                                        name: _id [464,467]
+                                        operator: = [468,469]
+                                        literal: 0 [470,471]
+                                expr_stmt [485,503]
+                                    expr [485,502]
+                                        name: _name [485,490]
+                                        operator: = [491,492]
+                                        literal: "Default" [493,502]
+                                expr_stmt [516,534]
+                                    expr [516,533]
+                                        name: _isActive [516,525]
+                                        operator: = [526,527]
+                                        literal: false [528,533]
+                    comment: // Constructor with single parameter [562,598]
+                    constructor [607,738]
+                        specifier: public [607,613]
+                        name: Constructors [614,626]
+                        parameter_list [626,634]
+                            parameter [627,633]
+                                decl [627,633]
+                                    type [627,630]
+                                        name: int [627,630]
+                                    name: id [631,633]
+                        block [643,738]
+                            block_content [644,737]
+                                expr_stmt [657,666]
+                                    expr [657,665]
+                                        name: _id [657,660]
+                                        operator: = [661,662]
+                                        name: id [663,665]
+                                expr_stmt [679,697]
+                                    expr [679,696]
+                                        name: _name [679,684]
+                                        operator: = [685,686]
+                                        literal: "Default" [687,696]
+                                expr_stmt [710,728]
+                                    expr [710,727]
+                                        name: _isActive [710,719]
+                                        operator: = [720,721]
+                                        literal: false [722,727]
+                    comment: // Constructor with multiple parameters [756,795]
+                    constructor [804,943]
+                        specifier: public [804,810]
+                        name: Constructors [811,823]
+                        parameter_list [823,844]
+                            parameter [824,830]
+                                decl [824,830]
+                                    type [824,827]
+                                        name: int [824,827]
+                                    name: id [828,830]
+                            parameter [832,843]
+                                decl [832,843]
+                                    type [832,838]
+                                        name: string [832,838]
+                                    name: name [839,843]
+                        block [853,943]
+                            block_content [854,942]
+                                expr_stmt [867,876]
+                                    expr [867,875]
+                                        name: _id [867,870]
+                                        operator: = [871,872]
+                                        name: id [873,875]
+                                expr_stmt [889,902]
+                                    expr [889,901]
+                                        name: _name [889,894]
+                                        operator: = [895,896]
+                                        name: name [897,901]
+                                expr_stmt [915,933]
+                                    expr [915,932]
+                                        name: _isActive [915,924]
+                                        operator: = [925,926]
+                                        literal: false [927,932]
+                    comment: // Constructor with all parameters [961,995]
+                    constructor [1004,1161]
+                        specifier: public [1004,1010]
+                        name: Constructors [1011,1023]
+                        parameter_list [1023,1059]
+                            parameter [1024,1030]
+                                decl [1024,1030]
+                                    type [1024,1027]
+                                        name: int [1024,1027]
+                                    name: id [1028,1030]
+                            parameter [1032,1043]
+                                decl [1032,1043]
+                                    type [1032,1038]
+                                        name: string [1032,1038]
+                                    name: name [1039,1043]
+                            parameter [1045,1058]
+                                decl [1045,1058]
+                                    type [1045,1049]
+                                        name: bool [1045,1049]
+                                    name: isActive [1050,1058]
+                        block [1068,1161]
+                            block_content [1069,1160]
+                                expr_stmt [1082,1091]
+                                    expr [1082,1090]
+                                        name: _id [1082,1085]
+                                        operator: = [1086,1087]
+                                        name: id [1088,1090]
+                                expr_stmt [1104,1117]
+                                    expr [1104,1116]
+                                        name: _name [1104,1109]
+                                        operator: = [1110,1111]
+                                        name: name [1112,1116]
+                                expr_stmt [1130,1151]
+                                    expr [1130,1150]
+                                        name: _isActive [1130,1139]
+                                        operator: = [1140,1141]
+                                        name: isActive [1142,1150]
+                    comment: // Private constructor for singleton pattern [1179,1223]
+                    constructor [1232,1311]
+                        specifier: private [1232,1239]
+                        name: Constructors [1240,1252]
+                        parameter_list [1252,1265]
+                            parameter [1253,1264]
+                                decl [1253,1264]
+                                    type [1253,1259]
+                                        name: string [1253,1259]
+                                    name: name [1260,1264]
+                        block [1274,1311]
+                            block_content [1275,1310]
+                                expr_stmt [1288,1301]
+                                    expr [1288,1300]
+                                        name: _name [1288,1293]
+                                        operator: = [1294,1295]
+                                        name: name [1296,1300]
+                    comment: // Static method using private constructor [1329,1371]
+                    function [1380,1494]
+                        type [1380,1406]
+                            specifier: public [1380,1386]
+                            specifier: static [1387,1393]
+                            name: Constructors [1394,1406]
+                        name: CreateNamed [1407,1418]
+                        parameter_list [1418,1431]
+                            parameter [1419,1430]
+                                decl [1419,1430]
+                                    type [1419,1425]
+                                        name: string [1419,1425]
+                                    name: name [1426,1430]
+                        block [1440,1494]
+                            block_content [1441,1493]
+                                return [1454,1484]
+                                    expr [1461,1483]
+                                        operator: new [1461,1464]
+                                        call [1465,1483]
+                                            name: Constructors [1465,1477]
+                                            argument_list [1477,1483]
+                                                argument [1478,1482]
+                                                    expr [1478,1482]
+                                                        name: name [1478,1482]
+package TestFeatures;
+public class Constructors {
+  private int _id;
+  private String _name;
+  private boolean _isActive;
+  Constructors(){
+    _id=0;
+    _name="Default";
+    _isActive=false;
+  }
+  Constructors(  int id){
+    _id=id;
+    _name="Default";
+    _isActive=false;
+  }
+  Constructors(  int id,  String name){
+    _id=id;
+    _name=name;
+    _isActive=false;
+  }
+  Constructors(  int id,  String name,  boolean isActive){
+    _id=id;
+    _name=name;
+    _isActive=isActive;
+  }
+  Constructors(  String name){
+    _name=name;
+  }
+  public static Constructors CreateNamed(  String name){
+    return new Constructors(name);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 638 chars
+  - Number of lines: 32
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class Constructors {
+  private int _id;
+  private String _name;
+  private boolean _isActive;
+  Constructors(){
+    _id=0;
+    _name="Default";
+    _isActive=false;
+  }
+  Constructors(  int id){
+    _id=id;
+    _name="Default";
+    _isActive=false;
+  }
+  Constructors(  int id,  String name){
+    _id=id;
+    _name=name;
+    _isActive=false;
+  }
+  Constructors(  int id,  String name,  boolean isActive){
+    _id=id;
+    _name=name;
+    _isActive=isActive;
+  }
+  Constructors(  String name){
+    _name=name;
+  }
+  public static Constructors CreateNamed(  String name){
+    return new Constructors(name);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/06_constructors.java
+  - File contents size: 638 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/06_constructors.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.Constructors
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/06_constructors.java
+  Operations: 6
+  Attributes: 3
+  Fields:
+    • int _id
+    • String _name
+    • boolean _isActive
+  Methods:
+    • Constructors()
+    • Constructors() - 1 param(s)
+    • Constructors() - 2 param(s)
+    • Constructors() - 3 param(s)
+    • Constructors() - 1 param(s)
+    • CreateNamed() - 2 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "cc4ba3b9e81f7b564890a1769645c613d2008662",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/cc4ba3b9e81f7b564890a1769645c613d2008662",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package WriteJson() : IEnumerator renamed to package CheckWriteJson() : IEnumerator in class DynamicObjectCore",
+	"leftSideLocations": [{
+		"filePath": "CognitiveVRUnity/UnityPlugin/DynamicObjectCore.cs",
+		"startLine": 269,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package WriteJson() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "CognitiveVRUnity/UnityPlugin/DynamicObjectCore.cs",
+		"startLine": 281,
+		"endLine": 449,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package CheckWriteJson() : IEnumerator"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable copyQueue : Queue<DynamicObjectManifestEntry> in method package CheckWriteJson() : IEnumerator from class DynamicObjectCore",
+	"leftSideLocations": [{
+		"filePath": "CognitiveVRUnity/UnityPlugin/DynamicObjectCore.cs",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "CognitiveVRUnity/UnityPlugin/DynamicObjectCore.cs",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 59,
+		"endColumn": 124,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "copyQueue : Queue<DynamicObjectManifestEntry>"
+}, {
+		"filePath": "CognitiveVRUnity/UnityPlugin/DynamicObjectCore.cs",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 37,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -5,207 +5,132 @@
 	"sha1": "9aaea6e6a1fe270842c05854714b7b24b0284097",
 	"url": "https://github.com/vrm-c/UniVRM/commit/9aaea6e6a1fe270842c05854714b7b24b0284097",
 	"refactorings": [{
-	"type": "Rename Variable",
-	"description": "Rename Variable collider : var to spring : var in method public Execute(index int) : void from class FastSpringBoneBufferCombiner",
+	"type": "Extract Variable",
+	"description": "Extract Variable transformIndexOffset : Object in method public Execute(index int) : Void from class UniVRM10.UpdateFastSpringBoneJob",
 	"leftSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 261,
-		"endLine": 261,
-		"startColumn": 21,
-		"endColumn": 51,
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 7,
+		"endColumn": 94,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "original variable declaration",
-		"codeElement": "collider : var"
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 261,
-		"endLine": 261,
-		"startColumn": 17,
-		"endColumn": 52,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the original variable",
+		"description": "statement with the initializer of the extracted variable",
 		"codeElement": null
 }, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 262,
-		"endLine": 262,
-		"startColumn": 17,
-		"endColumn": 49,
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 7,
+		"endColumn": 144,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 7,
+		"endColumn": 146,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 83,
 		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
+		"description": "statement with the initializer of the extracted variable",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 245,
-		"endLine": 245,
-		"startColumn": 21,
-		"endColumn": 47,
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 12,
+		"endColumn": 60,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "spring : var"
+		"description": "extracted variable declaration",
+		"codeElement": "transformIndexOffset : Object"
 }, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 245,
-		"endLine": 245,
-		"startColumn": 17,
-		"endColumn": 48,
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 7,
+		"endColumn": 88,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
+		"description": "statement with the name of the extracted variable",
 		"codeElement": null
 }, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 249,
-		"endLine": 249,
-		"startColumn": 17,
-		"endColumn": 45,
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 7,
+		"endColumn": 138,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 7,
+		"endColumn": 140,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/UpdateFastSpringBoneJob.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 77,
 		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the renamed variable",
+		"description": "statement with the name of the extracted variable",
 		"codeElement": null
 }]
 },
 {
-	"type": "Inline Variable",
-	"description": "Inline Variable collider : var in method public Execute(index int) : void from class FastSpringBoneBufferCombiner",
+	"type": "Move Attribute",
+	"description": "Move Attribute public transformIndexOffset : int from class UniVRM10.BlittableLogic to public transformIndexOffset : int from class UniVRM10.BlittableSpring",
 	"leftSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 261,
-		"endLine": 261,
-		"startColumn": 21,
-		"endColumn": 51,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "inlined variable declaration",
-		"codeElement": "collider : var"
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 262,
-		"endLine": 262,
-		"startColumn": 17,
-		"endColumn": 49,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement with the name of the inlined variable",
-		"codeElement": null
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/Blittables/BlittableLogic.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 14,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public transformIndexOffset : int"
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 263,
-		"endLine": 263,
-		"startColumn": 17,
-		"endColumn": 61,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement with the initializer of the inlined variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Rename Variable",
-	"description": "Rename Variable logic : var to spring : var in method public Execute(index int) : void from class FastSpringBoneBufferCombiner",
-	"leftSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 279,
-		"endLine": 279,
-		"startColumn": 21,
-		"endColumn": 45,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "original variable declaration",
-		"codeElement": "logic : var"
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 279,
-		"endLine": 279,
-		"startColumn": 17,
-		"endColumn": 46,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 280,
-		"endLine": 280,
-		"startColumn": 17,
-		"endColumn": 62,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 281,
-		"endLine": 281,
-		"startColumn": 17,
-		"endColumn": 43,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 245,
-		"endLine": 245,
-		"startColumn": 21,
-		"endColumn": 47,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "spring : var"
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 245,
-		"endLine": 245,
-		"startColumn": 17,
-		"endColumn": 48,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 248,
-		"endLine": 248,
-		"startColumn": 17,
-		"endColumn": 63,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 249,
-		"endLine": 249,
-		"startColumn": 17,
-		"endColumn": 45,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Inline Variable",
-	"description": "Inline Variable logic : var in method public Execute(index int) : void from class FastSpringBoneBufferCombiner",
-	"leftSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 279,
-		"endLine": 279,
-		"startColumn": 21,
-		"endColumn": 45,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "inlined variable declaration",
-		"codeElement": "logic : var"
-}, {
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 281,
-		"endLine": 281,
-		"startColumn": 17,
-		"endColumn": 43,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement with the name of the inlined variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/VRM10/Runtime/FastSpringBone/System/FastSpringBoneBufferCombiner.cs",
-		"startLine": 279,
-		"endLine": 279,
-		"startColumn": 17,
-		"endColumn": 54,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement with the initializer of the inlined variable",
-		"codeElement": null
+		"filePath": "Assets/VRM10/Runtime/FastSpringBone/Blittables/BlittableSpring.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 14,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public transformIndexOffset : int"
 }]
 }
 ]

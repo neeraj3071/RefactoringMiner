@@ -1,0 +1,321 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/NgoJunHaoJason/CZ4001.git",
+	"sha1": "109cb87652cbd0226806dbd50e760d6030016e7e",
+	"url": "https://github.com/NgoJunHaoJason/CZ4001/commit/109cb87652cbd0226806dbd50e760d6030016e7e",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package Update() : void renamed to package FixedUpdate() : void in class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 38,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package Death() : void renamed to private Die() : void in class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 74,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Death() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 79,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private Die() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private startingHealth : int from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public startingHealth : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private startingHealth : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private healthSlider : Slider from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public healthSlider : Slider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private healthSlider : Slider"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private damageImage : Image from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public damageImage : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private damageImage : Image"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private flashSpeed : float from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public flashSpeed : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private flashSpeed : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private flashColour : Color from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 18,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public flashColour : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 19,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private flashColour : Color"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private playerAudio : AudioSource from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package playerAudio : AudioSource"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private playerAudio : AudioSource"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private isDead : bool from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 10,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package isDead : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 18,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private isDead : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private damaged : bool from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package damaged : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private damaged : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Die() : void from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 74,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Death() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 79,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Die() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute deathClip : AudioClip to deathAudioClip : AudioClip in class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "deathClip : AudioClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deathAudioClip : AudioClip"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private deathAudioClip : AudioClip from class PlayerHealth",
+	"leftSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public deathClip : AudioClip"
+}],
+	"rightSideLocations": [{
+		"filePath": "Hunting/Assets/Scripts/PlayerHealth.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private deathAudioClip : AudioClip"
+}]
+}
+]
+}]
+}

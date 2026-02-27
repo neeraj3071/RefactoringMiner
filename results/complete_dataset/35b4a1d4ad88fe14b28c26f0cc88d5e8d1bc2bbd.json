@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "35b4a1d4ad88fe14b28c26f0cc88d5e8d1bc2bbd",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/35b4a1d4ad88fe14b28c26f0cc88d5e8d1bc2bbd",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public OnBaseClick() : void renamed to public OnHandleClick() : void in class Workspace",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/Workspace.cs",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnBaseClick() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/Workspace.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnHandleClick() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type handle : WorkspaceHandle to handle : WorkspaceUI in class Workspace",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/Workspace.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handle : WorkspaceHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/Workspace.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "handle : WorkspaceUI"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class WorkspaceHandle renamed to WorkspaceUI",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/WorkspaceHandle.cs",
+		"startLine": 7,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "WorkspaceHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Workspaces/Base/WorkspaceUI.cs",
+		"startLine": 4,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "WorkspaceUI"
+}]
+}
+]
+}]
+}

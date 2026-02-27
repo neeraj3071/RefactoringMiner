@@ -1,0 +1,432 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "cd927a4af83c57e4270bc961c40bd64b644f6742",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/cd927a4af83c57e4270bc961c40bd64b644f6742",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private maxStars : int from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public maxStars : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private maxStars : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private showHorizonView : bool from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public showHorizonView : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private showHorizonView : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private colorByConstellation : bool from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public colorByConstellation : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 18,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private colorByConstellation : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private simulationTimeScale : float from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public simulationTimeScale : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private simulationTimeScale : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Init() : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 172,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Init() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 127,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Init() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package Setup() : void extracted from private Start() : void in class SimulationManagerComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 36,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 92,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Setup() : void"
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 94,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 95,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 86,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Setup()"
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 105,
+		"endLine": 106,
+		"startColumn": 13,
+		"endColumn": 116,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 123,
+		"endLine": 124,
+		"startColumn": 17,
+		"endColumn": 117,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 111,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 100,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 122,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 121,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 132,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 131,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 119,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/SimulationManagerComponent.cs",
+		"startLine": 99,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

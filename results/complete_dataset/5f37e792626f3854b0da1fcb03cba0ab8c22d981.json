@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "5f37e792626f3854b0da1fcb03cba0ab8c22d981",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/5f37e792626f3854b0da1fcb03cba0ab8c22d981",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Editor to Editor/Models",
+	"leftSideLocations": [{
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "GitHubRelease"
+}, {
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 132,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SemVer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/GitHubRelease.cs",
+		"startLine": 16,
+		"endLine": 22,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "GitHubRelease"
+}, {
+		"filePath": "Editor/Models/SemVer.cs",
+		"startLine": 11,
+		"endLine": 78,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "SemVer"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SemVer(version string) : internal from class SemVer",
+	"leftSideLocations": [{
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 138,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SemVer(version string)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/SemVer.cs",
+		"startLine": 21,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SemVer(version string) : internal"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Task<SemVer> to Task<GitHubRelease> in method package GetLatestRelease() : Task<GitHubRelease> from class GitHubService",
+	"leftSideLocations": [{
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Task<SemVer>"
+}, {
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 84,
+		"endLine": 90,
+		"startColumn": 15,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetLatestVersion() : Task<SemVer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Services/GitHubService.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task<GitHubRelease>"
+}, {
+		"filePath": "Editor/Services/GitHubService.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package GetLatestRelease() : Task<GitHubRelease>"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package GetLatestVersion() : Task<SemVer> from class UpdateChecker",
+	"leftSideLocations": [{
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 84,
+		"endLine": 90,
+		"startColumn": 15,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetLatestVersion() : Task<SemVer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Services/GitHubService.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package GetLatestRelease() : Task<GitHubRelease>"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package GetLatestVersion() : Task<SemVer> from class UpdateChecker to package GetLatestRelease() : Task<GitHubRelease> from class GitHubService",
+	"leftSideLocations": [{
+		"filePath": "Editor/UpdateChecker.cs",
+		"startLine": 84,
+		"endLine": 90,
+		"startColumn": 15,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetLatestVersion() : Task<SemVer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Services/GitHubService.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetLatestRelease() : Task<GitHubRelease>"
+}]
+}
+]
+}]
+}

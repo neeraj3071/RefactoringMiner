@@ -1,0 +1,465 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/UMI3D/UMI3D-SDK.git",
+	"sha1": "79e9f7a8702588690fe0249113dae2be74e6a4c0",
+	"url": "https://github.com/UMI3D/UMI3D-SDK/commit/79e9f7a8702588690fe0249113dae2be74e6a4c0",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class .UMI3DCollaborativeUserAvatar..KalmanPosition moved to KalmanPosition",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 28,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".UMI3DCollaborativeUserAvatar..KalmanPosition"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 352,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "KalmanPosition"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class .UMI3DCollaborativeUserAvatar..KalmanRotation moved to KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 45,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".UMI3DCollaborativeUserAvatar..KalmanRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 369,
+		"endLine": 514,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "KalmanRotation"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateBonePosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong) : IEnumerator renamed to package UpdateAvatarPosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong) in class UMI3DCollaborativeUserAvatar",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 267,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateBonePosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 267,
+		"endLine": 340,
+		"startColumn": 37,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package UpdateAvatarPosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package UpdateAvatarPosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong) from class UMI3DCollaborativeUserAvatar",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 267,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateBonePosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 267,
+		"endLine": 340,
+		"startColumn": 37,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package UpdateAvatarPosition(trackingFrameDto UserTrackingFrameDto, timeFrame ulong)"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected sendTracking : bool from class UMI3DClientUserTracking",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UMI3DClientUserTracking.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public sendTracking : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UMI3DClientUserTracking.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected sendTracking : bool"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to protected in class KalmanPosition",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 28,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": ".UMI3DCollaborativeUserAvatar..KalmanPosition"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 352,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "KalmanPosition"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to protected in class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 45,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": ".UMI3DCollaborativeUserAvatar..KalmanRotation"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 369,
+		"endLine": 514,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "KalmanRotation"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected RegressionPosition(tools KalmanPosition) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 112,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RegressionPosition(tools KalmanPosition) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 404,
+		"endLine": 424,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected RegressionPosition(tools KalmanPosition) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package RegressionPosition(tools KalmanPosition) : void from class UMI3DCollaborativeUserAvatar to protected RegressionPosition(tools KalmanPosition) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 112,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RegressionPosition(tools KalmanPosition) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 404,
+		"endLine": 424,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected RegressionPosition(tools KalmanPosition) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected RegressionRotation(tools KalmanRotation) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 138,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RegressionRotation(tools KalmanRotation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 430,
+		"endLine": 450,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected RegressionRotation(tools KalmanRotation) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package RegressionRotation(tools KalmanRotation) : void from class UMI3DCollaborativeUserAvatar to protected RegressionRotation(tools KalmanRotation) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 138,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RegressionRotation(tools KalmanRotation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 430,
+		"endLine": 450,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected RegressionRotation(tools KalmanRotation) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 215,
+		"endLine": 259,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 458,
+		"endLine": 502,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void from class UMI3DCollaborativeUserAvatar to protected NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 215,
+		"endLine": 259,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 458,
+		"endLine": 502,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected NodeKalmanUpdate(position Vector3, rotation Quaternion, scale Vector3) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected MeasuresPerSecond : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MeasuresPerSecond : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected MeasuresPerSecond : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected lastFrameTime : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 15,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastFrameTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected lastFrameTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected lastMessageTime : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 15,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastMessageTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected lastMessageTime : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public MeasuresPerSecond : float from class UMI3DCollaborativeUserAvatar to protected MeasuresPerSecond : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MeasuresPerSecond : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected MeasuresPerSecond : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package lastFrameTime : float from class UMI3DCollaborativeUserAvatar to protected lastFrameTime : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 15,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastFrameTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected lastFrameTime : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package lastMessageTime : float from class UMI3DCollaborativeUserAvatar to protected lastMessageTime : float from class KalmanRotation",
+	"leftSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/Collaboration/Runtime/TrackingKalmanFilters/UMI3DCollaborativeUserAvatar.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 15,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lastMessageTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "UMI3D-SDK/Assets/ClientDevelopmentKit/UserCapture/Runtime/UserAvatar.cs",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected lastMessageTime : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,481 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/12_interfaces.cs
+Size: 1856 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test interface definition.
+    /// </summary>
+    public interface IDevice
+    {
+        void PowerOn();
+        void PowerOff();
+        string GetStatus();
+    }
+    
+    /// <summary>
+    /// Second test interface.
+    /// </summary>
+    public interface IConnectable
+    {
+        void Connect();
+        void Disconnect();
+    }
+    
+    /// <summary>
+    /// Test case for interface implementation.
+    /// Tests transfo
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/12_interfaces.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1856 chars)...
+unit [0,0]
+    namespace [0,1855]
+        name: TestFeatures [10,22]
+        block [23,1855]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test interface definition. [70,100]
+            comment: ///</summary> [105,119]
+            interface [124,237]
+                specifier: public [124,130]
+                name: IDevice [141,148]
+                block [153,237]
+                    function_decl [163,178]
+                        type [163,167]
+                            name: void [163,167]
+                        name: PowerOn [168,175]
+                        parameter_list [175,177]
+                    function_decl [187,203]
+                        type [187,191]
+                            name: void [187,191]
+                        name: PowerOff [192,200]
+                        parameter_list [200,202]
+                    function_decl [212,231]
+                        type [212,218]
+                            name: string [212,218]
+                        name: GetStatus [219,228]
+                        parameter_list [228,230]
+            comment: ///<summary> [247,260]
+            comment: /// Second test interface. [265,291]
+            comment: ///</summary> [296,310]
+            interface [315,407]
+                specifier: public [315,321]
+                name: IConnectable [332,344]
+                block [349,407]
+                    function_decl [359,374]
+                        type [359,363]
+                            name: void [359,363]
+                        name: Connect [364,371]
+                        parameter_list [371,373]
+                    function_decl [383,401]
+                        type [383,387]
+                            name: void [383,387]
+                        name: Disconnect [388,398]
+                        parameter_list [398,400]
+            comment: ///<summary> [417,430]
+            comment: /// Test case for interface implementation. [435,478]
+            comment: /// Tests transformation of C# interface implementation to Java implements keyword. [483,566]
+            comment: ///</summary> [571,585]
+            class [590,1410]
+                specifier: public [590,596]
+                name: NetworkDevice [603,616]
+                super_list [617,640]
+                    super [619,626]
+                        name: IDevice [619,626]
+                    super [628,640]
+                        name: IConnectable [628,640]
+                block [645,1410]
+                    decl_stmt [655,680]
+                        decl [655,679]
+                            type [655,667]
+                                specifier: private [655,662]
+                                name: bool [663,667]
+                            name: isPoweredOn [668,679]
+                    decl_stmt [689,714]
+                        decl [689,713]
+                            type [689,701]
+                                specifier: private [689,696]
+                                name: bool [697,701]
+                            name: isConnected [702,713]
+                    function [732,857]
+                        type [732,743]
+                            specifier: public [732,738]
+                            name: void [739,743]
+                        name: PowerOn [744,751]
+                        parameter_list [751,753]
+                        block [762,857]
+                            block_content [763,856]
+                                expr_stmt [776,795]
+                                    expr [776,794]
+                                        name: isPoweredOn [776,787]
+                                        operator: = [788,789]
+                                        literal: true [790,794]
+                                expr_stmt [808,847]
+                                    expr [808,846]
+                                        call [808,846]
+                                            name [808,825]
+                                                name: Console [808,815]
+                                                operator: . [815,816]
+                                                name: WriteLine [816,825]
+                                            argument_list [825,846]
+                                                argument [826,845]
+                                                    expr [826,845]
+                                                        literal: "Device powered on" [826,845]
+                    function [875,1003]
+                        type [875,886]
+                            specifier: public [875,881]
+                            name: void [882,886]
+                        name: PowerOff [887,895]
+                        parameter_list [895,897]
+                        block [906,1003]
+                            block_content [907,1002]
+                                expr_stmt [920,940]
+                                    expr [920,939]
+                                        name: isPoweredOn [920,931]
+                                        operator: = [932,933]
+                                        literal: false [934,939]
+                                expr_stmt [953,993]
+                                    expr [953,992]
+                                        call [953,992]
+                                            name [953,970]
+                                                name: Console [953,960]
+                                                operator: . [960,961]
+                                                name: WriteLine [961,970]
+                                            argument_list [970,992]
+                                                argument [971,991]
+                                                    expr [971,991]
+                                                        literal: "Device powered off" [971,991]
+                    function [1021,1113]
+                        type [1021,1034]
+                            specifier: public [1021,1027]
+                            name: string [1028,1034]
+                        name: GetStatus [1035,1044]
+                        parameter_list [1044,1046]
+                        block [1055,1113]
+                            block_content [1056,1112]
+                                return [1069,1103]
+                                    expr [1076,1102]
+                                        ternary [1076,1102]
+                                            condition [1076,1089]
+                                                expr [1076,1087]
+                                                    name: isPoweredOn [1076,1087]
+                                            then [1089,1095]
+                                                expr [1090,1094]
+                                                    literal: "On" [1090,1094]
+                                            else [1095,1102]
+                                                expr [1097,1102]
+                                                    literal: "Off" [1097,1102]
+                    function [1131,1255]
+                        type [1131,1142]
+                            specifier: public [1131,1137]
+                            name: void [1138,1142]
+                        name: Connect [1143,1150]
+                        parameter_list [1150,1152]
+                        block [1161,1255]
+                            block_content [1162,1254]
+                                expr_stmt [1175,1194]
+                                    expr [1175,1193]
+                                        name: isConnected [1175,1186]
+                                        operator: = [1187,1188]
+                                        literal: true [1189,1193]
+                                expr_stmt [1207,1245]
+                                    expr [1207,1244]
+                                        call [1207,1244]
+                                            name [1207,1224]
+                                                name: Console [1207,1214]
+                                                operator: . [1214,1215]
+                                                name: WriteLine [1215,1224]
+                                            argument_list [1224,1244]
+                                                argument [1225,1243]
+                                                    expr [1225,1243]
+                                                        literal: "Device connected" [1225,1243]
+                    function [1273,1404]
+                        type [1273,1284]
+                            specifier: public [1273,1279]
+                            name: void [1280,1284]
+                        name: Disconnect [1285,1295]
+                        parameter_list [1295,1297]
+                        block [1306,1404]
+                            block_content [1307,1403]
+                                expr_stmt [1320,1340]
+                                    expr [1320,1339]
+                                        name: isConnected [1320,1331]
+                                        operator: = [1332,1333]
+                                        literal: false [1334,1339]
+                                expr_stmt [1353,1394]
+                                    expr [1353,1393]
+                                        call [1353,1393]
+                                            name [1353,1370]
+                                                name: Console [1353,1360]
+                                                operator: . [1360,1361]
+                                                name: WriteLine [1361,1370]
+                                            argument_list [1370,1393]
+                                                argument [1371,1392]
+                                                    expr [1371,1392]
+                                                        literal: "Device disconnected" [1371,1392]
+            comment: ///<summary> [1420,1433]
+            comment: /// Class implementing single interface. [1438,1478]
+            comment: ///</summary> [1483,1497]
+            class [1502,1853]
+                specifier: public [1502,1508]
+                name: SimpleDevice [1515,1527]
+                super_list [1528,1537]
+                    super [1530,1537]
+                        name: IDevice [1530,1537]
+                block [1542,1853]
+                    function [1552,1644]
+                        type [1552,1563]
+                            specifier: public [1552,1558]
+                            name: void [1559,1563]
+                        name: PowerOn [1564,1571]
+                        parameter_list [1571,1573]
+                        block [1582,1644]
+                            block_content [1583,1643]
+                                expr_stmt [1596,1634]
+                                    expr [1596,1633]
+                                        call [1596,1633]
+                                            name [1596,1613]
+                                                name: Console [1596,1603]
+                                                operator: . [1603,1604]
+                                                name: WriteLine [1604,1613]
+                                            argument_list [1613,1633]
+                                                argument [1614,1632]
+                                                    expr [1614,1632]
+                                                        literal: "Simple device on" [1614,1632]
+                    function [1662,1756]
+                        type [1662,1673]
+                            specifier: public [1662,1668]
+                            name: void [1669,1673]
+                        name: PowerOff [1674,1682]
+                        parameter_list [1682,1684]
+                        block [1693,1756]
+                            block_content [1694,1755]
+                                expr_stmt [1707,1746]
+                                    expr [1707,1745]
+                                        call [1707,1745]
+                                            name [1707,1724]
+                                                name: Console [1707,1714]
+                                                operator: . [1714,1715]
+                                                name: WriteLine [1715,1724]
+                                            argument_list [1724,1745]
+                                                argument [1725,1744]
+                                                    expr [1725,1744]
+                                                        literal: "Simple device off" [1725,1744]
+                    function [1774,1847]
+                        type [1774,1787]
+                            specifier: public [1774,1780]
+                            name: string [1781,1787]
+                        name: GetStatus [1788,1797]
+                        parameter_list [1797,1799]
+                        block [1808,1847]
+                            block_content [1809,1846]
+                                return [1822,1837]
+                                    expr [1829,1836]
+                                        literal: "Ready" [1829,1836]
+package TestFeatures;
+public interface IDevice {
+  Void PowerOn();
+  Void PowerOff();
+  String GetStatus();
+}
+public interface IConnectable {
+  Void Connect();
+  Void Disconnect();
+}
+public class NetworkDevice implements IDevice, IConnectable {
+  private boolean isPoweredOn;
+  private boolean isConnected;
+  public Void PowerOn(){
+    isPoweredOn=true;
+    Console.WriteLine("Device powered on");
+  }
+  public Void PowerOff(){
+    isPoweredOn=false;
+    Console.WriteLine("Device powered off");
+  }
+  public String GetStatus(){
+    return isPoweredOn ? "On" : "Off";
+  }
+  public Void Connect(){
+    isConnected=true;
+    Console.WriteLine("Device connected");
+  }
+  public Void Disconnect(){
+    isConnected=false;
+    Console.WriteLine("Device disconnected");
+  }
+}
+public class SimpleDevice extends IDevice {
+  public Void PowerOn(){
+    Console.WriteLine("Simple device on");
+  }
+  public Void PowerOff(){
+    Console.WriteLine("Simple device off");
+  }
+  public String GetStatus(){
+    return "Ready";
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 4 types
+✓ CompilationUnit created successfully!
+  - Number of types: 4
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 1014 chars
+  - Number of lines: 44
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public interface IDevice {
+  Void PowerOn();
+  Void PowerOff();
+  String GetStatus();
+}
+public interface IConnectable {
+  Void Connect();
+  Void Disconnect();
+}
+public class NetworkDevice implements IDevice, IConnectable {
+  private boolean isPoweredOn;
+  private boolean isConnected;
+  public Void PowerOn(){
+    isPoweredOn=true;
+    Console.WriteLine("Device powered on");
+  }
+  public Void PowerOff(){
+    isPoweredOn=false;
+    Console.WriteLine("Device powered off");
+  }
+  public String GetStatus(){
+    return isPoweredOn ? "On" : "Off";
+  }
+  public Void Connect(){
+    isConnected=true;
+    Console.WriteLine("Device connected");
+  }
+  public Void Disconnect(){
+    isConnected=false;
+    Console.WriteLine("Device disconnected");
+  }
+}
+public class SimpleDevice extends IDevice {
+  public Void PowerOn(){
+    Console.WriteLine("Simple device on");
+  }
+  public Void PowerOff(){
+    Console.WriteLine("Simple device off");
+  }
+  public String GetStatus(){
+    return "Ready";
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/12_interfaces.java
+  - File contents size: 1014 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/12_interfaces.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 4
+  - Classes: 2
+  - Interfaces: 2
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.IDevice
+  Type: Interface
+  Package: TestFeatures
+  Source file: tests/csharp-features/12_interfaces.java
+  Operations: 3
+  Attributes: 0
+  Methods:
+    • PowerOn() - 1 param(s)
+    • PowerOff() - 1 param(s)
+    • GetStatus() - 1 param(s)
+
+Class: TestFeatures.IConnectable
+  Type: Interface
+  Package: TestFeatures
+  Source file: tests/csharp-features/12_interfaces.java
+  Operations: 2
+  Attributes: 0
+  Methods:
+    • Connect() - 1 param(s)
+    • Disconnect() - 1 param(s)
+
+Class: TestFeatures.NetworkDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/12_interfaces.java
+  Operations: 5
+  Attributes: 2
+  Fields:
+    • boolean isPoweredOn
+    • boolean isConnected
+  Methods:
+    • PowerOn() - 1 param(s)
+    • PowerOff() - 1 param(s)
+    • GetStatus() - 1 param(s)
+    • Connect() - 1 param(s)
+    • Disconnect() - 1 param(s)
+
+Class: TestFeatures.SimpleDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/12_interfaces.java
+  Operations: 3
+  Attributes: 0
+  Methods:
+    • PowerOn() - 1 param(s)
+    • PowerOff() - 1 param(s)
+    • GetStatus() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

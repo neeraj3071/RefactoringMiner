@@ -1,0 +1,234 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/xire-/graphulus.git",
+	"sha1": "9f1f51b09493c6ab6539c9e081ce08a52c07a750",
+	"url": "https://github.com/xire-/graphulus/commit/9f1f51b09493c6ab6539c9e081ce08a52c07a750",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable newTheme : var in method public ResetAndLoadGraph(graphName string) : void from class GameSystem",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "newTheme : var"
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter startTheme : Theme to startTheme : var in method private ChangeThemeAnim(endTheme Theme) : void from class GameSystem",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startTheme : Theme"
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 80,
+		"endLine": 85,
+		"startColumn": 13,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "startTheme : var"
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type startTheme : Theme to startTheme : var in method private ChangeThemeAnim(endTheme Theme) : void from class GameSystem",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "startTheme : Theme"
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 80,
+		"endLine": 85,
+		"startColumn": 13,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "startTheme : var"
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/GameSystem.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

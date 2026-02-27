@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "23b48220aee770f3b7c614c645a930abb00237ec",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/23b48220aee770f3b7c614c645a930abb00237ec",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public ShowList() : void renamed to public SetListVisibility(show bool) : void in class FilterUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 67,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 74,
+		"endLine": 88,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SetListVisibility(show bool) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable allText : string to kAllText : string in initializer FilterUI from class FilterUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "allText : string"
+}, {
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "kAllText : string"
+}, {
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter show : bool in method public SetListVisibility(show bool) : void from class FilterUI",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 67,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 32,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "show : bool"
+}, {
+		"filePath": "Workspaces/Common/Scripts/FilterUI.cs",
+		"startLine": 74,
+		"endLine": 88,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public SetListVisibility(show bool) : void"
+}]
+}
+]
+}]
+}

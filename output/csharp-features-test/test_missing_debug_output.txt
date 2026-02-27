@@ -1,0 +1,180 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_missing_debug.cs
+Size: 261 chars
+--- C# Source Content (first 500 chars) ---
+public class TestClass {
+    public void SimpleMethod() {
+        if (true) {
+            Console.WriteLine("Hello");
+        }
+    }
+    
+    public void MethodWithLoop() {
+        foreach (var item in items) {
+            DoSomething(item);
+        }
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_missing_debug.cs
+CPatMinerExecutor: Executing CPatMiner transformation (261 chars)...
+unit [0,0]
+    class [0,260]
+        specifier: public [0,6]
+        name: TestClass [13,22]
+        block [23,260]
+            function [29,133]
+                type [29,40]
+                    specifier: public [29,35]
+                    name: void [36,40]
+                name: SimpleMethod [41,53]
+                parameter_list [53,55]
+                block [56,133]
+                    block_content [57,132]
+                        if_stmt [66,127]
+                            if [66,127]
+                                condition [69,75]
+                                    expr [70,74]
+                                        literal: true [70,74]
+                                block [76,127]
+                                    block_content [77,126]
+                                        expr_stmt [90,117]
+                                            expr [90,116]
+                                                call [90,116]
+                                                    name [90,107]
+                                                        name: Console [90,97]
+                                                        operator: . [97,98]
+                                                        name: WriteLine [98,107]
+                                                    argument_list [107,116]
+                                                        argument [108,115]
+                                                            expr [108,115]
+                                                                literal: "Hello" [108,115]
+            function [143,258]
+                type [143,154]
+                    specifier: public [143,149]
+                    name: void [150,154]
+                name: MethodWithLoop [155,169]
+                parameter_list [169,171]
+                block [172,258]
+                    block_content [173,257]
+                        foreach [182,252]
+                            control [190,209]
+                                init [191,208]
+                                    decl [191,208]
+                                        type [191,194]
+                                            name: var [191,194]
+                                        name: item [195,199]
+                                        range [200,208]
+                                            expr [203,208]
+                                                name: items [203,208]
+                            block [210,252]
+                                block_content [211,251]
+                                    expr_stmt [224,242]
+                                        expr [224,241]
+                                            call [224,241]
+                                                name: DoSomething [224,235]
+                                                argument_list [235,241]
+                                                    argument [236,240]
+                                                        expr [236,240]
+                                                            name: item [236,240]
+public class TestClass {
+  public Void SimpleMethod(){
+    if (true) {
+      Console.WriteLine("Hello");
+    }
+  }
+  public Void MethodWithLoop(){
+    for (    Object item : items) {
+      DoSomething(item);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 220 chars
+  - Number of lines: 12
+
+=== Generated Java Code (Full Output) ===
+public class TestClass {
+  public Void SimpleMethod(){
+    if (true) {
+      Console.WriteLine("Hello");
+    }
+  }
+  public Void MethodWithLoop(){
+    for (    Object item : items) {
+      DoSomething(item);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_missing_debug.java
+  - File contents size: 220 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_missing_debug.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestClass
+  Type: Class
+  Package: 
+  Source file: tests/test_missing_debug.java
+  Operations: 2
+  Attributes: 0
+  Methods:
+    • SimpleMethod() - 1 param(s)
+    • MethodWithLoop() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,195 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Sauceke/LoveMachine.git",
+	"sha1": "657ba9ecb1016ab56dbd915378ec11684e1613c1",
+	"url": "https://github.com/Sauceke/LoveMachine/commit/657ba9ecb1016ab56dbd915378ec11684e1613c1",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package TryGetWaveInfo(girlIndex int, bone Bone, WaveInfo out) renamed to package TryGetResult(girlIndex int, bone Bone, Result out) in class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 66,
+		"endLine": 78,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package TryGetWaveInfo(girlIndex int, bone Bone, WaveInfo out)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 67,
+		"endLine": 79,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package TryGetResult(girlIndex int, bone Bone, Result out)"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private GetPreferredWaveInfo(samples IEnumerable<Sample>) : WaveInfo renamed to private GetPreferredResult(samples IEnumerable<Sample>) : Result in class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 150,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetPreferredWaveInfo(samples IEnumerable<Sample>) : WaveInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 151,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GetPreferredResult(samples IEnumerable<Sample>) : Result"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter WaveInfo : out to Result : out in method package TryGetResult(girlIndex int, bone Bone, Result out) from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 73,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "WaveInfo : out"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 71,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "Result : out"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type WaveInfo to Result in method private GetPreferredResult(samples IEnumerable<Sample>) : Result from class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "WaveInfo"
+}, {
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 150,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetPreferredWaveInfo(samples IEnumerable<Sample>) : WaveInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Result"
+}, {
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 151,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private GetPreferredResult(samples IEnumerable<Sample>) : Result"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute WaveInfo : struct to Result : struct in class AnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "WaveInfo : struct"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/AnimationAnalyzer.cs",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 26,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Result : struct"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package TryGetWaveInfo(girlIndex int, bone Bone, WaveInfo out) renamed to package TryGetResult(girlIndex int, bone Bone, Result out) in class TestAnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/TestAnimationAnalyzer.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package TryGetWaveInfo(girlIndex int, bone Bone, WaveInfo out)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/TestAnimationAnalyzer.cs",
+		"startLine": 5,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package TryGetResult(girlIndex int, bone Bone, Result out)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter WaveInfo : out to Result : out in method package TryGetResult(girlIndex int, bone Bone, Result out) from class TestAnimationAnalyzer",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/TestAnimationAnalyzer.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 74,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "WaveInfo : out"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/Game/TestAnimationAnalyzer.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 72,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "Result : out"
+}]
+}
+]
+}]
+}

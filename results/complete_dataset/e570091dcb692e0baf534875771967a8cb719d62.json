@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "e570091dcb692e0baf534875771967a8cb719d62",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/e570091dcb692e0baf534875771967a8cb719d62",
+	"refactorings": [{
+	"type": "Merge Parameter",
+	"description": "Merge Parameter [maxTextureSize : int, generateQuestTextures : bool] to setting : AvatarConverterSetting in method package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, remover ComponentRemover, setting AvatarConverterSetting, progressCallback ProgressCallback) : Tuple<VRChatAvatar,string> from class AvatarConverter",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 143,
+		"endColumn": 161,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "maxTextureSize : int"
+}, {
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 115,
+		"endColumn": 141,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "generateQuestTextures : bool"
+}, {
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 62,
+		"endLine": 164,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, generateQuestTextures bool, maxTextureSize int, remover ComponentRemover, overrideControllers AnimatorOverrideController[], progressCallback ProgressCallback) : Tuple<VRChatAvatar,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 141,
+		"endColumn": 171,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "setting : AvatarConverterSetting"
+}, {
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 60,
+		"endLine": 162,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, remover ComponentRemover, setting AvatarConverterSetting, progressCallback ProgressCallback) : Tuple<VRChatAvatar,string>"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter overrideControllers : AnimatorOverrideController[] in method package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, generateQuestTextures bool, maxTextureSize int, remover ComponentRemover, overrideControllers AnimatorOverrideController[], progressCallback ProgressCallback) : Tuple<VRChatAvatar,string> from class AvatarConverter",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 189,
+		"endColumn": 237,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "overrideControllers : AnimatorOverrideController[]"
+}, {
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 62,
+		"endLine": 164,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, generateQuestTextures bool, maxTextureSize int, remover ComponentRemover, overrideControllers AnimatorOverrideController[], progressCallback ProgressCallback) : Tuple<VRChatAvatar,string>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/VRChat/AvatarConverter.cs",
+		"startLine": 60,
+		"endLine": 162,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package ConvertForQuest(avatar VRChatAvatar, assetsDirectory string, remover ComponentRemover, setting AvatarConverterSetting, progressCallback ProgressCallback) : Tuple<VRChatAvatar,string>"
+}]
+}
+]
+}]
+}

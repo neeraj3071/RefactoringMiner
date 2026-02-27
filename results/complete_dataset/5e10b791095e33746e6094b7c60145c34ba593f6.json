@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "5e10b791095e33746e6094b7c60145c34ba593f6",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/5e10b791095e33746e6094b7c60145c34ba593f6",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable assets : var in method public FolderData(path string, depth int) from class FolderData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/FolderData.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "assets : var"
+}, {
+		"filePath": "Scripts/Data/FolderData.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/FolderData.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_Cube : DirectHandle to m_Cube : BaseHandle in class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_Cube : DirectHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_Cube : BaseHandle"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_ExpandArrow : DirectHandle to m_ExpandArrow : BaseHandle in class FolderListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_ExpandArrow : DirectHandle"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Project/Scripts/FolderListItem.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_ExpandArrow : BaseHandle"
+}]
+}
+]
+}]
+}

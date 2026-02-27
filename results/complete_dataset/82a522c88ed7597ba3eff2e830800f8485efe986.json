@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "82a522c88ed7597ba3eff2e830800f8485efe986",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/82a522c88ed7597ba3eff2e830800f8485efe986",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method package getEarthRelativeLatLng(pos Vector3) : LatLng extracted from public ShowEarthMarkerInteraction(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void in class InteractionController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 132,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public ShowEarthMarkerInteraction(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 138,
+		"endLine": 166,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 181,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package getEarthRelativeLatLng(pos Vector3) : LatLng"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 187,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 150,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public ShowEarthMarkerInteraction(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEarthRelativeLatLng(pos)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package getEarthRelativeLatLng(pos Vector3) : LatLng extracted from public SetEarthLocationPin(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void in class InteractionController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 167,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public SetEarthLocationPin(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 173,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 181,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package getEarthRelativeLatLng(pos Vector3) : LatLng"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 187,
+		"endLine": 197,
+		"startColumn": 13,
+		"endColumn": 5,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 174,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public SetEarthLocationPin(pos Vector3, rot Quaternion, playerColor Color, isLocal bool) : void"
+}, {
+		"filePath": "Assets/Scripts/InteractionController.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getEarthRelativeLatLng(pos)"
+}]
+}
+]
+}]
+}

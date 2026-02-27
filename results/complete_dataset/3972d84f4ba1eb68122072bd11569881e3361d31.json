@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "3972d84f4ba1eb68122072bd11569881e3361d31",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/3972d84f4ba1eb68122072bd11569881e3361d31",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package List : readonly from class EditorVR.Rays",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package List : readonly"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void from class EditorVR.Rays",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 518,
+		"endLine": 525,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 525,
+		"endLine": 530,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package SetUIBlockedForRayOrigin(rayOrigin Transform, blocked bool) : void"
+}]
+}
+]
+}]
+}

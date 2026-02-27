@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "07117ec2bd3244d186c3ef0e3a6f93db397116eb",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/07117ec2bd3244d186c3ef0e3a6f93db397116eb",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter interactionSource : InteractionSource in method public HPMotionController(trackingState TrackingState, controllerHandedness Handedness, interactionSource InteractionSource, inputSource IMixedRealityInputSource) from class HPMotionController",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/HPMotionController.cs",
+		"startLine": 30,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HPMotionController(trackingState TrackingState, controllerHandedness Handedness, inputSource IMixedRealityInputSource)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/HPMotionController.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "interactionSource : InteractionSource"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/HPMotionController.cs",
+		"startLine": 30,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public HPMotionController(trackingState TrackingState, controllerHandedness Handedness, interactionSource InteractionSource, inputSource IMixedRealityInputSource)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter interactionSource : InteractionSource in method public WindowsMixedRealityController(trackingState TrackingState, controllerHandedness Handedness, interactionSource InteractionSource, definition IMixedRealityInputSourceDefinition, inputSource IMixedRealityInputSource) from class WindowsMixedRealityController",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/WindowsMixedRealityController.cs",
+		"startLine": 43,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WindowsMixedRealityController(trackingState TrackingState, controllerHandedness Handedness, definition IMixedRealityInputSourceDefinition, inputSource IMixedRealityInputSource)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/WindowsMixedRealityController.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "interactionSource : InteractionSource"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/WindowsMixedRealityController.cs",
+		"startLine": 44,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public WindowsMixedRealityController(trackingState TrackingState, controllerHandedness Handedness, interactionSource InteractionSource, definition IMixedRealityInputSourceDefinition, inputSource IMixedRealityInputSource)"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private Dictionary : readonly from class WindowsMixedRealityController to private Dictionary : readonly from class WindowsMixedRealityControllerModelProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/Controllers/WindowsMixedRealityController.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 33,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/WindowsMixedRealityControllerModelProvider.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 33,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private Dictionary : readonly"
+}]
+}
+]
+}]
+}

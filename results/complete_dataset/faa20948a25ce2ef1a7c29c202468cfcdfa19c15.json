@@ -1,0 +1,489 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "faa20948a25ce2ef1a7c29c202468cfcdfa19c15",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/faa20948a25ce2ef1a7c29c202468cfcdfa19c15",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class .NearInteractionTouchableUnityUIInspector.typeof.NearInteractionTouchableInspector moved to NearInteractionTouchableInspector",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/Editor/NearInteractionTouchableInspector.cs",
+		"startLine": 14,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".NearInteractionTouchableUnityUIInspector.typeof.NearInteractionTouchableInspector"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/Editor/NearInteractionTouchableInspector.cs",
+		"startLine": 11,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "NearInteractionTouchableInspector"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class .NearInteractionTouchableUnityUIInspector.typeof.NearInteractionTouchableInspectorBase moved to NearInteractionTouchableInspectorBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/Editor/NearInteractionTouchableInspector.cs",
+		"startLine": 94,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".NearInteractionTouchableUnityUIInspector.typeof.NearInteractionTouchableInspectorBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/Editor/NearInteractionTouchableInspector.cs",
+		"startLine": 101,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "NearInteractionTouchableInspectorBase"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected localCenter : Vector3 from class NearInteractionTouchable",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected localCenter : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected localCenter : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public SetLocalCenter(newLocalCenter Vector3) : void"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected bounds : Vector2 from class NearInteractionTouchable",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected bounds : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected bounds : Vector2"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public SetBounds(newBounds Vector2) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to package in method package OnValidate() : void from class NearInteractionTouchable",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 85,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnValidate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 84,
+		"endLine": 108,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package OnValidate() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public DistanceToTouchable(samplePoint Vector3, Vector3 out) : float from class NearInteractionTouchableVolume",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableVolume.cs",
+		"startLine": 38,
+		"endLine": 57,
+		"startColumn": 25,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DistanceToTouchable(samplePoint Vector3, Vector3 out) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableVolume.cs",
+		"startLine": 55,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public DistanceToTouchable(samplePoint Vector3, Vector3 out) : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LocalCenter : Vector3 from class NearInteractionTouchable to public LocalCenter : Vector3 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LocalPressDirection : Vector3 from class NearInteractionTouchable to public LocalPressDirection : Vector3 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Bounds : Vector2 from class NearInteractionTouchable to public Bounds : Vector2 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LocalCenter : Vector3 from class NearInteractionTouchableUnityUI to public LocalCenter : Vector3 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public LocalPressDirection : Vector3 from class NearInteractionTouchableUnityUI to public LocalPressDirection : Vector3 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Bounds : Vector2 from class NearInteractionTouchableUnityUI to public Bounds : Vector2 from class NearInteractionTouchableSurface",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class NearInteractionTouchableSurface from class NearInteractionTouchable",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 14,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "NearInteractionTouchable"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchable.cs",
+		"startLine": 15,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "NearInteractionTouchable"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 11,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "NearInteractionTouchableSurface"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class NearInteractionTouchableSurface from class NearInteractionTouchableUnityUI",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 14,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "NearInteractionTouchableUnityUI"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableUnityUI.cs",
+		"startLine": 14,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "NearInteractionTouchableUnityUI"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 11,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "NearInteractionTouchableSurface"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LocalCenter : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public LocalPressDirection : Vector3"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Services/InputSystem/NearInteractionTouchableSurface.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Bounds : Vector2"
+}]
+}
+]
+}]
+}

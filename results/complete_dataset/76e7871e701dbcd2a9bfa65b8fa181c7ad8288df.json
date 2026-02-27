@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/two-forks-vr.git",
+	"sha1": "76e7871e701dbcd2a9bfa65b8fa181c7ad8288df",
+	"url": "https://github.com/Raicuparta/two-forks-vr/commit/76e7871e701dbcd2a9bfa65b8fa181c7ad8288df",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method private LoadHandPrefab() : GameObject from class TwoForksVR to private LoadHandPrefab() : GameObject from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 166,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadHandPrefab() : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private LoadHandPrefab() : GameObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetUpLeftHandAttachment() : void from class TwoForksVR to private SetUpLeftHandAttachment() : void from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 78,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpLeftHandAttachment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SetUpLeftHandAttachment() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetUpRightHandAttachment() : void from class TwoForksVR to private SetUpRightHandAttachment() : void from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 87,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpRightHandAttachment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 68,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SetUpRightHandAttachment() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetUpHandLaser() : void from class TwoForksVR to private SetUpHandLaser() : void from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 187,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpHandLaser() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 78,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SetUpHandLaser() : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class VRHandManager from class TwoForksVR",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 12,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TwoForksVR"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 78,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpLeftHandAttachment() : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 87,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpRightHandAttachment() : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 166,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private LoadHandPrefab() : GameObject"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 187,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpHandLaser() : void"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 147,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateHand(prefab GameObject, isLeft bool) : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 12,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "TwoForksVR"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 12,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "VRHandManager"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetUpLeftHandAttachment() : void"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 68,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetUpRightHandAttachment() : void"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 38,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private LoadHandPrefab() : GameObject"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 78,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private SetUpHandLaser() : void"
+}, {
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 50,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CreateHand(prefab GameObject, material Material, isLeft bool) : Transform"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter hand : Transform in method private SetUpWeddingRing(hand Transform) : void from class TwoForksVR",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 39,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "hand : Transform"
+}, {
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 128,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpWeddingRing(hand Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHand.cs",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private SetUpWeddingRing() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetUpWeddingRing(hand Transform) : void from class TwoForksVR to private SetUpWeddingRing() : void from class VRHand",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 128,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpWeddingRing(hand Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHand.cs",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SetUpWeddingRing() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public RightHand : Transform from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package rightHand : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public RightHand : Transform"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public LeftHand : Transform from class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package leftHand : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public LeftHand : Transform"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute package rightHand : Transform renamed to public RightHand : Transform and moved from class TwoForksVR to class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package rightHand : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public RightHand : Transform"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute package leftHand : Transform renamed to public LeftHand : Transform and moved from class TwoForksVR to class VRHandManager",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/TwoForksVR.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package leftHand : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/VRHandManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public LeftHand : Transform"
+}]
+}
+]
+}]
+}

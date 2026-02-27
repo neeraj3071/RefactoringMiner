@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/InputSystem.git",
+	"sha1": "838005016946104337e62fa9f3ef582eb688234d",
+	"url": "https://github.com/Unity-Technologies/InputSystem/commit/838005016946104337e62fa9f3ef582eb688234d",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package CreateNewActionAsset() : InputActionAsset from class ProjectWideActionsAsset",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/ProjectWideActions/ProjectWideActionsAsset.cs",
+		"startLine": 54,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateNewActionAsset() : InputActionAsset"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/ProjectWideActions/ProjectWideActionsAsset.cs",
+		"startLine": 54,
+		"endLine": 94,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateNewActionAsset() : InputActionAsset"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter mpostSaveAction : Action in method public InputActionsEditorView(root VisualElement, stateContainer StateContainer, mpostSaveAction Action) from class InputActionsEditorView",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/Views/InputActionsEditorView.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 90,
+		"endColumn": 112,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "mpostSaveAction : Action"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/Views/InputActionsEditorView.cs",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public InputActionsEditorView(root VisualElement, stateContainer StateContainer, mpostSaveAction Action)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/Views/InputActionsEditorView.cs",
+		"startLine": 20,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public InputActionsEditorView(root VisualElement, stateContainer StateContainer)"
+}]
+}
+]
+}]
+}

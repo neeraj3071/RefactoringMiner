@@ -1,0 +1,1599 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/GameLabGraz/Maroon.git",
+	"sha1": "0f3865cc082bf9be6a22b5b5540967c0e1a20dcb",
+	"url": "https://github.com/GameLabGraz/Maroon/commit/0f3865cc082bf9be6a22b5b5540967c0e1a20dcb",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 21,
+		"endLine": 141,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "FieldLineManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 21,
+		"endLine": 79,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "FieldLineManager"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setFieldLinesVisible(visibility bool) : void renamed to public SetFieldLinesVisible(visibility bool) : void in class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 74,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setFieldLinesVisible(visibility bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SetFieldLinesVisible(visibility bool) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public addFieldLine(fL FieldLine) : void renamed to public AddFieldLine(fL FieldLine) : void in class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 110,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addFieldLine(fL FieldLine) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public AddFieldLine(fL FieldLine) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public removeFieldLine(fL FieldLine) : void renamed to public RemoveFieldLine(fL FieldLine) : void in class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 121,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeFieldLine(fL FieldLine) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public RemoveFieldLine(fL FieldLine) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected fieldLines : HashSet<FieldLine> from class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fieldLines : HashSet<FieldLine>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 34,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected fieldLines : HashSet<FieldLine>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type flManager : FieldLineManager to flManager : SymmetricFieldLineManager in method public SetNumFieldLines(flManager SymmetricFieldLineManager) : void from class UpdateNumFieldLines",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/UpdateNumFieldLines.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "flManager : FieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/UpdateNumFieldLines.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/UpdateNumFieldLines.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 34,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "flManager : SymmetricFieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/UpdateNumFieldLines.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Awake() : void from class BField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 39,
+		"endLine": 43,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Awake() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package getFieldType() from class BField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFieldType() : FieldType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package getFieldType()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package get(position Vector3) from class BField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 63,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 62,
+		"endLine": 80,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package get(position Vector3)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package get(position Vector3, xobj GameObject) from class BField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 89,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3, xobj GameObject) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/BField.cs",
+		"startLine": 88,
+		"endLine": 107,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package get(position Vector3, xobj GameObject)"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package Start() : void renamed to package Awake() : void in class EField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 39,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 39,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Awake() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package getFieldType() from class EField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFieldType() : FieldType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package getFieldType()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package get(position Vector3) from class EField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 63,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 62,
+		"endLine": 80,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package get(position Vector3)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package get(position Vector3, xobj GameObject) from class EField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 89,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3, xobj GameObject) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/EField.cs",
+		"startLine": 88,
+		"endLine": 107,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package get(position Vector3, xobj GameObject)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type field : BField to field : IField in class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "field : BField"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "field : IField"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type emObj : EMObject to emObj : GameObject in class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 22,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "emObj : EMObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "emObj : GameObject"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private lineRenderer : AdvancedLineRenderer from class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package lineRenderer : AdvancedLineRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private lineRenderer : AdvancedLineRenderer"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private drawFieldLine() : void inlined to public draw() : void in class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 165,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private drawFieldLine() : void"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 32,
+		"endColumn": 33,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 173,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 190,
+		"endLine": 191,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 174,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 126,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public draw() : void"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "drawFieldLine()"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 17,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 188,
+		"endLine": 189,
+		"startColumn": 13,
+		"endColumn": 143,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 92,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public draw() : void"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 32,
+		"endColumn": 33,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 105,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 119,
+		"endLine": 120,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 106,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(!this.visible), if(Mathf.Abs(emObj.getFieldStrength()) < 0.05)] to if(!this.visible || Mathf.Abs(GetFieldStrengthFromEmObj()) < 0.05) in method public draw() : void from class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 128,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!this.visible)"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 134,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Mathf.Abs(emObj.getFieldStrength()) < 0.05)"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 126,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public draw() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 96,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(!this.visible || Mathf.Abs(GetFieldStrengthFromEmObj()) < 0.05)"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 92,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public draw() : void"
+}]
+},
+{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind interface to class in type IField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 28,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "IField"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 27,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "IField"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract getFieldType() : FieldType from class IField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 27,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFieldType() : FieldType"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract getFieldType() : FieldType"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract get(position Vector3) : Vector3 from class IField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract get(position Vector3) : Vector3"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract get(position Vector3, xobj GameObject) : Vector3 from class IField",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(position Vector3, xobj GameObject) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/IField.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract get(position Vector3, xobj GameObject) : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public setSymmetryCount(value int) : void from class FieldLineManager to public setSymmetryCount(symmetryCnt int) : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 97,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setSymmetryCount(value int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setSymmetryCount(symmetryCnt int) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable symmetryCnt : int to symmetryCnt : int in method public setSymmetryCount(symmetryCnt int) : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "symmetryCnt : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "symmetryCnt : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter value : int in method public setSymmetryCount(value int) : void from class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 34,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "value : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 97,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setSymmetryCount(value int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public setSymmetryCount(symmetryCnt int) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public symmetryCount : int from class FieldLineManager to private symmetryCount : int from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private symmetryCount : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private symmetryCount : int from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private symmetryCount : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public symmetryAxis : Vector3 from class FieldLineManager to private symmetryAxis : Vector3 from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryAxis : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private symmetryAxis : Vector3 from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryAxis : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private symmetryAxis : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private symmetryEnabled : bool from class FieldLineManager to private symmetryEnabled : bool from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private symmetryEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private symmetryEnabled : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private symmetryAxis : Vector3 from class FieldLine to private symmetryAxis : Vector3 from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private clones : HashSet<GameObject> from class FieldLine to private clones : HashSet<GameObject> from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private clones : HashSet<GameObject>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 33,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private clones : HashSet<GameObject>"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SymmetricFieldLineManager from class FieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 21,
+		"endLine": 141,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 97,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setSymmetryCount(value int) : void"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryCount : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public symmetryAxis : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private symmetryEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 21,
+		"endLine": 79,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "FieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 5,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SymmetricFieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setSymmetryCount(symmetryCnt int) : void"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private symmetryCount : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private symmetryEnabled : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SymmetricFieldLineManager from class FieldLine",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 21,
+		"endLine": 238,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "FieldLine"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private clearClones() : void"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private clones : HashSet<GameObject>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 21,
+		"endLine": 172,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "FieldLine"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 5,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SymmetricFieldLineManager"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ClearClones() : void"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private symmetryAxis : Vector3"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 33,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private clones : HashSet<GameObject>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected DrawFieldLines() : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 85,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateSymmetry() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 40,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected DrawFieldLines() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private updateSymmetry() : void from class FieldLineManager to protected DrawFieldLines() : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/FieldLineManager.cs",
+		"startLine": 85,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateSymmetry() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 40,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected DrawFieldLines() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter symmetryCnt : int in method public setSymmetryCount(symmetryCnt int) : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 90,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "symmetryCnt : int"
+}, {
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public setSymmetryCount(symmetryCnt int) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public Awake() : void from class FieldLine to public setSymmetryCount(symmetryCnt int) : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 90,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setSymmetryCount(symmetryCnt int) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private clearClones() : void from class FieldLine to private ClearClones() : void from class SymmetricFieldLineManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Physics/FieldLine.cs",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private clearClones() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/SymmetricFieldLineManager.cs",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ClearClones() : void"
+}]
+}
+]
+}]
+}

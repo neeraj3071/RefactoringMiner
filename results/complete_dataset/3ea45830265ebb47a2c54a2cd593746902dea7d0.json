@@ -1,0 +1,543 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "3ea45830265ebb47a2c54a2cd593746902dea7d0",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/3ea45830265ebb47a2c54a2cd593746902dea7d0",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class VRHud",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 14,
+		"endLine": 633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "VRHud"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 15,
+		"endLine": 433,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "VRHud"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private maybeCloneHealthPanelComponents() : void from class VRHud to private maybeCloneHealthPanelComponents() : void from class HealthPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 318,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private maybeCloneHealthPanelComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 124,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private maybeCloneHealthPanelComponents() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void from class VRHud to private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void from class HealthPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 408,
+		"endLine": 439,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 154,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void from class VRHud to private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void from class HealthPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 454,
+		"endLine": 491,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 187,
+		"endLine": 224,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private maybeCloneStaminaPanelComponents() : void from class VRHud to private maybeCloneStaminaPanelComponents() : void from class StaminaPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 373,
+		"endLine": 405,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private maybeCloneStaminaPanelComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 84,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private maybeCloneStaminaPanelComponents() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void from class VRHud to private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void from class StaminaPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 441,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 108,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void from class VRHud to private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void from class StaminaPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 493,
+		"endLine": 500,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 121,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class HealthPanelElement from class VRHud",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 14,
+		"endLine": 633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRHud"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 318,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private maybeCloneHealthPanelComponents() : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 408,
+		"endLine": 439,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 454,
+		"endLine": 491,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 15,
+		"endLine": 433,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VRHud"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 14,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "HealthPanelElement"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 124,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private maybeCloneHealthPanelComponents() : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 154,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private cacheHealthPanelComponents(root GameObject, cache HealthPanelComponents) : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 187,
+		"endLine": 224,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private updateHealthPanelHudReferences(newComponents HealthPanelComponents) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class StaminaPanelElement from class VRHud",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 14,
+		"endLine": 633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRHud"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 373,
+		"endLine": 405,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private maybeCloneStaminaPanelComponents() : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 441,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 493,
+		"endLine": 500,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 15,
+		"endLine": 433,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VRHud"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 14,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "StaminaPanelElement"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 84,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private maybeCloneStaminaPanelComponents() : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 108,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private cacheStaminaPanelComponents(root GameObject, cache StaminaPanelComponents) : void"
+}, {
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 121,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private updateStaminaPanelHudReferences(newComponents StaminaPanelComponents) : void"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private healthPanelComponents : HealthPanelComponents renamed to private _clone : HealthPanelComponents and moved from class VRHud to class HealthPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 39,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private healthPanelComponents : HealthPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 39,
+		"endColumn": 75,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private _clone : HealthPanelComponents"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private originalHealthPanelComponents : HealthPanelComponents renamed to private _original : HealthPanelComponents and moved from class VRHud to class HealthPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 39,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private originalHealthPanelComponents : HealthPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private _original : HealthPanelComponents"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private staminaPanelComponents : StaminaPanelComponents renamed to private _clone : StaminaPanelComponents and moved from class VRHud to class StaminaPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private staminaPanelComponents : StaminaPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 40,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private _clone : StaminaPanelComponents"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private originalStaminaPanelComponents : StaminaPanelComponents renamed to private _original : StaminaPanelComponents and moved from class VRHud to class StaminaPanelElement",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 40,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private originalStaminaPanelComponents : StaminaPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 40,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private _original : StaminaPanelComponents"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public clear() : void renamed to public Clear() : void in class HealthPanelElement.HealthPanelComponents",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 62,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clear() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 80,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Clear() : void"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class VRHud.HealthPanelComponents moved to HealthPanelElement.HealthPanelComponents",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 43,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRHud.HealthPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/HealthPanelElement.cs",
+		"startLine": 59,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "HealthPanelElement.HealthPanelComponents"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public clear() : void renamed to public Clear() : void in class StaminaPanelElement.StaminaPanelComponents",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 90,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clear() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 43,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Clear() : void"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class VRHud.StaminaPanelComponents moved to StaminaPanelElement.StaminaPanelComponents",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/VRHud.cs",
+		"startLine": 82,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRHud.StaminaPanelComponents"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/VRCore/UI/HudElements/StaminaPanelElement.cs",
+		"startLine": 33,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "StaminaPanelElement.StaminaPanelComponents"
+}]
+}
+]
+}]
+}

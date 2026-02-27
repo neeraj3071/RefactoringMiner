@@ -1,0 +1,2352 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/demonixis/C3DE.git",
+	"sha1": "78cf0a99f50f2053c4b67d491792567c9ba02ef7",
+	"url": "https://github.com/demonixis/C3DE/commit/78cf0a99f50f2053c4b67d491792567c9ba02ef7",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class MonoGameGraphicsToolkit.OSVRService moved to OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 29,
+		"endLine": 217,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MonoGameGraphicsToolkit.OSVRService"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 10,
+		"endLine": 203,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "OSVRService"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable terrainMat : var to terrainMaterial : var in method private BuildScene() : void from class VirtualRealityDemo",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "terrainMat : var"
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 8,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "terrainMaterial : var"
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 4,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable water : var to go : var in method private BuildScene() : void from class VirtualRealityDemo",
+	"leftSideLocations": [{
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "water : var"
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "go : var"
+}, {
+		"filePath": "C3DE.Demo/Scenes/VirtualRealityDemo.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 13,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _vrDevice : IVRDevice to _vrDevice : VRService in class VRRenderer",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_vrDevice : IVRDevice"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_vrDevice : VRService"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type height : int to height : var in method private DrawEyeViewIntoBackbuffer(eye int) : void from class VRRenderer",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "height : int"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 17,
+		"endColumn": 162,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 17,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "height : var"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 162,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type width : int to width : var in method private DrawEyeViewIntoBackbuffer(eye int) : void from class VRRenderer",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "width : int"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 17,
+		"endColumn": 162,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 17,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 17,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "width : var"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 17,
+		"endColumn": 162,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type offset : int to offset : var in method private DrawEyeViewIntoBackbuffer(eye int) : void from class VRRenderer",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "offset : var"
+}, {
+		"filePath": "C3DE/Rendering/VRRenderer.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 169,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 40,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 43,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 63,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 76,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SubmitRenderTargets(leftRT RenderTarget2D, rightRT RenderTarget2D) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 50,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package ApplyDistortion(renderTarget RenderTarget2D, eye int) : void from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 46,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 52,
+		"endLine": 60,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package CreateRenderTargetForEye(eye int) from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateRenderTargetForEye(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method public SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OculusRiftService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 40,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 49,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 80,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method public SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OculusRiftService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 63,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 82,
+		"endColumn": 114,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 80,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package CreateRenderTargetForEye(eye int) from class OculusRiftService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateRenderTargetForEye(eye int)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class OculusRiftService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 48,
+		"endLine": 51,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class OculusRiftService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerPose Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 40,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 49,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 63,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 82,
+		"endColumn": 114,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 65,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SubmitRenderTargets(leftRT RenderTarget2D, rightRT RenderTarget2D) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package CreateRenderTargetForEye(eye int) from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 40,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateRenderTargetForEye(eye int)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 58,
+		"endLine": 61,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method package GetViewMatrix(eye int, playerPose Matrix) from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 40,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class OculusWrapService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method public SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 43,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method public SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 57,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 76,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected Dispose(disposing bool) : void from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 75,
+		"endLine": 81,
+		"startColumn": 22,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Dispose(disposing bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 79,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Dispose(disposing bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package CreateRenderTargetForEye(eye int) from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 97,
+		"endLine": 100,
+		"startColumn": 34,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateRenderTargetForEye(eye int)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 98,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 102,
+		"endLine": 105,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method package GetViewMatrix(eye int, playerPose Matrix) from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 40,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class OpenHMDService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 108,
+		"endLine": 124,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 107,
+		"endLine": 124,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Update(gameTime GameTime) : void from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 103,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update(gameTime GameTime) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 108,
+		"endLine": 114,
+		"startColumn": 25,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Update(gameTime GameTime) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 40,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 43,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 63,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 76,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 152,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SubmitRenderTargets(leftRT RenderTarget2D, rightRT RenderTarget2D) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 157,
+		"endLine": 162,
+		"startColumn": 19,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 85,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 93,
+		"endLine": 97,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method package GetViewMatrix(eye int, playerPose Matrix) from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 46,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 96,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 99,
+		"endLine": 104,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 40,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 49,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 63,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 82,
+		"endColumn": 114,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 199,
+		"endLine": 203,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SubmitRenderTargets(leftRT RenderTarget2D, rightRT RenderTarget2D) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 183,
+		"endLine": 189,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package CreateRenderTargetForEye(eye int) from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 169,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 156,
+		"endLine": 169,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package CreateRenderTargetForEye(eye int)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 184,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 171,
+		"endLine": 174,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method package GetViewMatrix(eye int, playerPose Matrix) from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 46,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class OSVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 194,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 176,
+		"endLine": 179,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public CreateRenderTargetForEye(eye int) : RenderTarget2D from class OpenVRService to public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 54,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 54,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetRenderTargetAspectRatio(eye int) : float from class OpenVRService to public abstract GetRenderTargetAspectRatio(eye int) : float from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetRenderTargetAspectRatio(eye int) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public abstract GetRenderTargetAspectRatio(eye int) : float"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetRenderTargetAspectRatio(eye int) : float from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetRenderTargetAspectRatio(eye int) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetRenderTargetAspectRatio(eye int) : float"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetRenderTargetAspectRatio(eye int) : float from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetRenderTargetAspectRatio(eye int) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetRenderTargetAspectRatio(eye int) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void from class OpenVRService to public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class OpenVRService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class VRService from class OpenVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 9,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenVRService"
+}, {
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}, {
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 54,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 9,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "OpenVRService"
+}, {
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 9,
+		"endLine": 84,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "VRService"
+}, {
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ApplyDistortion(renderTarget RenderTarget2D, eye int) : void"
+}, {
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public abstract CreateRenderTargetForEye(eye int) : RenderTarget2D"
+}, {
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetProjectionMatrix(eye int) : Matrix from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetProjectionMatrix(eye int) : Matrix"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method public abstract GetViewMatrix(eye int, playerPose Matrix) : Matrix from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 39,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract GetViewMatrix(eye int, playerPose Matrix) : Matrix from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 68,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract GetViewMatrix(eye int, playerPose Matrix) : Matrix"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter leftRT : RenderTarget2D to renderTargetLeft : RenderTarget2D in method public abstract SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "leftRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 43,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetLeft : RenderTarget2D"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter rightRT : RenderTarget2D to renderTargetRight : RenderTarget2D in method public abstract SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 56,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rightRT : RenderTarget2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 76,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderTargetRight : RenderTarget2D"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SubmitRenderTargets(leftRT RenderTarget2D, rightRT RenderTarget2D) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 110,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract SubmitRenderTargets(renderTargetLeft RenderTarget2D, renderTargetRight RenderTarget2D) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetProjectionMatrix(eye int) from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 26,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetProjectionMatrix(eye int) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetProjectionMatrix(eye int)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter playerScale : Matrix to playerPose : Matrix in method package GetViewMatrix(eye int, playerPose Matrix) from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 46,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "playerScale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "playerPose : Matrix"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package GetViewMatrix(eye int, playerPose Matrix) from class NullVRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewMatrix(eye int, playerScale Matrix) : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetViewMatrix(eye int, playerPose Matrix)"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public DistortionEffect : Effect from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public DistortionEffect : Effect from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public DistortionEffect : Effect from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private _effect : Effect renamed to public DistortionEffect : Effect and moved from class NullVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class NullVRService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class NullVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/NullVRService.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class OculusRiftService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class OculusRiftService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusRiftService.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class OculusWrapService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class OculusWrapService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/Oculus/OculusWrapService.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private _effect : Effect renamed to public DistortionEffect : Effect and moved from class OpenHMDService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class OpenHMDService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class OpenHMDService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenHMD/OpenHMDService.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class OpenVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OpenVR/OpenVRService.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private _effect : Effect renamed to public DistortionEffect : Effect and moved from class MonoGameGraphicsToolkit.OSVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _effect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public PreviewRenderEffect : SpriteEffects from class MonoGameGraphicsToolkit.OSVRService to public PreviewRenderEffect : SpriteEffects from class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public PreviewRenderEffect : SpriteEffects"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public DistortionCorrectionEffect : Effect renamed to public DistortionEffect : Effect and moved from class MonoGameGraphicsToolkit.OSVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public DistortionCorrectionEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionEffect : Effect"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public ShowDistorition : bool renamed to public DistortionCorrectionRequired : bool and moved from class MonoGameGraphicsToolkit.OSVRService to class VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/OSVR/OSVRService.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 15,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public ShowDistorition : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public DistortionCorrectionRequired : bool"
+}]
+},
+{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind interface to class in type VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 6,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "IVRDevice"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 9,
+		"endLine": 84,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "VRService"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class IVRDevice renamed to VRService",
+	"leftSideLocations": [{
+		"filePath": "C3DE/VR/IVRDevice.cs",
+		"startLine": 6,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "IVRDevice"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/VR/VRService.cs",
+		"startLine": 9,
+		"endLine": 84,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VRService"
+}]
+}
+]
+}]
+}

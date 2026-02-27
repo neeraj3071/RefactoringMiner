@@ -1,0 +1,225 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_lambdas.cs
+Size: 470 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+using System.Linq;
+
+class TestLambdas
+{
+    public void TestMethod()
+    {
+        int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+        
+        // Single-expression lambda: x => x * 2
+        var doubled = numbers.Select(x => x * 2);
+        
+        // Multi-statement lambda would look like:
+        // x => { int temp = x * 2; return temp; }
+        
+        foreach (var num in doubled)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_lambdas.cs
+CPatMinerExecutor: Executing CPatMiner transformation (470 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    using [14,32]
+        name [20,31]
+            name: System [20,26]
+            operator: . [26,27]
+            name: Linq [27,31]
+    class [34,469]
+        name: TestLambdas [40,51]
+        block [52,469]
+            function [58,467]
+                type [58,69]
+                    specifier: public [58,64]
+                    name: void [65,69]
+                name: TestMethod [70,80]
+                parameter_list [80,82]
+                block [87,467]
+                    block_content [88,466]
+                        decl_stmt [97,141]
+                            decl [97,140]
+                                type [97,102]
+                                    name [97,102]
+                                        name: int [97,100]
+                                        index [100,102]
+                                name: numbers [103,110]
+                                init [111,140]
+                                    expr [113,140]
+                                        operator: new [113,116]
+                                        name [117,122]
+                                            name: int [117,120]
+                                            index [120,122]
+                                        block [123,140]
+                                            expr [125,126]
+                                                literal: 1 [125,126]
+                                            expr [128,129]
+                                                literal: 2 [128,129]
+                                            expr [131,132]
+                                                literal: 3 [131,132]
+                                            expr [134,135]
+                                                literal: 4 [134,135]
+                                            expr [137,138]
+                                                literal: 5 [137,138]
+                        comment: // Single-expression lambda: x =>x * 2 [159,198]
+                        decl_stmt [207,248]
+                            decl [207,247]
+                                type [207,210]
+                                    name: var [207,210]
+                                name: doubled [211,218]
+                                init [219,247]
+                                    expr [221,247]
+                                        call [221,247]
+                                            name [221,235]
+                                                name: numbers [221,228]
+                                                operator: . [228,229]
+                                                name: Select [229,235]
+                                            argument_list [235,247]
+                                                argument [236,246]
+                                                    expr [236,246]
+                                                        lambda [236,246]
+                                                            parameter_list [236,237]
+                                                                parameter [236,237]
+                                                                    decl [236,237]
+                                                                        name: x [236,237]
+                                                            block [240,246]
+                                                                block_content [240,246]
+                                                                    expr [241,246]
+                                                                        name: x [241,242]
+                                                                        operator: * [243,244]
+                                                                        literal: 2 [245,246]
+                        comment: // Multi-statement lambda would look like: [266,308]
+                        comment: // x =>{ int temp = x * 2; return temp; } [317,359]
+                        foreach [377,461]
+                            control [385,405]
+                                init [386,404]
+                                    decl [386,404]
+                                        type [386,389]
+                                            name: var [386,389]
+                                        name: num [390,393]
+                                        range [394,404]
+                                            expr [397,404]
+                                                name: doubled [397,404]
+                            block [414,461]
+                                block_content [415,460]
+                                    expr_stmt [428,451]
+                                        expr [428,450]
+                                            call [428,450]
+                                                name [428,445]
+                                                    name: Console [428,435]
+                                                    operator: . [435,436]
+                                                    name: WriteLine [436,445]
+                                                argument_list [445,450]
+                                                    argument [446,449]
+                                                        expr [446,449]
+                                                            name: num [446,449]
+[VAR INFERENCE] Detected var type for variable: doubled
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = numbers.Select((Object x) -> x * 2)
+[VAR INFERENCE] SUCCESS - Inferred type: IEnumerable
+import System;
+import System.Linq;
+class TestLambdas {
+  public Void TestMethod(){
+    int[] numbers=new int[]{1,2,3,4,5};
+    IEnumerable doubled=numbers.Select((    Object x) -> x * 2);
+    for (    Object num : doubled) {
+      Console.WriteLine(num);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 2
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 267 chars
+  - Number of lines: 11
+
+=== Generated Java Code (Full Output) ===
+import System;
+import System.Linq;
+class TestLambdas {
+  public Void TestMethod(){
+    int[] numbers=new int[]{1,2,3,4,5};
+    IEnumerable doubled=numbers.Select((    Object x) -> x * 2);
+    for (    Object num : doubled) {
+      Console.WriteLine(num);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_lambdas.java
+  - File contents size: 267 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_lambdas.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestLambdas
+  Type: Class
+  Package: 
+  Source file: tests/test_lambdas.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

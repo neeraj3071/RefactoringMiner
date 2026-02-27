@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "e7ed265d67b6e46d2889ade6eaa05b8d0b238518",
+	"url": "https://github.com/vrm-c/UniVRM/commit/e7ed265d67b6e46d2889ade6eaa05b8d0b238518",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_humanoid : UnityEngine.Avatar to m_humanoid : Avatar in class Vrm10Importer",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_humanoid : UnityEngine.Avatar"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_humanoid : Avatar"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_humanoid : Avatar from class Vrm10Importer",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_humanoid : UnityEngine.Avatar"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_humanoid : Avatar"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private m_vrmObject : VRM10Object from class Vrm10Importer",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package m_vrmObject : VRM10Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/IO/Vrm10Importer.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private m_vrmObject : VRM10Object"
+}]
+}
+]
+}]
+}

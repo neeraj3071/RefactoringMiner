@@ -1,0 +1,162 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "a5e92ce573b7204f20d6076b13c1870649422ec7",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/a5e92ce573b7204f20d6076b13c1870649422ec7",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method package GetControllerType(supportedControllerType SupportedControllerType) extracted from package GetOrAddController(inputDevice InputDevice) in class XRSDKDeviceManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 133,
+		"endLine": 210,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package GetOrAddController(inputDevice InputDevice)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 215,
+		"endLine": 218,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetControllerType(supportedControllerType SupportedControllerType)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 133,
+		"endLine": 189,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package GetOrAddController(inputDevice InputDevice)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 35,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetControllerType(currentControllerType)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package GetInputSourceType(supportedControllerType SupportedControllerType) extracted from package GetOrAddController(inputDevice InputDevice) in class XRSDKDeviceManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 133,
+		"endLine": 210,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package GetOrAddController(inputDevice InputDevice)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 225,
+		"endLine": 228,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetInputSourceType(supportedControllerType SupportedControllerType)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 133,
+		"endLine": 189,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package GetOrAddController(inputDevice InputDevice)"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 47,
+		"endColumn": 88,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetInputSourceType(currentControllerType)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable inputSourceType : InputSourceType in method package GetOrAddController(inputDevice InputDevice) from class XRSDKDeviceManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 21,
+		"endColumn": 42,
+		"codeElementType": "SWITCH_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 29,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "inputSourceType : InputSourceType"
+}, {
+		"filePath": "Assets/MixedRealityToolkit.Providers/XRSDK/XRSDKDeviceManager.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

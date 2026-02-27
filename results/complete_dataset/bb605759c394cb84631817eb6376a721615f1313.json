@@ -1,0 +1,264 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "bb605759c394cb84631817eb6376a721615f1313",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/bb605759c394cb84631817eb6376a721615f1313",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method package RemoveUnsupportedComponents() : void from class VRCQuestTools to private RemoveUnsupportedComponents() : void from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 66,
+		"endLine": 83,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveUnsupportedComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 22,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private RemoveUnsupportedComponents() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private RemoveUnsupportedComponents() : void from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 66,
+		"endLine": 83,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveUnsupportedComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 22,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private RemoveUnsupportedComponents() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package RemoveMissingComponents() : void from class VRCQuestTools to private RemoveMissingComponents() : void from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 88,
+		"endLine": 116,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveMissingComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 49,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private RemoveMissingComponents() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private RemoveMissingComponents() : void from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 88,
+		"endLine": 116,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveMissingComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 49,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private RemoveMissingComponents() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ValidateGameObjectMenu() : bool from class VRCQuestTools to private ValidateGameObjectMenu() : bool from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 120,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ComponentRemoverMenu from class VRCQuestTools",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 17,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCQuestTools"
+}, {
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 66,
+		"endLine": 83,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveUnsupportedComponents() : void"
+}, {
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 88,
+		"endLine": 116,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RemoveMissingComponents() : void"
+}, {
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 120,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 17,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VRCQuestTools"
+}, {
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 15,
+		"endLine": 91,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ComponentRemoverMenu"
+}, {
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 22,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveUnsupportedComponents() : void"
+}, {
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 49,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveMissingComponents() : void"
+}, {
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ValidateGameObjectMenu() : bool from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 253,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ValidateActiveGameObject() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package ValidateActiveGameObject() : bool from class GameObjectMenu to private ValidateGameObjectMenu() : bool from class ComponentRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 253,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ValidateActiveGameObject() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/ComponentRemoverMenu.cs",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ValidateGameObjectMenu() : bool"
+}]
+}
+]
+}]
+}

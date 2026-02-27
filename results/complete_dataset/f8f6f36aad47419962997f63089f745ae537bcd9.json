@@ -1,0 +1,216 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/nikhilnxvverma1/vr-photo-album.git",
+	"sha1": "f8f6f36aad47419962997f63089f745ae537bcd9",
+	"url": "https://github.com/nikhilnxvverma1/vr-photo-album/commit/f8f6f36aad47419962997f63089f745ae537bcd9",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable start : ImageContainer to top : ImageContainer in method private MakeImageContainerListAndComputePerimeter(album Album) : int from class ImageBank",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 18,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "start : ImageContainer"
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 18,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "top : ImageContainer"
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ImageContainer to int in method private MakeImageContainerListAndComputePerimeter(album Album) : int from class ImageBank",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ImageContainer"
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 35,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private MakeImageContainerListAndComputePerimeter(album Album) : ImageContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 10,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "int"
+}, {
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 35,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private MakeImageContainerListAndComputePerimeter(album Album) : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute unusedStart : ImageContainer to totalContainers : int in class ImageBank",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "unusedStart : ImageContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "totalContainers : int"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type unusedStart : ImageContainer to totalContainers : int in class ImageBank",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "unusedStart : ImageContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageBank.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "totalContainers : int"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute package next : ImageContainer from class ImageContainer",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageContainer.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package next : ImageContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageContainer.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "package next : ImageContainer"
+}, {
+		"filePath": "Assets/Script/Generation/ImageContainer.cs",
+		"startLine": 27,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getNext() : ImageContainer"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ImageContainer(photo Photo, normalizedWidth double, normalizedHeight double) from class ImageContainer",
+	"leftSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageContainer.cs",
+		"startLine": 13,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ImageContainer(photo Photo, normalizedWidth double, normalizedHeight double)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Script/Generation/ImageContainer.cs",
+		"startLine": 13,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ImageContainer(photo Photo, normalizedWidth double, normalizedHeight double)"
+}]
+}
+]
+}]
+}

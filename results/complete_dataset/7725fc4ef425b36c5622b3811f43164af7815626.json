@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VIRTUE-DBIS/virtual-exhibition-presenter.git",
+	"sha1": "7725fc4ef425b36c5622b3811f43164af7815626",
+	"url": "https://github.com/VIRTUE-DBIS/virtual-exhibition-presenter/commit/7725fc4ef425b36c5622b3811f43164af7815626",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Update() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 98,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 72,
+		"endLine": 89,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Update() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Update() : void from class ExhibitionManager to package Update() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 98,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 72,
+		"endLine": 89,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Update() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DestroyCurrentExhibition() : void from class ExhibitionManager to public DestroyCurrentExhibition() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DestroyCurrentExhibition() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 94,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DestroyCurrentExhibition() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadExhibition() : await from class ExhibitionManager to package LoadExhibition() : await from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadExhibition() : await"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadExhibition() : await"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public EnableOnlyMainRoom() : void from class ExhibitionManager to public EnableOnlyMainRoom() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 33,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EnableOnlyMainRoom() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 112,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public EnableOnlyMainRoom() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package LoadRoom(room Room) from class ExhibitionManager to package LoadRoom(room Room) from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 63,
+		"endLine": 77,
+		"startColumn": 22,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadRoom(room Room)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 149,
+		"endLine": 163,
+		"startColumn": 22,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package LoadRoom(room Room)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package RestoreExhibits() : void from class ExhibitionManager to package RestoreExhibits() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 79,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RestoreExhibits() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 168,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package RestoreExhibits() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Restore() : void from class ExhibitionManager to public Restore() : void from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 91,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Restore() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 183,
+		"endLine": 188,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Restore() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Exhibition : Exhibition from class ExhibitionManager to public Exhibition : Exhibition from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Exhibition : Exhibition"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Exhibition : Exhibition"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public RoomList : List<CuboidExhibitionRoom> from class ExhibitionManager to public RoomList : List<CuboidExhibitionRoom> from class VrepController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/ExhibitionManager.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 39,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RoomList : List<CuboidExhibitionRoom>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 39,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public RoomList : List<CuboidExhibitionRoom>"
+}]
+}
+]
+}]
+}

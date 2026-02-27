@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "2495e68dce3cb2c32a4f1cb3bbae006a2fd02a83",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/2495e68dce3cb2c32a4f1cb3bbae006a2fd02a83",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute package List : readonly from class EditorVR.Rays",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.Rays.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "package List : readonly"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rayOrigin : var in method public OnRayEnter(eventData RayEventData) : void from class BaseHandle",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Handles/BaseHandle.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rayOrigin : var"
+}, {
+		"filePath": "Scripts/Handles/BaseHandle.cs",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Handles/BaseHandle.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

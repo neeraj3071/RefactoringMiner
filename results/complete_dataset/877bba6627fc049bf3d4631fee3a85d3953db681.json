@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "877bba6627fc049bf3d4631fee3a85d3953db681",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/877bba6627fc049bf3d4631fee3a85d3953db681",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Editor/VertexColorRemover to Editor/Automators",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.cs",
+		"startLine": 14,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VertexColorRemoverAutomator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Automators/VertexColorRemoverAutomator.cs",
+		"startLine": 17,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VertexColorRemoverAutomator"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class VertexColorRemover renamed to VertexColorRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 14,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VertexColorRemover"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/VertexColorRemoverMenu.cs",
+		"startLine": 17,
+		"endLine": 59,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VertexColorRemoverMenu"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package SetAutomation(enabled bool) : void renamed to package Enable(enabled bool) : void in class VertexColorRemoverAutomator",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.cs",
+		"startLine": 30,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetAutomation(enabled bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Automators/VertexColorRemoverAutomator.cs",
+		"startLine": 31,
+		"endLine": 44,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Enable(enabled bool) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private string : readonly from class VertexColorRemoverAutomator",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package string : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Automators/VertexColorRemoverAutomator.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private string : readonly"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class VertexColorRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 14,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "VertexColorRemover"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/VertexColorRemoverMenu.cs",
+		"startLine": 17,
+		"endLine": 59,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "VertexColorRemoverMenu"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private ToggleVertexColorRemoverAutomatorMenu() : void from class VertexColorRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 133,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ToggleVertexColorRemoverAutomator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/VertexColorRemoverMenu.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ToggleVertexColorRemoverAutomatorMenu() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package ToggleVertexColorRemoverAutomator() : void from class VRCQuestTools to private ToggleVertexColorRemoverAutomatorMenu() : void from class VertexColorRemoverMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 133,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ToggleVertexColorRemoverAutomator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/VertexColorRemoverMenu.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ToggleVertexColorRemoverAutomatorMenu() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package GetAvatarsFromScene(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[] from class VRCSDKUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.cs",
+		"startLine": 60,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetAvatars(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/VRCSDKUtils.cs",
+		"startLine": 101,
+		"endLine": 109,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetAvatarsFromScene(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[]"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private GetAvatars(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[] from class VertexColorRemoverAutomator to package GetAvatarsFromScene(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[] from class VRCSDKUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.cs",
+		"startLine": 60,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetAvatars(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/VRCSDKUtils.cs",
+		"startLine": 101,
+		"endLine": 109,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetAvatarsFromScene(scene Scene) : VRC.SDKBase.VRC_AvatarDescriptor[]"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter r : Renderer to renderer : Renderer in method package GetSharedMesh(renderer Renderer) : Mesh from class RendererUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 43,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "r : Renderer"
+}, {
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 44,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "renderer : Renderer"
+}, {
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package GetSharedMesh(renderer Renderer) : Mesh from class RendererUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 48,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetSharedMesh(r Renderer) : Mesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 41,
+		"endLine": 56,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetSharedMesh(renderer Renderer) : Mesh"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetSharedMesh(r Renderer) : Mesh from class VertexColorRemover to package GetSharedMesh(renderer Renderer) : Mesh from class RendererUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemover.cs",
+		"startLine": 48,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetSharedMesh(r Renderer) : Mesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 41,
+		"endLine": 56,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetSharedMesh(renderer Renderer) : Mesh"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package CopyBlensShapesWeights(source SkinnedMeshRenderer, target SkinnedMeshRenderer) : void renamed to package CopyBlendShapesWeights(source SkinnedMeshRenderer, target SkinnedMeshRenderer) : void in class RendererUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/Utils/SkinnedMeshRendererUtility.cs",
+		"startLine": 20,
+		"endLine": 34,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package CopyBlensShapesWeights(source SkinnedMeshRenderer, target SkinnedMeshRenderer) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 20,
+		"endLine": 34,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package CopyBlendShapesWeights(source SkinnedMeshRenderer, target SkinnedMeshRenderer) : void"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class SkinnedMeshRendererUtility renamed to RendererUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/Utils/SkinnedMeshRendererUtility.cs",
+		"startLine": 13,
+		"endLine": 35,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SkinnedMeshRendererUtility"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/RendererUtility.cs",
+		"startLine": 13,
+		"endLine": 74,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "RendererUtility"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1128 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/InputSystem.git",
+	"sha1": "441f371893a2770d4f217175481fd978efa0bf06",
+	"url": "https://github.com/Unity-Technologies/InputSystem/commit/441f371893a2770d4f217175481fd978efa0bf06",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public InferDefaultControlScheme() : InputControlScheme renamed to public InferDefaultControlSchemeForSinglePlayer() : InputControlScheme in class DemoPlayerController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 136,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public InferDefaultControlScheme() : InputControlScheme"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 121,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public InferDefaultControlSchemeForSinglePlayer() : InputControlScheme"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public SelectControlSchemeBasedOnDevice(device InputDevice) : InputControlScheme renamed to public SelectControlSchemeBasedOnDeviceForMultiPlayer(device InputDevice) : InputControlScheme in class DemoPlayerController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 148,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SelectControlSchemeBasedOnDevice(device InputDevice) : InputControlScheme"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public SelectControlSchemeBasedOnDeviceForMultiPlayer(device InputDevice) : InputControlScheme"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter playerIndex : int in method public Initialize(playerIndex int) : void from class DemoPlayerController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 96,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 28,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "playerIndex : int"
+}, {
+		"filePath": "Assets/Demo/DemoPlayerController.cs",
+		"startLine": 88,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Initialize(playerIndex int) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public TODO_Demo_SinglePlayer_ChoosesGamepadAsDefaultScheme_IfGamepadIsPresent() : void renamed to public Demo_SinglePlayer_OSX_ChoosesGamepadAsDefaultScheme_IfGamepadIsPresent() : void in class DemoGameTests",
+	"leftSideLocations": [{
+		"filePath": "Assets/Tests/DemoGameTests_Platforms.cs",
+		"startLine": 11,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TODO_Demo_SinglePlayer_ChoosesGamepadAsDefaultScheme_IfGamepadIsPresent() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Tests/DemoGameTests_Platforms.cs",
+		"startLine": 14,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Demo_SinglePlayer_OSX_ChoosesGamepadAsDefaultScheme_IfGamepadIsPresent() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public TODO_Demo_SinglePlayer_ChoosesKeyboardMouseAsDefaultScheme_IfNoGamepadIsPresent() : void renamed to public Demo_SinglePlayer_OSX_ChoosesKeyboardMouseAsDefaultScheme_IfNoGamepadIsPresent() : void in class DemoGameTests",
+	"leftSideLocations": [{
+		"filePath": "Assets/Tests/DemoGameTests_Platforms.cs",
+		"startLine": 22,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TODO_Demo_SinglePlayer_ChoosesKeyboardMouseAsDefaultScheme_IfNoGamepadIsPresent() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Tests/DemoGameTests_Platforms.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Demo_SinglePlayer_OSX_ChoosesKeyboardMouseAsDefaultScheme_IfNoGamepadIsPresent() : void"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 27,
+		"endLine": 375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "InputUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 28,
+		"endLine": 501,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "InputUser"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type all : ReadOnlyArray<InputUser> to all : ReadOnlyArray<IInputUser> in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 48,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "all : ReadOnlyArray<InputUser>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 49,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "all : ReadOnlyArray<IInputUser>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type s_AllUsers : InputUser[] to s_AllUsers : IInputUser[] in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 37,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "s_AllUsers : InputUser[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 465,
+		"endLine": 465,
+		"startColumn": 38,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "s_AllUsers : IInputUser[]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type s_OnChange : InlinedArray<Action<InputUser,InputUserChange>> to s_OnChange : InlinedArray<Action<IInputUser,InputUserChange>> in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 74,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "s_OnChange : InlinedArray<Action<InputUser,InputUserChange>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 75,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "s_OnChange : InlinedArray<Action<IInputUser,InputUserChange>>"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private FindUserIndex(user IInputUser) : int extracted from public Remove(user InputUser) : void in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 301,
+		"endLine": 330,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Remove(user InputUser) : void"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 316,
+		"endLine": 317,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 441,
+		"endLine": 449,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private FindUserIndex(user IInputUser) : int"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 446,
+		"endLine": 446,
+		"startColumn": 21,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 443,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 394,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Remove(user IInputUser) : void"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "FindUserIndex(user)"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 445,
+		"endLine": 446,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 444,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter s_AllUserCount : ref to userCount : ref in method package AppendWithCapacity(s_AllUsers ref, userCount ref) from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 73,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "s_AllUserCount : ref"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 61,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "userCount : ref"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public PauseHaptics() : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 361,
+		"endLine": 364,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PauseHaptics() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 338,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public PauseHaptics() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public ResumeHaptics() : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 366,
+		"endLine": 369,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ResumeHaptics() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 343,
+		"endLine": 346,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public ResumeHaptics() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public ResetHaptics() : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 371,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ResetHaptics() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 348,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public ResetHaptics() : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type InputUser to IInputUser in method public FindUserForDevice(device InputDevice) : IInputUser from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "InputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 339,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FindUserForDevice(device InputDevice) : InputUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IInputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 427,
+		"endLine": 433,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public FindUserForDevice(device InputDevice) : IInputUser"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter controlScheme : InputControlScheme in method public SetControlScheme(controlScheme InputControlScheme) : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 38,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "controlScheme : InputControlScheme"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 154,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetControlScheme(controlScheme InputControlScheme) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 198,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public SetControlScheme() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public SetControlScheme() : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 154,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetControlScheme(controlScheme InputControlScheme) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 198,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public SetControlScheme() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter userIndex : int in method private AssignDeviceInternal(userIndex int, device InputDevice) : bool from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 179,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private AssignDeviceInternal(device InputDevice) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 50,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "userIndex : int"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 300,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private AssignDeviceInternal(userIndex int, device InputDevice) : bool"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private AssignDeviceInternal(userIndex int, device InputDevice) : bool from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 179,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private AssignDeviceInternal(device InputDevice) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 300,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private AssignDeviceInternal(userIndex int, device InputDevice) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter user : IInputUser in method private Notify(user IInputUser, change InputUserChange) : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 227,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Notify(change InputUserChange) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "user : IInputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 435,
+		"endLine": 439,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private Notify(user IInputUser, change InputUserChange) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private Notify(user IInputUser, change InputUserChange) : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 227,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Notify(change InputUserChange) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 435,
+		"endLine": 439,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private Notify(user IInputUser, change InputUserChange) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type user : InputUser to user : IInputUser in method public Remove(user IInputUser) : void from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "user : InputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 303,
+		"endLine": 304,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 35,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "user : IInputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 396,
+		"endLine": 397,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable m_DeviceStartIndex : int to deviceStartIndex : var in method private AssignDeviceInternal(userIndex int, device InputDevice) : bool from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_DeviceStartIndex : int"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 192,
+		"endLine": 193,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 186,
+		"endLine": 187,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceStartIndex : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 313,
+		"endLine": 314,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable m_DeviceCount : int to deviceCount : var in method private AssignDeviceInternal(userIndex int, device InputDevice) : bool from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_DeviceCount : int"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 192,
+		"endLine": 193,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 185,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 190,
+		"endLine": 206,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceCount : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 313,
+		"endLine": 314,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 306,
+		"endLine": 308,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 311,
+		"endLine": 327,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type receivedUser : InputUser to receivedUser : IInputUser in method public Users_CanMonitorForChanges() : void from class UserTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "receivedUser : InputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "receivedUser : IInputUser"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/UserTests.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_DeviceStartIndex : int to deviceStartIndex : int in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_DeviceStartIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deviceStartIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public deviceStartIndex : int from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_DeviceStartIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public deviceStartIndex : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_DeviceCount : int to deviceCount : int in class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_DeviceCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deviceCount : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public deviceCount : int from class InputUser",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_DeviceCount : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Plugins/Users/InputUser.cs",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public deviceCount : int"
+}]
+}
+]
+}]
+}

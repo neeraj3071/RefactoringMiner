@@ -1,0 +1,2133 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Faceplant-Games/epicslash.git",
+	"sha1": "77f9004f943e910ed0cc356566c4d7e38b2d8be8",
+	"url": "https://github.com/Faceplant-Games/epicslash/commit/77f9004f943e910ed0cc356566c4d7e38b2d8be8",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hp : int to Hp : int in class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 19,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Hp : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected Hp : int from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public hp : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 19,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected Hp : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute experience : int to Experience : int in class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "experience : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 19,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Experience : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected Experience : int from class AbstractMonster",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public experience : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/AbstractMonster.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 19,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected Experience : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute damage : int to Damage : int in class Attack3B",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "damage : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Damage : int"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type bullet : GameObject to bullet : var in method private FireBullet(target GameObject) : void from class Attack3B",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 14,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bullet : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "bullet : var"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/Attack3B.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 20,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 19,
+		"endLine": 27,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Move(position Vector3) : void from class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Move(position Vector3) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Move(position Vector3) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 35,
+		"endLine": 67,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 34,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Attack(target GameObject) : void from class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Attack(target GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 67,
+		"endLine": 71,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Attack(target GameObject) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute player : GameObject to _player : GameObject in class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "player : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_player : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute t : float to _t : float in class BearbotScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "t : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BearbotScript.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_t : float"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public StealGold() : void inlined to private Steal(collision Collider) : IEnumerator in class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 106,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public StealGold() : void"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 93,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "package Steal(collision Collider) : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "StealGold()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 94,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private Steal(collision Collider) : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 6,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 25,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 29,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(timer > 1) to if(!(_timer > 1)) in method private Update() : void from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 62,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(timer > 1)"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 58,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!(_timer > 1))"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 60,
+		"endLine": 82,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 58,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 60,
+		"endLine": 82,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type asi : AnimatorStateInfo to asi : var in method private Steal(collision Collider) : IEnumerator from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 27,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "asi : AnimatorStateInfo"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "asi : var"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Steal(collision Collider) : IEnumerator from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 93,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Steal(collision Collider) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 94,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Steal(collision Collider) : IEnumerator"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute myState : Monster2State to MyState : Monster2State in class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "myState : Monster2State"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "MyState : Monster2State"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute timer : float to _timer : float in class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 8,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "timer : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_timer : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private _timer : float from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 8,
+		"endColumn": 17,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package timer : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _timer : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute animator : Animator to _animator : Animator in class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 11,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "animator : Animator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_animator : Animator"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private _animator : Animator from class BunnyScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 11,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package animator : Animator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/BunnyScript.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _animator : Animator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 20,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 19,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Move(position Vector3) : void from class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Move(position Vector3) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Move(position Vector3) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 35,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 34,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Attack(target GameObject) : void from class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Attack(target GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 67,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Attack(target GameObject) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute player : GameObject to _player : GameObject in class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "player : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_player : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute t : float to _t : float in class DragonScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "t : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/DragonScript.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 19,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_t : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private FixedUpdate() : void from class GoldBag",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/GoldBag.cs",
+		"startLine": 16,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/GoldBag.cs",
+		"startLine": 10,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private FixedUpdate() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute timeEllapsed : float to _timeEllapsed : float in class GoldBag",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/GoldBag.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "timeEllapsed : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/GoldBag.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_timeEllapsed : float"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 19,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 19,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Update() : void from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 30,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Update() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 30,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Update() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Move(position Vector3) : void from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Move(position Vector3) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Move(position Vector3) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type asi : AnimatorStateInfo to asi : var in method private AttackCoroutine() : IEnumerator from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 27,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "asi : AnimatorStateInfo"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 55,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "asi : var"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 55,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private AttackCoroutine() : IEnumerator from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 52,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AttackCoroutine() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 52,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private AttackCoroutine() : IEnumerator"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter target : GameObject in method public AttackOrMove(target GameObject) : void from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "target : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AttackOrMove(target GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private AttackOrMove() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private AttackOrMove() : void from class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AttackOrMove(target GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private AttackOrMove() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute animator : Animator to _animator : Animator in class SpiderScript",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "animator : Animator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/Behavior/SpiderScript.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_animator : Animator"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type MyNavMeshAgent : UnityEngine.AI.NavMeshAgent to MyNavMeshAgent : NavMeshAgent in class FlyingMovingB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/FlyingMovingB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 40,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "MyNavMeshAgent : UnityEngine.AI.NavMeshAgent"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/FlyingMovingB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "MyNavMeshAgent : NavMeshAgent"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class FlyingMovingB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/FlyingMovingB.cs",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/FlyingMovingB.cs",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type MyNavMeshAgent : UnityEngine.AI.NavMeshAgent to MyNavMeshAgent : NavMeshAgent in class GroundMovingB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/GroundMovingB.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 40,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "MyNavMeshAgent : UnityEngine.AI.NavMeshAgent"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/GroundMovingB.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "MyNavMeshAgent : NavMeshAgent"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class GroundMovingB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/GroundMovingB.cs",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Monsters/PathFinding/GroundMovingB.cs",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private FixedUpdate() : void from class BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/BulletB.cs",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/BulletB.cs",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private FixedUpdate() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute lifeTime : float to LifeTime : float in class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lifeTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "LifeTime : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package LifeTime : float from class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lifeTime : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package LifeTime : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute speed : float to Speed : float in class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 15,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "speed : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 15,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Speed : float"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute damage : int to Damage : int in class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "damage : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Damage : int"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type distanceThisFrame : float to distanceThisFrame : var in method private FixedUpdate() : void from class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "distanceThisFrame : float"
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 4,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 7,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "distanceThisFrame : var"
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 16,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type hit : RaycastHit to hit : var in method private FixedUpdate() : void from class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 14,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hit : RaycastHit"
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "hit : var"
+}, {
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 18,
+		"endLine": 21,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private FixedUpdate() : void from class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 12,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 11,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private FixedUpdate() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private DestroyBullet() : void from class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DestroyBullet() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private DestroyBullet() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute timer : float to _timer : float in class Ennemi3BulletB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "timer : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Projectiles/Ennemi3BulletB.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_timer : float"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type bullet : BulletB to bullet : var in method public RangeHitTest() : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bullet : BulletB"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "bullet : var"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type current : GameObject to current : var in method public CreateWeapon(weapon string, parent Transform, audioSource AudioSource) : GameObject from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 20,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "current : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "current : var"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private Start() : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Start() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type index : int to index : var in method private FixedUpdate() : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "index : int"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 24,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "index : var"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 24,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private FixedUpdate() : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 21,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package FixedUpdate() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 21,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private FixedUpdate() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter collider : Collider to enteredCollider : Collider in method private OnTriggerEnter(enteredCollider Collider) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "collider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 33,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "enteredCollider : Collider"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private OnTriggerEnter(enteredCollider Collider) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnTriggerEnter(collider Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 36,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private OnTriggerEnter(enteredCollider Collider) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type bullet : BulletB to bullet : var in method private RangeHit(sender object, e ClickedEventArgs) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bullet : BulletB"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "bullet : var"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private RangeHit(sender object, e ClickedEventArgs) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 56,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RangeHit(sender object, e ClickedEventArgs) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 49,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private RangeHit(sender object, e ClickedEventArgs) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type IEnumerator to void in method private LongVibration(length ushort) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LongVibration(length float, strength ushort) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private LongVibration(length ushort) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type length : float to length : ushort in method private LongVibration(length ushort) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 31,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "length : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "length : ushort"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter strength : ushort in method package LongVibration(length float, strength ushort) : IEnumerator from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 45,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "strength : ushort"
+}, {
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LongVibration(length float, strength ushort) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private LongVibration(length ushort) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private LongVibration(length ushort) : void from class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LongVibration(length float, strength ushort) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 28,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private LongVibration(length ushort) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute audioSource : AudioSource to AudioSource : AudioSource in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "audioSource : AudioSource"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AudioSource : AudioSource"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute shoot : AudioClip[] to Shoot : AudioClip[] in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "shoot : AudioClip[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Shoot : AudioClip[]"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute bulletPrefab : BulletB to BulletPrefab : BulletB in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "bulletPrefab : BulletB"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "BulletPrefab : BulletB"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute barrelEndTransform : Transform to BarrelEndTransform : Transform in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 19,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "barrelEndTransform : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 19,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "BarrelEndTransform : Transform"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute isShotEnabled : bool to IsShotEnabled : bool in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "isShotEnabled : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "IsShotEnabled : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute device : SteamVR_Controller.Device to Device : SteamVR_Controller.Device in class WeaponB",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 38,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "device : SteamVR_Controller.Device"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Weapons/WeaponB.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 38,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Device : SteamVR_Controller.Device"
+}]
+}
+]
+}]
+}

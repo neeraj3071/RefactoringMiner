@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "cc8d5bf92d5f721d74cae61f88fa3f782d615152",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/cc8d5bf92d5f721d74cae61f88fa3f782d615152",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type terminalContainer : TerminalContainer to terminalContainer : Container<TerminalContainer> in class ScreenManager",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ScreenManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "terminalContainer : TerminalContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ScreenManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 42,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "terminalContainer : Container<TerminalContainer>"
+}]
+}
+]
+}]
+}

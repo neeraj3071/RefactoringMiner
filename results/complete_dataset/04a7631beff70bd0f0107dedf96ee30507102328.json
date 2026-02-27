@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Innoactive/Creator.git",
+	"sha1": "04a7631beff70bd0f0107dedf96ee30507102328",
+	"url": "https://github.com/Innoactive/Creator/commit/04a7631beff70bd0f0107dedf96ee30507102328",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter isCompleted : bool to state : AnalyticsState in method private SendTrackingEvent(state AnalyticsState) : void from class AnalyticsUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/UI/Wizard/Setup/AnalyticsPage.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "isCompleted : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Analytics/AnalyticsUtils.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "state : AnalyticsState"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type isCompleted : bool to state : AnalyticsState in method private SendTrackingEvent(state AnalyticsState) : void from class AnalyticsUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/UI/Wizard/Setup/AnalyticsPage.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "isCompleted : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Analytics/AnalyticsUtils.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "state : AnalyticsState"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SendTrackingEvent(state AnalyticsState) : void from class AnalyticsUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/UI/Wizard/Setup/AnalyticsPage.cs",
+		"startLine": 41,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Closing(isCompleted bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Analytics/AnalyticsUtils.cs",
+		"startLine": 61,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SendTrackingEvent(state AnalyticsState) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private SendTrackingEvent(state AnalyticsState) : void from class AnalyticsUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/UI/Wizard/Setup/AnalyticsPage.cs",
+		"startLine": 41,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Closing(isCompleted bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Analytics/AnalyticsUtils.cs",
+		"startLine": 61,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private SendTrackingEvent(state AnalyticsState) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public Closing(isCompleted bool) : void from class AnalyticsPage to private SendTrackingEvent(state AnalyticsState) : void from class AnalyticsUtils",
+	"leftSideLocations": [{
+		"filePath": "Editor/UI/Wizard/Setup/AnalyticsPage.cs",
+		"startLine": 41,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Closing(isCompleted bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Analytics/AnalyticsUtils.cs",
+		"startLine": 61,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private SendTrackingEvent(state AnalyticsState) : void"
+}]
+}
+]
+}]
+}

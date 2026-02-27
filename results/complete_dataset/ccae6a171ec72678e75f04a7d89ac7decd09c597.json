@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedReality-WebRTC.git",
+	"sha1": "ccae6a171ec72678e75f04a7d89ac7decd09c597",
+	"url": "https://github.com/microsoft/MixedReality-WebRTC/commit/ccae6a171ec72678e75f04a7d89ac7decd09c597",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private CreateSender() : void renamed to private CreateSenderIfNeeded() : void in class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 371,
+		"endLine": 398,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateSender() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 355,
+		"endLine": 381,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CreateSenderIfNeeded() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private DestroySender() : void renamed to private DestroySenderIfNeeded() : void in class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 400,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DestroySender() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 383,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private DestroySenderIfNeeded() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type _senderTrack : MediaTrack to _senderTrack : LocalMediaTrack in class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 28,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_senderTrack : MediaTrack"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "_senderTrack : LocalMediaTrack"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IMediaTrackSource : as to IMediaReceiver : as in initializer MediaLine from class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 35,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "IMediaTrackSource : as"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 19,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IMediaReceiver : as"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IMediaTrackSourceInternal : is to IMediaReceiverInternal : is in initializer MediaLine from class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 33,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "IMediaTrackSourceInternal : is"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 75,
+		"endLine": 78,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IMediaReceiverInternal : is"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 166,
+		"endLine": 169,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IMediaReceiver : as to IMediaTrackSource : as in initializer MediaLine from class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "IMediaReceiver : as"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 35,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IMediaTrackSource : as"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 19,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IMediaReceiverInternal : is to IMediaTrackSourceInternal : is in initializer MediaLine from class MediaLine",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 33,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "IMediaReceiverInternal : is"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 172,
+		"endLine": 175,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 33,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IMediaTrackSourceInternal : is"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/MediaLine.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

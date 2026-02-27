@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dakyneko/DakyModsCVR.git",
+	"sha1": "73da82a680330027f141bc6f44d41c91995b21aa",
+	"url": "https://github.com/dakyneko/DakyModsCVR/commit/73da82a680330027f141bc6f44d41c91995b21aa",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public BuildCallbackMenuItem(name string, callback Action) : ItemAction renamed to public BuildButtonItem(name string, callback Action) : ItemAction in class .ActionMenuMod..Lib",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 125,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public BuildCallbackMenuItem(name string, callback Action) : ItemAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 125,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public BuildButtonItem(name string, callback Action) : ItemAction"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute callback_items : Dictionary<string,Action> to callbackItems : Dictionary<string,Action> in class ActionMenuMod",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 44,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "callback_items : Dictionary<string,Action>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/ActionMenu.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 44,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "callbackItems : Dictionary<string,Action>"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,678 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "37ade33569af888c6b0079ad8e753029b7c6fcd2",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/37ade33569af888c6b0079ad8e753029b7c6fcd2",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Initialize() : void from class WindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 124,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 90,
+		"endLine": 100,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Initialize() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ReadProfile() : void from class WindowsMixedRealityEyeGazeDataProvider to private ReadProfile() : void from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 145,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ReadProfile() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 66,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private ReadProfile() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SmoothGaze() : Ray from class WindowsMixedRealityEyeGazeDataProvider to protected SmoothGaze() : Ray from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 220,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SmoothGaze() : Ray"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 91,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected SmoothGaze() : Ray"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected SmoothGaze() : Ray from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 220,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SmoothGaze() : Ray"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 91,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected SmoothGaze() : Ray"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private IsSaccading(rayOld Ray, rayNew Ray) : bool from class WindowsMixedRealityEyeGazeDataProvider to private IsSaccading(rayOld Ray, rayNew Ray) : bool from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 294,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsSaccading(rayOld Ray, rayNew Ray) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 165,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private IsSaccading(rayOld Ray, rayNew Ray) : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SmoothEyeTracking : bool from class WindowsMixedRealityEyeGazeDataProvider to public SmoothEyeTracking : bool from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SmoothEyeTracking : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SmoothEyeTracking : bool"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public SaccadeProvider : IMixedRealityEyeSaccadeProvider from class WindowsMixedRealityEyeGazeDataProvider to public SaccadeProvider : IMixedRealityEyeSaccadeProvider from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SaccadeProvider : IMixedRealityEyeSaccadeProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public SaccadeProvider : IMixedRealityEyeSaccadeProvider"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Action : event from class WindowsMixedRealityEyeGazeDataProvider to public Action : event from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Action : event from class WindowsMixedRealityEyeGazeDataProvider to public Action : event from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Action : event from class WindowsMixedRealityEyeGazeDataProvider to public Action : event from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package smoothFactorNormalized : float from class WindowsMixedRealityEyeGazeDataProvider to package smoothFactorNormalized : float from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 32,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package smoothFactorNormalized : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 32,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package smoothFactorNormalized : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package saccadeThreshInDegree : float from class WindowsMixedRealityEyeGazeDataProvider to package saccadeThreshInDegree : float from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package saccadeThreshInDegree : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package saccadeThreshInDegree : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private confidenceOfSaccade : int from class WindowsMixedRealityEyeGazeDataProvider to private confidenceOfSaccade : int from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private confidenceOfSaccade : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private confidenceOfSaccade : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private confidenceOfSaccadeThreshold : int from class WindowsMixedRealityEyeGazeDataProvider to private confidenceOfSaccadeThreshold : int from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 21,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private confidenceOfSaccadeThreshold : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private confidenceOfSaccadeThreshold : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private saccade_initialGazePoint : Ray from class WindowsMixedRealityEyeGazeDataProvider to private saccade_initialGazePoint : Ray from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private saccade_initialGazePoint : Ray"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private saccade_initialGazePoint : Ray"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private List : readonly from class WindowsMixedRealityEyeGazeDataProvider to private List : readonly from class BaseWindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private List : readonly"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class BaseWindowsMixedRealityEyeGazeDataProvider from class WindowsMixedRealityEyeGazeDataProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 30,
+		"endLine": 339,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "WindowsMixedRealityEyeGazeDataProvider"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 145,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ReadProfile() : void"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 220,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SmoothGaze() : Ray"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 294,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private IsSaccading(rayOld Ray, rayNew Ray) : bool"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SmoothEyeTracking : bool"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public SaccadeProvider : IMixedRealityEyeSaccadeProvider"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 32,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package smoothFactorNormalized : float"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package saccadeThreshInDegree : float"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private confidenceOfSaccade : int"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 21,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private confidenceOfSaccadeThreshold : int"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private saccade_initialGazePoint : Ray"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/XR2018/WindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 29,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "WindowsMixedRealityEyeGazeDataProvider"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 12,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "BaseWindowsMixedRealityEyeGazeDataProvider"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 66,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ReadProfile() : void"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 91,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected SmoothGaze() : Ray"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 165,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private IsSaccading(rayOld Ray, rayNew Ray) : bool"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SmoothEyeTracking : bool"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 48,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public SaccadeProvider : IMixedRealityEyeSaccadeProvider"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public Action : event"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 32,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package smoothFactorNormalized : float"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 32,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package saccadeThreshInDegree : float"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private confidenceOfSaccade : int"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 21,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private confidenceOfSaccadeThreshold : int"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private saccade_initialGazePoint : Ray"
+}, {
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityEyeGazeDataProvider.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private List : readonly"
+}]
+}
+]
+}]
+}

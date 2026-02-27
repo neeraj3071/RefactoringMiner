@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/xire-/graphulus.git",
+	"sha1": "d4fb186d3f44b4125c69767b6a62621ce2511a75",
+	"url": "https://github.com/xire-/graphulus/commit/d4fb186d3f44b4125c69767b6a62621ce2511a75",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public FindClosestNodeObject(point Vector3, maxDistance float) : GameObject renamed to public GetClosestNodeOrNull(point Vector3, maxDistance float) : Node in class Graph",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FindClosestNodeObject(point Vector3, maxDistance float) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GetClosestNodeOrNull(point Vector3, maxDistance float) : Node"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type GameObject to Node in method public GetClosestNodeOrNull(point Vector3, maxDistance float) : Node from class Graph",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 12,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "GameObject"
+}, {
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FindClosestNodeObject(point Vector3, maxDistance float) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Node"
+}, {
+		"filePath": "Assets/Scripts/Graph.cs",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetClosestNodeOrNull(point Vector3, maxDistance float) : Node"
+}]
+}
+]
+}]
+}

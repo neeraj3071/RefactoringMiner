@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/demonixis/C3DE.git",
+	"sha1": "a0eee5845829b10791d4065cab160b0d06013d03",
+	"url": "https://github.com/demonixis/C3DE/commit/a0eee5845829b10791d4065cab160b0d06013d03",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type bool to void in method public EmissivePass(renderer Renderer) : void from class IEmissiveMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/IEmissiveMaterial.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "C3DE/Graphics/Materials/IEmissiveMaterial.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EmissivePass(renderer Renderer) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/IEmissiveMaterial.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "C3DE/Graphics/Materials/IEmissiveMaterial.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public EmissivePass(renderer Renderer) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type bool to void in method public EmissivePass(renderer Renderer) : void from class StandardMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 141,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EmissivePass(renderer Renderer) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 197,
+		"endLine": 204,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public EmissivePass(renderer Renderer) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package LoadContent(content ContentManager) : void from class StandardMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LoadContent(content ContentManager) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 99,
+		"endLine": 143,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package LoadContent(content ContentManager) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _specularColor : Vector3 to m_SpecularColor : Vector3 in class StandardMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_specularColor : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_SpecularColor : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _emissiveColor : Vector3 to m_EmissiveColor : Vector3 in class StandardMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_emissiveColor : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_EmissiveColor : Vector3"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _diffuseColor : Vector3 to m_DiffuseColor : Vector3 in class StandardMaterial",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 25,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_diffuseColor : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Graphics/Materials/StandardMaterial.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 25,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_DiffuseColor : Vector3"
+}]
+}
+]
+}]
+}

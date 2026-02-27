@@ -1,0 +1,366 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "01507fdcd56e1a1f5b221c5335b23291bd0ac6bd",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/01507fdcd56e1a1f5b221c5335b23291bd0ac6bd",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable kTargetWidth : float in method private HideRay() : IEnumerator from class DefaultProxyRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 4,
+		"endColumn": 123,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 15,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kTargetWidth : float"
+}, {
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 138,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kSmoothTime : float in method private HideRay() : IEnumerator from class DefaultProxyRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 4,
+		"endColumn": 123,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 15,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kSmoothTime : float"
+}, {
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 138,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kSmoothTime : float in method private ShowRay() : IEnumerator from class DefaultProxyRay",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 4,
+		"endColumn": 132,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 15,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kSmoothTime : float"
+}, {
+		"filePath": "Scripts/Proxies/DefaultProxyRay.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 4,
+		"endColumn": 137,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CreateToolButtons(toolTypes List<Type>) : void renamed to private CreateFaceButtons(types List<Type>) : void in class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 179,
+		"endLine": 209,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CreateToolButtons(toolTypes List<Type>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 182,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CreateFaceButtons(types List<Type>) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type toolTypes : List<Type> to types : in in method private CreateFaceButtons(types List<Type>) : void from class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "toolTypes : List<Type>"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "types : in"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable toolTypes : in to types : in in method private CreateFaceButtons(types List<Type>) : void from class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "toolTypes : in"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "types : in"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable toolType : var to selectedType : var in method private CreateFaceButtons(types List<Type>) : void from class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "toolType : var"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "selectedType : var"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter toolTypes : List<Type> to types : in in method private CreateFaceButtons(types List<Type>) : void from class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "toolTypes : List<Type>"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "types : in"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kSmoothTime : float in method private AnimateShow() : IEnumerator from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 5,
+		"endColumn": 119,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kSmoothTime : float"
+}, {
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 5,
+		"endColumn": 125,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kSmoothTime : float in method private AnimateHide() : IEnumerator from class MainMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 5,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kSmoothTime : float"
+}, {
+		"filePath": "Tools/MainMenu/Scripts/MainMenuUI.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 125,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

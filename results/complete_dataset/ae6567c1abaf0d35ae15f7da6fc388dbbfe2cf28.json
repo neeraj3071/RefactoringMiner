@@ -1,0 +1,1500 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ultraleap/XR-Keyboard.git",
+	"sha1": "ae6567c1abaf0d35ae15f7da6fc388dbbfe2cf28",
+	"url": "https://github.com/ultraleap/XR-Keyboard/commit/ae6567c1abaf0d35ae15f7da6fc388dbbfe2cf28",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Keyboard in method public SpawnKeyboard(currentlySelected Transform) : Keyboard from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 186,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SpawnKeyboard(currentlySelected Transform) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 104,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public SpawnKeyboard(currentlySelected Transform) : Keyboard"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sourceKeyboard : Keyboard in method private HandleTextInputButtonKeyUp(_keyCode KeyCode, sourceKeyboard Keyboard) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 74,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleTextInputButtonKeyUp(_keyCode KeyCode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 63,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sourceKeyboard : Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 59,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private HandleTextInputButtonKeyUp(_keyCode KeyCode, sourceKeyboard Keyboard) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sourceKeyboard : Keyboard in method private HandleTextInputButtonKeyUpSpecialChar(_keyCodeSpecialChar KeyCodeSpecialChar, sourceKeyboard Keyboard) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 87,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleTextInputButtonKeyUpSpecialChar(_keyCodeSpecialChar KeyCodeSpecialChar) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 96,
+		"endColumn": 119,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sourceKeyboard : Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private HandleTextInputButtonKeyUpSpecialChar(_keyCodeSpecialChar KeyCodeSpecialChar, sourceKeyboard Keyboard) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sourceKeyboard : Keyboard in method private HandleKeyUpEncoding(_keyCodeString string, sourceKeyboard Keyboard) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 93,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleKeyUpEncoding(_keyCodeString string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 61,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sourceKeyboard : Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 78,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private HandleKeyUpEncoding(_keyCodeString string, sourceKeyboard Keyboard) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sourceKeyboard : Keyboard in method public UpdatePreview(previewText string, sourceKeyboard Keyboard) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 265,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdatePreview(previewText string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 51,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sourceKeyboard : Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdatePreview(previewText string, sourceKeyboard Keyboard) : void"
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute textInputPreview : TextInputPreview to sourceKeyboard : Keyboard in method public UpdatePreview(previewText string, sourceKeyboard Keyboard) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "textInputPreview : TextInputPreview"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 39,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 51,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sourceKeyboard : Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 37,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private Reset() : void inlined to public Clear() : void in class TMPInputFieldTextReceiver",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private Reset() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 34,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public Clear() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "Reset()"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 107,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public Clear() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 34,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/TMPInputFieldTextReceiver.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Header() from class KeyboardManager to package Header() from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 6,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Header()"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 6,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Header()"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private Start() : void from class KeyboardManager to package Start() : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Start() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package Start() : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Start() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetMode(_keyboardMode KeyboardMode) : void from class KeyboardManager to public SetMode(_keyboardMode KeyboardMode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetMode(_keyboardMode KeyboardMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetMode(_keyboardMode KeyboardMode) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetMode(_keyboardMode KeyboardMode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetMode(_keyboardMode KeyboardMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetMode(_keyboardMode KeyboardMode) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private ModeSwitch(_keyCode KeyCode) : void from class KeyboardManager to public ModeSwitch(_keyCode KeyCode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 113,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ModeSwitch(_keyCode KeyCode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 65,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ModeSwitch(_keyCode KeyCode) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public ModeSwitch(_keyCode KeyCode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 113,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ModeSwitch(_keyCode KeyCode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 65,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ModeSwitch(_keyCode KeyCode) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private UpdateTextInputButtons(_keyboardMode KeyboardMode, _keyboardParents List<GameObject>) : void from class KeyboardManager to private UpdateTextInputButtons(_keyboardMode KeyboardMode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 153,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode, _keyboardParents List<GameObject>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 98,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type textInputButtons : List<TextInputButton> to textInputButtons : TextInputButton[] in method private UpdateTextInputButtons(_keyboardMode KeyboardMode) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 35,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "textInputButtons : List<TextInputButton>"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 27,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "textInputButtons : TextInputButton[]"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter _keyboardParents : List<GameObject> in method private UpdateTextInputButtons(_keyboardMode KeyboardMode, _keyboardParents List<GameObject>) : void from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 69,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "_keyboardParents : List<GameObject>"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 153,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode, _keyboardParents List<GameObject>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 98,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void from class KeyboardManager to public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 202,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 123,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public HidePanelAfter(seconds float) : IEnumerator from class KeyboardManager to public HidePanelAfter(seconds float) : IEnumerator from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 230,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HidePanelAfter(seconds float) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 151,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public HidePanelAfter(seconds float) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public TimeOutPanel(seconds float) : IEnumerator from class KeyboardManager to public TimeOutPanel(seconds float) : IEnumerator from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 236,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TimeOutPanel(seconds float) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 157,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public TimeOutPanel(seconds float) : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private HideAccentPanel() : void from class KeyboardManager to private HideAccentPanel() : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 242,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HideAccentPanel() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 163,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private HideAccentPanel() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DismissAccentPanel() : void from class KeyboardManager to public DismissAccentPanel() : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 255,
+		"endLine": 258,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DismissAccentPanel() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 176,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DismissAccentPanel() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public ClearPreview() : void from class KeyboardManager to public ClearPreview() : void from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 260,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ClearPreview() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 182,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ClearPreview() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private accentOverlay : AccentOverlayPanel from class KeyboardManager to private accentOverlay : AccentOverlayPanel from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private accentOverlay : AccentOverlayPanel"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 49,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private accentOverlay : AccentOverlayPanel"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private textInputPreview : TextInputPreview from class KeyboardManager to private textInputPreview : TextInputPreview from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private textInputPreview : TextInputPreview"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private textInputPreview : TextInputPreview"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public accentKeysPosition : AccentKeysPosition from class KeyboardManager to public accentKeysPosition : AccentKeysPosition from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 31,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public accentKeysPosition : AccentKeysPosition"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public accentKeysPosition : AccentKeysPosition"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public AccentKeysMiddleAnchor : Transform from class KeyboardManager to public AccentKeysMiddleAnchor : Transform from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public AccentKeysMiddleAnchor : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public AccentKeysMiddleAnchor : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public AccentKeyAnchor : Transform from class KeyboardManager to public AccentKeyAnchor : Transform from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public AccentKeyAnchor : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 40,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public AccentKeyAnchor : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public NumberRow : Transform from class KeyboardManager to public NumberRow : Transform from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public NumberRow : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public NumberRow : Transform"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public accentPanelHideDelay : float from class KeyboardManager to public accentPanelHideDelay : float from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public accentPanelHideDelay : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public accentPanelHideDelay : float"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private keyboardMode : KeyboardMode from class KeyboardManager to public keyboardMode : KeyboardMode from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private keyboardMode : KeyboardMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public keyboardMode : KeyboardMode"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public keyboardMode : KeyboardMode from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private keyboardMode : KeyboardMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public keyboardMode : KeyboardMode"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private hidePanelRoutine : Coroutine from class KeyboardManager to private hidePanelRoutine : Coroutine from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hidePanelRoutine : Coroutine"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private hidePanelRoutine : Coroutine"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private timeoutPanelRoutine : Coroutine from class KeyboardManager to private timeoutPanelRoutine : Coroutine from class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private timeoutPanelRoutine : Coroutine"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private timeoutPanelRoutine : Coroutine"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Keyboard from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 8,
+		"endLine": 270,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KeyboardManager"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 6,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Header()"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 113,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ModeSwitch(_keyCode KeyCode) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetMode(_keyboardMode KeyboardMode) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 202,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 230,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HidePanelAfter(seconds float) : IEnumerator"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 236,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TimeOutPanel(seconds float) : IEnumerator"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 242,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HideAccentPanel() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 260,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ClearPreview() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 153,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode, _keyboardParents List<GameObject>) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private keyboardMode : KeyboardMode"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 31,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public accentKeysPosition : AccentKeysPosition"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public AccentKeysMiddleAnchor : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public AccentKeyAnchor : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public NumberRow : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public accentPanelHideDelay : float"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hidePanelRoutine : Coroutine"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private timeoutPanelRoutine : Coroutine"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private accentOverlay : AccentOverlayPanel"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private textInputPreview : TextInputPreview"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 13,
+		"endLine": 138,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "KeyboardManager"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 7,
+		"endLine": 191,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Keyboard"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 6,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Header()"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Start() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 65,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ModeSwitch(_keyCode KeyCode) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetMode(_keyboardMode KeyboardMode) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 123,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ShowAccentOverlay(specialChars List<KeyCodeSpecialChar>) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 151,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public HidePanelAfter(seconds float) : IEnumerator"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 157,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public TimeOutPanel(seconds float) : IEnumerator"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 163,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private HideAccentPanel() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 182,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ClearPreview() : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 98,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UpdateTextInputButtons(_keyboardMode KeyboardMode) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public keyboardMode : KeyboardMode"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public accentKeysPosition : AccentKeysPosition"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public AccentKeysMiddleAnchor : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 40,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public AccentKeyAnchor : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public NumberRow : Transform"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public accentPanelHideDelay : float"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private hidePanelRoutine : Coroutine"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private timeoutPanelRoutine : Coroutine"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 49,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private accentOverlay : AccentOverlayPanel"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private textInputPreview : TextInputPreview"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Keyboard from class KeyboardManager",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 8,
+		"endLine": 270,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KeyboardManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 13,
+		"endLine": 138,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "KeyboardManager"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 7,
+		"endLine": 191,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Keyboard"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public AccentPanelActive() : bool extracted from private HandleKeyUpEncoding(_keyCodeString string) : void in class KeyboardManager & moved to class Keyboard",
+	"leftSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 93,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private HandleKeyUpEncoding(_keyCodeString string) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public AccentPanelActive() : bool"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/Keyboard.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 78,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private HandleKeyUpEncoding(_keyCodeString string, sourceKeyboard Keyboard) : void"
+}, {
+		"filePath": "InteractionEngineKeyboards2.0/Assets/XR_Keyboard/Scripts/Input/KeyboardManager.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "sourceKeyboard.AccentPanelActive()"
+}]
+}
+]
+}]
+}

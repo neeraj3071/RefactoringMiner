@@ -1,0 +1,627 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Vivero/Kerbal-VR.git",
+	"sha1": "3aabc9ef6688a71adb5fb7042d2e2edeefd86802",
+	"url": "https://github.com/Vivero/Kerbal-VR/commit/3aabc9ef6688a71adb5fb7042d2e2edeefd86802",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method package Awake() : void from class KVR_ControlStickCollider to package Awake() : void from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStickCollider.cs",
+		"startLine": 13,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnTriggerStay(other Collider) : void from class KVR_ControlStickCollider to package OnTriggerStay(other Collider) : void from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStickCollider.cs",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnTriggerStay(other Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 41,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnTriggerStay(other Collider) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private componentRigidbody : Rigidbody from class KVR_ControlStickCollider to private componentRigidbody : Rigidbody from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStickCollider.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private componentRigidbody : Rigidbody"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private componentRigidbody : Rigidbody"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private componentCollider : Collider from class KVR_ControlStickCollider to private componentCollider : Collider from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStickCollider.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private componentCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private componentCollider : Collider"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package Awake() : void from class KVR_ToggleSwitchCollider to package Awake() : void from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 13,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Awake() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnTriggerEnter(other Collider) : void from class KVR_ToggleSwitchCollider to package OnTriggerEnter(other Collider) : void from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 21,
+		"endLine": 25,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnTriggerEnter(other Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 35,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnTriggerEnter(other Collider) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package OnTriggerExit(other Collider) : void from class KVR_ToggleSwitchCollider to package OnTriggerExit(other Collider) : void from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnTriggerExit(other Collider) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 47,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package OnTriggerExit(other Collider) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private componentRigidbody : Rigidbody from class KVR_ToggleSwitchCollider to private componentRigidbody : Rigidbody from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private componentRigidbody : Rigidbody"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private componentRigidbody : Rigidbody"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private componentCollider : Collider from class KVR_ToggleSwitchCollider to private componentCollider : Collider from class KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private componentCollider : Collider"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private componentCollider : Collider"
+}]
+},
+{
+	"type": "Merge Class",
+	"description": "Merge Class [KVR_ControlStickCollider, KVR_ToggleSwitchCollider] merged to KVR_ActionableCollider",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStickCollider.cs",
+		"startLine": 6,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KVR_ControlStickCollider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchCollider.cs",
+		"startLine": 6,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "KVR_ToggleSwitchCollider"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Components/KVR_ActionableCollider.cs",
+		"startLine": 18,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "new type declaration",
+		"codeElement": "KVR_ActionableCollider"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public StickColliderStayed(colliderObject GameObject) : void renamed to public OnColliderStayed(thisObject Collider, otherObject Collider) : void in class KVR_ControlStick",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public StickColliderStayed(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnColliderStayed(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter thisObject : Collider in method public OnColliderStayed(thisObject Collider, otherObject Collider) : void from class KVR_ControlStick",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public StickColliderStayed(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "thisObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderStayed(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter otherObject : Collider in method public OnColliderStayed(thisObject Collider, otherObject Collider) : void from class KVR_ControlStick",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public StickColliderStayed(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 59,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "otherObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderStayed(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter colliderObject : GameObject in method public StickColliderStayed(colliderObject GameObject) : void from class KVR_ControlStick",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 41,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "colliderObject : GameObject"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 142,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public StickColliderStayed(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ControlStick.cs",
+		"startLine": 137,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OnColliderStayed(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public SwitchColliderEntered(colliderObject GameObject) : void renamed to public OnColliderEntered(thisObject Collider, otherObject Collider) : void in class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderEntered(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public SwitchColliderExited(colliderObject GameObject) : void renamed to public OnColliderExited(thisObject Collider, otherObject Collider) : void in class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 188,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderExited(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter thisObject : Collider in method public OnColliderEntered(thisObject Collider, otherObject Collider) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderEntered(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 39,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "thisObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter otherObject : Collider in method public OnColliderEntered(thisObject Collider, otherObject Collider) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderEntered(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 60,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "otherObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter colliderObject : GameObject in method public SwitchColliderEntered(colliderObject GameObject) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 43,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "colliderObject : GameObject"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderEntered(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 180,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OnColliderEntered(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter thisObject : Collider in method public OnColliderExited(thisObject Collider, otherObject Collider) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 188,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderExited(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "thisObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter otherObject : Collider in method public OnColliderExited(thisObject Collider, otherObject Collider) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 188,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderExited(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 59,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "otherObject : Collider"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter colliderObject : GameObject in method public SwitchColliderExited(colliderObject GameObject) : void from class KVR_ToggleSwitchDouble",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 42,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "colliderObject : GameObject"
+}, {
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 188,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SwitchColliderExited(colliderObject GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/Modules/KVR_ToggleSwitchDouble.cs",
+		"startLine": 190,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public OnColliderExited(thisObject Collider, otherObject Collider) : void"
+}]
+}
+]
+}]
+}

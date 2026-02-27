@@ -1,0 +1,292 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/01_field_declarations.cs
+Size: 1238 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for field declarations with various access modifiers and types.
+    /// Tests transformation of C# fields to Java fields.
+    /// </summary>
+    public class FieldDeclarations
+    {
+        // Public fields
+        public int publicIntField;
+        public string publicStringField;
+        public bool publicBoolField;
+        
+        // Private fields
+        private int privateIntField;
+        private string p
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/01_field_declarations.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1238 chars)...
+unit [0,0]
+    namespace [0,1237]
+        name: TestFeatures [10,22]
+        block [23,1237]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for field declarations with various access modifiers and types. [70,147]
+            comment: /// Tests transformation of C# fields to Java fields. [152,205]
+            comment: ///</summary> [210,224]
+            class [229,1235]
+                specifier: public [229,235]
+                name: FieldDeclarations [242,259]
+                block [264,1235]
+                    comment: // Public fields [274,290]
+                    decl_stmt [299,325]
+                        decl [299,324]
+                            type [299,309]
+                                specifier: public [299,305]
+                                name: int [306,309]
+                            name: publicIntField [310,324]
+                    decl_stmt [334,366]
+                        decl [334,365]
+                            type [334,347]
+                                specifier: public [334,340]
+                                name: string [341,347]
+                            name: publicStringField [348,365]
+                    decl_stmt [375,403]
+                        decl [375,402]
+                            type [375,386]
+                                specifier: public [375,381]
+                                name: bool [382,386]
+                            name: publicBoolField [387,402]
+                    comment: // Private fields [421,438]
+                    decl_stmt [447,475]
+                        decl [447,474]
+                            type [447,458]
+                                specifier: private [447,454]
+                                name: int [455,458]
+                            name: privateIntField [459,474]
+                    decl_stmt [484,518]
+                        decl [484,517]
+                            type [484,498]
+                                specifier: private [484,491]
+                                name: string [492,498]
+                            name: privateStringField [499,517]
+                    decl_stmt [527,557]
+                        decl [527,556]
+                            type [527,539]
+                                specifier: private [527,534]
+                                name: bool [535,539]
+                            name: privateBoolField [540,556]
+                    comment: // Protected fields [575,594]
+                    decl_stmt [603,635]
+                        decl [603,634]
+                            type [603,616]
+                                specifier: protected [603,612]
+                                name: int [613,616]
+                            name: protectedIntField [617,634]
+                    decl_stmt [644,682]
+                        decl [644,681]
+                            type [644,660]
+                                specifier: protected [644,653]
+                                name: string [654,660]
+                            name: protectedStringField [661,681]
+                    comment: // Static fields [700,716]
+                    decl_stmt [725,758]
+                        decl [725,757]
+                            type [725,742]
+                                specifier: public [725,731]
+                                specifier: static [732,738]
+                                name: int [739,742]
+                            name: staticIntField [743,757]
+                    decl_stmt [767,807]
+                        decl [767,806]
+                            type [767,788]
+                                specifier: private [767,774]
+                                specifier: static [775,781]
+                                name: string [782,788]
+                            name: staticStringField [789,806]
+                    comment: // Readonly fields [825,843]
+                    decl_stmt [852,889]
+                        decl [852,888]
+                            type [852,871]
+                                specifier: public [852,858]
+                                specifier: readonly [859,867]
+                                name: int [868,871]
+                            name: readonlyIntField [872,888]
+                    decl_stmt [898,942]
+                        decl [898,941]
+                            type [898,921]
+                                specifier: private [898,905]
+                                specifier: readonly [906,914]
+                                name: string [915,921]
+                            name: readonlyStringField [922,941]
+                    comment: // Const fields [960,975]
+                    decl_stmt [984,1017]
+                        decl [984,1016]
+                            type [984,1000]
+                                specifier: public [984,990]
+                                specifier: const [991,996]
+                                name: int [997,1000]
+                            name: CONST_INT [1001,1010]
+                            init [1011,1016]
+                                expr [1013,1016]
+                                    literal: 100 [1013,1016]
+                    decl_stmt [1026,1073]
+                        decl [1026,1072]
+                            type [1026,1046]
+                                specifier: private [1026,1033]
+                                specifier: const [1034,1039]
+                                name: string [1040,1046]
+                            name: CONST_STRING [1047,1059]
+                            init [1060,1072]
+                                expr [1062,1072]
+                                    literal: "constant" [1062,1072]
+                    comment: // Backing fields with underscore prefix [1091,1131]
+                    decl_stmt [1140,1166]
+                        decl [1140,1165]
+                            type [1140,1151]
+                                specifier: private [1140,1147]
+                                name: int [1148,1151]
+                            name: _backingField [1152,1165]
+                    decl_stmt [1175,1196]
+                        decl [1175,1195]
+                            type [1175,1189]
+                                specifier: private [1175,1182]
+                                name: string [1183,1189]
+                            name: _name [1190,1195]
+                    decl_stmt [1205,1229]
+                        decl [1205,1228]
+                            type [1205,1217]
+                                specifier: private [1205,1212]
+                                name: bool [1213,1217]
+                            name: _isEnabled [1218,1228]
+package TestFeatures;
+public class FieldDeclarations {
+  public int publicIntField;
+  public String publicStringField;
+  public boolean publicBoolField;
+  private int privateIntField;
+  private String privateStringField;
+  private boolean privateBoolField;
+  protected int protectedIntField;
+  protected String protectedStringField;
+  public static int staticIntField;
+  private static String staticStringField;
+  public final int readonlyIntField;
+  private final String readonlyStringField;
+  public final int CONST_INT;
+  private final String CONST_STRING;
+  private int _backingField;
+  private String _name;
+  private boolean _isEnabled;
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 645 chars
+  - Number of lines: 20
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class FieldDeclarations {
+  public int publicIntField;
+  public String publicStringField;
+  public boolean publicBoolField;
+  private int privateIntField;
+  private String privateStringField;
+  private boolean privateBoolField;
+  protected int protectedIntField;
+  protected String protectedStringField;
+  public static int staticIntField;
+  private static String staticStringField;
+  public final int readonlyIntField;
+  private final String readonlyStringField;
+  public final int CONST_INT;
+  private final String CONST_STRING;
+  private int _backingField;
+  private String _name;
+  private boolean _isEnabled;
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/01_field_declarations.java
+  - File contents size: 645 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/01_field_declarations.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.FieldDeclarations
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/01_field_declarations.java
+  Operations: 0
+  Attributes: 17
+  Fields:
+    • int publicIntField
+    • String publicStringField
+    • boolean publicBoolField
+    • int privateIntField
+    • String privateStringField
+    • boolean privateBoolField
+    • int protectedIntField
+    • String protectedStringField
+    • int staticIntField
+    • String staticStringField
+    • int readonlyIntField
+    • String readonlyStringField
+    • int CONST_INT
+    • String CONST_STRING
+    • int _backingField
+    • String _name
+    • boolean _isEnabled
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

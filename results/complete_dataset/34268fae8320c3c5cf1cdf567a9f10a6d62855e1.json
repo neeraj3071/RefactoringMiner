@@ -1,0 +1,294 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/NathanJVella/VR-Space-Game.git",
+	"sha1": "34268fae8320c3c5cf1cdf567a9f10a6d62855e1",
+	"url": "https://github.com/NathanJVella/VR-Space-Game/commit/34268fae8320c3c5cf1cdf567a9f10a6d62855e1",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class VisualConsoleHandler renamed to VisualConsoleOutputHandler",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 5,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VisualConsoleHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleOutputHandler.cs",
+		"startLine": 5,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VisualConsoleOutputHandler"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_VisualConsoleHandler : VisualConsoleHandler to m_VisualConsoleHandler : VisualConsoleOutputHandler in class ShipController",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/ShipController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 37,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_VisualConsoleHandler : VisualConsoleHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/ShipController.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_VisualConsoleHandler : VisualConsoleOutputHandler"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LogComment(commentToLog string) : void from class VisualConsoleHandler to public LogComment(commentToLog string) : void from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 15,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LogComment(commentToLog string) : void from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 15,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LogComment(commentToLog float) : void from class VisualConsoleHandler to public LogComment(commentToLog float) : void from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 22,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public LogComment(commentToLog float) : void from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 22,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class VisualConsole from class VisualConsoleHandler",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 5,
+		"endLine": 51,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VisualConsoleHandler"
+}, {
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}, {
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleOutputHandler.cs",
+		"startLine": 5,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "VisualConsoleOutputHandler"
+}, {
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 5,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "VisualConsole"
+}, {
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 15,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LogComment(commentToLog string) : void"
+}, {
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 22,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LogComment(commentToLog float) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public m_ConsoleText : string from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_consoleString : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public m_ConsoleText : string"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public m_ConsoleText : string from class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_consoleString : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public m_ConsoleText : string"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private m_consoleString : string renamed to public m_ConsoleText : string and moved from class VisualConsoleHandler to class VisualConsole",
+	"leftSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsoleHandler.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private m_consoleString : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSpaceGame/Assets/Scripts/Benjamin/VisualConsole.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public m_ConsoleText : string"
+}]
+}
+]
+}]
+}

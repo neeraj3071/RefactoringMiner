@@ -1,0 +1,306 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "5509aba0bb20cfbf8a81e647e279689617f3e9ee",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/5509aba0bb20cfbf8a81e647e279689617f3e9ee",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public parentMatrix : Matrix4x4 from class ClipText",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/ClipText.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public parentMatrix : Matrix4x4"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/ClipText.cs",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public parentMatrix : Matrix4x4"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public clipExtents : Vector3 from class ClipText",
+	"leftSideLocations": [{
+		"filePath": "Scripts/UI/ClipText.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public clipExtents : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/UI/ClipText.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public clipExtents : Vector3"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @lock in method public Setup() : void from class InspectorWorkspace",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 21,
+		"endLine": 43,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Setup() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 14,
+		"endColumn": 19,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@lock"
+}, {
+		"filePath": "Workspaces/Inspector/InspectorWorkspace.cs",
+		"startLine": 21,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public Setup() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetValue(value bool) : void from class InspectorBoolItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorBoolItem.cs",
+		"startLine": 24,
+		"endLine": 31,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetValue(value bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorBoolItem.cs",
+		"startLine": 23,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetValue(value bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public ToggleExpanded() : void from class InspectorComponentItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ToggleExpanded() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ToggleExpanded() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetEnabled(value bool) : void from class InspectorComponentItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEnabled(value bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorComponentItem.cs",
+		"startLine": 56,
+		"endLine": 59,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetEnabled(value bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetActive(active bool) : void from class InspectorHeaderItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetActive(active bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetActive(active bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetName(name string) : void from class InspectorHeaderItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetName(name string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetName(name string) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetStatic(isStatic bool) : void from class InspectorHeaderItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 65,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetStatic(isStatic bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorHeaderItem.cs",
+		"startLine": 55,
+		"endLine": 60,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetStatic(isStatic bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetValue(input string) : void from class InspectorInputFieldItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorInputFieldItem.cs",
+		"startLine": 43,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetValue(input string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorInputFieldItem.cs",
+		"startLine": 35,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetValue(input string) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateTransforms(width float, depth int) : void renamed to public UpdateSelf(width float, depth int) : void in class InspectorListItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorListItem.cs",
+		"startLine": 50,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateTransforms(width float, depth int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorListItem.cs",
+		"startLine": 66,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public UpdateSelf(width float, depth int) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetValue(input string, index int) : void from class InspectorVectorItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorVectorItem.cs",
+		"startLine": 61,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetValue(input string, index int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Inspector/Scripts/ListItems/InspectorVectorItem.cs",
+		"startLine": 64,
+		"endLine": 105,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetValue(input string, index int) : void"
+}]
+}
+]
+}]
+}

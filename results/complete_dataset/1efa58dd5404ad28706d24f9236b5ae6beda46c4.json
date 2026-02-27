@@ -1,0 +1,432 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/KandoozStudio/Kinteractions-VR.git",
+	"sha1": "1efa58dd5404ad28706d24f9236b5ae6beda46c4",
+	"url": "https://github.com/KandoozStudio/Kinteractions-VR/commit/1efa58dd5404ad28706d24f9236b5ae6beda46c4",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class CrossFadingFloatLerper renamed to VariableTweener",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 62,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "CrossFadingFloatLerper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/VariableTweener.cs",
+		"startLine": 7,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VariableTweener"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class CrossFadingFloat renamed to TweenableFloat",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 7,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "CrossFadingFloat"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 6,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "TweenableFloat"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type fader : CrossFadingFloat to fader : TweenableFloat in class Pose",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 34,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "fader : CrossFadingFloat"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 32,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "fader : TweenableFloat"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in class Pose",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 40,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lerper : VariableTweener"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in method public Pose(lerper VariableTweener) from class Pose",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}, {
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "lerper : VariableTweener"
+}, {
+		"filePath": "Assets/Kandooz/Common/Scripts/Classes/Pose.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type crossFadingWeight : CrossFadingFloat to crossFadingWeight : TweenableFloat in class Finger",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 34,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "crossFadingWeight : CrossFadingFloat"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 32,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "crossFadingWeight : TweenableFloat"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in method public Finger(graph PlayableGraph, closed AnimationClip, opened AnimationClip, mask AvatarMask, lerper VariableTweener) from class Finger",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 103,
+		"endColumn": 132,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 103,
+		"endColumn": 125,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "lerper : VariableTweener"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/Classes/Finger.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type staticPoseCrossFader : CrossFadingFloat to staticPoseCrossFader : TweenableFloat in class HandAnimationController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandAnimationController.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "staticPoseCrossFader : CrossFadingFloat"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandAnimationController.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 32,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "staticPoseCrossFader : TweenableFloat"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in class HandAnimationController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandAnimationController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 40,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandAnimationController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lerper : VariableTweener"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type values : List<CrossFadingFloat> to values : List<ITweenable> in class VariableTweener",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 47,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "values : List<CrossFadingFloat>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/VariableTweener.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 41,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "values : List<ITweenable>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type value : CrossFadingFloat to value : TweenableFloat in method public AddCrossFadingFloat(value TweenableFloat) : void from class VariableTweener",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 42,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "value : CrossFadingFloat"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/VariableTweener.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 42,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "value : TweenableFloat"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/VariableTweener.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Step() : bool renamed to public Tween(elapsedTime float) : bool in class TweenableFloat",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 52,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Step() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Tween(elapsedTime float) : bool"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in class TweenableFloat",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 40,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lerper : VariableTweener"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type lerper : CrossFadingFloatLerper to lerper : VariableTweener in method public TweenableFloat(lerper VariableTweener, rate float) from class TweenableFloat",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 33,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "lerper : CrossFadingFloatLerper"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 31,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "lerper : VariableTweener"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter elapsedTime : float in method public Tween(elapsedTime float) : bool from class TweenableFloat",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/CrossFadingFloatLerper.cs",
+		"startLine": 52,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Step() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "elapsedTime : float"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/TweenableFloat.cs",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Tween(elapsedTime float) : bool"
+}]
+}
+]
+}]
+}

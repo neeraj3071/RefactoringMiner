@@ -1,0 +1,1005 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "36a4e894fbaa2802f25cc7327cf09f8e5498e329",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/36a4e894fbaa2802f25cc7327cf09f8e5498e329",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class U moved and renamed to U.Object",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 16,
+		"endLine": 473,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "U"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 24,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "U.Object"
+}]
+},
+{
+	"type": "Rename Package",
+	"description": "Rename Package  to U",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 16,
+		"endLine": 473,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "U"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 24,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "U.Object"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 16,
+		"endLine": 473,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "U"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 24,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "U.Object"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private generateWireframe(r Renderer, ghostMaterial Material) : void renamed to private GenerateWireframe(r Renderer, ghostMaterial Material) : void in class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 454,
+		"endLine": 472,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private generateWireframe(r Renderer, ghostMaterial Material) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 329,
+		"endLine": 347,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GenerateWireframe(r Renderer, ghostMaterial Material) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type o : Object to o : UObject in method public Destroy(o UObject, t float) : void from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 40,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o : UObject"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type o : Object to o : UObject in method private DestroyInSeconds(o UObject, t float) : IEnumerator from class U.Object",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 46,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 57,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o : UObject"
+}, {
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public DistanceToCamera(obj GameObject) : float from class U to public DistanceToCamera(obj GameObject) : float from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DistanceToCamera(obj GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 18,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DistanceToCamera(obj GameObject) : float"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type cam : Camera to cam : UnityEngine.Camera in method public DistanceToCamera(obj GameObject) : float from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cam : Camera"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 4,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 32,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 36,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "cam : UnityEngine.Camera"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 21,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 23,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float from class U to public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetMainCamera() : Camera from class U to public GetMainCamera() : UnityEngine.Camera from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 276,
+		"endLine": 287,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainCamera() : Camera"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 39,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetMainCamera() : UnityEngine.Camera"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type camera : Camera to camera : UnityEngine.Camera in method public GetMainCamera() : UnityEngine.Camera from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "camera : Camera"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 36,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "camera : UnityEngine.Camera"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Camera to UnityEngine.Camera in method public GetMainCamera() : UnityEngine.Camera from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Camera"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 276,
+		"endLine": 287,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainCamera() : Camera"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "UnityEngine.Camera"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 39,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetMainCamera() : UnityEngine.Camera"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetViewerPivot() : Transform from class U to public GetViewerPivot() : Transform from class U.Camera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 289,
+		"endLine": 300,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewerPivot() : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 52,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetViewerPivot() : Transform"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SnapValueToUnit(value float, unit float) : float from class U to public SnapValueToUnit(value float, unit float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 134,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SnapValueToUnit(value float, unit float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SnapValueToUnit(value float, unit float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SnapValuesToUnit(values Vector3, unit float) : Vector3 from class U to public SnapValuesToUnit(values Vector3, unit float) : Vector3 from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SnapValuesToUnit(values Vector3, unit float) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 31,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SnapValuesToUnit(values Vector3, unit float) : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Ease(val float, valEnd float, easeDivider float, snap float) : float from class U to public Ease(val float, valEnd float, easeDivider float, snap float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 155,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Ease(val float, valEnd float, easeDivider float, snap float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Ease(val float, valEnd float, easeDivider float, snap float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public Map(val float, ia float, ib float, oa float, ob float) : float from class U to public Map(val float, ia float, ib float, oa float, ob float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Map(val float, ia float, ib float, oa float, ob float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Map(val float, ia float, ib float, oa float, ob float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public MapInCubic(val float, ia float, ib float, oa float, ob float) : float from class U to public MapInCubic(val float, ia float, ib float, oa float, ob float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 168,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapInCubic(val float, ia float, ib float, oa float, ob float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 56,
+		"endLine": 62,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public MapInCubic(val float, ia float, ib float, oa float, ob float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float from class U to public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 175,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public MapInSin(val float, ia float, ib float, oa float, ob float) : float from class U to public MapInSin(val float, ia float, ib float, oa float, ob float) : float from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 182,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapInSin(val float, ia float, ib float, oa float, ob float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public MapInSin(val float, ia float, ib float, oa float, ob float) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public SetVectorLength(vector Vector3, size float) : Vector3 from class U to public SetVectorLength(vector Vector3, size float) : Vector3 from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 188,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetVectorLength(vector Vector3, size float) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 81,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetVectorLength(vector Vector3, size float) : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public LinePlaneIntersection(Vector3 out) : bool from class U to public LinePlaneIntersection(Vector3 out) : bool from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 199,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LinePlaneIntersection(Vector3 out) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 94,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public LinePlaneIntersection(Vector3 out) : bool"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3 from class U to public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3 from class U.MathUtilities",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 232,
+		"endLine": 237,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class U.Camera from class U",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 16,
+		"endLine": 473,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "U"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DistanceToCamera(obj GameObject) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 276,
+		"endLine": 287,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetMainCamera() : Camera"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 289,
+		"endLine": 300,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetViewerPivot() : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 24,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "U.Object"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 16,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "U.Camera"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 18,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public DistanceToCamera(obj GameObject) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetSizeForDistanceToCamera(obj GameObject, minScale float, scaleAt100 float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 39,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetMainCamera() : UnityEngine.Camera"
+}, {
+		"filePath": "Scripts/Utilities/U/CameraUtilities.cs",
+		"startLine": 52,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetViewerPivot() : Transform"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class U.MathUtilities from class U",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 16,
+		"endLine": 473,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "U"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 134,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SnapValueToUnit(value float, unit float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SnapValuesToUnit(values Vector3, unit float) : Vector3"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 155,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Ease(val float, valEnd float, easeDivider float, snap float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 164,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Map(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 168,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapInCubic(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 175,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 182,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MapInSin(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 188,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetVectorLength(vector Vector3, size float) : Vector3"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 199,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public LinePlaneIntersection(Vector3 out) : bool"
+}, {
+		"filePath": "Scripts/Utilities/U.cs",
+		"startLine": 232,
+		"endLine": 237,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/U/ObjectUtilities.cs",
+		"startLine": 24,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "U.Object"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 13,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "U.MathUtilities"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SnapValueToUnit(value float, unit float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 31,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SnapValuesToUnit(values Vector3, unit float) : Vector3"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Ease(val float, valEnd float, easeDivider float, snap float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Map(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 56,
+		"endLine": 62,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public MapInCubic(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public MapOutCubic(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public MapInSin(val float, ia float, ib float, oa float, ob float) : float"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 81,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetVectorLength(vector Vector3, size float) : Vector3"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 94,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LinePlaneIntersection(Vector3 out) : bool"
+}, {
+		"filePath": "Scripts/Utilities/U/MathUtilities.cs",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ProjectPointOnLine(linePoint Vector3, lineVec Vector3, point Vector3) : Vector3"
+}]
+}
+]
+}]
+}

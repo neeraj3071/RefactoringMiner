@@ -1,0 +1,477 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "1cc6dae2c6fbd246b4a50e7f833d220e8f21cf10",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/1cc6dae2c6fbd246b4a50e7f833d220e8f21cf10",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class EyeTrackingMenu renamed to EyeTrackingMenuPage",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/EyeTracking/EyeTrackingMenu.cs",
+		"startLine": 9,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EyeTrackingMenu"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/EyeTracking/EyeTrackingMenuPage.cs",
+		"startLine": 9,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "EyeTrackingMenuPage"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class LipTrackingMenu renamed to LipTrackingMenuPage",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/LipTracking/LipTrackingMenu.cs",
+		"startLine": 7,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "LipTrackingMenu"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/LipTracking/LipTrackingMenuPage.cs",
+		"startLine": 6,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "LipTrackingMenuPage"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class SRanipalTrackingMenu renamed to MenuPage",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/SRanipalTrackingMenu.cs",
+		"startLine": 7,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SRanipalTrackingMenu"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/QuickMenu/MenuPage.cs",
+		"startLine": 7,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "MenuPage"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private AppendEyeParams() : void from class MainMod",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/MainMod.cs",
+		"startLine": 21,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AppendEyeParams() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/MainMod.cs",
+		"startLine": 28,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private AppendEyeParams() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private AppendLipParams() : void from class MainMod",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/MainMod.cs",
+		"startLine": 29,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AppendLipParams() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/MainMod.cs",
+		"startLine": 30,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private AppendLipParams() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private Thread : readonly from class PimaxTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 32,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Thread : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Thread : readonly"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter eye : bool in method package Initialize(eye bool, lip bool) from class PimaxTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 62,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "eye : bool"
+}, {
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 21,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Initialize(eye bool, lip bool)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lip : bool in method package Initialize(eye bool, lip bool) from class PimaxTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 72,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lip : bool"
+}, {
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 21,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Initialize(eye bool, lip bool)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package Initialize(eye bool, lip bool) from class PimaxTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 21,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package Initialize(eye bool, lip bool)"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public Initialize() : bool from class PimaxTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Initialize() : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/Pimax/PimaxTrackingInterface.cs",
+		"startLine": 14,
+		"endLine": 21,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package Initialize(eye bool, lip bool)"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 13,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "SRanipalTrackingInterface"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 13,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "SRanipalTrackingInterface"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Stop() : void renamed to public Teardown() : void in class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 57,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Stop() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 56,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Teardown() : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private Thread : readonly from class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 32,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Thread : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Thread : readonly"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public Stop() : void from class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 57,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Stop() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 56,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public Teardown() : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(lipError != Error.WORK) to if(lipError == Error.WORK) in method package HandleSrErrors(eyeError Error, lipError Error) from class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/UnifiedLibManager.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(lipError != Error.WORK)"
+}, {
+		"filePath": "VRCFaceTracking/UnifiedLibManager.cs",
+		"startLine": 62,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleSrErrors(eyeError Error, lipError Error) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 50,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(lipError == Error.WORK)"
+}, {
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 59,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "package HandleSrErrors(eyeError Error, lipError Error)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package HandleSrErrors(eyeError Error, lipError Error) from class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/UnifiedLibManager.cs",
+		"startLine": 62,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleSrErrors(eyeError Error, lipError Error) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 59,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package HandleSrErrors(eyeError Error, lipError Error)"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private HandleSrErrors(eyeError Error, lipError Error) : void from class UnifiedLibManager",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/UnifiedLibManager.cs",
+		"startLine": 62,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleSrErrors(eyeError Error, lipError Error) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 59,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package HandleSrErrors(eyeError Error, lipError Error)"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private HandleSrErrors(eyeError Error, lipError Error) : void from class UnifiedLibManager to package HandleSrErrors(eyeError Error, lipError Error) from class SRanipalTrackingInterface",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking/UnifiedLibManager.cs",
+		"startLine": 62,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleSrErrors(eyeError Error, lipError Error) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking/SRanipal/SRanipalTrackingInterface.cs",
+		"startLine": 39,
+		"endLine": 54,
+		"startColumn": 59,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package HandleSrErrors(eyeError Error, lipError Error)"
+}]
+}
+]
+}]
+}

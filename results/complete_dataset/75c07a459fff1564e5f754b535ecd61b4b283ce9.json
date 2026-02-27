@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/GameLabGraz/Maroon.git",
+	"sha1": "75c07a459fff1564e5f754b535ecd61b4b283ce9",
+	"url": "https://github.com/GameLabGraz/Maroon/commit/75c07a459fff1564e5f754b535ecd61b4b283ce9",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private GetNextElectronPositionOnPlate() : Vector3 from class CapacitorPlateController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorBaseController.cs",
+		"startLine": 46,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetNextElectronPositionOnPlate() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorPlateController.cs",
+		"startLine": 132,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetNextElectronPositionOnPlate() : Vector3"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package GetNextElectronPositionOnPlate() : Vector3 from class CapacitorBaseController to private GetNextElectronPositionOnPlate() : Vector3 from class CapacitorPlateController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorBaseController.cs",
+		"startLine": 46,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetNextElectronPositionOnPlate() : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorPlateController.cs",
+		"startLine": 132,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private GetNextElectronPositionOnPlate() : Vector3"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private numberOfRows : int from class CapacitorBaseController to private numberOfRows : int from class CapacitorPlateController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorBaseController.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numberOfRows : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorPlateController.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private numberOfRows : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private rowOffset : float from class CapacitorBaseController to private rowOffset : float from class CapacitorPlateController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorBaseController.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private rowOffset : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Controller/CapacitorPlateController.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private rowOffset : float"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/KandoozStudio/Kinteractions-VR.git",
+	"sha1": "5f6dacad4a9f961c97c9756e50de0b150aff9968",
+	"url": "https://github.com/KandoozStudio/Kinteractions-VR/commit/5f6dacad4a9f961c97c9756e50de0b150aff9968",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute handControllerStrategy : IHandControlerStrategy to constraints : HandConstrains in class HandController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handControllerStrategy : IHandControlerStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "constraints : HandConstrains"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type handControllerStrategy : IHandControlerStrategy to constraints : HandConstrains in class HandController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handControllerStrategy : IHandControlerStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "constraints : HandConstrains"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private constraints : HandConstrains from class HandController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private handControllerStrategy : IHandControlerStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private constraints : HandConstrains"
+}, {
+		"filePath": "Assets/Kandooz/KVR/Scripts/MonoBehaviours/HandController.cs",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public SetHandConstraints(constraints HandConstrains) : void"
+}]
+}
+]
+}]
+}

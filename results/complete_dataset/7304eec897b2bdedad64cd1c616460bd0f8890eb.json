@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "7304eec897b2bdedad64cd1c616460bd0f8890eb",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/7304eec897b2bdedad64cd1c616460bd0f8890eb",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type dataController : GameObject to dataController : DataController in class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataController : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "dataController : DataController"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private maxScaleFactor : float in class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private maxScaleFactor : float"
+}, {
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter mag : string to magnitude : string in method public UpdateStarInfoPanel(XByerFlamsteed string, magnitude string, constellation string) : void from class StarInfoPanel",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/StarInfoPanel.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 60,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mag : string"
+}, {
+		"filePath": "Assets/Scripts/StarInfoPanel.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarInfoPanel.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 60,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "magnitude : string"
+}, {
+		"filePath": "Assets/Scripts/StarInfoPanel.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

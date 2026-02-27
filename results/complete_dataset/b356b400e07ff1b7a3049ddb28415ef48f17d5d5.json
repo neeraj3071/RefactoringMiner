@@ -1,0 +1,330 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PastaTime/DataRepVR.git",
+	"sha1": "b356b400e07ff1b7a3049ddb28415ef48f17d5d5",
+	"url": "https://github.com/PastaTime/DataRepVR/commit/b356b400e07ff1b7a3049ddb28415ef48f17d5d5",
+	"refactorings": [{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class MeshController moved and renamed to PolyMeshController.SubMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 6,
+		"endLine": 219,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MeshController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 87,
+		"endLine": 252,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "PolyMeshController.SubMesh"
+}]
+},
+{
+	"type": "Rename Package",
+	"description": "Rename Package  to PolyMeshController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 6,
+		"endLine": 219,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MeshController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 87,
+		"endLine": 252,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "PolyMeshController.SubMesh"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to private in class PolyMeshController.SubMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 6,
+		"endLine": 219,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MeshController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 87,
+		"endLine": 252,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "PolyMeshController.SubMesh"
+}]
+},
+{
+	"type": "Merge Parameter",
+	"description": "Merge Parameter [totalRows : int, totalCols : int, colourData : float[][], heightData : float[][], heightScalar : float, startColour : Color, endColour : Color] to controller : PolyMeshController in method public Init(controller PolyMeshController, xOffset int, zOffset int, numRows int, numCols int) : void from class PolyMeshController.SubMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 71,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "totalRows : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 86,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "totalCols : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 101,
+		"endColumn": 121,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "colourData : float[][]"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 123,
+		"endColumn": 143,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "heightData : float[][]"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 145,
+		"endColumn": 163,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "heightScalar : float"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 165,
+		"endColumn": 182,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "startColour : Color"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 184,
+		"endColumn": 199,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "endColour : Color"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(xOffset int, zOffset int, numRows int, numCols int, totalRows int, totalCols int, colourData float[][], heightData float[][], heightScalar float, startColour Color, endColour Color, renderMaterial Material) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 20,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "controller : PolyMeshController"
+}, {
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 108,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public Init(controller PolyMeshController, xOffset int, zOffset int, numRows int, numCols int) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter renderMaterial : Material in method public Init(xOffset int, zOffset int, numRows int, numCols int, totalRows int, totalCols int, colourData float[][], heightData float[][], heightScalar float, startColour Color, endColour Color, renderMaterial Material) : void from class MeshController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 201,
+		"endColumn": 224,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "renderMaterial : Material"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 39,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Init(xOffset int, zOffset int, numRows int, numCols int, totalRows int, totalCols int, colourData float[][], heightData float[][], heightScalar float, startColour Color, endColour Color, renderMaterial Material) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 108,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Init(controller PolyMeshController, xOffset int, zOffset int, numRows int, numCols int) : void"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [totalRows : int, totalCols : int, colourData : float[][], heightData : float[][], heightScalar : float, startColour : Color, endColour : Color] to controller : PolyMeshController in class PolyMeshController.SubMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "totalRows : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "totalCols : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "colourData : float[][]"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "heightData : float[][]"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "heightScalar : float"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "startColour : Color"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "endColour : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "controller : PolyMeshController"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [totalRows : int, totalCols : int, heightScalar : float] to controller : PolyMeshController in class PolyMeshController.SubMesh",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "totalRows : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "totalCols : int"
+}, {
+		"filePath": "Assets/Scripts/MeshController.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "heightScalar : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/PolyMeshController.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "controller : PolyMeshController"
+}]
+}
+]
+}]
+}

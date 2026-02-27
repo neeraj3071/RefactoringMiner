@@ -1,0 +1,477 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gpvigano/VRTK-GearVR-Test.git",
+	"sha1": "15bf1d2b3314fb7070a69094b4f616383ceded03",
+	"url": "https://github.com/gpvigano/VRTK-GearVR-Test/commit/15bf1d2b3314fb7070a69094b4f616383ceded03",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/SteamVR_Unity_Toolkit/Scripts/Controls to Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/VRTK_Control.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".VRTK_Control..ValueChangedEvent"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/VRTK_Control.cs",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".VRTK_Control..DefaultControlEvents"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/VRTK_Control.cs",
+		"startLine": 7,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRTK_Control"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".VRTK_Control..ValueChangedEvent"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": ".VRTK_Control..DefaultControlEvents"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 7,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VRTK_Control"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class .VRTK_Button..Direction renamed to .VRTK_Button..ButtonDirection",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": ".VRTK_Button..Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": ".VRTK_Button..ButtonDirection"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type direction : Direction to direction : ButtonDirection in class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "direction : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 32,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "direction : ButtonDirection"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type finalDirection : Direction to finalDirection : ButtonDirection in class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "finalDirection : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 33,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "finalDirection : ButtonDirection"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type direction : Direction to direction : ButtonDirection in method private DetectDirection() : ButtonDirection from class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 23,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "direction : ButtonDirection"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Direction to ButtonDirection in method private DetectDirection() : ButtonDirection from class VRTK_Button",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Direction"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 182,
+		"endLine": 263,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DetectDirection() : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ButtonDirection"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Button.cs",
+		"startLine": 182,
+		"endLine": 263,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private DetectDirection() : ButtonDirection"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type direction : Direction to direction : KnobDirection in class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "direction : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "direction : KnobDirection"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type finalDirection : Direction to finalDirection : KnobDirection in class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "finalDirection : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "finalDirection : KnobDirection"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type direction : Direction to direction : KnobDirection in method private DetectDirection() : KnobDirection from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 27,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "direction : KnobDirection"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Direction to KnobDirection in method private DetectDirection() : KnobDirection from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Direction"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 89,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DetectDirection() : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "KnobDirection"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 89,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private DetectDirection() : KnobDirection"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type direction : Direction to direction : KnobDirection in method private SetConstraints(direction KnobDirection) : void from class VRTK_Knob",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "direction : Direction"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 63,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 37,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "direction : KnobDirection"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Knob.cs",
+		"startLine": 63,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type direction : Direction to direction : LeverDirection in class VRTK_Lever",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "direction : Direction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Lever.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "direction : LeverDirection"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable contentIOs : in to controlContent : in in method private HandleInteractables() : void from class VRTK_Control",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 49,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "contentIOs : in"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "controlContent : in"
+}, {
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 13,
+		"endColumn": 122,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private HandleInteractables() : void from class VRTK_Drawer to private HandleInteractables() : void from class VRTK_Control",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 173,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandleInteractables() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 132,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private HandleInteractables() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private MIN_OPENING_DISTANCE : float from class VRTK_Drawer to private MIN_OPENING_DISTANCE : float from class VRTK_Control",
+	"leftSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Drawer.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 30,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MIN_OPENING_DISTANCE : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/SteamVR_Unity_Toolkit/Scripts/Controls/3D/VRTK_Control.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 30,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private MIN_OPENING_DISTANCE : float"
+}]
+}
+]
+}]
+}

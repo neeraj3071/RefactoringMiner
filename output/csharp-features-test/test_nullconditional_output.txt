@@ -1,0 +1,186 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_nullconditional.cs
+Size: 343 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+class TestNullConditional
+{
+    public string GetProperty()
+    {
+        return "property";
+    }
+    
+    public void TestMethod()
+    {
+        TestNullConditional obj = null;
+        
+        // Test null-conditional: obj?.GetProperty()
+        string result = obj?.GetProperty();
+        Console.WriteLine(result);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_nullconditional.cs
+CPatMinerExecutor: Executing CPatMiner transformation (343 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    class [15,342]
+        name: TestNullConditional [21,40]
+        block [41,342]
+            function [47,113]
+                type [47,60]
+                    specifier: public [47,53]
+                    name: string [54,60]
+                name: GetProperty [61,72]
+                parameter_list [72,74]
+                block [79,113]
+                    block_content [80,112]
+                        return [89,107]
+                            expr [96,106]
+                                literal: "property" [96,106]
+            function [123,340]
+                type [123,134]
+                    specifier: public [123,129]
+                    name: void [130,134]
+                name: TestMethod [135,145]
+                parameter_list [145,147]
+                block [152,340]
+                    block_content [153,339]
+                        decl_stmt [162,193]
+                            decl [162,192]
+                                type [162,181]
+                                    name: TestNullConditional [162,181]
+                                name: obj [182,185]
+                                init [186,192]
+                                    expr [188,192]
+                                        literal: null [188,192]
+                        comment: // Test null-conditional: obj?.GetProperty() [211,255]
+                        decl_stmt [264,299]
+                            decl [264,298]
+                                type [264,270]
+                                    name: string [264,270]
+                                name: result [271,277]
+                                init [278,298]
+                                    expr [280,298]
+                                        ternary [280,298]
+                                            condition [280,284]
+                                                expr [280,283]
+                                                    name: obj [280,283]
+                                            then [284,298]
+                                                expr [284,298]
+                                                    operator: . [284,285]
+                                                    call [285,298]
+                                                        name: GetProperty [285,296]
+                                                        argument_list [296,298]
+                        expr_stmt [308,334]
+                            expr [308,333]
+                                call [308,333]
+                                    name [308,325]
+                                        name: Console [308,315]
+                                        operator: . [315,316]
+                                        name: WriteLine [316,325]
+                                    argument_list [325,333]
+                                        argument [326,332]
+                                            expr [326,332]
+                                                name: result [326,332]
+import System;
+class TestNullConditional {
+  public String GetProperty(){
+    return "property";
+  }
+  public Void TestMethod(){
+    TestNullConditional obj="null";
+    String result=obj != null ? obj.GetProperty() : null;
+    Console.WriteLine(result);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 260 chars
+  - Number of lines: 11
+
+=== Generated Java Code (Full Output) ===
+import System;
+class TestNullConditional {
+  public String GetProperty(){
+    return "property";
+  }
+  public Void TestMethod(){
+    TestNullConditional obj="null";
+    String result=obj != null ? obj.GetProperty() : null;
+    Console.WriteLine(result);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_nullconditional.java
+  - File contents size: 260 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_nullconditional.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestNullConditional
+  Type: Class
+  Package: 
+  Source file: tests/test_nullconditional.java
+  Operations: 2
+  Attributes: 0
+  Methods:
+    • GetProperty() - 1 param(s)
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

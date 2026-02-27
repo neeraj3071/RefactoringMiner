@@ -1,0 +1,379 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/20_attributes.cs
+Size: 1644 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for C# attributes (annotations in Java).
+    /// Tests transformation of C# attributes to Java annotations.
+    /// </summary>
+    [Serializable]
+    [Obsolete("This class is deprecated")]
+    public class AttributeDeclarations
+    {
+        // Field with attribute
+        [NonSerialized]
+        private int temporaryData;
+        
+        // Property with attribute
+        [Obsolete]
+        public string OldPro
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/20_attributes.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1644 chars)...
+unit [0,0]
+    namespace [0,1643]
+        name: TestFeatures [10,22]
+        block [23,1643]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for C# attributes (annotations in Java). [70,124]
+            comment: /// Tests transformation of C# attributes to Java annotations. [129,191]
+            comment: ///</summary> [196,210]
+            class [215,1241]
+                attribute [215,229]
+                    expr [216,228]
+                        name: Serializable [216,228]
+                attribute [234,272]
+                    expr [235,271]
+                        call [235,271]
+                            name: Obsolete [235,243]
+                            argument_list [243,271]
+                                argument [244,270]
+                                    expr [244,270]
+                                        literal: "This class is deprecated" [244,270]
+                specifier: public [277,283]
+                name: AttributeDeclarations [290,311]
+                block [316,1241]
+                    comment: // Field with attribute [326,349]
+                    decl_stmt [358,408]
+                        decl [358,407]
+                            attribute [358,373]
+                                expr [359,372]
+                                    name: NonSerialized [359,372]
+                            type [382,393]
+                                specifier: private [382,389]
+                                name: int [390,393]
+                            name: temporaryData [394,407]
+                    comment: // Property with attribute [426,452]
+                    property [461,519]
+                        attribute [461,471]
+                            expr [462,470]
+                                name: Obsolete [462,470]
+                        type [480,493]
+                            specifier: public [480,486]
+                            name: string [487,493]
+                        name: OldProperty [494,505]
+                        block [506,519]
+                            function_decl [508,512]
+                                name: get [508,511]
+                            function_decl [513,517]
+                                name: set [513,516]
+                    comment: // Method with multiple attributes [537,571]
+                    function [580,735]
+                        attribute [580,615]
+                            expr [581,614]
+                                call [581,614]
+                                    name: Obsolete [581,589]
+                                    argument_list [589,614]
+                                        argument [590,613]
+                                            expr [590,613]
+                                                literal: "Use NewMethod instead" [590,613]
+                        attribute [624,638]
+                            expr [625,637]
+                                name: Serializable [625,637]
+                        type [647,658]
+                            specifier: public [647,653]
+                            name: void [654,658]
+                        name: OldMethod [659,668]
+                        parameter_list [668,670]
+                        block [679,735]
+                            block_content [680,734]
+                                expr_stmt [693,725]
+                                    expr [693,724]
+                                        call [693,724]
+                                            name [693,710]
+                                                name: Console [693,700]
+                                                operator: . [700,701]
+                                                name: WriteLine [701,710]
+                                            argument_list [710,724]
+                                                argument [711,723]
+                                                    expr [711,723]
+                                                        literal: "Old method" [711,723]
+                    comment: // Method with attribute and parameters [753,792]
+                    function [801,935]
+                        attribute [801,831]
+                            expr [802,830]
+                                call [802,830]
+                                    name: Obsolete [802,810]
+                                    argument_list [810,830]
+                                        argument [811,823]
+                                            expr [811,823]
+                                                literal: "Deprecated" [811,823]
+                                        argument [825,829]
+                                            expr [825,829]
+                                                literal: true [825,829]
+                        type [840,851]
+                            specifier: public [840,846]
+                            name: void [847,851]
+                        name: DeprecatedMethod [852,868]
+                        parameter_list [868,870]
+                        block [879,935]
+                            block_content [880,934]
+                                expr_stmt [893,925]
+                                    expr [893,924]
+                                        call [893,924]
+                                            name [893,910]
+                                                name: Console [893,900]
+                                                operator: . [900,901]
+                                                name: WriteLine [901,910]
+                                            argument_list [910,924]
+                                                argument [911,923]
+                                                    expr [911,923]
+                                                        literal: "Deprecated" [911,923]
+                    comment: // Custom attribute usage [953,978]
+                    property [987,1058]
+                        attribute [987,1017]
+                            expr [988,1016]
+                                call [988,1016]
+                                    name: CustomValidation [988,1004]
+                                    argument_list [1004,1016]
+                                        argument [1005,1015]
+                                            expr [1005,1015]
+                                                literal: "Required" [1005,1015]
+                        type [1026,1039]
+                            specifier: public [1026,1032]
+                            name: string [1033,1039]
+                        name: Name [1040,1044]
+                        block [1045,1058]
+                            function_decl [1047,1051]
+                                name: get [1047,1050]
+                            function_decl [1052,1056]
+                                name: set [1052,1055]
+                    comment: // Parameter with attribute [1076,1103]
+                    function [1112,1235]
+                        type [1112,1123]
+                            specifier: public [1112,1118]
+                            name: void [1119,1123]
+                        name: ProcessData [1124,1135]
+                        parameter_list [1135,1161]
+                            parameter [1136,1160]
+                                decl [1136,1160]
+                                    type [1136,1155]
+                                        attribute [1136,1151]
+                                            expr [1137,1150]
+                                                name: NonSerialized [1137,1150]
+                                        name: int [1152,1155]
+                                    name: data [1156,1160]
+                        block [1170,1235]
+                            block_content [1171,1234]
+                                expr_stmt [1184,1225]
+                                    expr [1184,1224]
+                                        call [1184,1224]
+                                            name [1184,1201]
+                                                name: Console [1184,1191]
+                                                operator: . [1191,1192]
+                                                name: WriteLine [1192,1201]
+                                            argument_list [1201,1224]
+                                                argument [1202,1223]
+                                                    expr [1202,1223]
+                                                        literal: "Processing: " [1202,1216]
+                                                        operator: + [1217,1218]
+                                                        name: data [1219,1223]
+            comment: ///<summary> [1251,1264]
+            comment: /// Custom attribute definition for testing. [1269,1313]
+            comment: ///</summary> [1318,1332]
+            class [1337,1641]
+                attribute [1337,1405]
+                    expr [1338,1404]
+                        call [1338,1404]
+                            name: AttributeUsage [1338,1352]
+                            argument_list [1352,1404]
+                                argument [1353,1403]
+                                    expr [1353,1403]
+                                        name [1353,1378]
+                                            name: AttributeTargets [1353,1369]
+                                            operator: . [1369,1370]
+                                            name: Property [1370,1378]
+                                        operator: | [1379,1380]
+                                        name [1381,1403]
+                                            name: AttributeTargets [1381,1397]
+                                            operator: . [1397,1398]
+                                            name: Field [1398,1403]
+                specifier: public [1410,1416]
+                name: CustomValidationAttribute [1423,1448]
+                super_list [1449,1460]
+                    super [1451,1460]
+                        name: Attribute [1451,1460]
+                block [1465,1641]
+                    property [1475,1517]
+                        type [1475,1488]
+                            specifier: public [1475,1481]
+                            name: string [1482,1488]
+                        name: ValidationRule [1489,1503]
+                        block [1504,1517]
+                            function_decl [1506,1510]
+                                name: get [1506,1509]
+                            function_decl [1511,1515]
+                                name: set [1511,1514]
+                    constructor [1535,1635]
+                        specifier: public [1535,1541]
+                        name: CustomValidationAttribute [1542,1567]
+                        parameter_list [1567,1580]
+                            parameter [1568,1579]
+                                decl [1568,1579]
+                                    type [1568,1574]
+                                        name: string [1568,1574]
+                                    name: rule [1575,1579]
+                        block [1589,1635]
+                            block_content [1590,1634]
+                                expr_stmt [1603,1625]
+                                    expr [1603,1624]
+                                        name: ValidationRule [1603,1617]
+                                        operator: = [1618,1619]
+                                        name: rule [1620,1624]
+package TestFeatures;
+@MISSING() @Obsolete(value="This class is deprecated") public class AttributeDeclarations {
+  private int temporaryData;
+  public String MISSING;
+  @Obsolete(value="Use NewMethod instead") @MISSING() public Void OldMethod(){
+    Console.WriteLine("Old method");
+  }
+  @Obsolete(value="Deprecated",value=true) public Void DeprecatedMethod(){
+    Console.WriteLine("Deprecated");
+  }
+  public String MISSING;
+  public Void ProcessData(  int data){
+    Console.WriteLine("Processing: " + data);
+  }
+}
+@AttributeUsage(MISSING=MISSING) public class CustomValidationAttribute extends Attribute {
+  public String ValidationRule;
+  void get();
+  void set();
+  CustomValidationAttribute(  String rule){
+    ValidationRule=rule;
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 2 types
+✓ CompilationUnit created successfully!
+  - Number of types: 2
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 747 chars
+  - Number of lines: 23
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+@MISSING() @Obsolete(value="This class is deprecated") public class AttributeDeclarations {
+  private int temporaryData;
+  public String MISSING;
+  @Obsolete(value="Use NewMethod instead") @MISSING() public Void OldMethod(){
+    Console.WriteLine("Old method");
+  }
+  @Obsolete(value="Deprecated",value=true) public Void DeprecatedMethod(){
+    Console.WriteLine("Deprecated");
+  }
+  public String MISSING;
+  public Void ProcessData(  int data){
+    Console.WriteLine("Processing: " + data);
+  }
+}
+@AttributeUsage(MISSING=MISSING) public class CustomValidationAttribute extends Attribute {
+  public String ValidationRule;
+  void get();
+  void set();
+  CustomValidationAttribute(  String rule){
+    ValidationRule=rule;
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/20_attributes.java
+  - File contents size: 747 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/20_attributes.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 2
+  - Classes: 2
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.AttributeDeclarations
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/20_attributes.java
+  Operations: 3
+  Attributes: 3
+  Fields:
+    • int temporaryData
+    • String MISSING
+    • String MISSING
+  Methods:
+    • OldMethod() - 1 param(s)
+    • DeprecatedMethod() - 1 param(s)
+    • ProcessData() - 2 param(s)
+
+Class: TestFeatures.CustomValidationAttribute
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/20_attributes.java
+  Operations: 3
+  Attributes: 1
+  Fields:
+    • String ValidationRule
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • CustomValidationAttribute() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,261 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
+	"sha1": "c7767838ebc3823498fb4141ced5b10db7992998",
+	"url": "https://github.com/CognitiveVR/cvr-sdk-unity/commit/c7767838ebc3823498fb4141ced5b10db7992998",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class AppVariableCollection renamed to AppVariableData",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "AppVariableCollection"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 126,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "AppVariableData"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(tvc != null) to if(tvc == null) in method package AppVariableResponse(responsecode int, error string, text string) : void from class AppVariables",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 119,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(tvc != null)"
+}, {
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 103,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AppVariableResponse(responsecode int, error string, text string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 115,
+		"endLine": 119,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(tvc == null)"
+}, {
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 99,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "package AppVariableResponse(responsecode int, error string, text string) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tvc : in to appVariables : in in method package AppVariableResponse(responsecode int, error string, text string) : void from class AppVariables",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 40,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tvc : in"
+}, {
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 35,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "appVariables : in"
+}, {
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute appVariables : Dictionary<string,AppVariableItem> to appVariableData : AppVariableData in class AppVariableManager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "appVariables : Dictionary<string,AppVariableItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "appVariableData : AppVariableData"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type appVariables : Dictionary<string,AppVariableItem> to appVariableData : AppVariableData in class AppVariableManager",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "appVariables : Dictionary<string,AppVariableItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "appVariableData : AppVariableData"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class AppVariableData",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "AppVariableCollection"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Internal/AppVariableManager.cs",
+		"startLine": 126,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "AppVariableData"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package appVariables : List<AppVariableItem> from class AppVariables",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public appVariables : List<AppVariableItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package appVariables : List<AppVariableItem>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute package appVariables : List<AppVariableItem> from class AppVariables",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public appVariables : List<AppVariableItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "package appVariables : List<AppVariableItem>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public appVariables : List<AppVariableItem> from class AppVariableCollection to package appVariables : List<AppVariableItem> from class AppVariables",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public appVariables : List<AppVariableItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Components/AppVariables.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 38,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package appVariables : List<AppVariableItem>"
+}]
+}
+]
+}]
+}

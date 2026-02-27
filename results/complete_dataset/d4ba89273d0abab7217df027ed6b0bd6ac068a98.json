@@ -1,0 +1,372 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/oneVR/VRWorldToolkit.git",
+	"sha1": "d4ba89273d0abab7217df027ed6b0bd6ac068a98",
+	"url": "https://github.com/oneVR/VRWorldToolkit/commit/d4ba89273d0abab7217df027ed6b0bd6ac068a98",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public SetupPostProcessingGenerics(camera GameObject) : void extracted from private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void in class PostProcessingTools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 79,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 17,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 144,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetupPostProcessingGenerics(camera GameObject) : void"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private SetupBasicPostProcessing() : void"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "SetupPostProcessingGenerics(camera)"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable descriptors : var to sceneDescriptors : var in method private PostProcessingSetup() : void from class PostProcessingTools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "descriptors : var"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 55,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 28,
+		"endLine": 41,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "sceneDescriptors : var"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 44,
+		"endLine": 51,
+		"startColumn": 22,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 32,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter descriptors : VRC_SceneDescriptor[] in method private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void from class PostProcessingTools",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 54,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "descriptors : VRC_SceneDescriptor[]"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 79,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private SetupBasicPostProcessing() : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public CreateMainCamera() : GameObject extracted from private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void in class PostProcessingTools & moved to class Helper",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 79,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private SetupBasicPostProcessing(descriptors VRC_SceneDescriptor[]) : void"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 21,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 70,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CreateMainCamera() : GameObject"
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private SetupBasicPostProcessing() : void"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 30,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Helper.CreateMainCamera()"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type camera : GameObject to camera : var in method public CreateMainCamera() : GameObject from class Helper",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "camera : GameObject"
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/PostProcessingTools.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 25,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "camera : var"
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Editor/Helper.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

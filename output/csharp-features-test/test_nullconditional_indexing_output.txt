@@ -1,0 +1,186 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_nullconditional_indexing.cs
+Size: 300 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+class TestNullConditionalIndexing
+{
+    public void TestMethod()
+    {
+        int[] array = new int[] { 1, 2, 3 };
+        int index = 1;
+        
+        // Test null-conditional indexing: array?[index]
+        int? result = array?[index];
+        Console.WriteLine(result);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_nullconditional_indexing.cs
+CPatMinerExecutor: Executing CPatMiner transformation (300 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    class [15,299]
+        name: TestNullConditionalIndexing [21,48]
+        block [49,299]
+            function [55,297]
+                type [55,66]
+                    specifier: public [55,61]
+                    name: void [62,66]
+                name: TestMethod [67,77]
+                parameter_list [77,79]
+                block [84,297]
+                    block_content [85,296]
+                        decl_stmt [94,130]
+                            decl [94,129]
+                                type [94,99]
+                                    name [94,99]
+                                        name: int [94,97]
+                                        index [97,99]
+                                name: array [100,105]
+                                init [106,129]
+                                    expr [108,129]
+                                        operator: new [108,111]
+                                        name [112,117]
+                                            name: int [112,115]
+                                            index [115,117]
+                                        block [118,129]
+                                            expr [120,121]
+                                                literal: 1 [120,121]
+                                            expr [123,124]
+                                                literal: 2 [123,124]
+                                            expr [126,127]
+                                                literal: 3 [126,127]
+                        decl_stmt [139,153]
+                            decl [139,152]
+                                type [139,142]
+                                    name: int [139,142]
+                                name: index [143,148]
+                                init [149,152]
+                                    expr [151,152]
+                                        literal: 1 [151,152]
+                        comment: // Test null-conditional indexing: array?[index] [171,219]
+                        decl_stmt [228,256]
+                            decl [228,255]
+                                type [228,232]
+                                    name: int [228,231]
+                                    modifier: ? [231,232]
+                                name: result [233,239]
+                                init [240,255]
+                                    expr [242,255]
+                                        ternary [242,255]
+                                            condition [242,248]
+                                                expr [242,247]
+                                                    name: array [242,247]
+                                            then [248,255]
+                                                expr [248,255]
+                                                    index [248,255]
+                                                        expr [249,254]
+                                                            name: index [249,254]
+                        expr_stmt [265,291]
+                            expr [265,290]
+                                call [265,290]
+                                    name [265,282]
+                                        name: Console [265,272]
+                                        operator: . [272,273]
+                                        name: WriteLine [273,282]
+                                    argument_list [282,290]
+                                        argument [283,289]
+                                            expr [283,289]
+                                                name: result [283,289]
+import System;
+class TestNullConditionalIndexing {
+  public Void TestMethod(){
+    int[] array=new int[]{1,2,3};
+    int index=1;
+    int result=array != null ? array[index] : null;
+    Console.WriteLine(result);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 219 chars
+  - Number of lines: 9
+
+=== Generated Java Code (Full Output) ===
+import System;
+class TestNullConditionalIndexing {
+  public Void TestMethod(){
+    int[] array=new int[]{1,2,3};
+    int index=1;
+    int result=array != null ? array[index] : null;
+    Console.WriteLine(result);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_nullconditional_indexing.java
+  - File contents size: 219 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_nullconditional_indexing.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestNullConditionalIndexing
+  Type: Class
+  Package: 
+  Source file: tests/test_nullconditional_indexing.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

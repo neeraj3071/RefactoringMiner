@@ -1,0 +1,120 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "1ea709a5d2e8aea32b193887044050f5e349f1eb",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/1ea709a5d2e8aea32b193887044050f5e349f1eb",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(ammoItem == null), if(ammoItem.m_shared.m_itemType != ItemDrop.ItemData.ItemType.Ammo)] to if(ammoItem == null || ammoItem.m_shared.m_itemType != ItemDrop.ItemData.ItemType.Ammo) in method public toggleArrow() : void from class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 284,
+		"endLine": 287,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(ammoItem == null)"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 288,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(ammoItem.m_shared.m_itemType != ItemDrop.ItemData.ItemType.Ammo)"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 277,
+		"endLine": 299,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toggleArrow() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 270,
+		"endLine": 273,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(ammoItem == null || ammoItem.m_shared.m_itemType != ItemDrop.ItemData.ItemType.Ammo)"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 262,
+		"endLine": 287,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public toggleArrow() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ammoItem : ItemDrop.ItemData to ammoItem : var in method public toggleArrow() : void from class BowManager",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 31,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ammoItem : ItemDrop.ItemData"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 284,
+		"endLine": 287,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ammoItem : var"
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "ValheimVRMod/Scripts/BowManager.cs",
+		"startLine": 270,
+		"endLine": 273,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

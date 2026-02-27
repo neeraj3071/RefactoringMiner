@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "477a87321dd2bee7b59c4498f7e411df244dee29",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/477a87321dd2bee7b59c4498f7e411df244dee29",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type previous : float to previous : bool in method package PreviouslyFoundResult(go GameObject) : bool from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "previous : float"
+}, {
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 18,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "previous : bool"
+}, {
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type float to bool in method package PreviouslyFoundResult(go GameObject) : bool from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "float"
+}, {
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 379,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PreviouslyFoundResult(go GameObject) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 376,
+		"endLine": 381,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package PreviouslyFoundResult(go GameObject) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter rayOrigin : Transform in method package StopBlinkingHighlight(go GameObject, rayOrigin Transform) : void from class AssetGridItem",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 406,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StopBlinkingHighlight(go GameObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 51,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "rayOrigin : Transform"
+}, {
+		"filePath": "Workspaces/ProjectWorkspace/Scripts/AssetGridItem.cs",
+		"startLine": 400,
+		"endLine": 411,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package StopBlinkingHighlight(go GameObject, rayOrigin Transform) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,202 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_var_inference.cs
+Size: 269 chars
+--- C# Source Content (first 500 chars) ---
+public class TestVarInference {
+    public void TestMethod() {
+        var number = 42;
+        var text = "hello";
+        var flag = true;
+        var obj = new GameObject();
+        var manifest = GameObject.Find("test").GetComponent<AggregationManifest>();
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_var_inference.cs
+CPatMinerExecutor: Executing CPatMiner transformation (269 chars)...
+unit [0,0]
+    class [0,268]
+        specifier: public [0,6]
+        name: TestVarInference [13,29]
+        block [30,268]
+            function [36,266]
+                type [36,47]
+                    specifier: public [36,42]
+                    name: void [43,47]
+                name: TestMethod [48,58]
+                parameter_list [58,60]
+                block [61,266]
+                    block_content [62,265]
+                        decl_stmt [71,87]
+                            decl [71,86]
+                                type [71,74]
+                                    name: var [71,74]
+                                name: number [75,81]
+                                init [82,86]
+                                    expr [84,86]
+                                        literal: 42 [84,86]
+                        decl_stmt [96,115]
+                            decl [96,114]
+                                type [96,99]
+                                    name: var [96,99]
+                                name: text [100,104]
+                                init [105,114]
+                                    expr [107,114]
+                                        literal: "hello" [107,114]
+                        decl_stmt [124,140]
+                            decl [124,139]
+                                type [124,127]
+                                    name: var [124,127]
+                                name: flag [128,132]
+                                init [133,139]
+                                    expr [135,139]
+                                        literal: true [135,139]
+                        decl_stmt [149,176]
+                            decl [149,175]
+                                type [149,152]
+                                    name: var [149,152]
+                                name: obj [153,156]
+                                init [157,175]
+                                    expr [159,175]
+                                        operator: new [159,162]
+                                        call [163,175]
+                                            name: GameObject [163,173]
+                                            argument_list [173,175]
+                        decl_stmt [185,260]
+                            decl [185,259]
+                                type [185,188]
+                                    name: var [185,188]
+                                name: manifest [189,197]
+                                init [198,259]
+                                    expr [200,259]
+                                        call [200,223]
+                                            name [200,215]
+                                                name: GameObject [200,210]
+                                                operator: . [210,211]
+                                                name: Find [211,215]
+                                            argument_list [215,223]
+                                                argument [216,222]
+                                                    expr [216,222]
+                                                        literal: "test" [216,222]
+                                        operator: . [223,224]
+                                        call [224,259]
+                                            name [224,257]
+                                                name: GetComponent [224,236]
+                                                argument_list [236,257]
+                                                    argument [237,256]
+                                                        name: AggregationManifest [237,256]
+                                            argument_list [257,259]
+[VAR INFERENCE] Detected var type for variable: number
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: NumberLiteral = 42
+[VAR INFERENCE] SUCCESS - Inferred type: int
+[VAR INFERENCE] Detected var type for variable: text
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: StringLiteral = "hello"
+[VAR INFERENCE] SUCCESS - Inferred type: String
+[VAR INFERENCE] Detected var type for variable: flag
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: BooleanLiteral = true
+[VAR INFERENCE] SUCCESS - Inferred type: boolean
+[VAR INFERENCE] Detected var type for variable: obj
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: ClassInstanceCreation = new GameObject()
+[VAR INFERENCE] SUCCESS - Inferred type: GameObject
+[VAR INFERENCE] Detected var type for variable: manifest
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: InfixExpression = GameObject.Find("test") + MISSING()
+[VAR INFERENCE] SUCCESS - Inferred type: int
+public class TestVarInference {
+  public Void TestMethod(){
+    int number=42;
+    String text="hello";
+    boolean flag=true;
+    GameObject obj=new GameObject();
+    int manifest=GameObject.Find("test") + MISSING();
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 224 chars
+  - Number of lines: 9
+
+=== Generated Java Code (Full Output) ===
+public class TestVarInference {
+  public Void TestMethod(){
+    int number=42;
+    String text="hello";
+    boolean flag=true;
+    GameObject obj=new GameObject();
+    int manifest=GameObject.Find("test") + MISSING();
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_var_inference.java
+  - File contents size: 224 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_var_inference.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestVarInference
+  Type: Class
+  Package: 
+  Source file: tests/test_var_inference.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

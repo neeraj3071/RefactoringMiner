@@ -1,0 +1,222 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "28330fa479cd3bca33d2f2612c001d4332384571",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/28330fa479cd3bca33d2f2612c001d4332384571",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class MaterialBase.ShaderCategory moved to MaterialWrapperBuilder.ShaderCategory",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 34,
+		"endLine": 41,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MaterialBase.ShaderCategory"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 18,
+		"endLine": 25,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "MaterialWrapperBuilder.ShaderCategory"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type progressCallback : VRChatAvatar.ProgressCallback to progressCallback : AvatarConverter.ProgressCallback in class AvatarConverterWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/Views/AvatarConverterWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "progressCallback : VRChatAvatar.ProgressCallback"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/AvatarConverterWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 50,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "progressCallback : AvatarConverter.ProgressCallback"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package DetectShaderCategory(material Material) : ShaderCategory from class MaterialBase to package DetectShaderCategory(material Material) : ShaderCategory from class MaterialWrapperBuilder",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 68,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 52,
+		"endLine": 82,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package DetectShaderCategory(material Material) : ShaderCategory from class MaterialBase",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 68,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 52,
+		"endLine": 82,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class MaterialWrapperBuilder from class MaterialBase",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 15,
+		"endLine": 129,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MaterialBase"
+}, {
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 48,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Create(material Material) : MaterialBase"
+}, {
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 68,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 15,
+		"endLine": 60,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "MaterialBase"
+}, {
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 13,
+		"endLine": 83,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "MaterialWrapperBuilder"
+}, {
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package Build(material Material) : MaterialBase"
+}, {
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 52,
+		"endLine": 82,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package DetectShaderCategory(material Material) : ShaderCategory"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method package Create(material Material) : MaterialBase from class MaterialBase",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 48,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Create(material Material) : MaterialBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package Build(material Material) : MaterialBase"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package Create(material Material) : MaterialBase from class MaterialBase to package Build(material Material) : MaterialBase from class MaterialWrapperBuilder",
+	"leftSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialBase.cs",
+		"startLine": 48,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Create(material Material) : MaterialBase"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Models/Unity/MaterialWrapperBuilder.cs",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package Build(material Material) : MaterialBase"
+}]
+}
+]
+}]
+}

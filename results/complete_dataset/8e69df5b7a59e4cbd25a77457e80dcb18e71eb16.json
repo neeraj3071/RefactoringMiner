@@ -1,0 +1,333 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Sauceke/LoveMachine.git",
+	"sha1": "8e69df5b7a59e4cbd25a77457e80dcb18e71eb16",
+	"url": "https://github.com/Sauceke/LoveMachine/commit/8e69df5b7a59e4cbd25a77457e80dcb18e71eb16",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class DeviceListGUI renamed to DeviceListUI",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/UI/DeviceListGUI.cs",
+		"startLine": 16,
+		"endLine": 162,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DeviceListGUI"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 15,
+		"endLine": 193,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "DeviceListUI"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type $missing$ : manager.AddComponent<DeviceListGUI> @$missing$ [] to $missing$ : manager.AddComponent<DeviceListUI> @$missing$ [] in method package Start() : void from class LoveMachinePlugin",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 50,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "$missing$ : manager.AddComponent<DeviceListGUI> @$missing$ []"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/LoveMachinePlugin.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 49,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "$missing$ : manager.AddComponent<DeviceListUI> @$missing$ []"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private DrawDevice(device Device) : void extracted from private DrawDevicePanel(device Device) : void in class DeviceListUI",
+	"leftSideLocations": [{
+		"filePath": "src/LoveMachine.Core/UI/DeviceListGUI.cs",
+		"startLine": 88,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private DrawDevicePanel(device Device) : void"
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListGUI.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListGUI.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListGUI.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 136,
+		"endLine": 166,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private DrawDevice(device Device) : void"
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 87,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private DrawDevicePanel(device Device) : void"
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DrawDevice(device)"
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 21,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 21,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 139,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 146,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 145,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 159,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/LoveMachine.Core/UI/DeviceListUI.cs",
+		"startLine": 156,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

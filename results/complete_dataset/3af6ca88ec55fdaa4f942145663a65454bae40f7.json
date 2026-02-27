@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MayouKurayami/KK_SetParentVR.git",
+	"sha1": "3af6ca88ec55fdaa4f942145663a65454bae40f7",
+	"url": "https://github.com/MayouKurayami/KK_SetParentVR/commit/3af6ca88ec55fdaa4f942145663a65454bae40f7",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private SetBodyColliders() : void renamed to private SetLimbColliders(limb LimbName) : void in class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 502,
+		"endLine": 521,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetBodyColliders() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 535,
+		"endLine": 542,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private SetLimbColliders(limb LimbName) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter limb : LimbName in method private SetLimbColliders(limb LimbName) : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 502,
+		"endLine": 521,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetBodyColliders() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "limb : LimbName"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 535,
+		"endLine": 542,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private SetLimbColliders(limb LimbName) : void"
+}]
+}
+]
+}]
+}

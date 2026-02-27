@@ -1,0 +1,315 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "14dadd8adfca8396b3d4bff8dd2422407a40fa81",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/14dadd8adfca8396b3d4bff8dd2422407a40fa81",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ignoreList : List<Renderer> to ignoreList : List<GameObject> in method package CheckBoundsDelegate(bounds Bounds, objects List<GameObject>, ignoreList List<GameObject>) from class ICheckBoundsMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/ICheckBounds.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 91,
+		"endColumn": 116,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ignoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/ICheckBounds.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 91,
+		"endColumn": 118,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ignoreList : List<GameObject>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ignoreList : List<Renderer> to ignoreList : List<GameObject> in method package CheckSphereDelegate(center Vector3, radius float, objects List<GameObject>, ignoreList List<GameObject>) from class ICheckSphereMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/ICheckSphere.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 106,
+		"endColumn": 131,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ignoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/ICheckSphere.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 106,
+		"endColumn": 133,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ignoreList : List<GameObject>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type getVRPlayerObjects : Func<List<Renderer>> to getVRPlayerObjects : Func<List<GameObject>> in class IGetVRPlayerObjectsMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 46,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "getVRPlayerObjects : Func<List<Renderer>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 48,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "getVRPlayerObjects : Func<List<GameObject>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<Renderer> to List<GameObject> in method public GetVRPlayerObjects() : List<GameObject> from class IGetVRPlayerObjectsMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<Renderer>"
+}, {
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 22,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetVRPlayerObjects() : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<GameObject>"
+}, {
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IGetVRPlayerObjects.cs",
+		"startLine": 22,
+		"endLine": 26,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetVRPlayerObjects() : List<GameObject>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ignoreList : List<Renderer> to ignoreList : List<GameObject> in class IStandardIgnoreList",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IStandardIgnoreList.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ignoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/FunctionalityInjection/IStandardIgnoreList.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ignoreList : List<GameObject>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type standardIgnoreList : List<Renderer> to standardIgnoreList : List<GameObject> in class IntersectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule/IntersectionModule.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "standardIgnoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/IntersectionModule/IntersectionModule.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "standardIgnoreList : List<GameObject>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute package List : readonly from class SelectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SelectionModule/SelectionModule.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SelectionModule/SelectionModule.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 25,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "package List : readonly"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package List : readonly from class SelectionModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SelectionModule/SelectionModule.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 25,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SelectionModule/SelectionModule.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package List : readonly"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ignoreList : List<Renderer> to ignoreList : List<GameObject> in class BlinkVisuals",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/Scripts/BlinkVisuals.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ignoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/LocomotionTool/Scripts/BlinkVisuals.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ignoreList : List<GameObject>"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute package Dictionary : readonly from class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 18,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package Dictionary : readonly"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute package Dictionary : readonly from class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 18,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package Dictionary : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "package Dictionary : readonly"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ignoreList : List<Renderer> to ignoreList : List<GameObject> in class SelectionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ignoreList : List<Renderer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/SelectionTool/SelectionTool.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 33,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ignoreList : List<GameObject>"
+}]
+}
+]
+}]
+}

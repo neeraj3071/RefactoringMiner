@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "5c159c615ab8f0c4d6be023a7f02b2d324c017e9",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/5c159c615ab8f0c4d6be023a7f02b2d324c017e9",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private GetPathRelativeToAssets(path string) : string from class AssetData",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetPathRelativeToAssets(path string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Data/AssetData.cs",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetPathRelativeToAssets(path string) : string"
+}]
+}
+]
+}]
+}

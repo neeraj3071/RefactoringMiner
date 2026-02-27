@@ -1,0 +1,186 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "4b840c8bef4fa2b73210b953db641a83f62607bf",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/4b840c8bef4fa2b73210b953db641a83f62607bf",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type starPrefab : GameObject to starPrefab : StarComponent in class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "starPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "starPrefab : StarComponent"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type constellationPrefab : GameObject to constellationPrefab : Constellation in class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 23,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "constellationPrefab : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 26,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "constellationPrefab : Constellation"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter starObject : GameObject in method package showStar(starObject GameObject, show bool) : void from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "starObject : GameObject"
+}, {
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 310,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ShowStar(show bool) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 310,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package showStar(starObject GameObject, show bool) : void from class DataController to public ShowStar(show bool) : void from class StarComponent",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 310,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package showStar(starObject GameObject, show bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/StarComponent.cs",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public ShowStar(show bool) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public shortName : string from class DataController.ConstellationNamePair to public shortName : string from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public shortName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public shortName : string"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public fullName : string from class DataController.ConstellationNamePair to public fullName : string from class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fullName : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public fullName : string"
+}]
+}
+]
+}]
+}

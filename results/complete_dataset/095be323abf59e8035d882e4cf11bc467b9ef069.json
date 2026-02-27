@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/realitycollective/com.realitytoolkit.core.git",
+	"sha1": "095be323abf59e8035d882e4cf11bc467b9ef069",
+	"url": "https://github.com/realitycollective/com.realitytoolkit.core/commit/095be323abf59e8035d882e4cf11bc467b9ef069",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter FocusDetails : out to IPointerResult : out in method public TryGetFocusDetails(pointer IMixedRealityPointer, IPointerResult out) : bool from class IMixedRealityFocusProvider",
+	"leftSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 63,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "FocusDetails : out"
+}],
+	"rightSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 63,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IPointerResult : out"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable IsTargetPositionLockedOnFocusLock : bool to SyncPointerTargetPosition : bool in initializer IMixedRealityPointer from class IMixedRealityPointer",
+	"leftSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 14,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "IsTargetPositionLockedOnFocusLock : bool"
+}, {
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 14,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "SyncPointerTargetPosition : bool"
+}, {
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable FocusTarget : IMixedRealityFocusHandler to FocusHandler : IMixedRealityFocusHandler in initializer IMixedRealityPointer from class IMixedRealityPointer",
+	"leftSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "FocusTarget : IMixedRealityFocusHandler"
+}, {
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 35,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "FocusHandler : IMixedRealityFocusHandler"
+}, {
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Interfaces/InputSystem/IMixedRealityPointer.cs",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter FocusDetails : out to IPointerResult : out in method public TryGetFocusDetails(pointer IMixedRealityPointer, IPointerResult out) : bool from class FocusProvider.PointerData",
+	"leftSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Services/InputSystem/FocusProvider.cs",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 70,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "FocusDetails : out"
+}],
+	"rightSideLocations": [{
+		"filePath": "XRTK-Core/Packages/com.xrtk.core/Services/InputSystem/FocusProvider.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 70,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "IPointerResult : out"
+}]
+}
+]
+}]
+}

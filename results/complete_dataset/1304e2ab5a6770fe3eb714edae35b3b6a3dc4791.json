@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "1304e2ab5a6770fe3eb714edae35b3b6a3dc4791",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/1304e2ab5a6770fe3eb714edae35b3b6a3dc4791",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package Awake() : void renamed to public Setup() : void in class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 187,
+		"endLine": 204,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 190,
+		"endLine": 207,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Setup() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Setup() : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 187,
+		"endLine": 204,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 190,
+		"endLine": 207,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Setup() : void"
+}]
+}
+]
+}]
+}

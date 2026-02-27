@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/mobfishgmbh/Cardboard-VR-Unity-SDK.git",
+	"sha1": "d2342c4cf1ce1ca49b5bccfefbd6993281075c3d",
+	"url": "https://github.com/mobfishgmbh/Cardboard-VR-Unity-SDK/commit/d2342c4cf1ce1ca49b5bccfefbd6993281075c3d",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public ScanQrCode() : void extracted from private ScanQRCode() : void in class CardboardUIOverlay & moved to class CardboardManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Cardboard/Scripts/Behaviours/CardboardUIOverlay.cs",
+		"startLine": 62,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private ScanQRCode() : void"
+}, {
+		"filePath": "Assets/Cardboard/Scripts/Behaviours/CardboardUIOverlay.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Cardboard/Scripts/CardboardManager.cs",
+		"startLine": 64,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ScanQrCode() : void"
+}, {
+		"filePath": "Assets/Cardboard/Scripts/CardboardManager.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Cardboard/Scripts/Behaviours/CardboardUIOverlay.cs",
+		"startLine": 62,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private ScanQRCode() : void"
+}, {
+		"filePath": "Assets/Cardboard/Scripts/Behaviours/CardboardUIOverlay.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CardboardManager.ScanQrCode()"
+}]
+}
+]
+}]
+}

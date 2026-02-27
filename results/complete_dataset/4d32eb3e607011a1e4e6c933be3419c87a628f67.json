@@ -1,0 +1,549 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "4d32eb3e607011a1e4e6c933be3419c87a628f67",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/4d32eb3e607011a1e4e6c933be3419c87a628f67",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class SpatialUIController renamed to SpatialInterfaceController",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 23,
+		"endLine": 969,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SpatialUIController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 23,
+		"endLine": 745,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "SpatialInterfaceController"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialTableElements : List<SpatialUIController.SpatialUITableElement> to spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement> in class RadialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/RadialMenu/RadialMenu.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialUIController.SpatialUITableElement>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/RadialMenu/RadialMenu.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 71,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialTableElements : SpatialUIController.SpatialUITableElement to spatialTableElements : SpatialInterfaceController.SpatialUITableElement in class ToolsMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/ToolsMenu/Scripts/ToolsMenuUI.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 58,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialTableElements : SpatialUIController.SpatialUITableElement"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/ToolsMenu/Scripts/ToolsMenuUI.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 65,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "spatialTableElements : SpatialInterfaceController.SpatialUITableElement"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialTableElements : List<SpatialUIController.SpatialUITableElement> to spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement> in class ToolsMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialUIController.SpatialUITableElement>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/ToolsMenu/ToolsMenu.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 71,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_SpatialUIPrefab : SpatialUIController to m_SpatialUIPrefab : SpatialInterfaceController in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.UI.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_SpatialUIPrefab : SpatialUIController"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Core/EditorVR.UI.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 36,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_SpatialUIPrefab : SpatialInterfaceController"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type spatialTableElements : List<SpatialUIController.SpatialUITableElement> to spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement> in class ISpatialMenuProvider",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 57,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialUIController.SpatialUITableElement>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/Capability/ISpatialMenuProvider.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "spatialTableElements : List<SpatialInterfaceController.SpatialUITableElement>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package SetupUIForInteraction() : void renamed to package Reset() : void in class SpatialInterfaceController",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 507,
+		"endLine": 529,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package SetupUIForInteraction() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 333,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Reset() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable targetScale : var in method package Update() : void from class SpatialInterfaceController",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "targetScale : var"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 25,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable newScale : var in method package Update() : void from class SpatialInterfaceController",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 25,
+		"endColumn": 236,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "newScale : var"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 21,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package UpdateSectionNames() : void from class SpatialUIController to public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 406,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateSectionNames() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 347,
+		"endLine": 353,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter spatialMenuProviders : List<ISpatialMenuProvider> in method public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 406,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateSectionNames() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 36,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "spatialMenuProviders : List<ISpatialMenuProvider>"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 347,
+		"endLine": 353,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 406,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateSectionNames() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 347,
+		"endLine": 353,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public UpdateSectionNames(spatialMenuProviders List<ISpatialMenuProvider>) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package AnimateFocusVisuals() : IEnumerator from class SpatialUIController to package AnimateFocusVisuals() : IEnumerator from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 489,
+		"endLine": 505,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateFocusVisuals() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 380,
+		"endLine": 396,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package AnimateFocusVisuals() : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package AnimateVisibility() : IEnumerator from class SpatialUIController to package AnimateVisibility() : IEnumerator from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 426,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateVisibility() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 398,
+		"endLine": 459,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package AnimateVisibility() : IEnumerator"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator from class SpatialUIController to package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 951,
+		"endLine": 968,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 461,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class SpatialInterfaceUI from class SpatialUIController",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 23,
+		"endLine": 969,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "SpatialUIController"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 269,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 426,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateVisibility() : IEnumerator"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 489,
+		"endLine": 505,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateFocusVisuals() : IEnumerator"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 951,
+		"endLine": 968,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialInterfaceController.cs",
+		"startLine": 23,
+		"endLine": 745,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "SpatialInterfaceController"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 12,
+		"endLine": 479,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "SpatialInterfaceUI"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 203,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Setup() : void"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 398,
+		"endLine": 459,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package AnimateVisibility() : IEnumerator"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 380,
+		"endLine": 396,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package AnimateFocusVisuals() : IEnumerator"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 461,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package AnimateTopAndBottomCenterBackgroundBorders(visible bool) : IEnumerator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public Setup() : void from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 269,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 203,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Setup() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package Awake() : void from class SpatialUIController to public Setup() : void from class SpatialInterfaceUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialUIController.cs",
+		"startLine": 269,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialInterfaceUI.cs",
+		"startLine": 203,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Setup() : void"
+}]
+}
+]
+}]
+}

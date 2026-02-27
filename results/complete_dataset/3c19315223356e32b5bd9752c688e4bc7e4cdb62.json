@@ -1,0 +1,459 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JPMMaia/interactive-collaboration-platform-in-AR.git",
+	"sha1": "3c19315223356e32b5bd9752c688e4bc7e4cdb62",
+	"url": "https://github.com/JPMMaia/interactive-collaboration-platform-in-AR/commit/3c19315223356e32b5bd9752c688e4bc7e4cdb62",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter data : SceneObject2.Data in method public RealObject(data SceneObject2.Data) from class RealObject",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/RealObject.cs",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RealObject()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/RealObject.cs",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "data : SceneObject2.Data"
+}, {
+		"filePath": "Client/Assets/Scripts/Objects/RealObject.cs",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public RealObject(data SceneObject2.Data)"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class SceneObject2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 7,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "SceneObject2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 7,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "SceneObject2"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter type : SceneObjectType in method protected SceneObject2(prefab GameObject, type SceneObjectType) from class SceneObject2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 15,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SceneObject2(prefab GameObject)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 51,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "type : SceneObjectType"
+}, {
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 30,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected SceneObject2(prefab GameObject, type SceneObjectType)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter position : Vector3 in method package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform) from class SceneObject2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "position : Vector3"
+}, {
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 47,
+		"endLine": 58,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Instantiate(parent Transform)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter rotation : Quaternion in method package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform) from class SceneObject2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 65,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "rotation : Quaternion"
+}, {
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 47,
+		"endLine": 58,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Instantiate(parent Transform)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter scale : Vector3 in method package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform) from class SceneObject2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 86,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "scale : Vector3"
+}, {
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 21,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Instantiate(position Vector3, rotation Quaternion, scale Vector3, parent Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Objects/SceneObject2.cs",
+		"startLine": 47,
+		"endLine": 58,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Instantiate(parent Transform)"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter sceneObject : SceneObject2 to sceneObject : var in method public Add(sceneObjectData SceneObject2.Data) : void from class Scene2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "sceneObject : var"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sceneObject : SceneObject2 to sceneObject : var in method public Add(sceneObjectData SceneObject2.Data) : void from class Scene2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "sceneObject : var"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sceneObjectData : SceneObject2.Data in method public Add(sceneObjectData SceneObject2.Data) : void from class Scene2",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Add(sceneObject SceneObject2) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 25,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sceneObjectData : SceneObject2.Data"
+}, {
+		"filePath": "Client/Assets/Scripts/Scenes/Scene2.cs",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Add(sceneObjectData SceneObject2.Data) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Awake() : void renamed to public Start() : void in class StartServerButton",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/UI/StartServerButton.cs",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Awake() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/UI/StartServerButton.cs",
+		"startLine": 8,
+		"endLine": 11,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Start() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public OnDestroy() : void renamed to public OnApplicationQuit() : void in class StartServerButton",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/UI/StartServerButton.cs",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnDestroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/UI/StartServerButton.cs",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public OnApplicationQuit() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter sceneObject : SceneObject2 to sceneObjectData : SceneObject2.Data in method public Add(sceneObjectData SceneObject2.Data) : void from class IScene",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sceneObjectData : SceneObject2.Data"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sceneObject : SceneObject2 to sceneObjectData : SceneObject2.Data in method public Add(sceneObjectData SceneObject2.Data) : void from class IScene",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sceneObjectData : SceneObject2.Data"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter sceneObject : SceneObject2 to sceneObjectData : SceneObject2.Data in method public Remove(sceneObjectData SceneObject2.Data) : void from class IScene",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sceneObjectData : SceneObject2.Data"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sceneObject : SceneObject2 to sceneObjectData : SceneObject2.Data in method public Remove(sceneObjectData SceneObject2.Data) : void from class IScene",
+	"leftSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sceneObject : SceneObject2"
+}],
+	"rightSideLocations": [{
+		"filePath": "Client/Assets/Scripts/Scenes/IScene.cs",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 21,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sceneObjectData : SceneObject2.Data"
+}]
+}
+]
+}]
+}

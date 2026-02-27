@@ -1,0 +1,291 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "9c67f24a1584aa19705f13306fd1cc1452669baf",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/9c67f24a1584aa19705f13306fd1cc1452669baf",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type buffer : GameObject[] to buffer : Transform[] in class Paste",
+	"leftSideLocations": [{
+		"filePath": "Actions/Paste.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "buffer : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Actions/Paste.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "buffer : Transform[]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type s_Buffer : GameObject[] to s_Buffer : Transform[] in class Paste",
+	"leftSideLocations": [{
+		"filePath": "Actions/Paste.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "s_Buffer : GameObject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Actions/Paste.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "s_Buffer : Transform[]"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type go : GameObject to go : Transform in method package DirectSnapDelegate(rayOrigin Transform, go Transform, Vector3 ref) : bool from class IUsesSnappingMethods",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/IUsesSnapping.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 66,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "go : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/IUsesSnapping.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 66,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "go : Transform"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type gameObjects : GameObject[] to transforms : in in method public GetBounds(transforms Transform[]) : Bounds from class ObjectUtils",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "gameObjects : GameObject[]"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "transforms : in"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable gameObjects : in to transforms : in in method public GetBounds(transforms Transform[]) : Bounds from class ObjectUtils",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "gameObjects : in"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "transforms : in"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter gameObjects : GameObject[] to transforms : in in method public GetBounds(transforms Transform[]) : Bounds from class ObjectUtils",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "gameObjects : GameObject[]"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "transforms : in"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter obj : GameObject to transform : Transform in method public GetBounds(transform Transform) : Bounds from class ObjectUtils",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "obj : GameObject"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 34,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type obj : GameObject to transform : Transform in method public GetBounds(transform Transform) : Bounds from class ObjectUtils",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "obj : GameObject"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 34,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "transform : Transform"
+}, {
+		"filePath": "Scripts/Utilities/ObjectUtils.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

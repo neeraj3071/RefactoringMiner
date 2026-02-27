@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/rogerbarton/vr-modeling.git",
+	"sha1": "5ef4955ca4d25e2c24dffdab2428743411ba8473",
+	"url": "https://github.com/rogerbarton/vr-modeling/commit/5ef4955ca4d25e2c24dffdab2428743411ba8473",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute visible : bool to _visible : bool in class UiCollapsible",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "visible : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_visible : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private _visible : bool from class UiCollapsible",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public visible : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private _visible : bool"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable items : in to _items : in in method public SetVisibility(value bool) : void from class UiCollapsible",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 35,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "items : in"
+}, {
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 35,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_items : in"
+}, {
+		"filePath": "Assets/Scripts/UI/UiCollapsible.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ToggleVisibleSprite(isVisible bool) : void from class UiSelection",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiSelection.cs",
+		"startLine": 25,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToggleVisibleSprite(isVisible bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiSelection.cs",
+		"startLine": 116,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ToggleVisibleSprite(isVisible bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private ToggleEditSprite(isActive bool) : void from class UiSelection",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiSelection.cs",
+		"startLine": 30,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ToggleEditSprite(isActive bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/UI/UiSelection.cs",
+		"startLine": 121,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private ToggleEditSprite(isActive bool) : void"
+}]
+}
+]
+}]
+}

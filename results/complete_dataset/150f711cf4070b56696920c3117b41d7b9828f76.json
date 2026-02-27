@@ -1,0 +1,375 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/BIVROST/360PlayerWindows.git",
+	"sha1": "150f711cf4070b56696920c3117b41d7b9828f76",
+	"url": "https://github.com/BIVROST/360PlayerWindows/commit/150f711cf4070b56696920c3117b41d7b9828f76",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter projection : ProjectionMode in method protected SetProjection(projection ProjectionMode) : void from class ShellViewModel",
+	"leftSideLocations": [{
+		"filePath": "360Player/ShellViewModel.cs",
+		"startLine": 1224,
+		"endLine": 1246,
+		"startColumn": 3,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetProjection() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/ShellViewModel.cs",
+		"startLine": 1216,
+		"endLine": 1216,
+		"startColumn": 32,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "projection : ProjectionMode"
+}, {
+		"filePath": "360Player/ShellViewModel.cs",
+		"startLine": 1216,
+		"endLine": 1242,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected SetProjection(projection ProjectionMode) : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void inlined to public SetDefaultScene() : void in class HeadsetError.Headset",
+	"leftSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 270,
+		"endLine": 277,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void"
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 272,
+		"endLine": 274,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 225,
+		"endLine": 246,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public SetDefaultScene() : void"
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 4,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "UpdateSceneSettings(ProjectionMode.Sphere,VideoMode.Mono)"
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 72,
+		"endColumn": 73,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 225,
+		"endLine": 246,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public SetDefaultScene() : void"
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "360Player/VR/Headset.cs",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute public Action : event from class MediaDecoder",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public Action : event from class MediaDecoder",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 29,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : event"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/MediaDecoder.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public Action : event"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void renamed to package SetProjection(projection ProjectionMode) in class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 436,
+		"endLine": 445,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 518,
+		"endLine": 526,
+		"startColumn": 41,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package SetProjection(projection ProjectionMode)"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package projectionMode : ProjectionMode from class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private projectionMode : ProjectionMode"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 18,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package projectionMode : ProjectionMode"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter projection : ProjectionMode in method public Scene(projection ProjectionMode, requestContentCallback Action<IContentUpdatableFromMediaEngine>) from class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 16,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "projection : ProjectionMode"
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 127,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Scene(projection ProjectionMode, requestContentCallback Action<IContentUpdatableFromMediaEngine>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Scene(requestContentCallback Action<IContentUpdatableFromMediaEngine>)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter projectionMode : ProjectionMode to projection : ProjectionMode in method package SetProjection(projection ProjectionMode) from class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 35,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "projectionMode : ProjectionMode"
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 55,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "projection : ProjectionMode"
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 523,
+		"endLine": 523,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 524,
+		"endLine": 524,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter stereoscopy : VideoMode in method public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void from class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 66,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "stereoscopy : VideoMode"
+}, {
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 436,
+		"endLine": 445,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 518,
+		"endLine": 526,
+		"startColumn": 41,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package SetProjection(projection ProjectionMode)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package SetProjection(projection ProjectionMode) from class Scene",
+	"leftSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 436,
+		"endLine": 445,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UpdateSceneSettings(projectionMode ProjectionMode, stereoscopy VideoMode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "360Player/WPF/Scene.cs",
+		"startLine": 518,
+		"endLine": 526,
+		"startColumn": 41,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package SetProjection(projection ProjectionMode)"
+}]
+}
+]
+}]
+}

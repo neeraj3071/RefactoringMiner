@@ -1,0 +1,183 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "42473ab96c262324392f2a58632d4cc2254cc363",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/42473ab96c262324392f2a58632d4cc2254cc363",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type PointerData to bool in method private GetPointerData(pointer IMixedRealityPointer, PointerData out) : bool from class FocusProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 464,
+		"endLine": 464,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PointerData"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 464,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetPointerData(pointer IMixedRealityPointer) : PointerData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 478,
+		"endLine": 480,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private GetPointerData(pointer IMixedRealityPointer, PointerData out) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter PointerData : out in method private GetPointerData(pointer IMixedRealityPointer, PointerData out) : bool from class FocusProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 464,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetPointerData(pointer IMixedRealityPointer) : PointerData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 67,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "PointerData : out"
+}, {
+		"filePath": "Assets/MixedRealityToolkit-SDK/Features/Input/FocusProvider.cs",
+		"startLine": 478,
+		"endLine": 480,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private GetPointerData(pointer IMixedRealityPointer, PointerData out) : bool"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public GetSpecificPointerGraphicEventData(pointer IMixedRealityPointer) : GraphicInputEventData renamed to public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool in class IMixedRealityFocusProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSpecificPointerGraphicEventData(pointer IMixedRealityPointer) : GraphicInputEventData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type GraphicInputEventData to bool in method public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool from class IMixedRealityFocusProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "GraphicInputEventData"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSpecificPointerGraphicEventData(pointer IMixedRealityPointer) : GraphicInputEventData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter GraphicInputEventData : out in method public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool from class IMixedRealityFocusProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetSpecificPointerGraphicEventData(pointer IMixedRealityPointer) : GraphicInputEventData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 82,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "GraphicInputEventData : out"
+}, {
+		"filePath": "Assets/MixedRealityToolkit/_Core/Interfaces/InputSystem/IMixedRealityFocusProvider.cs",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TryGetSpecificPointerGraphicEventData(pointer IMixedRealityPointer, GraphicInputEventData out) : bool"
+}]
+}
+]
+}]
+}

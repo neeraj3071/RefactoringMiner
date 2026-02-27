@@ -1,0 +1,339 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/pcriadoperez/readyPlayer2.git",
+	"sha1": "27b3f6d0e5a23234fd6b3998b3411ec7ad894f69",
+	"url": "https://github.com/pcriadoperez/readyPlayer2/commit/27b3f6d0e5a23234fd6b3998b3411ec7ad894f69",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable dateString : string in method private IsNewEditorSession() : bool from class EnforceEditorSettings",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EnforceEditorSettings.cs",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 144,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EnforceEditorSettings.cs",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 20,
+		"endColumn": 148,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "dateString : string"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EnforceEditorSettings.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 17,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetEditorPref(key string, value string) : void from class BuildDeployPrefs to public SetEditorPref(key string, value string) : void from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 84,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetEditorPref(key string, value string) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetEditorPref(key string, value string) : void from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 84,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetEditorPref(key string, value string) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private SetEditorPref(key string, value bool) : void from class BuildDeployPrefs to public SetEditorPref(key string, value bool) : void from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetEditorPref(key string, value bool) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetEditorPref(key string, value bool) : void from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetEditorPref(key string, value bool) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetEditorPref(key string, defaultValue string) : string from class BuildDeployPrefs to public GetEditorPref(key string, defaultValue string) : string from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 94,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetEditorPref(key string, defaultValue string) : string"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public GetEditorPref(key string, defaultValue string) : string from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 94,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue string) : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public GetEditorPref(key string, defaultValue string) : string"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetEditorPref(key string, defaultValue bool) : bool from class BuildDeployPrefs to public GetEditorPref(key string, defaultValue bool) : bool from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 105,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue bool) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 32,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetEditorPref(key string, defaultValue bool) : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public GetEditorPref(key string, defaultValue bool) : bool from class EditorPrefsUtility",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 105,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue bool) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 32,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public GetEditorPref(key string, defaultValue bool) : bool"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class EditorPrefsUtility from class BuildDeployPrefs",
+	"leftSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 12,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "BuildDeployPrefs"
+}, {
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 84,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value string) : void"
+}, {
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetEditorPref(key string, value bool) : void"
+}, {
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 94,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue string) : string"
+}, {
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 105,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetEditorPref(key string, defaultValue bool) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/HoloToolkit/BuildAndDeploy/Editor/BuildDeployPrefs.cs",
+		"startLine": 9,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "BuildDeployPrefs"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 9,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "EditorPrefsUtility"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetEditorPref(key string, value string) : void"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 16,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public SetEditorPref(key string, value bool) : void"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 21,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetEditorPref(key string, defaultValue string) : string"
+}, {
+		"filePath": "Assets/HoloToolkit/Utilities/Scripts/Editor/EditorPrefs.cs",
+		"startLine": 32,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetEditorPref(key string, defaultValue bool) : bool"
+}]
+}
+]
+}]
+}

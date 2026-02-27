@@ -1,0 +1,293 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/09_sealed_classes.cs
+Size: 929 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for sealed classes.
+    /// Tests transformation of C# sealed classes to Java final classes.
+    /// </summary>
+    public sealed class SealedClass
+    {
+        private int _value;
+        
+        public int Value
+        {
+            get { return _value; }
+            set { _value = value; }
+        }
+        
+        public SealedClass(int value)
+        {
+            _value = value;
+        }
+        
+     
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/09_sealed_classes.cs
+CPatMinerExecutor: Executing CPatMiner transformation (929 chars)...
+unit [0,0]
+    namespace [0,928]
+        name: TestFeatures [10,22]
+        block [23,928]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for sealed classes. [70,103]
+            comment: /// Tests transformation of C# sealed classes to Java final classes. [108,176]
+            comment: ///</summary> [181,195]
+            class [200,617]
+                specifier: public [200,206]
+                specifier: sealed [207,213]
+                name: SealedClass [220,231]
+                block [236,617]
+                    decl_stmt [246,265]
+                        decl [246,264]
+                            type [246,257]
+                                specifier: private [246,253]
+                                name: int [254,257]
+                            name: _value [258,264]
+                    property [283,390]
+                        type [283,293]
+                            specifier: public [283,289]
+                            name: int [290,293]
+                        name: Value [294,299]
+                        block [308,390]
+                            function [322,344]
+                                name: get [322,325]
+                                block [326,344]
+                                    block_content [327,343]
+                                        return [328,342]
+                                            expr [335,341]
+                                                name: _value [335,341]
+                            function [357,380]
+                                name: set [357,360]
+                                block [361,380]
+                                    block_content [362,379]
+                                        expr_stmt [363,378]
+                                            expr [363,377]
+                                                name: _value [363,369]
+                                                operator: = [370,371]
+                                                name: value [372,377]
+                    constructor [408,485]
+                        specifier: public [408,414]
+                        name: SealedClass [415,426]
+                        parameter_list [426,437]
+                            parameter [427,436]
+                                decl [427,436]
+                                    type [427,430]
+                                        name: int [427,430]
+                                    name: value [431,436]
+                        block [446,485]
+                            block_content [447,484]
+                                expr_stmt [460,475]
+                                    expr [460,474]
+                                        name: _value [460,466]
+                                        operator: = [467,468]
+                                        name: value [469,474]
+                    function [503,611]
+                        type [503,514]
+                            specifier: public [503,509]
+                            name: void [510,514]
+                        name: ProcessValue [515,527]
+                        parameter_list [527,529]
+                        block [538,611]
+                            block_content [539,610]
+                                expr_stmt [552,601]
+                                    expr [552,600]
+                                        call [552,600]
+                                            name [552,569]
+                                                name: Console [552,559]
+                                                operator: . [559,560]
+                                                name: WriteLine [560,569]
+                                            argument_list [569,600]
+                                                argument [570,599]
+                                                    expr [570,599]
+                                                        literal: "Processing value: " [570,590]
+                                                        operator: + [591,592]
+                                                        name: _value [593,599]
+            comment: ///<summary> [627,640]
+            comment: /// Another sealed class to test multiple sealed classes in same file. [645,715]
+            comment: ///</summary> [720,734]
+            class [739,926]
+                specifier: public [739,745]
+                specifier: sealed [746,752]
+                name: AnotherSealedClass [759,777]
+                block [782,926]
+                    property [792,824]
+                        type [792,805]
+                            specifier: public [792,798]
+                            name: string [799,805]
+                        name: Name [806,810]
+                        block [811,824]
+                            function_decl [813,817]
+                                name: get [813,816]
+                            function_decl [818,822]
+                                name: set [818,821]
+                    function [842,920]
+                        type [842,853]
+                            specifier: public [842,848]
+                            name: void [849,853]
+                        name: Display [854,861]
+                        parameter_list [861,863]
+                        block [872,920]
+                            block_content [873,919]
+                                expr_stmt [886,910]
+                                    expr [886,909]
+                                        call [886,909]
+                                            name [886,903]
+                                                name: Console [886,893]
+                                                operator: . [893,894]
+                                                name: WriteLine [894,903]
+                                            argument_list [903,909]
+                                                argument [904,908]
+                                                    expr [904,908]
+                                                        name: Name [904,908]
+package TestFeatures;
+public final class SealedClass {
+  private int _value;
+  public int Value;
+  void get(){
+    return _value;
+  }
+  void set(){
+    _value=value;
+  }
+  SealedClass(  int value){
+    _value=value;
+  }
+  public Void ProcessValue(){
+    Console.WriteLine("Processing value: " + _value);
+  }
+}
+public final class AnotherSealedClass {
+  public String Name;
+  void get();
+  void set();
+  public Void Display(){
+    Console.WriteLine(Name);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 2 types
+✓ CompilationUnit created successfully!
+  - Number of types: 2
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 460 chars
+  - Number of lines: 25
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public final class SealedClass {
+  private int _value;
+  public int Value;
+  void get(){
+    return _value;
+  }
+  void set(){
+    _value=value;
+  }
+  SealedClass(  int value){
+    _value=value;
+  }
+  public Void ProcessValue(){
+    Console.WriteLine("Processing value: " + _value);
+  }
+}
+public final class AnotherSealedClass {
+  public String Name;
+  void get();
+  void set();
+  public Void Display(){
+    Console.WriteLine(Name);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/09_sealed_classes.java
+  - File contents size: 460 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/09_sealed_classes.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 2
+  - Classes: 2
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.SealedClass
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/09_sealed_classes.java
+  Operations: 4
+  Attributes: 2
+  Fields:
+    • int _value
+    • int Value
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • SealedClass() - 1 param(s)
+    • ProcessValue() - 1 param(s)
+
+Class: TestFeatures.AnotherSealedClass
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/09_sealed_classes.java
+  Operations: 3
+  Attributes: 1
+  Fields:
+    • String Name
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • Display() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

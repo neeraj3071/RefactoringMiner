@@ -1,0 +1,39 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/19_null_operators.cs
+Size: 2026 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for null-coalescing and null-conditional operators.
+    /// Tests transformation of C# null operators to Java equivalents.
+    /// </summary>
+    public class NullOperators
+    {
+        private string _name;
+        private int? _value;
+        
+        // Null-coalescing operator (??)
+        public string GetNameOrDefault()
+        {
+            return _name ?? "Unknown";
+        }
+        
+        // Null-coa
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/19_null_operators.cs
+CPatMinerExecutor: Executing CPatMiner transformation (2026 chars)...

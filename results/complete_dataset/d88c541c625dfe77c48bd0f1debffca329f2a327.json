@@ -1,0 +1,1131 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dantman/elite-vr-cockpit.git",
+	"sha1": "d88c541c625dfe77c48bd0f1debffca329f2a327",
+	"url": "https://github.com/dantman/elite-vr-cockpit/commit/d88c541c625dfe77c48bd0f1debffca329f2a327",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public ActionPress(hand Hand, action InputAction, pressed bool) renamed to public ActionChange(hand Hand, action OutputAction, state bool) in class ActionsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ActionPress(hand Hand, action InputAction, pressed bool)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public ActionChange(hand Hand, action OutputAction, state bool)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type action : InputAction to action : OutputAction in class ActionsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 32,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "action : InputAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "action : OutputAction"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type action : InputAction to action : OutputAction in method public ActionChange(hand Hand, action OutputAction, state bool) from class ActionsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 43,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action : InputAction"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 44,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "action : OutputAction"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter pressed : bool to state : bool in method public ActionChange(hand Hand, action OutputAction, state bool) from class ActionsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 63,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pressed : bool"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 65,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "state : bool"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute pressed : bool to state : bool in class ActionsController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "pressed : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "state : bool"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private EmitActionPressChange(hand Hand, action InputAction, pressed bool) : void renamed to private EmitActionStateChange(hand Hand, action OutputAction, state bool) : void in class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 386,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EmitActionPressChange(hand Hand, action InputAction, pressed bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 384,
+		"endLine": 395,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private EmitActionStateChange(hand Hand, action OutputAction, state bool) : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ActionPressed : Dictionary<InputAction,Events.Event<ActionPress>> to ActionPressed : Dictionary<OutputAction,Events.Event<ActionChange>> in class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 74,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ActionPressed : Dictionary<InputAction,Events.Event<ActionPress>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 76,
+		"endColumn": 124,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ActionPressed : Dictionary<OutputAction,Events.Event<ActionChange>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ActionUnpress : Dictionary<InputAction,Events.Event<ActionPress>> to ActionUnpress : Dictionary<OutputAction,Events.Event<ActionChange>> in class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 74,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ActionUnpress : Dictionary<InputAction,Events.Event<ActionPress>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 76,
+		"endColumn": 124,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ActionUnpress : Dictionary<OutputAction,Events.Event<ActionChange>>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type action : InputAction to action : OutputAction in method private EmitActionStateChange(hand Hand, action OutputAction, state bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 55,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action : InputAction"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 395,
+		"endLine": 395,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 55,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "action : OutputAction"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter pressed : bool to state : bool in method private EmitActionStateChange(hand Hand, action OutputAction, state bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 75,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pressed : bool"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 389,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 76,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "state : bool"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 387,
+		"endLine": 394,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable hand : Hand to hand : Hand in method private OnMaybeResetSeatedPosition(inputAction InputAction, hand Hand, newState bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 18,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 29,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 20,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 74,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "hand : Hand"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 29,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 20,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter inputAction : InputAction in method private OnMaybeResetSeatedPosition(inputAction InputAction, hand Hand, newState bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 414,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnMaybeResetSeatedPosition(fromAction SteamVR_Action_Boolean, fromSource SteamVR_Input_Sources, newState bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 49,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "inputAction : InputAction"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 410,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private OnMaybeResetSeatedPosition(inputAction InputAction, hand Hand, newState bool) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter fromAction : SteamVR_Action_Boolean in method private OnMaybeResetSeatedPosition(fromAction SteamVR_Action_Boolean, fromSource SteamVR_Input_Sources, newState bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 49,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "fromAction : SteamVR_Action_Boolean"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 414,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnMaybeResetSeatedPosition(fromAction SteamVR_Action_Boolean, fromSource SteamVR_Input_Sources, newState bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 410,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private OnMaybeResetSeatedPosition(inputAction InputAction, hand Hand, newState bool) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter fromSource : SteamVR_Input_Sources in method private OnMaybeResetSeatedPosition(fromAction SteamVR_Action_Boolean, fromSource SteamVR_Input_Sources, newState bool) : void from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 84,
+		"endColumn": 116,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "fromSource : SteamVR_Input_Sources"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 414,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnMaybeResetSeatedPosition(fromAction SteamVR_Action_Boolean, fromSource SteamVR_Input_Sources, newState bool) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 410,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private OnMaybeResetSeatedPosition(inputAction InputAction, hand Hand, newState bool) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pEv : ActionPress to pEv : ActionChange in method public ActionPressComparator(pEv ActionChange, uEv ActionChange) : bool from class ActionsControllerPressManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 50,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pEv : ActionPress"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 50,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pEv : ActionChange"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type uEv : ActionPress to uEv : ActionChange in method public ActionPressComparator(pEv ActionChange, uEv ActionChange) : bool from class ActionsControllerPressManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 67,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "uEv : ActionPress"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 68,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "uEv : ActionChange"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handler : PressHandlerDelegate<ActionPress> to handler : PressHandlerDelegate<ActionChange> in method public ResetSeatedPosition(handler PressHandlerDelegate<ActionChange>) : ActionsControllerPressManager from class ActionsControllerPressManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 66,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : PressHandlerDelegate<ActionPress>"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 66,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "handler : PressHandlerDelegate<ActionChange>"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handler : PressHandlerDelegate<ActionPress> to handler : PressHandlerDelegate<ActionChange> in method public InteractUI(handler PressHandlerDelegate<ActionChange>) : ActionsControllerPressManager from class ActionsControllerPressManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 57,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : PressHandlerDelegate<ActionPress>"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 57,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "handler : PressHandlerDelegate<ActionChange>"
+}, {
+		"filePath": "Assets/Scripts/ActionsControllerPressManager.cs",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pEv : ActionPress to pEv : ActionChange in method private OnInteractUI(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange> from class ControllerInteractionPoint",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 79,
+		"endColumn": 94,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pEv : ActionPress"
+}, {
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 80,
+		"endColumn": 96,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pEv : ActionChange"
+}, {
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PressManager.UnpressHandlerDelegate<ActionPress> to PressManager.UnpressHandlerDelegate<ActionChange> in method private OnInteractUI(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange> from class ControllerInteractionPoint",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PressManager.UnpressHandlerDelegate<ActionPress>"
+}, {
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnInteractUI(pEv ActionPress) : PressManager.UnpressHandlerDelegate<ActionPress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "PressManager.UnpressHandlerDelegate<ActionChange>"
+}, {
+		"filePath": "Assets/Scripts/ControllerInteractionPoint.cs",
+		"startLine": 152,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private OnInteractUI(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PressManager.UnpressHandlerDelegate<ActionPress> to PressManager.UnpressHandlerDelegate<ActionChange> in method private OnResetSeatedPosition(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange> from class SeatedPositionResetAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PressManager.UnpressHandlerDelegate<ActionPress>"
+}, {
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnResetSeatedPosition(pEv ActionPress) : PressManager.UnpressHandlerDelegate<ActionPress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "PressManager.UnpressHandlerDelegate<ActionChange>"
+}, {
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private OnResetSeatedPosition(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pEv : ActionPress to pEv : ActionChange in method private OnResetSeatedPosition(pEv ActionChange) : PressManager.UnpressHandlerDelegate<ActionChange> from class SeatedPositionResetAction",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 88,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pEv : ActionPress"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/SeatedPositionResetAction.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 89,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pEv : ActionChange"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, handler SteamVR_Action_Boolean.ChangeHandler) : void from class DirectionActionsPress to package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 170,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, handler SteamVR_Action_Boolean.ChangeHandler) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 23,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter handler : SteamVR_Action_Boolean.ChangeHandler to inputAction : InputAction in method package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 79,
+		"endColumn": 123,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : SteamVR_Action_Boolean.ChangeHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 79,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "inputAction : InputAction"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handler : SteamVR_Action_Boolean.ChangeHandler to inputAction : InputAction in method package AddUniversalBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 79,
+		"endColumn": 123,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : SteamVR_Action_Boolean.ChangeHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 79,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inputAction : InputAction"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, handler SteamVR_Action_Boolean.ChangeHandler) : void from class DirectionActionsPress to package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 183,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, handler SteamVR_Action_Boolean.ChangeHandler) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 37,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter handler : SteamVR_Action_Boolean.ChangeHandler to inputAction : InputAction in method package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 76,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : SteamVR_Action_Boolean.ChangeHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 76,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "inputAction : InputAction"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handler : SteamVR_Action_Boolean.ChangeHandler to inputAction : InputAction in method package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 76,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handler : SteamVR_Action_Boolean.ChangeHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 76,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inputAction : InputAction"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GetHandForInputSource(source SteamVR_Input_Sources) : Hand from class DirectionActionsPress to public GetHandForInputSource(source SteamVR_Input_Sources) : Hand from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 523,
+		"endLine": 531,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetHandForInputSource(source SteamVR_Input_Sources) : Hand"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 69,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GetHandForInputSource(source SteamVR_Input_Sources) : Hand"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private List : readonly from class DirectionActionsPress to private List : readonly from class ActionsController_SteamVRInputBindings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private List : readonly"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class ActionsController_SteamVRInputBindings from class DirectionActionsPress",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 99,
+		"endLine": 532,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DirectionActionsPress"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 523,
+		"endLine": 531,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetHandForInputSource(source SteamVR_Input_Sources) : Hand"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 183,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, handler SteamVR_Action_Boolean.ChangeHandler) : void"
+}, {
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ActionsController.cs",
+		"startLine": 106,
+		"endLine": 517,
+		"startColumn": 9,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "DirectionActionsPress"
+}, {
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 11,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "ActionsController_SteamVRInputBindings"
+}, {
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 69,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetHandForInputSource(source SteamVR_Input_Sources) : Hand"
+}, {
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 37,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package AddHandedBooleanChangeListener(action SteamVR_Action_Boolean, inputAction InputAction) : void"
+}, {
+		"filePath": "Assets/Scripts/ActionsController_SteamVRInputBindings.cs",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private List : readonly"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/demonixis/C3DE.git",
+	"sha1": "a14c8e03e80f8e1b57934f2cb59054069faa55d1",
+	"url": "https://github.com/demonixis/C3DE/commit/a14c8e03e80f8e1b57934f2cb59054069faa55d1",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class Controller",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/Controller.cs",
+		"startLine": 5,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Controller"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/Controller.cs",
+		"startLine": 8,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "Controller"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateKeyboardInput() : void from class OrbitController",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 105,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateKeyboardInput() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 110,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateKeyboardInput() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateMouseInput() : void from class OrbitController",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 123,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateMouseInput() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 128,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateMouseInput() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateGamepadInput() : void from class OrbitController",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 140,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateGamepadInput() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 145,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateGamepadInput() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateTouchInput() : void from class OrbitController",
+	"leftSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 153,
+		"endLine": 166,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateTouchInput() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/Components/Controllers/OrbitController.cs",
+		"startLine": 158,
+		"endLine": 171,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateTouchInput() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _greyScaleEffect : Effect to _grayScaleEffect : Effect in class GrayScalePass",
+	"leftSideLocations": [{
+		"filePath": "C3DE/PostProcess/GrayScalePass.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_greyScaleEffect : Effect"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/PostProcess/GrayScalePass.cs",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_grayScaleEffect : Effect"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute scale : Matrix to uiMatrix : Matrix in class GUI",
+	"leftSideLocations": [{
+		"filePath": "C3DE/UI/GUI.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 32,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scale : Matrix"
+}],
+	"rightSideLocations": [{
+		"filePath": "C3DE/UI/GUI.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "uiMatrix : Matrix"
+}]
+}
+]
+}]
+}

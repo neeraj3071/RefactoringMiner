@@ -1,0 +1,303 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ttanatb/VRsus-guARdian.git",
+	"sha1": "db6a86f6e168879f19ab182db0fa737aa8ee9f03",
+	"url": "https://github.com/ttanatb/VRsus-guARdian/commit/db6a86f6e168879f19ab182db0fa737aa8ee9f03",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ARAvatar renamed to ARCameraAvatar",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/ARAvatar.cs",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ARAvatar"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/ARCameraAvatar.cs",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ARCameraAvatar"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method package Fade(waitTime float) : IEnumerator inlined to package Flash(waitTime float) : IEnumerator in class HurtFlash",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 57,
+		"endLine": 67,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package Fade(waitTime float) : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 62,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 62,
+		"endLine": 64,
+		"startColumn": 42,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 47,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "package Flash() : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "Fade(waitTime)"
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 59,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "package Flash(waitTime float) : IEnumerator"
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "YIELD_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter waitTime : float in method package Flash(waitTime float) : IEnumerator from class HurtFlash",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 47,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Flash() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "waitTime : float"
+}, {
+		"filePath": "Assets/Scripts/HurtFlash.cs",
+		"startLine": 59,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Flash(waitTime float) : IEnumerator"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private currJumps : uint from class Movement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package currJumps : uint"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private currJumps : uint"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private isPlaying : bool from class Movement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package isPlaying : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private isPlaying : bool"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private rotX : float from class Movement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 11,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package rotX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private rotX : float"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private rotY : float from class Movement",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 11,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package rotY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Movement.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private rotY : float"
+}]
+}
+]
+}]
+}

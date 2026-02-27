@@ -6,227 +6,527 @@
 	"url": "https://github.com/stefaanvermassen/virtual-museum-app/commit/f298068141991b07f36b4ce9d1e2b4f92a81318d",
 	"refactorings": [{
 	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from package Start() : void in class MuseumTile",
+	"description": "Extract Method package ReversedQuad() : GameObject extracted from package Start() : Void in class MuseumTile",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 15,
-		"endLine": 26,
-		"startColumn": 2,
-		"endColumn": 3,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration before extraction",
-		"codeElement": "package Start() : void"
+		"codeElement": "package Start() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 19,
-		"endLine": 19,
-		"startColumn": 9,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package ReversedQuad() : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ReversedQuad()"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package ReversedQuad() : GameObject extracted from package Start() : Void in class MuseumTile",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Start() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 5,
 		"endColumn": 63,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package ReversedQuad() : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 17,
-		"endLine": 17,
-		"startColumn": 9,
-		"endColumn": 67,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ReversedQuad()"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from package Start() : Void in class MuseumTile",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Start() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 33,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 18,
 		"endLine": 18,
-		"startColumn": 9,
-		"endColumn": 58,
+		"startColumn": 5,
+		"endColumn": 37,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
 		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 26,
 		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
+		"startColumn": 5,
+		"endColumn": 22,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 37,
-		"endLine": 42,
-		"startColumn": 2,
-		"endColumn": 3,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "package Start() : void"
+		"codeElement": "package Start() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 39,
-		"endLine": 39,
-		"startColumn": 20,
-		"endColumn": 75,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 14,
+		"endColumn": 64,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0,0,0),new Vector3(90,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 40,
-		"endLine": 40,
-		"startColumn": 22,
-		"endColumn": 78,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 72,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,1,0),new Vector3(-90,0,0))"
+		"codeElement": "CreateFace(new Vector3(0,1,0),new Vector3(-MISSING,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 23,
-		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 35,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
 		"description": "added statement in extracted method declaration",
 		"codeElement": null
-}]
-},
-{
-	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from package Start() : void in class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 15,
-		"endLine": 26,
-		"startColumn": 2,
-		"endColumn": 3,
-		"codeElementType": "METHOD_DECLARATION",
-		"description": "source method declaration before extraction",
-		"codeElement": "package Start() : void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 23,
-		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 67,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 21,
 		"endLine": 21,
-		"startColumn": 9,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
 		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from package Start() : Void in class MuseumTile",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 11,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Start() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 35,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 22,
-		"startColumn": 9,
-		"endColumn": 60,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 37,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
 		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 26,
 		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
+		"startColumn": 5,
+		"endColumn": 22,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 37,
-		"endLine": 42,
-		"startColumn": 2,
-		"endColumn": 3,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "package Start() : void"
+		"codeElement": "package Start() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 39,
-		"endLine": 39,
-		"startColumn": 20,
-		"endColumn": 75,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 14,
+		"endColumn": 64,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0,0,0),new Vector3(90,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 40,
-		"endLine": 40,
-		"startColumn": 22,
-		"endColumn": 78,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 72,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,1,0),new Vector3(-90,0,0))"
+		"codeElement": "CreateFace(new Vector3(0,1,0),new Vector3(-MISSING,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 23,
 		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 35,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 69,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
 		"description": "added statement in extracted method declaration",
 		"codeElement": null
@@ -234,782 +534,980 @@
 },
 {
 	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : void in class MuseumTile",
+	"description": "Extract Method package ReversedQuad() : GameObject extracted from public UpdateEdges() : Void in class MuseumTile",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 41,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 45,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration before extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "public UpdateEdges() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 45,
-		"endLine": 45,
-		"startColumn": 13,
-		"endColumn": 78,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 43,
-		"endLine": 43,
-		"startColumn": 13,
-		"endColumn": 73,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 44,
-		"endLine": 44,
-		"startColumn": 13,
-		"endColumn": 64,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 37,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
-		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
+		"codeElement": "package ReversedQuad() : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 26,
-		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 82,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
 		"startColumn": 5,
-		"endColumn": 6,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 55,
-		"endLine": 55,
-		"startColumn": 26,
-		"endColumn": 89,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(-0.5f,0.5f,0),new Vector3(0,-90,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 62,
-		"endLine": 62,
-		"startColumn": 27,
-		"endColumn": 88,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 69,
-		"endLine": 69,
-		"startColumn": 27,
-		"endColumn": 87,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 76,
-		"endLine": 76,
-		"startColumn": 26,
-		"endColumn": 89,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,-0.5f),new Vector3(0,180,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 23,
 		"endLine": 23,
-		"startColumn": 9,
+		"startColumn": 21,
 		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ReversedQuad()"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 64,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
 		"description": "added statement in extracted method declaration",
 		"codeElement": null
 }]
 },
 {
 	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : void in class MuseumTile",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : Void in class MuseumTile",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 41,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 45,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration before extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "public UpdateEdges() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 55,
-		"endLine": 55,
-		"startColumn": 13,
-		"endColumn": 78,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 42,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 53,
-		"startColumn": 13,
-		"endColumn": 74,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 39,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 54,
-		"endLine": 54,
-		"startColumn": 13,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
 		"endColumn": 65,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
 		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 69,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 26,
 		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
+		"startColumn": 5,
+		"endColumn": 22,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 56,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "public UpdateEdges() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 55,
-		"endLine": 55,
-		"startColumn": 26,
-		"endColumn": 89,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 84,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(-0.5f,0.5f,0),new Vector3(0,-90,0))"
+		"codeElement": "CreateFace(new Vector3(-MISSING,0.5f,0),new Vector3(0,-MISSING,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 62,
-		"endLine": 62,
-		"startColumn": 27,
-		"endColumn": 88,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 69,
-		"endLine": 69,
-		"startColumn": 27,
-		"endColumn": 87,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 76,
-		"endLine": 76,
-		"startColumn": 26,
-		"endColumn": 89,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,-0.5f),new Vector3(0,180,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 23,
-		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 35,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "added statement in extracted method declaration",
-		"codeElement": null
-}]
-},
-{
-	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : void in class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 41,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
-		"codeElementType": "METHOD_DECLARATION",
-		"description": "source method declaration before extraction",
-		"codeElement": "public UpdateEdges() : void"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 65,
 		"endLine": 65,
-		"startColumn": 13,
-		"endColumn": 78,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 63,
-		"endLine": 63,
-		"startColumn": 13,
-		"endColumn": 74,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 64,
-		"endLine": 64,
-		"startColumn": 13,
-		"endColumn": 65,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code from source method declaration",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
-		"codeElementType": "METHOD_DECLARATION",
-		"description": "extracted method declaration",
-		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 26,
-		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "extracted code to extracted method declaration",
-		"codeElement": null
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
-		"codeElementType": "METHOD_DECLARATION",
-		"description": "source method declaration after extraction",
-		"codeElement": "public UpdateEdges() : void"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 55,
-		"endLine": 55,
-		"startColumn": 26,
-		"endColumn": 89,
-		"codeElementType": "METHOD_INVOCATION",
-		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(-0.5f,0.5f,0),new Vector3(0,-90,0))"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 62,
-		"endLine": 62,
-		"startColumn": 27,
-		"endColumn": 88,
+		"startColumn": 19,
+		"endColumn": 75,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 69,
-		"endLine": 69,
-		"startColumn": 27,
-		"endColumn": 87,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 74,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 76,
-		"endLine": 76,
-		"startColumn": 26,
-		"endColumn": 89,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 79,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,-0.5f),new Vector3(0,180,0))"
+		"codeElement": "CreateFace(new Vector3(0,0.5f,-MISSING),new Vector3(0,180,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 23,
 		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 35,
+		"startColumn": 5,
+		"endColumn": 36,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
 		"description": "added statement in extracted method declaration",
 		"codeElement": null
 }]
 },
 {
 	"type": "Extract Method",
-	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : void in class MuseumTile",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : Void in class MuseumTile",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 41,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 45,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration before extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "public UpdateEdges() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 75,
-		"endLine": 75,
-		"startColumn": 13,
-		"endColumn": 78,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 7,
+		"endColumn": 36,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 73,
-		"endLine": 73,
-		"startColumn": 13,
-		"endColumn": 73,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 66,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 74,
-		"endLine": 74,
-		"startColumn": 13,
-		"endColumn": 64,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 7,
+		"endColumn": 44,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code from source method declaration",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 22,
-		"endLine": 35,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
 		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 24,
-		"endLine": 24,
-		"startColumn": 9,
-		"endColumn": 52,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 69,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 26,
 		"endLine": 26,
-		"startColumn": 9,
-		"endColumn": 51,
+		"startColumn": 5,
+		"endColumn": 22,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "extracted code to extracted method declaration",
 		"codeElement": null
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 82,
-		"startColumn": 5,
-		"endColumn": 6,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 56,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "public UpdateEdges() : void"
+		"codeElement": "public UpdateEdges() : Void"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 55,
-		"endLine": 55,
-		"startColumn": 26,
-		"endColumn": 89,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 84,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(-0.5f,0.5f,0),new Vector3(0,-90,0))"
+		"codeElement": "CreateFace(new Vector3(-MISSING,0.5f,0),new Vector3(0,-MISSING,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 62,
-		"endLine": 62,
-		"startColumn": 27,
-		"endColumn": 88,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 19,
+		"endColumn": 75,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 69,
-		"endLine": 69,
-		"startColumn": 27,
-		"endColumn": 87,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 74,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
 		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 76,
-		"endLine": 76,
-		"startColumn": 26,
-		"endColumn": 89,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 79,
 		"codeElementType": "METHOD_INVOCATION",
 		"description": "extracted method invocation",
-		"codeElement": "CreateFace(new Vector3(0,0.5f,-0.5f),new Vector3(0,180,0))"
+		"codeElement": "CreateFace(new Vector3(0,0.5f,-MISSING),new Vector3(0,180,0))"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
 		"startLine": 23,
 		"endLine": 23,
-		"startColumn": 9,
-		"endColumn": 35,
+		"startColumn": 5,
+		"endColumn": 36,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : Void in class MuseumTile",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 45,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public UpdateEdges() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 7,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 56,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public UpdateEdges() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 84,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(-MISSING,0.5f,0),new Vector3(0,-MISSING,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 19,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 74,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 79,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0,0.5f,-MISSING),new Vector3(0,180,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package CreateFace(localPosition Vector3, angles Vector3) : GameObject extracted from public UpdateEdges() : Void in class MuseumTile",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 45,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public UpdateEdges() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 17,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package CreateFace(localPosition Vector3, angles Vector3) : GameObject"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 56,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public UpdateEdges() : Void"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 18,
+		"endColumn": 84,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(-MISSING,0.5f,0),new Vector3(0,-MISSING,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 19,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0.5f,0.5f,0),new Vector3(0,90,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 74,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0,0.5f,0.5f),new Vector3(0,0,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 79,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateFace(new Vector3(0,0.5f,-MISSING),new Vector3(0,180,0))"
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "added statement in extracted method declaration",
 		"codeElement": null
 }]
 },
 {
 	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable upObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
+	"description": "Replace Attribute With Variable upObject : GameObject to ob : GameObject in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 24,
-		"endColumn": 32,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 22,
+		"endColumn": 30,
 		"codeElementType": "FIELD_DECLARATION",
 		"description": "original variable declaration",
 		"codeElement": "upObject : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 17,
-		"endLine": 17,
-		"startColumn": 9,
-		"endColumn": 67,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 35,
 		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "statement referencing the original variable",
 		"codeElement": null
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 16,
+		"endColumn": 35,
 		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
 		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
+		"codeElement": "ob : GameObject"
 }, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Museum/MuseumTile.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
 		"description": "statement referencing the renamed variable",
 		"codeElement": null
 }]
 },
 {
-	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable downObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
+	"type": "Rename Attribute",
+	"description": "Rename Attribute material : Material to backMaterial : Material in class Museum",
 	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 34,
-		"endColumn": 44,
+		"filePath": "Assets/Scripts/Museum/Museum.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 19,
+		"endColumn": 27,
 		"codeElementType": "FIELD_DECLARATION",
-		"description": "original variable declaration",
-		"codeElement": "downObject : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 21,
-		"endLine": 21,
-		"startColumn": 9,
-		"endColumn": 69,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
+		"description": "original attribute declaration",
+		"codeElement": "material : Material"
 }],
 	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable leftObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 46,
-		"endColumn": 56,
+		"filePath": "Assets/Scripts/Museum/Museum.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 19,
+		"endColumn": 31,
 		"codeElementType": "FIELD_DECLARATION",
-		"description": "original variable declaration",
-		"codeElement": "leftObject : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 43,
-		"endLine": 43,
-		"startColumn": 13,
-		"endColumn": 73,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable rightObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 58,
-		"endColumn": 69,
-		"codeElementType": "FIELD_DECLARATION",
-		"description": "original variable declaration",
-		"codeElement": "rightObject : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 53,
-		"endLine": 53,
-		"startColumn": 13,
-		"endColumn": 74,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable frontObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 71,
-		"endColumn": 82,
-		"codeElementType": "FIELD_DECLARATION",
-		"description": "original variable declaration",
-		"codeElement": "frontObject : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 63,
-		"endLine": 63,
-		"startColumn": 13,
-		"endColumn": 74,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
-}]
-},
-{
-	"type": "Replace Attribute With Variable",
-	"description": "Replace Attribute With Variable backObject : GameObject to frontSide : var in method package CreateFace(localPosition Vector3, angles Vector3) : GameObject from class MuseumTile",
-	"leftSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 13,
-		"endLine": 13,
-		"startColumn": 84,
-		"endColumn": 94,
-		"codeElementType": "FIELD_DECLARATION",
-		"description": "original variable declaration",
-		"codeElement": "backObject : GameObject"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 73,
-		"endLine": 73,
-		"startColumn": 13,
-		"endColumn": 73,
-		"codeElementType": "EXPRESSION_STATEMENT",
-		"description": "statement referencing the original variable",
-		"codeElement": null
-}],
-	"rightSideLocations": [{
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 13,
-		"endColumn": 71,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "renamed variable declaration",
-		"codeElement": "frontSide : var"
-}, {
-		"filePath": "Assets/Scripts/Museum/MuseumTile.cs",
-		"startLine": 25,
-		"endLine": 25,
-		"startColumn": 9,
-		"endColumn": 72,
-		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
-		"description": "statement referencing the renamed variable",
-		"codeElement": null
+		"description": "renamed attribute declaration",
+		"codeElement": "backMaterial : Material"
 }]
 }
 ]

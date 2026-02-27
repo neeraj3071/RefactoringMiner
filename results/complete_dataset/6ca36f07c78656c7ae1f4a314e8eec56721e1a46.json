@@ -1,0 +1,210 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Jamy4000/VRDF.git",
+	"sha1": "6ca36f07c78656c7ae1f4a314e8eec56721e1a46",
+	"url": "https://github.com/Jamy4000/VRDF/commit/6ca36f07c78656c7ae1f4a314e8eec56721e1a46",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter currentHitPoint : Vector3 in method public OnObjectIsBeingHovered(raycastOrigin ERayOrigin, objectHovered GameObject, currentHitPoint Vector3) from class OnObjectIsBeingHovered",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Raycasting/Events/OnObjectIsBeingHovered.cs",
+		"startLine": 25,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnObjectIsBeingHovered(raycastOrigin ERayOrigin, objectHovered GameObject)"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Raycasting/Events/OnObjectIsBeingHovered.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 87,
+		"endColumn": 110,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "currentHitPoint : Vector3"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/Core/Scripts/Raycasting/Events/OnObjectIsBeingHovered.cs",
+		"startLine": 25,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public OnObjectIsBeingHovered(raycastOrigin ERayOrigin, objectHovered GameObject, currentHitPoint Vector3)"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(info.ObjectHovered != gameObject && _isSelected) to if(info.HoveredObject == gameObject && interactable && !_isSelected) in method private CheckObjectOvered(info OnObjectIsBeingHovered) : void from class VRInputField",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRInputField/VRInputField.cs",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(info.ObjectHovered != gameObject && _isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRInputField/VRInputField.cs",
+		"startLine": 93,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRInputField/VRInputField.cs",
+		"startLine": 95,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(info.HoveredObject == gameObject && interactable && !_isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRInputField/VRInputField.cs",
+		"startLine": 93,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(info.ObjectHovered != gameObject && _isSelected) to if(info.HoveredObject == gameObject && interactable && !_isSelected) in method private CheckObjectOvered(info OnObjectIsBeingHovered) : void from class VRScrollBar",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRScrollBar/VRScrollBar.cs",
+		"startLine": 108,
+		"endLine": 112,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(info.ObjectHovered != gameObject && _isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRScrollBar/VRScrollBar.cs",
+		"startLine": 101,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRScrollBar/VRScrollBar.cs",
+		"startLine": 103,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(info.HoveredObject == gameObject && interactable && !_isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRScrollBar/VRScrollBar.cs",
+		"startLine": 101,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(info.ObjectHovered != gameObject && _isSelected) to if(info.HoveredObject == gameObject && interactable && !_isSelected) in method private CheckObjectOvered(info OnObjectIsBeingHovered) : void from class VRHandleSlider",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRSlider/VRHandleSlider.cs",
+		"startLine": 131,
+		"endLine": 135,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(info.ObjectHovered != gameObject && _isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRSlider/VRHandleSlider.cs",
+		"startLine": 125,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRSlider/VRHandleSlider.cs",
+		"startLine": 127,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(info.HoveredObject == gameObject && interactable && !_isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRSlider/VRHandleSlider.cs",
+		"startLine": 125,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(info.ObjectHovered != gameObject && _isSelected) to if(info.HoveredObject == gameObject && interactable && !_isSelected) in method private CheckObjectOvered(info OnObjectIsBeingHovered) : void from class VRToggle",
+	"leftSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRToggle/VRToggle.cs",
+		"startLine": 99,
+		"endLine": 104,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(info.ObjectHovered != gameObject && _isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRToggle/VRToggle.cs",
+		"startLine": 91,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRToggle/VRToggle.cs",
+		"startLine": 93,
+		"endLine": 104,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(info.HoveredObject == gameObject && interactable && !_isSelected)"
+}, {
+		"filePath": "VRSF_DOTS/Assets/VRSF/UI/Scripts/VRToggle/VRToggle.cs",
+		"startLine": 91,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private CheckObjectOvered(info OnObjectIsBeingHovered) : void"
+}]
+}
+]
+}]
+}

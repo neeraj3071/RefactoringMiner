@@ -1,0 +1,206 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_events.cs
+Size: 403 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+class TestEvents
+{
+    // C# event declaration
+    public event EventHandler MyEvent;
+    
+    public void TestMethod()
+    {
+        // Subscribe to event
+        MyEvent += OnMyEvent;
+        
+        // Raise event
+        MyEvent?.Invoke(this, EventArgs.Empty);
+    }
+    
+    private void OnMyEvent(object sender, EventArgs e)
+    {
+        Console.WriteLine("Event fired");
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_events.cs
+CPatMinerExecutor: Executing CPatMiner transformation (403 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    class [15,402]
+        name: TestEvents [21,31]
+        block [32,402]
+            comment: // C# event declaration [38,61]
+            expr_stmt [66,100]
+                expr [66,99]
+                    specifier: public [66,72]
+                    name: EventHandler [79,91]
+                    name: MyEvent [92,99]
+            function [110,286]
+                type [110,121]
+                    specifier: public [110,116]
+                    name: void [117,121]
+                name: TestMethod [122,132]
+                parameter_list [132,134]
+                block [139,286]
+                    block_content [140,285]
+                        comment: // Subscribe to event [149,170]
+                        expr_stmt [179,200]
+                            expr [179,199]
+                                name: MyEvent [179,186]
+                                operator: += [187,189]
+                                name: OnMyEvent [190,199]
+                        comment: // Raise event [218,232]
+                        expr_stmt [241,280]
+                            expr [241,279]
+                                ternary [241,279]
+                                    condition [241,249]
+                                        expr [241,248]
+                                            name: MyEvent [241,248]
+                                    then [249,279]
+                                        expr [249,279]
+                                            operator: . [249,250]
+                                            call [250,279]
+                                                name: Invoke [250,256]
+                                                argument_list [256,279]
+                                                    argument [257,261]
+                                                        expr [257,261]
+                                                            name: this [257,261]
+                                                    argument [263,278]
+                                                        expr [263,278]
+                                                            name [263,278]
+                                                                name: EventArgs [263,272]
+                                                                operator: . [272,273]
+                                                                name: Empty [273,278]
+            function [296,400]
+                type [296,308]
+                    specifier: private [296,303]
+                    name: void [304,308]
+                name: OnMyEvent [309,318]
+                parameter_list [318,346]
+                    parameter [319,332]
+                        decl [319,332]
+                            type [319,325]
+                                name: object [319,325]
+                            name: sender [326,332]
+                    parameter [334,345]
+                        decl [334,345]
+                            type [334,343]
+                                name: EventArgs [334,343]
+                            name: e [344,345]
+                block [351,400]
+                    block_content [352,399]
+                        expr_stmt [361,394]
+                            expr [361,393]
+                                call [361,393]
+                                    name [361,378]
+                                        name: Console [361,368]
+                                        operator: . [368,369]
+                                        name: WriteLine [369,378]
+                                    argument_list [378,393]
+                                        argument [379,392]
+                                            expr [379,392]
+                                                literal: "Event fired" [379,392]
+import System;
+class TestEvents {
+  public MyEvent EventHandler;
+  public Void TestMethod(){
+    MyEvent+=OnMyEvent;
+    MyEvent != null ? MyEvent.Invoke(This,EventArgs.Empty) : null;
+  }
+  private Void OnMyEvent(  Object sender,  EventArgs e){
+    Console.WriteLine("Event fired");
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 289 chars
+  - Number of lines: 11
+
+=== Generated Java Code (Full Output) ===
+import System;
+class TestEvents {
+  public MyEvent EventHandler;
+  public Void TestMethod(){
+    MyEvent+=OnMyEvent;
+    MyEvent != null ? MyEvent.Invoke(This,EventArgs.Empty) : null;
+  }
+  private Void OnMyEvent(  Object sender,  EventArgs e){
+    Console.WriteLine("Event fired");
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_events.java
+  - File contents size: 289 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_events.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestEvents
+  Type: Class
+  Package: 
+  Source file: tests/test_events.java
+  Operations: 2
+  Attributes: 1
+  Fields:
+    • MyEvent EventHandler
+  Methods:
+    • TestMethod() - 1 param(s)
+    • OnMyEvent() - 3 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,213 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "3c8cb0af025a73594ffb3cd648a254f0932a4ed2",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/3c8cb0af025a73594ffb3cd648a254f0932a4ed2",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Tools/TransformTool to Action Maps",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/DirectSelectInput.cs",
+		"startLine": 7,
+		"endLine": 13,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "DirectSelectInput"
+}],
+	"rightSideLocations": [{
+		"filePath": "Action Maps/DirectSelectInput.cs",
+		"startLine": 7,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "DirectSelectInput"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter input : ActionMapInput in method package GetDirectSelectionForRayOrigin(rayOrigin Transform, input ActionMapInput) : GameObject from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1447,
+		"endLine": 1458,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetDirectSelectionForRayOrigin(rayOrigin Transform) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1489,
+		"endLine": 1489,
+		"startColumn": 65,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "input : ActionMapInput"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 1489,
+		"endLine": 1506,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package GetDirectSelectionForRayOrigin(rayOrigin Transform, input ActionMapInput) : GameObject"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public Reset() : void extracted from public GrabData(rayOrigin Transform, grabbedObject Transform) in class .TransformTool..GrabData",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 28,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public GrabData(rayOrigin Transform, grabbedObject Transform)"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 4,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 4,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 37,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Reset() : void"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 4,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public GrabData(rayOrigin Transform, grabbedObject Transform, input DirectSelectInput)"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 4,
+		"endColumn": 11,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "Reset()"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter input : DirectSelectInput in method public GrabData(rayOrigin Transform, grabbedObject Transform, input DirectSelectInput) from class .TransformTool..GrabData",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 28,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GrabData(rayOrigin Transform, grabbedObject Transform)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 65,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "input : DirectSelectInput"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GrabData(rayOrigin Transform, grabbedObject Transform, input DirectSelectInput)"
+}]
+}
+]
+}]
+}

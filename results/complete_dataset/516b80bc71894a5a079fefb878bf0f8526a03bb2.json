@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cog-ethz/EVE.git",
+	"sha1": "516b80bc71894a5a079fefb878bf0f8526a03bb2",
+	"url": "https://github.com/cog-ethz/EVE/commit/516b80bc71894a5a079fefb878bf0f8526a03bb2",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(Jumps != null) to if(Jumps == null) in method package GetJumpDestination() from class ChoiceQuestion",
+	"leftSideLocations": [{
+		"filePath": "Assets/EVE/Scripts/Questionnaire/Questions/ChoiceQuestion.cs",
+		"startLine": 364,
+		"endLine": 374,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Jumps != null)"
+}, {
+		"filePath": "Assets/EVE/Scripts/Questionnaire/Questions/ChoiceQuestion.cs",
+		"startLine": 359,
+		"endLine": 375,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetJumpDestination()"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/EVE/Scripts/Questionnaire/Questions/ChoiceQuestion.cs",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(Jumps == null)"
+}, {
+		"filePath": "Assets/EVE/Scripts/Questionnaire/Questions/ChoiceQuestion.cs",
+		"startLine": 331,
+		"endLine": 345,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "package GetJumpDestination()"
+}]
+}
+]
+}]
+}

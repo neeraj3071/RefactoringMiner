@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "f6f632b52595a3455af11dbe752a22a939eac9c6",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/f6f632b52595a3455af11dbe752a22a939eac9c6",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void renamed to public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void in class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 422,
+		"endLine": 425,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 422,
+		"endLine": 425,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type grabbedObjects : List<Transform> to grabbedObjects : Transform[] in initializer TransformTool from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "grabbedObjects : List<Transform>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 22,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "grabbedObjects : Transform[]"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter objects : Transform[] in method public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void from class TransformTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 422,
+		"endLine": 425,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 80,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "objects : Transform[]"
+}, {
+		"filePath": "Tools/TransformTool/TransformTool.cs",
+		"startLine": 422,
+		"endLine": 425,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void renamed to public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void in class IGrabObject",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/IGrabObject.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 75,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/IGrabObject.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 94,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter objects : Transform[] in method public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void from class IGrabObject",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Interfaces/IGrabObject.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 75,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GrabSelection(node Node, rayOrigin Transform, input ActionMapInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Interfaces/IGrabObject.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 73,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "objects : Transform[]"
+}, {
+		"filePath": "Scripts/Interfaces/IGrabObject.cs",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 2,
+		"endColumn": 94,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GrabObjects(node Node, rayOrigin Transform, input ActionMapInput, objects Transform[]) : void"
+}]
+}
+]
+}]
+}

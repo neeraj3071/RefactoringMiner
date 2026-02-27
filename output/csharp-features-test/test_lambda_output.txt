@@ -1,0 +1,144 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_lambda.cs
+Size: 131 chars
+--- C# Source Content (first 500 chars) ---
+public class TestClass {
+    public void TestLambda() {
+        var result = items.FirstOrDefault((item) => item.Id == 1);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_lambda.cs
+CPatMinerExecutor: Executing CPatMiner transformation (131 chars)...
+unit [0,0]
+    class [0,130]
+        specifier: public [0,6]
+        name: TestClass [13,22]
+        block [23,130]
+            function [29,128]
+                type [29,40]
+                    specifier: public [29,35]
+                    name: void [36,40]
+                name: TestLambda [41,51]
+                parameter_list [51,53]
+                block [54,128]
+                    block_content [55,127]
+                        decl_stmt [64,122]
+                            decl [64,121]
+                                type [64,67]
+                                    name: var [64,67]
+                                name: result [68,74]
+                                init [75,121]
+                                    expr [77,121]
+                                        call [77,121]
+                                            name [77,97]
+                                                name: items [77,82]
+                                                operator: . [82,83]
+                                                name: FirstOrDefault [83,97]
+                                            argument_list [97,121]
+                                                argument [98,120]
+                                                    expr [98,120]
+                                                        lambda [98,120]
+                                                            parameter_list [98,104]
+                                                                parameter [99,103]
+                                                                    decl [99,103]
+                                                                        name: item [99,103]
+                                                            block [107,120]
+                                                                block_content [107,120]
+                                                                    expr [108,120]
+                                                                        name [108,115]
+                                                                            name: item [108,112]
+                                                                            operator: . [112,113]
+                                                                            name: Id [113,115]
+                                                                        operator: == [116,118]
+                                                                        literal: 1 [119,120]
+[VAR INFERENCE] Detected var type for variable: result
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = items.FirstOrDefault((Object item) -> item.Id == 1)
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+public class TestClass {
+  public Void TestLambda(){
+    Object result=items.FirstOrDefault((    Object item) -> item.Id == 1);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 134 chars
+  - Number of lines: 5
+
+=== Generated Java Code (Full Output) ===
+public class TestClass {
+  public Void TestLambda(){
+    Object result=items.FirstOrDefault((    Object item) -> item.Id == 1);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_lambda.java
+  - File contents size: 134 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_lambda.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestClass
+  Type: Class
+  Package: 
+  Source file: tests/test_lambda.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestLambda() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benaclejames/VRCFaceTracking.git",
+	"sha1": "147de9ddae9c89bdf2c246538d63b6dd81a7a5a6",
+	"url": "https://github.com/benaclejames/VRCFaceTracking/commit/147de9ddae9c89bdf2c246538d63b6dd81a7a5a6",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private Task : async from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 19,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private Task : async"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private Task : async"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private MoveDirectory(source string, dest string) : void from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 24,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private MoveDirectory(source string, dest string) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 24,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private MoveDirectory(source string, dest string) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tempZipPath : moduleMetadata to dllPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dllPath : moduleMetadata to tempZipPath : moduleMetadata in method package DownloadModuleToFile() : await from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 56,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dllPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 56,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "tempZipPath : moduleMetadata"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 40,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter loggerFactory : ILoggerFactory to logger : ILogger<ModuleInstaller> in method public ModuleInstaller(logger ILogger<ModuleInstaller>) from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "loggerFactory : ILoggerFactory"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "logger : ILogger<ModuleInstaller>"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type loggerFactory : ILoggerFactory to logger : ILogger<ModuleInstaller> in method public ModuleInstaller(logger ILogger<ModuleInstaller>) from class ModuleInstaller",
+	"leftSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "loggerFactory : ILoggerFactory"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 28,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "logger : ILogger<ModuleInstaller>"
+}, {
+		"filePath": "VRCFaceTracking.Core/Services/ModuleInstaller.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

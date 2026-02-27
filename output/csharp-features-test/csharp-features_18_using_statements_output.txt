@@ -1,0 +1,644 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/18_using_statements.cs
+Size: 2767 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    using System.IO;
+    
+    /// <summary>
+    /// Test case for using statements (resource management).
+    /// Tests transformation of C# using statements to Java try-with-resources.
+    /// </summary>
+    public class UsingStatements
+    {
+        // Basic using statement with StreamReader
+        public void BasicUsing()
+        {
+            using (StreamReader reader = new StreamReader("file.txt"))
+            {
+                string line = read
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/18_using_statements.cs
+CPatMinerExecutor: Executing CPatMiner transformation (2767 chars)...
+unit [0,0]
+    namespace [0,2766]
+        name: TestFeatures [10,22]
+        block [23,2766]
+            using [29,42]
+                name: System [35,41]
+            using [47,63]
+                name [53,62]
+                    name: System [53,59]
+                    operator: . [59,60]
+                    name: IO [60,62]
+            comment: ///<summary> [73,86]
+            comment: /// Test case for using statements (resource management). [91,148]
+            comment: /// Tests transformation of C# using statements to Java try-with-resources. [153,228]
+            comment: ///</summary> [233,247]
+            class [252,2764]
+                specifier: public [252,258]
+                name: UsingStatements [265,280]
+                block [285,2764]
+                    comment: // Basic using statement with StreamReader [295,337]
+                    function [346,579]
+                        type [346,357]
+                            specifier: public [346,352]
+                            name: void [353,357]
+                        name: BasicUsing [358,368]
+                        parameter_list [368,370]
+                        block [379,579]
+                            block_content [380,578]
+                                using_stmt [393,569]
+                                    init [399,451]
+                                        decl [400,450]
+                                            type [400,412]
+                                                name: StreamReader [400,412]
+                                            name: reader [413,419]
+                                            init [420,450]
+                                                expr [422,450]
+                                                    operator: new [422,425]
+                                                    call [426,450]
+                                                        name: StreamReader [426,438]
+                                                        argument_list [438,450]
+                                                            argument [439,449]
+                                                                expr [439,449]
+                                                                    literal: "file.txt" [439,449]
+                                    block [464,569]
+                                        block_content [465,568]
+                                            decl_stmt [482,514]
+                                                decl [482,513]
+                                                    type [482,488]
+                                                        name: string [482,488]
+                                                    name: line [489,493]
+                                                    init [494,513]
+                                                        expr [496,513]
+                                                            call [496,513]
+                                                                name [496,511]
+                                                                    name: reader [496,502]
+                                                                    operator: . [502,503]
+                                                                    name: ReadLine [503,511]
+                                                                argument_list [511,513]
+                                            expr_stmt [531,555]
+                                                expr [531,554]
+                                                    call [531,554]
+                                                        name [531,548]
+                                                            name: Console [531,538]
+                                                            operator: . [538,539]
+                                                            name: WriteLine [539,548]
+                                                        argument_list [548,554]
+                                                            argument [549,553]
+                                                                expr [549,553]
+                                                                    name: line [549,553]
+                    comment: // Using statement with StreamWriter [597,633]
+                    function [642,890]
+                        type [642,653]
+                            specifier: public [642,648]
+                            name: void [649,653]
+                        name: UsingWithWriter [654,669]
+                        parameter_list [669,671]
+                        block [680,890]
+                            block_content [681,889]
+                                using_stmt [694,880]
+                                    init [700,754]
+                                        decl [701,753]
+                                            type [701,713]
+                                                name: StreamWriter [701,713]
+                                            name: writer [714,720]
+                                            init [721,753]
+                                                expr [723,753]
+                                                    operator: new [723,726]
+                                                    call [727,753]
+                                                        name: StreamWriter [727,739]
+                                                        argument_list [739,753]
+                                                            argument [740,752]
+                                                                expr [740,752]
+                                                                    literal: "output.txt" [740,752]
+                                    block [767,880]
+                                        block_content [768,879]
+                                            expr_stmt [785,817]
+                                                expr [785,816]
+                                                    call [785,816]
+                                                        name [785,801]
+                                                            name: writer [785,791]
+                                                            operator: . [791,792]
+                                                            name: WriteLine [792,801]
+                                                        argument_list [801,816]
+                                                            argument [802,815]
+                                                                expr [802,815]
+                                                                    literal: "Hello World" [802,815]
+                                            expr_stmt [834,866]
+                                                expr [834,865]
+                                                    call [834,865]
+                                                        name [834,850]
+                                                            name: writer [834,840]
+                                                            operator: . [840,841]
+                                                            name: WriteLine [841,850]
+                                                        argument_list [850,865]
+                                                            argument [851,864]
+                                                                expr [851,864]
+                                                                    literal: "Second line" [851,864]
+                    comment: // Using statement with FileStream [908,942]
+                    function [951,1292]
+                        type [951,962]
+                            specifier: public [951,957]
+                            name: void [958,962]
+                        name: UsingWithFileStream [963,982]
+                        parameter_list [982,984]
+                        block [993,1292]
+                            block_content [994,1291]
+                                using_stmt [1007,1282]
+                                    init [1013,1072]
+                                        decl [1014,1071]
+                                            type [1014,1024]
+                                                name: FileStream [1014,1024]
+                                            name: fs [1025,1027]
+                                            init [1028,1071]
+                                                expr [1030,1071]
+                                                    operator: new [1030,1033]
+                                                    call [1034,1071]
+                                                        name: FileStream [1034,1044]
+                                                        argument_list [1044,1071]
+                                                            argument [1045,1055]
+                                                                expr [1045,1055]
+                                                                    literal: "data.bin" [1045,1055]
+                                                            argument [1057,1070]
+                                                                expr [1057,1070]
+                                                                    name [1057,1070]
+                                                                        name: FileMode [1057,1065]
+                                                                        operator: . [1065,1066]
+                                                                        name: Open [1066,1070]
+                                    block [1085,1282]
+                                        block_content [1086,1281]
+                                            decl_stmt [1103,1134]
+                                                decl [1103,1133]
+                                                    type [1103,1109]
+                                                        name [1103,1109]
+                                                            name: byte [1103,1107]
+                                                            index [1107,1109]
+                                                    name: buffer [1110,1116]
+                                                    init [1117,1133]
+                                                        expr [1119,1133]
+                                                            operator: new [1119,1122]
+                                                            name [1123,1133]
+                                                                name: byte [1123,1127]
+                                                                index [1127,1133]
+                                                                    expr [1128,1132]
+                                                                        literal: 1024 [1128,1132]
+                                            decl_stmt [1151,1201]
+                                                decl [1151,1200]
+                                                    type [1151,1154]
+                                                        name: int [1151,1154]
+                                                    name: bytesRead [1155,1164]
+                                                    init [1165,1200]
+                                                        expr [1167,1200]
+                                                            call [1167,1200]
+                                                                name [1167,1174]
+                                                                    name: fs [1167,1169]
+                                                                    operator: . [1169,1170]
+                                                                    name: Read [1170,1174]
+                                                                argument_list [1174,1200]
+                                                                    argument [1175,1181]
+                                                                        expr [1175,1181]
+                                                                            name: buffer [1175,1181]
+                                                                    argument [1183,1184]
+                                                                        expr [1183,1184]
+                                                                            literal: 0 [1183,1184]
+                                                                    argument [1186,1199]
+                                                                        expr [1186,1199]
+                                                                            name [1186,1199]
+                                                                                name: buffer [1186,1192]
+                                                                                operator: . [1192,1193]
+                                                                                name: Length [1193,1199]
+                                            expr_stmt [1218,1268]
+                                                expr [1218,1267]
+                                                    call [1218,1267]
+                                                        name [1218,1235]
+                                                            name: Console [1218,1225]
+                                                            operator: . [1225,1226]
+                                                            name: WriteLine [1226,1235]
+                                                        argument_list [1235,1267]
+                                                            argument [1236,1266]
+                                                                expr [1236,1266]
+                                                                    literal: "Read " [1236,1243]
+                                                                    operator: + [1244,1245]
+                                                                    name: bytesRead [1246,1255]
+                                                                    operator: + [1256,1257]
+                                                                    literal: " bytes" [1258,1266]
+                    comment: // Nested using statements [1310,1336]
+                    function [1345,1801]
+                        type [1345,1356]
+                            specifier: public [1345,1351]
+                            name: void [1352,1356]
+                        name: NestedUsing [1357,1368]
+                        parameter_list [1368,1370]
+                        block [1379,1801]
+                            block_content [1380,1800]
+                                using_stmt [1393,1791]
+                                    init [1399,1452]
+                                        decl [1400,1451]
+                                            type [1400,1412]
+                                                name: StreamReader [1400,1412]
+                                            name: reader [1413,1419]
+                                            init [1420,1451]
+                                                expr [1422,1451]
+                                                    operator: new [1422,1425]
+                                                    call [1426,1451]
+                                                        name: StreamReader [1426,1438]
+                                                        argument_list [1438,1451]
+                                                            argument [1439,1450]
+                                                                expr [1439,1450]
+                                                                    literal: "input.txt" [1439,1450]
+                                    block [1465,1791]
+                                        block_content [1466,1790]
+                                            using_stmt [1483,1777]
+                                                init [1489,1543]
+                                                    decl [1490,1542]
+                                                        type [1490,1502]
+                                                            name: StreamWriter [1490,1502]
+                                                        name: writer [1503,1509]
+                                                        init [1510,1542]
+                                                            expr [1512,1542]
+                                                                operator: new [1512,1515]
+                                                                call [1516,1542]
+                                                                    name: StreamWriter [1516,1528]
+                                                                    argument_list [1528,1542]
+                                                                        argument [1529,1541]
+                                                                            expr [1529,1541]
+                                                                                literal: "output.txt" [1529,1541]
+                                                block [1560,1777]
+                                                    block_content [1561,1776]
+                                                        decl_stmt [1582,1594]
+                                                            decl [1582,1593]
+                                                                type [1582,1588]
+                                                                    name: string [1582,1588]
+                                                                name: line [1589,1593]
+                                                        while [1615,1759]
+                                                            condition [1621,1657]
+                                                                expr [1622,1656]
+                                                                    operator: ( [1622,1623]
+                                                                    name: line [1623,1627]
+                                                                    operator: = [1628,1629]
+                                                                    call [1630,1647]
+                                                                        name [1630,1645]
+                                                                            name: reader [1630,1636]
+                                                                            operator: . [1636,1637]
+                                                                            name: ReadLine [1637,1645]
+                                                                        argument_list [1645,1647]
+                                                                    operator: ) [1647,1648]
+                                                                    operator: != [1649,1651]
+                                                                    literal: null [1652,1656]
+                                                            block [1678,1759]
+                                                                block_content [1679,1758]
+                                                                    expr_stmt [1704,1737]
+                                                                        expr [1704,1736]
+                                                                            call [1704,1736]
+                                                                                name [1704,1720]
+                                                                                    name: writer [1704,1710]
+                                                                                    operator: . [1710,1711]
+                                                                                    name: WriteLine [1711,1720]
+                                                                                argument_list [1720,1736]
+                                                                                    argument [1721,1735]
+                                                                                        expr [1721,1735]
+                                                                                            call [1721,1735]
+                                                                                                name [1721,1733]
+                                                                                                    name: line [1721,1725]
+                                                                                                    operator: . [1725,1726]
+                                                                                                    name: ToUpper [1726,1733]
+                                                                                                argument_list [1733,1735]
+                    comment: // Multiple using statements (C# 8.0 style - sequential) [1819,1875]
+                    function [1884,2265]
+                        type [1884,1895]
+                            specifier: public [1884,1890]
+                            name: void [1891,1895]
+                        name: MultipleUsing [1896,1909]
+                        parameter_list [1909,1911]
+                        block [1920,2265]
+                            block_content [1921,2264]
+                                using_stmt [1934,2255]
+                                    init [1940,1994]
+                                        decl [1941,1993]
+                                            type [1941,1953]
+                                                name: StreamReader [1941,1953]
+                                            name: reader1 [1954,1961]
+                                            init [1962,1993]
+                                                expr [1964,1993]
+                                                    operator: new [1964,1967]
+                                                    call [1968,1993]
+                                                        name: StreamReader [1968,1980]
+                                                        argument_list [1980,1993]
+                                                            argument [1981,1992]
+                                                                expr [1981,1992]
+                                                                    literal: "file1.txt" [1981,1992]
+                                    using_stmt [2007,2255]
+                                        init [2013,2067]
+                                            decl [2014,2066]
+                                                type [2014,2026]
+                                                    name: StreamReader [2014,2026]
+                                                name: reader2 [2027,2034]
+                                                init [2035,2066]
+                                                    expr [2037,2066]
+                                                        operator: new [2037,2040]
+                                                        call [2041,2066]
+                                                            name: StreamReader [2041,2053]
+                                                            argument_list [2053,2066]
+                                                                argument [2054,2065]
+                                                                    expr [2054,2065]
+                                                                        literal: "file2.txt" [2054,2065]
+                                        block [2080,2255]
+                                            block_content [2081,2254]
+                                                decl_stmt [2098,2132]
+                                                    decl [2098,2131]
+                                                        type [2098,2104]
+                                                            name: string [2098,2104]
+                                                        name: line1 [2105,2110]
+                                                        init [2111,2131]
+                                                            expr [2113,2131]
+                                                                call [2113,2131]
+                                                                    name [2113,2129]
+                                                                        name: reader1 [2113,2120]
+                                                                        operator: . [2120,2121]
+                                                                        name: ReadLine [2121,2129]
+                                                                    argument_list [2129,2131]
+                                                decl_stmt [2149,2183]
+                                                    decl [2149,2182]
+                                                        type [2149,2155]
+                                                            name: string [2149,2155]
+                                                        name: line2 [2156,2161]
+                                                        init [2162,2182]
+                                                            expr [2164,2182]
+                                                                call [2164,2182]
+                                                                    name [2164,2180]
+                                                                        name: reader2 [2164,2171]
+                                                                        operator: . [2171,2172]
+                                                                        name: ReadLine [2172,2180]
+                                                                    argument_list [2180,2182]
+                                                expr_stmt [2200,2241]
+                                                    expr [2200,2240]
+                                                        call [2200,2240]
+                                                            name [2200,2217]
+                                                                name: Console [2200,2207]
+                                                                operator: . [2207,2208]
+                                                                name: WriteLine [2208,2217]
+                                                            argument_list [2217,2240]
+                                                                argument [2218,2239]
+                                                                    expr [2218,2239]
+                                                                        name: line1 [2218,2223]
+                                                                        operator: + [2224,2225]
+                                                                        literal: " - " [2226,2231]
+                                                                        operator: + [2232,2233]
+                                                                        name: line2 [2234,2239]
+                    comment: // Using with exception handling [2283,2315]
+                    function [2324,2758]
+                        type [2324,2335]
+                            specifier: public [2324,2330]
+                            name: void [2331,2335]
+                        name: UsingWithTryCatch [2336,2353]
+                        parameter_list [2353,2355]
+                        block [2364,2758]
+                            block_content [2365,2757]
+                                try [2378,2748]
+                                    block [2394,2625]
+                                        block_content [2395,2624]
+                                            using_stmt [2412,2611]
+                                                init [2418,2470]
+                                                    decl [2419,2469]
+                                                        type [2419,2431]
+                                                            name: StreamReader [2419,2431]
+                                                        name: reader [2432,2438]
+                                                        init [2439,2469]
+                                                            expr [2441,2469]
+                                                                operator: new [2441,2444]
+                                                                call [2445,2469]
+                                                                    name: StreamReader [2445,2457]
+                                                                    argument_list [2457,2469]
+                                                                        argument [2458,2468]
+                                                                            expr [2458,2468]
+                                                                                literal: "file.txt" [2458,2468]
+                                                block [2487,2611]
+                                                    block_content [2488,2610]
+                                                        decl_stmt [2509,2545]
+                                                            decl [2509,2544]
+                                                                type [2509,2515]
+                                                                    name: string [2509,2515]
+                                                                name: content [2516,2523]
+                                                                init [2524,2544]
+                                                                    expr [2526,2544]
+                                                                        call [2526,2544]
+                                                                            name [2526,2542]
+                                                                                name: reader [2526,2532]
+                                                                                operator: . [2532,2533]
+                                                                                name: ReadToEnd [2533,2542]
+                                                                            argument_list [2542,2544]
+                                                        expr_stmt [2566,2593]
+                                                            expr [2566,2592]
+                                                                call [2566,2592]
+                                                                    name [2566,2583]
+                                                                        name: Console [2566,2573]
+                                                                        operator: . [2573,2574]
+                                                                        name: WriteLine [2574,2583]
+                                                                    argument_list [2583,2592]
+                                                                        argument [2584,2591]
+                                                                            expr [2584,2591]
+                                                                                name: content [2584,2591]
+                                    catch [2638,2748]
+                                        parameter_list [2644,2659]
+                                            parameter [2645,2658]
+                                                decl [2645,2658]
+                                                    type [2645,2656]
+                                                        name: IOException [2645,2656]
+                                                    name: e [2657,2658]
+                                        block [2672,2748]
+                                            block_content [2673,2747]
+                                                expr_stmt [2690,2734]
+                                                    expr [2690,2733]
+                                                        call [2690,2733]
+                                                            name [2690,2707]
+                                                                name: Console [2690,2697]
+                                                                operator: . [2697,2698]
+                                                                name: WriteLine [2698,2707]
+                                                            argument_list [2707,2733]
+                                                                argument [2708,2732]
+                                                                    expr [2708,2732]
+                                                                        literal: "IO Error: " [2708,2720]
+                                                                        operator: + [2721,2722]
+                                                                        name [2723,2732]
+                                                                            name: e [2723,2724]
+                                                                            operator: . [2724,2725]
+                                                                            name: Message [2725,2732]
+package TestFeatures;
+public class UsingStatements {
+  public Void BasicUsing(){
+    try (StreamReader reader=new StreamReader("file.txt")){
+      String line=reader.ReadLine();
+      Console.WriteLine(line);
+    }
+   }
+  public Void UsingWithWriter(){
+    try (StreamWriter writer=new StreamWriter("output.txt")){
+      writer.WriteLine("Hello World");
+      writer.WriteLine("Second line");
+    }
+   }
+  public Void UsingWithFileStream(){
+    try (FileStream fs=new FileStream("data.bin",FileMode.Open)){
+      byte[] buffer=new byte[];
+      int bytesRead=fs.Read(buffer,0,buffer.Length);
+      Console.WriteLine("Read " + bytesRead + " bytes");
+    }
+   }
+  public Void NestedUsing(){
+    try (StreamReader reader=new StreamReader("input.txt")){
+      try (StreamWriter writer=new StreamWriter("output.txt")){
+        String line;
+        while ((line + reader.ReadLine())) {
+          writer.WriteLine(line.ToUpper());
+        }
+      }
+     }
+   }
+  public Void MultipleUsing(){
+    try (StreamReader reader1=new StreamReader("file1.txt")){
+    }
+   }
+  public Void UsingWithTryCatch(){
+    try {
+      try (StreamReader reader=new StreamReader("file.txt")){
+        String content=reader.ReadToEnd();
+        Console.WriteLine(content);
+      }
+     }
+ catch (    IOException e) {
+      Console.WriteLine("IO Error: " + e.Message);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 1351 chars
+  - Number of lines: 47
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class UsingStatements {
+  public Void BasicUsing(){
+    try (StreamReader reader=new StreamReader("file.txt")){
+      String line=reader.ReadLine();
+      Console.WriteLine(line);
+    }
+   }
+  public Void UsingWithWriter(){
+    try (StreamWriter writer=new StreamWriter("output.txt")){
+      writer.WriteLine("Hello World");
+      writer.WriteLine("Second line");
+    }
+   }
+  public Void UsingWithFileStream(){
+    try (FileStream fs=new FileStream("data.bin",FileMode.Open)){
+      byte[] buffer=new byte[];
+      int bytesRead=fs.Read(buffer,0,buffer.Length);
+      Console.WriteLine("Read " + bytesRead + " bytes");
+    }
+   }
+  public Void NestedUsing(){
+    try (StreamReader reader=new StreamReader("input.txt")){
+      try (StreamWriter writer=new StreamWriter("output.txt")){
+        String line;
+        while ((line + reader.ReadLine())) {
+          writer.WriteLine(line.ToUpper());
+        }
+      }
+     }
+   }
+  public Void MultipleUsing(){
+    try (StreamReader reader1=new StreamReader("file1.txt")){
+    }
+   }
+  public Void UsingWithTryCatch(){
+    try {
+      try (StreamReader reader=new StreamReader("file.txt")){
+        String content=reader.ReadToEnd();
+        Console.WriteLine(content);
+      }
+     }
+ catch (    IOException e) {
+      Console.WriteLine("IO Error: " + e.Message);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/18_using_statements.java
+  - File contents size: 1351 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/18_using_statements.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.UsingStatements
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/18_using_statements.java
+  Operations: 6
+  Attributes: 0
+  Methods:
+    • BasicUsing() - 1 param(s)
+    • UsingWithWriter() - 1 param(s)
+    • UsingWithFileStream() - 1 param(s)
+    • NestedUsing() - 1 param(s)
+    • MultipleUsing() - 1 param(s)
+    • UsingWithTryCatch() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

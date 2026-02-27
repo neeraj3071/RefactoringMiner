@@ -1,0 +1,432 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/virtuallynaked/virtually-naked.git",
+	"sha1": "f5ff6b89796b114b7c224e43f909699813499abe",
+	"url": "https://github.com/virtuallynaked/virtually-naked/commit/f5ff6b89796b114b7c224e43f909699813499abe",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable level0SubdivisionMesh : SubdivisionMesh in method public FigureOcclusionCalculator(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figureGroup FigureGroup) from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 19,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "level0SubdivisionMesh : SubdivisionMesh"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 128,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 128,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable baseFigure : var to figure : var in method public FigureOcclusionCalculator(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figureGroup FigureGroup) from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "baseFigure : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 4,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 8,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "figure : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable level0RefinementResult : var to refinementResult : var in method public FigureOcclusionCalculator(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figureGroup FigureGroup) from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level0RefinementResult : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 8,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "refinementResult : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable level0RefinementResult : var to refinementResult : var in method public FigureOcclusionCalculator(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figureGroup FigureGroup) from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "level0RefinementResult : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 137,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 8,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "refinementResult : var"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 4,
+		"endColumn": 141,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable baseDeltas : Vector3[] to parentDeltas : Vector3[] in method public CalculateOcclusionInformation(outputsGroup ChannelOutputsGroup) : Result from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "baseDeltas : Vector3[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 4,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "parentDeltas : Vector3[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable allOcclusionInfos : OcclusionInfo[] to groupOcclusionInfos : OcclusionInfo[] in method public CalculateOcclusionInformation(outputsGroup ChannelOutputsGroup) : Result from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 19,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "allOcclusionInfos : OcclusionInfo[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 19,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "groupOcclusionInfos : OcclusionInfo[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 4,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable baseFigureOcclusionInfos : OcclusionInfo[] to parentOcclusionInfos : OcclusionInfo[] in method public CalculateOcclusionInformation(outputsGroup ChannelOutputsGroup) : Result from class FigureOcclusionCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "baseFigureOcclusionInfos : OcclusionInfo[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 4,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 19,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "parentOcclusionInfos : OcclusionInfo[]"
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Calculate(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[] from class FaceTransparencyCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 18,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateFaceTransparencies(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/facetransparency/FaceTransparencyCalculator.cs",
+		"startLine": 5,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Calculate(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[]"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private CalculateFaceTransparencies(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[] from class FigureOcclusionCalculator to public Calculate(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[] from class FaceTransparencyCalculator",
+	"leftSideLocations": [{
+		"filePath": "Importer/src/occlusion/FigureOcclusionCalculator.cs",
+		"startLine": 18,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CalculateFaceTransparencies(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Importer/src/occlusion/facetransparency/FaceTransparencyCalculator.cs",
+		"startLine": 5,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Calculate(fileLocator ContentFileLocator, device Device, shaderCache ShaderCache, figure Figure, surfaceMap int[]) : float[]"
+}]
+}
+]
+}]
+}

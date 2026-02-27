@@ -1,0 +1,191 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_foreach_nullcoalesce_demo.cs
+Size: 305 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+using System.Collections.Generic;
+
+class ForeachNullCoalesceDemo
+{
+    void ProcessItems()
+    {
+        List<string> items = new List<string>();
+        string text = "default";
+        
+        foreach (var item in items)              
+            Console.WriteLine(item ?? text);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_foreach_nullcoalesce_demo.cs
+CPatMinerExecutor: Executing CPatMiner transformation (305 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    using [14,47]
+        name [20,46]
+            name: System [20,26]
+            operator: . [26,27]
+            name: Collections [27,38]
+            operator: . [38,39]
+            name: Generic [39,46]
+    class [49,304]
+        name: ForeachNullCoalesceDemo [55,78]
+        block [79,304]
+            function [85,302]
+                type [85,89]
+                    name: void [85,89]
+                name: ProcessItems [90,102]
+                parameter_list [102,104]
+                block [109,302]
+                    block_content [110,301]
+                        decl_stmt [119,159]
+                            decl [119,158]
+                                type [119,131]
+                                    name [119,131]
+                                        name: List [119,123]
+                                        argument_list [123,131]
+                                            argument [124,130]
+                                                name: string [124,130]
+                                name: items [132,137]
+                                init [138,158]
+                                    expr [140,158]
+                                        operator: new [140,143]
+                                        call [144,158]
+                                            name [144,156]
+                                                name: List [144,148]
+                                                argument_list [148,156]
+                                                    argument [149,155]
+                                                        name: string [149,155]
+                                            argument_list [156,158]
+                        decl_stmt [168,192]
+                            decl [168,191]
+                                type [168,174]
+                                    name: string [168,174]
+                                name: text [175,179]
+                                init [180,191]
+                                    expr [182,191]
+                                        literal: "default" [182,191]
+                        foreach [210,296]
+                            control [218,237]
+                                init [219,236]
+                                    decl [219,236]
+                                        type [219,222]
+                                            name: var [219,222]
+                                        name: item [223,227]
+                                        range [228,236]
+                                            expr [231,236]
+                                                name: items [231,236]
+                            block [237,296]
+                                block_content [237,296]
+                                    expr_stmt [264,296]
+                                        expr [264,295]
+                                            call [264,295]
+                                                name [264,281]
+                                                    name: Console [264,271]
+                                                    operator: . [271,272]
+                                                    name: WriteLine [272,281]
+                                                argument_list [281,295]
+                                                    argument [282,294]
+                                                        expr [282,294]
+                                                            name: item [282,286]
+                                                            operator: ?? [287,289]
+                                                            name: text [290,294]
+import System;
+import System;
+class ForeachNullCoalesceDemo {
+  Void ProcessItems(){
+    List<String> items=new List<String>();
+    String text="default";
+    for (    String item : items) {
+      Console.WriteLine(item != null ? item : text);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 2
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 256 chars
+  - Number of lines: 11
+
+=== Generated Java Code (Full Output) ===
+import System;
+import System;
+class ForeachNullCoalesceDemo {
+  Void ProcessItems(){
+    List<String> items=new List<String>();
+    String text="default";
+    for (    String item : items) {
+      Console.WriteLine(item != null ? item : text);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_foreach_nullcoalesce_demo.java
+  - File contents size: 256 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_foreach_nullcoalesce_demo.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: ForeachNullCoalesceDemo
+  Type: Class
+  Package: 
+  Source file: tests/test_foreach_nullcoalesce_demo.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • ProcessItems() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

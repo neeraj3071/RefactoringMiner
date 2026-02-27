@@ -1,0 +1,360 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "e73ad681cbf947be94ea07e0623b6d1aac631758",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/e73ad681cbf947be94ea07e0623b6d1aac631758",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private string : readonly from class MSMapGenTests",
+	"leftSideLocations": [{
+		"filePath": "Tests/Editor/MSMapGenTests.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package string : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tests/Editor/MSMapGenTests.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 26,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private string : readonly"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable disableGenerate : var in method private OnGUI() : void from class MSMapGen",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "disableGenerate : var"
+}, {
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private OnClickGenerateButton() : void extracted from private OnGUI() : void in class MSMapGenWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 25,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 171,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 68,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private OnClickGenerateButton() : void"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 167,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 37,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "OnClickGenerateButton()"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 72,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private OnClickGenerateButton() : void extracted from private OnGUI() : void in class MSMapGenWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 25,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 171,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 68,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private OnClickGenerateButton() : void"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 13,
+		"endColumn": 167,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 37,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnGUI() : void"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "OnClickGenerateButton()"
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 72,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public GenerateMetallicSmoothness(metallic MagickImage, invertMetallic bool, smoothness MagickImage, invertSmoothness bool) : MagickImage from class MSMapGen to public GenerateMetallicSmoothness(metallic MagickImage, invertMetallic bool, smoothness MagickImage, invertSmoothness bool) : MagickImage from class MagickImageUtility",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 77,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GenerateMetallicSmoothness(metallic MagickImage, invertMetallic bool, smoothness MagickImage, invertSmoothness bool) : MagickImage"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Utils/MagickImageUtility.cs",
+		"startLine": 26,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public GenerateMetallicSmoothness(metallic MagickImage, invertMetallic bool, smoothness MagickImage, invertSmoothness bool) : MagickImage"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private InitOnMenu() : void from class MSMapGenMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 98,
+		"endLine": 101,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MSMapGenerator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/MSMapGenMenu.cs",
+		"startLine": 17,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private InitOnMenu() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package MSMapGenerator() : void from class VRCQuestTools to private InitOnMenu() : void from class MSMapGenMenu",
+	"leftSideLocations": [{
+		"filePath": "Editor/VRCQuestTools.cs",
+		"startLine": 98,
+		"endLine": 101,
+		"startColumn": 18,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MSMapGenerator() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Menus/MSMapGenMenu.cs",
+		"startLine": 17,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private InitOnMenu() : void"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier public to package in class MSMapGenWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 12,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "MSMapGen"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 17,
+		"endLine": 76,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "MSMapGenWindow"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class MSMapGen renamed to MSMapGenWindow",
+	"leftSideLocations": [{
+		"filePath": "Editor/MSMapGen/MSMapGen.cs",
+		"startLine": 12,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MSMapGen"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/Views/MSMapGenWindow.cs",
+		"startLine": 17,
+		"endLine": 76,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "MSMapGenWindow"
+}]
+}
+]
+}]
+}

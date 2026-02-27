@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "847b928d619aa8713fa85aad5117d65e92c89f87",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/847b928d619aa8713fa85aad5117d65e92c89f87",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class GPU moved to IntelCPU.AMDCPU.GPU",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 17,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "GPU"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 133,
+		"endLine": 162,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "IntelCPU.AMDCPU.GPU"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class RAM moved to IntelCPU.AMDCPU.RAM",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "RAM"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "IntelCPU.AMDCPU.RAM"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private List : readonly from class HardwareStatsProvider",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/HardwareStatsProvider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 21,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public List : readonly"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/HardwareStatsProvider.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 22,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private List : readonly"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class CPU",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 10,
+		"endLine": 15,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "CPU"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "CPU"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Used : float to Used : int in class IntelCPU.AMDCPU.RAM",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Used : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Used : int"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Available : float to Available : int in class IntelCPU.AMDCPU.RAM",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Available : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Available : int"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Total : float to Total : int in class IntelCPU.AMDCPU.RAM",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Total : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Providers/Hardware/IComponent.cs",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Total : int"
+}]
+}
+]
+}]
+}

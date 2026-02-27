@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "a4dea7d27958474f1aa5def42245afb9aa745b1c",
+	"url": "https://github.com/vrm-c/UniVRM/commit/a4dea7d27958474f1aa5def42245afb9aa745b1c",
+	"refactorings": [{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(_leftEye != null && _rightEye != null) to [if(_leftEye != null), if(_rightEye != null)] in method private SetYawPitchToBones(eyeDirection LookAtEyeDirection) : void from class LookAtEyeDirectionApplicableToBone",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToBone.cs",
+		"startLine": 82,
+		"endLine": 90,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(_leftEye != null && _rightEye != null)"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToBone.cs",
+		"startLine": 80,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetYawPitchToBones(eyeDirection LookAtEyeDirection) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToBone.cs",
+		"startLine": 77,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(_leftEye != null)"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToBone.cs",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(_rightEye != null)"
+}, {
+		"filePath": "Assets/VRM10/Runtime/Components/LookAt/LookAtEyeDirectionApplicableToBone.cs",
+		"startLine": 53,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private SetYawPitchToBones(eyeDirection LookAtEyeDirection) : void"
+}]
+}
+]
+}]
+}

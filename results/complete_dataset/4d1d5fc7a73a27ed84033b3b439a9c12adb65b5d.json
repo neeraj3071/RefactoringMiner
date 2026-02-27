@@ -1,0 +1,156 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/spatial-computing.git",
+	"sha1": "4d1d5fc7a73a27ed84033b3b439a9c12adb65b5d",
+	"url": "https://github.com/microsoft/spatial-computing/commit/4d1d5fc7a73a27ed84033b3b439a9c12adb65b5d",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public MobileService : MobileServiceClient from class TextProcessor",
+	"leftSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 43,
+		"endColumn": 141,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public MobileService : MobileServiceClient"
+}],
+	"rightSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "public MobileService : MobileServiceClient"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter luisAppId : string in method public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string) from class TextProcessor",
+	"leftSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TextProcessor()"
+}],
+	"rightSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "luisAppId : string"
+}, {
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter luisSubscriptionKey : string in method public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string) from class TextProcessor",
+	"leftSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TextProcessor()"
+}],
+	"rightSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 48,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "luisSubscriptionKey : string"
+}, {
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter mobileAppUri : string in method public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string) from class TextProcessor",
+	"leftSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TextProcessor()"
+}],
+	"rightSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 76,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "mobileAppUri : string"
+}, {
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string) from class TextProcessor",
+	"leftSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 34,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TextProcessor()"
+}],
+	"rightSideLocations": [{
+		"filePath": "LUIS-CachingService/LUIS-CachingComponents/LuisCacheLib/TextProcessor.cs",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public TextProcessor(luisAppId string, luisSubscriptionKey string, mobileAppUri string)"
+}]
+}
+]
+}]
+}

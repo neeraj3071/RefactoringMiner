@@ -1,0 +1,1251 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "148e43f5e14addba22d92d54d1fec1a187c31b10",
+	"url": "https://github.com/vrm-c/UniVRM/commit/148e43f5e14addba22d92d54d1fec1a187c31b10",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/UniGLTF/Runtime to Assets/UniGLTF/Runtime/UniGLTF",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UnityResourceDestroyer.cs",
+		"startLine": 10,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "UnityResourceDestroyer"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/UnityResourceDestroyer.cs",
+		"startLine": 11,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "UnityResourceDestroyer"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable m_textureFactory : in to AnimationClips : in in method public Dispose() : void from class ImporterContext",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/ImporterContext.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 28,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "m_textureFactory : in"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/ImporterContext.cs",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/ImporterContext.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 28,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "AnimationClips : in"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/ImporterContext.cs",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable info : var to baseTexture : var in initializer TextureLoadFlags from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "info : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "baseTexture : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 25,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable info : var to baseTexture : var in initializer TextureLoadFlags from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "info : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "baseTexture : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 25,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable baseTexture : var to info : var in initializer TextureLoadFlags from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "baseTexture : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 25,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "info : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable baseTexture : var to info : var in initializer TextureLoadFlags from class TextureLoadFlags",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "baseTexture : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 25,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "info : var"
+}, {
+		"filePath": "Assets/UniGLTF/Runtime/UniGLTF/IO/TextureLoader/TextureFactory.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTF to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTF"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMesh to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMesh"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFPrimitives to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFAttributes to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFAttributes"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterialBaseColorTextureInfo to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFMaterial to self : glTFNode in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFMaterial"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFNode"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTF in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 47,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTF"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTFMesh in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMesh"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTFPrimitives in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFPrimitives"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTFAttributes in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 57,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFAttributes"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTFMaterialBaseColorTextureInfo in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 75,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterialBaseColorTextureInfo"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type self : glTFNode to self : glTFMaterial in method public ToJson() : string from class ToJsonExtensions",
+	"leftSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 51,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "self : glTFNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 55,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "self : glTFMaterial"
+}]
+}
+]
+}]
+}

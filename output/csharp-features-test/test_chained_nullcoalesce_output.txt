@@ -1,0 +1,180 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_chained_nullcoalesce.cs
+Size: 304 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+
+class TestChainedNullCoalesce
+{
+    public void TestMethod()
+    {
+        string x = null;
+        string y = null;
+        string z = "default";
+        
+        // Test chained null-coalescing: x ?? y ?? z
+        string result = x ?? y ?? z;
+        Console.WriteLine(result);
+    }
+}
+
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_chained_nullcoalesce.cs
+CPatMinerExecutor: Executing CPatMiner transformation (304 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    class [15,303]
+        name: TestChainedNullCoalesce [21,44]
+        block [45,303]
+            function [51,301]
+                type [51,62]
+                    specifier: public [51,57]
+                    name: void [58,62]
+                name: TestMethod [63,73]
+                parameter_list [73,75]
+                block [80,301]
+                    block_content [81,300]
+                        decl_stmt [90,106]
+                            decl [90,105]
+                                type [90,96]
+                                    name: string [90,96]
+                                name: x [97,98]
+                                init [99,105]
+                                    expr [101,105]
+                                        literal: null [101,105]
+                        decl_stmt [115,131]
+                            decl [115,130]
+                                type [115,121]
+                                    name: string [115,121]
+                                name: y [122,123]
+                                init [124,130]
+                                    expr [126,130]
+                                        literal: null [126,130]
+                        decl_stmt [140,161]
+                            decl [140,160]
+                                type [140,146]
+                                    name: string [140,146]
+                                name: z [147,148]
+                                init [149,160]
+                                    expr [151,160]
+                                        literal: "default" [151,160]
+                        comment: // Test chained null-coalescing: x ?? y ?? z [179,223]
+                        decl_stmt [232,260]
+                            decl [232,259]
+                                type [232,238]
+                                    name: string [232,238]
+                                name: result [239,245]
+                                init [246,259]
+                                    expr [248,259]
+                                        name: x [248,249]
+                                        operator: ?? [250,252]
+                                        name: y [253,254]
+                                        operator: ?? [255,257]
+                                        name: z [258,259]
+                        expr_stmt [269,295]
+                            expr [269,294]
+                                call [269,294]
+                                    name [269,286]
+                                        name: Console [269,276]
+                                        operator: . [276,277]
+                                        name: WriteLine [277,286]
+                                    argument_list [286,294]
+                                        argument [287,293]
+                                            expr [287,293]
+                                                name: result [287,293]
+import System;
+class TestChainedNullCoalesce {
+  public Void TestMethod(){
+    String x="null";
+    String y="null";
+    String z="default";
+    String result=x != null ? x : y != null ? y : z;
+    Console.WriteLine(result);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 1
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 231 chars
+  - Number of lines: 10
+
+=== Generated Java Code (Full Output) ===
+import System;
+class TestChainedNullCoalesce {
+  public Void TestMethod(){
+    String x="null";
+    String y="null";
+    String z="default";
+    String result=x != null ? x : y != null ? y : z;
+    Console.WriteLine(result);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_chained_nullcoalesce.java
+  - File contents size: 231 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_chained_nullcoalesce.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestChainedNullCoalesce
+  Type: Class
+  Package: 
+  Source file: tests/test_chained_nullcoalesce.java
+  Operations: 1
+  Attributes: 0
+  Methods:
+    • TestMethod() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

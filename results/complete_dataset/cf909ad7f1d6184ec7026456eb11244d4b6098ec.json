@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MayouKurayami/KK_SetParentVR.git",
+	"sha1": "cf909ad7f1d6184ec7026456eb11244d4b6098ec",
+	"url": "https://github.com/MayouKurayami/KK_SetParentVR/commit/cf909ad7f1d6184ec7026456eb11244d4b6098ec",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(currentCtrlstate != CtrlState.Following), if(TriggerPressing(nonParentSide) && GripPressing(nonParentSide))] to if(currentCtrlstate != CtrlState.Following && TriggerPressing(nonParentSide)) in method private ControllerCharacterAdjustment() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 725,
+		"endLine": 726,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Following)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 723,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(TriggerPressing(nonParentSide) && GripPressing(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 747,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 725,
+		"endLine": 726,
+		"startColumn": 10,
+		"endColumn": 83,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Following && TriggerPressing(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 738,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(currentCtrlstate != CtrlState.FemaleControl), if(GripPressing(nonParentSide) && TrackPadUp(nonParentSide))] to if(currentCtrlstate != CtrlState.FemaleControl && TrackPadUp(nonParentSide)) in method private ControllerCharacterAdjustment() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 737,
+		"endLine": 738,
+		"startColumn": 5,
+		"endColumn": 87,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.FemaleControl)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 735,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(GripPressing(nonParentSide) && TrackPadUp(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 747,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 722,
+		"endLine": 726,
+		"startColumn": 10,
+		"endColumn": 83,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.FemaleControl && TrackPadUp(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 738,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(currentCtrlstate != CtrlState.MaleControl), if(GripPressing(nonParentSide) && TrackPadDown(nonParentSide))] to if(currentCtrlstate != CtrlState.MaleControl && TrackPadDown(nonParentSide)) in method private ControllerCharacterAdjustment() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 731,
+		"endLine": 732,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.MaleControl)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 729,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(GripPressing(nonParentSide) && TrackPadDown(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 747,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 719,
+		"endLine": 726,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.MaleControl && TrackPadDown(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 738,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(currentCtrlstate != CtrlState.Stationary), if(hFlag.timeNoClickItem == 0 && TriggerPressing(nonParentSide) && !GripPressing(nonParentSide)), if(TriggerPressing(nonParentSide) && GripPressing(nonParentSide))] to if(currentCtrlstate != CtrlState.Stationary && TriggerPressing(nonParentSide) && hFlag.timeNoClickItem == 0) in method private ControllerCharacterAdjustment() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 719,
+		"endLine": 720,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Stationary)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 717,
+		"endLine": 746,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(hFlag.timeNoClickItem == 0 && TriggerPressing(nonParentSide) && !GripPressing(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 723,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(TriggerPressing(nonParentSide) && GripPressing(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 747,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 728,
+		"endLine": 735,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Stationary && TriggerPressing(nonParentSide) && hFlag.timeNoClickItem == 0)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 738,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(hFlag.timeNoClickItem == 0 && TriggerPressing(nonParentSide) && !GripPressing(nonParentSide)), if(currentCtrlstate != CtrlState.Stationary)] to if(currentCtrlstate != CtrlState.Stationary && TriggerPressing(nonParentSide) && hFlag.timeNoClickItem == 0) in method private ControllerCharacterAdjustment() : void from class SetParent",
+	"leftSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 717,
+		"endLine": 746,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(hFlag.timeNoClickItem == 0 && TriggerPressing(nonParentSide) && !GripPressing(nonParentSide))"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 719,
+		"endLine": 720,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Stationary)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 747,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 728,
+		"endLine": 735,
+		"startColumn": 9,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(currentCtrlstate != CtrlState.Stationary && TriggerPressing(nonParentSide) && hFlag.timeNoClickItem == 0)"
+}, {
+		"filePath": "SetParentKK/SetParent.cs",
+		"startLine": 705,
+		"endLine": 738,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private ControllerCharacterAdjustment() : void"
+}]
+}
+]
+}]
+}

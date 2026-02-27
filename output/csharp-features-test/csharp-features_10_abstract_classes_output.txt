@@ -1,0 +1,283 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/10_abstract_classes.cs
+Size: 1181 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for abstract classes with abstract and concrete members.
+    /// Tests transformation of C# abstract classes to Java abstract classes.
+    /// </summary>
+    public abstract class AbstractDevice
+    {
+        protected string deviceId;
+        
+        // Abstract method
+        public abstract void Initialize();
+        
+        // Abstract method with return value
+        public abstract string GetDeviceInfo();
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/10_abstract_classes.cs
+CPatMinerExecutor: Executing CPatMiner transformation (1181 chars)...
+unit [0,0]
+    namespace [0,1180]
+        name: TestFeatures [10,22]
+        block [23,1180]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for abstract classes with abstract and concrete members. [70,140]
+            comment: /// Tests transformation of C# abstract classes to Java abstract classes. [145,218]
+            comment: ///</summary> [223,237]
+            class [242,819]
+                specifier: public [242,248]
+                specifier: abstract [249,257]
+                name: AbstractDevice [264,278]
+                block [283,819]
+                    decl_stmt [293,319]
+                        decl [293,318]
+                            type [293,309]
+                                specifier: protected [293,302]
+                                name: string [303,309]
+                            name: deviceId [310,318]
+                    comment: // Abstract method [337,355]
+                    function_decl [364,398]
+                        type [364,384]
+                            specifier: public [364,370]
+                            specifier: abstract [371,379]
+                            name: void [380,384]
+                        name: Initialize [385,395]
+                        parameter_list [395,397]
+                    comment: // Abstract method with return value [416,452]
+                    function_decl [461,500]
+                        type [461,483]
+                            specifier: public [461,467]
+                            specifier: abstract [468,476]
+                            name: string [477,483]
+                        name: GetDeviceInfo [484,497]
+                        parameter_list [497,499]
+                    comment: // Concrete method [518,536]
+                    function [545,660]
+                        type [545,556]
+                            specifier: public [545,551]
+                            name: void [552,556]
+                        name: Start [557,562]
+                        parameter_list [562,564]
+                        block [573,660]
+                            block_content [574,659]
+                                expr_stmt [587,624]
+                                    expr [587,623]
+                                        call [587,623]
+                                            name [587,604]
+                                                name: Console [587,594]
+                                                operator: . [594,595]
+                                                name: WriteLine [595,604]
+                                            argument_list [604,623]
+                                                argument [605,622]
+                                                    expr [605,622]
+                                                        literal: "Starting device" [605,622]
+                                expr_stmt [637,650]
+                                    expr [637,649]
+                                        call [637,649]
+                                            name: Initialize [637,647]
+                                            argument_list [647,649]
+                    comment: // Concrete method with implementation [678,716]
+                    function [725,813]
+                        type [725,736]
+                            specifier: public [725,731]
+                            name: void [732,736]
+                        name: Stop [737,741]
+                        parameter_list [741,743]
+                        block [752,813]
+                            block_content [753,812]
+                                expr_stmt [766,803]
+                                    expr [766,802]
+                                        call [766,802]
+                                            name [766,783]
+                                                name: Console [766,773]
+                                                operator: . [773,774]
+                                                name: WriteLine [774,783]
+                                            argument_list [783,802]
+                                                argument [784,801]
+                                                    expr [784,801]
+                                                        literal: "Stopping device" [784,801]
+            comment: ///<summary> [829,842]
+            comment: /// Another abstract class with properties. [847,890]
+            comment: ///</summary> [895,909]
+            class [914,1178]
+                specifier: public [914,920]
+                specifier: abstract [921,929]
+                name: AbstractController [936,954]
+                block [959,1178]
+                    function_decl [969,1007]
+                        type [969,988]
+                            specifier: public [969,975]
+                            specifier: abstract [976,984]
+                            name: int [985,988]
+                        name: GetBatteryLevel [989,1004]
+                        parameter_list [1004,1006]
+                    function [1025,1172]
+                        type [1025,1036]
+                            specifier: public [1025,1031]
+                            name: void [1032,1036]
+                        name: CheckBattery [1037,1049]
+                        parameter_list [1049,1051]
+                        block [1060,1172]
+                            block_content [1061,1171]
+                                decl_stmt [1074,1104]
+                                    decl [1074,1103]
+                                        type [1074,1077]
+                                            name: int [1074,1077]
+                                        name: level [1078,1083]
+                                        init [1084,1103]
+                                            expr [1086,1103]
+                                                call [1086,1103]
+                                                    name: GetBatteryLevel [1086,1101]
+                                                    argument_list [1101,1103]
+                                expr_stmt [1117,1162]
+                                    expr [1117,1161]
+                                        call [1117,1161]
+                                            name [1117,1134]
+                                                name: Console [1117,1124]
+                                                operator: . [1124,1125]
+                                                name: WriteLine [1125,1134]
+                                            argument_list [1134,1161]
+                                                argument [1135,1160]
+                                                    expr [1135,1160]
+                                                        literal: "Battery level: " [1135,1152]
+                                                        operator: + [1153,1154]
+                                                        name: level [1155,1160]
+package TestFeatures;
+public abstract class AbstractDevice {
+  protected String deviceId;
+  public abstract Void Initialize();
+  public abstract String GetDeviceInfo();
+  public Void Start(){
+    Console.WriteLine("Starting device");
+    Initialize();
+  }
+  public Void Stop(){
+    Console.WriteLine("Stopping device");
+  }
+}
+public abstract class AbstractController {
+  public abstract int GetBatteryLevel();
+  public Void CheckBattery(){
+    int level=GetBatteryLevel();
+    Console.WriteLine("Battery level: " + level);
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 2 types
+✓ CompilationUnit created successfully!
+  - Number of types: 2
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 529 chars
+  - Number of lines: 20
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public abstract class AbstractDevice {
+  protected String deviceId;
+  public abstract Void Initialize();
+  public abstract String GetDeviceInfo();
+  public Void Start(){
+    Console.WriteLine("Starting device");
+    Initialize();
+  }
+  public Void Stop(){
+    Console.WriteLine("Stopping device");
+  }
+}
+public abstract class AbstractController {
+  public abstract int GetBatteryLevel();
+  public Void CheckBattery(){
+    int level=GetBatteryLevel();
+    Console.WriteLine("Battery level: " + level);
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/10_abstract_classes.java
+  - File contents size: 529 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/10_abstract_classes.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 2
+  - Classes: 2
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.AbstractDevice
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/10_abstract_classes.java
+  Operations: 4
+  Attributes: 1
+  Fields:
+    • String deviceId
+  Methods:
+    • Initialize() - 1 param(s)
+    • GetDeviceInfo() - 1 param(s)
+    • Start() - 1 param(s)
+    • Stop() - 1 param(s)
+
+Class: TestFeatures.AbstractController
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/10_abstract_classes.java
+  Operations: 2
+  Attributes: 0
+  Methods:
+    • GetBatteryLevel() - 1 param(s)
+    • CheckBattery() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

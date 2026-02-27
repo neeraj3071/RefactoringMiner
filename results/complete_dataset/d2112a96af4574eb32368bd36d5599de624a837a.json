@@ -1,0 +1,270 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "d2112a96af4574eb32368bd36d5599de624a837a",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/d2112a96af4574eb32368bd36d5599de624a837a",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class MainMenu.VRMenuItemAttribute moved to VRMenuItemAttribute",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 469,
+		"endLine": 479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "MainMenu.VRMenuItemAttribute"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/Scripts/VRMenuItemAttribute.cs",
+		"startLine": 6,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VRMenuItemAttribute"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter device : InputDevice in method private SpawnMainMenu(type Type, device InputDevice) : void from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 439,
+		"endLine": 467,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SpawnMainMenu(type Type) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 43,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "device : InputDevice"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 444,
+		"endLine": 459,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private SpawnMainMenu(type Type, device InputDevice) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable device : InputDevice to deviceToAssignTool : InputDevice in method private SelectTool(menuDeviceTagIndex int, tool Type) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 558,
+		"endLine": 558,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "device : InputDevice"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 558,
+		"endLine": 558,
+		"startColumn": 3,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 562,
+		"endLine": 562,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 565,
+		"endLine": 566,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "deviceToAssignTool : InputDevice"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 578,
+		"endLine": 578,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 581,
+		"endLine": 582,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter menu : IMainMenu to menuDeviceTagIndex : int in method private SelectTool(menuDeviceTagIndex int, tool Type) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 556,
+		"endLine": 556,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "menu : IMainMenu"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 561,
+		"endLine": 562,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 29,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "menuDeviceTagIndex : int"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 577,
+		"endLine": 578,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type menu : IMainMenu to menuDeviceTagIndex : int in method private SelectTool(menuDeviceTagIndex int, tool Type) : bool from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 556,
+		"endLine": 556,
+		"startColumn": 26,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "menu : IMainMenu"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 561,
+		"endLine": 562,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 29,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "menuDeviceTagIndex : int"
+}, {
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 577,
+		"endLine": 578,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type IEnumerator to void in method private Start() : void from class MainMenu",
+	"leftSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "IEnumerator"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 147,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : IEnumerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Tools/MainMenu/MainMenu.cs",
+		"startLine": 155,
+		"endLine": 179,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private Start() : void"
+}]
+}
+]
+}]
+}

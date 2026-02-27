@@ -1,0 +1,405 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/concord-consortium/CEASAR.git",
+	"sha1": "715b1ca8841a98e03b64244808641fb47d20f4d1",
+	"url": "https://github.com/concord-consortium/CEASAR/commit/715b1ca8841a98e03b64244808641fb47d20f4d1",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public CleanLastLinePosition() : void renamed to public EndDrawingMode() : void in class AnnotationTool",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CleanLastLinePosition() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 86,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public EndDrawingMode() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private multipointLineDraw(nextPoint Vector3) : void extracted from public Annotate(nextPoint Vector3) : void in class AnnotationTool",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 24,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Annotate(nextPoint Vector3) : void"
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 21,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 17,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 17,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 52,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 56,
+		"endLine": 61,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 53,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 59,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private multipointLineDraw(nextPoint Vector3) : void"
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 65,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 62,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 66,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 63,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 24,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Annotate(nextPoint Vector3) : void"
+}, {
+		"filePath": "Assets/Scripts/AnnotationTool.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "multipointLineDraw(nextPoint)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute SelectedCity : string to StartCity : string in class DataController",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 19,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "SelectedCity : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/DataController.cs",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 19,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "StartCity : string"
+}]
+}
+]
+}]
+}

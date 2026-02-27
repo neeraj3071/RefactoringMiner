@@ -1,0 +1,605 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/14_exception_handling.cs
+Size: 2824 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for exception handling: try, catch, finally, and throw.
+    /// Tests transformation of C# exception handling to Java exception handling.
+    /// </summary>
+    public class ExceptionHandling
+    {
+        // Try-catch block
+        public void BasicTryCatch()
+        {
+            try
+            {
+                int result = 10 / 0;
+            }
+            catch (Exception e)
+            {
+                Co
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/14_exception_handling.cs
+CPatMinerExecutor: Executing CPatMiner transformation (2824 chars)...
+unit [0,0]
+    namespace [0,2823]
+        name: TestFeatures [10,22]
+        block [23,2823]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for exception handling: try, catch, finally, and throw. [70,139]
+            comment: /// Tests transformation of C# exception handling to Java exception handling. [144,221]
+            comment: ///</summary> [226,240]
+            class [245,2821]
+                specifier: public [245,251]
+                name: ExceptionHandling [258,275]
+                block [280,2821]
+                    comment: // Try-catch block [290,308]
+                    function [317,563]
+                        type [317,328]
+                            specifier: public [317,323]
+                            name: void [324,328]
+                        name: BasicTryCatch [329,342]
+                        parameter_list [342,344]
+                        block [353,563]
+                            block_content [354,562]
+                                try [367,553]
+                                    block [383,435]
+                                        block_content [384,434]
+                                            decl_stmt [401,421]
+                                                decl [401,420]
+                                                    type [401,404]
+                                                        name: int [401,404]
+                                                    name: result [405,411]
+                                                    init [412,420]
+                                                        expr [414,420]
+                                                            literal: 10 [414,416]
+                                                            operator: / [417,418]
+                                                            literal: 0 [419,420]
+                                    catch [448,553]
+                                        parameter_list [454,467]
+                                            parameter [455,466]
+                                                decl [455,466]
+                                                    type [455,464]
+                                                        name: Exception [455,464]
+                                                    name: e [465,466]
+                                        block [480,553]
+                                            block_content [481,552]
+                                                expr_stmt [498,539]
+                                                    expr [498,538]
+                                                        call [498,538]
+                                                            name [498,515]
+                                                                name: Console [498,505]
+                                                                operator: . [505,506]
+                                                                name: WriteLine [506,515]
+                                                            argument_list [515,538]
+                                                                argument [516,537]
+                                                                    expr [516,537]
+                                                                        literal: "Error: " [516,525]
+                                                                        operator: + [526,527]
+                                                                        name [528,537]
+                                                                            name: e [528,529]
+                                                                            operator: . [529,530]
+                                                                            name: Message [530,537]
+                    comment: // Try-catch-finally block [581,607]
+                    function [616,1037]
+                        type [616,627]
+                            specifier: public [616,622]
+                            name: void [623,627]
+                        name: TryCatchFinally [628,643]
+                        parameter_list [643,645]
+                        block [654,1037]
+                            block_content [655,1036]
+                                try [668,1027]
+                                    block [684,794]
+                                        block_content [685,793]
+                                            expr_stmt [702,744]
+                                                expr [702,743]
+                                                    call [702,743]
+                                                        name [702,719]
+                                                            name: Console [702,709]
+                                                            operator: . [709,710]
+                                                            name: WriteLine [710,719]
+                                                        argument_list [719,743]
+                                                            argument [720,742]
+                                                                expr [720,742]
+                                                                    literal: "Attempting operation" [720,742]
+                                            expr_stmt [761,780]
+                                                expr [761,779]
+                                                    call [761,779]
+                                                        name: PerformOperation [761,777]
+                                                        argument_list [777,779]
+                                    catch [807,923]
+                                        parameter_list [813,826]
+                                            parameter [814,825]
+                                                decl [814,825]
+                                                    type [814,823]
+                                                        name: Exception [814,823]
+                                                    name: e [824,825]
+                                        block [839,923]
+                                            block_content [840,922]
+                                                expr_stmt [857,909]
+                                                    expr [857,908]
+                                                        call [857,908]
+                                                            name [857,874]
+                                                                name: Console [857,864]
+                                                                operator: . [864,865]
+                                                                name: WriteLine [865,874]
+                                                            argument_list [874,908]
+                                                                argument [875,907]
+                                                                    expr [875,907]
+                                                                        literal: "Operation failed: " [875,895]
+                                                                        operator: + [896,897]
+                                                                        name [898,907]
+                                                                            name: e [898,899]
+                                                                            operator: . [899,900]
+                                                                            name: Message [900,907]
+                                    finally [936,1027]
+                                        block [956,1027]
+                                            block_content [957,1026]
+                                                expr_stmt [974,1013]
+                                                    expr [974,1012]
+                                                        call [974,1012]
+                                                            name [974,991]
+                                                                name: Console [974,981]
+                                                                operator: . [981,982]
+                                                                name: WriteLine [982,991]
+                                                            argument_list [991,1012]
+                                                                argument [992,1011]
+                                                                    expr [992,1011]
+                                                                        literal: "Cleanup completed" [992,1011]
+                    comment: // Multiple catch blocks [1055,1079]
+                    function [1088,1634]
+                        type [1088,1099]
+                            specifier: public [1088,1094]
+                            name: void [1095,1099]
+                        name: MultipleCatchBlocks [1100,1119]
+                        parameter_list [1119,1121]
+                        block [1130,1634]
+                            block_content [1131,1633]
+                                try [1144,1624]
+                                    block [1160,1211]
+                                        block_content [1161,1210]
+                                            expr_stmt [1178,1197]
+                                                expr [1178,1196]
+                                                    call [1178,1196]
+                                                        name: PerformOperation [1178,1194]
+                                                        argument_list [1194,1196]
+                                    catch [1224,1348]
+                                        parameter_list [1230,1252]
+                                            parameter [1231,1251]
+                                                decl [1231,1251]
+                                                    type [1231,1248]
+                                                        name: ArgumentException [1231,1248]
+                                                    name: ae [1249,1251]
+                                        block [1265,1348]
+                                            block_content [1266,1347]
+                                                expr_stmt [1283,1334]
+                                                    expr [1283,1333]
+                                                        call [1283,1333]
+                                                            name [1283,1300]
+                                                                name: Console [1283,1290]
+                                                                operator: . [1290,1291]
+                                                                name: WriteLine [1291,1300]
+                                                            argument_list [1300,1333]
+                                                                argument [1301,1332]
+                                                                    expr [1301,1332]
+                                                                        literal: "Argument error: " [1301,1319]
+                                                                        operator: + [1320,1321]
+                                                                        name [1322,1332]
+                                                                            name: ae [1322,1324]
+                                                                            operator: . [1324,1325]
+                                                                            name: Message [1325,1332]
+                                    catch [1361,1498]
+                                        parameter_list [1367,1398]
+                                            parameter [1368,1397]
+                                                decl [1368,1397]
+                                                    type [1368,1393]
+                                                        name: InvalidOperationException [1368,1393]
+                                                    name: ioe [1394,1397]
+                                        block [1411,1498]
+                                            block_content [1412,1497]
+                                                expr_stmt [1429,1484]
+                                                    expr [1429,1483]
+                                                        call [1429,1483]
+                                                            name [1429,1446]
+                                                                name: Console [1429,1436]
+                                                                operator: . [1436,1437]
+                                                                name: WriteLine [1437,1446]
+                                                            argument_list [1446,1483]
+                                                                argument [1447,1482]
+                                                                    expr [1447,1482]
+                                                                        literal: "Invalid operation: " [1447,1468]
+                                                                        operator: + [1469,1470]
+                                                                        name [1471,1482]
+                                                                            name: ioe [1471,1474]
+                                                                            operator: . [1474,1475]
+                                                                            name: Message [1475,1482]
+                                    catch [1511,1624]
+                                        parameter_list [1517,1530]
+                                            parameter [1518,1529]
+                                                decl [1518,1529]
+                                                    type [1518,1527]
+                                                        name: Exception [1518,1527]
+                                                    name: e [1528,1529]
+                                        block [1543,1624]
+                                            block_content [1544,1623]
+                                                expr_stmt [1561,1610]
+                                                    expr [1561,1609]
+                                                        call [1561,1609]
+                                                            name [1561,1578]
+                                                                name: Console [1561,1568]
+                                                                operator: . [1568,1569]
+                                                                name: WriteLine [1569,1578]
+                                                            argument_list [1578,1609]
+                                                                argument [1579,1608]
+                                                                    expr [1579,1608]
+                                                                        literal: "General error: " [1579,1596]
+                                                                        operator: + [1597,1598]
+                                                                        name [1599,1608]
+                                                                            name: e [1599,1600]
+                                                                            operator: . [1600,1601]
+                                                                            name: Message [1601,1608]
+                    comment: // Throw statement [1652,1670]
+                    function [1679,1788]
+                        type [1679,1690]
+                            specifier: public [1679,1685]
+                            name: void [1686,1690]
+                        name: ThrowException [1691,1705]
+                        parameter_list [1705,1707]
+                        block [1716,1788]
+                            block_content [1717,1787]
+                                throw [1730,1778]
+                                    expr [1736,1777]
+                                        operator: new [1736,1739]
+                                        call [1740,1777]
+                                            name: Exception [1740,1749]
+                                            argument_list [1749,1777]
+                                                argument [1750,1776]
+                                                    expr [1750,1776]
+                                                        literal: "Custom exception message" [1750,1776]
+                    comment: // Throw with condition [1806,1829]
+                    function [1838,2077]
+                        type [1838,1849]
+                            specifier: public [1838,1844]
+                            name: void [1845,1849]
+                        name: ValidateAndThrow [1850,1866]
+                        parameter_list [1866,1880]
+                            parameter [1867,1879]
+                                decl [1867,1879]
+                                    type [1867,1873]
+                                        name: string [1867,1873]
+                                    name: input [1874,1879]
+                        block [1889,2077]
+                            block_content [1890,2076]
+                                if_stmt [1903,2018]
+                                    if [1903,2018]
+                                        condition [1906,1921]
+                                            expr [1907,1920]
+                                                name: input [1907,1912]
+                                                operator: == [1913,1915]
+                                                literal: null [1916,1920]
+                                        block [1934,2018]
+                                            block_content [1935,2017]
+                                                throw [1952,2004]
+                                                    expr [1958,2003]
+                                                        operator: new [1958,1961]
+                                                        call [1962,2003]
+                                                            name: ArgumentException [1962,1979]
+                                                            argument_list [1979,2003]
+                                                                argument [1980,2002]
+                                                                    expr [1980,2002]
+                                                                        literal: "Input cannot be null" [1980,2002]
+                                expr_stmt [2031,2067]
+                                    expr [2031,2066]
+                                        call [2031,2066]
+                                            name [2031,2048]
+                                                name: Console [2031,2038]
+                                                operator: . [2038,2039]
+                                                name: WriteLine [2039,2048]
+                                            argument_list [2048,2066]
+                                                argument [2049,2065]
+                                                    expr [2049,2065]
+                                                        literal: "Input is valid" [2049,2065]
+                    comment: // Method with throws declaration equivalent [2095,2139]
+                    function [2148,2274]
+                        type [2148,2159]
+                            specifier: public [2148,2154]
+                            name: void [2155,2159]
+                        name: PerformOperation [2160,2176]
+                        parameter_list [2176,2178]
+                        block [2187,2274]
+                            block_content [2188,2273]
+                                throw [2201,2264]
+                                    expr [2207,2263]
+                                        operator: new [2207,2210]
+                                        call [2211,2263]
+                                            name: InvalidOperationException [2211,2236]
+                                            argument_list [2236,2263]
+                                                argument [2237,2262]
+                                                    expr [2237,2262]
+                                                        literal: "Operation not supported" [2237,2262]
+                    comment: // Nested try-catch [2292,2311]
+                    function [2320,2815]
+                        type [2320,2331]
+                            specifier: public [2320,2326]
+                            name: void [2327,2331]
+                        name: NestedTryCatch [2332,2346]
+                        parameter_list [2346,2348]
+                        block [2357,2815]
+                            block_content [2358,2814]
+                                try [2371,2805]
+                                    block [2387,2681]
+                                        block_content [2388,2680]
+                                            try [2405,2667]
+                                                block [2425,2484]
+                                                    block_content [2426,2483]
+                                                        expr_stmt [2447,2466]
+                                                            expr [2447,2465]
+                                                                call [2447,2465]
+                                                                    name: PerformOperation [2447,2463]
+                                                                    argument_list [2463,2465]
+                                                catch [2501,2667]
+                                                    parameter_list [2507,2536]
+                                                        parameter [2508,2535]
+                                                            decl [2508,2535]
+                                                                type [2508,2533]
+                                                                    name: InvalidOperationException [2508,2533]
+                                                                name: e [2534,2535]
+                                                    block [2553,2667]
+                                                        block_content [2554,2666]
+                                                            expr_stmt [2575,2622]
+                                                                expr [2575,2621]
+                                                                    call [2575,2621]
+                                                                        name [2575,2592]
+                                                                            name: Console [2575,2582]
+                                                                            operator: . [2582,2583]
+                                                                            name: WriteLine [2583,2592]
+                                                                        argument_list [2592,2621]
+                                                                            argument [2593,2620]
+                                                                                expr [2593,2620]
+                                                                                    literal: "Inner catch: " [2593,2608]
+                                                                                    operator: + [2609,2610]
+                                                                                    name [2611,2620]
+                                                                                        name: e [2611,2612]
+                                                                                        operator: . [2612,2613]
+                                                                                        name: Message [2613,2620]
+                                                            throw [2643,2649]
+                                    catch [2694,2805]
+                                        parameter_list [2700,2713]
+                                            parameter [2701,2712]
+                                                decl [2701,2712]
+                                                    type [2701,2710]
+                                                        name: Exception [2701,2710]
+                                                    name: e [2711,2712]
+                                        block [2726,2805]
+                                            block_content [2727,2804]
+                                                expr_stmt [2744,2791]
+                                                    expr [2744,2790]
+                                                        call [2744,2790]
+                                                            name [2744,2761]
+                                                                name: Console [2744,2751]
+                                                                operator: . [2751,2752]
+                                                                name: WriteLine [2752,2761]
+                                                            argument_list [2761,2790]
+                                                                argument [2762,2789]
+                                                                    expr [2762,2789]
+                                                                        literal: "Outer catch: " [2762,2777]
+                                                                        operator: + [2778,2779]
+                                                                        name [2780,2789]
+                                                                            name: e [2780,2781]
+                                                                            operator: . [2781,2782]
+                                                                            name: Message [2782,2789]
+package TestFeatures;
+public class ExceptionHandling {
+  public Void BasicTryCatch(){
+    try {
+      int result=10 / 0;
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Error: " + e.Message);
+    }
+  }
+  public Void TryCatchFinally(){
+    try {
+      Console.WriteLine("Attempting operation");
+      PerformOperation();
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Operation failed: " + e.Message);
+    }
+ finally {
+      Console.WriteLine("Cleanup completed");
+    }
+  }
+  public Void MultipleCatchBlocks(){
+    try {
+      PerformOperation();
+    }
+ catch (    ArgumentException ae) {
+      Console.WriteLine("Argument error: " + ae.Message);
+    }
+catch (    InvalidOperationException ioe) {
+      Console.WriteLine("Invalid operation: " + ioe.Message);
+    }
+catch (    Exception e) {
+      Console.WriteLine("General error: " + e.Message);
+    }
+  }
+  public Void ThrowException(){
+    throw new Exception("Custom exception message");
+  }
+  public Void ValidateAndThrow(  String input){
+    if (input == "null") {
+      throw new ArgumentException("Input cannot be null");
+    }
+    Console.WriteLine("Input is valid");
+  }
+  public Void PerformOperation(){
+    throw new InvalidOperationException("Operation not supported");
+  }
+  public Void NestedTryCatch(){
+    try {
+      try {
+        PerformOperation();
+      }
+ catch (      InvalidOperationException e) {
+        Console.WriteLine("Inner catch: " + e.Message);
+        throw MISSING;
+      }
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Outer catch: " + e.Message);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 1579 chars
+  - Number of lines: 63
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class ExceptionHandling {
+  public Void BasicTryCatch(){
+    try {
+      int result=10 / 0;
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Error: " + e.Message);
+    }
+  }
+  public Void TryCatchFinally(){
+    try {
+      Console.WriteLine("Attempting operation");
+      PerformOperation();
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Operation failed: " + e.Message);
+    }
+ finally {
+      Console.WriteLine("Cleanup completed");
+    }
+  }
+  public Void MultipleCatchBlocks(){
+    try {
+      PerformOperation();
+    }
+ catch (    ArgumentException ae) {
+      Console.WriteLine("Argument error: " + ae.Message);
+    }
+catch (    InvalidOperationException ioe) {
+      Console.WriteLine("Invalid operation: " + ioe.Message);
+    }
+catch (    Exception e) {
+      Console.WriteLine("General error: " + e.Message);
+    }
+  }
+  public Void ThrowException(){
+    throw new Exception("Custom exception message");
+  }
+  public Void ValidateAndThrow(  String input){
+    if (input == "null") {
+      throw new ArgumentException("Input cannot be null");
+    }
+    Console.WriteLine("Input is valid");
+  }
+  public Void PerformOperation(){
+    throw new InvalidOperationException("Operation not supported");
+  }
+  public Void NestedTryCatch(){
+    try {
+      try {
+        PerformOperation();
+      }
+ catch (      InvalidOperationException e) {
+        Console.WriteLine("Inner catch: " + e.Message);
+        throw MISSING;
+      }
+    }
+ catch (    Exception e) {
+      Console.WriteLine("Outer catch: " + e.Message);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/14_exception_handling.java
+  - File contents size: 1579 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/14_exception_handling.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.ExceptionHandling
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/14_exception_handling.java
+  Operations: 7
+  Attributes: 0
+  Methods:
+    • BasicTryCatch() - 1 param(s)
+    • TryCatchFinally() - 1 param(s)
+    • MultipleCatchBlocks() - 1 param(s)
+    • ThrowException() - 1 param(s)
+    • ValidateAndThrow() - 2 param(s)
+    • PerformOperation() - 1 param(s)
+    • NestedTryCatch() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

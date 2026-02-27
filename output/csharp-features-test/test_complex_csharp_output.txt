@@ -1,0 +1,503 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/test_complex_csharp.cs
+Size: 933 chars
+--- C# Source Content (first 500 chars) ---
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class ComplexTest {
+    public string Name { get; set; }
+    public int? Age { get; set; }
+
+    public void Run(List<string> items) {
+        var filtered = items.Where(s => s?.Length > 1)
+                            .Select(s => s.ToUpper())
+                            .ToList();
+
+        foreach (var item in filtered) {
+            Console.WriteLine(item ?? "empty");
+        }
+
+        var first = items.FirstOrDefault(x
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/test_complex_csharp.cs
+CPatMinerExecutor: Executing CPatMiner transformation (933 chars)...
+unit [0,0]
+    using [0,13]
+        name: System [6,12]
+    using [14,47]
+        name [20,46]
+            name: System [20,26]
+            operator: . [26,27]
+            name: Collections [27,38]
+            operator: . [38,39]
+            name: Generic [39,46]
+    using [48,66]
+        name [54,65]
+            name: System [54,60]
+            operator: . [60,61]
+            name: Linq [61,65]
+    class [68,932]
+        specifier: public [68,74]
+        name: ComplexTest [81,92]
+        block [93,932]
+            property [99,131]
+                type [99,112]
+                    specifier: public [99,105]
+                    name: string [106,112]
+                name: Name [113,117]
+                block [118,131]
+                    function_decl [120,124]
+                        name: get [120,123]
+                    function_decl [125,129]
+                        name: set [125,128]
+            property [136,165]
+                type [136,147]
+                    specifier: public [136,142]
+                    name: int [143,146]
+                    modifier: ? [146,147]
+                name: Age [148,151]
+                block [152,165]
+                    function_decl [154,158]
+                        name: get [154,157]
+                    function_decl [159,163]
+                        name: set [159,162]
+            function [171,930]
+                type [171,182]
+                    specifier: public [171,177]
+                    name: void [178,182]
+                name: Run [183,186]
+                parameter_list [186,206]
+                    parameter [187,205]
+                        decl [187,205]
+                            type [187,199]
+                                name [187,199]
+                                    name: List [187,191]
+                                    argument_list [191,199]
+                                        argument [192,198]
+                                            name: string [192,198]
+                            name: items [200,205]
+                block [207,930]
+                    block_content [208,929]
+                        decl_stmt [217,356]
+                            decl [217,355]
+                                type [217,220]
+                                    name: var [217,220]
+                                name: filtered [221,229]
+                                init [230,355]
+                                    expr [232,355]
+                                        call [232,263]
+                                            name [232,243]
+                                                name: items [232,237]
+                                                operator: . [237,238]
+                                                name: Where [238,243]
+                                            argument_list [243,263]
+                                                argument [244,262]
+                                                    expr [244,262]
+                                                        ternary [244,262]
+                                                            condition [244,262]
+                                                                expr [244,262]
+                                                                    lambda [244,262]
+                                                                        parameter_list [244,245]
+                                                                            parameter [244,245]
+                                                                                decl [244,245]
+                                                                                    name: s [244,245]
+                                                                        block [248,262]
+                                                                            block_content [248,262]
+                                                                                expr [249,262]
+                                                                                    ternary [249,262]
+                                                                                        condition [249,251]
+                                                                                            expr [249,250]
+                                                                                                name: s [249,250]
+                                                                                        then [251,262]
+                                                                                            expr [251,262]
+                                                                                                operator: . [251,252]
+                                                                                                name: Length [252,258]
+                                                                                                operator: > [259,260]
+                                                                                                literal: 1 [261,262]
+                                        operator: . [292,293]
+                                        call [293,317]
+                                            name: Select [293,299]
+                                            argument_list [299,317]
+                                                argument [300,316]
+                                                    expr [300,316]
+                                                        lambda [300,316]
+                                                            parameter_list [300,301]
+                                                                parameter [300,301]
+                                                                    decl [300,301]
+                                                                        name: s [300,301]
+                                                            block [304,316]
+                                                                block_content [304,316]
+                                                                    expr [305,316]
+                                                                        call [305,316]
+                                                                            name [305,314]
+                                                                                name: s [305,306]
+                                                                                operator: . [306,307]
+                                                                                name: ToUpper [307,314]
+                                                                            argument_list [314,316]
+                                        operator: . [346,347]
+                                        call [347,355]
+                                            name: ToList [347,353]
+                                            argument_list [353,355]
+                        foreach [366,456]
+                            control [374,396]
+                                init [375,395]
+                                    decl [375,395]
+                                        type [375,378]
+                                            name: var [375,378]
+                                        name: item [379,383]
+                                        range [384,395]
+                                            expr [387,395]
+                                                name: filtered [387,395]
+                            block [397,456]
+                                block_content [398,455]
+                                    expr_stmt [411,446]
+                                        expr [411,445]
+                                            call [411,445]
+                                                name [411,428]
+                                                    name: Console [411,418]
+                                                    operator: . [418,419]
+                                                    name: WriteLine [419,428]
+                                                argument_list [428,445]
+                                                    argument [429,444]
+                                                        expr [429,444]
+                                                            name: item [429,433]
+                                                            operator: ?? [434,436]
+                                                            literal: "empty" [437,444]
+                        decl_stmt [466,538]
+                            decl [466,537]
+                                type [466,469]
+                                    name: var [466,469]
+                                name: first [470,475]
+                                init [476,537]
+                                    expr [478,537]
+                                        call [478,537]
+                                            name [478,498]
+                                                name: items [478,483]
+                                                operator: . [483,484]
+                                                name: FirstOrDefault [484,498]
+                                            argument_list [498,537]
+                                                argument [499,536]
+                                                    expr [499,536]
+                                                        lambda [499,536]
+                                                            parameter_list [499,500]
+                                                                parameter [499,500]
+                                                                    decl [499,500]
+                                                                        name: x [499,500]
+                                                            block [503,536]
+                                                                block_content [503,536]
+                                                                    expr [504,536]
+                                                                        name: x [504,505]
+                                                                        operator: is [506,508]
+                                                                        name: not [509,512]
+                                                                        literal: null [513,517]
+                                                                        operator: && [518,520]
+                                                                        call [521,536]
+                                                                            name [521,531]
+                                                                                name: x [521,522]
+                                                                                operator: . [522,523]
+                                                                                name: Contains [523,531]
+                                                                            argument_list [531,536]
+                                                                                argument [532,535]
+                                                                                    expr [532,535]
+                                                                                        literal: "a" [532,535]
+                        decl_stmt [547,572]
+                            decl [547,571]
+                                type [547,550]
+                                    name: var [547,550]
+                                name: tuple [551,556]
+                                init [557,571]
+                                    expr [559,571]
+                                        operator: ( [559,560]
+                                        name: x [560,561]
+                                        operator: : [561,562]
+                                        literal: 1 [563,564]
+                                        name: y [566,567]
+                                        operator: : [567,568]
+                                        literal: 2 [569,570]
+                                        operator: ) [570,571]
+                        expr_stmt [581,600]
+                            expr [581,599]
+                                name: var [581,584]
+                                operator: ( [585,586]
+                                name: a [586,587]
+                                operator: , [587,588]
+                                name: b [589,590]
+                                operator: ) [590,591]
+                                operator: = [592,593]
+                                name: tuple [594,599]
+                        decl_stmt [610,663]
+                            decl [610,662]
+                                type [610,613]
+                                    name: var [610,613]
+                                name: dict [614,618]
+                                init [619,662]
+                                    expr [621,662]
+                                        operator: new [621,624]
+                                        name [625,648]
+                                            name: Dictionary [625,635]
+                                            argument_list [635,648]
+                                                argument [636,642]
+                                                    name: string [636,642]
+                                                argument [644,647]
+                                                    name: int [644,647]
+                                        block [649,662]
+                                            expr [651,660]
+                                                index [651,656]
+                                                    expr [652,655]
+                                                        literal: "a" [652,655]
+                                                operator: = [657,658]
+                                                literal: 1 [659,660]
+                        macro [672,676]
+                            name: dict [672,676]
+                        expr_stmt [676,709]
+                            expr [676,708]
+                                operator: . [676,677]
+                                macro [677,708]
+                                    name: TryGetValue [677,688]
+                                    argument_list [688,708]
+                                        argument [689,692]
+                                            literal: "a" [689,692]
+                                        argument [694,707]
+                        decl_stmt [719,749]
+                            decl [719,748]
+                                type [719,733]
+                                    name [719,733]
+                                        name: Func [719,723]
+                                        argument_list [723,733]
+                                            argument [724,727]
+                                                name: int [724,727]
+                                            argument [729,732]
+                                                name: int [729,732]
+                                name: f [734,735]
+                                init [736,748]
+                                    expr [738,748]
+                                        lambda [738,748]
+                                            parameter_list [738,739]
+                                                parameter [738,739]
+                                                    decl [738,739]
+                                                        name: x [738,739]
+                                            block [742,748]
+                                                block_content [742,748]
+                                                    expr [743,748]
+                                                        name: x [743,744]
+                                                        operator: * [745,746]
+                                                        literal: 2 [747,748]
+                        decl_stmt [758,777]
+                            decl [758,776]
+                                type [758,761]
+                                    name: var [758,761]
+                                name: result [762,768]
+                                init [769,776]
+                                    expr [771,776]
+                                        call [771,776]
+                                            name: f [771,772]
+                                            argument_list [772,776]
+                                                argument [773,775]
+                                                    expr [773,775]
+                                                        literal: 21 [773,775]
+                        decl_stmt [787,888]
+                            decl [787,887]
+                                type [787,790]
+                                    name: var [787,790]
+                                name: query [791,796]
+                                init [797,887]
+                                    expr [799,887]
+                                        linq [799,887]
+                                            from [799,814]
+                                                expr [804,805]
+                                                    name: s [804,805]
+                                                in [806,814]
+                                                    expr [809,814]
+                                                        name: items [809,814]
+                                            where [835,858]
+                                                expr [841,858]
+                                                    call [841,858]
+                                                        name [841,853]
+                                                            name: s [841,842]
+                                                            operator: . [842,843]
+                                                            name: StartsWith [843,853]
+                                                        argument_list [853,858]
+                                                            argument [854,857]
+                                                                expr [854,857]
+                                                                    literal: "a" [854,857]
+                                            select [879,887]
+                                                expr [886,887]
+                                                    name: s [886,887]
+                        decl_stmt [898,924]
+                            decl [898,923]
+                                type [898,901]
+                                    name: var [898,901]
+                                name: count [902,907]
+                                init [908,923]
+                                    expr [910,923]
+                                        call [910,923]
+                                            name [910,921]
+                                                name: query [910,915]
+                                                operator: . [915,916]
+                                                name: Count [916,921]
+                                            argument_list [921,923]
+[VAR INFERENCE] Detected var type for variable: filtered
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: InfixExpression = items.Where((Object s) -> s != null ? s.Length : null ? MISSING : MISSING) + Select((Object s) -> s.ToUpper()) + ToList()
+[VAR INFERENCE] SUCCESS - Inferred type: int
+[VAR INFERENCE] Detected var type for variable: first
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = items.FirstOrDefault((Object x) -> x + not + x.Contains("a"))
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+[VAR INFERENCE] Detected var type for variable: tuple
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: InfixExpression = x + 1 + y + 2
+[VAR INFERENCE] SUCCESS - Inferred type: int
+[VAR INFERENCE] Detected var type for variable: dict
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: ArrayCreation = new int[]{MISSING=1}
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+[VAR INFERENCE] Detected var type for variable: result
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = f(21)
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+[VAR INFERENCE] Detected var type for variable: query
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = from((Object s) -> items).where(s.StartsWith("a")).select(s)
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+[VAR INFERENCE] Detected var type for variable: count
+[VAR INFERENCE] Original type: Var
+[VAR INFERENCE] Initializer: MethodInvocation = query.Count()
+[VAR INFERENCE] SUCCESS - Inferred type: Object
+import System;
+import System;
+import System.Linq;
+public class ComplexTest {
+  public String Name;
+  void get();
+  void set();
+  public int Age;
+  void get();
+  void set();
+  public Void Run(  List<String> items){
+    int filtered=items.Where((    Object s) -> s != null ? s.Length : null ? MISSING : MISSING) + Select((    Object s) -> s.ToUpper()) + ToList();
+    for (    Object item : filtered) {
+      Console.WriteLine(item != null ? item : "empty");
+    }
+    Object first=items.FirstOrDefault((    Object x) -> x + not + x.Contains("a"));
+    int tuple=x + 1 + y + 2;
+    var + (a + b);
+    Object dict=new int[]{MISSING=1};
+    MISSING + MISSING;
+    Func<Integer,Integer> f=(    Object x) -> x * 2;
+    Object result=f(21);
+    Object query=from((    Object s) -> items).where(s.StartsWith("a")).select(s);
+    Object count=query.Count();
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: false
+  - Number of imports: 3
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 855 chars
+  - Number of lines: 26
+
+=== Generated Java Code (Full Output) ===
+import System;
+import System;
+import System.Linq;
+public class ComplexTest {
+  public String Name;
+  void get();
+  void set();
+  public int Age;
+  void get();
+  void set();
+  public Void Run(  List<String> items){
+    int filtered=items.Where((    Object s) -> s != null ? s.Length : null ? MISSING : MISSING) + Select((    Object s) -> s.ToUpper()) + ToList();
+    for (    Object item : filtered) {
+      Console.WriteLine(item != null ? item : "empty");
+    }
+    Object first=items.FirstOrDefault((    Object x) -> x + not + x.Contains("a"));
+    int tuple=x + 1 + y + 2;
+    var + (a + b);
+    Object dict=new int[]{MISSING=1};
+    MISSING + MISSING;
+    Func<Integer,Integer> f=(    Object x) -> x * 2;
+    Object result=f(21);
+    Object query=from((    Object s) -> items).where(s.StartsWith("a")).select(s);
+    Object count=query.Count();
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/test_complex_csharp.java
+  - File contents size: 855 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/test_complex_csharp.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: ComplexTest
+  Type: Class
+  Package: 
+  Source file: tests/test_complex_csharp.java
+  Operations: 5
+  Attributes: 2
+  Fields:
+    • String Name
+    • int Age
+  Methods:
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • get() - 1 param(s)
+    • set() - 1 param(s)
+    • Run() - 2 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================

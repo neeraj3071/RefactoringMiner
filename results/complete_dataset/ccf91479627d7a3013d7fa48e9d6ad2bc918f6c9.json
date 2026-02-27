@@ -1,0 +1,354 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/mhwlng/fip-elite.git",
+	"sha1": "ccf91479627d7a3013d7fa48e9d6ad2bc918f6c9",
+	"url": "https://github.com/mhwlng/fip-elite/commit/ccf91479627d7a3013d7fa48e9d6ad2bc918f6c9",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public GetCurrentShip() : ShipData extracted from public HandleShipDocked(starSystem string, stationName string) : void in class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 237,
+		"endLine": 250,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 241,
+		"endLine": 242,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 314,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public HandleShipDocked(starSystem string, stationName string) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetCurrentShip()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public GetCurrentShip() : ShipData extracted from public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void in class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 252,
+		"endLine": 261,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 254,
+		"endLine": 255,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 304,
+		"endLine": 312,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public HandleShipyardNew(info ShipyardNewEvent.ShipyardNewEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetCurrentShip()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public GetCurrentShip() : ShipData extracted from public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void in class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 279,
+		"endLine": 305,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 281,
+		"endLine": 282,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 275,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public HandleShipyardSwap(info ShipyardSwapEvent.ShipyardSwapEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetCurrentShip()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public GetCurrentShip() : ShipData extracted from public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void in class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 325,
+		"endLine": 344,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 327,
+		"endLine": 328,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetCurrentShip() : ShipData"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 369,
+		"endLine": 402,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public HandleLoadout(info LoadoutEvent.LoadoutEventArgs) : void"
+}, {
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetCurrentShip()"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter addremove : int in method private UpdateCargoCapacity(item string, addremove int) : int from class EliteData",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 576,
+		"endLine": 576,
+		"startColumn": 61,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "addremove : int"
+}, {
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 576,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateCargoCapacity(item string, addremove int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 355,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public UpdateCargoCapacity(item string) : int from class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 576,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateCargoCapacity(item string, addremove int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 355,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private UpdateCargoCapacity(item string, addremove int) : int from class EliteData to public UpdateCargoCapacity(item string) : int from class EliteHistory.UnsafeNativeMethods",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 576,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateCargoCapacity(item string, addremove int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteHistory.cs",
+		"startLine": 355,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public UpdateCargoCapacity(item string) : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public FuelCapacity : double from class EliteData.Status to public FuelCapacity : double from class EliteData.Ship",
+	"leftSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 496,
+		"endLine": 496,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public FuelCapacity : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "Elite/EliteData.cs",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public FuelCapacity : double"
+}]
+}
+]
+}]
+}

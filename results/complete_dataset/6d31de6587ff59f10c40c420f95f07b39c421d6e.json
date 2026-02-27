@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "6d31de6587ff59f10c40c420f95f07b39c421d6e",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/6d31de6587ff59f10c40c420f95f07b39c421d6e",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute m_SmoothCamera : VRSmoothCamera to m_PreviewCamera : IPreviewCamera in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_SmoothCamera : VRSmoothCamera"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "m_PreviewCamera : IPreviewCamera"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type m_SmoothCamera : VRSmoothCamera to m_PreviewCamera : IPreviewCamera in class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "m_SmoothCamera : VRSmoothCamera"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.cs",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "m_PreviewCamera : IPreviewCamera"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kPullBackDistance : float in method package LateUpdate() : void from class VRSmoothCamera",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Helpers/VRSmoothCamera.cs",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Helpers/VRSmoothCamera.cs",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 16,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kPullBackDistance : float"
+}, {
+		"filePath": "Scripts/Helpers/VRSmoothCamera.cs",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 4,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

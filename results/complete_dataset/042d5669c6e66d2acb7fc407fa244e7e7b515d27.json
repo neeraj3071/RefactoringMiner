@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/iamtomhewitt/jet-dash-vr.git",
+	"sha1": "042d5669c6e66d2acb7fc407fa244e7e7b515d27",
+	"url": "https://github.com/iamtomhewitt/jet-dash-vr/commit/042d5669c6e66d2acb7fc407fa244e7e7b515d27",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public IsLandScape() : bool extracted from public ShowRateMePopupIfAllowed() : void in class RateMePopupManager & moved to class ScreenManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Managers/RateMePopupManager.cs",
+		"startLine": 39,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public ShowRateMePopupIfAllowed() : void"
+}, {
+		"filePath": "Assets/Scripts/Managers/RateMePopupManager.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Managers/ScreenManager.cs",
+		"startLine": 20,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public IsLandScape() : bool"
+}, {
+		"filePath": "Assets/Scripts/Managers/ScreenManager.cs",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Managers/RateMePopupManager.cs",
+		"startLine": 39,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public ShowRateMePopupIfAllowed() : void"
+}, {
+		"filePath": "Assets/Scripts/Managers/RateMePopupManager.cs",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ScreenManager.IsLandScape()"
+}]
+}
+]
+}]
+}

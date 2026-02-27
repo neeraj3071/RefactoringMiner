@@ -1,0 +1,267 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/InputSystem.git",
+	"sha1": "02e8b036a85a7345d615285414119189b1a14875",
+	"url": "https://github.com/Unity-Technologies/InputSystem/commit/02e8b036a85a7345d615285414119189b1a14875",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public SaveAsset(serializedAsset SerializedObject) : void renamed to private HasAssetChanged(serializedAsset SerializedObject) : bool in class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 136,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SaveAsset(serializedAsset SerializedObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private HasAssetChanged(serializedAsset SerializedObject) : bool"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable assetJson : var to newAssetJson : var in method private HasAssetChanged(serializedAsset SerializedObject) : bool from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "assetJson : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "newAssetJson : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to bool in method private HasAssetChanged(serializedAsset SerializedObject) : bool from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 136,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SaveAsset(serializedAsset SerializedObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "bool"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private HasAssetChanged(serializedAsset SerializedObject) : bool"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private HasAssetChanged(serializedAsset SerializedObject) : bool from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 136,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SaveAsset(serializedAsset SerializedObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private HasAssetChanged(serializedAsset SerializedObject) : bool"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public SaveAsset(serializedAsset SerializedObject) : void from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 136,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SaveAsset(serializedAsset SerializedObject) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private HasAssetChanged(serializedAsset SerializedObject) : bool"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute existingJson : var to m_AssetJson : string in method private HasAssetChanged(serializedAsset SerializedObject) : bool from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "existingJson : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "m_AssetJson : string"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type existingJson : var to m_AssetJson : string in method private HasAssetChanged(serializedAsset SerializedObject) : bool from class InputActionsEditorWindow",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "existingJson : var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "m_AssetJson : string"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/InputSystem/Editor/UITKAssetEditor/InputActionsEditorWindow.cs",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

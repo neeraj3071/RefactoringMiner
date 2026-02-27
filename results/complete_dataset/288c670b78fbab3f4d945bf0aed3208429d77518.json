@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PKBeam/Edda.git",
+	"sha1": "288c670b78fbab3f4d945bf0aed3208429d77518",
+	"url": "https://github.com/PKBeam/Edda/commit/288c670b78fbab3f4d945bf0aed3208429d77518",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter bpmChange : var to note : var in method package foreach(note var) from class NoteSelection",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Note/NoteSelection.cs",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bpmChange : var"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Note/NoteSelection.cs",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "note : var"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private GetLastBeatChange(beat double) from class NoteSelection",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Note/NoteSelection.cs",
+		"startLine": 124,
+		"endLine": 128,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GetLastBeatChange(beat double)"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Note/NoteSelection.cs",
+		"startLine": 147,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetLastBeatChange(beat double)"
+}]
+}
+]
+}]
+}

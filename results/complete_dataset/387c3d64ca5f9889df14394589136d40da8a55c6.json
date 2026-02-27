@@ -1,0 +1,909 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gompocp/VRChatMods.git",
+	"sha1": "387c3d64ca5f9889df14394589136d40da8a55c6",
+	"url": "https://github.com/gompocp/VRChatMods/commit/387c3d64ca5f9889df14394589136d40da8a55c6",
+	"refactorings": [{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute timer : var to Stopwatch : readonly in method public UpdateDirectories() : void from class CacheManager",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timer : var"
+}, {
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "Stopwatch : readonly"
+}, {
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type timer : var to Stopwatch : readonly in method public UpdateDirectories() : void from class CacheManager",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "timer : var"
+}, {
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "Stopwatch : readonly"
+}, {
+		"filePath": "WorldPredownload/Cache/CacheManager.cs",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_STATUS_NAME : string to STATUS_NAME : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_STATUS_NAME : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "STATUS_NAME : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_STATUS_IDLE_TEXT : string to STATUS_IDLE_TEXT : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 29,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_STATUS_IDLE_TEXT : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 29,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "STATUS_IDLE_TEXT : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_ERROR_TITLE : string to ERROR_TITLE : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_ERROR_TITLE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 29,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ERROR_TITLE : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_ERROR_MSG : string to ERROR_MSG : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 95,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_ERROR_MSG : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 29,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ERROR_MSG : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_SUCCESS_TITLE : string to SUCCESS_TITLE : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 29,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_SUCCESS_TITLE : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SUCCESS_TITLE : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_SUCCESS_MSG : string to SUCCESS_MSG : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 32,
+		"endLine": 33,
+		"startColumn": 29,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_SUCCESS_MSG : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 32,
+		"endLine": 33,
+		"startColumn": 29,
+		"endColumn": 94,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SUCCESS_MSG : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_SUCCESS_LEFT_BTN_TEXT : string to SUCCESS_LEFT_BTN_TEXT : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 29,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_SUCCESS_LEFT_BTN_TEXT : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 29,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SUCCESS_LEFT_BTN_TEXT : string"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_SUCCESS_LEFT_BTN_TEXT_F : string to SUCCESS_LEFT_BTN_TEXT_F : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 29,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_SUCCESS_LEFT_BTN_TEXT_F : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 29,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SUCCESS_LEFT_BTN_TEXT_F : string"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ApiWorld : ApiWorld to apiWorld : ApiWorld in method public DownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ApiWorld : ApiWorld"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "apiWorld : ApiWorld"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter InstanceIDTags : string to instanceIDTags : string in method public DownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "InstanceIDTags : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "instanceIDTags : string"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter DownloadType : DownloadType to downloadType : DownloadType in method public DownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "DownloadType : DownloadType"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "downloadType : DownloadType"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter PageUserInfo : PageUserInfo to pageUserInfo : PageUserInfo in method public DownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "PageUserInfo : PageUserInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "pageUserInfo : PageUserInfo"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ApiWorld : ApiWorld to apiWorld : ApiWorld in method public CreateUserPageDownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) : DownloadInfo from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ApiWorld : ApiWorld"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "apiWorld : ApiWorld"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter InstanceIDTags : string to instanceIDTags : string in method public CreateUserPageDownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) : DownloadInfo from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "InstanceIDTags : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "instanceIDTags : string"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter DownloadType : DownloadType to downloadType : DownloadType in method public CreateUserPageDownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) : DownloadInfo from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "DownloadType : DownloadType"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "downloadType : DownloadType"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter PageUserInfo : PageUserInfo to pageUserInfo : PageUserInfo in method public CreateUserPageDownloadInfo(apiWorld ApiWorld, instanceIDTags string, downloadType DownloadType, pageUserInfo PageUserInfo) : DownloadInfo from class DownloadInfo",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "PageUserInfo : PageUserInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/DownloadManager/DownloadInfo.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "pageUserInfo : PageUserInfo"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public isInSameWorld(user APIUser) : bool renamed to public IsInSameWorld(user APIUser) : bool in class Utilities",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Helpers/Utilities.cs",
+		"startLine": 107,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isInSameWorld(user APIUser) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Helpers/Utilities.cs",
+		"startLine": 107,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public IsInSameWorld(user APIUser) : bool"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private checkXrefNoStrings(m MethodBase) : bool renamed to private CheckXrefNoStrings(m MethodBase) : bool in class XRefUtils",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Helpers/XRefUtils.cs",
+		"startLine": 39,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkXrefNoStrings(m MethodBase) : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Helpers/XRefUtils.cs",
+		"startLine": 39,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private CheckXrefNoStrings(m MethodBase) : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Instance : MelonMod to instance : MelonMod in class WorldPredownload",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Main.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 33,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Instance : MelonMod"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Main.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 33,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "instance : MelonMod"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute selectedNotification : Notification to SelectedNotification : Notification in class NotificationMoreActions",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Patches.cs",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 36,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "selectedNotification : Notification"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Patches.cs",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 36,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SelectedNotification : Notification"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute onClick : Action to ONClick : Action in class FriendButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "onClick : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ONClick : Action"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute button : GameObject to Button : GameObject in class FriendButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "button : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Button : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute initialised : bool to Initialised : bool in class FriendButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "initialised : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Initialised : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute canChangeText : bool to CanChangeText : bool in class FriendButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "canChangeText : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/FriendButton.cs",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "CanChangeText : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Heavy : Image to heavy : Image in class HudIcon",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/HudIcon.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Heavy : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/HudIcon.cs",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "heavy : Image"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute onClick : Action to ONClick : Action in class InviteButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "onClick : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ONClick : Action"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute button : GameObject to Button : GameObject in class InviteButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "button : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Button : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute canChangeText : bool to CanChangeText : bool in class InviteButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "canChangeText : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/InviteButton.cs",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "CanChangeText : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute onClick : Action to ONClick : Action in class WorldButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "onClick : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ONClick : Action"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute button : GameObject to Button : GameObject in class WorldButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "button : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Button : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute initialised : bool to Initialised : bool in class WorldButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "initialised : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Initialised : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute canChangeText : bool to CanChangeText : bool in class WorldButton",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "canChangeText : bool"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldButton.cs",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "CanChangeText : bool"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute gameObject : GameObject to GameObject : GameObject in class WorldDownloadStatus",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldDownloadStatus.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "gameObject : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/UI/WorldDownloadStatus.cs",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "GameObject : GameObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DOWNLOAD_SUCCESS_RIGHT_BTN_TEXT : string to SUCCESS_RIGHT_BTN_TEXT : string in class Constants",
+	"leftSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DOWNLOAD_SUCCESS_RIGHT_BTN_TEXT : string"
+}],
+	"rightSideLocations": [{
+		"filePath": "WorldPredownload/Constants.cs",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SUCCESS_RIGHT_BTN_TEXT : string"
+}]
+}
+]
+}]
+}

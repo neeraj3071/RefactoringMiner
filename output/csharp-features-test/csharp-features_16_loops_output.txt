@@ -1,0 +1,700 @@
+=== C# to UMLModel Flow Debugger ===
+
+STEP 1: Read C# Source
+File: tests/csharp-features/16_loops.cs
+Size: 2755 chars
+--- C# Source Content (first 500 chars) ---
+namespace TestFeatures
+{
+    using System;
+    
+    /// <summary>
+    /// Test case for loop statements: while, do-while, for, and foreach.
+    /// Tests transformation of C# loops to Java loops.
+    /// </summary>
+    public class Loops
+    {
+        // Basic while loop
+        public void BasicWhileLoop()
+        {
+            int counter = 0;
+            while (counter < 5)
+            {
+                Console.WriteLine("Counter: " + counter);
+                counter++;
+            }
+       
+... (truncated)
+-------------------------------------------
+
+STEP 2: Transform C# to Java CompilationUnit AST
+>>> Calling CPatMinerExecutor.transformCSharpToJavaAST() <<<
+CPatMinerExecutor: Initializing CPatMiner integration...
+CPatMinerExecutor: Loading CPatMiner JAR from: /Users/neerajsaini/Documents/VR Research/RefactoringMiner/CPatMinerV2/AtomicASTChangeMining/target/AtomicASTChangeMining-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+CPatMinerExecutor: Created classloader with parent: jdk.internal.loader.ClassLoaders$AppClassLoader
+CPatMinerExecutor: Loaded Transformation class
+CPatMinerExecutor: Found transform_csharp_to_java method
+CPatMinerExecutor: Successfully initialized CPatMiner integration
+CPatMinerExecutor: Transforming C# file to Java AST: tests/csharp-features/16_loops.cs
+CPatMinerExecutor: Executing CPatMiner transformation (2755 chars)...
+unit [0,0]
+    namespace [0,2754]
+        name: TestFeatures [10,22]
+        block [23,2754]
+            using [29,42]
+                name: System [35,41]
+            comment: ///<summary> [52,65]
+            comment: /// Test case for loop statements: while, do-while, for, and foreach. [70,139]
+            comment: /// Tests transformation of C# loops to Java loops. [144,195]
+            comment: ///</summary> [200,214]
+            class [219,2752]
+                specifier: public [219,225]
+                name: Loops [232,237]
+                block [242,2752]
+                    comment: // Basic while loop [252,271]
+                    function [280,502]
+                        type [280,291]
+                            specifier: public [280,286]
+                            name: void [287,291]
+                        name: BasicWhileLoop [292,306]
+                        parameter_list [306,308]
+                        block [317,502]
+                            block_content [318,501]
+                                decl_stmt [331,347]
+                                    decl [331,346]
+                                        type [331,334]
+                                            name: int [331,334]
+                                        name: counter [335,342]
+                                        init [343,346]
+                                            expr [345,346]
+                                                literal: 0 [345,346]
+                                while [360,492]
+                                    condition [366,379]
+                                        expr [367,378]
+                                            name: counter [367,374]
+                                            operator: < [375,376]
+                                            literal: 5 [377,378]
+                                    block [392,492]
+                                        block_content [393,491]
+                                            expr_stmt [410,451]
+                                                expr [410,450]
+                                                    call [410,450]
+                                                        name [410,427]
+                                                            name: Console [410,417]
+                                                            operator: . [417,418]
+                                                            name: WriteLine [418,427]
+                                                        argument_list [427,450]
+                                                            argument [428,449]
+                                                                expr [428,449]
+                                                                    literal: "Counter: " [428,439]
+                                                                    operator: + [440,441]
+                                                                    name: counter [442,449]
+                                            expr_stmt [468,478]
+                                                expr [468,477]
+                                                    name: counter [468,475]
+                                                    operator: ++ [475,477]
+                    comment: // While loop with complex condition [520,556]
+                    function [565,783]
+                        type [565,576]
+                            specifier: public [565,571]
+                            name: void [572,576]
+                        name: WhileLoopWithCondition [577,599]
+                        parameter_list [599,608]
+                            parameter [600,607]
+                                decl [600,607]
+                                    type [600,603]
+                                        name: int [600,603]
+                                    name: max [604,607]
+                        block [617,783]
+                            block_content [618,782]
+                                decl_stmt [631,641]
+                                    decl [631,640]
+                                        type [631,634]
+                                            name: int [631,634]
+                                        name: i [635,636]
+                                        init [637,640]
+                                            expr [639,640]
+                                                literal: 0 [639,640]
+                                while [654,773]
+                                    condition [660,680]
+                                        expr [661,679]
+                                            name: i [661,662]
+                                            operator: < [663,664]
+                                            name: max [665,668]
+                                            operator: && [669,671]
+                                            name: i [672,673]
+                                            operator: < [674,675]
+                                            literal: 100 [676,679]
+                                    block [693,773]
+                                        block_content [694,772]
+                                            expr_stmt [711,721]
+                                                expr [711,720]
+                                                    name: i [711,712]
+                                                    operator: = [713,714]
+                                                    name: i [715,716]
+                                                    operator: + [717,718]
+                                                    literal: 2 [719,720]
+                                            expr_stmt [738,759]
+                                                expr [738,758]
+                                                    call [738,758]
+                                                        name [738,755]
+                                                            name: Console [738,745]
+                                                            operator: . [745,746]
+                                                            name: WriteLine [746,755]
+                                                        argument_list [755,758]
+                                                            argument [756,757]
+                                                                expr [756,757]
+                                                                    name: i [756,757]
+                    comment: // Do-while loop [801,817]
+                    function [826,1049]
+                        type [826,837]
+                            specifier: public [826,832]
+                            name: void [833,837]
+                        name: DoWhileLoop [838,849]
+                        parameter_list [849,851]
+                        block [860,1049]
+                            block_content [861,1048]
+                                decl_stmt [874,890]
+                                    decl [874,889]
+                                        type [874,877]
+                                            name: int [874,877]
+                                        name: counter [878,885]
+                                        init [886,889]
+                                            expr [888,889]
+                                                literal: 0 [888,889]
+                                do [903,1039]
+                                    block [918,1018]
+                                        block_content [919,1017]
+                                            expr_stmt [936,977]
+                                                expr [936,976]
+                                                    call [936,976]
+                                                        name [936,953]
+                                                            name: Console [936,943]
+                                                            operator: . [943,944]
+                                                            name: WriteLine [944,953]
+                                                        argument_list [953,976]
+                                                            argument [954,975]
+                                                                expr [954,975]
+                                                                    literal: "Counter: " [954,965]
+                                                                    operator: + [966,967]
+                                                                    name: counter [968,975]
+                                            expr_stmt [994,1004]
+                                                expr [994,1003]
+                                                    name: counter [994,1001]
+                                                    operator: ++ [1001,1003]
+                                    condition [1025,1038]
+                                        expr [1026,1037]
+                                            name: counter [1026,1033]
+                                            operator: < [1034,1035]
+                                            literal: 5 [1036,1037]
+                    comment: // Do-while with single execution [1067,1100]
+                    function [1109,1324]
+                        type [1109,1120]
+                            specifier: public [1109,1115]
+                            name: void [1116,1120]
+                        name: DoWhileOnce [1121,1132]
+                        parameter_list [1132,1134]
+                        block [1143,1324]
+                            block_content [1144,1323]
+                                decl_stmt [1157,1172]
+                                    decl [1157,1171]
+                                        type [1157,1160]
+                                            name: int [1157,1160]
+                                        name: value [1161,1166]
+                                        init [1167,1171]
+                                            expr [1169,1171]
+                                                literal: 10 [1169,1171]
+                                do [1185,1314]
+                                    block [1200,1294]
+                                        block_content [1201,1293]
+                                            expr_stmt [1218,1255]
+                                                expr [1218,1254]
+                                                    call [1218,1254]
+                                                        name [1218,1235]
+                                                            name: Console [1218,1225]
+                                                            operator: . [1225,1226]
+                                                            name: WriteLine [1226,1235]
+                                                        argument_list [1235,1254]
+                                                            argument [1236,1253]
+                                                                expr [1236,1253]
+                                                                    literal: "Value: " [1236,1245]
+                                                                    operator: + [1246,1247]
+                                                                    name: value [1248,1253]
+                                            expr_stmt [1272,1280]
+                                                expr [1272,1279]
+                                                    name: value [1272,1277]
+                                                    operator: ++ [1277,1279]
+                                    condition [1301,1313]
+                                        expr [1302,1312]
+                                            name: value [1302,1307]
+                                            operator: < [1308,1309]
+                                            literal: 10 [1310,1312]
+                    comment: // For loop [1342,1353]
+                    function [1362,1531]
+                        type [1362,1373]
+                            specifier: public [1362,1368]
+                            name: void [1369,1373]
+                        name: BasicForLoop [1374,1386]
+                        parameter_list [1386,1388]
+                        block [1397,1531]
+                            block_content [1398,1530]
+                                for [1411,1521]
+                                    control [1415,1439]
+                                        init [1416,1426]
+                                            decl [1416,1425]
+                                                type [1416,1419]
+                                                    name: int [1416,1419]
+                                                name: i [1420,1421]
+                                                init [1422,1425]
+                                                    expr [1424,1425]
+                                                        literal: 0 [1424,1425]
+                                        condition [1427,1434]
+                                            expr [1427,1433]
+                                                name: i [1427,1428]
+                                                operator: < [1429,1430]
+                                                literal: 10 [1431,1433]
+                                        incr [1435,1438]
+                                            expr [1435,1438]
+                                                name: i [1435,1436]
+                                                operator: ++ [1436,1438]
+                                    block [1452,1521]
+                                        block_content [1453,1520]
+                                            expr_stmt [1470,1507]
+                                                expr [1470,1506]
+                                                    call [1470,1506]
+                                                        name [1470,1487]
+                                                            name: Console [1470,1477]
+                                                            operator: . [1477,1478]
+                                                            name: WriteLine [1478,1487]
+                                                        argument_list [1487,1506]
+                                                            argument [1488,1505]
+                                                                expr [1488,1505]
+                                                                    literal: "Iteration: " [1488,1501]
+                                                                    operator: + [1502,1503]
+                                                                    name: i [1504,1505]
+                    comment: // For loop with step [1549,1570]
+                    function [1579,1756]
+                        type [1579,1590]
+                            specifier: public [1579,1585]
+                            name: void [1586,1590]
+                        name: ForLoopWithStep [1591,1606]
+                        parameter_list [1606,1608]
+                        block [1617,1756]
+                            block_content [1618,1755]
+                                for [1631,1746]
+                                    control [1635,1662]
+                                        init [1636,1646]
+                                            decl [1636,1645]
+                                                type [1636,1639]
+                                                    name: int [1636,1639]
+                                                name: i [1640,1641]
+                                                init [1642,1645]
+                                                    expr [1644,1645]
+                                                        literal: 0 [1644,1645]
+                                        condition [1647,1654]
+                                            expr [1647,1653]
+                                                name: i [1647,1648]
+                                                operator: < [1649,1650]
+                                                literal: 20 [1651,1653]
+                                        incr [1655,1661]
+                                            expr [1655,1661]
+                                                name: i [1655,1656]
+                                                operator: += [1657,1659]
+                                                literal: 2 [1660,1661]
+                                    block [1675,1746]
+                                        block_content [1676,1745]
+                                            expr_stmt [1693,1732]
+                                                expr [1693,1731]
+                                                    call [1693,1731]
+                                                        name [1693,1710]
+                                                            name: Console [1693,1700]
+                                                            operator: . [1700,1701]
+                                                            name: WriteLine [1701,1710]
+                                                        argument_list [1710,1731]
+                                                            argument [1711,1730]
+                                                                expr [1711,1730]
+                                                                    literal: "Even number: " [1711,1726]
+                                                                    operator: + [1727,1728]
+                                                                    name: i [1729,1730]
+                    comment: // Nested loops [1774,1789]
+                    function [1798,2055]
+                        type [1798,1809]
+                            specifier: public [1798,1804]
+                            name: void [1805,1809]
+                        name: NestedLoops [1810,1821]
+                        parameter_list [1821,1823]
+                        block [1832,2055]
+                            block_content [1833,2054]
+                                for [1846,2045]
+                                    control [1850,1873]
+                                        init [1851,1861]
+                                            decl [1851,1860]
+                                                type [1851,1854]
+                                                    name: int [1851,1854]
+                                                name: i [1855,1856]
+                                                init [1857,1860]
+                                                    expr [1859,1860]
+                                                        literal: 0 [1859,1860]
+                                        condition [1862,1868]
+                                            expr [1862,1867]
+                                                name: i [1862,1863]
+                                                operator: < [1864,1865]
+                                                literal: 3 [1866,1867]
+                                        incr [1869,1872]
+                                            expr [1869,1872]
+                                                name: i [1869,1870]
+                                                operator: ++ [1870,1872]
+                                    block [1886,2045]
+                                        block_content [1887,2044]
+                                            for [1904,2031]
+                                                control [1908,1931]
+                                                    init [1909,1919]
+                                                        decl [1909,1918]
+                                                            type [1909,1912]
+                                                                name: int [1909,1912]
+                                                            name: j [1913,1914]
+                                                            init [1915,1918]
+                                                                expr [1917,1918]
+                                                                    literal: 0 [1917,1918]
+                                                    condition [1920,1926]
+                                                        expr [1920,1925]
+                                                            name: j [1920,1921]
+                                                            operator: < [1922,1923]
+                                                            literal: 3 [1924,1925]
+                                                    incr [1927,1930]
+                                                        expr [1927,1930]
+                                                            name: j [1927,1928]
+                                                            operator: ++ [1928,1930]
+                                                block [1948,2031]
+                                                    block_content [1949,2030]
+                                                        expr_stmt [1970,2013]
+                                                            expr [1970,2012]
+                                                                call [1970,2012]
+                                                                    name [1970,1987]
+                                                                        name: Console [1970,1977]
+                                                                        operator: . [1977,1978]
+                                                                        name: WriteLine [1978,1987]
+                                                                    argument_list [1987,2012]
+                                                                        argument [1988,2011]
+                                                                            expr [1988,2011]
+                                                                                literal: "i: " [1988,1993]
+                                                                                operator: + [1994,1995]
+                                                                                name: i [1996,1997]
+                                                                                operator: + [1998,1999]
+                                                                                literal: ", j: " [2000,2007]
+                                                                                operator: + [2008,2009]
+                                                                                name: j [2010,2011]
+                    comment: // While loop with break [2073,2097]
+                    function [2106,2396]
+                        type [2106,2117]
+                            specifier: public [2106,2112]
+                            name: void [2113,2117]
+                        name: WhileWithBreak [2118,2132]
+                        parameter_list [2132,2134]
+                        block [2143,2396]
+                            block_content [2144,2395]
+                                decl_stmt [2157,2171]
+                                    decl [2157,2170]
+                                        type [2157,2160]
+                                            name: int [2157,2160]
+                                        name: count [2161,2166]
+                                        init [2167,2170]
+                                            expr [2169,2170]
+                                                literal: 0 [2169,2170]
+                                while [2184,2386]
+                                    condition [2190,2196]
+                                        expr [2191,2195]
+                                            literal: true [2191,2195]
+                                    block [2209,2386]
+                                        block_content [2210,2385]
+                                            if_stmt [2227,2305]
+                                                if [2227,2305]
+                                                    condition [2230,2242]
+                                                        expr [2231,2241]
+                                                            name: count [2231,2236]
+                                                            operator: >= [2237,2239]
+                                                            literal: 5 [2240,2241]
+                                                    block [2259,2305]
+                                                        block_content [2260,2304]
+                                                            break [2281,2287]
+                                            expr_stmt [2322,2347]
+                                                expr [2322,2346]
+                                                    call [2322,2346]
+                                                        name [2322,2339]
+                                                            name: Console [2322,2329]
+                                                            operator: . [2329,2330]
+                                                            name: WriteLine [2330,2339]
+                                                        argument_list [2339,2346]
+                                                            argument [2340,2345]
+                                                                expr [2340,2345]
+                                                                    name: count [2340,2345]
+                                            expr_stmt [2364,2372]
+                                                expr [2364,2371]
+                                                    name: count [2364,2369]
+                                                    operator: ++ [2369,2371]
+                    comment: // While loop with continue [2414,2441]
+                    function [2450,2746]
+                        type [2450,2461]
+                            specifier: public [2450,2456]
+                            name: void [2457,2461]
+                        name: WhileWithContinue [2462,2479]
+                        parameter_list [2479,2481]
+                        block [2490,2746]
+                            block_content [2491,2745]
+                                decl_stmt [2504,2514]
+                                    decl [2504,2513]
+                                        type [2504,2507]
+                                            name: int [2504,2507]
+                                        name: i [2508,2509]
+                                        init [2510,2513]
+                                            expr [2512,2513]
+                                                literal: 0 [2512,2513]
+                                while [2527,2736]
+                                    condition [2533,2541]
+                                        expr [2534,2540]
+                                            name: i [2534,2535]
+                                            operator: < [2536,2537]
+                                            literal: 10 [2538,2540]
+                                    block [2554,2736]
+                                        block_content [2555,2735]
+                                            expr_stmt [2572,2576]
+                                                expr [2572,2575]
+                                                    name: i [2572,2573]
+                                                    operator: ++ [2573,2575]
+                                            if_stmt [2593,2674]
+                                                if [2593,2674]
+                                                    condition [2596,2608]
+                                                        expr [2597,2607]
+                                                            name: i [2597,2598]
+                                                            operator: % [2599,2600]
+                                                            literal: 2 [2601,2602]
+                                                            operator: == [2603,2605]
+                                                            literal: 0 [2606,2607]
+                                                    block [2625,2674]
+                                                        block_content [2626,2673]
+                                                            continue [2647,2656]
+                                            expr_stmt [2691,2722]
+                                                expr [2691,2721]
+                                                    call [2691,2721]
+                                                        name [2691,2708]
+                                                            name: Console [2691,2698]
+                                                            operator: . [2698,2699]
+                                                            name: WriteLine [2699,2708]
+                                                        argument_list [2708,2721]
+                                                            argument [2709,2720]
+                                                                expr [2709,2720]
+                                                                    literal: "Odd: " [2709,2716]
+                                                                    operator: + [2717,2718]
+                                                                    name: i [2719,2720]
+package TestFeatures;
+public class Loops {
+  public Void BasicWhileLoop(){
+    int counter=0;
+    while (counter < 5) {
+      Console.WriteLine("Counter: " + counter);
+      counter++;
+    }
+  }
+  public Void WhileLoopWithCondition(  int max){
+    int i=0;
+    while (i < max && i < 100) {
+      i=i + 2;
+      Console.WriteLine(i);
+    }
+  }
+  public Void DoWhileLoop(){
+    int counter=0;
+    do {
+      Console.WriteLine("Counter: " + counter);
+      counter++;
+    }
+ while (counter < 5);
+  }
+  public Void DoWhileOnce(){
+    int value=10;
+    do {
+      Console.WriteLine("Value: " + value);
+      value++;
+    }
+ while (value < 10);
+  }
+  public Void BasicForLoop(){
+    for (int i=0; i < 10; i++) {
+      Console.WriteLine("Iteration: " + i);
+    }
+  }
+  public Void ForLoopWithStep(){
+    for (int i=0; i < 20; i+=2) {
+      Console.WriteLine("Even number: " + i);
+    }
+  }
+  public Void NestedLoops(){
+    for (int i=0; i < 3; i++) {
+      for (int j=0; j < 3; j++) {
+        Console.WriteLine("i: " + i + ", j: " + j);
+      }
+    }
+  }
+  public Void WhileWithBreak(){
+    int count=0;
+    while (true) {
+      if (count >= 5) {
+        break;
+      }
+      Console.WriteLine(count);
+      count++;
+    }
+  }
+  public Void WhileWithContinue(){
+    int i=0;
+    while (i < 10) {
+      i++;
+      if (i % 2 == 0) {
+        continue;
+      }
+      Console.WriteLine("Odd: " + i);
+    }
+  }
+}
+
+CPatMinerExecutor: SUCCESS - Generated Java AST with 1 types
+✓ CompilationUnit created successfully!
+  - Number of types: 1
+  - AST root: CompilationUnit
+  - Has package declaration: true
+  - Number of imports: 0
+
+STEP 3: Convert CompilationUnit to Java String
+>>> Calling CPatMinerExecutor.astToString() <<<
+✓ Java code generated successfully!
+  - Generated code length: 1400 chars
+  - Number of lines: 70
+
+=== Generated Java Code (Full Output) ===
+package TestFeatures;
+public class Loops {
+  public Void BasicWhileLoop(){
+    int counter=0;
+    while (counter < 5) {
+      Console.WriteLine("Counter: " + counter);
+      counter++;
+    }
+  }
+  public Void WhileLoopWithCondition(  int max){
+    int i=0;
+    while (i < max && i < 100) {
+      i=i + 2;
+      Console.WriteLine(i);
+    }
+  }
+  public Void DoWhileLoop(){
+    int counter=0;
+    do {
+      Console.WriteLine("Counter: " + counter);
+      counter++;
+    }
+ while (counter < 5);
+  }
+  public Void DoWhileOnce(){
+    int value=10;
+    do {
+      Console.WriteLine("Value: " + value);
+      value++;
+    }
+ while (value < 10);
+  }
+  public Void BasicForLoop(){
+    for (int i=0; i < 10; i++) {
+      Console.WriteLine("Iteration: " + i);
+    }
+  }
+  public Void ForLoopWithStep(){
+    for (int i=0; i < 20; i+=2) {
+      Console.WriteLine("Even number: " + i);
+    }
+  }
+  public Void NestedLoops(){
+    for (int i=0; i < 3; i++) {
+      for (int j=0; j < 3; j++) {
+        Console.WriteLine("i: " + i + ", j: " + j);
+      }
+    }
+  }
+  public Void WhileWithBreak(){
+    int count=0;
+    while (true) {
+      if (count >= 5) {
+        break;
+      }
+      Console.WriteLine(count);
+      count++;
+    }
+  }
+  public Void WhileWithContinue(){
+    int i=0;
+    while (i < 10) {
+      i++;
+      if (i % 2 == 0) {
+        continue;
+      }
+      Console.WriteLine("Odd: " + i);
+    }
+  }
+}
+
+========================================
+
+STEP 4: Preparing file contents map for UMLModel
+  - Mapped file: tests/csharp-features/16_loops.java
+  - File contents size: 1400 chars
+  - Repository directory: CS_TO_JAVA_TRANSFORMATION_EG/
+
+STEP 5: Create UMLModel via CSharpUMLModelASTReader
+>>> Calling CSharpUMLModelASTReader constructor <<<
+CSharpUMLModelASTReader: Processing files with CPatMiner AST integration
+CPatMinerExecutor: Processing 1 C# files with CPatMiner
+CPatMinerExecutor: Processing completed - Success: 0, Failures: 0
+CSharpUMLModelASTReader: Included existing Java file: tests/csharp-features/16_loops.java
+CSharpUMLModelASTReader: Total processed files: 1
+CSharpUMLModelASTReader: Created UMLModel with CPatMiner AST integration
+>>> Retrieving UMLModel from reader <<<
+✓ UMLModel created successfully!
+
+STEP 6: Analyzing UMLModel Output
+===========================================
+Total Classes/Interfaces/Enums: 1
+  - Classes: 1
+  - Interfaces: 0
+  - Enums: 0
+
+Detailed Class Information:
+---------------------------
+
+Class: TestFeatures.Loops
+  Type: Class
+  Package: TestFeatures
+  Source file: tests/csharp-features/16_loops.java
+  Operations: 9
+  Attributes: 0
+  Methods:
+    • BasicWhileLoop() - 1 param(s)
+    • WhileLoopWithCondition() - 2 param(s)
+    • DoWhileLoop() - 1 param(s)
+    • DoWhileOnce() - 1 param(s)
+    • BasicForLoop() - 1 param(s)
+    • ForLoopWithStep() - 1 param(s)
+    • NestedLoops() - 1 param(s)
+    • WhileWithBreak() - 1 param(s)
+    • WhileWithContinue() - 1 param(s)
+
+===========================================
+=== Flow Trace Complete ===
+All transformation steps executed successfully!
+Review the output above to trace the complete flow:
+  1. C# Source → Read from file
+  2. CompilationUnit AST → CPatMiner transformation
+  3. Java String → AST serialization
+  4. File Map → Preparation for UML parsing
+  5. UMLModel → CSharpUMLModelASTReader parsing
+  6. Analysis → Complete UML structure
+===========================================
