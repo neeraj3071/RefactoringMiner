@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Vivero/Kerbal-VR.git",
+	"sha1": "99612a17d954f49df1a1db1ed8de07b801526592",
+	"url": "https://github.com/Vivero/Kerbal-VR/commit/99612a17d954f49df1a1db1ed8de07b801526592",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package Awake() : Void renamed to package Start() : Void in class KerbalVR.Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Awake() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package Start() : Void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute r : MeshRenderer to meshRenderer : MeshRenderer in method package OnTriggerExit(other Collider) : Void from class KerbalVR.Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 18,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "r : MeshRenderer"
+}, {
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "meshRenderer : MeshRenderer"
+}, {
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute originalColor : Color to defaultColor : Color in class KerbalVR.Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "originalColor : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "defaultColor : Color"
+}]
+}
+]
+}]
+}

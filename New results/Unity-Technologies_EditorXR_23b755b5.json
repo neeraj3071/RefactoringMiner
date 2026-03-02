@@ -1,0 +1,252 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "23b755b5dff467cde8bb9ffee117a5f705c70571",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/23b755b5dff467cde8bb9ffee117a5f705c70571",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable type : Object in method package SerializePreferences() : String from class UnityEditor.SerializedPreferencesModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 11,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 49,
+		"endColumn": 91,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 16,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "type : Object"
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 55,
+		"endColumn": 79,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable type : Object in method package SerializePreferences() : String from class UnityEditor.SerializedPreferencesModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SerializedPreferencesModule.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "type : Object"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to boolean in method package DoFlying(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : boolean from class UnityEditor.LocomotionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 153,
+		"endLine": 212,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DoFlying(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 152,
+		"endLine": 211,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package DoFlying(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : boolean"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to boolean in method package DoCrawl(locomotionInput LocomotionInput) : boolean from class UnityEditor.LocomotionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 213,
+		"endLine": 226,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DoCrawl(locomotionInput LocomotionInput) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 212,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package DoCrawl(locomotionInput LocomotionInput) : boolean"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to boolean in method package DoBlink(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : boolean from class UnityEditor.LocomotionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 227,
+		"endLine": 241,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DoBlink(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 226,
+		"endLine": 248,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package DoBlink(consumeControl ConsumeControlDelegate, locomotionInput LocomotionInput) : boolean"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to boolean in method package DoTwoHandedScaling(consumeControl ConsumeControlDelegate) : boolean from class UnityEditor.LocomotionTool",
+	"leftSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 242,
+		"endLine": 338,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DoTwoHandedScaling(consumeControl ConsumeControlDelegate) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "Tools/LocomotionTool/LocomotionTool.java",
+		"startLine": 249,
+		"endLine": 350,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package DoTwoHandedScaling(consumeControl ConsumeControlDelegate) : boolean"
+}]
+}
+]
+}]
+}

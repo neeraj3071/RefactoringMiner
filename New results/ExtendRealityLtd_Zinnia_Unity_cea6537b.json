@@ -1,0 +1,750 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ExtendRealityLtd/Zinnia.Unity.git",
+	"sha1": "cea6537b0a0d496a2cb93234ce4f54ebe76386d4",
+	"url": "https://github.com/ExtendRealityLtd/Zinnia.Unity/commit/cea6537b0a0d496a2cb93234ce4f54ebe76386d4",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected UpdateProperty(input Vector3) : Vector3 extracted from public SetProperty(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 48,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public SetProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 77,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected UpdateProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public SetProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 12,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateProperty(GetNewSetValue(LockSetInput(input)))"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 22,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 82,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected UpdateProperty(input Vector3) : Vector3 extracted from public IncrementProperty(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 63,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public IncrementProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 77,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected UpdateProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public IncrementProperty(input Vector3) : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 12,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateProperty(GetNewIncrementValue(LockIncrementInput(input)))"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 22,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 82,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(UseLocalValues) to input=UseLocalValues ? SetLocalTargetValue(input) : SetGlobalTargetValue(input); in method protected UpdateProperty(input Vector3) : Vector3 from class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 53,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(UseLocalValues)"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 48,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetProperty(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "input=UseLocalValues ? SetLocalTargetValue(input) : SetGlobalTargetValue(input);\n"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 77,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "protected UpdateProperty(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(UseLocalValues) to input=UseLocalValues ? SetLocalTargetValue(input) : SetGlobalTargetValue(input); in method protected UpdateProperty(input Vector3) : Vector3 from class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 68,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(UseLocalValues)"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 63,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IncrementProperty(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "input=UseLocalValues ? SetLocalTargetValue(input) : SetGlobalTargetValue(input);\n"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 77,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "protected UpdateProperty(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected IncrementGlobal(input Vector3) : Vector3 renamed to protected GetNewSetValue(input Vector3) : Vector3 in class Zinnia.TransformScaleMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 9,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected IncrementGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected GetNewSetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected SetGlobal(input Vector3) : Vector3 renamed to protected SetGlobalTargetValue(input Vector3) : Vector3 in class Zinnia.TransformScaleMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 17,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected SetGlobalTargetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected SetLocal(input Vector3) : Vector3 renamed to protected SetLocalTargetValue(input Vector3) : Vector3 in class Zinnia.TransformScaleMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetLocal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected SetLocalTargetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable globalScale : Vector3 in method protected IncrementGlobal(input Vector3) : Vector3 from class Zinnia.TransformScaleMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "globalScale : Vector3"
+}, {
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformScaleMutator.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected SetGlobal(input Vector3) : Vector3 renamed to protected GetNewSetValue(input Vector3) : Vector3 in class Zinnia.TransformPositionMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPositionMutator.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPositionMutator.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected GetNewSetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract SetLocal(input Vector3) : Vector3 renamed to protected abstract SetLocalTargetValue(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 56,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract SetLocal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract SetLocalTargetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract SetGlobal(input Vector3) : Vector3 renamed to protected abstract GetNewSetValue(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract SetGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 62,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract GetNewSetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract SetGlobal(input Vector3) : Vector3 renamed to protected abstract SetGlobalTargetValue(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract SetGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 68,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract SetGlobalTargetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract IncrementGlobal(input Vector3) : Vector3 renamed to protected abstract GetNewSetValue(input Vector3) : Vector3 in class Zinnia.TransformPropertyMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract IncrementGlobal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPropertyMutator.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 62,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract GetNewSetValue(input Vector3) : Vector3"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected SetLocal(input Vector3) : Vector3 renamed to protected SetLocalTargetValue(input Vector3) : Vector3 in class Zinnia.TransformPositionMutator",
+	"leftSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPositionMutator.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected SetLocal(input Vector3) : Vector3"
+}],
+	"rightSideLocations": [{
+		"filePath": "Runtime/Data/Operation/Mutation/TransformPositionMutator.java",
+		"startLine": 61,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected SetLocalTargetValue(input Vector3) : Vector3"
+}]
+}
+]
+}]
+}

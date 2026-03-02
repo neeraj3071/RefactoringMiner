@@ -1,0 +1,156 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/TomorrowTodayLabs/NewtonVR.git",
+	"sha1": "70048a7ad2fdb3f577654cce2da9115346eb327a",
+	"url": "https://github.com/TomorrowTodayLabs/NewtonVR/commit/70048a7ad2fdb3f577654cce2da9115346eb327a",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected DropIfTooFar() : Void extracted from public OnNewPosesApplied() : Void in class NewtonVR.NVRInteractable & moved to class NewtonVR.NVRInteractableRotator",
+	"leftSideLocations": [{
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 32,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OnNewPosesApplied() : Void"
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 44,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected DropIfTooFar() : Void"
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 34,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 32,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OnNewPosesApplied() : Void"
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DropIfTooFar()"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable shortestDistance : float in method public OnNewPosesApplied() : Void from class NewtonVR.NVRInteractable",
+	"leftSideLocations": [{
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "shortestDistance : float"
+}, {
+		"filePath": "Assets/NewtonVR/NVRInteractable.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/NewtonVR/NVRInteractableRotator.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

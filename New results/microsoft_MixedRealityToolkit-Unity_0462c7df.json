@@ -1,0 +1,633 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "0462c7df092ea97493f556797ff32d0d34f43c5a",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/0462c7df092ea97493f556797ff32d0d34f43c5a",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private UpdateColliderType() : Void from class Microsoft.RotationHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 53,
+		"endLine": 80,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateColliderType() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 18,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private UpdateColliderType() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected RecreateVisuals() : Void from class Microsoft.RotationHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 158,
+		"endLine": 171,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private RecreateVisuals() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 123,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected RecreateVisuals() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void from class Microsoft.RotationHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 175,
+		"endLine": 188,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateColliderBounds(handle Transform, visualSize Vector3) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 137,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected RecreateVisuals() : Void from class Microsoft.ScaleHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 78,
+		"endLine": 94,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private RecreateVisuals() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 43,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected RecreateVisuals() : Void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter cornerBounds : Bounds to visualSize : Vector3 in method protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void from class Microsoft.ScaleHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 52,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cornerBounds : Bounds"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 0,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 0,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 60,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "visualSize : Vector3"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type cornerBounds : Bounds to visualSize : Vector3 in method protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void from class Microsoft.ScaleHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 52,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cornerBounds : Bounds"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 0,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 0,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 60,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "visualSize : Vector3"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void from class Microsoft.ScaleHandles",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 95,
+		"endLine": 101,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateColliderBounds(handle Transform, cornerBounds Bounds) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 60,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateColliderBounds(handle Transform, visualSize Vector3) : Void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package GetMaxComponent(vec Vector3) : float extracted from package AddComponentsToAffordance(afford GameObject, bounds Bounds, colliderType HandlePrefabCollider, cursorType CursorContextInfo.CursorAction, colliderPadding Vector3, parent Transform, drawTetherWhenManipulating boolean) : Void in class Microsoft.VisualUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 41,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package AddComponentsToAffordance(afford GameObject, bounds Bounds, colliderType HandlePrefabCollider, cursorType CursorContextInfo.CursorAction, colliderPadding Vector3, parent Transform, drawTetherWhenManipulating boolean) : Void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 7,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package GetMaxComponent(vec Vector3) : float"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 44,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package AddComponentsToAffordance(afford GameObject, bounds Bounds, colliderType HandlePrefabCollider, cursorType CursorContextInfo.CursorAction, colliderPadding Vector3, parent Transform, drawTetherWhenManipulating boolean) : Void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 22,
+		"endColumn": 54,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "GetMaxComponent(colliderPadding)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 18,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 11,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 16,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 11,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.RotationHandles to package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 18,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 11,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected UpdateColliderBounds() : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateColliderBounds() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateColliderBounds() : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method package UpdateColliderBounds() : Void from class Microsoft.RotationHandles to protected UpdateColliderBounds() : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package UpdateColliderBounds() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected UpdateColliderBounds() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package GetMaxComponent(vec Vector3) : float from class Microsoft.VisualUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetMaxComponent(vec Vector3) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package GetMaxComponent(vec Vector3) : float"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package GetMaxComponent(vec Vector3) : float from class Microsoft.VisualUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetMaxComponent(vec Vector3) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package GetMaxComponent(vec Vector3) : float"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private GetMaxComponent(vec Vector3) : float from class Microsoft.RotationHandles to package GetMaxComponent(vec Vector3) : float from class Microsoft.VisualUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/RotationHandles.java",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GetMaxComponent(vec Vector3) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/VisualUtils.java",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package GetMaxComponent(vec Vector3) : float"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.ScaleHandles to package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 16,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 11,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "package HandlesChanged(changedType HandlesBaseConfiguration.HandlesChangedEventType) : Void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable cornerbounds : Object to handleBounds : Object in method protected UpdateColliderBounds() : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 8,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cornerbounds : Object"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 8,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "handleBounds : Object"
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected UpdateColliderBounds() : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateColliderBounds() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected UpdateColliderBounds() : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private UpdateColliderBounds() : Void from class Microsoft.ScaleHandles to protected UpdateColliderBounds() : Void from class Microsoft.HandlesBase",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/ScaleHandles.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private UpdateColliderBounds() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Experimental/Features/UX/BoundsControl/Visuals/HandlesBase.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected UpdateColliderBounds() : Void"
+}]
+}
+]
+}]
+}

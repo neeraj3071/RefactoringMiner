@@ -1,0 +1,156 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PKBeam/Edda.git",
+	"sha1": "93d5784bf1003ee0c3ab91d947dc1f0ddadfd891",
+	"url": "https://github.com/PKBeam/Edda/commit/93d5784bf1003ee0c3ab91d947dc1f0ddadfd891",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Edda.DifficultyPredictor renamed to Edda.DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.java",
+		"startLine": 9,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Edda.DifficultyPredictor"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 10,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "Edda.DifficultyPredictorNytilde"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public PredictDifficulty(mapEditor MapEditor, difficultyIndex int) : float from class Edda.DifficultyPredictor",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.java",
+		"startLine": 10,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PredictDifficulty(mapEditor MapEditor, difficultyIndex int) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 14,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public PredictDifficulty(mapEditor MapEditor, difficultyIndex int) : float"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter model : byte[] in method private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float from class Edda.DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.java",
+		"startLine": 27,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EvaluateModel(noteDensity float, averageTimeDifference float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 40,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "model : byte[]"
+}, {
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter melchiorDiffScore : float in method private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float from class Edda.DifficultyPredictorNytilde",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.java",
+		"startLine": 27,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private EvaluateModel(noteDensity float, averageTimeDifference float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 105,
+		"endColumn": 128,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "melchiorDiffScore : float"
+}, {
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private EvaluateModel(model byte[], noteDensity float, averageTimeDifference float, melchiorDiffScore float, countNoteDensityPerWindow float, peakNoteDensity float, typicalTimeDifference float) : float"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface Edda.IDifficultyPredictor from classes [Edda.DifficultyPredictor]",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictor.java",
+		"startLine": 9,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "Edda.DifficultyPredictor"
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/DifficultyPredictorNytilde.java",
+		"startLine": 10,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "Edda.DifficultyPredictorNytilde"
+}, {
+		"filePath": "Classes/MapEditor/Stats/IDifficultyPredictor.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "Edda.IDifficultyPredictor"
+}]
+}
+]
+}]
+}

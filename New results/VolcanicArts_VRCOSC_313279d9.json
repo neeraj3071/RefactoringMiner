@@ -1,0 +1,345 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "313279d98f576f858148ae3df28e426f0d8d739d",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/313279d98f576f858148ae3df28e426f0d8d739d",
+	"refactorings": [{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing to VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/AttributeCard.java",
+		"startLine": 11,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCOSC.AttributeCard"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/AttributeCard.java",
+		"startLine": 11,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VRCOSC.AttributeCard"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing to VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/SliderAttributeCard.java",
+		"startLine": 10,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCOSC.SliderAttributeCard"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 10,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "VRCOSC.SliderAttributeCard"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class VRCOSC.StringAttributeCard renamed to VRCOSC.TextAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 9,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCOSC.StringAttributeCard"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Text/TextAttributeCard.java",
+		"startLine": 9,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VRCOSC.TextAttributeCard"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class VRCOSC.BoolAttributeCard renamed to VRCOSC.ToggleAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/BoolAttributeCard.java",
+		"startLine": 8,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "VRCOSC.BoolAttributeCard"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Toggle/ToggleAttributeCard.java",
+		"startLine": 8,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "VRCOSC.ToggleAttributeCard"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private updateValues(value T) : Void extracted from private load() : Void in class VRCOSC.SliderAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/SliderAttributeCard.java",
+		"startLine": 20,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private load() : Void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/SliderAttributeCard.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private updateValues(value T) : Void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private load() : Void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "updateValues(e.NewValue)"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Slider/SliderAttributeCard.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected OnTextChange(e ValueChangedEvent<String>) : Void renamed to protected OnTextWrite(e ValueChangedEvent<String>) : Object in class VRCOSC.TextAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnTextChange(e ValueChangedEvent<String>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Text/TextAttributeCard.java",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected OnTextWrite(e ValueChangedEvent<String>) : Object"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to Object in method protected OnTextWrite(e ValueChangedEvent<String>) : Object from class VRCOSC.TextAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnTextChange(e ValueChangedEvent<String>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Text/TextAttributeCard.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 13,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Text/TextAttributeCard.java",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected OnTextWrite(e ValueChangedEvent<String>) : Object"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute textBox : VRCOSCTextBox to TextBox : VRCOSCTextBox in class VRCOSC.TextAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "textBox : VRCOSCTextBox"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/Text/TextAttributeCard.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "TextBox : VRCOSCTextBox"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter e : ValueChangedEvent<Object> in method private updateTextBox(e ValueChangedEvent<Object>) : Void from class VRCOSC.StringAttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 32,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "e : ValueChangedEvent<Object>"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateTextBox(e ValueChangedEvent<Object>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/AttributeCard.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected LoadComplete() : Void from class VRCOSC.AttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateTextBox(e ValueChangedEvent<Object>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/AttributeCard.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private updateTextBox(e ValueChangedEvent<Object>) : Void from class VRCOSC.StringAttributeCard to protected LoadComplete() : Void from class VRCOSC.AttributeCard",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/StringAttributeCard.java",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private updateTextBox(e ValueChangedEvent<Object>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/Containers/Screens/ModuleEditing/Attributes/AttributeCard.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+}
+]
+}]
+}

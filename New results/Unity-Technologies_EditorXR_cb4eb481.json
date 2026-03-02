@@ -1,0 +1,633 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "cb4eb4813e469ebaf81d47deace67e044b20ae1d",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/cb4eb4813e469ebaf81d47deace67e044b20ae1d",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scrollData : SpatialScrollData to scrollDataDeprecated : SpatialScrollDataDeprecated in method package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated from class UnityEditor.SpatialScrollModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scrollData : SpatialScrollData"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 7,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 172,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 23,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scrollDataDeprecated : SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 7,
+		"endColumn": 186,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 182,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 23,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type spatialDirection : SpatialScrollData to spatialDirection : SpatialScrollDataDeprecated in method package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated from class UnityEditor.SpatialScrollModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "spatialDirection : SpatialScrollData"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 128,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 35,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "spatialDirection : SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 138,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type projectionVector : SpatialScrollData to projectionVector : SpatialScrollDataDeprecated in method package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated from class UnityEditor.SpatialScrollModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 25,
+		"endColumn": 127,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "projectionVector : SpatialScrollData"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 35,
+		"endColumn": 137,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "projectionVector : SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable scrollData : SpatialScrollData to scrollDataDeprecated : SpatialScrollDataDeprecated in method package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated from class UnityEditor.SpatialScrollModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scrollData : SpatialScrollData"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 7,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 172,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 23,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "scrollDataDeprecated : SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 7,
+		"endColumn": 186,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 182,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 17,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 23,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type SpatialScrollData to SpatialScrollDataDeprecated in method package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated from class UnityEditor.SpatialScrollModule",
+	"leftSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "SpatialScrollData"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 8,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollData"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "SpatialScrollDataDeprecated"
+}, {
+		"filePath": "Scripts/Modules/SpatialScrollModule/SpatialScrollModule.java",
+		"startLine": 8,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package PerformScroll(caller IControlSpatialScrolling, node Node, startingPosition Vector3, currentPosition Vector3, repeatingScrollLengthRange float, scrollableItemCount int, maxItemCount int, centerScrollVisuals boolean) : SpatialScrollDataDeprecated"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VIRTUE-DBIS/virtual-exhibition-presenter.git",
+	"sha1": "fd535c8a5ec146dfe2773443c9b33458e406747e",
+	"url": "https://github.com/VIRTUE-DBIS/virtual-exhibition-presenter/commit/fd535c8a5ec146dfe2773443c9b33458e406747e",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(_playing && AudioListener.pause && _audioSource != \"null\" && _audioSource.clip != \"null\") to if(!_playing || !AudioListener.pause || _audioSource == \"null\" || _audioSource.clip == \"null\") in method public Stop() : Void from class Unibas.ClosenessDetector",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Utils/ClosenessDetector.java",
+		"startLine": 52,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(_playing && AudioListener.pause && _audioSource != \"null\" && _audioSource.clip != \"null\")"
+}, {
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Utils/ClosenessDetector.java",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Stop() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Utils/ClosenessDetector.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!_playing || !AudioListener.pause || _audioSource == \"null\" || _audioSource.clip == \"null\")"
+}, {
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Utils/ClosenessDetector.java",
+		"startLine": 51,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public Stop() : Void"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @MISSING in class Unibas.ExhibitionSummary",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/VREM/Model/ExhibitionSummary.java",
+		"startLine": 2,
+		"endLine": 5,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Unibas.ExhibitionSummary"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/VREM/Model/ExhibitionSummary.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 0,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@MISSING"
+}, {
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/VREM/Model/ExhibitionSummary.java",
+		"startLine": 3,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "Unibas.ExhibitionSummary"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute FILE_NAME : String to FileName : String in class Unibas.Settings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/Settings.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "FILE_NAME : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/Settings.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "FileName : String"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute public exhibitionId : String renamed to public ExhibitionId : String and moved from class Unibas.VrepController to class Unibas.Settings",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/VrepController.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public exhibitionId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Unibas/DBIS/VREP/Core/Settings.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "public ExhibitionId : String"
+}]
+}
+]
+}]
+}

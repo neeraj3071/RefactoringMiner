@@ -1,0 +1,738 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MatrikMoon/TournamentAssistant.git",
+	"sha1": "4cd81f1d51658530288088035fd6939bf15feb56",
+	"url": "https://github.com/MatrikMoon/TournamentAssistant/commit/4cd81f1d51658530288088035fd6939bf15feb56",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private Send(connectedClient ConnectedClient, data byte[]) : Void renamed to private ReceiveLoop(player WsConnectedClient) : Void in class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Send(connectedClient ConnectedClient, data byte[]) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 96,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ReceiveLoop(player WsConnectedClient) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public JsonSend(id Guid, json String) : Void renamed to private Send(ConnectedClient WsConnectedClient, json String) : Task in class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSend(id Guid, json String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private Send(ConnectedClient WsConnectedClient, json String) : Task"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type clients : List<ConnectedClient> to clients : List<WsConnectedClient> in class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 33,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "clients : List<ConnectedClient>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 35,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "clients : List<WsConnectedClient>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type Send : Void to Send : Task in class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 15,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Send : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 15,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Send : Task"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to Task in method public Start() : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 26,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Start() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 35,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public Start() : Task"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter Message : String to message : String in method public GetFrameFromString(message String, opcode EOpcodeType) : ArraySegment<Byte> from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 45,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "Message : String"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 57,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "message : String"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter Opcode : EOpcodeType to opcode : EOpcodeType in method public GetFrameFromString(message String, opcode EOpcodeType) : ArraySegment<Byte> from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 62,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "Opcode : EOpcodeType"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 74,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "opcode : EOpcodeType"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type byte[] to ArraySegment<Byte> in method public GetFrameFromString(message String, opcode EOpcodeType) : ArraySegment<Byte> from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "byte[]"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 222,
+		"endLine": 262,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetFrameFromString(Message String, Opcode EOpcodeType) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ArraySegment<Byte>"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 171,
+		"endLine": 211,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public GetFrameFromString(message String, opcode EOpcodeType) : ArraySegment<Byte>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter player : WsConnectedClient in method private ReceiveLoop(player WsConnectedClient) : Void from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Send(connectedClient ConnectedClient, data byte[]) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 30,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "player : WsConnectedClient"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 96,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private ReceiveLoop(player WsConnectedClient) : Void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter connectedClient : ConnectedClient in method private Send(connectedClient ConnectedClient, data byte[]) : Void from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 23,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "connectedClient : ConnectedClient"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Send(connectedClient ConnectedClient, data byte[]) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 96,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private ReceiveLoop(player WsConnectedClient) : Void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter data : byte[] in method private Send(connectedClient ConnectedClient, data byte[]) : Void from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 57,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "data : byte[]"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 277,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Send(connectedClient ConnectedClient, data byte[]) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 96,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private ReceiveLoop(player WsConnectedClient) : Void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type player : ConnectedClient to player : WsConnectedClient in method private ClientDisconnected_Internal(player WsConnectedClient) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 46,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "player : ConnectedClient"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 46,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "player : WsConnectedClient"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to Task in method private ClientDisconnected_Internal(player WsConnectedClient) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 180,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ClientDisconnected_Internal(player ConnectedClient) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 114,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private ClientDisconnected_Internal(player WsConnectedClient) : Task"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable connectedClient : Object to ConnectedClient : Object in method public Send(ids Guid[], json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "connectedClient : Object"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 267,
+		"endLine": 270,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "ConnectedClient : Object"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to Task in method public Send(ids Guid[], json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 264,
+		"endLine": 276,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Send(ids Guid[], data byte[]) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 137,
+		"endLine": 152,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public Send(ids Guid[], json String) : Task"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter data : byte[] to json : String in method public Send(ids Guid[], json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "json : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type data : byte[] to json : String in method public Send(ids Guid[], json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "json : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to Task in method private Send(ConnectedClient WsConnectedClient, json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSend(id Guid, json String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 11,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private Send(ConnectedClient WsConnectedClient, json String) : Task"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter ConnectedClient : WsConnectedClient in method private Send(ConnectedClient WsConnectedClient, json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSend(id Guid, json String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 23,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "ConnectedClient : WsConnectedClient"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private Send(ConnectedClient WsConnectedClient, json String) : Task"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter id : Guid in method public JsonSend(id Guid, json String) : Void from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "id : Guid"
+}, {
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSend(id Guid, json String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private Send(ConnectedClient WsConnectedClient, json String) : Task"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private Send(ConnectedClient WsConnectedClient, json String) : Task from class TournamentAssistantShared.Sockets.WsServer",
+	"leftSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 211,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSend(id Guid, json String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Shared/Sockets/WsServer.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private Send(ConnectedClient WsConnectedClient, json String) : Task"
+}]
+}
+]
+}]
+}

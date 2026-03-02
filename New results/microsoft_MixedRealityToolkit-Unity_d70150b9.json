@@ -1,0 +1,564 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "d70150b9151cc97d3c536d58c7c69d0ac2dd6673",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d70150b9151cc97d3c536d58c7c69d0ac2dd6673",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private UpdateUV(uvs List<Vector2>, uvDeltas List<Vector2>, scrollOnly boolean) : Void extracted from private UpdateUVMapping() : Void in class Microsoft.HandInteractionPanZoom",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 181,
+		"endLine": 226,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private UpdateUVMapping() : Void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 209,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 198,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 221,
+		"endLine": 223,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 204,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 209,
+		"endLine": 211,
+		"startColumn": 105,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 101,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 198,
+		"endLine": 200,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 221,
+		"endLine": 223,
+		"startColumn": 41,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 204,
+		"endLine": 219,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 220,
+		"endLine": 224,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 218,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private UpdateUV(uvs List<Vector2>, uvDeltas List<Vector2>, scrollOnly boolean) : Void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 228,
+		"endLine": 230,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 239,
+		"endLine": 241,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 220,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 105,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 228,
+		"endLine": 230,
+		"startColumn": 101,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 239,
+		"endLine": 241,
+		"startColumn": 41,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 220,
+		"endLine": 237,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 238,
+		"endLine": 242,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 211,
+		"endLine": 217,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private UpdateUVWithScroll(uvs List<Vector2>, uvDelta Vector2) : Void"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UpdateUV(uvs,uvDeltas,true)"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 11,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 232,
+		"endLine": 236,
+		"startColumn": 35,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 232,
+		"endLine": 236,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 223,
+		"endLine": 231,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 223,
+		"endLine": 231,
+		"startColumn": 41,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type uvTestValue : Vector2 to uvTestValue : int in method private UpdateUV(uvs List<Vector2>, uvDeltas List<Vector2>, scrollOnly boolean) : Void from class Microsoft.HandInteractionPanZoom",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "uvTestValue : Vector2"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 209,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "uvTestValue : int"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 228,
+		"endLine": 230,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type currentContactRatio : float to currentContactRatio : Object in method private UpdateUVMapping() : Void from class Microsoft.HandInteractionPanZoom",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 11,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "currentContactRatio : float"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 14,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "currentContactRatio : Object"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scaleUVDelta : float to scaleUVDelta : Object in method private UpdateUVMapping() : Void from class Microsoft.HandInteractionPanZoom",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 11,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scaleUVDelta : float"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 14,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scaleUVDelta : Object"
+}, {
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/Slate/HandInteractionPanZoom.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

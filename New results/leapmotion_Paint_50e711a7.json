@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/leapmotion/Paint.git",
+	"sha1": "50e711a793136e02328d8cc5db2d84f33ccd8be3",
+	"url": "https://github.com/leapmotion/Paint/commit/50e711a793136e02328d8cc5db2d84f33ccd8be3",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter temporalOffset : long in method public ManualUpdateFrame(temporalOffset long) : Void from class Leap.Unity.LeapServiceProvider",
+	"leftSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/LeapServiceProvider.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 35,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "temporalOffset : long"
+}, {
+		"filePath": "Assets/LeapMotion/Scripts/LeapServiceProvider.java",
+		"startLine": 149,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ManualUpdateFrame(temporalOffset long) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/LeapMotion/Scripts/LeapServiceProvider.java",
+		"startLine": 145,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ManualUpdateFrame() : Void"
+}]
+}
+]
+}]
+}

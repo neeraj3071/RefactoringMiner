@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/vrm-c/UniVRM.git",
+	"sha1": "48e4d71c437a77fcbed10f78204db74dbb6e4903",
+	"url": "https://github.com/vrm-c/UniVRM/commit/48e4d71c437a77fcbed10f78204db74dbb6e4903",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Task<RuntimeGltfInstance> to Task<Vrm10Instance> in method package LoadAsync(path String) : Task<Vrm10Instance> from class UniVRM10.FirstPersonSample.VRM10RuntimeLoader",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRM10_Samples/VRM10FirstPersonSample/VRM10RuntimeLoader.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Task<RuntimeGltfInstance>"
+}, {
+		"filePath": "Assets/VRM10_Samples/VRM10FirstPersonSample/VRM10RuntimeLoader.java",
+		"startLine": 49,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package LoadAsync(path String) : Task<RuntimeGltfInstance>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRM10_Samples/VRM10FirstPersonSample/VRM10RuntimeLoader.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Task<Vrm10Instance>"
+}, {
+		"filePath": "Assets/VRM10_Samples/VRM10FirstPersonSample/VRM10RuntimeLoader.java",
+		"startLine": 48,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package LoadAsync(path String) : Task<Vrm10Instance>"
+}]
+}
+]
+}]
+}

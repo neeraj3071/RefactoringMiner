@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/PKBeam/Edda.git",
+	"sha1": "61efa6bc6cfe9fd7eb0cf1a989ff01bb5af60b3f",
+	"url": "https://github.com/PKBeam/Edda/commit/61efa6bc6cfe9fd7eb0cf1a989ff01bb5af60b3f",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type peakNPB : float to peakNPB : int in method private CalculateNPSPeakBeat(notes SortedSet<Note>, beats double) : double from class Edda.MapStats",
+	"leftSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/MapStats.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 11,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "peakNPB : float"
+}, {
+		"filePath": "Classes/MapEditor/Stats/MapStats.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Classes/MapEditor/Stats/MapStats.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 226,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "peakNPB : int"
+}, {
+		"filePath": "Classes/MapEditor/Stats/MapStats.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

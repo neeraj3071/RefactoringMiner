@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/futurerealitylab/Holojam.git",
+	"sha1": "e3e426dab9f405fc0c7c8b1dbe38c976aad49179",
+	"url": "https://github.com/futurerealitylab/Holojam/commit/e3e426dab9f405fc0c7c8b1dbe38c976aad49179",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable prefix : int in method package Quad(bl Vector3, tl Vector3, tr Vector3, br Vector3) : Void from class Holojam.Fence",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Fence.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Tools/Fence.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "prefix : int"
+}, {
+		"filePath": "Holojam/Assets/Holojam/Tools/Fence.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected OnDestroy() : Void from class Holojam.Network.HolojamNetwork",
+	"leftSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Server/HolojamNetwork.java",
+		"startLine": 102,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package OnDestroy() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Holojam/Assets/Holojam/Server/HolojamNetwork.java",
+		"startLine": 99,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected OnDestroy() : Void"
+}]
+}
+]
+}]
+}

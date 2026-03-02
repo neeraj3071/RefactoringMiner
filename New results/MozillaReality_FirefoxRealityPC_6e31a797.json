@@ -1,0 +1,492 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/MozillaReality/FirefoxRealityPC.git",
+	"sha1": "6e31a79761c9edcff9aa552c657b2249abdc773b",
+	"url": "https://github.com/MozillaReality/FirefoxRealityPC/commit/6e31a79761c9edcff9aa552c657b2249abdc773b",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fxrWindow : FxRWindow to fxrWindow : FxRPointableSurface in method private Update() : Void from class FxRLaserPointer",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fxrWindow : FxRWindow"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 11,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 11,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 11,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 11,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 206,
+		"endLine": 212,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 214,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 27,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fxrWindow : FxRPointableSurface"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 11,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 11,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 11,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 11,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 206,
+		"endLine": 212,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 214,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRLaserPointer.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerEnter() : Void from class FxRWindow to public PointerEnter() : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerEnter() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 8,
+		"endLine": 10,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerEnter() : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerExit() : Void from class FxRWindow to public PointerExit() : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerExit() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerExit() : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerOver(texCoord Vector2) : Void from class FxRWindow to public PointerOver(texCoord Vector2) : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 14,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerOver(texCoord Vector2) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerPress(texCoord Vector2) : Void from class FxRWindow to public PointerPress(texCoord Vector2) : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 114,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerPress(texCoord Vector2) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerRelease(texCoord Vector2) : Void from class FxRWindow to public PointerRelease(texCoord Vector2) : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 119,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerRelease(texCoord Vector2) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public PointerScrollDiscrete(delta Vector2) : Void from class FxRWindow to public PointerScrollDiscrete(delta Vector2) : Void from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 124,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 29,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public PointerScrollDiscrete(delta Vector2) : Void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public fxr_plugin : FxRPlugin from class FxRWindow to public fxr_plugin : FxRPlugin from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public fxr_plugin : FxRPlugin"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private videoSize : Vector2Int from class FxRWindow to protected videoSize : Vector2Int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private videoSize : Vector2Int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected videoSize : Vector2Int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected videoSize : Vector2Int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private videoSize : Vector2Int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected videoSize : Vector2Int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private _windowIndex : int from class FxRWindow to protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 15,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _windowIndex : int from class FxRPointableSurface",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 15,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _windowIndex : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _windowIndex : int"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass FxRPointableSurface from classes [FxRWindow]",
+	"leftSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 4,
+		"endLine": 166,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "FxRWindow"
+}],
+	"rightSideLocations": [{
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRWindow.java",
+		"startLine": 4,
+		"endLine": 137,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "FxRWindow"
+}, {
+		"filePath": "Source/FirefoxRealityProUnity/Assets/Scripts/FxRPointableSurface.java",
+		"startLine": 4,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "FxRPointableSurface"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,975 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dantman/elite-vr-cockpit.git",
+	"sha1": "2ca2f323272fee1d1b88edb3102cbb15c84d656a",
+	"url": "https://github.com/dantman/elite-vr-cockpit/commit/2ca2f323272fee1d1b88edb3102cbb15c84d656a",
+	"refactorings": [{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public Grabbed(hand Hand) : Void from class EVRC.VirtualThrottleButtons to public Grabbed(hand Hand) : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Grabbed(hand Hand) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public Grabbed(hand Hand) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public Ungrabbed() : Void from class EVRC.VirtualThrottleButtons to public Ungrabbed() : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Ungrabbed() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 12,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public Ungrabbed() : Void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public output : VJoyInterface from class EVRC.VirtualThrottleButtons to public output : VJoyInterface from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public output : VJoyInterface"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public output : VJoyInterface"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private grabbedHand : Hand from class EVRC.VirtualThrottleButtons to protected grabbedHand : Hand from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private grabbedHand : Hand"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected grabbedHand : Hand"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected grabbedHand : Hand from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private grabbedHand : Hand"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected grabbedHand : Hand"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected grabbedHand : Hand from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private grabbedHand : Hand"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected grabbedHand : Hand"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public Grabbed(hand Hand) : Void from class EVRC.VirtualJoystickButtons to public Grabbed(hand Hand) : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Grabbed(hand Hand) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 9,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public Grabbed(hand Hand) : Void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public Ungrabbed() : Void from class EVRC.VirtualJoystickButtons to public Ungrabbed() : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 25,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Ungrabbed() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 12,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public Ungrabbed() : Void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public output : VJoyInterface from class EVRC.VirtualJoystickButtons to public output : VJoyInterface from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public output : VJoyInterface"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public output : VJoyInterface"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private grabbedHand : Hand from class EVRC.VirtualJoystickButtons to protected grabbedHand : Hand from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 16,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private grabbedHand : Hand"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected grabbedHand : Hand"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass EVRC.VirtualControlButtons from classes [EVRC.VirtualThrottleButtons, EVRC.VirtualJoystickButtons]",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 4,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "EVRC.VirtualThrottleButtons"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 4,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "EVRC.VirtualJoystickButtons"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 4,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "EVRC.VirtualThrottleButtons"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 4,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "EVRC.VirtualJoystickButtons"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "EVRC.VirtualControlButtons"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PressButton(btnNumber Uint) : Void extracted from private OnActionPress(ev ButtonActionsPress) : Void in class EVRC.VirtualThrottleButtons & moved to class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 22,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnActionPress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 19,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PressButton(btnNumber Uint) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 17,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 14,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnActionPress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PressButton(btnIndex)"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable btnIndex : Uint to btnNumber : Uint in method protected PressButton(btnNumber Uint) : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "btnIndex : Uint"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "btnNumber : Uint"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected PressButton(btnNumber Uint) : Void extracted from private OnActionPress(ev ButtonActionsPress) : Void in class EVRC.VirtualJoystickButtons & moved to class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 28,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnActionPress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PressButton(btnNumber Uint) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 17,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 20,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnActionPress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "PressButton(btnNumber)"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected UnpressButton(btnNumber Uint) : Void extracted from private OnActionUnpress(ev ButtonActionsPress) : Void in class EVRC.VirtualThrottleButtons & moved to class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 36,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnActionUnpress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 19,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 36,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected UnpressButton(btnNumber Uint) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 17,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 23,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnActionUnpress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnpressButton(btnIndex)"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable btnIndex : Uint to btnNumber : Uint in method protected UnpressButton(btnNumber Uint) : Void from class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "btnIndex : Uint"
+}, {
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "btnNumber : Uint"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected UnpressButton(btnNumber Uint) : Void extracted from private OnActionUnpress(ev ButtonActionsPress) : Void in class EVRC.VirtualJoystickButtons & moved to class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 42,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnActionUnpress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 19,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 36,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected UnpressButton(btnNumber Uint) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 17,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnActionUnpress(ev ButtonActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "UnpressButton(btnNumber)"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected ReleaseHatDirection(hatNumber Uint) : Void extracted from private OnDirectionUnpress(ev ActionsController.DirectionActionsPress) : Void in class EVRC.VirtualJoystickButtons & moved to class EVRC.VirtualControlButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 70,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private OnDirectionUnpress(ev ActionsController.DirectionActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 19,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected ReleaseHatDirection(hatNumber Uint) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 49,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 49,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 47,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private OnDirectionUnpress(ev ActionsController.DirectionActionsPress) : Void"
+}, {
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ReleaseHatDirection(hatNumber)"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass EVRC.VirtualControlButtons from class EVRC.VirtualThrottleButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 4,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EVRC.VirtualThrottleButtons"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualThrottleButtons.java",
+		"startLine": 4,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "EVRC.VirtualThrottleButtons"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "EVRC.VirtualControlButtons"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass EVRC.VirtualControlButtons from class EVRC.VirtualJoystickButtons",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 4,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "EVRC.VirtualJoystickButtons"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/VirtualJoystickButtons.java",
+		"startLine": 4,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "EVRC.VirtualJoystickButtons"
+}, {
+		"filePath": "Assets/Scripts/VirtualControlButtons.java",
+		"startLine": 4,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "EVRC.VirtualControlButtons"
+}]
+}
+]
+}]
+}

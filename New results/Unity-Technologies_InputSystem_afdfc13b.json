@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/InputSystem.git",
+	"sha1": "afdfc13b820850f74f8edceffb06eb91d9447dbb",
+	"url": "https://github.com/Unity-Technologies/InputSystem/commit/afdfc13b820850f74f8edceffb06eb91d9447dbb",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public Devices_CorrectControllerTypeIsCreated() : Void renamed to public Devices_CanCreateAndroidSensors(type Type) : Void in class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 12,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Devices_CorrectControllerTypeIsCreated() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 59,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Devices_CanCreateAndroidSensors(type Type) : Void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type device : Object to device : Var in method public Devices_SupportsAndroidGamepad() : Void from class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 12,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "device : Object"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "device : Var"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable joystick : Object to device : Object in method public Devices_CanCreateAndroidSensors(type Type) : Void from class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 12,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "joystick : Object"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 12,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "device : Object"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter type : Type in method public Devices_CanCreateAndroidSensors(type Type) : Void from class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 12,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Devices_CorrectControllerTypeIsCreated() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 612,
+		"endColumn": 621,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "type : Type"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 59,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Devices_CanCreateAndroidSensors(type Type) : Void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @TestCase(value = MISSING) in method public Devices_CanCreateAndroidSensors(type Type) : Void from class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 12,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Devices_CorrectControllerTypeIsCreated() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 41,
+		"endColumn": 65,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@TestCase(value = MISSING)"
+}, {
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 59,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public Devices_CanCreateAndroidSensors(type Type) : Void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public Devices_AccelerometerWorks() : Void from class AndroidSensorTests to public Devices_SupportsAndroidAccelerometer() : Void from class AndroidTests",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidSensorTests.java",
+		"startLine": 18,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Devices_AccelerometerWorks() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.unity.inputsystem/Tests/InputSystem/Plugins/AndroidTests.java",
+		"startLine": 64,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public Devices_SupportsAndroidAccelerometer() : Void"
+}]
+}
+]
+}]
+}

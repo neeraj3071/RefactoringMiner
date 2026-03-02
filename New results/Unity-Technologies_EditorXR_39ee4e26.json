@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "39ee4e263f640cb6b1e08bfccc91a0d0778d3067",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/39ee4e263f640cb6b1e08bfccc91a0d0778d3067",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type state : SpatialInterfaceState to state : SpatialMenuState in method package ChangeMenuState(state SpatialMenuState) : Void from class UnityEditor.SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 22,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "state : SpatialInterfaceState"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 0,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "state : SpatialMenuState"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 0,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [spatialInterfaceState : SpatialInterfaceState, pollingSpatialInputType : boolean] to m_SpatialMenuUi : SpatialMenuUI in class UnityEditor.SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "spatialInterfaceState : SpatialInterfaceState"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 16,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "pollingSpatialInputType : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "m_SpatialMenuUi : SpatialMenuUI"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier final in class UnityEditor.SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 14,
+		"endLine": 561,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "UnityEditor.SpatialMenuUI"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 13,
+		"endLine": 556,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "UnityEditor.SpatialMenuUI"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type changeMenuState : Action<SpatialinterfaceState> to changeMenuState : Action<> in class UnityEditor.SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 40,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "changeMenuState : Action<SpatialinterfaceState>"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "changeMenuState : Action<>"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [allowAdaptivePositioning : boolean, resetAdaptivePosition : boolean] to m_SpatialUIGhostVisuals : SpatialMenuGhostVisuals in class UnityEditor.SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 18,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "allowAdaptivePositioning : boolean"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 18,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "resetAdaptivePosition : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 27,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "m_SpatialUIGhostVisuals : SpatialMenuGhostVisuals"
+}]
+}
+]
+}]
+}

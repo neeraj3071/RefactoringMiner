@@ -1,0 +1,450 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "a13a68ad76bf69b52f49d004a3e4f89255100ca2",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/a13a68ad76bf69b52f49d004a3e4f89255100ca2",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public GetLastVersion() : String renamed to package get() : void in class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 23,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLastVersion() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package get() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public SetLastVersion(version String) : Void renamed to private SetBooleanConfigValue(name String, value boolean) : Void in class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetLastVersion(version String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private SetBooleanConfigValue(name String, value boolean) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public IsDontShowOnLoadEnabled() : boolean renamed to private GetBooleanConfigValue(name String, defaultValue boolean) : boolean in class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsDontShowOnLoadEnabled() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GetBooleanConfigValue(name String, defaultValue boolean) : boolean"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to void in method package get() : void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 17,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 23,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLastVersion() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 7,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package get() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package get() : void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 23,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLastVersion() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package get() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public GetLastVersion() : String from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 23,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetLastVersion() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package get() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter version : String in method public SetLastVersion(version String) : Void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 39,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "version : String"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetLastVersion(version String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private SetBooleanConfigValue(name String, value boolean) : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter name : String in method private SetBooleanConfigValue(name String, value boolean) : Void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetLastVersion(version String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 47,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "name : String"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private SetBooleanConfigValue(name String, value boolean) : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter value : boolean in method private SetBooleanConfigValue(name String, value boolean) : Void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetLastVersion(version String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 61,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "value : boolean"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private SetBooleanConfigValue(name String, value boolean) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private SetBooleanConfigValue(name String, value boolean) : Void from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public SetLastVersion(version String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private SetBooleanConfigValue(name String, value boolean) : Void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable d : Object in method private GetBooleanConfigValue(name String, defaultValue boolean) : boolean from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "d : Object"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter name : String in method private GetBooleanConfigValue(name String, defaultValue boolean) : boolean from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsDontShowOnLoadEnabled() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 50,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "name : String"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private GetBooleanConfigValue(name String, defaultValue boolean) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter defaultValue : boolean in method private GetBooleanConfigValue(name String, defaultValue boolean) : boolean from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsDontShowOnLoadEnabled() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "defaultValue : boolean"
+}, {
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private GetBooleanConfigValue(name String, defaultValue boolean) : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private GetBooleanConfigValue(name String, defaultValue boolean) : boolean from class KRTQuestTools.KRTQuestToolsSettings",
+	"leftSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsDontShowOnLoadEnabled() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/KRTQuestTools.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private GetBooleanConfigValue(name String, defaultValue boolean) : boolean"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable enabled : Object in method package VertexColorRemoverAutomator() from class KRTQuestTools.VertexColorRemoverAutomator",
+	"leftSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 12,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "enabled : Object"
+}, {
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Editor/VertexColorRemover/VertexColorRemoverAutomator.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

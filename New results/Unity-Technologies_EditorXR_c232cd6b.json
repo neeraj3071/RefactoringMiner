@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "c232cd6b981652d201feb6018c950c83c3ddbd28",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/c232cd6b981652d201feb6018c950c83c3ddbd28",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private Action : selectionChanged from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : selectionChanged"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private Action : selectionChanged"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier static in attribute public Action : selectionChanged from class EditorVR",
+	"leftSideLocations": [{
+		"filePath": "Scripts/EditorVR.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 34,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Action : selectionChanged"
+}],
+	"rightSideLocations": [{
+		"filePath": "Scripts/EditorVR.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private Action : selectionChanged"
+}]
+}
+]
+}]
+}

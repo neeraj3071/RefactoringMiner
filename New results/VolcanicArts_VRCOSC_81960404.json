@@ -1,0 +1,123 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "819604043ba566b986461831f6b4e813260fc23b",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/819604043ba566b986461831f6b4e813260fc23b",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressMessage(value = \"CA2208:Instantiate argument exceptions correctly\") in class VRCOSC.Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 15,
+		"endLine": 147,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "VRCOSC.Module"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 0,
+		"endColumn": 89,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressMessage(value = \"CA2208:Instantiate argument exceptions correctly\")"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 16,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "VRCOSC.Module"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected RegisterButtonInput(lookup Enum) : Void renamed to private registerInput(lookup Enum, parameterData InputParameterData) : Void in class VRCOSC.Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RegisterButtonInput(lookup Enum) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private registerInput(lookup Enum, parameterData InputParameterData) : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter parameterData : InputParameterData in method private registerInput(lookup Enum, parameterData InputParameterData) : Void from class VRCOSC.Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RegisterButtonInput(lookup Enum) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 46,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "parameterData : InputParameterData"
+}, {
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private registerInput(lookup Enum, parameterData InputParameterData) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private registerInput(lookup Enum, parameterData InputParameterData) : Void from class VRCOSC.Module",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected RegisterButtonInput(lookup Enum) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Modules/Module.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private registerInput(lookup Enum, parameterData InputParameterData) : Void"
+}]
+}
+]
+}]
+}

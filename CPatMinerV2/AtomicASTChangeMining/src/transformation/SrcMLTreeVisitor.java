@@ -7,12 +7,135 @@ import java.util.ArrayList;
 import java.util.Stack;
 import java.util.List;
 import java.util.Objects;
+import java.util.HashMap;
+import java.util.Map;
 
 import static transformation.TransformationUtils.*;
 
 public class SrcMLTreeVisitor {
 
     AST asn = AST.newAST(AST.JLS8);
+    // Symbol table to track variable types for type inference
+    Map<String, Type> variableTypes = new HashMap<>();
+    
+    // C# to Java type mapping - PRIMITIVE types for variable declarations
+    private static final Map<String, String> PRIMITIVE_TYPE_MAPPINGS = new HashMap<>();
+    // C# to Java type mapping - WRAPPER types for generics
+    private static final Map<String, String> WRAPPER_TYPE_MAPPINGS = new HashMap<>();
+    static {
+        // Primitive types (for regular variables)
+        PRIMITIVE_TYPE_MAPPINGS.put("int", "int");
+        PRIMITIVE_TYPE_MAPPINGS.put("long", "long");
+        PRIMITIVE_TYPE_MAPPINGS.put("short", "short");
+        PRIMITIVE_TYPE_MAPPINGS.put("byte", "byte");
+        PRIMITIVE_TYPE_MAPPINGS.put("bool", "boolean");
+        PRIMITIVE_TYPE_MAPPINGS.put("char", "char");
+        PRIMITIVE_TYPE_MAPPINGS.put("float", "float");
+        PRIMITIVE_TYPE_MAPPINGS.put("double", "double");
+        PRIMITIVE_TYPE_MAPPINGS.put("string", "String");  // String is always an object in Java
+        PRIMITIVE_TYPE_MAPPINGS.put("object", "Object");
+        PRIMITIVE_TYPE_MAPPINGS.put("decimal", "BigDecimal");
+        
+        // Wrapper types (for generics and inferred types)
+        WRAPPER_TYPE_MAPPINGS.put("int", "Integer");
+        WRAPPER_TYPE_MAPPINGS.put("long", "Long");
+        WRAPPER_TYPE_MAPPINGS.put("short", "Short");
+        WRAPPER_TYPE_MAPPINGS.put("byte", "Byte");
+        WRAPPER_TYPE_MAPPINGS.put("bool", "Boolean");
+        WRAPPER_TYPE_MAPPINGS.put("char", "Character");
+        WRAPPER_TYPE_MAPPINGS.put("float", "Float");
+        WRAPPER_TYPE_MAPPINGS.put("double", "Double");
+        WRAPPER_TYPE_MAPPINGS.put("string", "String");
+        WRAPPER_TYPE_MAPPINGS.put("object", "Object");
+        WRAPPER_TYPE_MAPPINGS.put("decimal", "BigDecimal");
+        
+        // Common framework types (same for both)
+        PRIMITIVE_TYPE_MAPPINGS.put("List", "List");
+        PRIMITIVE_TYPE_MAPPINGS.put("Dictionary", "Map");
+        PRIMITIVE_TYPE_MAPPINGS.put("HashSet", "HashSet");
+        PRIMITIVE_TYPE_MAPPINGS.put("ArrayList", "ArrayList");
+        PRIMITIVE_TYPE_MAPPINGS.put("LinkedList", "LinkedList");
+        
+        WRAPPER_TYPE_MAPPINGS.put("List", "List");
+        WRAPPER_TYPE_MAPPINGS.put("Dictionary", "Map");
+        WRAPPER_TYPE_MAPPINGS.put("HashSet", "HashSet");
+        WRAPPER_TYPE_MAPPINGS.put("ArrayList", "ArrayList");
+        WRAPPER_TYPE_MAPPINGS.put("LinkedList", "LinkedList");
+    }
+    
+    /**
+     * Maps C# type names to Java equivalents
+     * @param csharpType The C# type name
+     * @param useWrapper Whether to use wrapper types (for generics) or primitives (for variables)
+     */
+    private String mapCSharpTypeToJava(String csharpType, boolean useWrapper) {
+        Map<String, String> mappings = useWrapper ? WRAPPER_TYPE_MAPPINGS : PRIMITIVE_TYPE_MAPPINGS;
+        
+        // Try lowercase first (for C# primitive types)
+        String mapped = mappings.get(csharpType.toLowerCase());
+        if (mapped != null) {
+            return mapped;
+        }
+        // Try as-is (for framework types like List, Dictionary)
+        mapped = mappings.get(csharpType);
+        if (mapped != null) {
+            return mapped;
+        }
+        // No mapping found, return original with first letter capitalized
+        if (csharpType.isEmpty()) {
+            return csharpType;
+        }
+        return csharpType.substring(0, 1).toUpperCase() + csharpType.substring(1);
+    }
+    
+    /**
+     * Processes type name for regular variable declarations (uses primitives)
+     */
+    private String processTypeName(String typeName) {
+        if (typeName == null || typeName.isEmpty()) {
+            return typeName;
+        }
+        return mapCSharpTypeToJava(typeName, false);  // Use primitives
+    }
+    
+    /**
+     * Processes type name for generic contexts (uses wrappers)
+     */
+    private String processTypeNameForGeneric(String typeName) {
+        if (typeName == null || typeName.isEmpty()) {
+            return typeName;
+        }
+        return mapCSharpTypeToJava(typeName, true);  // Use wrappers
+    }
+    
+    /**
+     * Creates the appropriate Type (PrimitiveType or SimpleType) for a type name
+     * @param typeName The Java type name
+     * @param useWrapper Whether to use wrapper classes for primitives
+     */
+    private Type createType(String typeName, boolean useWrapper) {
+        // Check if it's a Java primitive type (and we're not using wrappers)
+        if (!useWrapper) {
+            PrimitiveType.Code primitiveCode = null;
+            switch (typeName) {
+                case "int": primitiveCode = PrimitiveType.INT; break;
+                case "boolean": primitiveCode = PrimitiveType.BOOLEAN; break;
+                case "char": primitiveCode = PrimitiveType.CHAR; break;
+                case "byte": primitiveCode = PrimitiveType.BYTE; break;
+                case "short": primitiveCode = PrimitiveType.SHORT; break;
+                case "long": primitiveCode = PrimitiveType.LONG; break;
+                case "float": primitiveCode = PrimitiveType.FLOAT; break;
+                case "double": primitiveCode = PrimitiveType.DOUBLE; break;
+            }
+            
+            if (primitiveCode != null) {
+                return asn.newPrimitiveType(primitiveCode);
+            }
+        }
+        
+        // Not a primitive, or we're using wrappers - create SimpleType
+        return asn.newSimpleType(asn.newSimpleName(typeName));
+    }
 
     void visit(CommentNode node) {
         // Do nothing since comments are not needed
@@ -168,15 +291,17 @@ public class SrcMLTreeVisitor {
     Type visitType(NameNode node) {
         List<Tree> children = node.getChildren();
         if (children.size() == 0) {
-            Type t = asn.newSimpleType(asn.newSimpleName(capitalizeFirstLetter(node.getLabel())));
+            String mappedTypeName = processTypeName(node.getLabel());
+            Type t = createType(mappedTypeName, false);  // Use primitives for regular types
             t.setSourceRange(node.getPos(), node.getLength());
             return t;
         }
         if (children.size() > 1 && children.get(1) instanceof IndexNode) {
             if (!children.get(0).getLabel().isEmpty()) {
-                SimpleType simpleType = asn.newSimpleType(asn.newSimpleName(capitalizeFirstLetter(children.get(0).getLabel())));
-                simpleType.setSourceRange(node.getPos(), node.getLength());
-                return asn.newArrayType(simpleType);
+                String mappedTypeName = processTypeName(children.get(0).getLabel());
+                Type elementType = createType(mappedTypeName, false);  // Use primitives for array elements
+                elementType.setSourceRange(node.getPos(), node.getLength());
+                return asn.newArrayType(elementType);
             }
         }
         if (children.size() > 1 && children.get(1) instanceof ArgumentListNode) {
@@ -186,7 +311,11 @@ public class SrcMLTreeVisitor {
             returnType.setSourceRange(node.getPos(), node.getLength());
             for (Expression exp : this.visit((ArgumentListNode) children.get(1))) {
                 if (exp instanceof SimpleName) {
-                    Type tt = asn.newSimpleType((Name) exp);
+                    // Apply type mapping to generic type arguments (use wrappers)
+                    String typeName = ((SimpleName) exp).getIdentifier();
+                    String mappedTypeName = processTypeNameForGeneric(typeName);
+                    SimpleName mappedName = asn.newSimpleName(mappedTypeName);
+                    Type tt = asn.newSimpleType(mappedName);
                     tt.setSourceRange(exp.getStartPosition(), exp.getLength());
                     returnType.typeArguments().add(tt);
                 }
@@ -287,7 +416,26 @@ public class SrcMLTreeVisitor {
         if (children.size() == 1) {
             return this.evaluateNode(children.get(0));
         } else if (children.size() == 2) {
-            if (Objects.equals(children.get(0).getLabel(), "new")) {// expression with new MyClass(...)
+            if (Objects.equals(children.get(0).getLabel(), "new")) {// expression with new MyClass(...) or new int[] {...}
+                // Check if this is an array initializer: new Type[] { ... }
+                if (children.get(1) instanceof NameNode) {
+                    NameNode nameNode = (NameNode) children.get(1);
+                    // Check if it has array brackets (index child)
+                    boolean hasArrayBrackets = nameNode.getChildren().stream()
+                        .anyMatch(child -> child instanceof IndexNode);
+                    if (hasArrayBrackets) {
+                        // This might be followed by a block in a 3-child expression
+                        // For now, just create the type reference
+                        ArrayCreation arrayInitExpression = asn.newArrayCreation();
+                        arrayInitExpression.setSourceRange(node.getPos(), node.getLength());
+                        Type arrayType = this.visitType(nameNode);
+                        if (arrayType instanceof ArrayType) {
+                            arrayInitExpression.setType((ArrayType) arrayType);
+                        }
+                        return arrayInitExpression;
+                    }
+                }
+                
                 ClassInstanceCreation classInstanceCreation = asn.newClassInstanceCreation();
                 classInstanceCreation.setSourceRange(node.getPos(), node.getLength());
                 if (children.get(1) instanceof CallNode) {
@@ -321,8 +469,8 @@ public class SrcMLTreeVisitor {
                 if (children.get(0) instanceof OperatorNode)
                     prefixExpression.setOperator(this.visitPrefix((OperatorNode) children.get(0)));
                 return prefixExpression;
-            } else if (Objects.equals(children.get(0).getLabel(), "$") && children.get(1) instanceof LiteralNode) { // string with $ sign
-                return this.visit((LiteralNode) children.get(1));
+            } else if (Objects.equals(children.get(0).getLabel(), "$") && children.get(1) instanceof LiteralNode) { // string interpolation $"..."
+                return this.buildStringInterpolation(node, (LiteralNode) children.get(1));
             } else if (children.get(0) instanceof OperatorNode && children.get(1) instanceof CallNode) { // await methodcall()
                 return this.visit((CallNode) children.get(1));
             }
@@ -340,6 +488,64 @@ public class SrcMLTreeVisitor {
                 if (exp != null)
                     assignment.setRightHandSide(exp);
                 return assignment;
+            }
+            // Handle array initializers: new Type[] { 1, 2, 3 }
+            if (children.size() == 3 && children.get(0) instanceof OperatorNode && 
+                Objects.equals(children.get(0).getLabel(), "new") &&
+                children.get(1) instanceof NameNode && children.get(2) instanceof BlockNode) {
+                
+                ArrayCreation arrayCreation = asn.newArrayCreation();
+                arrayCreation.setSourceRange(node.getPos(), node.getLength());
+                
+                // Get array type from NameNode (e.g., int[])
+                Type arrayType = this.visitType((NameNode) children.get(1));
+                if (arrayType instanceof ArrayType) {
+                    arrayCreation.setType((ArrayType) arrayType);
+                }
+                
+                // Get initializer expressions from BlockNode
+                ArrayInitializer arrayInitializer = asn.newArrayInitializer();
+                BlockNode blockNode = (BlockNode) children.get(2);
+                for (Tree child : blockNode.getChildren()) {
+                    if (child instanceof ExprNode) {
+                        Expression initExpr = this.visit((ExprNode) child);
+                        if (initExpr != null) {
+                            arrayInitializer.expressions().add(initExpr);
+                        }
+                    }
+                }
+                arrayCreation.setInitializer(arrayInitializer);
+                
+                return arrayCreation;
+            }
+            // Handle null coalescing operator (??) - transform to ternary: item ?? text -> item != null ? item : text
+            if (children.size() >= 3 && children.get(1) instanceof OperatorNode && 
+                Objects.equals(children.get(1).getLabel(), "??")) {
+                ConditionalExpression conditionalExpression = asn.newConditionalExpression();
+                conditionalExpression.setSourceRange(node.getPos(), node.getLength());
+                
+                // Left operand becomes both the condition test and the then-expression
+                Expression leftOperand = this.evaluateNode(children.get(0));
+                if (leftOperand != null) {
+                    // Create condition: leftOperand != null
+                    InfixExpression condition = asn.newInfixExpression();
+                    condition.setLeftOperand((Expression) ASTNode.copySubtree(asn, leftOperand));
+                    condition.setOperator(InfixExpression.Operator.NOT_EQUALS);
+                    condition.setRightOperand(asn.newNullLiteral());
+                    conditionalExpression.setExpression(condition);
+                    
+                    // Then expression: return the left operand itself
+                    conditionalExpression.setThenExpression((Expression) ASTNode.copySubtree(asn, leftOperand));
+                }
+                
+                // Right operand (after ??) becomes the else-expression
+                ExprNode rightOperandNode = createNewExprNode(node, 2);
+                Expression rightOperand = this.visit(rightOperandNode);
+                if (rightOperand != null) {
+                    conditionalExpression.setElseExpression(rightOperand);
+                }
+                
+                return conditionalExpression;
             }
             if (containsParenthesis(node)) {
                 return this.visitExprNodeParenthesis(node);
@@ -915,11 +1121,14 @@ public class SrcMLTreeVisitor {
         VariableDeclarationFragment variableFragment = asn.newVariableDeclarationFragment();
         variableFragment.setSourceRange(node.getPos(), node.getLength());
         Object t = null;
+        String varName = null;
         for (Tree child : node.getChildren()) {
             if (child instanceof NameNode) {
                 Name n = this.visit((NameNode) child);
-                if (n != null && n.isSimpleName())
+                if (n != null && n.isSimpleName()) {
                     variableFragment.setName((SimpleName) n);
+                    varName = n.toString();
+                }
             }
             if (child instanceof InitNode) {
                 Expression type_literal = (Expression) this.visit((InitNode) child);
@@ -927,6 +1136,10 @@ public class SrcMLTreeVisitor {
             }
             if (child instanceof TypeNode)
                 t = this.visit((TypeNode) child); // could be type or field declaration
+        }
+        // Store variable type in symbol table for type inference
+        if (varName != null && t instanceof Type) {
+            variableTypes.put(varName, (Type) t);
         }
         return new ReturnPair<>(variableFragment, t);
     }
@@ -1227,21 +1440,83 @@ public class SrcMLTreeVisitor {
             if (child instanceof InitNode) {
                 child = child.getChildren().get(0);
                 if (child instanceof DeclNode) {
+                    Type declaredType = null;
+                    Expression collectionExpr = null;
+                    
                     for (Tree c : child.getChildren()) {
                         if (c instanceof NameNode) {
                             Name n = this.visit((NameNode) c);
                             if (n != null && n.isSimpleName())
                                 variableDeclaration.setName((SimpleName) n);
-                        } else if (c instanceof TypeNode)
-                            variableDeclaration.setType((Type) this.visit((TypeNode) c));
-                        else if (c instanceof RangeNode)
-                            foreachStatement.setExpression(this.visit((RangeNode) c));
+                        } else if (c instanceof TypeNode) {
+                            declaredType = (Type) this.visit((TypeNode) c);
+                        } else if (c instanceof RangeNode) {
+                            collectionExpr = this.visit((RangeNode) c);
+                            foreachStatement.setExpression(collectionExpr);
+                        }
+                    }
+                    
+                    // Type inference for 'var' keyword
+                    if (declaredType != null && declaredType.toString().equals("Var") && collectionExpr != null) {
+                        Type inferredType = inferElementType(collectionExpr);
+                        if (inferredType != null) {
+                            declaredType = inferredType;
+                        }
+                    }
+                    
+                    if (declaredType != null) {
+                        variableDeclaration.setType(declaredType);
                     }
                     foreachStatement.setParameter(variableDeclaration);
                 }
             }
         }
         return foreachStatement;
+    }
+    
+    // Helper method to infer element type from collection expression
+    private Type inferElementType(Expression collectionExpr) {
+        // If the collection expression is a simple name, look it up in symbol table
+        if (collectionExpr instanceof SimpleName) {
+            String varName = collectionExpr.toString();
+            Type collectionType = variableTypes.get(varName);
+            
+            if (collectionType instanceof ParameterizedType) {
+                ParameterizedType paramType = (ParameterizedType) collectionType;
+                List<?> typeArgs = paramType.typeArguments();
+                if (!typeArgs.isEmpty() && typeArgs.get(0) instanceof Type) {
+                    Type originalType = (Type) typeArgs.get(0);
+                    // Apply type mapping to convert C# types to Java types
+                    return mapTypeToJava(originalType);
+                }
+            } else if (collectionType instanceof ArrayType) {
+                ArrayType arrayType = (ArrayType) collectionType;
+                Type elementType = arrayType.getElementType();
+                // Apply type mapping to convert C# types to Java types
+                return mapTypeToJava(elementType);
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * Creates a new Type with C# to Java mapping applied (uses wrappers for generic contexts)
+     */
+    private Type mapTypeToJava(Type originalType) {
+        if (originalType instanceof SimpleType) {
+            SimpleType simpleType = (SimpleType) originalType;
+            Name name = simpleType.getName();
+            String typeName = name.toString();
+            String mappedTypeName = processTypeNameForGeneric(typeName);  // Use wrappers for inferred types
+            
+            if (!typeName.equals(mappedTypeName)) {
+                // Type was mapped, create new Type with mapped name
+                SimpleType newType = asn.newSimpleType(asn.newSimpleName(mappedTypeName));
+                return newType;
+            }
+        }
+        // No mapping needed, return a copy of the original
+        return (Type) ASTNode.copySubtree(asn, originalType);
     }
 
     Expression visit(IncrNode node) {
@@ -1570,21 +1845,287 @@ public class SrcMLTreeVisitor {
     ConditionalExpression visit(TernaryNode node) {
         ConditionalExpression ternaryExpression = asn.newConditionalExpression();
         ternaryExpression.setSourceRange(node.getPos(), node.getLength());
+        
+        // Check if this is a null-conditional operator (?.)
+        // srcML represents obj?.Method() as a ternary with:
+        // - condition: obj
+        // - then: .Method() (expression starting with operator '.')
+        // - else: missing or implicit null
+        boolean isNullConditional = false;
+        Expression conditionExpr = null;
+        ThenNode thenNode = null;
+        ElseNode elseNode = null;
+        
         for (Tree child : node.getChildren()) {
-            if (child instanceof ConditionNode)
-                ternaryExpression.setExpression(this.visit((ConditionNode) child));
+            if (child instanceof ConditionNode) {
+                conditionExpr = this.visit((ConditionNode) child);
+            }
             if (child instanceof ThenNode) {
-                Expression exp = this.visit((ThenNode) child);
+                thenNode = (ThenNode) child;
+            }
+            if (child instanceof ElseNode) {
+                elseNode = (ElseNode) child;
+            }
+        }
+        
+        // Detect null-conditional operator: then expression starts with '.' operator
+        // or contains an index node (for null-conditional indexing: array?[index])
+        boolean isNullConditionalIndexing = false;
+        if (thenNode != null && !thenNode.getChildren().isEmpty()) {
+            Tree thenChild = thenNode.getChildren().get(0);
+            if (thenChild instanceof ExprNode) {
+                List<Tree> thenExprChildren = thenChild.getChildren();
+                if (!thenExprChildren.isEmpty() && thenExprChildren.get(0) instanceof OperatorNode &&
+                    Objects.equals(thenExprChildren.get(0).getLabel(), ".")) {
+                    isNullConditional = true;
+                }
+                // Check for null-conditional indexing: array?[index]
+                // In this case, the then clause contains an IndexNode
+                if (!thenExprChildren.isEmpty() && thenExprChildren.get(0) instanceof IndexNode) {
+                    isNullConditional = true;
+                    isNullConditionalIndexing = true;
+                }
+            }
+        }
+        
+        if (isNullConditional && conditionExpr != null) {
+            // Transform null-conditional: obj?.Method() → (obj != null ? obj.Method() : null)
+            // Or null-conditional indexing: array?[index] → (array != null ? array[index] : null)
+            
+            // Create condition: obj != null (or array != null)
+            InfixExpression condition = asn.newInfixExpression();
+            condition.setLeftOperand((Expression) ASTNode.copySubtree(asn, conditionExpr));
+            condition.setOperator(InfixExpression.Operator.NOT_EQUALS);
+            condition.setRightOperand(asn.newNullLiteral());
+            ternaryExpression.setExpression(condition);
+            
+            if (isNullConditionalIndexing) {
+                // Handle null-conditional indexing: array?[index] → array[index]
+                if (!thenNode.getChildren().isEmpty()) {
+                    Tree thenChild = thenNode.getChildren().get(0);
+                    if (thenChild instanceof ExprNode) {
+                        List<Tree> thenExprChildren = thenChild.getChildren();
+                        if (!thenExprChildren.isEmpty() && thenExprChildren.get(0) instanceof IndexNode) {
+                            IndexNode indexNode = (IndexNode) thenExprChildren.get(0);
+                            ArrayAccess arrayAccess = asn.newArrayAccess();
+                            arrayAccess.setArray((Expression) ASTNode.copySubtree(asn, conditionExpr));
+                            
+                            // Get the index expression from the IndexNode
+                            if (!indexNode.getChildren().isEmpty()) {
+                                Tree indexChild = indexNode.getChildren().get(0);
+                                if (indexChild instanceof ExprNode) {
+                                    Expression indexExpr = this.visit((ExprNode) indexChild);
+                                    if (indexExpr != null) {
+                                        arrayAccess.setIndex(indexExpr);
+                                    }
+                                }
+                            }
+                            
+                            ternaryExpression.setThenExpression(arrayAccess);
+                        }
+                    }
+                }
+            } else {
+                // Handle regular null-conditional operator: obj?.Method()
+                // Create then expression: obj.Method()
+                // We need to prepend the condition object to the member access
+                if (!thenNode.getChildren().isEmpty()) {
+                    Tree thenChild = thenNode.getChildren().get(0);
+                    if (thenChild instanceof ExprNode) {
+                        List<Tree> thenExprChildren = thenChild.getChildren();
+                        // Skip the first '.' operator and process the rest
+                        if (thenExprChildren.size() > 1) {
+                            // Create a qualified name/call with the condition object as receiver
+                            Expression memberAccess = buildMemberAccessFromNullConditional(
+                                (Expression) ASTNode.copySubtree(asn, conditionExpr),
+                                thenExprChildren
+                            );
+                            if (memberAccess != null) {
+                                ternaryExpression.setThenExpression(memberAccess);
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Create else expression: null
+            ternaryExpression.setElseExpression(asn.newNullLiteral());
+            
+        } else {
+            // Regular ternary operator: condition ? then : else
+            if (conditionExpr != null) {
+                ternaryExpression.setExpression(conditionExpr);
+            }
+            
+            if (thenNode != null) {
+                Expression exp = this.visit(thenNode);
                 if (exp != null)
                     ternaryExpression.setThenExpression(exp);
             }
-            if (child instanceof ElseNode) {
-                Tree c = child.getChildren().get(0);
+            
+            if (elseNode != null) {
+                Tree c = elseNode.getChildren().get(0);
                 if (c instanceof ExprNode)
                     ternaryExpression.setElseExpression(this.visit((ExprNode) c));
             }
         }
+        
         return ternaryExpression;
+    }
+    
+    // Helper method to build member access expression for null-conditional operator
+    private Expression buildMemberAccessFromNullConditional(Expression receiver, List<Tree> thenExprChildren) {
+        // Start from index 1 to skip the initial '.' operator
+        // thenExprChildren: [operator: '.', call or name, ...]
+        
+        if (thenExprChildren.size() < 2) {
+            return null;
+        }
+        
+        Tree memberTree = thenExprChildren.get(1);
+        
+        if (memberTree instanceof CallNode) {
+            // Method call: obj?.Method()
+            MethodInvocation methodInvocation = asn.newMethodInvocation();
+            methodInvocation.setExpression(receiver);
+            
+            List<Tree> callChildren = memberTree.getChildren();
+            for (Tree callChild : callChildren) {
+                if (callChild instanceof NameNode) {
+                    SimpleName methodName = (SimpleName) this.visit((NameNode) callChild);
+                    if (methodName != null) {
+                        methodInvocation.setName(methodName);
+                    }
+                }
+                if (callChild instanceof ArgumentListNode) {
+                    for (Expression arg : this.visit((ArgumentListNode) callChild)) {
+                        if (arg != null) {
+                            methodInvocation.arguments().add(arg);
+                        }
+                    }
+                }
+            }
+            
+            return methodInvocation;
+            
+        } else if (memberTree instanceof NameNode) {
+            // Property access: obj?.Property
+            FieldAccess fieldAccess = asn.newFieldAccess();
+            fieldAccess.setExpression(receiver);
+            SimpleName propertyName = (SimpleName) this.visit((NameNode) memberTree);
+            if (propertyName != null) {
+                fieldAccess.setName(propertyName);
+            }
+            
+            return fieldAccess;
+        }
+        
+        return null;
+    }
+
+    /**
+     * Build string interpolation expression from C# $"..." syntax
+     * Parses the literal to extract string parts and interpolated expressions,
+     * then creates a Java string concatenation using InfixExpression with + operators
+     */
+    private Expression buildStringInterpolation(ExprNode node, LiteralNode literalNode) {
+        String literalValue = literalNode.getLabel();
+        
+        // Remove surrounding quotes if present
+        if (literalValue.startsWith("\"") && literalValue.endsWith("\"")) {
+            literalValue = literalValue.substring(1, literalValue.length() - 1);
+        }
+        
+        // Parse interpolation: alternate between string parts and expressions
+        // Use a list of pairs: (isExpression: boolean, value: String)
+        class Part {
+            boolean isExpression;
+            String value;
+            Part(boolean isExpression, String value) {
+                this.isExpression = isExpression;
+                this.value = value;
+            }
+        }
+        
+        List<Part> parts = new ArrayList<>();
+        StringBuilder currentString = new StringBuilder();
+        int i = 0;
+        
+        while (i < literalValue.length()) {
+            if (literalValue.charAt(i) == '{' && i + 1 < literalValue.length()) {
+                // Save current string part if non-empty
+                if (currentString.length() > 0) {
+                    parts.add(new Part(false, currentString.toString()));
+                    currentString = new StringBuilder();
+                }
+                
+                // Find matching }
+                int braceEnd = literalValue.indexOf('}', i + 1);
+                if (braceEnd != -1) {
+                    String expression = literalValue.substring(i + 1, braceEnd).trim();
+                    if (!expression.isEmpty()) {
+                        parts.add(new Part(true, expression)); // Mark as expression
+                    }
+                    i = braceEnd + 1;
+                    continue;
+                }
+            }
+            currentString.append(literalValue.charAt(i));
+            i++;
+        }
+        
+        // Add remaining string part
+        if (currentString.length() > 0) {
+            parts.add(new Part(false, currentString.toString()));
+        }
+        
+        // If no parts or only one string part, return simple string literal
+        if (parts.isEmpty() || (parts.size() == 1 && !parts.get(0).isExpression)) {
+            StringLiteral stringLiteral = asn.newStringLiteral();
+            if (!parts.isEmpty()) {
+                stringLiteral.setLiteralValue(parts.get(0).value);
+            } else {
+                stringLiteral.setLiteralValue("");
+            }
+            stringLiteral.setSourceRange(node.getPos(), node.getLength());
+            return stringLiteral;
+        }
+        
+        // Build concatenation expression: "part1" + expr1 + "part2" + expr2 + ...
+        Expression result = null;
+        
+        for (Part part : parts) {
+            Expression partExpr;
+            
+            if (part.isExpression) {
+                // Create SimpleName for the expression
+                // Note: This only works for simple identifiers like {x} or {name}
+                // Complex expressions like {x.Length} would need more sophisticated parsing
+                SimpleName name = asn.newSimpleName(part.value);
+                partExpr = name;
+            } else {
+                // String literal part
+                StringLiteral stringLiteral = asn.newStringLiteral();
+                stringLiteral.setLiteralValue(part.value);
+                partExpr = stringLiteral;
+            }
+            
+            if (result == null) {
+                result = partExpr;
+            } else {
+                InfixExpression infixExpr = asn.newInfixExpression();
+                infixExpr.setLeftOperand(result);
+                infixExpr.setOperator(InfixExpression.Operator.PLUS);
+                infixExpr.setRightOperand(partExpr);
+                result = infixExpr;
+            }
+        }
+        
+        if (result != null) {
+            result.setSourceRange(node.getPos(), node.getLength());
+        }
+        
+        return result;
     }
 
     Expression visit(ThenNode node) {
@@ -1822,17 +2363,52 @@ public class SrcMLTreeVisitor {
     LambdaExpression visit(LambdaNode node) {
         LambdaExpression lambda = asn.newLambdaExpression();
         lambda.setSourceRange(node.getPos(), node.getLength());
+        
+        BlockNode blockNode = null;
+        
         for (Tree child : node.getChildren()) {
             if (child instanceof ParameterListNode) {
                 for (VariableDeclaration vdec : this.visit((ParameterListNode) child))
                     lambda.parameters().add(vdec);
             }
             if (child instanceof BlockNode) {
-                Object obj = this.visit((BlockNode) child);
+                blockNode = (BlockNode) child;
+            }
+        }
+        
+        // Check if this is a single-expression lambda without statements
+        // If so, output as expression body rather than block: x -> x * 2 instead of x -> { x * 2; }
+        if (blockNode != null) {
+            boolean isSingleExpression = false;
+            Expression singleExpr = null;
+            
+            // Check if block contains only one expression (no explicit statements)
+            if (!blockNode.getChildren().isEmpty()) {
+                Tree blockChild = blockNode.getChildren().get(0);
+                if (blockChild instanceof BlockContentNode) {
+                    List<Tree> contentChildren = blockChild.getChildren();
+                    if (contentChildren.size() == 1) {
+                        Tree singleChild = contentChildren.get(0);
+                        // Check if it's a single expression, not a statement
+                        if (singleChild instanceof ExprNode) {
+                            isSingleExpression = true;
+                            singleExpr = this.visit((ExprNode) singleChild);
+                        }
+                    }
+                }
+            }
+            
+            if (isSingleExpression && singleExpr != null) {
+                // Set as expression body (no braces in Java lambda)
+                lambda.setBody(singleExpr);
+            } else {
+                // Set as block body (with braces)
+                Object obj = this.visit(blockNode);
                 if (obj instanceof Block)
                     lambda.setBody((Block) obj);
             }
         }
+        
         return lambda;
     }
 

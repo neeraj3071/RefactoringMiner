@@ -1,0 +1,363 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/alvinquach/jpl-trek-vr.git",
+	"sha1": "b4166a644fcf369cdceb7af657b13aaee334504c",
+	"url": "https://github.com/alvinquach/jpl-trek-vr/commit/b4166a644fcf369cdceb7af657b13aaee334504c",
+	"refactorings": [{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable tiff : Tiff to tiff : Tiff in method public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 15,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "tiff : Tiff"
+}, {
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 7,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 37,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "tiff : Tiff"
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter surfaceType : SurfaceGeometryType in method public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 21,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GenerateMesh(mesh Mesh, scale float, heightScale float) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 61,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "surfaceType : SurfaceGeometryType"
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter downsample : int in method public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 21,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GenerateMesh(mesh Mesh, scale float, heightScale float) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 129,
+		"endColumn": 143,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "downsample : int"
+}, {
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 21,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GenerateMesh(mesh Mesh, scale float, heightScale float) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 21,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package GenerateMesh(mesh Mesh, scale float, heightScale float) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 18,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public GenerateMesh(tiff Tiff, mesh Mesh, surfaceType SurfaceGeometryType, scale float, heightScale float, downsample int) : Void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private Scanline32ToFloat(scanline byte[]) : float[] from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 70,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Scanline32ToFloat(scanline byte[]) : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 58,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private Scanline32ToFloat(scanline byte[]) : float[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private Scanline16ToFloat(scanline byte[]) : float[] from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 82,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Scanline16ToFloat(scanline byte[]) : float[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 70,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private Scanline16ToFloat(scanline byte[]) : float[]"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private GeneratePlaneTriangles(hVertCount int, vVertCount int) : int[] from class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 94,
+		"endLine": 114,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GenerateTriangles(hVertCount int, vVertCount int) : int[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 82,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private GeneratePlaneTriangles(hVertCount int, vVertCount int) : int[]"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private GenerateTriangles(hVertCount int, vVertCount int) : int[] renamed to private GeneratePlaneTriangles(hVertCount int, vVertCount int) : int[] in class DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 94,
+		"endLine": 114,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private GenerateTriangles(hVertCount int, vVertCount int) : int[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 82,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private GeneratePlaneTriangles(hVertCount int, vVertCount int) : int[]"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class TerrainGenerator renamed to DemToMeshUtils",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/TerrainGenerator.java",
+		"startLine": 6,
+		"endLine": 115,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "TerrainGenerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/Utils/DemToMeshUtils.java",
+		"startLine": 4,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "DemToMeshUtils"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder Assets/Scripts to Assets/Scripts/MonoBehaviors",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+}
+]
+}]
+}

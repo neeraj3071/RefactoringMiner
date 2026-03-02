@@ -122,7 +122,12 @@ public class TransformationUtils {
             return o;
         } else {
             StringLiteral stringLiteral = asn.newStringLiteral();
-            stringLiteral.setLiteralValue(input);
+            // Strip outer quotes from string literal (srcML includes them)
+            String literalValue = input;
+            if (literalValue.startsWith("\"") && literalValue.endsWith("\"") && literalValue.length() >= 2) {
+                literalValue = literalValue.substring(1, literalValue.length() - 1);
+            }
+            stringLiteral.setLiteralValue(literalValue);
             stringLiteral.setSourceRange(node.getPos(),node.getLength());
             return stringLiteral;
         }

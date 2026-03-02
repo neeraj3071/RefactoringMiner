@@ -1,0 +1,369 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kurotu/VRCQuestTools.git",
+	"sha1": "7f29434f7960f2a42bef755f2fe977bd3385b32f",
+	"url": "https://github.com/kurotu/VRCQuestTools/commit/7f29434f7960f2a42bef755f2fe977bd3385b32f",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method package EstimateMobilePerformanceStats(physbones VRCSDKUtility.Reflection.PhysBone, colliders VRCSDKUtility.Reflection.PhysBoneCollider, contacts VRCSDKUtility.Reflection.ContactBase, isMobile boolean) : AvatarPerformanceStats renamed to package EstimatePerformanceStats(physbones VRCSDKUtility.Reflection.PhysBone, colliders VRCSDKUtility.Reflection.PhysBoneCollider, contacts VRCSDKUtility.Reflection.ContactBase, isMobile boolean) : AvatarPerformanceStats in class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 83,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package EstimateMobilePerformanceStats(physbones VRCSDKUtility.Reflection.PhysBone, colliders VRCSDKUtility.Reflection.PhysBoneCollider, contacts VRCSDKUtility.Reflection.ContactBase, isMobile boolean) : AvatarPerformanceStats"
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 83,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package EstimatePerformanceStats(physbones VRCSDKUtility.Reflection.PhysBone, colliders VRCSDKUtility.Reflection.PhysBoneCollider, contacts VRCSDKUtility.Reflection.ContactBase, isMobile boolean) : AvatarPerformanceStats"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type skinnedMeshRenderers : Renderer[] to dbcs : Object in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "skinnedMeshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dbcs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type meshRenderers : Renderer[] to dbs : Object in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "meshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 12,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "dbs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable skinnedMeshRenderers : Renderer[] to dbcs : Object in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "skinnedMeshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dbcs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable meshRenderers : Renderer[] to dbs : Object in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "meshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 12,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dbs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dbcs : Object to skinnedMeshRenderers : Renderer[] in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dbcs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "skinnedMeshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dbs : Object to meshRenderers : Renderer[] in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 12,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dbs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "meshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dbcs : Object to skinnedMeshRenderers : Renderer[] in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 12,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dbcs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 16,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "skinnedMeshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dbs : Object to meshRenderers : Renderer[] in method package get() : void from class KRT.VRChatAvatar",
+	"leftSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 12,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dbs : Object"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 16,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "meshRenderers : Renderer[]"
+}, {
+		"filePath": "Packages/com.github.kurotu.vrc-quest-tools/Editor/Models/VRChat/VRChatAvatar.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

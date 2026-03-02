@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "9f51b1ed28e3abb934fd47d04e5d8117455f6af7",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/9f51b1ed28e3abb934fd47d04e5d8117455f6af7",
+	"refactorings": [{
+	"type": "Extract Interface",
+	"description": "Extract Interface Microsoft.IMixedRealityCameraProjectionOverrideProvider from classes [Microsoft.BaseWindowsMixedRealityCameraSettings]",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityCameraSettings.java",
+		"startLine": 4,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "Microsoft.BaseWindowsMixedRealityCameraSettings"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Providers/WindowsMixedReality/Shared/BaseWindowsMixedRealityCameraSettings.java",
+		"startLine": 4,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "Microsoft.BaseWindowsMixedRealityCameraSettings"
+}, {
+		"filePath": "Assets/MRTK/Core/Interfaces/CameraSystem/IMixedRealityCameraProjectionOverrideProvider.java",
+		"startLine": 2,
+		"endLine": 5,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "Microsoft.IMixedRealityCameraProjectionOverrideProvider"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedRealityToolkit-Unity.git",
+	"sha1": "7a3db3a87bb46b9e58b284ba0b0ee6defe569836",
+	"url": "https://github.com/microsoft/MixedRealityToolkit-Unity/commit/7a3db3a87bb46b9e58b284ba0b0ee6defe569836",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute handMeshPrefab : SerializedProperty to systemHandMeshMaterial : SerializedProperty in class Microsoft.MixedRealityHandTrackingProfileInspector",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/Core/Inspectors/Profiles/MixedRealityHandTrackingProfileInspector.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 30,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handMeshPrefab : SerializedProperty"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Core/Inspectors/Profiles/MixedRealityHandTrackingProfileInspector.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "systemHandMeshMaterial : SerializedProperty"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public Material : int from class Microsoft.RiggedHandVisualizer to public Material : int from class Microsoft.MixedRealityHandTrackingProfile",
+	"leftSideLocations": [{
+		"filePath": "Assets/MRTK/SDK/Features/UX/Scripts/RiggedHandVisualizer/RiggedHandVisualizer.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 14,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public Material : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/MRTK/Core/Definitions/Devices/MixedRealityHandTrackingProfile.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 14,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public Material : int"
+}]
+}
+]
+}]
+}

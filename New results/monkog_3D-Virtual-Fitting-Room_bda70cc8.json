@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/monkog/3D-Virtual-Fitting-Room.git",
+	"sha1": "bda70cc8cf7661ca53721eecb7c9e745005f2f25",
+	"url": "https://github.com/monkog/3D-Virtual-Fitting-Room/commit/bda70cc8cf7661ca53721eecb7c9e745005f2f25",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private CreateHatsClothingCategoryButton() : ClothingCategoryButtonViewModel extracted from private InitializeClothingCategories() : Void in class KinectFittingRoom.ViewModel.KinectViewModel",
+	"leftSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 43,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private InitializeClothingCategories() : Void"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 147,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 81,
+		"endColumn": 145,
+		"codeElementType": "ARRAY_CREATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private CreateHatsClothingCategoryButton() : ClothingCategoryButtonViewModel"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 113,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 47,
+		"endColumn": 111,
+		"codeElementType": "ARRAY_CREATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 41,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private InitializeClothingCategories() : Void"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/KinectViewModel.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 28,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "CreateHatsClothingCategoryButton()"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type head : System.Windows.Point to head : Object in method public TrackSkeletonParts(skeleton Skeleton, sensor KinectSensor, width double, height double) : Void from class KinectFittingRoom.SkirtItem",
+	"leftSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 26,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "head : System.Windows.Point"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 12,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "head : Object"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type footLeft : System.Windows.Point to footLeft : Object in method public TrackSkeletonParts(skeleton Skeleton, sensor KinectSensor, width double, height double) : Void from class KinectFittingRoom.SkirtItem",
+	"leftSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 26,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "footLeft : System.Windows.Point"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 12,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "footLeft : Object"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type spine : System.Windows.Point to spine : Object in method public TrackSkeletonParts(skeleton Skeleton, sensor KinectSensor, width double, height double) : Void from class KinectFittingRoom.SkirtItem",
+	"leftSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 26,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "spine : System.Windows.Point"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 12,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "spine : Object"
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "KinectFittingRoom/KinectFittingRoom/ViewModel/ClothingItems/SkirtItem.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,204 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/VolcanicArts/VRCOSC.git",
+	"sha1": "ef816a3daa213c60ce8ba815b70db651affbdd00",
+	"url": "https://github.com/VolcanicArts/VRCOSC/commit/ef816a3daa213c60ce8ba815b70db651affbdd00",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private load() : Void renamed to protected LoadComplete() : Void in class VRCOSC.AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 28,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private load() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 27,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type AttributesList : List<ModuleAttributeData> to AttributesList : BindableList<ModuleAttributeData> in class VRCOSC.AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "AttributesList : List<ModuleAttributeData>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 44,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "AttributesList : BindableList<ModuleAttributeData>"
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from package AttributeFlow(title String) to protected LoadComplete() : Void in class VRCOSC.AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 18,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "package AttributeFlow(title String)"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 27,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "protected LoadComplete() : Void"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "EMPTY_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MISSING in method private load() : Void from class VRCOSC.AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MISSING"
+}, {
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 28,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private load() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 27,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected LoadComplete() : Void from class VRCOSC.AttributeFlow",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 28,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private load() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/AttributeFlow.java",
+		"startLine": 27,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected LoadComplete() : Void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type settingsFlowContainer : Container<AttributeFlow> to settingsFlowContainer : AttributeFlow in class VRCOSC.ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 36,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settingsFlowContainer : Container<AttributeFlow>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "settingsFlowContainer : AttributeFlow"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type outputParametersFlowContainer : Container<AttributeFlow> to outputParametersFlowContainer : AttributeFlow in class VRCOSC.ModuleEditingContent",
+	"leftSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 36,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "outputParametersFlowContainer : Container<AttributeFlow>"
+}],
+	"rightSideLocations": [{
+		"filePath": "VRCOSC.Game/Graphics/ModuleEditing/ModuleEditingContent.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "outputParametersFlowContainer : AttributeFlow"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ttanatb/VRsus-guARdian.git",
+	"sha1": "c4b86b9ec76d91893592b6392a6343ad36f11a61",
+	"url": "https://github.com/ttanatb/VRsus-guARdian/commit/c4b86b9ec76d91893592b6392a6343ad36f11a61",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method private CmdAddPlane(s String, pos Vector3, rot float, scale Vector3) : Void renamed to private ServerAddPlane(s String, pos Vector3, rot float, scale Vector3) : Void in class NetworkedPlaneManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CmdAddPlane(s String, pos Vector3, rot float, scale Vector3) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ServerAddPlane(s String, pos Vector3, rot float, scale Vector3) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CmdUpdatePlane(index int, pos Vector3, rot float, scale Vector3) : Void renamed to private ServerUpdatePlane(index int, pos Vector3, rot float, scale Vector3) : Void in class NetworkedPlaneManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 87,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CmdUpdatePlane(index int, pos Vector3, rot float, scale Vector3) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 91,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ServerUpdatePlane(index int, pos Vector3, rot float, scale Vector3) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private CmdRemovePlane(index int) : Void renamed to private ServerRemovePlane(index int) : Void in class NetworkedPlaneManager",
+	"leftSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private CmdRemovePlane(index int) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/Scripts/NetworkedPlaneManager.java",
+		"startLine": 99,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private ServerRemovePlane(index int) : Void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1680 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/microsoft/MixedReality-WebRTC.git",
+	"sha1": "d2279eec5ac5d4d639f69fa922b452da2d8d3661",
+	"url": "https://github.com/microsoft/MixedReality-WebRTC/commit/d2279eec5ac5d4d639f69fa922b452da2d8d3661",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class Microsoft.VideoRenderer renamed to Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 185,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Microsoft.VideoRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 171,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "Microsoft.VideoRendererWidget"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class Microsoft.VideoReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoReceiver.java",
+		"startLine": 4,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.VideoReceiver"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoReceiver.java",
+		"startLine": 4,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "Microsoft.VideoReceiver"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @AddComponentMenu(value = \"MixedReality-WebRTC/Audio Receiver\") in class Microsoft.AudioReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 0,
+		"endColumn": 62,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@AddComponentMenu(value = \"MixedReality-WebRTC/Audio Receiver\")"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.AudioReceiver"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "Microsoft.AudioReceiver"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @RequireComponent(value = MISSING) in class Microsoft.AudioReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 63,
+		"endColumn": 95,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@RequireComponent(value = MISSING)"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.AudioReceiver"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "Microsoft.AudioReceiver"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class Microsoft.AudioReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.AudioReceiver"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "Microsoft.AudioReceiver"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected _isLive : boolean from class Microsoft.AudioReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _isLive : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected _isLive : boolean"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @MISSING in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 185,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.VideoRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@MISSING"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 171,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "Microsoft.VideoRendererWidget"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @RequireComponent(value = MISSING) in class Microsoft.VideoRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@RequireComponent(value = MISSING)"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 185,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.VideoRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 171,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "Microsoft.VideoRendererWidget"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @AddComponentMenu(value = \"MixedReality-WebRTC/Video Renderer\") in class Microsoft.VideoRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 34,
+		"endColumn": 95,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@AddComponentMenu(value = \"MixedReality-WebRTC/Video Renderer\")"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 185,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "Microsoft.VideoRenderer"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 6,
+		"endLine": 171,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "Microsoft.VideoRendererWidget"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private Start() : Void renamed to public Initialize(source IVideoSource, renderer Renderer) : Void in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public Initialize(source IVideoSource, renderer Renderer) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private OnEnable() : Void renamed to public StartPlaying() : Void in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 33,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnEnable() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public StartPlaying() : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private OnDisable() : Void renamed to public StopPlaying() : Void in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDisable() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public StopPlaying() : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private VideoStreamStarted(source IVideoSource) : Void renamed to private OnVideoStreamStarted(videoSrc IVideoSource) : Void in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 54,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private VideoStreamStarted(source IVideoSource) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 42,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private OnVideoStreamStarted(videoSrc IVideoSource) : Void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private VideoStreamStopped(source IVideoSource) : Void renamed to private OnVideoStreamStopped(source IVideoSource) : Void in class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private VideoStreamStopped(source IVideoSource) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private OnVideoStreamStopped(source IVideoSource) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Update() : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 100,
+		"endLine": 125,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Update() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 86,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Update() : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter source : IVideoSource in method public Initialize(source IVideoSource, renderer Renderer) : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 28,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "source : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Initialize(source IVideoSource, renderer Renderer) : Void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter renderer : Renderer in method public Initialize(source IVideoSource, renderer Renderer) : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 50,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "renderer : Renderer"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Initialize(source IVideoSource, renderer Renderer) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public Initialize(source IVideoSource, renderer Renderer) : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 29,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private Start() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 25,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public Initialize(source IVideoSource, renderer Renderer) : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public StartPlaying() : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 33,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnEnable() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public StartPlaying() : Void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public StopPlaying() : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnDisable() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public StopPlaying() : Void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable videoSrc : IVideoSource to videoSrc : IVideoSource in method private OnVideoStreamStarted(videoSrc IVideoSource) : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 18,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "videoSrc : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 58,
+		"endLine": 71,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 39,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "videoSrc : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 44,
+		"endLine": 57,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter source : IVideoSource in method private VideoStreamStarted(source IVideoSource) : Void from class Microsoft.VideoRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "source : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 54,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private VideoStreamStarted(source IVideoSource) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 42,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private OnVideoStreamStarted(videoSrc IVideoSource) : Void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute videoSrc : IVideoSource to _source : IVideoSource in method public StopPlaying() : Void from class Microsoft.VideoRendererWidget",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 18,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "videoSrc : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_source : IVideoSource"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/VideoRenderer.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method package get() : void from class Microsoft.AudioReceiver to package get() : void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package get() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "package get() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method package set() : void from class Microsoft.AudioReceiver to package set() : void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package set() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "package set() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public GetAudioStreamStarted() : AudioStreamStartedEvent from class Microsoft.AudioReceiver to public GetAudioStreamStarted() : AudioStreamStartedEvent from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetAudioStreamStarted() : AudioStreamStartedEvent"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public GetAudioStreamStarted() : AudioStreamStartedEvent"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public GetAudioStreamStopped() : AudioStreamStoppedEvent from class Microsoft.AudioReceiver to public GetAudioStreamStopped() : AudioStreamStoppedEvent from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetAudioStreamStopped() : AudioStreamStoppedEvent"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public GetAudioStreamStopped() : AudioStreamStoppedEvent"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public RegisterCallback(callback AudioFrameDelegate) : Void from class Microsoft.AudioReceiver to public RegisterCallback(callback AudioFrameDelegate) : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RegisterCallback(callback AudioFrameDelegate) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public RegisterCallback(callback AudioFrameDelegate) : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public UnregisterCallback(callback AudioFrameDelegate) : Void from class Microsoft.AudioReceiver to public UnregisterCallback(callback AudioFrameDelegate) : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UnregisterCallback(callback AudioFrameDelegate) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 21,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public UnregisterCallback(callback AudioFrameDelegate) : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected Awake() : Void from class Microsoft.AudioReceiver to protected Awake() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 39,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Awake() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected Awake() : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected OnDestroy() : Void from class Microsoft.AudioReceiver to protected OnDestroy() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDestroy() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected OnDestroy() : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected Update() : Void from class Microsoft.AudioReceiver to protected Update() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Update() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected Update() : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected OnDisable() : Void from class Microsoft.AudioReceiver to protected OnDisable() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 53,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDisable() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected OnDisable() : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected OnAudioFilterRead(data float[], channels int) : Void from class Microsoft.AudioReceiver to protected OnAudioFilterRead(data float[], channels int) : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 58,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnAudioFilterRead(data float[], channels int) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 49,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected OnAudioFilterRead(data float[], channels int) : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void from class Microsoft.AudioReceiver to private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private StartStreaming() : Void from class Microsoft.AudioReceiver to private StartStreaming() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 80,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private StartStreaming() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private StartStreaming() : Void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private StopStreaming() : Void from class Microsoft.AudioReceiver to private StopStreaming() : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private StopStreaming() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 79,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private StopStreaming() : Void"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute public RemoteAudioTrack : int from class Microsoft.AudioReceiver to public RemoteAudioTrack : int from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RemoteAudioTrack : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "public RemoteAudioTrack : int"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute public PadWithSine : boolean from class Microsoft.AudioReceiver to public PadWithSine : boolean from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PadWithSine : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "public PadWithSine : boolean"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute public IsStreaming : boolean from class Microsoft.AudioReceiver to public IsStreaming : boolean from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsStreaming : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "public IsStreaming : boolean"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private _readBuffer : AudioTrackReadBuffer from class Microsoft.AudioReceiver to private _readBuffer : AudioTrackReadBuffer from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _readBuffer : AudioTrackReadBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private _readBuffer : AudioTrackReadBuffer"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private _readBufferLock : Object from class Microsoft.AudioReceiver to private _readBufferLock : Object from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _readBufferLock : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private _readBufferLock : Object"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private _audioSampleRate : int from class Microsoft.AudioReceiver to private _audioSampleRate : int from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _audioSampleRate : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private _audioSampleRate : int"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private _track : RemoteAudioTrack from class Microsoft.AudioReceiver to private _track : RemoteAudioTrack from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _track : RemoteAudioTrack"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private _track : RemoteAudioTrack"
+}]
+},
+{
+	"type": "Extract Subclass",
+	"description": "Extract Subclass Microsoft.RemoteAudioRenderer from class Microsoft.AudioReceiver",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 124,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "Microsoft.AudioReceiver"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package get() : void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package set() : void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetAudioStreamStarted() : AudioStreamStartedEvent"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public GetAudioStreamStopped() : AudioStreamStoppedEvent"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 19,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RegisterCallback(callback AudioFrameDelegate) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public UnregisterCallback(callback AudioFrameDelegate) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 39,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Awake() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDestroy() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected Update() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 53,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnDisable() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 58,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected OnAudioFilterRead(data float[], channels int) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 80,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private StartStreaming() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 88,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private StopStreaming() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 106,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MISSING(track MediaTrack) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public RemoteAudioTrack : int"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public PadWithSine : boolean"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public IsStreaming : boolean"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _readBuffer : AudioTrackReadBuffer"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _readBufferLock : Object"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _audioSampleRate : int"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private _track : RemoteAudioTrack"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 4,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "Microsoft.AudioReceiver"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 4,
+		"endLine": 99,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Microsoft.RemoteAudioRenderer"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package get() : void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package set() : void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetAudioStreamStarted() : AudioStreamStartedEvent"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GetAudioStreamStopped() : AudioStreamStoppedEvent"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 16,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public RegisterCallback(callback AudioFrameDelegate) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 21,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public UnregisterCallback(callback AudioFrameDelegate) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Awake() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected OnDestroy() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected Update() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected OnDisable() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 49,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected OnAudioFilterRead(data float[], channels int) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private OnAudioConfigurationChanged(deviceWasChanged boolean) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private StartStreaming() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 79,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private StopStreaming() : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 94,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package OnUnpaired(track MediaTrack) : Void"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public RemoteAudioTrack : int"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public PadWithSine : boolean"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public IsStreaming : boolean"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _readBuffer : AudioTrackReadBuffer"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _readBufferLock : Object"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _audioSampleRate : int"
+}, {
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private _track : RemoteAudioTrack"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method package MISSING(track MediaTrack) : Void from class Microsoft.AudioReceiver to package OnPaired(track MediaTrack) : Void from class Microsoft.RemoteAudioRenderer",
+	"leftSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/AudioReceiver.java",
+		"startLine": 106,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MISSING(track MediaTrack) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "libs/unity/library/Runtime/Scripts/Media/RemoteAudioRenderer.java",
+		"startLine": 89,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "package OnPaired(track MediaTrack) : Void"
+}]
+}
+]
+}]
+}

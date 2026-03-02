@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "f2b088b39dea0ffa02281822e10810b5f7730c06",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/f2b088b39dea0ffa02281822e10810b5f7730c06",
+	"refactorings": [{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(miniWorld.clipCenter), if(m_MainCamera && miniWorld && miniWorld.clipCenter)] to if(m_MainCamera && miniWorld && miniWorld.clipBox) in method private OnPostRender() : Void from class MiniWorldRenderer",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorldRenderer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(miniWorld.clipCenter)"
+}, {
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorldRenderer.java",
+		"startLine": 32,
+		"endLine": 45,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(m_MainCamera && miniWorld && miniWorld.clipCenter)"
+}, {
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorldRenderer.java",
+		"startLine": 29,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private OnPostRender() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorldRenderer.java",
+		"startLine": 32,
+		"endLine": 41,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(m_MainCamera && miniWorld && miniWorld.clipBox)"
+}, {
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorldRenderer.java",
+		"startLine": 29,
+		"endLine": 44,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "private OnPostRender() : Void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute clipCenter : Transform to clipBox : ClipBox in class MiniWorld",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorld.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "clipCenter : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorld.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "clipBox : ClipBox"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type clipCenter : Transform to clipBox : ClipBox in class MiniWorld",
+	"leftSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorld.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "clipCenter : Transform"
+}],
+	"rightSideLocations": [{
+		"filePath": "Workspaces/Chessboard/Scripts/MiniWorld.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "clipBox : ClipBox"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1140 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gpvigano/VRTK-GearVR-Test.git",
+	"sha1": "4ef9f0b32b0a3612122beb7539d38290a5cdd5ac",
+	"url": "https://github.com/gpvigano/VRTK-GearVR-Test/commit/4ef9f0b32b0a3612122beb7539d38290a5cdd5ac",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private TypeExists(className String) : boolean from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 149,
+		"endLine": 152,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private TypeExists(className String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 157,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private TypeExists(className String) : boolean"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type controller : VRTK_SDKManager.SupportedSDKs to sdkManager : VRTK_SDKManager in method private CheckSDKUsage(sdkManager VRTK_SDKManager) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 111,
+		"endColumn": 151,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "controller : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 112,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 115,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sdkManager : VRTK_SDKManager"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter controller : VRTK_SDKManager.SupportedSDKs to sdkManager : VRTK_SDKManager in method private CheckSDKUsage(sdkManager VRTK_SDKManager) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 111,
+		"endColumn": 151,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "controller : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 112,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 115,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sdkManager : VRTK_SDKManager"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type name : String to prettyName : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 87,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 12,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "prettyName : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter defineSymbol : String to defineSymbol : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 65,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "defineSymbol : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 12,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "defineSymbol : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type defineSymbol : String to defineSymbol : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 65,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "defineSymbol : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 12,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "defineSymbol : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter checkType : String to checkType : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 101,
+		"endColumn": 117,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "checkType : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 12,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "checkType : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type checkType : String to checkType : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 101,
+		"endColumn": 117,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "checkType : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 12,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "checkType : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter system : VRTK_SDKManager.SupportedSDKs to system : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 120,
+		"endColumn": 156,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "system : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "system : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type system : VRTK_SDKManager.SupportedSDKs to system : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 120,
+		"endColumn": 156,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "system : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "system : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter headset : VRTK_SDKManager.SupportedSDKs to headset : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 159,
+		"endColumn": 196,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "headset : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "headset : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type headset : VRTK_SDKManager.SupportedSDKs to headset : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 159,
+		"endColumn": 196,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "headset : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "headset : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter controller : VRTK_SDKManager.SupportedSDKs to controller : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 199,
+		"endColumn": 239,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "controller : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "controller : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type controller : VRTK_SDKManager.SupportedSDKs to controller : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 199,
+		"endColumn": 239,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "controller : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "controller : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter boundaries : VRTK_SDKManager.SupportedSDKs to boundaries : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 242,
+		"endColumn": 282,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "boundaries : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "boundaries : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type boundaries : VRTK_SDKManager.SupportedSDKs to boundaries : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 242,
+		"endColumn": 282,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "boundaries : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "boundaries : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter sdk : VRTK_SDKManager.SupportedSDKs to supportedSDK : VRTK_SDKManager.SupportedSDKs in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 29,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sdk : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 101,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 58,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "supportedSDK : VRTK_SDKManager.SupportedSDKs"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 109,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter name : String to prettyName : Object in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 87,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 102,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 12,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "prettyName : Object"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sdkManager : VRTK_SDKManager in method private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void from class VRTK.VRTK_SDKManagerEditor",
+	"leftSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ProcessSDK(sdk VRTK_SDKManager.SupportedSDKs, defineSymbol String, name String, checkType String, system VRTK_SDKManager.SupportedSDKs, headset VRTK_SDKManager.SupportedSDKs, controller VRTK_SDKManager.SupportedSDKs, boundaries VRTK_SDKManager.SupportedSDKs) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sdkManager : VRTK_SDKManager"
+}, {
+		"filePath": "Assets/VRTK/Editor/VRTK_SDKManagerEditor.java",
+		"startLine": 96,
+		"endLine": 115,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private ProcessSDK(sdkManager VRTK_SDKManager, supportedSDK VRTK_SDKManager.SupportedSDKs) : Void"
+}]
+}
+]
+}]
+}

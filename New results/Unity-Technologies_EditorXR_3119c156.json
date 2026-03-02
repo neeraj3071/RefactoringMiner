@@ -1,0 +1,495 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Unity-Technologies/EditorXR.git",
+	"sha1": "3119c156c9646fdcd46e580ef2f8127398e88e36",
+	"url": "https://github.com/Unity-Technologies/EditorXR/commit/3119c156c9646fdcd46e580ef2f8127398e88e36",
+	"refactorings": [{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [m_HighlightedTopLevelMenuProvider : ISpatialMenuProvider, m_SpatialinterfaceState : SpatialinterfaceState] to m_SpatialMenuUi : SpatialMenuUI in class UnityEditor.SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "m_HighlightedTopLevelMenuProvider : ISpatialMenuProvider"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "m_SpatialinterfaceState : SpatialinterfaceState"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "m_SpatialMenuUi : SpatialMenuUI"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute providerMenuElement : Component to s_SpatialMenuProviders : List<ISpatialMenuProvider> in method package CreateUI() : Void from class UnityEditor.SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 19,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "providerMenuElement : Component"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 48,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "s_SpatialMenuProviders : List<ISpatialMenuProvider>"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type providerMenuElement : Component to s_SpatialMenuProviders : List<ISpatialMenuProvider> in method package CreateUI() : Void from class UnityEditor.SpatialMenu",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 19,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "providerMenuElement : Component"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 48,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "s_SpatialMenuProviders : List<ISpatialMenuProvider>"
+}, {
+		"filePath": "Menus/SpatialUI/SpatialMenu.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type newGhostInputDevicePosition : int to newGhostInputDevicePosition : Object in method public SetPositionOffset(newLocalPositionOffset Vector3) : Void from class SpatialMenuGhostVisuals",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuGhostVisuals.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newGhostInputDevicePosition : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuGhostVisuals.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 8,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newGhostInputDevicePosition : Object"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package ClearSubMenuElements() : Void extracted from package Update() : Void in class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 188,
+		"endLine": 255,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package Update() : Void"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 0,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 90,
+		"endColumn": 113,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 205,
+		"endLine": 207,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 204,
+		"endLine": 208,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 203,
+		"endLine": 209,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 205,
+		"endLine": 207,
+		"startColumn": 54,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 204,
+		"endLine": 208,
+		"startColumn": 40,
+		"endColumn": 2,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 203,
+		"endLine": 209,
+		"startColumn": 36,
+		"endColumn": 2,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 208,
+		"endLine": 217,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package ClearSubMenuElements() : Void"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 0,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 90,
+		"endColumn": 113,
+		"codeElementType": "LAMBDA_EXPRESSION_BODY",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 210,
+		"endLine": 216,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 52,
+		"endColumn": 2,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 40,
+		"endColumn": 2,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 210,
+		"endLine": 216,
+		"startColumn": 36,
+		"endColumn": 2,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 298,
+		"endLine": 358,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package Update() : Void"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 0,
+		"endColumn": 23,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ClearSubMenuElements()"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable elementTransform : Object to homeMenuElementParent : Object in method package DisplayHomeSectionContents() : Void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 8,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "elementTransform : Object"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 0,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 8,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "homeMenuElementParent : Object"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 0,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable kvp : Object to provider : Object in method package DisplayHomeSectionContents() : Void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 6,
+		"endColumn": 16,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "kvp : Object"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 279,
+		"endLine": 283,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 6,
+		"endColumn": 21,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "provider : Object"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 242,
+		"endLine": 253,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package DisplayHomeSectionContents() : Void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 272,
+		"endLine": 284,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DisplayHomeSectionContents() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 234,
+		"endLine": 254,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package DisplayHomeSectionContents() : Void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter providerToMenuElementsx : Dictionary<ISpatialMenuProvider,SpatialMenuElement> in method public Setup(providerToMenuElementsx Dictionary<ISpatialMenuProvider,SpatialMenuElement>) : Void from class SpatialMenuUI",
+	"leftSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 19,
+		"endColumn": 94,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "providerToMenuElementsx : Dictionary<ISpatialMenuProvider,SpatialMenuElement>"
+}, {
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 169,
+		"endLine": 176,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Setup(providerToMenuElementsx Dictionary<ISpatialMenuProvider,SpatialMenuElement>) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Menus/SpatialUI/Scripts/SpatialMenuUI.java",
+		"startLine": 177,
+		"endLine": 183,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Setup() : Void"
+}]
+}
+]
+}]
+}

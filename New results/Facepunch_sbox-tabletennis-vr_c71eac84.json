@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Facepunch/sbox-tabletennis-vr.git",
+	"sha1": "c71eac84e8436de7c0a113aa7661f32c0eaa08cc",
+	"url": "https://github.com/Facepunch/sbox-tabletennis-vr/commit/c71eac84e8436de7c0a113aa7661f32c0eaa08cc",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to IHoldableObject in method protected TryFindHoldableObject() : IHoldableObject from class TableTennis.Hand",
+	"leftSideLocations": [{
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected TryFindHoldableObject(holdable IHoldableObject) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IHoldableObject"
+}, {
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected TryFindHoldableObject() : IHoldableObject"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter holdable : IHoldableObject in method protected TryFindHoldableObject(holdable IHoldableObject) : boolean from class TableTennis.Hand",
+	"leftSideLocations": [{
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 45,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "holdable : IHoldableObject"
+}, {
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 20,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected TryFindHoldableObject(holdable IHoldableObject) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "Code/Player/Hand.Holding.java",
+		"startLine": 12,
+		"endLine": 18,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected TryFindHoldableObject() : IHoldableObject"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package flDeadzone : float from class TableTennis.Hand to package flDeadzone : float from class TableTennis.InputState",
+	"leftSideLocations": [{
+		"filePath": "Code/Player/Hand.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 15,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package flDeadzone : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "Code/Player/InputState.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 15,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package flDeadzone : float"
+}]
+}
+]
+}]
+}

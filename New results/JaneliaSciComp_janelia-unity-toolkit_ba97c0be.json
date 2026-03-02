@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JaneliaSciComp/janelia-unity-toolkit.git",
+	"sha1": "ba97c0be42e88a73f502930b982fafda3c4e21a7",
+	"url": "https://github.com/JaneliaSciComp/janelia-unity-toolkit/commit/ba97c0be42e88a73f502930b982fafda3c4e21a7",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute logDir : String to logDirectory : String in class Janelia.Logger",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.logging/Runtime/Logger.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "logDir : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.logging/Runtime/Logger.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 24,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "logDirectory : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable scriptPath : String to n : String in method public OnPostprocessBuild(target BuildTarget, pathToBuiltProject String) : Void from class Janelia.KinematicSubject",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scriptPath : String"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "n : String"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @PostProcessBuildAttribute(value = 1) to @PostProcessBuildAttribute(value = 2) in method public OnPostprocessBuild(target BuildTarget, pathToBuiltProject String) : Void from class Janelia.KinematicSubject",
+	"leftSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@PostProcessBuildAttribute(value = 1)"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 98,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public OnPostprocessBuild(target BuildTarget, pathToBuiltProject String) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@PostProcessBuildAttribute(value = 2)"
+}, {
+		"filePath": "org.janelia.collision-handling/Runtime/KinematicSubject.java",
+		"startLine": 98,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public OnPostprocessBuild(target BuildTarget, pathToBuiltProject String) : Void"
+}]
+}
+]
+}]
+}

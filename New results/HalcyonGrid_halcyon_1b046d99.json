@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/HalcyonGrid/halcyon.git",
+	"sha1": "1b046d99b2fe67b0934c36710e72f9f431f0e8df",
+	"url": "https://github.com/HalcyonGrid/halcyon/commit/1b046d99b2fe67b0934c36710e72f9f431f0e8df",
+	"refactorings": [{
+	"type": "Move Package",
+	"description": "Move Package OpenSim to InWorldz.JWT",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureUtil.java",
+		"startLine": 5,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureUtil"
+}, {
+		"filePath": "OpenSim/Framework/Communications/JWT/PayloadOptions.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.PayloadOptions"
+}, {
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureFailureCauses.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 0,
+		"endColumn": 76,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureFailureCauses"
+}, {
+		"filePath": "OpenSim/Framework/Communications/JWT/JWToken.java",
+		"startLine": 3,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWToken"
+}, {
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureException.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureException"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/JWTSignatureUtil.java",
+		"startLine": 5,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureUtil"
+}, {
+		"filePath": "InWorldz/JWT/PayloadOptions.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.PayloadOptions"
+}, {
+		"filePath": "InWorldz/JWT/JWTSignatureFailureCauses.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 0,
+		"endColumn": 76,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureFailureCauses"
+}, {
+		"filePath": "InWorldz/JWT/JWToken.java",
+		"startLine": 3,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWToken"
+}, {
+		"filePath": "InWorldz/JWT/JWTSignatureException.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class OpenSim.JWTSignatureUtil moved to InWorldz.JWT.JWTSignatureUtil",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureUtil.java",
+		"startLine": 5,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureUtil"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/JWTSignatureUtil.java",
+		"startLine": 5,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureUtil"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class OpenSim.PayloadOptions moved to InWorldz.JWT.PayloadOptions",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/PayloadOptions.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.PayloadOptions"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/PayloadOptions.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.PayloadOptions"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class OpenSim.JWTSignatureFailureCauses moved to InWorldz.JWT.JWTSignatureFailureCauses",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureFailureCauses.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 0,
+		"endColumn": 76,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureFailureCauses"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/JWTSignatureFailureCauses.java",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 0,
+		"endColumn": 76,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureFailureCauses"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class OpenSim.JWToken moved to InWorldz.JWT.JWToken",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/JWToken.java",
+		"startLine": 3,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWToken"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/JWToken.java",
+		"startLine": 3,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWToken"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class OpenSim.JWTSignatureException moved to InWorldz.JWT.JWTSignatureException",
+	"leftSideLocations": [{
+		"filePath": "OpenSim/Framework/Communications/JWT/JWTSignatureException.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "OpenSim.JWTSignatureException"
+}],
+	"rightSideLocations": [{
+		"filePath": "InWorldz/JWT/JWTSignatureException.java",
+		"startLine": 3,
+		"endLine": 13,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "InWorldz.JWT.JWTSignatureException"
+}]
+}
+]
+}]
+}

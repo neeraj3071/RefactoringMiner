@@ -1,0 +1,90 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/edwonedwon/VR-Infinite-Gesture.git",
+	"sha1": "f6b64abd06b42bb02954a55e2ecd1b9f576ff4ce",
+	"url": "https://github.com/edwonedwon/VR-Infinite-Gesture/commit/f6b64abd06b42bb02954a55e2ecd1b9f576ff4ce",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public DestroySelf() : Void renamed to public DestroyThisGrid() : Void in class Edwon.VRGestureGalleryGrid",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGalleryGrid.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DestroySelf() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGalleryGrid.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public DestroyThisGrid() : Void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter startCoords : Vector3 in method public DrawGesture(capturedLine List<Vector3>, startCoords Vector3, gestureExampleNumber int) : GameObject from class Edwon.VRGestureGalleryExample",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGalleryExample.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 64,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "startCoords : Vector3"
+}, {
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGalleryExample.java",
+		"startLine": 32,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DrawGesture(capturedLine List<Vector3>, startCoords Vector3, gestureExampleNumber int) : GameObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGalleryExample.java",
+		"startLine": 28,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public DrawGesture(capturedLine List<Vector3>, gestureExampleNumber int) : GameObject"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package DestroyGestureGallery() : Void renamed to package DestroyGestureGalleryGrids() : Void in class Edwon.VRGestureGallery",
+	"leftSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGallery.java",
+		"startLine": 67,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package DestroyGestureGallery() : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "Unity/Assets/Edwon/VR/Gesture/VRUI/Scripts/VRGestureGallery.java",
+		"startLine": 64,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package DestroyGestureGalleryGrids() : Void"
+}]
+}
+]
+}]
+}

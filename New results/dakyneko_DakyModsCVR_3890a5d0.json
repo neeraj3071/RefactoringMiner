@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dakyneko/DakyModsCVR.git",
+	"sha1": "3890a5d0a873a2b3b54006c4668e5b5e0fe2c3b0",
+	"url": "https://github.com/dakyneko/DakyModsCVR/commit/3890a5d0a873a2b3b54006c4668e5b5e0fe2c3b0",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class ActionMenu.Config renamed to ActionMenu.Menu",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/Config.java",
+		"startLine": 4,
+		"endLine": 6,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "ActionMenu.Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/Menu.java",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "ActionMenu.Menu"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type menus : Dictionary<String,List> to menus : Menus in class ActionMenu.Menu",
+	"leftSideLocations": [{
+		"filePath": "ActionMenu/Config.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 34,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "menus : Dictionary<String,List>"
+}],
+	"rightSideLocations": [{
+		"filePath": "ActionMenu/Menu.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 16,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "menus : Menus"
+}]
+}
+]
+}]
+}

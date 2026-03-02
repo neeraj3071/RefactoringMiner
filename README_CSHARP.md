@@ -45,7 +45,7 @@ The C# RefactoringMiner implements a complete refactoring detection pipeline wit
 ┌─────────────────────────────────────────────────────────────────┐
 │ Stage 4: UML Model Creation Router                              │
 │ Component: CSharpGitHistoryRefactoringMiner.createModel()       │
-│ Logic: Count .cs files → route to C# or Java reader             │
+│ Logic: Count .cs files → route to C#          │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐

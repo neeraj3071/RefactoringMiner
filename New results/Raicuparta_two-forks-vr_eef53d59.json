@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Raicuparta/two-forks-vr.git",
+	"sha1": "eef53d59e77e80ed9c7409af6f6221956b62ee62",
+	"url": "https://github.com/Raicuparta/two-forks-vr/commit/eef53d59e77e80ed9c7409af6f6221956b62ee62",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public SetUp(playerRootBone Transform) : Void from class TwoForksVr.Hands.VrFoot",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VRHand.java",
+		"startLine": 74,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpShoeLid(playerRootBone Transform) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VrFoot.java",
+		"startLine": 15,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public SetUp(playerRootBone Transform) : Void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private SetUpShoeLid(playerRootBone Transform) : Void from class TwoForksVr.Hands.VRHand to public SetUp(playerRootBone Transform) : Void from class TwoForksVr.Hands.VrFoot",
+	"leftSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VRHand.java",
+		"startLine": 74,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private SetUpShoeLid(playerRootBone Transform) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "TwoForksVR/src/Hands/VrFoot.java",
+		"startLine": 15,
+		"endLine": 30,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public SetUp(playerRootBone Transform) : Void"
+}]
+}
+]
+}]
+}

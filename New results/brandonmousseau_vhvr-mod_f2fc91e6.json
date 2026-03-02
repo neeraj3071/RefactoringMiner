@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonmousseau/vhvr-mod.git",
+	"sha1": "f2fc91e6bd69205e78d1a417dbbdd45fa2356f8a",
+	"url": "https://github.com/brandonmousseau/vhvr-mod/commit/f2fc91e6bd69205e78d1a417dbbdd45fa2356f8a",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Void to RootMotion.FinalIK.VRIK in method public initialize(target GameObject, leftController Transform, rightController Transform, camera Transform) : RootMotion.FinalIK.VRIK from class ValheimVRMod.Scripts.VrikCreator",
+	"leftSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/VrikCreator.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Void"
+}, {
+		"filePath": "ValheimVRMod/Scripts/VrikCreator.java",
+		"startLine": 5,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public initialize(target GameObject, leftController Transform, rightController Transform, camera Transform) : Void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ValheimVRMod/Scripts/VrikCreator.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "RootMotion.FinalIK.VRIK"
+}, {
+		"filePath": "ValheimVRMod/Scripts/VrikCreator.java",
+		"startLine": 5,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public initialize(target GameObject, leftController Transform, rightController Transform, camera Transform) : RootMotion.FinalIK.VRIK"
+}]
+}
+]
+}]
+}

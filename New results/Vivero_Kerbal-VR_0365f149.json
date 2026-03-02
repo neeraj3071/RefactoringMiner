@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/Vivero/Kerbal-VR.git",
+	"sha1": "0365f14937826db4ae0f298c6d7d7dcc4b598112",
+	"url": "https://github.com/Vivero/Kerbal-VR/commit/0365f14937826db4ae0f298c6d7d7dcc4b598112",
+	"refactorings": [{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute assetBundlePaths : String[] to _instance : AssetLoader in method package get() : void from class KerbalVR.AssetLoader",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 14,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "assetBundlePaths : String[]"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 30,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_instance : AssetLoader"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type assetBundlePaths : String[] to _instance : AssetLoader in method package get() : void from class KerbalVR.AssetLoader",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 14,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "assetBundlePaths : String[]"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 30,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "_instance : AssetLoader"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable _instance : AssetLoader to assetBundlePaths : String[] in method package get() : void from class KerbalVR.AssetLoader",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 30,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "_instance : AssetLoader"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 14,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "assetBundlePaths : String[]"
+}, {
+		"filePath": "KerbalVR/KerbalVR_AssetLoader.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute role : ETrackedControllerRole to Role : ETrackedControllerRole in class KerbalVR.Manipulator",
+	"leftSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "role : ETrackedControllerRole"
+}],
+	"rightSideLocations": [{
+		"filePath": "KerbalVR/KerbalVR_Manipulator.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Role : ETrackedControllerRole"
+}]
+}
+]
+}]
+}
